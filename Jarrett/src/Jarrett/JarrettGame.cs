@@ -1,32 +1,37 @@
+using System;
+using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Jarrett.Core;
+using Jarrett.Views;
 
-namespace Jarrett.Core
+namespace Jarrett
 {
-    public enum GameState
+    class JarrettGame : Game, IGame
     {
-        Initializing,
-        Initialized,
-        MainMenu,
-        GameStarting,
-        Running,
-        Exiting
-    }
-
-    /// <summary>
-    /// This is the main type for your game
-    /// </summary>
-    public class JarrettGame : Game
-    {
+        IResourceManager m_resourceManager;
         GraphicsDeviceManager m_deviceManager;
         GameState m_state;
-   
+        List<IGameView> m_gameViews;
+
+        public GraphicsDevice Device
+        {
+            get { return m_deviceManager.GraphicsDevice; }
+        }
+
+        public IResourceManager Resources
+        {
+            get { return m_resourceManager; }
+        }
+
         public JarrettGame()
         {
             m_deviceManager = new GraphicsDeviceManager(this);
+            m_resourceManager = new JarrettResourceManager(this.Content);
+
+            m_gameViews = new List<IGameView>();
+
             ChangeGameState(GameState.Initializing);
-            
-            Content.RootDirectory = "Content";
         }
 
         /// <summary>
@@ -42,25 +47,19 @@ namespace Jarrett.Core
             MessageBus.Get().Initialize();
             RegisterMessageListeners();
 
+            m_resourceManager.Initialize();
+
             ChangeGameState(GameState.Initialized);
         }
 
-        /// <summary>
-        /// LoadContent will be called once per game and is the place to load
-        /// all of your content.
-        /// </summary>
         protected override void LoadContent()
         {
-            // TODO: use this.Content to load your game content here
+            m_resourceManager.LoadContent();
         }
 
-        /// <summary>
-        /// UnloadContent will be called once per game and is the place to unload
-        /// all content.
-        /// </summary>
         protected override void UnloadContent()
         {
-            // TODO: Unload any non ContentManager content here
+            m_resourceManager.UnloadContent();
         }
 
         /// <summary>
@@ -79,9 +78,6 @@ namespace Jarrett.Core
                     break;
 
                 case GameState.MainMenu:
-                    // TEMPORARY for testing
-                    MessageBus.Get().QueueMessage(new NewGameRequestMessage());
-
                     break;
 
                 case GameState.Running:
@@ -92,7 +88,11 @@ namespace Jarrett.Core
                     break;
             }
 
-            // TODO: Update Game Views
+            // Update from front to back. Most recently active (like a pause view) will be at the front
+            for (int i = 0; i < m_gameViews.Count; i++)
+            {
+                m_gameViews[i].Update(gameTime);
+            }
 
             base.Update(gameTime);
         }
@@ -105,7 +105,11 @@ namespace Jarrett.Core
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            // TODO: Render game views
+            // Draw from back to front. Most recently active (like a pause view) will be drawn last
+            for (int i = m_gameViews.Count - 1; i >= 0; i--)
+            {
+                m_gameViews[i].Draw(gameTime);
+            }
 
             base.Draw(gameTime);
         }
@@ -117,6 +121,12 @@ namespace Jarrett.Core
             switch (newState)
             {
                 case GameState.MainMenu:
+                    m_gameViews.Clear();
+
+                    var menuView = new MainMenuView();
+                    menuView.Initialize(this);
+
+                    m_gameViews.Add(menuView);
                     break;
 
                 case GameState.Running:
@@ -131,6 +141,8 @@ namespace Jarrett.Core
         {
             MessageBus.Get().AddListener<NewGameRequestMessage>(msg =>
             {
+                // TODO: Set a game loader that OnUpdate will use to build the game
+                // Then, OnUpdate will change game state to Running instead of here.
                 ChangeGameState(GameState.Running);
             });
         }
