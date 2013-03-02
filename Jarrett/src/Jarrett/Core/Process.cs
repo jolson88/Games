@@ -53,6 +53,7 @@ namespace Jarrett.Core
         public Process()
         {
             m_children = new List<Process>();
+            m_state = ProcessState.Uninitialized;
         }
 
         public void Initialize()

@@ -9,6 +9,7 @@ namespace Jarrett
 {
     class JarrettGame : Game, IGame
     {
+        ProcessManager m_processManager;
         IResourceManager m_resourceManager;
         GraphicsDeviceManager m_deviceManager;
         GameState m_state;
@@ -28,6 +29,7 @@ namespace Jarrett
         {
             m_deviceManager = new GraphicsDeviceManager(this);
             m_resourceManager = new JarrettResourceManager(this.Content);
+            m_processManager = new ProcessManager();
 
             m_gameViews = new List<IGameView>();
 
@@ -45,9 +47,10 @@ namespace Jarrett
             base.Initialize();
 
             MessageBus.Get().Initialize();
-            RegisterMessageListeners();
-
             m_resourceManager.Initialize();
+
+            RegisterMessageListeners();
+            m_processManager.AttachProcess(new MessageProcessor());
 
             ChangeGameState(GameState.Initialized);
         }
@@ -69,9 +72,6 @@ namespace Jarrett
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            // TODO: Change into a MessageProcessor that calls this
-            MessageBus.Get().ProcessMessages();
-
             switch (m_state)
             {
                 case GameState.Initialized:
@@ -82,7 +82,7 @@ namespace Jarrett
                     break;
             }
 
-            // TODO: Update Processes
+            m_processManager.UpdateProcesses(gameTime);
 
             // Update from front to back. Most recently active (like a pause view) will be at the front
             for (int i = 0; i < m_gameViews.Count; i++)

@@ -18,7 +18,25 @@ namespace Jarrett.Core
 
         public void UpdateProcesses(GameTime gameTime)
         {
+            foreach (var process in m_processes)
+            {
+                if (process.State == ProcessState.Uninitialized)
+                {
+                    process.Initialize();
+                }
 
+                if (process.State == ProcessState.Running)
+                {
+                    process.Update(gameTime);
+                }
+
+                if (process.IsDead && process.State == ProcessState.Succeeded)
+                {
+                    m_processes.AddRange(process.Children);
+                }
+            }
+
+            m_processes.RemoveAll(p => p.IsDead);
         }
 
         public void AttachProcess(Process process)
