@@ -51,6 +51,7 @@ namespace Jarrett
 
             RegisterMessageListeners();
             m_processManager.AttachProcess(new MessageProcessor());
+            m_processManager.AttachProcess(new InputProcessor());
 
             ChangeGameState(GameState.Initialized);
         }

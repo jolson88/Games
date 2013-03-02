@@ -5,13 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
 using Jarrett.Core;
 
 namespace Jarrett.Views
 {
     class MainMenuView : IGameView
     {
-        IGame m_game;
+        int m_counter;
         SpriteBatch m_batch;
         SpriteFont m_font;
 
@@ -19,6 +20,7 @@ namespace Jarrett.Views
         {
             m_batch = new SpriteBatch(game.Device);
             m_font = game.Resources.Load<SpriteFont>("Graphics\\MenuFont");
+            RegisterMessageListeners();
         }
 
         public void Update(GameTime gameTime)
@@ -29,8 +31,18 @@ namespace Jarrett.Views
         public void Draw(GameTime gameTime)
         {
             m_batch.Begin();
-            m_batch.DrawString(m_font, "Hello World", Vector2.Zero, Color.Red);
+            m_batch.DrawString(m_font, "Hello World: " + m_counter, Vector2.Zero, Color.Red);
             m_batch.End();
+        }
+
+        private void RegisterMessageListeners()
+        {
+            MessageBus.Get().AddListener<KeyDownMessage>(msg =>
+            {
+                var keyMsg = (KeyDownMessage)msg;
+                if (keyMsg.Key == Keys.Up) { m_counter++; }
+                if (keyMsg.Key == Keys.Down) { m_counter--; }
+            });
         }
     }
 }

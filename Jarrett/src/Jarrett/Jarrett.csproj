@@ -138,6 +138,7 @@
     <Compile Include="Core\GameState.cs" />
     <Compile Include="Core\IGame.cs" />
     <Compile Include="Core\IGameView.cs" />
+    <Compile Include="Core\InputProcessor.cs" />
     <Compile Include="Core\IResourceManager.cs" />
     <Compile Include="Core\MessageProcessor.cs" />
     <Compile Include="Core\Process.cs" />

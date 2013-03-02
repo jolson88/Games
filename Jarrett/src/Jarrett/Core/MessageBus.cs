@@ -66,7 +66,7 @@ namespace Jarrett.Core
 
         private void ProcessMessage(Message msg)
         {
-            if (m_messageListeners[msg.GetType()] != null)
+            if (m_messageListeners.Keys.Contains(msg.GetType()))
             {
                 foreach (var listener in m_messageListeners[msg.GetType()])
                 {
