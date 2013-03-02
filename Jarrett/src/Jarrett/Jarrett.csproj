@@ -133,10 +133,14 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Core\GameActor.cs" />
+    <Compile Include="Core\GameComponent.cs" />
+    <Compile Include="Core\MessageBus.cs" />
+    <Compile Include="Core\Messages.cs" />
     <Compile Include="GamePage.xaml.cs">
       <DependentUpon>GamePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="JarrettGame.cs" />
+    <Compile Include="Core\JarrettGame.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -174,6 +178,9 @@
       <XnaReferenceType>Content</XnaReferenceType>
       <Project>{DE6937C4-6E2F-4C83-A39B-F5E2305610C9}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\v4.0\Microsoft.Xna.GameStudio.Content.targets" />

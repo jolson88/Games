@@ -1,20 +1,31 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace Jarrett
+namespace Jarrett.Core
 {
+    public enum GameState
+    {
+        Initializing,
+        Initialized,
+        MainMenu,
+        GameStarting,
+        Running,
+        Exiting
+    }
+
     /// <summary>
     /// This is the main type for your game
     /// </summary>
     public class JarrettGame : Game
     {
-        GraphicsDeviceManager _graphics;
-        SpriteBatch _spriteBatch;
-        Texture2D _testTexture;
-
+        GraphicsDeviceManager m_deviceManager;
+        GameState m_state;
+   
         public JarrettGame()
         {
-            _graphics = new GraphicsDeviceManager(this);
+            m_deviceManager = new GraphicsDeviceManager(this);
+            ChangeGameState(GameState.Initializing);
+            
             Content.RootDirectory = "Content";
         }
 
@@ -26,9 +37,12 @@ namespace Jarrett
         /// </summary>
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
-
             base.Initialize();
+
+            MessageBus.Get().Initialize();
+            RegisterMessageListeners();
+
+            ChangeGameState(GameState.Initialized);
         }
 
         /// <summary>
@@ -37,11 +51,7 @@ namespace Jarrett
         /// </summary>
         protected override void LoadContent()
         {
-            // Create a new SpriteBatch, which can be used to draw textures.
-            _spriteBatch = new SpriteBatch(GraphicsDevice);
-
             // TODO: use this.Content to load your game content here
-            _testTexture = Content.Load<Texture2D>("Graphics\\PlayerOne");
         }
 
         /// <summary>
@@ -60,7 +70,29 @@ namespace Jarrett
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            // TODO: Add your update logic here
+            MessageBus.Get().ProcessMessages();
+
+            switch (m_state)
+            {
+                case GameState.Initialized:
+                    ChangeGameState(GameState.MainMenu);
+                    break;
+
+                case GameState.MainMenu:
+                    // TEMPORARY for testing
+                    MessageBus.Get().QueueMessage(new NewGameRequestMessage());
+
+                    break;
+
+                case GameState.Running:
+                    // TODO: Update Processes
+                    break;
+
+                default:
+                    break;
+            }
+
+            // TODO: Update Game Views
 
             base.Update(gameTime);
         }
@@ -73,11 +105,34 @@ namespace Jarrett
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            _spriteBatch.Begin();
-            _spriteBatch.Draw(_testTexture, new Rectangle(100, 100, 100, 100), Color.White);
-            _spriteBatch.End();
+            // TODO: Render game views
 
             base.Draw(gameTime);
+        }
+
+        protected void ChangeGameState(GameState newState)
+        {
+            m_state = newState;
+
+            switch (newState)
+            {
+                case GameState.MainMenu:
+                    break;
+
+                case GameState.Running:
+                    break;
+
+                default:
+                    break;
+            }
+        }
+
+        protected void RegisterMessageListeners()
+        {
+            MessageBus.Get().AddListener<NewGameRequestMessage>(msg =>
+            {
+                ChangeGameState(GameState.Running);
+            });
         }
     }
 }
