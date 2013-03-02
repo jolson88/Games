@@ -69,6 +69,7 @@ namespace Jarrett
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
+            // TODO: Change into a MessageProcessor that calls this
             MessageBus.Get().ProcessMessages();
 
             switch (m_state)
@@ -77,16 +78,11 @@ namespace Jarrett
                     ChangeGameState(GameState.MainMenu);
                     break;
 
-                case GameState.MainMenu:
-                    break;
-
-                case GameState.Running:
-                    // TODO: Update Processes
-                    break;
-
                 default:
                     break;
             }
+
+            // TODO: Update Processes
 
             // Update from front to back. Most recently active (like a pause view) will be at the front
             for (int i = 0; i < m_gameViews.Count; i++)

@@ -139,6 +139,8 @@
     <Compile Include="Core\IGame.cs" />
     <Compile Include="Core\IGameView.cs" />
     <Compile Include="Core\IResourceManager.cs" />
+    <Compile Include="Core\Process.cs" />
+    <Compile Include="Core\ProcessManager.cs" />
     <Compile Include="JarrettResourceManager.cs" />
     <Compile Include="Core\MessageBus.cs" />
     <Compile Include="Core\Messages.cs" />
