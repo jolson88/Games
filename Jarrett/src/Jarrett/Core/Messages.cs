@@ -15,7 +15,20 @@ namespace Jarrett.Core
     //       Game Messages
     //
     // ***************************    
-    class NewGameRequestMessage : Message { }
+    class NewGameRequestMessage : Message 
+    {
+        public int HumanPlayers { get; set; }
+        public int TotalPlayers { get; set; }
+        public string LevelName { get; set; }
+
+        public NewGameRequestMessage(string levelName, int humanPlayers, int totalPlayers = 2)
+        {
+            this.LevelName = levelName;
+            this.HumanPlayers = humanPlayers;
+            this.TotalPlayers = totalPlayers;
+        }
+    }
+
     class QuitGameRequestMessage : Message { }
 
 

@@ -10,6 +10,8 @@ namespace Jarrett.Core
     {
         Dictionary<Type, GameComponent> m_components;
 
+        public int Id { get; set; }
+
         public GameActor()
         {
             m_components = new Dictionary<Type, GameComponent>();

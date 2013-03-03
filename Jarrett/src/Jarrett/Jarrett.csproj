@@ -138,11 +138,13 @@
     <Compile Include="Core\GameState.cs" />
     <Compile Include="Core\IGame.cs" />
     <Compile Include="Core\IGameView.cs" />
+    <Compile Include="Core\ILevelLoader.cs" />
     <Compile Include="Core\InputProcessor.cs" />
     <Compile Include="Core\IResourceManager.cs" />
     <Compile Include="Core\MessageProcessor.cs" />
     <Compile Include="Core\Process.cs" />
     <Compile Include="Core\ProcessManager.cs" />
+    <Compile Include="JarrettLevelLoader.cs" />
     <Compile Include="JarrettResourceManager.cs" />
     <Compile Include="Core\MessageBus.cs" />
     <Compile Include="Core\Messages.cs" />
@@ -151,6 +153,7 @@
     </Compile>
     <Compile Include="JarrettGame.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\HumanTicTacToeView.cs" />
     <Compile Include="Views\MainMenuView.cs" />
   </ItemGroup>
   <ItemGroup>

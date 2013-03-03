@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Jarrett.Core;
@@ -7,13 +8,22 @@ using Jarrett.Views;
 
 namespace Jarrett
 {
+    static class JarrettGameLevels
+    {
+        public static string TicTacToe = "TicTacToe";
+        // TODO: Add other game levels here (like pong)
+    }
+
     class JarrettGame : Game, IGame
     {
         ProcessManager m_processManager;
         IResourceManager m_resourceManager;
         GraphicsDeviceManager m_deviceManager;
         GameState m_state;
-        List<IGameView> m_gameViews;
+        ILevelLoader m_levelLoader;
+        List<IGameView> m_views;
+        int m_nextActorId;
+        Dictionary<int, GameActor> m_actors;
 
         public GraphicsDevice Device
         {
@@ -31,7 +41,8 @@ namespace Jarrett
             m_resourceManager = new JarrettResourceManager(this.Content);
             m_processManager = new ProcessManager();
 
-            m_gameViews = new List<IGameView>();
+            m_views = new List<IGameView>();
+            m_actors = new Dictionary<int, GameActor>();
 
             ChangeGameState(GameState.Initializing);
         }
@@ -73,22 +84,12 @@ namespace Jarrett
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            switch (m_state)
-            {
-                case GameState.Initialized:
-                    ChangeGameState(GameState.MainMenu);
-                    break;
-
-                default:
-                    break;
-            }
-
             m_processManager.UpdateProcesses(gameTime);
 
             // Update from front to back. Most recently active (like a pause view) will be at the front
-            for (int i = 0; i < m_gameViews.Count; i++)
+            for (int i = 0; i < m_views.Count; i++)
             {
-                m_gameViews[i].Update(gameTime);
+                m_views[i].Update(gameTime);
             }
 
             base.Update(gameTime);
@@ -100,12 +101,12 @@ namespace Jarrett
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.White);
 
             // Draw from back to front. Most recently active (like a pause view) will be drawn last
-            for (int i = m_gameViews.Count - 1; i >= 0; i--)
+            for (int i = m_views.Count - 1; i >= 0; i--)
             {
-                m_gameViews[i].Draw(gameTime);
+                m_views[i].Draw(gameTime);
             }
 
             base.Draw(gameTime);
@@ -117,13 +118,33 @@ namespace Jarrett
 
             switch (newState)
             {
+                case GameState.Initialized:
+                    ChangeGameState(GameState.MainMenu);
+                    break;
+
                 case GameState.MainMenu:
-                    m_gameViews.Clear();
+                    m_actors.Clear();
+                    m_views.Clear();
 
                     var menuView = new MainMenuView();
                     menuView.Initialize(this);
 
-                    m_gameViews.Add(menuView);
+                    m_views.Add(menuView);
+                    break;
+
+                case GameState.NewGameRequested:
+                    Debug.Assert(m_levelLoader != null);
+                    m_actors.Clear();
+                    m_views.Clear();
+
+                    // Build the level from the current level loader
+                    m_views.AddRange(m_levelLoader.LoadViews());
+                    foreach (var actor in m_levelLoader.LoadActors())
+                    {
+                        AddActor(actor);
+                    }
+
+                    ChangeGameState(GameState.Running);
                     break;
 
                 case GameState.Running:
@@ -138,10 +159,17 @@ namespace Jarrett
         {
             MessageBus.Get().AddListener<NewGameRequestMessage>(msg =>
             {
-                // TODO: Set a game loader that OnUpdate will use to build the game
-                // Then, OnUpdate will change game state to Running instead of here.
-                ChangeGameState(GameState.Running);
+                var newGameMsg = (NewGameRequestMessage)msg;
+                m_levelLoader = new JarrettLevelLoader(this, newGameMsg.LevelName, newGameMsg.HumanPlayers, newGameMsg.TotalPlayers);
+
+                ChangeGameState(GameState.NewGameRequested);
             });
+        }
+
+        protected void AddActor(GameActor actor)
+        {
+            m_actors.Add(m_nextActorId, actor);
+            m_nextActorId++;
         }
     }
 }
