@@ -6,12 +6,14 @@ public class GameLogicBehavior : MonoBehaviour
 	public int SingleValuePercentage;
 	public int DoubleValuePercentage;
 	public int ZeroValuePercentage;
-	
+	public int WinningPointTotal;
+	public List<int> PlayerScores;
+
 	private Dictionary<int, CardBehavior> m_cards;
 	private int m_selectedCount;
-	private List<int> m_playerScores;
 	private int m_currentPlayer;
-	
+	private PlayerMessageBehavior m_message;
+
 	public void CardSelected(int cardIndex)
 	{
 		var points = m_cards[cardIndex].CardValue;
@@ -23,13 +25,16 @@ public class GameLogicBehavior : MonoBehaviour
 		}
 		else
 		{
-			m_playerScores[m_currentPlayer] += points;
-			print (string.Format("Player {0} has {1} points", m_currentPlayer + 1, m_playerScores[m_currentPlayer]));
-			
+			PlayerScores[m_currentPlayer] += points;
 			if (m_selectedCount == m_cards.Values.Count)
 			{
 				m_selectedCount = 0;
 				ReshuffleCards();
+			}
+
+			if (PlayerScores[m_currentPlayer] >= WinningPointTotal)
+			{
+				m_message.DisplayMessage(string.Format("Player {0} Wins!!!", m_currentPlayer + 1));
 			}
 		}
 	}
@@ -37,12 +42,15 @@ public class GameLogicBehavior : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
+		var msg = GameObject.Find ("PlayerMessage");
+		m_message = msg.GetComponent<PlayerMessageBehavior>();
+
 		m_cards = new Dictionary<int, CardBehavior>();
-		m_playerScores = new List<int>();
+		PlayerScores = new List<int>();
 		
 		// Start with two players
-		m_playerScores.Add(0);
-		m_playerScores.Add(0);
+		PlayerScores.Add(0);
+		PlayerScores.Add(0);
 		
 		// Find all the cards
 		foreach(var go in GameObject.FindGameObjectsWithTag("Card"))
@@ -50,7 +58,8 @@ public class GameLogicBehavior : MonoBehaviour
 			var card = go.GetComponent<CardBehavior>();
 			m_cards.Add(card.CardIndex, card);
 		}
-		
+
+		m_message.DisplayMessage(string.Format("Player {0}'s Turn", m_currentPlayer + 1));
 		ReshuffleCards();
 	}
 	
@@ -65,8 +74,9 @@ public class GameLogicBehavior : MonoBehaviour
 		ReshuffleCards();
 		
 		m_selectedCount = 0;
-		m_currentPlayer = (m_currentPlayer + 1) % m_playerScores.Count;
-		print (string.Format("Player {0}'s Turn", m_currentPlayer + 1));
+		m_currentPlayer = (m_currentPlayer + 1) % PlayerScores.Count;
+
+		m_message.DisplayMessage(string.Format("Player {0}'s Turn", m_currentPlayer + 1));
 	}
 	
 	void ReshuffleCards()

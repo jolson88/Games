@@ -46,6 +46,8 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CardBehavior.cs" />
      <Compile Include="Assets\Scripts\GameLogicBehavior.cs" />
+     <Compile Include="Assets\Scripts\PlayerMessageBehavior.cs" />
+     <Compile Include="Assets\Scripts\ScoreBehavior.cs" />
      <Compile Include="Assets\ex2D\_demo\Scripts\Player.cs" />
      <Compile Include="Assets\ex2D\_demo\Scripts\ScrollView.cs" />
      <Compile Include="Assets\ex2D\_demo\Scripts\SpAnimEventHandle.cs" />

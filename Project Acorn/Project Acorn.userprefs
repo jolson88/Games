@@ -1,9 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameLogicBehavior.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CardBehavior.cs">
     <Files>
-      <File FileName="Assets\Scripts\GameLogicBehavior.cs" Line="25" Column="40" />
-      <File FileName="Assets\Scripts\CardBehavior.cs" Line="46" Column="44" />
+      <File FileName="Assets\Scripts\GameLogicBehavior.cs" Line="61" Column="1" />
+      <File FileName="Assets\Scripts\CardBehavior.cs" Line="20" Column="3" />
+      <File FileName="Assets\Scripts\ScoreBehavior.cs" Line="19" Column="2" />
+      <File FileName="Assets\Scripts\PlayerMessageBehavior.cs" Line="10" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

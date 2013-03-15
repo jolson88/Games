@@ -24,7 +24,7 @@ public class CardBehavior : MonoBehaviour
 	{
 		var logic = GameObject.Find("GameLogic");
 		m_gameLogic = logic.GetComponent<GameLogicBehavior>();
-		
+
 		m_sprite = this.GetComponent<exSprite>();
 		
 		m_pointValueToAtlasIndex = new Dictionary<int, int>();
