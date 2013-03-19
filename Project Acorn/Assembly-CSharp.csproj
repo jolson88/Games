@@ -48,6 +48,7 @@
      <Compile Include="Assets\Scripts\GameContext.cs" />
      <Compile Include="Assets\Scripts\GameOver\GameOverBehavior.cs" />
      <Compile Include="Assets\Scripts\Menu\PlayButtonBehavior.cs" />
+     <Compile Include="Assets\Scripts\MessageBus.cs" />
      <Compile Include="Assets\Scripts\Playing\CardBehavior.cs" />
      <Compile Include="Assets\Scripts\Playing\GameLogicBehavior.cs" />
      <Compile Include="Assets\Scripts\Playing\HoldButtonBehavior.cs" />

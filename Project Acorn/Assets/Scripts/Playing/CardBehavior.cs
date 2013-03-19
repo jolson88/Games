@@ -10,8 +10,8 @@ public class CardBehavior : MonoBehaviour
 	public int CardIndex;
 	public int CardValue;
 	
+    private MessageBus m_messageBus;
 	private exSprite m_sprite;
-	private GameLogicBehavior m_gameLogic;
 	private Dictionary<int,int> m_pointValueToAtlasIndex;
 	
 	public void Reset ()
@@ -22,9 +22,6 @@ public class CardBehavior : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		var logic = GameObject.Find("GameLogic");
-		m_gameLogic = logic.GetComponent<GameLogicBehavior>();
-
 		m_sprite = this.GetComponent<exSprite>();
 		
 		m_pointValueToAtlasIndex = new Dictionary<int, int>();
@@ -32,6 +29,9 @@ public class CardBehavior : MonoBehaviour
 		m_pointValueToAtlasIndex.Add(1, SingleValueAtlasIndex);
 		m_pointValueToAtlasIndex.Add(2, DoubleValueAtlasIndex);
 		
+        var go = GameObject.Find("MessageBus");
+        m_messageBus = go.GetComponent<MessageBus>();
+        
 		Reset ();
 	}
 	
@@ -44,7 +44,9 @@ public class CardBehavior : MonoBehaviour
 	void OnMouseDown ()
 	{
 		UpdateCardGraphic(m_pointValueToAtlasIndex[CardValue]);
-		m_gameLogic.CardSelected(this.CardIndex);		
+        
+        var msg = new SelectCardMessage() { CardIndex = this.CardIndex };
+        m_messageBus.QueueMessage(msg);	
 	}
 	
 	void UpdateCardGraphic (int index)

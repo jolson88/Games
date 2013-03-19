@@ -3,13 +3,13 @@ using System.Collections;
 
 public class HoldButtonBehavior : MonoBehaviour
 {
-	private GameLogicBehavior m_gameLogic;
-
+    private MessageBus m_messageBus;
+    
 	// Use this for initialization
 	void Start ()
 	{
-		var logic = GameObject.Find("GameLogic");
-		m_gameLogic = logic.GetComponent<GameLogicBehavior>();
+        var go = GameObject.Find("MessageBus");
+        m_messageBus = go.GetComponent<MessageBus>();
 	}
 
 	// Update is called once per frame
@@ -20,6 +20,6 @@ public class HoldButtonBehavior : MonoBehaviour
     
     void OnMouseDown () 
     {
-        m_gameLogic.Hold();
+        m_messageBus.QueueMessage(new HoldMessage());
     }
 }
