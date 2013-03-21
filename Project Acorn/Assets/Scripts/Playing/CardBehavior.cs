@@ -8,16 +8,10 @@ public class CardBehavior : MonoBehaviour
 	public int DoubleValueAtlasIndex;
 	public int ZeroValueAtlasIndex;	
 	public int CardIndex;
-	public int CardValue;
-	
+
     private MessageBus m_messageBus;
 	private exSprite m_sprite;
 	private Dictionary<int,int> m_pointValueToAtlasIndex;
-	
-	public void Reset ()
-	{		
-		UpdateCardGraphic(CardBackingAtlasIndex);
-	}
 	
 	// Use this for initialization
 	void Start ()
@@ -31,20 +25,20 @@ public class CardBehavior : MonoBehaviour
 		
         var go = GameObject.Find("MessageBus");
         m_messageBus = go.GetComponent<MessageBus>();
-        
-		Reset ();
+        m_messageBus.AddListener<CardSelectedMessage>(msg => OnCardSelected((CardSelectedMessage)msg));
+        m_messageBus.AddListener<CardsShuffledMessage>(msg => UpdateCardGraphic(CardBackingAtlasIndex));
 	}
 	
-	// Update is called once per frame
-	void Update ()
-	{
-	
-	}
-	
+    void OnCardSelected(CardSelectedMessage msg)
+    {
+        if (msg.CardIndex == this.CardIndex)
+        {
+            UpdateCardGraphic(m_pointValueToAtlasIndex[msg.PointValue]);
+        }
+    }
+    
 	void OnMouseDown ()
 	{
-		UpdateCardGraphic(m_pointValueToAtlasIndex[CardValue]);
-        
         var msg = new SelectCardMessage() { CardIndex = this.CardIndex };
         m_messageBus.QueueMessage(msg);	
 	}

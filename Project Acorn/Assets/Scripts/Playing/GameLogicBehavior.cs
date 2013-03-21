@@ -1,9 +1,19 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-class GameStartedMessage : Message { }
+class GameStartedMessage : Message
+{
+    public GameStartedMessage(int startingPlayer)
+    {
+        this.StartingPlayer = startingPlayer;
+    }
+    
+    public int StartingPlayer { get; set; } 
+}
 
-class HoldMessage : Message { }
+class HoldMessage : Message
+{
+}
 
 class SelectCardMessage : Message
 {
@@ -12,31 +22,54 @@ class SelectCardMessage : Message
 
 class CardSelectedMessage : Message
 {
+    public CardSelectedMessage(int cardIndex, int pointValue)
+    {
+        this.CardIndex = cardIndex;
+        this.PointValue = pointValue;
+    }
+    
     public int CardIndex { get; set; }
+
     public int PointValue { get; set; }
 }
 
-class CardsShuffledMessage : Message { }
+class CardsShuffledMessage : Message
+{
+}
 
 class PointsScoredMessage : Message
 {
+    public PointsScoredMessage(int player, int totalPoints)
+    {
+        this.Player = player;
+        this.TotalPoints = totalPoints;
+    }
+    
     public int Player { get; set; }
+
     public int TotalPoints { get; set; }
 }
 
-enum TurnOverReason { Hold, ZeroCard }
-class TurnOverMessage : Message 
+enum TurnOverReason
 {
-    public int CurrentPlayer { get; set; }
-    public int NextPlayer { get; set; } 
-    public TurnOverReason Reason { get; set; }
+    Hold,
+    ZeroCard
 }
 
-enum GameState
+class TurnOverMessage : Message
 {
-    Initialized,
-    Playing,
-    GameOver
+    public TurnOverMessage(int currentPlayer, int nextPlayer, TurnOverReason reason)
+    {
+        this.CurrentPlayer = currentPlayer;
+        this.NextPlayer = nextPlayer;
+        this.Reason = reason;
+    }
+    
+    public int CurrentPlayer { get; set; }
+
+    public int NextPlayer { get; set; }
+
+    public TurnOverReason Reason { get; set; }
 }
 
 public class GameLogicBehavior : MonoBehaviour
@@ -46,39 +79,20 @@ public class GameLogicBehavior : MonoBehaviour
     public int ZeroValuePercentage;
     public int WinningPointTotal;
     public int VisibleCardCount;
-    
-    // TODO: Turn private once messages are fully implemented
-    public List<int> PlayerScores;
-
+    private int[] m_playerScores;
     private MessageBus m_messageBus;
     private GameContext m_context;
-    private GameState m_state;
-    private Dictionary<int, CardBehavior> m_cards; // TODO: Get rid of m_cards once message-driven
+    private int[] m_cardValues;
     private int m_selectedCount;
     private int m_currentPlayer;
-    private PlayerMessageBehavior m_message; // TODO: Get rid of m_message once message-driven
     private int m_runningPoints;
 
     // Use this for initialization
     void Start()
     {   
-        var pMsg = GameObject.Find("PlayerMessage");
-        m_message = pMsg.GetComponent<PlayerMessageBehavior>();
-
-        m_cards = new Dictionary<int, CardBehavior>();
-        PlayerScores = new List<int>();
+        m_playerScores = new int[] { 0, 0 };
+        m_cardValues = new int[] { 0, 0, 0, 0 };
         
-        // Start with two players
-        PlayerScores.Add(0);
-        PlayerScores.Add(0);
-        
-        // Find all the cards
-        foreach (var obj in GameObject.FindGameObjectsWithTag("Card"))
-        {
-            var card = obj.GetComponent<CardBehavior>();
-            m_cards.Add(card.CardIndex, card);
-        }
-
         // What's the context?
         var go = new GameObject("GameContext");
         go.AddComponent<GameContext>();
@@ -89,96 +103,72 @@ public class GameLogicBehavior : MonoBehaviour
         m_messageBus = go.GetComponent<MessageBus>();
         
         // What shall we do? 
-        m_messageBus.AddListener<SelectCardMessage>(msg => this.CardSelected((SelectCardMessage)msg));
-        m_messageBus.AddListener<HoldMessage>(msg => this.Hold());
-        
-        m_state = GameState.Initialized;
+        m_messageBus.AddListener<SelectCardMessage>(msg => this.OnCardSelected((SelectCardMessage)msg));
+        m_messageBus.AddListener<HoldMessage>(msg => this.OnHold());
+
+        ShuffleCards();        
+        m_messageBus.QueueMessage(new GameStartedMessage(0));
     }
     
-    // Update is called once per frame
-    void Update()
+    void OnHold()
     {
-        if (m_state == GameState.Initialized)
-        {
-            m_message.DisplayMessage(string.Format("Player {0}'s Turn", m_currentPlayer + 1));
-            ReshuffleCards();
+        // Increment score
+        m_playerScores [m_currentPlayer] += m_runningPoints;
+        m_messageBus.QueueMessage(new PointsScoredMessage(m_currentPlayer, m_playerScores [m_currentPlayer]));
             
-            m_messageBus.QueueMessage(new GameStartedMessage());
-            m_state = GameState.Playing;
-        }
-    }
-    
-    void Hold()
-    {
-        if (m_state == GameState.Playing)
+        if (m_playerScores [m_currentPlayer] >= WinningPointTotal)
         {
-            // Increment score
-            PlayerScores [m_currentPlayer] += m_runningPoints;
-            
-            if (PlayerScores [m_currentPlayer] >= WinningPointTotal)
-            {
-                m_state = GameState.GameOver;
-                m_context.WinningPlayer = m_currentPlayer;
+            m_context.WinningPlayer = m_currentPlayer;
                 
-                DontDestroyOnLoad(m_context.gameObject);
-                Application.LoadLevel("game_over");
-            } else
-            {
-                EndTurn();
-            }
+            DontDestroyOnLoad(m_context.gameObject);
+            Application.LoadLevel("game_over");
+        } else
+        {
+            EndTurn(TurnOverReason.Hold);
         }
     }
  
-    void CardSelected(SelectCardMessage msg)
+    void OnCardSelected(SelectCardMessage msg)
     {
-        if (m_state == GameState.Playing)
-        {
-            var points = m_cards[msg.CardIndex].CardValue;
-            m_selectedCount++;
+        var points = m_cardValues [msg.CardIndex];
+        m_messageBus.QueueMessage(new CardSelectedMessage(msg.CardIndex, points));
             
-            if (points == 0)
+        m_selectedCount++;
+        if (points == 0)
+        {
+            EndTurn(TurnOverReason.ZeroCard);
+        } else
+        {
+            m_runningPoints += points;
+            if (m_selectedCount == m_cardValues.Length)
             {
-                EndTurn();
-            } else
-            {
-                m_runningPoints += points;
-                if (m_selectedCount == m_cards.Values.Count)
-                {
-                    m_selectedCount = 0;
-                    ReshuffleCards();
-                }
+                ShuffleCards();
             }
         }
     }
        
-    void EndTurn()
+    void EndTurn(TurnOverReason reason)
     {   
-        ReshuffleCards();
+        ShuffleCards();
         
         m_selectedCount = 0;
-        m_currentPlayer = (m_currentPlayer + 1) % PlayerScores.Count;
         m_runningPoints = 0;
 
-        m_message.DisplayMessage(string.Format("Player {0}'s Turn", m_currentPlayer + 1));
-    }
-    
-    void ReshuffleCards()
-    {
-        // TODO: Get rid of this method once m_cards is elimated from class
+        var previousPlayer = m_currentPlayer;
+        m_currentPlayer = (m_currentPlayer + 1) % m_playerScores.Length;
         
-        ShuffleCardValues();
-        foreach (var card in m_cards.Values)
-        {
-            card.Reset();
-        }
+        m_messageBus.QueueMessage(new TurnOverMessage(previousPlayer, m_currentPlayer, reason));
     }
     
-    void ShuffleCardValues()
+    void ShuffleCards()
     {
-        foreach (var card in m_cards.Values)
+        m_selectedCount = 0;
+        for (int i = 0; i < m_cardValues.Length; i++)
         {
-            card.CardValue = GetRandomCardValue();
+            m_cardValues [i] = GetRandomCardValue();
         }
+        
+        m_messageBus.QueueMessage(new CardsShuffledMessage());
     }
     
     int GetRandomCardValue()
