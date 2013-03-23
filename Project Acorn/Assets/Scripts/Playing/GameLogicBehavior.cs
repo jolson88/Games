@@ -80,13 +80,15 @@ public class GameLogicBehavior : MonoBehaviour
     public int WinningPointTotal;
     public int VisibleCardCount;
     private int[] m_playerScores;
+    private ProcessManager m_processes;
     private MessageBus m_messageBus;
     private GameContext m_context;
     private int[] m_cardValues;
     private int m_selectedCount;
     private int m_currentPlayer;
     private int m_runningPoints;
-
+    private bool m_turnIsOver;
+    
     // Use this for initialization
     void Start()
     {   
@@ -97,6 +99,8 @@ public class GameLogicBehavior : MonoBehaviour
         var go = new GameObject("GameContext");
         go.AddComponent<GameContext>();
         m_context = go.GetComponent<GameContext>();
+        
+        m_processes = this.GetComponent<ProcessManager>();
         
         // Start the message processing yo!
         go = GameObject.Find("MessageBus");
@@ -112,48 +116,63 @@ public class GameLogicBehavior : MonoBehaviour
     
     void OnHold()
     {
-        // Increment score
-        m_playerScores [m_currentPlayer] += m_runningPoints;
-        m_messageBus.QueueMessage(new PointsScoredMessage(m_currentPlayer, m_playerScores [m_currentPlayer]));
+        if (!m_turnIsOver)
+        {
+            // Increment score
+            m_playerScores [m_currentPlayer] += m_runningPoints;
+            m_messageBus.QueueMessage(new PointsScoredMessage(m_currentPlayer, m_playerScores [m_currentPlayer]));
             
-        if (m_playerScores [m_currentPlayer] >= WinningPointTotal)
-        {
-            m_context.WinningPlayer = m_currentPlayer;
+            if (m_playerScores [m_currentPlayer] >= WinningPointTotal)
+            {
+                m_context.WinningPlayer = m_currentPlayer;
                 
-            DontDestroyOnLoad(m_context.gameObject);
-            Application.LoadLevel("game_over");
-        } else
-        {
-            EndTurn(TurnOverReason.Hold);
+                DontDestroyOnLoad(m_context.gameObject);
+                Application.LoadLevel("game_over");
+            } else
+            {
+                EndTurn(TurnOverReason.Hold);
+            }
         }
     }
  
     void OnCardSelected(SelectCardMessage msg)
     {
-        var points = m_cardValues [msg.CardIndex];
-        m_messageBus.QueueMessage(new CardSelectedMessage(msg.CardIndex, points));
+        if (!m_turnIsOver)
+        {
+            var points = m_cardValues [msg.CardIndex];
+            m_messageBus.QueueMessage(new CardSelectedMessage(msg.CardIndex, points));
             
-        m_selectedCount++;
-        if (points == 0)
-        {
-            EndTurn(TurnOverReason.ZeroCard);
-        } else
-        {
-            m_runningPoints += points;
-            if (m_selectedCount == m_cardValues.Length)
+            m_selectedCount++;
+            if (points == 0)
             {
-                ShuffleCards();
+                EndTurn(TurnOverReason.ZeroCard);
+            } else
+            {
+                m_runningPoints += points;
+                if (m_selectedCount == m_cardValues.Length)
+                {
+                    ShuffleCards();
+                }
             }
         }
     }
        
     void EndTurn(TurnOverReason reason)
-    {   
-        ShuffleCards();
+    {  
+        m_turnIsOver = true;
+        
+        // If it was because of a zero card, give enough time for players to see zero card
+        float delayTime = 0f;
+        if (reason == TurnOverReason.ZeroCard) delayTime = 2f;
+        
+        m_processes.AttachProcess(new DelayProcess(delayTime, new ActionProcess(() => {
+            ShuffleCards();
+            m_turnIsOver = false;
+        })));
         
         m_selectedCount = 0;
         m_runningPoints = 0;
-
+        
         var previousPlayer = m_currentPlayer;
         m_currentPlayer = (m_currentPlayer + 1) % m_playerScores.Length;
         

@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\Playing\HoldButtonBehavior.cs" />
      <Compile Include="Assets\Scripts\Playing\PlayerMessageBehavior.cs" />
      <Compile Include="Assets\Scripts\Playing\ScoreBehavior.cs" />
+     <Compile Include="Assets\Scripts\ProcessManager.cs" />
      <Compile Include="Assets\ex2D\_demo\Scripts\Player.cs" />
      <Compile Include="Assets\ex2D\_demo\Scripts\ScrollView.cs" />
      <Compile Include="Assets\ex2D\_demo\Scripts\SpAnimEventHandle.cs" />
