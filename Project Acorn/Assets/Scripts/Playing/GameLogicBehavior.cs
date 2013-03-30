@@ -151,7 +151,9 @@ public class GameLogicBehavior : MonoBehaviour
                 m_runningPoints += points;
                 if (m_selectedCount == m_cardValues.Length)
                 {
-                    ShuffleCards();
+                    m_processes.AttachProcess(new DelayProcess(1f, new ActionProcess(() => {
+                        ShuffleCards();
+                    })));
                 }
             }
         }
