@@ -1,6 +1,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Jarrett;
+using Acorn.Screens;
 
 namespace Acorn
 {
@@ -9,14 +10,15 @@ namespace Acorn
     /// </summary>
     public class AcornGame : Game
     {
+        ScreenManager _screenManager;
         GraphicsDeviceManager _graphics;
-        SpriteBatch _spriteBatch;
-        Sprite _background;
 
         public AcornGame()
         {
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+
+            _screenManager = new ScreenManager();
         }
 
         /// <summary>
@@ -27,8 +29,6 @@ namespace Acorn
         /// </summary>
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
-
             base.Initialize();
         }
 
@@ -38,11 +38,8 @@ namespace Acorn
         /// </summary>
         protected override void LoadContent()
         {
-            // Create a new SpriteBatch, which can be used to draw textures.
-            _spriteBatch = new SpriteBatch(GraphicsDevice);
-
-            // TODO: use this.Content to load your game content here
-            _background = new Sprite(Content.Load<Texture2D>("Sprites\\Background"));
+            _screenManager.Initialize(GraphicsDevice, Content);
+            _screenManager.LoadScreen(new PlayScreen());
         }
 
         /// <summary>
@@ -51,7 +48,7 @@ namespace Acorn
         /// </summary>
         protected override void UnloadContent()
         {
-            // TODO: Unload any non ContentManager content here
+            
         }
 
         /// <summary>
@@ -61,8 +58,7 @@ namespace Acorn
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            // TODO: Add your update logic here
-
+            _screenManager.Update(gameTime);
             base.Update(gameTime);
         }
 
@@ -72,12 +68,7 @@ namespace Acorn
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
-
-            _spriteBatch.Begin();
-            _spriteBatch.Draw(_background.Texture, new Rectangle(0, 0, GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height), Color.White);
-            _spriteBatch.End();          
-
+            _screenManager.Draw(gameTime);
             base.Draw(gameTime);
         }
     }
