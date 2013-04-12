@@ -5,15 +5,35 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Jarrett;
+using Acorn.Hiromi;
+using Acorn.Objects;
 
 namespace Acorn.Screens
 {
     public class PlayScreen : Screen
     {
+        private AcornResourceManager _resourceManager;
+
+        public PlayScreen(AcornResourceManager resourceManager)
+        {
+            _resourceManager = resourceManager;
+        }
+
         protected override Background InitializeBackground()
         {
-            return new Background(Content.Load<Texture2D>("Sprites\\Background"));
+            return _resourceManager.GetBackground();
+        }
+
+        protected override void OnLoad()
+        {
+            var cloud = new Cloud()
+            {
+                Sprite = _resourceManager.GetCloud(),
+                Position = new Vector2(200, 10)
+            };
+
+            GameObjectService objectService = GameObjectService.Instance;
+            objectService.AddGameObject(cloud);
         }
     }
 }

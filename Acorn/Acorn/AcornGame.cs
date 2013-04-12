@@ -1,6 +1,6 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Jarrett;
+using Acorn.Hiromi;
 using Acorn.Screens;
 
 namespace Acorn
@@ -10,6 +10,7 @@ namespace Acorn
     /// </summary>
     public class AcornGame : Game
     {
+        AcornResourceManager _resourceManager;
         ScreenManager _screenManager;
         GraphicsDeviceManager _graphics;
 
@@ -38,8 +39,9 @@ namespace Acorn
         /// </summary>
         protected override void LoadContent()
         {
+            _resourceManager = new AcornResourceManager(Content);
             _screenManager.Initialize(GraphicsDevice, Content);
-            _screenManager.LoadScreen(new PlayScreen());
+            _screenManager.LoadScreen(new PlayScreen(_resourceManager));
         }
 
         /// <summary>
