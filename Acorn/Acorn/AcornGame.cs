@@ -39,8 +39,10 @@ namespace Acorn
         /// </summary>
         protected override void LoadContent()
         {
+            GraphicsService.Instance.GraphicsDevice = this.GraphicsDevice;
+
             _resourceManager = new AcornResourceManager(Content);
-            _screenManager.Initialize(GraphicsDevice, Content);
+            _screenManager.Initialize(Content);
             _screenManager.LoadScreen(new PlayScreen(_resourceManager));
         }
 

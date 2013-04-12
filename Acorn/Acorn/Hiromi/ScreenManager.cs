@@ -15,9 +15,8 @@ namespace Acorn.Hiromi
         private ContentManager _content;
         private Screen _currentScreen;
 
-        public void Initialize(GraphicsDevice device, ContentManager content)
+        public void Initialize(ContentManager content)
         {
-            GraphicsService.Instance.GraphicsDevice = device;
             _content = content;
         }
 
