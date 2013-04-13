@@ -8,9 +8,9 @@ using Acorn.Hiromi.Messaging;
 using Acorn.Hiromi.Processing;
 using Microsoft.Xna.Framework;
 
-namespace Acorn.Behaviors
+namespace Acorn.Hiromi.Behaviors
 {
-    public class WrapAroundScreenBehavior : BehaviorComponent
+    public class WrapAroundScreenBehavior : GameObjectBehavior
     {
         private bool _canBeReflected = true;
 

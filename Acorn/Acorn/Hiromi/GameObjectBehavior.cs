@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework;
 
 namespace Acorn.Hiromi
 {
-    public class BehaviorComponent
+    public class GameObjectBehavior
     {
         public GameObject GameObject { get; set; }
 

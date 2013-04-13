@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Acorn.Hiromi;
 
-namespace Acorn.Behaviors
+namespace Acorn.Hiromi.Behaviors
 {
-    public class MovementBehavior : BehaviorComponent
+    public class MovementBehavior : GameObjectBehavior
     {
         // Velocity to change in seconds
         public Vector2 Velocity { get; set; }

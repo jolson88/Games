@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Acorn.Hiromi;
-using Acorn.Objects;
+using Acorn.Hiromi.Behaviors;
+using Acorn.Behaviors;
 
 namespace Acorn.Screens
 {
@@ -19,19 +20,21 @@ namespace Acorn.Screens
 
         protected override void OnLoad()
         {
-            var cloud = new Cloud()
+            var cloud = new GameObject()
             {
                 Sprite = AcornResourceManager.GetCloudSprite(),
                 Position = new Vector2(0.2f, 0.1f)
             };
+            cloud.AddBehavior(new MovementBehavior(new Vector2(-0.03f, 0)));
+            cloud.AddBehavior(new WrapAroundScreenBehavior());
 
-            var stopButton = new StopButton()
+            var stopButton = new GameObject()
             {
                 Sprite = AcornResourceManager.GetStopButtonSprite(),
-                Position = new Vector2(0.5f, 0.65f),
-                NonFocusSprite = AcornResourceManager.GetStopButtonSprite(),
-                FocusSprite = AcornResourceManager.GetStopButtonPressedSprite()
+                Position = new Vector2(0.5f, 0.65f)
             };
+            stopButton.AddBehavior(new CommonButtonBehavior(AcornResourceManager.GetStopButtonSprite(), AcornResourceManager.GetStopButtonPressedSprite()));
+            stopButton.AddBehavior(new StopButtonBehavior());
 
             GameObjectService objectService = GameObjectService.Instance;
             objectService.AddGameObject(cloud);

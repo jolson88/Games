@@ -6,15 +6,18 @@ using System.Threading.Tasks;
 using Acorn.Hiromi;
 using Acorn.Hiromi.Messaging;
 
-namespace Acorn.Behaviors
+namespace Acorn.Hiromi.Behaviors
 {
-    public class CommonButtonBehavior : BehaviorComponent
+    public class CommonButtonBehavior : GameObjectBehavior
     {
-        public Sprite FocusSprite { get; set; }
-        public Sprite NonFocusSprite { get; set; }
+        private Sprite _focusSprite;
+        private Sprite _nonFocusSprite;
 
-        public CommonButtonBehavior()
+        public CommonButtonBehavior(Sprite nonFocusSprite, Sprite focusSprite)
         {
+            _nonFocusSprite = nonFocusSprite;
+            _focusSprite = focusSprite;
+
             MessageService.Instance.AddListener<PointerExitMessage>(msg => OnPointerExit((PointerExitMessage)msg));
             MessageService.Instance.AddListener<PointerPressMessage>(msg => OnPointerPress((PointerPressMessage)msg));
             MessageService.Instance.AddListener<PointerReleaseMessage>(msg => OnPointerRelease((PointerReleaseMessage)msg));
@@ -24,7 +27,7 @@ namespace Acorn.Behaviors
         {
             if (msg.GameObjectId == this.GameObject.Id)
             {
-                this.GameObject.Sprite = this.NonFocusSprite;
+                this.GameObject.Sprite = _nonFocusSprite;
             }
         }
 
@@ -32,7 +35,7 @@ namespace Acorn.Behaviors
         {
             if (msg.GameObjectId == this.GameObject.Id)
             {
-                this.GameObject.Sprite = this.FocusSprite;
+                this.GameObject.Sprite = _focusSprite;
                 MessageService.Instance.TriggerMessage(new ButtonPressMessage(this.GameObject.Id));
             }
         }
@@ -41,7 +44,7 @@ namespace Acorn.Behaviors
         {
             if (msg.GameObjectId == this.GameObject.Id)
             {
-                this.GameObject.Sprite = this.NonFocusSprite;
+                this.GameObject.Sprite = _nonFocusSprite;
             }
         }
     }

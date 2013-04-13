@@ -131,15 +131,16 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Behaviors\CommonButtonBehavior.cs" />
-    <Compile Include="Behaviors\MovementBehavior.cs" />
-    <Compile Include="Behaviors\WrapAroundScreenBehavior.cs" />
+    <Compile Include="Behaviors\StopButtonBehavior.cs" />
+    <Compile Include="Hiromi\Behaviors\CommonButtonBehavior.cs" />
+    <Compile Include="Hiromi\Behaviors\MovementBehavior.cs" />
+    <Compile Include="Hiromi\Behaviors\WrapAroundScreenBehavior.cs" />
     <Compile Include="GamePage.xaml.cs">
       <DependentUpon>GamePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="AcornGame.cs" />
     <Compile Include="Hiromi\Background.cs" />
-    <Compile Include="Hiromi\BehaviorComponent.cs" />
+    <Compile Include="Hiromi\GameObjectBehavior.cs" />
     <Compile Include="Hiromi\ContentService.cs" />
     <Compile Include="Hiromi\Messaging\ButtonMessages.cs" />
     <Compile Include="Hiromi\Messaging\KeyboardMessages.cs" />
@@ -160,8 +161,6 @@
     <Compile Include="Hiromi\Screen.cs" />
     <Compile Include="Hiromi\ScreenManager.cs" />
     <Compile Include="Hiromi\Sprite.cs" />
-    <Compile Include="Objects\Cloud.cs" />
-    <Compile Include="Objects\StopButton.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Screens\PlayScreen.cs" />
   </ItemGroup>

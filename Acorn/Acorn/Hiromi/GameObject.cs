@@ -26,34 +26,34 @@ namespace Acorn.Hiromi
 
         private Sprite _sprite;
         private Vector2 _position;
-        private Dictionary<Type, BehaviorComponent> _components;       
+        private Dictionary<Type, GameObjectBehavior> _behaviors;       
 
-        protected GameObject()
+        public GameObject()
         {
-            _components = new Dictionary<Type, BehaviorComponent>();
+            _behaviors = new Dictionary<Type, GameObjectBehavior>();
             this.Position = Vector2.Zero;
             this.ProcessManager = new ProcessManager();
             this.Bounds = new Rectangle(0, 0, 0, 0);
             this.OnInitialize();
         }
 
-        public void AddComponent(BehaviorComponent component)
+        public void AddBehavior(GameObjectBehavior behavior)
         {
-            component.GameObject = this;
-            _components.Add(component.GetType(), component);
+            behavior.GameObject = this;
+            _behaviors.Add(behavior.GetType(), behavior);
         }
 
-        public BehaviorComponent GetComponent<T>() where T : BehaviorComponent
+        public GameObjectBehavior GetBehavior<T>() where T : GameObjectBehavior
         {
-            return _components[typeof(T)];
+            return _behaviors[typeof(T)];
         }
 
         public void Update(GameTime gameTime)
         {
             this.ProcessManager.Update(gameTime);
-            foreach (var component in _components.Values)
+            foreach (var behavior in _behaviors.Values)
             {
-                component.Update(gameTime);
+                behavior.Update(gameTime);
             }
         }
 
