@@ -57,7 +57,8 @@ namespace Acorn.Hiromi
                 if (obj.Sprite != null)
                 {
                     Batch.Draw(obj.Sprite.Texture,
-                        new Vector2(obj.Position.X - obj.Sprite.Center.X, obj.Position.Y - obj.Sprite.Center.Y),
+                        new Vector2((obj.Position.X * GraphicsService.Instance.GraphicsDevice.Viewport.Width) - obj.Sprite.Center.X, 
+                            (obj.Position.Y * GraphicsService.Instance.GraphicsDevice.Viewport.Height) - obj.Sprite.Center.Y),
                         Color.White);
                 }
             }

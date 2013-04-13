@@ -13,15 +13,20 @@ namespace Acorn.Hiromi.Processing
     {
         protected override void OnUpdate(GameTime gameTime)
         {
+            var viewport = GraphicsService.Instance.GraphicsDevice.Viewport;
             foreach (var obj in GameObjectService.Instance.GetAllGameObjects())
             {
-                var boundingRect = new Rectangle() { X = (int)obj.Position.X, Y = (int)obj.Position.Y };
+                var boundingRect = new Rectangle() 
+                {
+                    X = (int)(obj.Position.X * viewport.Width),
+                    Y = (int)(obj.Position.Y * viewport.Height)
+                };
                 if (obj.Sprite != null)
                 {
                     boundingRect.Width = obj.Sprite.Texture.Width;
                     boundingRect.Height = obj.Sprite.Texture.Height;
                 }
-                if (!boundingRect.Intersects(GraphicsService.Instance.GraphicsDevice.Viewport.Bounds))
+                if (!boundingRect.Intersects(viewport.Bounds))
                 {
                     MessageService.Instance.QueueMessage(new OffScreenMessage(obj.Id));
                 }

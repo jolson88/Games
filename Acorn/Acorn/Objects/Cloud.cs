@@ -17,7 +17,7 @@ namespace Acorn.Objects
 
         public Cloud() : base()
         {
-            this.AddComponent(new MovementBehavior(new Vector2(-50, 0)));
+            this.AddComponent(new MovementBehavior(new Vector2(-0.03f, 0)));
 
             MessageService.Instance.AddListener<OffScreenMessage>(msg => { OnOffScreen((OffScreenMessage)msg); });
         }
@@ -27,7 +27,7 @@ namespace Acorn.Objects
         {
             if (_canBeReflected && msg.GameObjectId == this.Id)
             {
-                this.Position = new Vector2(GraphicsService.Instance.GraphicsDevice.Viewport.Width, this.Position.Y);
+                this.Position = new Vector2(1.0f, this.Position.Y);
                 _canBeReflected = false;
             }
 

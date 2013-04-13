@@ -29,7 +29,7 @@ namespace Acorn.Screens
             var cloud = new Cloud()
             {
                 Sprite = _resourceManager.GetCloud(),
-                Position = new Vector2(200, 10)
+                Position = new Vector2(0.1f, 0.001f)
             };
 
             GameObjectService objectService = GameObjectService.Instance;
