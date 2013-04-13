@@ -207,7 +207,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Hiromi.WindowsStore\Hiromi.WindowsStore.csproj">
+    <ProjectReference Include="..\..\Hiromi.WindowsStore\Hiromi.WindowsStore.csproj">
       <Project>{4dcb809e-533c-4268-9090-7e1030e2752e}</Project>
       <Name>Hiromi.WindowsStore</Name>
     </ProjectReference>
