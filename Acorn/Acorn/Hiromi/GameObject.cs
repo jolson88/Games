@@ -45,9 +45,9 @@ namespace Acorn.Hiromi
             _behaviors.Add(behavior.GetType(), behavior);
         }
 
-        public GameObjectBehavior GetBehavior<T>() where T : GameObjectBehavior
+        public T GetBehavior<T>() where T : GameObjectBehavior
         {
-            return _behaviors[typeof(T)];
+            return (T)_behaviors[typeof(T)];
         }
 
         public void Update(GameTime gameTime)
