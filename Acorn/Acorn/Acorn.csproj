@@ -138,6 +138,9 @@
     <Compile Include="AcornGame.cs" />
     <Compile Include="Hiromi\Background.cs" />
     <Compile Include="Hiromi\BehaviorComponent.cs" />
+    <Compile Include="Hiromi\ContentService.cs" />
+    <Compile Include="Hiromi\Messaging\KeyboardMessages.cs" />
+    <Compile Include="Hiromi\Messaging\MouseMessages.cs" />
     <Compile Include="Hiromi\Processing\BoundsCheckingProcess.cs" />
     <Compile Include="Hiromi\GameObject.cs" />
     <Compile Include="Hiromi\Processing\ActionProcess.cs" />
@@ -147,6 +150,7 @@
     <Compile Include="Hiromi\Messaging\Message.cs" />
     <Compile Include="Hiromi\Messaging\MessageService.cs" />
     <Compile Include="Hiromi\Messaging\OffScreenMessage.cs" />
+    <Compile Include="Hiromi\Processing\InputProcess.cs" />
     <Compile Include="Hiromi\Processing\Process.cs" />
     <Compile Include="Hiromi\Processing\ProcessManager.cs" />
     <Compile Include="Hiromi\Processing\ProcessState.cs" />
@@ -154,6 +158,7 @@
     <Compile Include="Hiromi\ScreenManager.cs" />
     <Compile Include="Hiromi\Sprite.cs" />
     <Compile Include="Objects\Cloud.cs" />
+    <Compile Include="Objects\StopButton.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Screens\PlayScreen.cs" />
   </ItemGroup>

@@ -12,13 +12,7 @@ namespace Acorn.Hiromi
 {
     public class ScreenManager
     {
-        private ContentManager _content;
         private Screen _currentScreen;
-
-        public void Initialize(ContentManager content)
-        {
-            _content = content;
-        }
 
         public void Update(GameTime gameTime)
         {
@@ -36,7 +30,7 @@ namespace Acorn.Hiromi
         public void LoadScreen(Screen screen)
         {
             _currentScreen = screen;
-            _currentScreen.Load(_content);
+            _currentScreen.Load();
         }
     }
 }

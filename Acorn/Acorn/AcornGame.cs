@@ -10,7 +10,6 @@ namespace Acorn
     /// </summary>
     public class AcornGame : Game
     {
-        AcornResourceManager _resourceManager;
         ScreenManager _screenManager;
         GraphicsDeviceManager _graphics;
 
@@ -40,10 +39,9 @@ namespace Acorn
         protected override void LoadContent()
         {
             GraphicsService.Instance.GraphicsDevice = this.GraphicsDevice;
+            ContentService.Instance.Content = this.Content;
 
-            _resourceManager = new AcornResourceManager(Content);
-            _screenManager.Initialize(Content);
-            _screenManager.LoadScreen(new PlayScreen(_resourceManager));
+            _screenManager.LoadScreen(new PlayScreen());
         }
 
         /// <summary>

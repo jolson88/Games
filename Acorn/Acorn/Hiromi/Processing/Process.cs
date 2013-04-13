@@ -9,38 +9,38 @@ namespace Acorn.Hiromi.Processing
 {
     public class Process
     {
-        private ProcessState _slate;
+        private ProcessState _state;
         private List<Process> _children;
 
-        public ProcessState State { get { return _slate; } }
+        public ProcessState State { get { return _state; } }
         public bool IsAlive
         {
             get
             {
-                return _slate == ProcessState.Running || _slate == ProcessState.Paused;
+                return _state == ProcessState.Running || _state == ProcessState.Paused;
             }
         }
         public bool IsDead
         {
             get
             {
-                return _slate == ProcessState.Succeeded || _slate == ProcessState.Failed || _slate == ProcessState.Aborted;
+                return _state == ProcessState.Succeeded || _state == ProcessState.Failed || _state == ProcessState.Aborted;
             }
         }
-        public bool IsRemoved { get { return _slate == ProcessState.Removed; } }
-        public bool IsPaused { get { return _slate == ProcessState.Paused; } }
+        public bool IsRemoved { get { return _state == ProcessState.Removed; } }
+        public bool IsPaused { get { return _state == ProcessState.Paused; } }
         public List<Process> Children { get { return _children; } }
 
         public Process()
         {
             _children = new List<Process>();
-            _slate = ProcessState.Uninitialized;
+            _state = ProcessState.Uninitialized;
         }
 
         public void Initialize()
         {
             OnInitialize();
-            _slate = ProcessState.Running;
+            _state = ProcessState.Running;
         }
 
         public void Update(GameTime gameTime)
@@ -50,22 +50,22 @@ namespace Acorn.Hiromi.Processing
 
         public void Succeed()
         {
-            _slate = ProcessState.Succeeded;
+            _state = ProcessState.Succeeded;
         }
 
         public void Fail()
         {
-            _slate = ProcessState.Failed;
+            _state = ProcessState.Failed;
         }
 
         public void Pause()
         {
-            _slate = ProcessState.Paused;
+            _state = ProcessState.Paused;
         }
 
         public void Resume()
         {
-            _slate = ProcessState.Running;
+            _state = ProcessState.Running;
         }
 
         public void AttachChild(Process child)

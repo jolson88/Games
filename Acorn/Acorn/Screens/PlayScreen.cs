@@ -12,28 +12,30 @@ namespace Acorn.Screens
 {
     public class PlayScreen : Screen
     {
-        private AcornResourceManager _resourceManager;
-
-        public PlayScreen(AcornResourceManager resourceManager)
-        {
-            _resourceManager = resourceManager;
-        }
-
         protected override Background InitializeBackground()
         {
-            return _resourceManager.GetBackground();
+            return AcornResourceManager.GetBackground();
         }
 
         protected override void OnLoad()
         {
             var cloud = new Cloud()
             {
-                Sprite = _resourceManager.GetCloud(),
+                Sprite = AcornResourceManager.GetCloudSprite(),
                 Position = new Vector2(0.1f, 0.001f)
+            };
+
+            var stopButton = new StopButton()
+            {
+                Sprite = AcornResourceManager.GetStopButtonSprite(),
+                Position = new Vector2(0.5f, 0.65f),
+                NormalSprite = AcornResourceManager.GetStopButtonSprite(),
+                HoverSprite = AcornResourceManager.GetStopButtonPressedSprite()
             };
 
             GameObjectService objectService = GameObjectService.Instance;
             objectService.AddGameObject(cloud);
+            objectService.AddGameObject(stopButton);
         }
     }
 }

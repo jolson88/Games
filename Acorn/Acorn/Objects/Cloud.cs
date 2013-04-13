@@ -15,7 +15,7 @@ namespace Acorn.Objects
     {
         private bool _canBeReflected = true;
 
-        public Cloud() : base()
+        protected override void OnInitialize()
         {
             this.AddComponent(new MovementBehavior(new Vector2(-0.03f, 0)));
 

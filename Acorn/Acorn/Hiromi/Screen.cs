@@ -12,18 +12,17 @@ namespace Acorn.Hiromi
 {
     public class Screen
     {
-        protected ContentManager Content { get; private set; }
         protected SpriteBatch Batch { get; private set; }
         protected ProcessManager ProcessManager { get; private set; }
 
         private Background _background;
 
-        public void Load(ContentManager content)
+        public void Load()
         {
-            this.Content = content;
             this.Batch = new SpriteBatch(GraphicsService.Instance.GraphicsDevice);
 
             this.ProcessManager = new ProcessManager();
+            this.ProcessManager.AttachProcess(new InputProcess());
             this.ProcessManager.AttachProcess(new BoundsCheckingProcess());
 
             _background = InitializeBackground();
