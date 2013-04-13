@@ -41,5 +41,10 @@ namespace Acorn.Hiromi
         {
             return _objects;
         }
+
+        public List<GameObject> GetAllGameObjectsWithTag(string tag)
+        {
+            return _objects.FindAll(obj => obj.Tag.ToUpper().Equals(tag.ToUpper()));
+        }
     }
 }

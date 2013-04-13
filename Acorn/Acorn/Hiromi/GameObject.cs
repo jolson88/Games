@@ -10,6 +10,7 @@ namespace Acorn.Hiromi
 {
     public class GameObject
     {
+        public string Tag { get; set; }
         public int Id { get; set; }
         public Sprite Sprite { get { return _sprite; } set { _sprite = value; CalculateBounds(); } }
 
@@ -31,6 +32,7 @@ namespace Acorn.Hiromi
         public GameObject()
         {
             _behaviors = new Dictionary<Type, GameObjectBehavior>();
+            this.Tag = string.Empty;
             this.Position = Vector2.Zero;
             this.ProcessManager = new ProcessManager();
             this.Bounds = new Rectangle(0, 0, 0, 0);
