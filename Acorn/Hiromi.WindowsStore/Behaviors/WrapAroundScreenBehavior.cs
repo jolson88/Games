@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Acorn.Hiromi;
-using Acorn.Hiromi.Messaging;
-using Acorn.Hiromi.Processing;
+using Hiromi;
+using Hiromi.Messaging;
+using Hiromi.Processing;
 using Microsoft.Xna.Framework;
 
-namespace Acorn.Hiromi.Behaviors
+namespace Hiromi.Behaviors
 {
     public class WrapAroundScreenBehavior : GameObjectBehavior
     {

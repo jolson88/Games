@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Acorn.Hiromi;
-using Acorn.Hiromi.Behaviors;
+using Hiromi;
+using Hiromi.Behaviors;
 using Acorn.Behaviors;
 
 namespace Acorn.Screens

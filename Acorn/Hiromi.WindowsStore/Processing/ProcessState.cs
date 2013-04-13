@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Acorn.Hiromi.Processing
+namespace Hiromi.Processing
 {
     public enum ProcessState
     {

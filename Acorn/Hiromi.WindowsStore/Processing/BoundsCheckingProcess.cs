@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Acorn.Hiromi.Messaging;
+using Hiromi.Messaging;
 
-namespace Acorn.Hiromi.Processing
+namespace Hiromi.Processing
 {
     public class BoundsCheckingProcess : Process
     {

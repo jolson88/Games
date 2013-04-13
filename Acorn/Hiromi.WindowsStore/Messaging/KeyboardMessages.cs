@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework.Input;
 
-namespace Acorn.Hiromi.Messaging
+namespace Hiromi.Messaging
 {
     public class KeyDownMessage : Message
     {

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
-using Acorn.Hiromi;
+using Hiromi;
 
-namespace Acorn.Hiromi.Behaviors
+namespace Hiromi.Behaviors
 {
     public class MovementBehavior : GameObjectBehavior
     {

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework.Content;
 
-namespace Acorn.Hiromi
+namespace Hiromi
 {
     public class ContentService
     {

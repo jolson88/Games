@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 
-namespace Acorn.Hiromi.Processing
+namespace Hiromi.Processing
 {
     public class DelayProcess : Process
     {

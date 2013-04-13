@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
-using Acorn.Hiromi.Processing;
+using Hiromi.Processing;
 
-namespace Acorn.Hiromi
+namespace Hiromi
 {
     public class GameObject
     {

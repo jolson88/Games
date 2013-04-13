@@ -1,6 +1,6 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Acorn.Hiromi;
+using Hiromi;
 using Acorn.Screens;
 
 namespace Acorn

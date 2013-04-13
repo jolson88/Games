@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Content;
-using Acorn.Hiromi.Messaging;
+using Hiromi.Messaging;
 
-namespace Acorn.Hiromi
+namespace Hiromi
 {
     public class ScreenManager
     {
