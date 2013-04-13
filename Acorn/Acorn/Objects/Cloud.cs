@@ -13,27 +13,10 @@ namespace Acorn.Objects
 {
     public class Cloud : GameObject
     {
-        private bool _canBeReflected = true;
-
         protected override void OnInitialize()
         {
             this.AddComponent(new MovementBehavior(new Vector2(-0.03f, 0)));
-
-            MessageService.Instance.AddListener<OffScreenMessage>(msg => { OnOffScreen((OffScreenMessage)msg); });
-        }
-
-        // TODO: Turn into a generic WrapScreenBehavior component
-        public void OnOffScreen(OffScreenMessage msg)
-        {
-            if (_canBeReflected && msg.GameObjectId == this.Id)
-            {
-                this.Position = new Vector2(1.0f, this.Position.Y);
-                _canBeReflected = false;
-            }
-
-            // Make sure we don't keep resetting ourselves by introducing a delay
-            this.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(1), 
-                new ActionProcess(() => { _canBeReflected = true; })));
+            this.AddComponent(new WrapAroundScreenBehavior());
         }
     }
 }

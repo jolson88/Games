@@ -22,15 +22,15 @@ namespace Acorn.Screens
             var cloud = new Cloud()
             {
                 Sprite = AcornResourceManager.GetCloudSprite(),
-                Position = new Vector2(0.1f, 0.001f)
+                Position = new Vector2(0.2f, 0.1f)
             };
 
             var stopButton = new StopButton()
             {
                 Sprite = AcornResourceManager.GetStopButtonSprite(),
                 Position = new Vector2(0.5f, 0.65f),
-                NormalSprite = AcornResourceManager.GetStopButtonSprite(),
-                HoverSprite = AcornResourceManager.GetStopButtonPressedSprite()
+                NonFocusSprite = AcornResourceManager.GetStopButtonSprite(),
+                FocusSprite = AcornResourceManager.GetStopButtonPressedSprite()
             };
 
             GameObjectService objectService = GameObjectService.Instance;

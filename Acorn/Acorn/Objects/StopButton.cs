@@ -5,38 +5,26 @@ using System.Text;
 using System.Threading.Tasks;
 using Acorn.Hiromi;
 using Acorn.Hiromi.Messaging;
+using Acorn.Behaviors;
 
 namespace Acorn.Objects
 {
     public class StopButton : GameObject
     {
-        public Sprite NormalSprite { get; set; }
-        public Sprite HoverSprite { get; set; }
+        public Sprite NonFocusSprite { set { _buttonBehavior.NonFocusSprite = value; } }
+        public Sprite FocusSprite { set { _buttonBehavior.FocusSprite = value; } }
+
+        private CommonButtonBehavior _buttonBehavior;
 
         protected override void OnInitialize()
         {
-            MessageService.Instance.AddListener<PointerEnterMessage>(msg => OnPointerEnter((PointerEnterMessage)msg));
-            MessageService.Instance.AddListener<PointerExitMessage>(msg => OnPointerExit((PointerExitMessage)msg));
-            MessageService.Instance.AddListener<PointerPressMessage>(msg => OnPointerPress((PointerPressMessage)msg));
+            _buttonBehavior = new CommonButtonBehavior();
+            this.AddComponent(_buttonBehavior);
+
+            MessageService.Instance.AddListener<ButtonPressMessage>(msg => OnButtonPress((ButtonPressMessage)msg));
         }
 
-        private void OnPointerEnter(PointerEnterMessage msg)
-        {
-            if (msg.GameObjectId == this.Id)
-            {
-                this.Sprite = this.HoverSprite;
-            }
-        }
-
-        private void OnPointerExit(PointerExitMessage msg)
-        {
-            if (msg.GameObjectId == this.Id)
-            {
-                this.Sprite = this.NormalSprite;
-            }
-        }
-
-        private void OnPointerPress(PointerPressMessage msg)
+        private void OnButtonPress(ButtonPressMessage msg)
         {
             if (msg.GameObjectId == this.Id)
             {

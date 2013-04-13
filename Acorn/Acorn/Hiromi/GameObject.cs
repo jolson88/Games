@@ -12,10 +12,17 @@ namespace Acorn.Hiromi
     {
         public int Id { get; set; }
         public Sprite Sprite { get { return _sprite; } set { _sprite = value; CalculateBounds(); } }
+
+        /// <summary>
+        /// The position of the GameObject in Screen Coordinates ((0,0) through (1,1))
+        /// </summary>
         public Vector2 Position { get { return _position; } set { _position = value; CalculateBounds(); } }
+
+        /// <summary>
+        /// The bounding box of the GameObject in Pixel Coordinates ((0,0) through (ViewportWidth,ViewportHeight))
+        /// </summary>
         public Rectangle Bounds { get; set; }
-        
-        protected ProcessManager ProcessManager { get; set; }
+        public ProcessManager ProcessManager { get; set; }
 
         private Sprite _sprite;
         private Vector2 _position;

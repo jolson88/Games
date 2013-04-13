@@ -131,7 +131,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Behaviors\CommonButtonBehavior.cs" />
     <Compile Include="Behaviors\MovementBehavior.cs" />
+    <Compile Include="Behaviors\WrapAroundScreenBehavior.cs" />
     <Compile Include="GamePage.xaml.cs">
       <DependentUpon>GamePage.xaml</DependentUpon>
     </Compile>
@@ -139,6 +141,7 @@
     <Compile Include="Hiromi\Background.cs" />
     <Compile Include="Hiromi\BehaviorComponent.cs" />
     <Compile Include="Hiromi\ContentService.cs" />
+    <Compile Include="Hiromi\Messaging\ButtonMessages.cs" />
     <Compile Include="Hiromi\Messaging\KeyboardMessages.cs" />
     <Compile Include="Hiromi\Messaging\MouseMessages.cs" />
     <Compile Include="Hiromi\Processing\BoundsCheckingProcess.cs" />

@@ -34,7 +34,9 @@ namespace Acorn
         {
             return RetrieveResource<Sprite>(Resources.CloudSprite, () =>
             {
-                return new Sprite(ContentService.Instance.Content.Load<Texture2D>(Resources.CloudSprite));
+                var cloud = new Sprite(ContentService.Instance.Content.Load<Texture2D>(Resources.CloudSprite));
+                cloud.Center = new Vector2(cloud.Texture.Width / 2, cloud.Texture.Height / 2);
+                return cloud;
             });
         }
 
