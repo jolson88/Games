@@ -20,6 +20,8 @@ namespace Acorn.Screens
 
         protected override void OnLoad()
         {
+            GameObjectService objectService = GameObjectService.Instance;
+
             var cloud = new GameObject()
             {
                 Sprite = AcornResourceManager.GetCloudSprite(),
@@ -27,7 +29,8 @@ namespace Acorn.Screens
             };
             cloud.AddBehavior(new MovementBehavior(new Vector2(-0.03f, 0)));
             cloud.AddBehavior(new WrapAroundScreenBehavior());
-
+            objectService.AddGameObject(cloud);
+            
             var stopButton = new GameObject()
             {
                 Sprite = AcornResourceManager.GetStopButtonSprite(),
@@ -35,10 +38,19 @@ namespace Acorn.Screens
             };
             stopButton.AddBehavior(new CommonButtonBehavior(AcornResourceManager.GetStopButtonSprite(), AcornResourceManager.GetStopButtonPressedSprite()));
             stopButton.AddBehavior(new StopButtonBehavior());
-
-            GameObjectService objectService = GameObjectService.Instance;
-            objectService.AddGameObject(cloud);
             objectService.AddGameObject(stopButton);
+
+            for (int i = 0; i < 4; i++)
+            {
+                var card = new GameObject()
+                {
+                    Sprite = AcornResourceManager.GetCardBackSprite(),
+                    Position = new Vector2(0.20f + (i * 0.165f), 0.25f)
+                };
+                card.AddBehavior(new CommonButtonBehavior());
+                card.AddBehavior(new CardBehavior(i));
+                objectService.AddGameObject(card);
+            }
         }
     }
 }

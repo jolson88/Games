@@ -13,6 +13,7 @@ namespace Acorn.Hiromi.Behaviors
         private Sprite _focusSprite;
         private Sprite _nonFocusSprite;
 
+        public CommonButtonBehavior() : this(null, null) { }
         public CommonButtonBehavior(Sprite nonFocusSprite, Sprite focusSprite)
         {
             _nonFocusSprite = nonFocusSprite;
@@ -27,7 +28,10 @@ namespace Acorn.Hiromi.Behaviors
         {
             if (msg.GameObjectId == this.GameObject.Id)
             {
-                this.GameObject.Sprite = _nonFocusSprite;
+                if (_nonFocusSprite != null)
+                {
+                    this.GameObject.Sprite = _nonFocusSprite;
+                }
             }
         }
 
@@ -35,8 +39,11 @@ namespace Acorn.Hiromi.Behaviors
         {
             if (msg.GameObjectId == this.GameObject.Id)
             {
-                this.GameObject.Sprite = _focusSprite;
                 MessageService.Instance.TriggerMessage(new ButtonPressMessage(this.GameObject.Id));
+                if (_focusSprite != null)
+                {
+                    this.GameObject.Sprite = _focusSprite;
+                }
             }
         }
 
@@ -44,7 +51,10 @@ namespace Acorn.Hiromi.Behaviors
         {
             if (msg.GameObjectId == this.GameObject.Id)
             {
-                this.GameObject.Sprite = _nonFocusSprite;
+                if (_nonFocusSprite != null)
+                {
+                    this.GameObject.Sprite = _nonFocusSprite;
+                }
             }
         }
     }

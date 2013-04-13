@@ -131,6 +131,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Behaviors\CardBehavior.cs" />
     <Compile Include="Behaviors\StopButtonBehavior.cs" />
     <Compile Include="Hiromi\Behaviors\CommonButtonBehavior.cs" />
     <Compile Include="Hiromi\Behaviors\MovementBehavior.cs" />

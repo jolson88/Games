@@ -16,6 +16,10 @@ namespace Acorn
         public static string CloudSprite = "Sprites\\Cloud";
         public static string StopButtonSprite = "Sprites\\StopButton";
         public static string StopButtonPressedSprite = "Sprites\\StopButtonPressed";
+        public static string CardBack = "Sprites\\CardBack";
+        public static string CardZero = "Sprites\\Card0";
+        public static string CardOne = "Sprites\\Card1";
+        public static string CardTwo = "Sprites\\Card2";
     }
 
     public static class AcornResourceManager
@@ -57,6 +61,14 @@ namespace Acorn
                 var stopButton = new Sprite(ContentService.Instance.Content.Load<Texture2D>(Resources.StopButtonPressedSprite));
                 stopButton.Center = new Vector2(stopButton.Texture.Width / 2, stopButton.Texture.Height / 2);
                 return stopButton;
+            });
+        }
+
+        public static Sprite GetCardBackSprite()
+        {
+            return RetrieveResource<Sprite>(Resources.CardBack, () =>
+            {
+                return new Sprite(ContentService.Instance.Content.Load<Texture2D>(Resources.CardBack));
             });
         }
 
