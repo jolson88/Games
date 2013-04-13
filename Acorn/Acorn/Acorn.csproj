@@ -132,7 +132,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Behaviors\CardBehavior.cs" />
-    <Compile Include="Behaviors\StopButtonBehavior.cs" />
+    <Compile Include="Behaviors\PlayerControllerBehavior.cs" />
     <Compile Include="Hiromi\Behaviors\CommonButtonBehavior.cs" />
     <Compile Include="Hiromi\Behaviors\MovementBehavior.cs" />
     <Compile Include="Hiromi\Behaviors\WrapAroundScreenBehavior.cs" />

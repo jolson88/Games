@@ -34,10 +34,10 @@ namespace Acorn.Screens
             var stopButton = new GameObject()
             {
                 Sprite = AcornResourceManager.GetStopButtonSprite(),
-                Position = new Vector2(0.5f, 0.65f)
+                Position = new Vector2(0.5f, 0.65f),
+                Tag = "StopButton"
             };
             stopButton.AddBehavior(new CommonButtonBehavior(AcornResourceManager.GetStopButtonSprite(), AcornResourceManager.GetStopButtonPressedSprite()));
-            stopButton.AddBehavior(new StopButtonBehavior());
             objectService.AddGameObject(stopButton);
 
             for (int i = 0; i < 4; i++)
@@ -45,12 +45,17 @@ namespace Acorn.Screens
                 var card = new GameObject()
                 {
                     Sprite = AcornResourceManager.GetCardBackSprite(),
-                    Position = new Vector2(0.20f + (i * 0.165f), 0.25f)
+                    Position = new Vector2(0.20f + (i * 0.165f), 0.25f),
+                    Tag = "Card"
                 };
                 card.AddBehavior(new CommonButtonBehavior());
                 card.AddBehavior(new CardBehavior(i));
                 objectService.AddGameObject(card);
             }
+
+            var playerController = new GameObject();
+            playerController.AddBehavior(new PlayerControllerBehavior(0));
+            objectService.AddGameObject(playerController);
         }
     }
 }

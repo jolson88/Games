@@ -40,7 +40,7 @@ namespace Acorn
 
                 if (args.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
-                    // TODO: Load state from previously suspended application
+                    // Load state from previously suspended application
                 }
 
                 // Place the GamePage in the current Window
@@ -62,7 +62,7 @@ namespace Acorn
         {
             var deferral = e.SuspendingOperation.GetDeferral();
 
-            // TODO: Save application state and stop any background activity
+            // Save application state and stop any background activity
 			
             deferral.Complete();
         }
