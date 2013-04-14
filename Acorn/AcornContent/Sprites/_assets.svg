@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="Assets.svg"
+   sodipodi:docname="_assets.svg"
    inkscape:export-filename="C:\Home\Dev\Github\Games\Project Acorn\Assets\Images\Background.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
@@ -771,15 +771,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.70710678"
-     inkscape:cx="157.06768"
-     inkscape:cy="243.5232"
+     inkscape:zoom="2"
+     inkscape:cx="208.74032"
+     inkscape:cy="822.61107"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="false"
      showborder="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1027"
+     inkscape:window-width="1536"
+     inkscape:window-height="814"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -795,7 +795,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1283,13 +1283,14 @@
       <path
          inkscape:connector-curvature="0"
          id="path3883"
-         d="m 595.89202,385.50232 c -41.19338,-5.24354 -91.90106,0.43514 -133.68082,35.13724 -0.70687,-1.80986 -1.75054,-2.64127 -3.38475,-2.12879 -3.30288,1.03577 -7.1077,6.79229 -9.93132,14.52542 -1.21763,1.26764 -2.40983,2.5327 -3.60625,3.85946 -0.61911,-4.03214 -1.76992,-6.27738 -4.21728,-5.5099 -4.66836,1.46397 -10.33043,12.35423 -12.82183,24.93259 -0.43231,-7.48041 -1.31403,-12.42834 -4.77122,-11.34419 -4.71019,1.47709 -10.44385,12.57984 -12.89986,25.30071 -7.41442,6.0616 -15.77115,31.45079 -10.32776,48.80889 0.0248,0.079 0.071,0.15372 0.0966,0.23269 -1.32215,4.16477 -2.59716,8.4386 -3.79702,12.84397 -51.24295,188.14137 -267.41129,146.10351 -225.95352,165.31165 34.66661,16.06168 155.72614,63.9097 232.43019,5.22201 20.71358,-1.3782 46.90779,-22.22631 47.93901,-30.38402 0.47835,-3.78409 -3.33398,-3.07074 -9.487,-1.19925 7.56839,-5.76256 12.89437,-11.80162 13.34735,-15.38505 0.51779,-4.09609 -3.9983,-2.88122 -11.0653,-0.67429 7.12559,-5.56617 12.07685,-11.31471 12.51313,-14.76604 0.35469,-2.80586 -1.65421,-3.10873 -5.21786,-2.32902 21.18106,-38.14512 42.98128,-67.01802 64.25012,-89.39808 14.89613,-1.45238 32.06968,-11.03713 34.9448,-15.30081 1.6945,-2.51288 -1.98691,-2.77825 -7.74802,-2.99534 8.18228,-2.66598 14.89964,-6.2152 16.76037,-8.49638 1.78332,-2.18629 -1.20858,-2.85042 -6.23173,-3.52814 9.08733,-2.70527 16.75323,-6.68976 18.76523,-9.15641 1.79351,-2.19877 -1.24871,-2.85809 -6.32474,-3.5399 65.50563,-44.95221 115.16219,-41.46035 107.40086,-88.13272 -0.13162,-8.42567 -33.1839,-26.33128 -76.98136,-31.9063 z"
-         style="fill:#552200;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1" />
+         d="M 595.89202,385.50232 C 506.3532,370.8178 413.47117,439.42589 400.25093,519.08375 c 0.0248,0.079 0.071,0.15372 0.0966,0.23269 -1.32215,4.16477 -2.59716,8.4386 -3.79702,12.84397 -51.24295,188.14137 -267.41129,146.10351 -225.95352,165.31165 72.39442,10.12885 135.50628,50.87712 180.81922,11.91798 113.19319,-97.32119 228.49125,-216.40569 321.45719,-291.98142 -0.13162,-8.42567 -33.1839,-26.33128 -76.98138,-31.9063 z"
+         style="fill:#552200;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1"
+         sodipodi:nodetypes="cccscscc" />
       <path
-         sodipodi:nodetypes="cccscscsccscscsccc"
+         sodipodi:nodetypes="cccscc"
          inkscape:connector-curvature="0"
          id="path3883-5"
-         d="m 628.77249,392.92694 c -225.35966,94.24106 -167.8084,383.24634 -458.1755,304.54512 34.66661,16.06168 155.72614,63.9097 232.43019,5.22201 20.71358,-1.3782 46.90779,-22.22631 47.93901,-30.38402 0.47835,-3.78409 -3.33398,-3.07074 -9.487,-1.19925 7.56839,-5.76256 12.89437,-11.80162 13.34735,-15.38505 0.51779,-4.09609 -3.9983,-2.88122 -11.0653,-0.67429 7.12559,-5.56617 12.07685,-11.31471 12.51313,-14.76604 0.35469,-2.80586 -1.65421,-3.10873 -5.21786,-2.32902 21.18106,-38.14512 42.98128,-67.01802 64.25012,-89.39808 14.89613,-1.45238 32.06968,-11.03713 34.9448,-15.30081 1.6945,-2.51288 -1.98691,-2.77825 -7.74802,-2.99534 8.18228,-2.66598 14.89964,-6.2152 16.76037,-8.49638 1.78332,-2.18629 -1.20858,-2.85042 -6.23173,-3.52814 9.08733,-2.70527 16.75323,-6.68976 18.76523,-9.15641 1.79351,-2.19877 -1.24871,-2.85809 -6.32474,-3.5399 65.50563,-44.95221 115.16219,-41.46035 107.40086,-88.13272 -0.44173,-6.96981 -17.59138,-17.15428 -44.10091,-24.48168 z"
+         d="m 628.77249,392.92694 c -225.35966,94.24106 -167.8084,383.24634 -458.1755,304.54512 34.66661,16.06168 162.69292,64.44561 239.39697,5.75792 83.83414,-61.43106 131.68633,-153.31925 183.8816,-203.58361 33.43625,-32.19929 96.40548,-46.2835 78.99784,-82.23775 -0.44173,-6.96981 -17.59138,-17.15428 -44.10091,-24.48168 z"
          style="fill:#72472b;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1" />
       <path
          sodipodi:nodetypes="cscsc"
@@ -1342,9 +1343,19 @@
        inkscape:export-ydpi="70" />
     <path
        style="fill:#552200;fill-opacity:1;stroke:#000000;stroke-width:0.54665452;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 1728.8609,469.82943 c -2.3514,0.01 -5.9216,2.1716 -6.3856,8.0837 -0.037,0.4681 -0.014,0.8753 0.058,1.2333 -2.0192,0.7323 -3.9571,1.6595 -5.7979,2.7641 -1.4721,-1.4191 -3.3389,-2.665 -5.4666,-4.1614 -3.4197,-2.4053 -15.9623,-4.1816 -18.1079,-1.3086 -1.7737,2.9939 2.2456,-0.4717 9.2521,9.9457 1.3874,2.0628 1.649,5.1147 1.8245,8.0837 -3.8214,6.2626 -6.0542,13.8157 -6.0542,21.9481 0,7.6717 1.9891,14.8279 5.4221,20.872 -0.01,0.01 -0.011,0.014 -0.017,0.021 -2.5386,0.2841 -3.9632,2.3311 -3.9632,3.4952 0,0.7735 0.5901,0.2886 1.7253,-0.1948 -1.0166,0.7688 -1.5613,1.8254 -1.5613,2.5454 0,0.7454 0.5502,0.3241 1.6058,-0.1401 0,0.09 -0.01,0.1795 -0.01,0.2699 -0.6619,1.0634 -0.9977,2.2282 -0.9977,2.8221 0,0.668 0.3955,-0.037 1.2026,-0.8405 0.9763,4.2907 5.2503,6.9077 10.1747,7.9265 8.5986,1.779 16.5365,3.6103 23.6359,3.092 11.1749,-0.8157 15.1052,-1.1635 24.4047,-4.1956 5.1942,-1.6935 10.1356,-5.4014 10.2703,-10.7109 1.2656,0.4043 1.1787,1.9897 1.1787,1.0728 0,-0.5872 -0.036,-2.0253 -0.8849,-3.1809 1.0451,0.4017 1.312,1.2575 1.312,0.4339 0,-0.6449 -1.0754,-1.9628 -2.4736,-2.9792 1.7473,0.1058 2.1457,1.6249 2.1457,0.615 0,-1.0461 -2.8234,-3.8661 -5.2753,-4.2913 -0.2029,-0.035 -0.3648,-0.061 -0.5125,-0.085 2.113,-5.0276 3.297,-10.6335 3.297,-16.5466 0,-6.2528 -1.3223,-12.1626 -3.6694,-17.4075 0.7548,-3.968 0.052,-9.9116 2.2994,-13.253 7.0065,-10.4174 11.0258,-6.9517 9.2521,-9.9456 -2.1456,-2.873 -14.6881,-1.0968 -18.108,1.3085 -2.8695,2.0182 -5.2659,3.583 -6.857,5.7296 -3.8076,-2.5539 -8.0827,-4.3372 -12.6517,-5.1453 1.8152,-1.6361 5.5231,-2.2205 4.9815,-2.6889 -1.4711,-0.7658 -7.6057,-0.6078 -10.9503,1.452 1.2573,-2.5437 5.085,-3.3573 4.5851,-3.9974 -1.4072,-1.0845 -7.9126,-0.6723 -10.2054,3.0408 1.131,-3.0121 3.5339,-4.074 3.1878,-4.9233 -0.3268,-0.4826 -1.0184,-0.7622 -1.8689,-0.7585 z"
+       d="m 1716.7354,481.91053 c -1.4721,-1.4191 -3.3389,-2.665 -5.4666,-4.1614 -3.4197,-2.4053 -15.9623,-4.1816 -18.1079,-1.3086 -1.7737,2.9939 2.2456,-0.4717 9.2521,9.9457 1.3874,2.0628 1.649,5.1147 1.8245,8.0837 -3.8214,6.2626 -6.0542,13.8157 -6.0542,21.9481 0,7.6717 1.9891,14.8279 5.4221,20.872 -0.01,0.01 -0.011,0.014 -0.017,0.021 -2.5386,0.2841 -3.9632,2.3311 -3.9632,3.4952 0,0.7735 0.5901,0.2886 1.7253,-0.1948 -1.0166,0.7688 -1.5613,1.8254 -1.5613,2.5454 0,0.7454 0.5502,0.3241 1.6058,-0.1401 0,0.09 -0.01,0.1795 -0.01,0.2699 -0.6619,1.0634 -0.9977,2.2282 -0.9977,2.8221 0,0.668 0.3955,-0.037 1.2026,-0.8405 0.9763,4.2907 5.2503,6.9077 10.1747,7.9265 8.5986,1.779 16.5365,3.6103 23.6359,3.092 11.1749,-0.8157 15.1052,-1.1635 24.4047,-4.1956 5.1942,-1.6935 10.1356,-5.4014 10.2703,-10.7109 1.2656,0.4043 1.1787,1.9897 1.1787,1.0728 0,-0.5872 -0.036,-2.0253 -0.8849,-3.1809 1.0451,0.4017 1.312,1.2575 1.312,0.4339 0,-0.6449 -1.0754,-1.9628 -2.4736,-2.9792 1.7473,0.1058 2.1457,1.6249 2.1457,0.615 0,-1.0461 -2.8234,-3.8661 -5.2753,-4.2913 -0.2029,-0.035 -0.3648,-0.061 -0.5125,-0.085 2.113,-5.0276 3.297,-10.6335 3.297,-16.5466 0,-6.2528 -1.3223,-12.1626 -3.6694,-17.4075 0.7548,-3.968 0.052,-9.9116 2.2994,-13.253 7.0065,-10.4174 11.0258,-6.9517 9.2521,-9.9456 -2.1456,-2.873 -14.6881,-1.0968 -18.108,1.3085 -2.8695,2.0182 -5.2659,3.583 -6.857,5.7296 -6.6279,-6.41908 -23.3003,-7.9302 -35.0443,-0.9404 z"
        id="path3901"
        inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
+       inkscape:export-xdpi="70"
+       inkscape:export-ydpi="70"
+       sodipodi:nodetypes="cccscsccscsccscscccscscsccscscscc" />
+    <path
+       style="fill:#d38d5f;fill-opacity:1;stroke:#000000;stroke-width:0.32799271;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+       d="m 1755.2237,485.92013 c 1.1712,0.9636 4.0581,3.9068 5.0515,5.0388 1.1858,1.3513 2.0158,2.5108 3.3825,4.6525 -0.01,-1.6946 -0.1988,-7.6917 2.9215,-11.8763 3.9114,-5.2455 7.9792,-6.3577 5.6509,-7.4368 -2.9489,-1.3666 -17.0064,3.4628 -17.0064,9.6218 z"
+       id="path4307-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cscssc"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
        inkscape:export-xdpi="70"
        inkscape:export-ydpi="70" />
@@ -1356,9 +1367,42 @@
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
        inkscape:export-xdpi="70"
        inkscape:export-ydpi="70" />
+    <path
+       style="fill:#ffccaa;fill-opacity:1;stroke:#000000;stroke-width:0.32799271;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+       d="m 1764.8597,482.75733 c -2.3627,2.1438 -2.5139,6.205 -3.6688,9.169 -1.0585,-1.2884 -2.202,-2.5064 -3.4132,-3.6523 1.1879,-3.1807 2.0333,-3.9272 3.9974,-5.2657 0.8556,-0.5831 3.4507,-1.6576 4.4698,-1.8407 -0.075,0.066 -1.31,1.5237 -1.3852,1.5897 z"
+       id="path4307-4-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccscc"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
+       inkscape:export-xdpi="70"
+       inkscape:export-ydpi="70" />
+    <path
+       style="fill:#d38d5f;fill-opacity:1;stroke:#000000;stroke-width:0.32799271;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+       d="m 1712.1436,484.19823 c -1.1712,0.9635 -2.5121,2.3606 -3.5054,3.4926 -1.1857,1.3513 -2.0158,2.5108 -3.3825,4.6525 0,-1.6946 -0.6516,-5.2178 -3.7719,-9.4024 -3.9114,-5.2456 -9.2162,-5.0435 -6.8879,-6.1226 2.9489,-1.3666 17.5477,1.221 17.5477,7.3799 z"
+       id="path4307"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cscssc"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
+       inkscape:export-xdpi="70"
+       inkscape:export-ydpi="70" />
+    <path
+       style="fill:#ffccaa;fill-opacity:1;stroke:#000000;stroke-width:0.32799271;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+       d="m 1702.4302,480.80343 c 2.3637,2.145 4.1356,4.8881 5.2923,7.8548 1.0589,-1.2888 2.2026,-2.5069 3.4132,-3.6523 -1.0849,-2.0275 -3.4627,-2.6846 -5.4358,-3.4918 -1.1399,-0.3963 -2.3093,-0.6957 -3.4952,-0.9088 0.075,0.066 0.1503,0.1321 0.2255,0.1981 z"
+       id="path4307-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
+       inkscape:export-xdpi="70"
+       inkscape:export-ydpi="70" />
+    <path
+       transform="translate(1661.6875,1274.4063)"
+       style="fill:#b41111;stroke:#000000;stroke-width:0.69999999000000002;stroke-miterlimit:4;stroke-opacity:1;fill-opacity:1"
+       d="m 107.7867,-758.85477 c -0.0724,6.61019 -1.11436,12.90365 -3.28995,17.12216 -2.42784,-2.55742 -11.675873,-7.89304 -17.272471,3.22485 -4.462914,0.94133 -9.099438,-0.0321 -12.812772,-0.0321 -3.380848,0 -8.110428,2.1741 -12.699825,1.77054 -7.826019,-10.89947 -16.861884,-3.87598 -20.260462,-0.7909 -4.069468,-5.68422 -5.608906,-13.07384 -5.395086,-20.50127 1.664164,-4.66971 67.329666,-4.72658 71.730566,-0.79328 z"
+       id="path3232"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccscccc" />
     <g
        id="g3933"
-       transform="matrix(0.1093309,0,0,0.1093309,1760.0305,491.59313)"
+       transform="matrix(0.1093309,0,0,0.1093309,1759.6769,490.53247)"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
        inkscape:export-xdpi="70"
        inkscape:export-ydpi="70">
@@ -1395,7 +1439,7 @@
          sodipodi:type="arc" />
     </g>
     <g
-       transform="matrix(0.1093309,0,0,0.1093309,1773.814,491.35883)"
+       transform="matrix(0.1093309,0,0,0.1093309,1773.4604,490.29817)"
        id="g3933-4"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
        inkscape:export-xdpi="70"
@@ -1434,7 +1478,7 @@
     </g>
     <path
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.43054295;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
-       d="m 1739.9873,538.80513 c -0.82,1.2603 -1.9616,2.1353 -4.361,2.7405 -1.8918,-0.3319 -3.2482,-1.3241 -4.4391,-2.5648 -0.9809,-1.022 2.4106,-1.862 4.5172,-1.862 2.1066,0 5.0554,0.4989 4.2829,1.6863 z"
+       d="m 1739.9873,539.33546 c -0.82,1.2603 -1.9616,2.1353 -4.361,2.7405 -1.8918,-0.3319 -3.2482,-1.3241 -4.4391,-2.5648 -0.9809,-1.022 2.4106,-1.862 4.5172,-1.862 2.1066,0 5.0554,0.4989 4.2829,1.6863 z"
        id="path3969"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="scsss"
@@ -1474,41 +1518,6 @@
        id="path3980"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
-       inkscape:export-xdpi="70"
-       inkscape:export-ydpi="70" />
-    <path
-       style="fill:#d38d5f;fill-opacity:1;stroke:#000000;stroke-width:0.32799271;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
-       d="m 1712.1436,484.19823 c -1.1712,0.9635 -2.5121,2.3606 -3.5054,3.4926 -1.1857,1.3513 -2.0158,2.5108 -3.3825,4.6525 0,-1.6946 -0.6516,-5.2178 -3.7719,-9.4024 -3.9114,-5.2456 -9.2162,-5.0435 -6.8879,-6.1226 2.9489,-1.3666 17.5477,1.221 17.5477,7.3799 z"
-       id="path4307"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cscssc"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
-       inkscape:export-xdpi="70"
-       inkscape:export-ydpi="70" />
-    <path
-       style="fill:#ffccaa;fill-opacity:1;stroke:#000000;stroke-width:0.32799271;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
-       d="m 1702.4302,480.80343 c 2.3637,2.145 4.1356,4.8881 5.2923,7.8548 1.0589,-1.2888 2.2026,-2.5069 3.4132,-3.6523 -1.0849,-2.0275 -3.4627,-2.6846 -5.4358,-3.4918 -1.1399,-0.3963 -2.3093,-0.6957 -3.4952,-0.9088 0.075,0.066 0.1503,0.1321 0.2255,0.1981 z"
-       id="path4307-4"
-       inkscape:connector-curvature="0"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
-       inkscape:export-xdpi="70"
-       inkscape:export-ydpi="70" />
-    <path
-       style="fill:#d38d5f;fill-opacity:1;stroke:#000000;stroke-width:0.32799271;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
-       d="m 1755.2237,485.92013 c 1.1712,0.9636 4.0581,3.9068 5.0515,5.0388 1.1858,1.3513 2.0158,2.5108 3.3825,4.6525 -0.01,-1.6946 -0.1988,-7.6917 2.9215,-11.8763 3.9114,-5.2455 7.9792,-6.3577 5.6509,-7.4368 -2.9489,-1.3666 -17.0064,3.4628 -17.0064,9.6218 z"
-       id="path4307-5"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cscssc"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
-       inkscape:export-xdpi="70"
-       inkscape:export-ydpi="70" />
-    <path
-       style="fill:#ffccaa;fill-opacity:1;stroke:#000000;stroke-width:0.32799271;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
-       d="m 1764.8597,482.75733 c -2.3627,2.1438 -2.5139,6.205 -3.6688,9.169 -1.0585,-1.2884 -2.202,-2.5064 -3.4132,-3.6523 1.1879,-3.1807 2.0333,-3.9272 3.9974,-5.2657 0.8556,-0.5831 3.4507,-1.6576 4.4698,-1.8407 -0.075,0.066 -1.31,1.5237 -1.3852,1.5897 z"
-       id="path4307-4-8"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccscc"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
        inkscape:export-xdpi="70"
        inkscape:export-ydpi="70" />
@@ -1689,5 +1698,306 @@
          d="m 1711.9764,1156.6057 -18.584,18.8836 0.044,20.9929 c 25.0709,-41.5867 47.4798,3.1368 60.2077,-21.0811 l -19.1594,-18.7898 z"
          style="fill:#ffffff;fill-opacity:0.11640212;stroke:none;display:inline" />
     </g>
+    <g
+       style="display:inline"
+       id="g4038-1"
+       transform="matrix(0.16493252,0,0,0.16493252,1908.1908,447.81511)"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
+       inkscape:export-xdpi="70"
+       inkscape:export-ydpi="70">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3883-7"
+         d="M 595.89202,385.50232 C 506.3532,370.8178 413.47117,439.42589 400.25093,519.08375 c 0.0248,0.079 0.071,0.15372 0.0966,0.23269 -1.32215,4.16477 -2.59716,8.4386 -3.79702,12.84397 -51.24295,188.14137 -267.41129,146.10351 -225.95352,165.31165 72.39442,10.12885 135.50628,50.87712 180.81922,11.91798 113.19319,-97.32119 228.49125,-216.40569 321.45719,-291.98142 -0.13162,-8.42567 -33.1839,-26.33128 -76.98138,-31.9063 z"
+         style="fill:#552200;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1"
+         sodipodi:nodetypes="cccscscc" />
+      <path
+         sodipodi:nodetypes="cccscc"
+         inkscape:connector-curvature="0"
+         id="path3883-5-4"
+         d="m 628.77249,392.92694 c -225.35966,94.24106 -167.8084,383.24634 -458.1755,304.54512 34.66661,16.06168 162.69292,64.44561 239.39697,5.75792 83.83414,-61.43106 131.68633,-153.31925 183.8816,-203.58361 33.43625,-32.19929 96.40548,-46.2835 78.99784,-82.23775 -0.44173,-6.96981 -17.59138,-17.15428 -44.10091,-24.48168 z"
+         style="fill:#72472b;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cscsc"
+         inkscape:connector-curvature="0"
+         id="path4408-1-0"
+         d="m 603.88271,394.14085 c 0,5.43631 -43.58993,10.86094 -76.20777,10.86094 -32.61784,0 -51.56934,18.88139 -51.56934,13.44508 0,-5.4363 48.88688,-29.71522 78.28485,-30.52485 40.06964,-1.10355 49.49226,0.78253 49.49226,6.21883 z"
+         style="fill:#ffffff;fill-opacity:0.3174603;stroke:none" />
+    </g>
+    <path
+       style="fill:#72472b;fill-opacity:1;stroke:#000000;stroke-width:0.61820948;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 1940.455,549.77531 c -5.052,10e-5 -9.1694,5.0759 -8.6348,9.988 0.2376,4.3439 3.8554,8.5728 8.3796,8.6757 4.3001,0.1913 8.3396,-3.2807 8.9205,-7.5211 0.8348,-4.3147 -1.5313,-9.2587 -5.8426,-10.6754 -0.9047,-0.3261 -1.8544,-0.4952 -2.8227,-0.4672 z"
+       id="path3016-0-9"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
+       inkscape:export-xdpi="70"
+       inkscape:export-ydpi="70" />
+    <path
+       style="fill:#552200;fill-opacity:1;stroke:none;display:inline"
+       d="m 1932.0365,553.32391 c -0.818,0.8883 -1.2507,2.2007 -1.7008,3.3398 -0.5328,1.2929 -0.3081,2.8297 0.701,3.8244 1.6663,1.8306 4.2226,2.9357 6.7106,2.7626 0.9236,-0.022 2.0439,-0.8438 1.5824,-1.8606 -0.5056,-1.4355 -1.9342,-2.35 -3.4379,-2.3916 -1.2339,-0.2445 -3.0864,-0.1845 -3.5718,-1.6235 0.1124,-1.2739 0.7337,-2.4139 1.1443,-3.6182 -0.3255,-0.3945 -0.9624,-0.3972 -1.4278,-0.4329 z"
+       id="path3832-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
+       inkscape:export-xdpi="70"
+       inkscape:export-ydpi="70" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.57726383;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 1931.9364,553.17551 c 0,0 -0.053,0.081 -0.1409,0.2264 -0.5227,0.8593 -2.2912,3.9531 -1.7251,5.6048 0.8251,2.4073 3.782,3.9321 6.2977,4.3152 1.0455,0.1591 2.5799,0.023 3.0323,-0.9331 0.3952,-0.8352 -0.3915,-1.9171 -1.0496,-2.5657 -1.5168,-1.4948 -5.0368,-0.4076 -5.9479,-2.3325 -0.182,-0.8021 1.2829,-3.9652 1.2829,-3.9652 z"
+       id="path3826-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssssscc"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
+       inkscape:export-xdpi="70"
+       inkscape:export-ydpi="70" />
+    <path
+       style="fill:#552200;fill-opacity:1;stroke:none;display:inline"
+       d="m 1949.4678,553.15891 c -0.5093,0.1019 -1.568,0.1355 -1.0875,0.8607 0.3619,1.109 1.0789,2.2258 0.9381,3.4018 -0.8875,1.4806 -2.9167,1.168 -4.3604,1.5617 -1.3799,0.2469 -2.6886,1.532 -2.6699,2.9688 0.4147,1.2662 2.0727,1.2652 3.1647,1.1133 2.4867,-0.4592 5.2002,-1.7872 6.1076,-4.3089 0.3512,-2.0268 -0.8888,-3.9119 -1.8039,-5.6026 -0.094,0.015 -0.1942,-0.012 -0.2887,0.01 z"
+       id="path3832-7-8"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
+       inkscape:export-xdpi="70"
+       inkscape:export-ydpi="70" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.52778411;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 1949.7592,553.01831 c 0,0 0.053,0.081 0.141,0.2265 0.5226,0.8592 2.2912,3.953 1.725,5.6048 -0.825,2.4073 -3.782,3.932 -6.2977,4.3151 -1.0455,0.1592 -2.5799,0.023 -3.0323,-0.933 -0.3952,-0.8353 0.3915,-1.9171 1.0497,-2.5657 1.5168,-1.4949 5.0367,-0.4076 5.9478,-2.3326 0.182,-0.802 -1.2829,-3.9652 -1.2829,-3.9652 z"
+       id="path3826-4-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssssscc"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
+       inkscape:export-xdpi="70"
+       inkscape:export-ydpi="70" />
+    <path
+       style="fill:#552200;fill-opacity:1;stroke:#000000;stroke-width:0.54665452;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 1922.7316,480.08091 c -1.4721,-1.4191 -3.3389,-2.665 -5.4666,-4.1614 -3.4197,-2.4053 -15.9623,-4.1816 -18.1079,-1.3086 -1.7737,2.9939 2.2456,-0.4717 9.2521,9.9457 1.3874,2.0628 1.649,5.1147 1.8245,8.0837 -3.8214,6.2626 -6.0542,13.8157 -6.0542,21.9481 0,7.6717 1.9891,14.8279 5.4221,20.872 -0.01,0.01 -0.011,0.014 -0.017,0.021 -2.5386,0.2841 -3.9632,2.3311 -3.9632,3.4952 0,0.7735 0.5901,0.2886 1.7253,-0.1948 -1.0166,0.7688 -1.5613,1.8254 -1.5613,2.5454 0,0.7454 0.5502,0.3241 1.6058,-0.1401 0,0.09 -0.01,0.1795 -0.01,0.2699 -0.6619,1.0634 -0.9977,2.2282 -0.9977,2.8221 0,0.668 0.3955,-0.037 1.2026,-0.8405 0.9763,4.2907 5.2503,6.9077 10.1747,7.9265 8.5986,1.779 16.5365,3.6103 23.6359,3.092 11.1749,-0.8157 15.1052,-1.1635 24.4047,-4.1956 5.1942,-1.6935 10.1356,-5.4014 10.2703,-10.7109 1.2656,0.4043 1.1787,1.9897 1.1787,1.0728 0,-0.5872 -0.036,-2.0253 -0.8849,-3.1809 1.0451,0.4017 1.312,1.2575 1.312,0.4339 0,-0.6449 -1.0754,-1.9628 -2.4736,-2.9792 1.7473,0.1058 2.1457,1.6249 2.1457,0.615 0,-1.0461 -2.8234,-3.8661 -5.2753,-4.2913 -0.2029,-0.035 -0.3648,-0.061 -0.5125,-0.085 2.113,-5.0276 3.297,-10.6335 3.297,-16.5466 0,-6.2528 -1.3223,-12.1626 -3.6694,-17.4075 0.7548,-3.968 0.052,-9.9116 2.2994,-13.253 7.0065,-10.4174 11.0258,-6.9517 9.2521,-9.9456 -2.1456,-2.873 -14.6881,-1.0968 -18.108,1.3085 -2.8695,2.0182 -5.2659,3.583 -6.857,5.7296 -6.6279,-6.4191 -23.3003,-7.9302 -35.0443,-0.9404 z"
+       id="path3901-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
+       inkscape:export-xdpi="70"
+       inkscape:export-ydpi="70"
+       sodipodi:nodetypes="cccscsccscsccscscccscscsccscscscc" />
+    <path
+       style="fill:#d38d5f;fill-opacity:1;stroke:#000000;stroke-width:0.32799271;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;display:inline"
+       d="m 1961.2199,484.09051 c 1.1712,0.9636 4.0581,3.9068 5.0515,5.0388 1.1858,1.3513 2.0158,2.5108 3.3825,4.6525 -0.01,-1.6946 -0.1988,-7.6917 2.9215,-11.8763 3.9114,-5.2455 7.9792,-6.3577 5.6509,-7.4368 -2.9489,-1.3666 -17.0064,3.4628 -17.0064,9.6218 z"
+       id="path4307-5-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cscssc"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
+       inkscape:export-xdpi="70"
+       inkscape:export-ydpi="70" />
+    <path
+       style="fill:#ffffff;fill-opacity:0.16931218;stroke:none;display:inline"
+       d="m 1949.3845,497.97691 c -3.7823,-0.031 -7.5197,2.3351 -8.6132,6.0406 -4.4997,-6.9595 -16.4171,-8.1515 -21.2512,-0.96 -0.8408,1.25 -1.6063,2.5702 -2.2789,3.9392 -1.5005,0.7186 -2.4429,2.1874 -2.4429,2.5386 0,0.3307 0.1864,-0.1483 1.1514,-0.4613 -0.5969,0.613 -0.9396,1.2273 -0.9396,1.4384 0,0.2975 0.1503,-0.059 0.8815,-0.3622 -0.4773,1.3066 -0.8645,2.6447 -1.1547,4.0009 -0.7695,0.8067 -1.0933,1.8104 -1.0933,2.0739 0,0.3247 0.01,-0.2376 0.8199,-0.615 -0.4008,2.5221 -0.448,5.09 -0.058,7.6224 0.5072,2.9011 2.1896,5.7371 4.937,7.004 -3.5833,0.5303 -6.9076,2.4174 -9.5289,4.8687 -1.1018,1.1538 -0.4667,0.4875 -1.0352,1.0352 -1.7622,0.1416 -4.2174,3.9438 -1.1001,2.1866 1.4853,-0.289 -3.5971,4.0513 -0.3485,2.4395 1.5826,-0.091 -1.7935,4.0695 0.4885,2.0226 0.8046,5.1859 6.2896,7.6339 10.9195,8.4355 8.5514,1.7386 17.2697,3.7791 26.048,2.6137 8.3929,-0.6084 16.982,-1.8462 24.6063,-5.5861 3.3645,-1.7949 6.3689,-5.1694 6.1807,-9.194 3.1467,1.4261 -2.4223,-3.8851 0.8882,-1.9646 1.3415,-0.1334 -4.984,-3.4064 -1.3085,-2.5761 3.0775,0.9348 -2.1614,-3.2894 -3.9256,-2.8938 0.1403,-3.2234 -5.2402,-3.2463 -6.5531,-3.8882 3.089,-3.8113 2.8094,-9.4929 1.9714,-14.0046 -0.1471,-0.6273 -0.3108,-1.2597 -0.492,-1.8928 0.2306,0.1113 0.4435,0.2064 0.6458,0.2529 0,-0.3483 -0.3149,-0.9121 -0.803,-1.4794 0.4729,0.1991 0.7654,0.3031 0.7654,-0.068 0,-0.3938 -0.3074,-0.9718 -0.7961,-1.5067 0.5353,0.2264 0.8746,0.3776 0.8746,-0.021 0,-0.8271 -1.3458,-2.4669 -2.9143,-2.8152 -1.3568,-2.5285 -3.186,-4.755 -5.6784,-6.2455 -2.6435,-1.2434 -5.5692,-1.9628 -8.497,-1.968 -0.1221,-0.01 -0.2436,-0.01 -0.3656,-0.01 z"
+       id="path4009-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
+       inkscape:export-xdpi="70"
+       inkscape:export-ydpi="70" />
+    <path
+       style="fill:#ffccaa;fill-opacity:1;stroke:#000000;stroke-width:0.32799271;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;display:inline"
+       d="m 1970.8559,480.92771 c -2.3627,2.1438 -2.5139,6.205 -3.6688,9.169 -1.0585,-1.2884 -2.202,-2.5064 -3.4132,-3.6523 1.1879,-3.1807 2.0333,-3.9272 3.9974,-5.2657 0.8556,-0.5831 3.4507,-1.6576 4.4698,-1.8407 -0.075,0.066 -1.31,1.5237 -1.3852,1.5897 z"
+       id="path4307-4-8-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccscc"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
+       inkscape:export-xdpi="70"
+       inkscape:export-ydpi="70" />
+    <path
+       style="fill:#d38d5f;fill-opacity:1;stroke:#000000;stroke-width:0.32799271;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;display:inline"
+       d="m 1918.1398,482.36861 c -1.1712,0.9635 -2.5121,2.3606 -3.5054,3.4926 -1.1857,1.3513 -2.0158,2.5108 -3.3825,4.6525 0,-1.6946 -0.6516,-5.2178 -3.7719,-9.4024 -3.9114,-5.2456 -9.2162,-5.0435 -6.8879,-6.1226 2.9489,-1.3666 17.5477,1.221 17.5477,7.3799 z"
+       id="path4307-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cscssc"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
+       inkscape:export-xdpi="70"
+       inkscape:export-ydpi="70" />
+    <path
+       style="fill:#ffccaa;fill-opacity:1;stroke:#000000;stroke-width:0.32799271;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;display:inline"
+       d="m 1908.4264,478.97381 c 2.3637,2.145 4.1356,4.8881 5.2923,7.8548 1.0589,-1.2888 2.2026,-2.5069 3.4132,-3.6523 -1.0849,-2.0275 -3.4627,-2.6846 -5.4358,-3.4918 -1.1399,-0.3963 -2.3093,-0.6957 -3.4952,-0.9088 0.075,0.066 0.1503,0.1321 0.2255,0.1981 z"
+       id="path4307-4-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
+       inkscape:export-xdpi="70"
+       inkscape:export-ydpi="70" />
+    <path
+       style="fill:#4c98d7;fill-opacity:1;stroke:#000000;stroke-width:0.69999999000000002;stroke-miterlimit:4;stroke-opacity:1;display:inline"
+       d="m 1975.4704,513.72191 c -0.072,6.6102 -1.1144,12.9037 -3.2899,17.1222 -2.4279,-2.5574 -11.6759,-7.893 -17.2725,3.2248 -4.4629,0.9414 -9.0995,-0.032 -12.8128,-0.032 -3.3808,0 -8.1104,2.1741 -12.6998,1.7706 -7.826,-10.8995 -16.8619,-3.876 -20.2605,-0.7909 -4.0694,-5.6842 -5.6089,-13.0739 -5.3951,-20.5013 1.6642,-4.6697 67.3297,-4.7266 71.7306,-0.7933 z"
+       id="path3232-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccscccc" />
+    <g
+       style="display:inline"
+       id="g3933-5"
+       transform="matrix(0.1093309,0,0,0.1093309,1965.6731,488.70291)"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
+       inkscape:export-xdpi="70"
+       inkscape:export-ydpi="70">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3914-2"
+         d="m -236.90816,329.50503 c 0,39.97302 -21.37154,72.37755 -47.73469,72.37755 -26.36314,0 -47.73469,-32.40453 -47.73469,-72.37755 0,-39.97302 21.37155,-72.37756 47.73469,-72.37756 26.36315,0 47.73469,32.40454 47.73469,72.37756 z"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.95917964;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="sssss"
+         inkscape:connector-curvature="0"
+         id="path3917-7"
+         d="m -249.96412,340.82157 c 0,28.20597 -16.11818,52.5 -30.71428,52.5 -14.5961,0 -27.14286,-25.7226 -27.14286,-53.92857 0,-28.20598 12.54676,-48.21429 27.14286,-48.21429 14.5961,0 30.71428,21.43688 30.71428,49.64286 z"
+         style="fill:#225500;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1" />
+      <path
+         transform="translate(-14.127268,-11.219362)"
+         d="m -244.45693,356.87216 c 0,20.92095 -8.25376,37.88072 -18.43528,37.88072 -10.18153,0 -18.43529,-16.95977 -18.43529,-37.88072 0,-20.92094 8.25376,-37.88072 18.43529,-37.88072 10.18152,0 18.43528,16.95978 18.43528,37.88072 z"
+         sodipodi:ry="37.880722"
+         sodipodi:rx="18.435284"
+         sodipodi:cy="356.87216"
+         sodipodi:cx="-262.89221"
+         id="path3929-6"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc" />
+      <path
+         transform="translate(-12.612039,-17.280277)"
+         d="m -253.54829,341.97241 c 0,7.11312 -4.40954,12.87945 -9.84899,12.87945 -5.43944,0 -9.84899,-5.76633 -9.84899,-12.87945 0,-7.11312 4.40955,-12.87944 9.84899,-12.87944 5.43945,0 9.84899,5.76632 9.84899,12.87944 z"
+         sodipodi:ry="12.879445"
+         sodipodi:rx="9.8489876"
+         sodipodi:cy="341.97241"
+         sodipodi:cx="-263.39728"
+         id="path3931-1"
+         style="fill:#ffffff;fill-opacity:0.79894182;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc" />
+    </g>
+    <g
+       style="display:inline"
+       transform="matrix(0.1093309,0,0,0.1093309,1979.4566,488.46861)"
+       id="g3933-4-4"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
+       inkscape:export-xdpi="70"
+       inkscape:export-ydpi="70">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3914-8-2"
+         d="m -236.90816,329.50503 c 0,39.97302 -21.37154,72.37755 -47.73469,72.37755 -26.36314,0 -47.73469,-32.40453 -47.73469,-72.37755 0,-39.97302 21.37155,-72.37756 47.73469,-72.37756 26.36315,0 47.73469,32.40454 47.73469,72.37756 z"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.95917964;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="sssss"
+         inkscape:connector-curvature="0"
+         id="path3917-8-3"
+         d="m -249.96412,340.82157 c 0,28.20597 -16.11818,52.5 -30.71428,52.5 -14.5961,0 -27.14286,-25.7226 -27.14286,-53.92857 0,-28.20598 12.54676,-48.21429 27.14286,-48.21429 14.5961,0 30.71428,21.43688 30.71428,49.64286 z"
+         style="fill:#225500;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1" />
+      <path
+         transform="translate(-14.127268,-11.219362)"
+         d="m -244.45693,356.87216 c 0,20.92095 -8.25376,37.88072 -18.43528,37.88072 -10.18153,0 -18.43529,-16.95977 -18.43529,-37.88072 0,-20.92094 8.25376,-37.88072 18.43529,-37.88072 10.18152,0 18.43528,16.95978 18.43528,37.88072 z"
+         sodipodi:ry="37.880722"
+         sodipodi:rx="18.435284"
+         sodipodi:cy="356.87216"
+         sodipodi:cx="-262.89221"
+         id="path3929-2-2"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc" />
+      <path
+         transform="translate(-12.612039,-17.280277)"
+         d="m -253.54829,341.97241 c 0,7.11312 -4.40954,12.87945 -9.84899,12.87945 -5.43944,0 -9.84899,-5.76633 -9.84899,-12.87945 0,-7.11312 4.40955,-12.87944 9.84899,-12.87944 5.43945,0 9.84899,5.76632 9.84899,12.87944 z"
+         sodipodi:ry="12.879445"
+         sodipodi:rx="9.8489876"
+         sodipodi:cy="341.97241"
+         sodipodi:cx="-263.39728"
+         id="path3931-4-2"
+         style="fill:#ffffff;fill-opacity:0.79894182;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc" />
+    </g>
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.43054295;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;display:inline"
+       d="m 1945.9835,537.50591 c -0.82,1.2603 -1.9616,2.1353 -4.361,2.7405 -1.8918,-0.3319 -3.2482,-1.3241 -4.4391,-2.5648 -0.9809,-1.022 2.4106,-1.862 4.5172,-1.862 2.1066,0 5.0554,0.4989 4.2829,1.6863 z"
+       id="path3969-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="scsss"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
+       inkscape:export-xdpi="70"
+       inkscape:export-ydpi="70" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.32799271;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;display:inline"
+       d="m 1952.2042,545.46811 c -3.2019,2.4875 -4.1268,3.358 -10.855,3.358 -6.7283,0 -12.0264,-6.6494 -12.0264,-8.5902 0,-1.9409 5.2981,1.5618 12.0264,1.5618 3.6222,0 10.077,-1.3401 12.699,-4.3647 1.6011,5.072 -1.1365,7.4854 -1.844,8.0351 z"
+       id="path3971-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssscs"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
+       inkscape:export-xdpi="70"
+       inkscape:export-ydpi="70" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.32799271;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;display:inline"
+       d="m 1935.9607,541.09491 c 0,0 3.5883,0.7731 5.3824,0.7731 1.7982,0 5.3945,-0.7731 5.3945,-0.7731 0,0 -0.6626,3.4052 -0.6626,5.0802 0,1.9433 0.5522,4.836 0.5522,4.836 0,0 -3.9098,0.9336 -5.561,0.9585 -1.9964,0.03 -5.3816,-0.7928 -5.3816,-0.7928 0,0 0.9387,-2.6166 0.9387,-4.5048 0,-1.7302 -0.6626,-5.5771 -0.6626,-5.5771 z"
+       id="rect3974-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cscscscsc"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
+       inkscape:export-xdpi="70"
+       inkscape:export-ydpi="70" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.27332726;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 1941.3984,551.91801 c 0,0 -0.2579,-2.8347 -0.2764,-4.5281 -0.018,-1.675 0.166,-5.5773 0.166,-5.5773"
+       id="path3977-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csc"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
+       inkscape:export-xdpi="70"
+       inkscape:export-ydpi="70" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.2186618;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 1941.6811,541.87581 0.039,-2.1671"
+       id="path3980-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
+       inkscape:export-xdpi="70"
+       inkscape:export-ydpi="70" />
+    <path
+       style="fill:#ffffff;fill-opacity:0.3174603;stroke:none;display:inline"
+       d="m 1929.0728,536.21411 c 0,1.0566 -4.2308,-4.3186 -8.9104,-4.3186 -4.6796,0 -10.0038,4.3912 -10.0038,3.3345 0,-1.0566 5.1056,-4.9745 9.7851,-4.9745 4.6796,0 9.1291,4.9019 9.1291,5.9586 z"
+       id="path4405-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cscsc"
+       inkscape:export-xdpi="70"
+       inkscape:export-ydpi="70"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png" />
+    <path
+       style="fill:#ffffff;fill-opacity:0.3174603;stroke:none;display:inline"
+       d="m 1971.0353,531.36111 c 0,0.8966 -2.1745,-2.6404 -7.5543,-2.6404 -5.3797,0 -8.1556,6.3796 -8.1556,5.483 0,-0.8966 2.815,-6.3005 7.6636,-6.4341 6.6088,-0.182 8.0463,2.6949 8.0463,3.5915 z"
+       id="path4408-18"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cscsc"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
+       inkscape:export-xdpi="70"
+       inkscape:export-ydpi="70" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.49456751;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 1938.8137,568.30371 c 0,0 0.5174,2.158 -0.2474,2.3474 -3.088,0.7647 -10.0226,0.1235 -10.0226,0.1235 0,0 -0.4805,-0.9617 -0.2474,-1.359 0.7054,-1.2024 3.8184,0.1347 2.8459,-0.8648 -0.6451,-0.6629 -1.6221,-1.3781 -1.4248,-2.7649 0.482,-3.387 3.1102,-3.06 3.1102,-3.06"
+       id="path3020-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cscsssc"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
+       inkscape:export-xdpi="70"
+       inkscape:export-ydpi="70" />
+    <path
+       style="fill:#552200;fill-opacity:1;stroke:#000000;stroke-width:0.24728376;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 1930.5856,570.72551 c -1.8489,-0.1253 -2.0998,-0.2193 -2.0998,-0.7869 0,-0.6498 0.3351,-0.8109 1.687,-0.8109 0.6969,0 1.3085,-0.067 1.359,-0.1484 0.051,-0.082 -0.26,-0.56 -0.69,-1.063 -0.9347,-1.0935 -1.0613,-1.5066 -0.7906,-2.5801 0.251,-0.9953 0.7476,-1.7201 1.4145,-2.0644 0.8055,-0.416 0.9915,-0.3209 1.5992,0.8176 0.9954,1.8648 3.2632,3.7643 5.2542,4.4009 0.3583,0.1146 0.6146,1.2762 0.3678,1.6669 -0.095,0.1504 -0.4409,0.3332 -0.7685,0.4063 -0.8655,0.1929 -5.3972,0.293 -7.3328,0.162 z"
+       id="path3806-2"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
+       inkscape:export-xdpi="70"
+       inkscape:export-ydpi="70" />
+    <path
+       style="fill:#552200;fill-opacity:1;stroke:#000000;stroke-width:0.61820948;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 1950.7941,570.58461 c 1.8489,-0.1251 2.0999,-0.2192 2.0999,-0.7868 0,-0.6498 -0.3352,-0.8109 -1.6871,-0.8109 -0.6969,0 -1.3084,-0.067 -1.3589,-0.1484 -0.051,-0.082 0.2599,-0.56 0.6899,-1.0631 0.9347,-1.0933 1.0613,-1.5065 0.7906,-2.5799 -0.2509,-0.9953 -0.7476,-1.7202 -1.4144,-2.0645 -0.8056,-0.4159 -0.9915,-0.3208 -1.5992,0.8176 -0.9954,1.8648 -3.2633,3.7644 -5.2543,4.401 -0.3583,0.1145 -0.6145,1.2761 -0.3677,1.6668 0.095,0.1504 0.4408,0.3332 0.7685,0.4063 0.8655,0.1929 5.3971,0.293 7.3327,0.1619 z"
+       id="path3806-1-7"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png"
+       inkscape:export-xdpi="70"
+       inkscape:export-ydpi="70" />
+    <path
+       style="fill:#000000;fill-opacity:0.25396824;stroke:none;display:inline"
+       d="m 1947.1008,565.23601 c 0,1.0567 -1.5095,3.1035 -6.1891,3.1035 -4.6797,0 -7.8597,-3.5255 -7.8597,-4.5822 0,-1.0567 1.4609,1.827 6.0741,2.6123 4.8446,0.8247 7.9747,-2.1902 7.9747,-1.1336 z"
+       id="path4405-7-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cscsc"
+       inkscape:export-xdpi="70"
+       inkscape:export-ydpi="70"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\squirrel.png" />
   </g>
 </svg>

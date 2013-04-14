@@ -59,11 +59,6 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Sprites\Squirrel.png">
-      <Name>Squirrel</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
     <Compile Include="Sprites\StopButton.png">
       <Name>StopButton</Name>
       <Importer>TextureImporter</Importer>
@@ -71,6 +66,20 @@
     </Compile>
     <Compile Include="Sprites\StopButtonPressed.png">
       <Name>StopButtonPressed</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\RedSquirrel.png">
+      <Name>RedSquirrel</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\BlueSquirrel.png">
+      <Name>BlueSquirrel</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

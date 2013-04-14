@@ -20,6 +20,8 @@ namespace Acorn
         public static string CardZero = "Sprites\\Card0";
         public static string CardOne = "Sprites\\Card1";
         public static string CardTwo = "Sprites\\Card2";
+        public static string RedSquirrel = "Sprites\\RedSquirrel";
+        public static string BlueSquirrel = "Sprites\\BlueSquirrel";
     }
 
     public static class AcornResourceManager
@@ -30,7 +32,7 @@ namespace Acorn
         {
             return RetrieveResource<Background>(Resources.Background, () =>
             {
-                return new Background(ContentService.Instance.Content.Load<Texture2D>("Sprites\\Background"));
+                return new Background(ContentService.Instance.Content.Load<Texture2D>(Resources.Background));
             });
         }
 
@@ -93,6 +95,26 @@ namespace Acorn
             return RetrieveResource<Sprite>(Resources.CardTwo, () =>
             {
                 return new Sprite(ContentService.Instance.Content.Load<Texture2D>(Resources.CardTwo));
+            });
+        }
+
+        public static Sprite GetRedSquirrelSprite()
+        {
+            return RetrieveResource<Sprite>(Resources.RedSquirrel, () =>
+            {
+                var squirrel = new Sprite(ContentService.Instance.Content.Load<Texture2D>(Resources.RedSquirrel));
+                squirrel.Center = new Vector2(squirrel.Texture.Width / 2, squirrel.Texture.Height / 2);
+                return squirrel;
+            });
+        }
+
+        public static Sprite GetBlueSquirrelSprite()
+        {
+            return RetrieveResource<Sprite>(Resources.BlueSquirrel, () =>
+            {
+                var squirrel = new Sprite(ContentService.Instance.Content.Load<Texture2D>(Resources.BlueSquirrel));
+                squirrel.Center = new Vector2(squirrel.Texture.Width / 2, squirrel.Texture.Height / 2);
+                return squirrel;
             });
         }
 

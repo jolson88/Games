@@ -176,16 +176,20 @@
       <Link>Content\Sprites\Cloud.xnb</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sprites\Squirrel.xnb">
-      <Link>Content\Sprites\Squirrel.xnb</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sprites\StopButton.xnb">
       <Link>Content\Sprites\StopButton.xnb</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sprites\StopButtonPressed.xnb">
       <Link>Content\Sprites\StopButtonPressed.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sprites\BlueSquirrel.xnb">
+      <Link>Content\Sprites\BlueSquirrel.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sprites\RedSquirrel.xnb">
+      <Link>Content\Sprites\RedSquirrel.xnb</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Acorn_TemporaryKey.pfx" />
