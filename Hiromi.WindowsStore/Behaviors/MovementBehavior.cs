@@ -18,7 +18,7 @@ namespace Hiromi.Behaviors
             this.Velocity = velocity;
         }
 
-        public override void Update(GameTime gameTime)
+        protected override void OnUpdate(GameTime gameTime)
         {
             this.GameObject.Position += this.Velocity * (float)gameTime.ElapsedGameTime.TotalSeconds;
         }

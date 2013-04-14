@@ -14,7 +14,7 @@ namespace Hiromi.Behaviors
     {
         private bool _canBeReflected = true;
 
-        public WrapAroundScreenBehavior()
+        protected override void OnInitialize()
         {
             MessageService.Instance.AddListener<OffScreenMessage>(msg => { OnOffScreen((OffScreenMessage)msg); });
         }

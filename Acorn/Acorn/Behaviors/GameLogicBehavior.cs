@@ -27,7 +27,10 @@ namespace Acorn.Behaviors
             _winningPoints = winningPoints;
             _cardValues = new Dictionary<int, int?>();
             for (int i = 0; i < cardCount; i++) { _cardValues.Add(i, null); }
+        }
 
+        protected override void OnInitialize()
+        {
             MessageService.Instance.AddListener<CardSelectionRequestMessage>(msg => OnCardSelectionRequest((CardSelectionRequestMessage)msg));
             MessageService.Instance.AddListener<StopRequestMessage>(msg => OnStopRequest((StopRequestMessage)msg));
             MessageService.Instance.AddListener<StartGameMessage>(msg => OnStartGame((StartGameMessage)msg));

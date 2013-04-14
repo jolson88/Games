@@ -16,7 +16,10 @@ namespace Acorn.Behaviors
         public CardBehavior(int cardIndex)
         {
             this.CardIndex = cardIndex;
+        }
 
+        protected override void OnInitialize()
+        {
             MessageService.Instance.AddListener<CardSelectedMessage>(msg => OnCardSelected((CardSelectedMessage)msg));
             MessageService.Instance.AddListener<CardsShuffledMessage>(msg => OnCardsShuffled());
         }

@@ -23,6 +23,18 @@ namespace Acorn.Screens
         {
             GameObjectService objectService = GameObjectService.Instance;
 
+            var logic = new GameObject();
+            logic.AddBehavior(new GameLogicBehavior(cardCount: 4, winningPoints: 20));
+            objectService.AddGameObject(logic);
+
+            var playerOneController = new GameObject();
+            playerOneController.AddBehavior(new PlayerControllerBehavior(0));
+            objectService.AddGameObject(playerOneController);
+
+            var playerTwoController = new GameObject();
+            playerTwoController.AddBehavior(new PlayerControllerBehavior(1));
+            objectService.AddGameObject(playerTwoController);
+
             var cloud = new GameObject()
             {
                 Sprite = AcornResourceManager.GetCloudSprite(),
@@ -53,19 +65,6 @@ namespace Acorn.Screens
                 card.AddBehavior(new CardBehavior(i));
                 objectService.AddGameObject(card);
             }
-
-            // TODO: Add initialization sequence to GameBehaviors. Spinning them up via a constructor is very fragile and can break if GOs are created in a different order.
-            var logic = new GameObject();
-            logic.AddBehavior(new GameLogicBehavior(cardCount: 4, winningPoints: 20));
-            objectService.AddGameObject(logic);
-
-            var playerOneController = new GameObject();
-            playerOneController.AddBehavior(new PlayerControllerBehavior(0));
-            objectService.AddGameObject(playerOneController);
-
-            var playerTwoController = new GameObject();
-            playerTwoController.AddBehavior(new PlayerControllerBehavior(1));
-            objectService.AddGameObject(playerTwoController);
 
             MessageService.Instance.QueueMessage(new StartGameMessage());
         }

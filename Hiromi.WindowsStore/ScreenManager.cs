@@ -16,8 +16,8 @@ namespace Hiromi
 
         public void Update(GameTime gameTime)
         {
-            MessageService.Instance.Update(gameTime);
             _currentScreen.Update(gameTime);
+            MessageService.Instance.Update(gameTime);
         }
 
         public void Draw(GameTime gameTime)

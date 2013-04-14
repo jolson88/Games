@@ -18,7 +18,10 @@ namespace Hiromi.Behaviors
         {
             _nonFocusSprite = nonFocusSprite;
             _focusSprite = focusSprite;
+        }
 
+        protected override void OnInitialize()
+        {
             MessageService.Instance.AddListener<PointerExitMessage>(msg => OnPointerExit((PointerExitMessage)msg));
             MessageService.Instance.AddListener<PointerPressMessage>(msg => OnPointerPress((PointerPressMessage)msg));
             MessageService.Instance.AddListener<PointerReleaseMessage>(msg => OnPointerRelease((PointerReleaseMessage)msg));

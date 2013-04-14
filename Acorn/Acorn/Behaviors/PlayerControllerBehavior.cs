@@ -19,8 +19,11 @@ namespace Acorn.Behaviors
         public PlayerControllerBehavior(int playerIndex)
         {
             this.PlayerIndex = playerIndex;
-
             _currentPlayer = null;
+        }
+
+        protected override void OnInitialize()
+        {
             _stopButton = GameObjectService.Instance.GetAllGameObjectsWithTag("StopButton").First();
             _cards = GameObjectService.Instance.GetAllGameObjectsWithTag("Card").ToDictionary(obj => obj.Id);
 
