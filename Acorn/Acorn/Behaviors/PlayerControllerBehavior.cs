@@ -12,6 +12,7 @@ namespace Acorn.Behaviors
     {
         public int PlayerIndex { get; set; }
 
+        private int? _currentPlayer;
         private GameObject _stopButton;
         private Dictionary<int, GameObject> _cards;
 
@@ -19,22 +20,32 @@ namespace Acorn.Behaviors
         {
             this.PlayerIndex = playerIndex;
 
+            _currentPlayer = null;
             _stopButton = GameObjectService.Instance.GetAllGameObjectsWithTag("StopButton").First();
             _cards = GameObjectService.Instance.GetAllGameObjectsWithTag("Card").ToDictionary(obj => obj.Id);
 
             MessageService.Instance.AddListener<ButtonPressMessage>(msg => OnButtonPress((ButtonPressMessage)msg));
+            MessageService.Instance.AddListener<StartTurnMessage>(msg => OnStartTurn((StartTurnMessage)msg));
+        }
+
+        private void OnStartTurn(StartTurnMessage msg)
+        {
+            _currentPlayer = msg.PlayerIndex;
         }
 
         private void OnButtonPress(ButtonPressMessage msg)
         {
-            if (msg.GameObjectId == _stopButton.Id)
+            if (_currentPlayer == this.PlayerIndex)
             {
-                System.Diagnostics.Debug.WriteLine("Stop button clicked");
-            }
-            else if (_cards.ContainsKey(msg.GameObjectId))
-            {
-                var card = _cards[msg.GameObjectId].GetBehavior<CardBehavior>();
-                System.Diagnostics.Debug.WriteLine(string.Format("Card {0} clicked", card.CardIndex));
+                if (msg.GameObjectId == _stopButton.Id)
+                {
+                    MessageService.Instance.QueueMessage(new StopRequestMessage(this.PlayerIndex));
+                }
+                else if (_cards.ContainsKey(msg.GameObjectId))
+                {
+                    var card = _cards[msg.GameObjectId].GetBehavior<CardBehavior>();
+                    MessageService.Instance.QueueMessage(new CardSelectionRequestMessage(this.PlayerIndex, card.CardIndex));
+                }
             }
         }
     }

@@ -132,11 +132,15 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Behaviors\CardBehavior.cs" />
+    <Compile Include="Behaviors\GameLogicBehavior.cs" />
     <Compile Include="Behaviors\PlayerControllerBehavior.cs" />
     <Compile Include="GamePage.xaml.cs">
       <DependentUpon>GamePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="AcornGame.cs" />
+    <Compile Include="MessagesFromGameLogic.cs" />
+    <Compile Include="MessagesFromPlayer.cs" />
+    <Compile Include="MessagesFromSystem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Screens\PlayScreen.cs" />
   </ItemGroup>

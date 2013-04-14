@@ -7,6 +7,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Hiromi;
 using Hiromi.Behaviors;
+using Hiromi.Messaging;
 using Acorn.Behaviors;
 
 namespace Acorn.Screens
@@ -53,9 +54,20 @@ namespace Acorn.Screens
                 objectService.AddGameObject(card);
             }
 
-            var playerController = new GameObject();
-            playerController.AddBehavior(new PlayerControllerBehavior(0));
-            objectService.AddGameObject(playerController);
+            // TODO: Add initialization sequence to GameBehaviors. Spinning them up via a constructor is very fragile and can break if GOs are created in a different order.
+            var logic = new GameObject();
+            logic.AddBehavior(new GameLogicBehavior(cardCount: 4, winningPoints: 20));
+            objectService.AddGameObject(logic);
+
+            var playerOneController = new GameObject();
+            playerOneController.AddBehavior(new PlayerControllerBehavior(0));
+            objectService.AddGameObject(playerOneController);
+
+            var playerTwoController = new GameObject();
+            playerTwoController.AddBehavior(new PlayerControllerBehavior(1));
+            objectService.AddGameObject(playerTwoController);
+
+            MessageService.Instance.QueueMessage(new StartGameMessage());
         }
     }
 }
