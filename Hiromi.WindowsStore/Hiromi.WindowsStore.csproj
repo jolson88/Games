@@ -9,7 +9,7 @@
     <ProjectGuid>{4DCB809E-533C-4268-9090-7E1030E2752E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Hiromi.WindowsStore</RootNamespace>
+    <RootNamespace>Hiromi</RootNamespace>
     <AssemblyName>Hiromi.WindowsStore</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
@@ -114,6 +114,7 @@
     <Compile Include="Messaging\MessageService.cs" />
     <Compile Include="Messaging\MouseMessages.cs" />
     <Compile Include="Messaging\OffScreenMessage.cs" />
+    <Compile Include="Messaging\SystemMessages.cs" />
     <Compile Include="Processing\ActionProcess.cs" />
     <Compile Include="Processing\BoundsCheckingProcess.cs" />
     <Compile Include="Processing\DelayProcess.cs" />

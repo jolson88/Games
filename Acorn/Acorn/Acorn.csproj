@@ -140,7 +140,6 @@
     <Compile Include="AcornGame.cs" />
     <Compile Include="MessagesFromGameLogic.cs" />
     <Compile Include="MessagesFromPlayer.cs" />
-    <Compile Include="MessagesFromSystem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Screens\PlayScreen.cs" />
   </ItemGroup>

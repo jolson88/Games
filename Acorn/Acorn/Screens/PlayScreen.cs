@@ -14,6 +14,11 @@ namespace Acorn.Screens
 {
     public class PlayScreen : Screen
     {
+        public PlayScreen()
+        {
+            MessageService.Instance.AddListener<ScreenLoadedMessage>(msg => OnScreenLoaded((ScreenLoadedMessage)msg));
+        }
+
         protected override Background InitializeBackground()
         {
             return AcornResourceManager.GetBackground();
@@ -65,8 +70,14 @@ namespace Acorn.Screens
                 card.AddBehavior(new CardBehavior(i));
                 objectService.AddGameObject(card);
             }
+        }
 
-            MessageService.Instance.QueueMessage(new StartGameMessage());
+        private void OnScreenLoaded(ScreenLoadedMessage msg)
+        {
+            if (msg.LoadedScreen == this)
+            {
+                MessageService.Instance.QueueMessage(new GameStartedMessage());
+            }
         }
     }
 }

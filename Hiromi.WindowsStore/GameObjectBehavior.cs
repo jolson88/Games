@@ -16,16 +16,21 @@ namespace Hiromi
     public class GameObjectBehavior
     {
         public GameObject GameObject { get; set; }
-        private BehaviorState _state = BehaviorState.Uninitialized;
+        public BehaviorState State { get; set; }
+
+        public GameObjectBehavior()
+        {
+            this.State = BehaviorState.Uninitialized;
+        }
+
+        public void Initialize()
+        {
+            OnInitialize();
+            this.State = BehaviorState.Initialized;
+        }
 
         public void Update(GameTime gameTime)
         {
-            if (_state == BehaviorState.Uninitialized)
-            {
-                OnInitialize();
-                _state = BehaviorState.Initialized;
-            }
-
             OnUpdate(gameTime);
         }
 

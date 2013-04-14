@@ -14,10 +14,15 @@ namespace Hiromi
     {
         private Screen _currentScreen;
 
+        public ScreenManager()
+        {
+            MessageService.Instance.AddListener<RequestScreenLoadMessage>(msg => OnRequestScreenLoad((RequestScreenLoadMessage)msg));
+        }
+
         public void Update(GameTime gameTime)
         {
-            _currentScreen.Update(gameTime);
             MessageService.Instance.Update(gameTime);
+            _currentScreen.Update(gameTime);
         }
 
         public void Draw(GameTime gameTime)
@@ -25,12 +30,13 @@ namespace Hiromi
             _currentScreen.Draw(gameTime);
         }
 
-        // TODO: Once messages are integrated, remove this as a public method
-        // (do it via sending a message)
-        public void LoadScreen(Screen screen)
+        private void OnRequestScreenLoad(RequestScreenLoadMessage msg)
         {
-            _currentScreen = screen;
+            _currentScreen = msg.RequestedScreen;
             _currentScreen.Load();
+            GameObjectService.Instance.InitializeGameObjects();
+
+            MessageService.Instance.QueueMessage(new ScreenLoadedMessage(_currentScreen));
         }
     }
 }

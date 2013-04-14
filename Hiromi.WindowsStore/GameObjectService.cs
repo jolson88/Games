@@ -46,5 +46,19 @@ namespace Hiromi
         {
             return _objects.FindAll(obj => obj.Tag.ToUpper().Equals(tag.ToUpper()));
         }
+
+        public void InitializeGameObjects()
+        {
+            foreach (var obj in _objects)
+            {
+                foreach (var behavior in obj.GetAllBehaviors())
+                {
+                    if (behavior.State == BehaviorState.Uninitialized)
+                    {
+                        behavior.Initialize();
+                    }
+                }
+            }
+        }
     }
 }

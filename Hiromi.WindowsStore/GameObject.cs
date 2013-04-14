@@ -45,6 +45,11 @@ namespace Hiromi
             _behaviors.Add(behavior.GetType(), behavior);
         }
 
+        public List<GameObjectBehavior> GetAllBehaviors()
+        {
+            return _behaviors.Values.ToList();
+        }
+
         public T GetBehavior<T>() where T : GameObjectBehavior
         {
             return (T)_behaviors[typeof(T)];

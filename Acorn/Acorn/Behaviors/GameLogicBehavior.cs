@@ -33,7 +33,7 @@ namespace Acorn.Behaviors
         {
             MessageService.Instance.AddListener<CardSelectionRequestMessage>(msg => OnCardSelectionRequest((CardSelectionRequestMessage)msg));
             MessageService.Instance.AddListener<StopRequestMessage>(msg => OnStopRequest((StopRequestMessage)msg));
-            MessageService.Instance.AddListener<StartGameMessage>(msg => OnStartGame((StartGameMessage)msg));
+            MessageService.Instance.AddListener<GameStartedMessage>(msg => OnStartGame((GameStartedMessage)msg));
         }
 
         private void OnCardSelectionRequest(CardSelectionRequestMessage msg)
@@ -65,7 +65,7 @@ namespace Acorn.Behaviors
             }
         }
 
-        private void OnStartGame(StartGameMessage msg)
+        private void OnStartGame(GameStartedMessage msg)
         {
             MessageService.Instance.QueueMessage(new StartTurnMessage(_currentPlayer));
         }
