@@ -72,6 +72,30 @@ namespace Acorn
             });
         }
 
+        public static Sprite GetCardZeroSprite()
+        {
+            return RetrieveResource<Sprite>(Resources.CardZero, () =>
+            {
+                return new Sprite(ContentService.Instance.Content.Load<Texture2D>(Resources.CardZero));
+            });
+        }
+
+        public static Sprite GetCardOneSprite()
+        {
+            return RetrieveResource<Sprite>(Resources.CardOne, () =>
+            {
+                return new Sprite(ContentService.Instance.Content.Load<Texture2D>(Resources.CardOne));
+            });
+        }
+
+        public static Sprite GetCardTwoSprite()
+        {
+            return RetrieveResource<Sprite>(Resources.CardTwo, () =>
+            {
+                return new Sprite(ContentService.Instance.Content.Load<Texture2D>(Resources.CardTwo));
+            });
+        }
+
         private static T RetrieveResource<T>(string resourceId, Func<T> creator)
         {
             if (!_cachedResources.ContainsKey(resourceId))

@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Hiromi;
 using Hiromi.Messaging;
+using Hiromi.Processing;
 
 namespace Acorn.Behaviors
 {
@@ -44,7 +45,11 @@ namespace Acorn.Behaviors
                 }
                 else if (AllCardsAreSelected())
                 {
-                    ShuffleCards();
+                    // Delay so player has time to see what card turned over
+                    this.GameObject.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(2), new ActionProcess(() =>
+                    {
+                        ShuffleCards();
+                    })));
                 }
             }
         }
@@ -75,13 +80,20 @@ namespace Acorn.Behaviors
                 if (_scores[_currentPlayer] >= _winningPoints)
                 {
                     MessageService.Instance.QueueMessage(new GameOverMessage(_currentPlayer));
+                    return;
                 }
             }
             
             _currentPlayer = nextPlayer;
             _runningPoints = 0;
-            ShuffleCards();
-            MessageService.Instance.QueueMessage(new StartTurnMessage(_currentPlayer));
+            
+            // Delay for two seconds it wasn't a voluntary stop (so player has time to see zero card
+            var delay = (reason == EndTurnReason.LostPoints) ? 2 : 0;
+            this.GameObject.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(delay), new ActionProcess(() =>
+            {
+                ShuffleCards();
+                MessageService.Instance.QueueMessage(new StartTurnMessage(_currentPlayer));
+            })));
         }
 
         private void SelectCard(int cardIndex, int cardValue)
@@ -107,7 +119,7 @@ namespace Acorn.Behaviors
             {
                 return 2;
             }
-            else if (r > 40)
+            else if (r > 50)
             {
                 return 0;
             }
