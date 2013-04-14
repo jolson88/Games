@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace Hiromi.Messaging
 {
+    public enum MessageVerbosity
+    {
+        Signal,
+        Noise
+    }
+
     public class Message
     {
+        public virtual MessageVerbosity GetMessageVerbosity()
+        {
+            return MessageVerbosity.Signal;
+        }
     }
 }

@@ -44,6 +44,10 @@ namespace Hiromi.Messaging
             {
                 var msg = _messageQueues[processQueue].Dequeue();
                 ProcessMessage(msg);
+                if (msg.GetMessageVerbosity() == MessageVerbosity.Signal)
+                {
+                    System.Diagnostics.Debug.WriteLine(msg.ToString());
+                }
             }
         }
 

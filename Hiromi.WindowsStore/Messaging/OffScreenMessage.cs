@@ -9,10 +9,11 @@ namespace Hiromi.Messaging
     public class OffScreenMessage : Message
     {
         public int GameObjectId { get; set; }
+        public OffScreenMessage(int gameObjectId) { this.GameObjectId = gameObjectId; }
 
-        public OffScreenMessage(int gameObjectId)
+        public override MessageVerbosity GetMessageVerbosity()
         {
-            this.GameObjectId = gameObjectId;
+            return MessageVerbosity.Noise;
         }
     }
 }

@@ -9,10 +9,11 @@ namespace Hiromi.Messaging
     public class ButtonPressMessage : Message
     {
         public int GameObjectId { get; set; }
+        public ButtonPressMessage(int gameObjectId) { this.GameObjectId = gameObjectId; }
 
-        public ButtonPressMessage(int gameObjectId)
+        public override MessageVerbosity GetMessageVerbosity()
         {
-            this.GameObjectId = gameObjectId;
+            return MessageVerbosity.Noise;
         }
     }
 }

@@ -11,13 +11,21 @@ namespace Hiromi.Messaging
     {
         public Keys Key { get; set; }
         public KeyDownMessage(Keys key) { this.Key = key; }
-    }
 
+        public override MessageVerbosity GetMessageVerbosity()
+        {
+            return MessageVerbosity.Noise;
+        }
+    }
 
     public class KeyUpMessage : Message
     {
         public Keys Key { get; set; }
         public KeyUpMessage(Keys key) { this.Key = key; }
-    }
 
+        public override MessageVerbosity GetMessageVerbosity()
+        {
+            return MessageVerbosity.Noise;
+        }
+    }
 }
