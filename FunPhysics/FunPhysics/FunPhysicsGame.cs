@@ -1,3 +1,4 @@
+using Hiromi;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
@@ -6,15 +7,17 @@ namespace FunPhysics
     /// <summary>
     /// This is the main type for your game
     /// </summary>
-    public class Game1 : Game
+    public class FunPhysicsGame : Game
     {
         GraphicsDeviceManager _graphics;
-        SpriteBatch _spriteBatch;
+        ScreenManager _screenManager;
 
-        public Game1()
+        public FunPhysicsGame()
         {
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+
+            _screenManager = new ScreenManager();
         }
 
         /// <summary>
@@ -30,19 +33,16 @@ namespace FunPhysics
             base.Initialize();
         }
 
-        Texture2D _biohazard;
-
         /// <summary>
         /// LoadContent will be called once per game and is the place to load
         /// all of your content.
         /// </summary>
         protected override void LoadContent()
         {
-            // Create a new SpriteBatch, which can be used to draw textures.
-            _spriteBatch = new SpriteBatch(GraphicsDevice);
-            _biohazard = Content.Load<Texture2D>("Biohazard");
+            GraphicsService.Instance.GraphicsDevice = this.GraphicsDevice;
+            ContentService.Instance.Content = this.Content;
 
-            // TODO: use this.Content to load your game content here
+            _screenManager.LoadScreen(new Screens.MainScreen());
         }
 
         /// <summary>
@@ -61,8 +61,7 @@ namespace FunPhysics
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-            // TODO: Add your update logic here
-
+            _screenManager.Update(gameTime);
             base.Update(gameTime);
         }
 
@@ -72,12 +71,7 @@ namespace FunPhysics
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
-
-            _spriteBatch.Begin();
-            _spriteBatch.Draw(_biohazard, Vector2.Zero, Color.White);
-            _spriteBatch.End();
-
+            _screenManager.Draw(gameTime);
             base.Draw(gameTime);
         }
     }
