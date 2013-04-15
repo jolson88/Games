@@ -49,11 +49,11 @@ namespace Hiromi.Behaviors
                 }
 
                 _canBeReflected = false;
-            }
 
-            // Make sure we don't keep resetting ourselves by introducing a delay
-            this.GameObject.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(1),
-                new ActionProcess(() => { _canBeReflected = true; })));
+                // Make sure we don't keep resetting ourselves by introducing a delay
+                this.GameObject.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(1),
+                    new ActionProcess(() => { _canBeReflected = true; })));
+            }
         }
     }
 }
