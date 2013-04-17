@@ -12,6 +12,7 @@ namespace Hiromi
     {
         public string Tag { get; set; }
         public int Id { get; set; }
+        public bool IsVisible { get; set; }
         public Sprite Sprite { get { return _sprite; } set { _sprite = value; CalculateBounds(); } }
 
         /// <summary>
@@ -32,6 +33,7 @@ namespace Hiromi
         public GameObject()
         {
             _behaviors = new Dictionary<Type, GameObjectBehavior>();
+            this.IsVisible = true;
             this.Tag = string.Empty;
             this.Position = Vector2.Zero;
             this.ProcessManager = new ProcessManager();

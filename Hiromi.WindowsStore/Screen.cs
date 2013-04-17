@@ -53,7 +53,7 @@ namespace Hiromi
 
             foreach (var obj in GameObjectService.Instance.GetAllGameObjects())
             {
-                if (obj.Sprite != null)
+                if (obj.Sprite != null && obj.IsVisible)
                 {
                     Batch.Draw(obj.Sprite.Texture,
                         new Vector2((obj.Position.X * GraphicsService.Instance.GraphicsDevice.Viewport.Width) - obj.Sprite.Center.X, 
