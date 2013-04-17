@@ -22,6 +22,7 @@ namespace Acorn
         public static string CardTwo = "Sprites\\Card2";
         public static string RedSquirrel = "Sprites\\RedSquirrel";
         public static string BlueSquirrel = "Sprites\\BlueSquirrel";
+        public static string ScoreMeter = "Sprites\\ScoreMeter";
     }
 
     public static class AcornResourceManager
@@ -115,6 +116,16 @@ namespace Acorn
                 var squirrel = new Sprite(ContentService.Instance.Content.Load<Texture2D>(Resources.BlueSquirrel));
                 squirrel.Center = new Vector2(squirrel.Texture.Width / 2, squirrel.Texture.Height / 2);
                 return squirrel;
+            });
+        }
+
+        public static Sprite GetScoreMeterSprite()
+        {
+            return RetrieveResource<Sprite>(Resources.ScoreMeter, () =>
+            {
+                var meter = new Sprite(ContentService.Instance.Content.Load<Texture2D>(Resources.ScoreMeter));
+                meter.Center = new Vector2(meter.Texture.Width / 2, meter.Texture.Height);
+                return meter;
             });
         }
 

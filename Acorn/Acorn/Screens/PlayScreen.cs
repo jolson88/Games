@@ -48,7 +48,7 @@ namespace Acorn.Screens
             cloud.AddBehavior(new MovementBehavior(new Vector2(-0.03f, 0)));
             cloud.AddBehavior(new WrapAroundScreenBehavior());
             objectService.AddGameObject(cloud);
-            
+
             var stopButton = new GameObject()
             {
                 Sprite = AcornResourceManager.GetStopButtonSprite(),
@@ -70,6 +70,36 @@ namespace Acorn.Screens
                 card.AddBehavior(new CardBehavior(i));
                 objectService.AddGameObject(card);
             }
+
+            var redSquirrel = new GameObject()
+            {
+                Sprite = AcornResourceManager.GetRedSquirrelSprite()
+            };
+            redSquirrel.AddBehavior(new SquirrelControllerBehavior(0, new Vector2(0.05f, 0.9f)));
+            objectService.AddGameObject(redSquirrel);
+
+            var redMeter = new GameObject()
+            {
+                Sprite = AcornResourceManager.GetScoreMeterSprite(),
+                Position = new Vector2(0.05f, 0.8f)
+            };
+            redMeter.AddBehavior(new ScoreBehavior(0));
+            objectService.AddGameObject(redMeter);
+
+            var blueSquirrel = new GameObject()
+            {
+                Sprite = AcornResourceManager.GetBlueSquirrelSprite()
+            };
+            blueSquirrel.AddBehavior(new SquirrelControllerBehavior(1, new Vector2(0.95f, 0.9f)));
+            objectService.AddGameObject(blueSquirrel);
+
+            var blueMeter = new GameObject()
+            {
+                Sprite = AcornResourceManager.GetScoreMeterSprite(),
+                Position = new Vector2(0.95f, 0.8f)
+            };
+            blueMeter.AddBehavior(new ScoreBehavior(1));
+            objectService.AddGameObject(blueMeter);
         }
 
         private void OnScreenLoaded(ScreenLoadedMessage msg)

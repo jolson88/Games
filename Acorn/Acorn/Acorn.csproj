@@ -134,6 +134,8 @@
     <Compile Include="Behaviors\CardBehavior.cs" />
     <Compile Include="Behaviors\GameLogicBehavior.cs" />
     <Compile Include="Behaviors\PlayerControllerBehavior.cs" />
+    <Compile Include="Behaviors\ScoreBehavior.cs" />
+    <Compile Include="Behaviors\SquirrelControllerBehavior.cs" />
     <Compile Include="GamePage.xaml.cs">
       <DependentUpon>GamePage.xaml</DependentUpon>
     </Compile>
@@ -189,6 +191,10 @@
     </Content>
     <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sprites\RedSquirrel.xnb">
       <Link>Content\Sprites\RedSquirrel.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sprites\ScoreMeter.xnb">
+      <Link>Content\Sprites\ScoreMeter.xnb</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Acorn_TemporaryKey.pfx" />
