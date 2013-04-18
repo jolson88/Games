@@ -1,0 +1,3 @@
+[submodule "Hiromi"]
+	path = Hiromi
+	url = git@github.com:jolson88/Hiromi.git
