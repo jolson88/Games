@@ -12,7 +12,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dummy", "Dummy\Dummy.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JarrettApp.WindowsStore", "JarrettApp.WindowsStore\JarrettApp.WindowsStore.csproj", "{F456E64C-3CC4-4688-AC2C-75A52D3F4E74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hiromi.WindowsStore", "..\Hiromi\Hiromi.WindowsStore\Hiromi.WindowsStore.csproj", "{4DCB809E-533C-4268-9090-7E1030E2752E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hiromi.WindowsStore", "..\HiromiSubmodule\Hiromi.WindowsStore\Hiromi.WindowsStore.csproj", "{4DCB809E-533C-4268-9090-7E1030E2752E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
