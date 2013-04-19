@@ -8,6 +8,7 @@ using Hiromi.Messaging;
 
 namespace Acorn.Behaviors
 {
+    /*
     public class ScoreBehavior : GameObjectBehavior
     {
         public int PlayerIndex { get; set; }
@@ -17,4 +18,5 @@ namespace Acorn.Behaviors
             this.PlayerIndex = playerIndex;
         }
     }
+     */
 }

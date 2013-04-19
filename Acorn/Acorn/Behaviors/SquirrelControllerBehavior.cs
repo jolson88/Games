@@ -9,6 +9,7 @@ using Microsoft.Xna.Framework;
 
 namespace Acorn.Behaviors
 {
+    /*
     public class SquirrelControllerBehavior : GameObjectBehavior
     {
         public int PlayerIndex { get; set; }
@@ -22,8 +23,8 @@ namespace Acorn.Behaviors
 
         protected override void OnInitialize()
         {
-            this.GameObject.IsVisible = false;
-            this.GameObject.Position = this.IdlePosition;
+            //this.GameObject.IsVisible = false;
+            //this.GameObject.Position = this.IdlePosition;
 
             MessageService.Instance.AddListener<StartTurnMessage>(msg => OnStartTurn((StartTurnMessage)msg));
             MessageService.Instance.AddListener<EndTurnMessage>(msg => OnEndTurn((EndTurnMessage)msg));
@@ -33,7 +34,7 @@ namespace Acorn.Behaviors
         {
             if (msg.PlayerIndex == this.PlayerIndex)
             {
-                this.GameObject.IsVisible = true;
+                //this.GameObject.IsVisible = true;
             }
         }
 
@@ -41,8 +42,9 @@ namespace Acorn.Behaviors
         {
             if (msg.PlayerIndex == this.PlayerIndex)
             {
-                this.GameObject.IsVisible = false;
+                //this.GameObject.IsVisible = false;
             }
         }
     }
+     */
 }

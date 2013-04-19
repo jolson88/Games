@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Hiromi;
-using Hiromi.Behaviors;
+using Hiromi.Components;
 using Hiromi.Messaging;
-using Acorn.Behaviors;
+using Hiromi.Systems;
+using Acorn.Components;
 
 namespace Acorn.Screens
 {
@@ -19,11 +20,47 @@ namespace Acorn.Screens
             MessageService.Instance.AddListener<ScreenLoadedMessage>(msg => OnScreenLoaded((ScreenLoadedMessage)msg));
         }
 
-        protected override Background InitializeBackground()
+        protected override List<GameSystem> LoadGameSystems()
         {
-            return AcornResourceManager.GetBackground();
+            var systems = new List<GameSystem>();
+            systems.Add(new GeneralInputSystem());
+            systems.Add(new BackgroundRenderingSystem());
+            systems.Add(new SimplePhysicsSystem());
+            systems.Add(new SpriteRendererSystem<CloudComponent>());
+            systems.Add(new ScreenWrappingSystem<CloudComponent>());
+            systems.Add(new UISystem());
+
+            return systems;
         }
 
+        protected override List<GameObject> LoadGameObjects()
+        {
+            var objects = new List<GameObject>();
+
+            var bg = new GameObject();
+            bg.AddComponent(new BackgroundComponent(AcornResourceManager.GetBackground()));
+            objects.Add(bg);
+
+            var cloudSprite = AcornResourceManager.GetCloudSprite();
+            var cloud = new GameObject();
+            cloud.AddComponent(new PositionComponent(new Vector2(0.2f, 0.02f), cloudSprite.Texture.Width, cloudSprite.Texture.Height));
+            cloud.AddComponent(new SpriteComponent(cloudSprite));
+            cloud.AddComponent(new SimplePhysicsComponent(new Vector2(-0.03f, 0f)));
+            cloud.AddComponent(new CloudComponent());
+            objects.Add(cloud);
+
+            var stopButtonSprite = AcornResourceManager.GetStopButtonSprite();
+            var stopButtonPressedSprite = AcornResourceManager.GetStopButtonPressedSprite();
+            var stopButton = new GameObject();
+            stopButton.AddComponent(new PositionComponent(new Vector2(0.5f, 0.65f), stopButtonSprite.Texture.Width, stopButtonSprite.Texture.Height));
+            stopButton.AddComponent(new SpriteComponent(stopButtonSprite));
+            stopButton.AddComponent(new ButtonComponent(stopButtonPressedSprite, stopButtonSprite));
+            objects.Add(stopButton);
+
+            return objects;
+        }
+
+        /*
         protected override void OnLoad()
         {
             GameObjectService objectService = GameObjectService.Instance;
@@ -40,24 +77,7 @@ namespace Acorn.Screens
             playerTwoController.AddBehavior(new PlayerControllerBehavior(1));
             objectService.AddGameObject(playerTwoController);
 
-            var cloud = new GameObject()
-            {
-                Sprite = AcornResourceManager.GetCloudSprite(),
-                Position = new Vector2(0.2f, 0.1f)
-            };
-            cloud.AddBehavior(new MovementBehavior(new Vector2(-0.03f, 0)));
-            cloud.AddBehavior(new WrapAroundScreenBehavior());
-            objectService.AddGameObject(cloud);
-
-            var stopButton = new GameObject()
-            {
-                Sprite = AcornResourceManager.GetStopButtonSprite(),
-                Position = new Vector2(0.5f, 0.65f),
-                Tag = "StopButton"
-            };
-            stopButton.AddBehavior(new CommonButtonBehavior(AcornResourceManager.GetStopButtonSprite(), AcornResourceManager.GetStopButtonPressedSprite()));
-            objectService.AddGameObject(stopButton);
-
+         * 
             for (int i = 0; i < 4; i++)
             {
                 var card = new GameObject()
@@ -101,6 +121,7 @@ namespace Acorn.Screens
             blueMeter.AddBehavior(new ScoreBehavior(1));
             objectService.AddGameObject(blueMeter);
         }
+        */
 
         private void OnScreenLoaded(ScreenLoadedMessage msg)
         {

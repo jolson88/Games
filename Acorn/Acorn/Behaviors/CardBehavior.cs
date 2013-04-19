@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Hiromi;
-using Hiromi.Behaviors;
 using Hiromi.Messaging;
 
 namespace Acorn.Behaviors
 {
+    /*
     class CardBehavior : GameObjectBehavior
     {
         public int CardIndex { get; set; }
@@ -31,15 +31,15 @@ namespace Acorn.Behaviors
                 switch (msg.CardValue)
                 {
                     case 0:
-                        this.GameObject.Sprite = AcornResourceManager.GetCardZeroSprite();
+                        //this.GameObject.Sprite = AcornResourceManager.GetCardZeroSprite();
                         break;
 
                     case 1:
-                        this.GameObject.Sprite = AcornResourceManager.GetCardOneSprite();
+                        //this.GameObject.Sprite = AcornResourceManager.GetCardOneSprite();
                         break;
 
                     case 2:
-                        this.GameObject.Sprite = AcornResourceManager.GetCardTwoSprite();
+                        //this.GameObject.Sprite = AcornResourceManager.GetCardTwoSprite();
                         break;
 
                     default:
@@ -50,7 +50,8 @@ namespace Acorn.Behaviors
 
         private void OnCardsShuffled()
         {
-            this.GameObject.Sprite = AcornResourceManager.GetCardBackSprite();
+            //this.GameObject.Sprite = AcornResourceManager.GetCardBackSprite();
         }
     }
+     */
 }

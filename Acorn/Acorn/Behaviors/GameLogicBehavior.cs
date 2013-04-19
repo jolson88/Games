@@ -10,6 +10,7 @@ using Hiromi.Processing;
 
 namespace Acorn.Behaviors
 {
+    /*
     public class GameLogicBehavior : GameObjectBehavior
     {
         private Random _random;
@@ -49,10 +50,10 @@ namespace Acorn.Behaviors
                 else if (AllCardsAreSelected())
                 {
                     // Delay so player has time to see what card turned over
-                    this.GameObject.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(2), new ActionProcess(() =>
-                    {
-                        ShuffleCards();
-                    })));
+                    //this.GameObject.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(2), new ActionProcess(() =>
+                    //{
+                    //    ShuffleCards();
+                    //})));
                 }
             }
         }
@@ -92,11 +93,11 @@ namespace Acorn.Behaviors
             
             // Delay for two seconds it wasn't a voluntary stop (so player has time to see zero card
             var delay = (reason == EndTurnReason.LostPoints) ? 2 : 0;
-            this.GameObject.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(delay), new ActionProcess(() =>
-            {
-                ShuffleCards();
-                MessageService.Instance.QueueMessage(new StartTurnMessage(_currentPlayer));
-            })));
+            //this.GameObject.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(delay), new ActionProcess(() =>
+            //{
+            //    ShuffleCards();
+            //    MessageService.Instance.QueueMessage(new StartTurnMessage(_currentPlayer));
+            //})));
         }
 
         private void SelectCard(int cardIndex, int cardValue)
@@ -142,4 +143,5 @@ namespace Acorn.Behaviors
             return _cardValues.Values.Where(v => v.HasValue).Count() == _cardValues.Count;
         }
     }
+     */
 }

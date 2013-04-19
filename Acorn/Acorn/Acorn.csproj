@@ -136,6 +136,7 @@
     <Compile Include="Behaviors\PlayerControllerBehavior.cs" />
     <Compile Include="Behaviors\ScoreBehavior.cs" />
     <Compile Include="Behaviors\SquirrelControllerBehavior.cs" />
+    <Compile Include="Components\CloudComponent.cs" />
     <Compile Include="GamePage.xaml.cs">
       <DependentUpon>GamePage.xaml</DependentUpon>
     </Compile>

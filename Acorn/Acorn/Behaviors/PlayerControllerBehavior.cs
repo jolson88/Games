@@ -8,6 +8,7 @@ using Hiromi.Messaging;
 
 namespace Acorn.Behaviors
 {
+    /*
     public class PlayerControllerBehavior : GameObjectBehavior
     {
         public int PlayerIndex { get; set; }
@@ -46,10 +47,11 @@ namespace Acorn.Behaviors
                 }
                 else if (_cards.ContainsKey(msg.GameObjectId))
                 {
-                    var card = _cards[msg.GameObjectId].GetBehavior<CardBehavior>();
-                    MessageService.Instance.QueueMessage(new CardSelectionRequestMessage(this.PlayerIndex, card.CardIndex));
+                    //var card = _cards[msg.GameObjectId].GetBehavior<CardBehavior>();
+                    //MessageService.Instance.QueueMessage(new CardSelectionRequestMessage(this.PlayerIndex, card.CardIndex));
                 }
             }
         }
     }
+     */
 }

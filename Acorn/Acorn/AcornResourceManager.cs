@@ -41,9 +41,7 @@ namespace Acorn
         {
             return RetrieveResource<Sprite>(Resources.CloudSprite, () =>
             {
-                var cloud = new Sprite(ContentService.Instance.Content.Load<Texture2D>(Resources.CloudSprite));
-                cloud.Center = new Vector2(cloud.Texture.Width / 2, cloud.Texture.Height / 2);
-                return cloud;
+                return new Sprite(ContentService.Instance.Content.Load<Texture2D>(Resources.CloudSprite));
             });
         }
 
@@ -51,9 +49,7 @@ namespace Acorn
         {
             return RetrieveResource<Sprite>(Resources.StopButtonSprite, () =>
             {
-                var stopButton = new Sprite(ContentService.Instance.Content.Load<Texture2D>(Resources.StopButtonSprite));
-                stopButton.Center = new Vector2(stopButton.Texture.Width / 2, stopButton.Texture.Height / 2);
-                return stopButton;
+                return new Sprite(ContentService.Instance.Content.Load<Texture2D>(Resources.StopButtonSprite));
             });
         }
 
@@ -61,9 +57,7 @@ namespace Acorn
         {
             return RetrieveResource<Sprite>(Resources.StopButtonPressedSprite, () =>
             {
-                var stopButton = new Sprite(ContentService.Instance.Content.Load<Texture2D>(Resources.StopButtonPressedSprite));
-                stopButton.Center = new Vector2(stopButton.Texture.Width / 2, stopButton.Texture.Height / 2);
-                return stopButton;
+                return new Sprite(ContentService.Instance.Content.Load<Texture2D>(Resources.StopButtonPressedSprite));
             });
         }
 
@@ -103,9 +97,7 @@ namespace Acorn
         {
             return RetrieveResource<Sprite>(Resources.RedSquirrel, () =>
             {
-                var squirrel = new Sprite(ContentService.Instance.Content.Load<Texture2D>(Resources.RedSquirrel));
-                squirrel.Center = new Vector2(squirrel.Texture.Width / 2, squirrel.Texture.Height / 2);
-                return squirrel;
+                return new Sprite(ContentService.Instance.Content.Load<Texture2D>(Resources.RedSquirrel));
             });
         }
 
@@ -113,9 +105,7 @@ namespace Acorn
         {
             return RetrieveResource<Sprite>(Resources.BlueSquirrel, () =>
             {
-                var squirrel = new Sprite(ContentService.Instance.Content.Load<Texture2D>(Resources.BlueSquirrel));
-                squirrel.Center = new Vector2(squirrel.Texture.Width / 2, squirrel.Texture.Height / 2);
-                return squirrel;
+                return new Sprite(ContentService.Instance.Content.Load<Texture2D>(Resources.BlueSquirrel));
             });
         }
 
@@ -123,9 +113,7 @@ namespace Acorn
         {
             return RetrieveResource<Sprite>(Resources.ScoreMeter, () =>
             {
-                var meter = new Sprite(ContentService.Instance.Content.Load<Texture2D>(Resources.ScoreMeter));
-                meter.Center = new Vector2(meter.Texture.Width / 2, meter.Texture.Height);
-                return meter;
+                return new Sprite(ContentService.Instance.Content.Load<Texture2D>(Resources.ScoreMeter));
             });
         }
 
