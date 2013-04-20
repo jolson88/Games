@@ -131,9 +131,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Behaviors\GameLogicBehavior.cs" />
-    <Compile Include="Behaviors\ScoreBehavior.cs" />
-    <Compile Include="Behaviors\SquirrelControllerBehavior.cs" />
     <Compile Include="Components\CardComponent.cs" />
     <Compile Include="GamePage.xaml.cs">
       <DependentUpon>GamePage.xaml</DependentUpon>
