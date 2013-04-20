@@ -10,6 +10,7 @@ using Hiromi.Components;
 using Hiromi.Messaging;
 using Hiromi.Systems;
 using Acorn.Components;
+using Acorn.Systems;
 
 namespace Acorn.Screens
 {
@@ -25,11 +26,13 @@ namespace Acorn.Screens
             var systems = new List<GameSystem>();
             systems.Add(new GeneralInputSystem());
             systems.Add(new UISystem());
+            systems.Add(new GameLogicSystem(4, 20));
             systems.Add(new BackgroundRenderingSystem());
             systems.Add(new SimplePhysicsSystem());
             systems.Add(new SpriteRendererSystem());
             systems.Add(new ScreenWrappingSystem());
-
+            systems.Add(new PlayerControlSystem(0));
+            systems.Add(new PlayerControlSystem(1)); // While it may look weird for two, this could easily be a ComputerControlSystem for 2-player game
             return systems;
         }
 
@@ -62,7 +65,7 @@ namespace Acorn.Screens
 
             var stopButtonSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.StopButtonSprite);
             var stopButtonPressedSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.StopButtonPressedSprite);
-            var stopButton = new GameObject();
+            var stopButton = new GameObject() { Tag = "StopButton" };
             stopButton.AddComponent(new PositionComponent(new Vector2(0.5f, 0.65f), stopButtonSprite.Width, stopButtonSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
             stopButton.AddComponent(new SpriteComponent(stopButtonSprite));
             stopButton.AddComponent(new ButtonComponent(stopButtonPressedSprite, stopButtonSprite));
@@ -70,26 +73,6 @@ namespace Acorn.Screens
 
             return objects;
         }
-
-        /*
-        protected override void OnLoad()
-        {
-            GameObjectService objectService = GameObjectService.Instance;
-
-            var logic = new GameObject();
-            logic.AddBehavior(new GameLogicBehavior(cardCount: 4, winningPoints: 20));
-            objectService.AddGameObject(logic);
-
-            var playerOneController = new GameObject();
-            playerOneController.AddBehavior(new PlayerControllerBehavior(0));
-            objectService.AddGameObject(playerOneController);
-
-            var playerTwoController = new GameObject();
-            playerTwoController.AddBehavior(new PlayerControllerBehavior(1));
-            objectService.AddGameObject(playerTwoController);
-
-        }
-        */
 
         private void OnScreenLoaded(ScreenLoadedMessage msg)
         {
