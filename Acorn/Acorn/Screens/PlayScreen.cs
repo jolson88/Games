@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Hiromi;
-using Hiromi.Behaviors;
+using Hiromi.Components;
 using Hiromi.Messaging;
-using Acorn.Behaviors;
+using Hiromi.Systems;
+using Acorn.Components;
+using Acorn.Systems;
 
 namespace Acorn.Screens
 {
@@ -19,87 +21,57 @@ namespace Acorn.Screens
             MessageService.Instance.AddListener<ScreenLoadedMessage>(msg => OnScreenLoaded((ScreenLoadedMessage)msg));
         }
 
-        protected override Background InitializeBackground()
+        protected override List<GameSystem> LoadGameSystems()
         {
-            return AcornResourceManager.GetBackground();
+            var systems = new List<GameSystem>();
+            systems.Add(new GeneralInputSystem());
+            systems.Add(new UISystem());
+            systems.Add(new GameLogicSystem(4, 20));
+            systems.Add(new BackgroundRenderingSystem());
+            systems.Add(new SimplePhysicsSystem());
+            systems.Add(new SpriteRendererSystem());
+            systems.Add(new ScreenWrappingSystem());
+            systems.Add(new PlayerControlSystem(0));
+            systems.Add(new PlayerControlSystem(1)); // While it may look weird for two, this could easily be a ComputerControlSystem for 2-player game
+            return systems;
         }
 
-        protected override void OnLoad()
+        protected override List<GameObject> LoadGameObjects()
         {
-            GameObjectService objectService = GameObjectService.Instance;
+            var objects = new List<GameObject>();
 
-            var logic = new GameObject();
-            logic.AddBehavior(new GameLogicBehavior(cardCount: 4, winningPoints: 20));
-            objectService.AddGameObject(logic);
+            var bg = new GameObject();
+            bg.AddComponent(new BackgroundComponent(ContentService.Instance.GetAsset<Texture2D>(AcornAssets.Background)));
+            objects.Add(bg);
 
-            var playerOneController = new GameObject();
-            playerOneController.AddBehavior(new PlayerControllerBehavior(0));
-            objectService.AddGameObject(playerOneController);
+            var cloudSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.CloudSprite);
+            var cloud = new GameObject();
+            cloud.AddComponent(new PositionComponent(new Vector2(0.2f, 0.02f), cloudSprite.Width, cloudSprite.Height));
+            cloud.AddComponent(new SpriteComponent(cloudSprite));
+            cloud.AddComponent(new SimplePhysicsComponent(new Vector2(-0.03f, 0f)));
+            cloud.AddComponent(new ScreenWrappingComponent());
+            objects.Add(cloud);
 
-            var playerTwoController = new GameObject();
-            playerTwoController.AddBehavior(new PlayerControllerBehavior(1));
-            objectService.AddGameObject(playerTwoController);
-
-            var cloud = new GameObject()
-            {
-                Sprite = AcornResourceManager.GetCloudSprite(),
-                Position = new Vector2(0.2f, 0.1f)
-            };
-            cloud.AddBehavior(new MovementBehavior(new Vector2(-0.03f, 0)));
-            cloud.AddBehavior(new WrapAroundScreenBehavior());
-            objectService.AddGameObject(cloud);
-
-            var stopButton = new GameObject()
-            {
-                Sprite = AcornResourceManager.GetStopButtonSprite(),
-                Position = new Vector2(0.5f, 0.65f),
-                Tag = "StopButton"
-            };
-            stopButton.AddBehavior(new CommonButtonBehavior(AcornResourceManager.GetStopButtonSprite(), AcornResourceManager.GetStopButtonPressedSprite()));
-            objectService.AddGameObject(stopButton);
-
+            var cardBackSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.CardBack);
             for (int i = 0; i < 4; i++)
             {
-                var card = new GameObject()
-                {
-                    Sprite = AcornResourceManager.GetCardBackSprite(),
-                    Position = new Vector2(0.20f + (i * 0.165f), 0.25f),
-                    Tag = "Card"
-                };
-                card.AddBehavior(new CommonButtonBehavior());
-                card.AddBehavior(new CardBehavior(i));
-                objectService.AddGameObject(card);
+                var card = new GameObject();
+                card.AddComponent(new PositionComponent(new Vector2(0.20f + (i * 0.165f), 0.25f), cardBackSprite.Width, cardBackSprite.Height));
+                card.AddComponent(new SpriteComponent(cardBackSprite));
+                card.AddComponent(new ButtonComponent());
+                card.AddComponent(new CardComponent(i));
+                objects.Add(card);
             }
 
-            var redSquirrel = new GameObject()
-            {
-                Sprite = AcornResourceManager.GetRedSquirrelSprite()
-            };
-            redSquirrel.AddBehavior(new SquirrelControllerBehavior(0, new Vector2(0.05f, 0.9f)));
-            objectService.AddGameObject(redSquirrel);
+            var stopButtonSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.StopButtonSprite);
+            var stopButtonPressedSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.StopButtonPressedSprite);
+            var stopButton = new GameObject() { Tag = "StopButton" };
+            stopButton.AddComponent(new PositionComponent(new Vector2(0.5f, 0.65f), stopButtonSprite.Width, stopButtonSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
+            stopButton.AddComponent(new SpriteComponent(stopButtonSprite));
+            stopButton.AddComponent(new ButtonComponent(stopButtonPressedSprite, stopButtonSprite));
+            objects.Add(stopButton);
 
-            var redMeter = new GameObject()
-            {
-                Sprite = AcornResourceManager.GetScoreMeterSprite(),
-                Position = new Vector2(0.05f, 0.8f)
-            };
-            redMeter.AddBehavior(new ScoreBehavior(0));
-            objectService.AddGameObject(redMeter);
-
-            var blueSquirrel = new GameObject()
-            {
-                Sprite = AcornResourceManager.GetBlueSquirrelSprite()
-            };
-            blueSquirrel.AddBehavior(new SquirrelControllerBehavior(1, new Vector2(0.95f, 0.9f)));
-            objectService.AddGameObject(blueSquirrel);
-
-            var blueMeter = new GameObject()
-            {
-                Sprite = AcornResourceManager.GetScoreMeterSprite(),
-                Position = new Vector2(0.95f, 0.8f)
-            };
-            blueMeter.AddBehavior(new ScoreBehavior(1));
-            objectService.AddGameObject(blueMeter);
+            return objects;
         }
 
         private void OnScreenLoaded(ScreenLoadedMessage msg)

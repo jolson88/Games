@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Hiromi;
 using Hiromi.Messaging;
 using Hiromi.Processing;
+using Hiromi.Systems;
 
-namespace Acorn.Behaviors
+namespace Acorn.Systems
 {
-    public class GameLogicBehavior : GameObjectBehavior
+    public class GameLogicSystem : GameSystem
     {
         private Random _random;
         private int[] _scores;
@@ -19,7 +19,7 @@ namespace Acorn.Behaviors
         private int _runningPoints;
         private Dictionary<int, int?> _cardValues;
 
-        public GameLogicBehavior(int cardCount, int winningPoints)
+        public GameLogicSystem(int cardCount, int winningPoints)
         {
             _random = new Random();
             _scores = new int[] { 0, 0 };
@@ -27,13 +27,15 @@ namespace Acorn.Behaviors
             _winningPoints = winningPoints;
             _cardValues = new Dictionary<int, int?>();
             for (int i = 0; i < cardCount; i++) { _cardValues.Add(i, null); }
-        }
 
-        protected override void OnInitialize()
-        {
+            MessageService.Instance.AddListener<GameStartedMessage>(msg => OnGameStarted((GameStartedMessage)msg));
             MessageService.Instance.AddListener<CardSelectionRequestMessage>(msg => OnCardSelectionRequest((CardSelectionRequestMessage)msg));
             MessageService.Instance.AddListener<StopRequestMessage>(msg => OnStopRequest((StopRequestMessage)msg));
-            MessageService.Instance.AddListener<GameStartedMessage>(msg => OnStartGame((GameStartedMessage)msg));
+        }
+
+        private void OnGameStarted(GameStartedMessage msg)
+        {
+            MessageService.Instance.QueueMessage(new StartTurnMessage(_currentPlayer));
         }
 
         private void OnCardSelectionRequest(CardSelectionRequestMessage msg)
@@ -49,7 +51,7 @@ namespace Acorn.Behaviors
                 else if (AllCardsAreSelected())
                 {
                     // Delay so player has time to see what card turned over
-                    this.GameObject.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(2), new ActionProcess(() =>
+                    this.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(2), new ActionProcess(() =>
                     {
                         ShuffleCards();
                     })));
@@ -63,11 +65,6 @@ namespace Acorn.Behaviors
             {
                 EndPlayerTurn(EndTurnReason.WonPoints);
             }
-        }
-
-        private void OnStartGame(GameStartedMessage msg)
-        {
-            MessageService.Instance.QueueMessage(new StartTurnMessage(_currentPlayer));
         }
 
         private void EndPlayerTurn(EndTurnReason reason)
@@ -86,13 +83,13 @@ namespace Acorn.Behaviors
                     return;
                 }
             }
-            
+
             _currentPlayer = nextPlayer;
             _runningPoints = 0;
-            
+
             // Delay for two seconds it wasn't a voluntary stop (so player has time to see zero card
             var delay = (reason == EndTurnReason.LostPoints) ? 2 : 0;
-            this.GameObject.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(delay), new ActionProcess(() =>
+            this.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(delay), new ActionProcess(() =>
             {
                 ShuffleCards();
                 MessageService.Instance.QueueMessage(new StartTurnMessage(_currentPlayer));
@@ -108,9 +105,9 @@ namespace Acorn.Behaviors
 
         private void ShuffleCards()
         {
-            foreach (var k in _cardValues.Keys.ToList()) 
-            { 
-                _cardValues[k] = null; 
+            foreach (var k in _cardValues.Keys.ToList())
+            {
+                _cardValues[k] = null;
             }
             MessageService.Instance.QueueMessage(new CardsShuffledMessage());
         }

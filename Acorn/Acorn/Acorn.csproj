@@ -127,15 +127,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AcornResourceManager.cs" />
+    <Compile Include="AcornAssets.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Behaviors\CardBehavior.cs" />
     <Compile Include="Behaviors\GameLogicBehavior.cs" />
-    <Compile Include="Behaviors\PlayerControllerBehavior.cs" />
     <Compile Include="Behaviors\ScoreBehavior.cs" />
     <Compile Include="Behaviors\SquirrelControllerBehavior.cs" />
+    <Compile Include="Components\CardComponent.cs" />
     <Compile Include="GamePage.xaml.cs">
       <DependentUpon>GamePage.xaml</DependentUpon>
     </Compile>
@@ -144,6 +143,8 @@
     <Compile Include="MessagesFromPlayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Screens\PlayScreen.cs" />
+    <Compile Include="Systems\GameLogicSystem.cs" />
+    <Compile Include="Systems\PlayerControlSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -225,6 +226,7 @@
       <Name>Hiromi.WindowsStore</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
     <VisualStudioVersion>11.0</VisualStudioVersion>
   </PropertyGroup>
