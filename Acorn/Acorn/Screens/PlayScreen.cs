@@ -9,7 +9,6 @@ using Hiromi;
 using Hiromi.Components;
 using Hiromi.Messaging;
 using Hiromi.Systems;
-using Acorn.Components;
 
 namespace Acorn.Screens
 {
@@ -26,8 +25,8 @@ namespace Acorn.Screens
             systems.Add(new GeneralInputSystem());
             systems.Add(new BackgroundRenderingSystem());
             systems.Add(new SimplePhysicsSystem());
-            systems.Add(new SpriteRendererSystem<CloudComponent>());
-            systems.Add(new ScreenWrappingSystem<CloudComponent>());
+            systems.Add(new SpriteRendererSystem());
+            systems.Add(new ScreenWrappingSystem());
             systems.Add(new UISystem());
 
             return systems;
@@ -46,7 +45,7 @@ namespace Acorn.Screens
             cloud.AddComponent(new PositionComponent(new Vector2(0.2f, 0.02f), cloudSprite.Texture.Width, cloudSprite.Texture.Height));
             cloud.AddComponent(new SpriteComponent(cloudSprite));
             cloud.AddComponent(new SimplePhysicsComponent(new Vector2(-0.03f, 0f)));
-            cloud.AddComponent(new CloudComponent());
+            cloud.AddComponent(new ScreenWrappingComponent());
             objects.Add(cloud);
 
             var stopButtonSprite = AcornResourceManager.GetStopButtonSprite();
