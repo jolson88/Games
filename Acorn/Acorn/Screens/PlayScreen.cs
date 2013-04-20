@@ -9,6 +9,7 @@ using Hiromi;
 using Hiromi.Components;
 using Hiromi.Messaging;
 using Hiromi.Systems;
+using Acorn.Components;
 
 namespace Acorn.Screens
 {
@@ -23,11 +24,11 @@ namespace Acorn.Screens
         {
             var systems = new List<GameSystem>();
             systems.Add(new GeneralInputSystem());
+            systems.Add(new UISystem());
             systems.Add(new BackgroundRenderingSystem());
             systems.Add(new SimplePhysicsSystem());
             systems.Add(new SpriteRendererSystem());
             systems.Add(new ScreenWrappingSystem());
-            systems.Add(new UISystem());
 
             return systems;
         }
@@ -48,10 +49,21 @@ namespace Acorn.Screens
             cloud.AddComponent(new ScreenWrappingComponent());
             objects.Add(cloud);
 
+            var cardBackSprite = AcornResourceManager.GetCardBackSprite();
+            for (int i = 0; i < 4; i++)
+            {
+                var card = new GameObject();
+                card.AddComponent(new PositionComponent(new Vector2(0.20f + (i * 0.165f), 0.25f), cardBackSprite.Texture.Width, cardBackSprite.Texture.Height));
+                card.AddComponent(new SpriteComponent(cardBackSprite));
+                card.AddComponent(new ButtonComponent());
+                card.AddComponent(new CardComponent(i));
+                objects.Add(card);
+            }
+
             var stopButtonSprite = AcornResourceManager.GetStopButtonSprite();
             var stopButtonPressedSprite = AcornResourceManager.GetStopButtonPressedSprite();
             var stopButton = new GameObject();
-            stopButton.AddComponent(new PositionComponent(new Vector2(0.5f, 0.65f), stopButtonSprite.Texture.Width, stopButtonSprite.Texture.Height));
+            stopButton.AddComponent(new PositionComponent(new Vector2(0.5f, 0.65f), stopButtonSprite.Texture.Width, stopButtonSprite.Texture.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
             stopButton.AddComponent(new SpriteComponent(stopButtonSprite));
             stopButton.AddComponent(new ButtonComponent(stopButtonPressedSprite, stopButtonSprite));
             objects.Add(stopButton);
@@ -76,49 +88,6 @@ namespace Acorn.Screens
             playerTwoController.AddBehavior(new PlayerControllerBehavior(1));
             objectService.AddGameObject(playerTwoController);
 
-         * 
-            for (int i = 0; i < 4; i++)
-            {
-                var card = new GameObject()
-                {
-                    Sprite = AcornResourceManager.GetCardBackSprite(),
-                    Position = new Vector2(0.20f + (i * 0.165f), 0.25f),
-                    Tag = "Card"
-                };
-                card.AddBehavior(new CommonButtonBehavior());
-                card.AddBehavior(new CardBehavior(i));
-                objectService.AddGameObject(card);
-            }
-
-            var redSquirrel = new GameObject()
-            {
-                Sprite = AcornResourceManager.GetRedSquirrelSprite()
-            };
-            redSquirrel.AddBehavior(new SquirrelControllerBehavior(0, new Vector2(0.05f, 0.9f)));
-            objectService.AddGameObject(redSquirrel);
-
-            var redMeter = new GameObject()
-            {
-                Sprite = AcornResourceManager.GetScoreMeterSprite(),
-                Position = new Vector2(0.05f, 0.8f)
-            };
-            redMeter.AddBehavior(new ScoreBehavior(0));
-            objectService.AddGameObject(redMeter);
-
-            var blueSquirrel = new GameObject()
-            {
-                Sprite = AcornResourceManager.GetBlueSquirrelSprite()
-            };
-            blueSquirrel.AddBehavior(new SquirrelControllerBehavior(1, new Vector2(0.95f, 0.9f)));
-            objectService.AddGameObject(blueSquirrel);
-
-            var blueMeter = new GameObject()
-            {
-                Sprite = AcornResourceManager.GetScoreMeterSprite(),
-                Position = new Vector2(0.95f, 0.8f)
-            };
-            blueMeter.AddBehavior(new ScoreBehavior(1));
-            objectService.AddGameObject(blueMeter);
         }
         */
 

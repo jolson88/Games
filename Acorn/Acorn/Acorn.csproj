@@ -136,6 +136,7 @@
     <Compile Include="Behaviors\PlayerControllerBehavior.cs" />
     <Compile Include="Behaviors\ScoreBehavior.cs" />
     <Compile Include="Behaviors\SquirrelControllerBehavior.cs" />
+    <Compile Include="Components\CardComponent.cs" />
     <Compile Include="GamePage.xaml.cs">
       <DependentUpon>GamePage.xaml</DependentUpon>
     </Compile>
@@ -225,9 +226,7 @@
       <Name>Hiromi.WindowsStore</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Components\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
     <VisualStudioVersion>11.0</VisualStudioVersion>
   </PropertyGroup>
