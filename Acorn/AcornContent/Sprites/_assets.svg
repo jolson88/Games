@@ -772,9 +772,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="699.17402"
-     inkscape:cy="245.55482"
+     inkscape:zoom="0.7071068"
+     inkscape:cx="739.86873"
+     inkscape:cy="205.25648"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="false"
@@ -2034,5 +2034,223 @@
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"
        sodipodi:nodetypes="cccccccccccc" />
+    <path
+       style="color:#000000;fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 2373.4456,1149.7883 246.8588,0 c 21.5936,0 38.9777,13.3615 38.9777,29.9583 l 0,39.9444 c 0,16.5968 -17.3841,29.9583 -38.9777,29.9583 l -246.8588,0 c -21.5937,0 -38.9778,-13.3615 -38.9778,-29.9583 l 0,-39.9444 c 0,-16.5968 17.3841,-29.9583 38.9778,-29.9583 z"
+       id="rect2985-17"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\PlayButton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="color:#000000;fill:#ffffff;fill-opacity:0.74074073;fill-rule:evenodd;stroke:none;stroke-width:0.59385347px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 2377.5599,1151.8324 c -20.4343,0.1281 -24.3629,3.4318 -31.9395,10.0926 -5.7388,5.0452 -9.3597,14.3512 -6.6261,19.4488 4.2207,4.9669 22.5781,4.484 40.8941,3.8026 81.7524,-0.059 163.5467,0.118 245.273,-0.088 19.8216,-0.5315 34.3692,-1.5406 31.803,-6.8195 -0.7947,-5.0208 -4.2489,-13.4434 -10.4973,-17.8815 -8.4411,-5.9958 -14.1592,-9.6466 -32.4489,-8.964 -80.8898,0.01 -155.5701,0.3832 -236.4583,0.4089 z"
+       id="rect2985-7-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="caccccacc"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\PlayButton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:50.3408699px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
+       x="2458.3015"
+       y="1205.8337"
+       id="text2985-0"
+       sodipodi:linespacing="125%"
+       transform="scale(0.99327996,1.0067655)"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\PlayButton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan2987-9"
+         x="2458.3015"
+         y="1205.8337">PLAY</tspan></text>
+    <path
+       style="fill:#007b09;fill-opacity:1;stroke:#141414;stroke-opacity:1"
+       d="m 2373.4999,1170.0877 c 4.5207,1.8349 47.4739,24.9061 47.4739,31.8905 0.055,6.6674 -43.2255,26.5471 -47.4739,29.2742 -3.0523,0 -5.5095,-2.4572 -5.5095,-5.5095 l 0,-50.1456 c 0,-3.0523 2.4572,-5.5096 5.5095,-5.5096 z"
+       id="rect3312"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccssc"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\PlayButton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ffffff;fill-opacity:0.22340426;stroke:none;display:inline"
+       d="m 2372.25,1171.6875 c -5.4953,1.7983 -1.8091,9.4978 -2.875,13.5937 -1.2725,47.6308 9.8447,-3.7913 46.7812,12.25 -11.7159,-7.8471 -31.1159,-19.8957 -43.9062,-25.8437 z"
+       id="rect3312-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\PlayButton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="color:#000000;fill:#007b09;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 2371.4456,1270.7883 246.8588,0 c 21.5936,0 38.9777,13.3615 38.9777,29.9583 l 0,39.9444 c 0,16.5968 -17.3841,29.9583 -38.9777,29.9583 l -246.8588,0 c -21.5937,0 -38.9778,-13.3615 -38.9778,-29.9583 l 0,-39.9444 c 0,-16.5968 17.3841,-29.9583 38.9778,-29.9583 z"
+       id="rect2985-17-7"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\PlayButtonPressed.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="color:#000000;fill:#ffffff;fill-opacity:0.74074073;fill-rule:evenodd;stroke:none;stroke-width:0.59385347px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 2375.5599,1272.8324 c -20.4343,0.1281 -24.3629,3.4318 -31.9395,10.0926 -5.7388,5.0452 -9.3597,14.3512 -6.6261,19.4488 4.2207,4.9669 22.5781,4.484 40.8941,3.8026 81.7524,-0.059 163.5467,0.118 245.273,-0.088 19.8216,-0.5315 34.3692,-1.5406 31.803,-6.8195 -0.7947,-5.0208 -4.2489,-13.4434 -10.4973,-17.8815 -8.4411,-5.9958 -14.1592,-9.6466 -32.4489,-8.964 -80.8898,0.01 -155.5701,0.3832 -236.4583,0.4089 z"
+       id="rect2985-7-4-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="caccccacc"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\PlayButtonPressed.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#109b18;fill-opacity:1;stroke:#141414;stroke-opacity:1;display:inline"
+       d="m 2371.4999,1291.0877 c 4.5207,1.8349 47.4739,24.9061 47.4739,31.8905 0.055,6.6674 -43.2255,26.5471 -47.4739,29.2742 -3.0523,0 -5.5095,-2.4572 -5.5095,-5.5095 l 0,-50.1456 c 0,-3.0523 2.4572,-5.5096 5.5095,-5.5096 z"
+       id="rect3312-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccssc"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\PlayButtonPressed.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:50.34086990000000100px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
+       x="2456.2881"
+       y="1326.0205"
+       id="text2985-0-1"
+       sodipodi:linespacing="125%"
+       transform="scale(0.99327996,1.0067655)"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\PlayButtonPressed.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan2987-9-4"
+         x="2456.2881"
+         y="1326.0205">PLAY</tspan></text>
+    <path
+       style="fill:#ffffff;fill-opacity:0.22340423;stroke:none;display:inline"
+       d="m 2370.25,1292.6875 c -5.4953,1.7983 -1.8091,9.4978 -2.875,13.5937 -1.2725,47.6308 9.8447,-3.7913 46.7812,12.25 -11.7159,-7.8471 -31.1159,-19.8957 -43.9062,-25.8437 z"
+       id="rect3312-4-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\PlayButtonPressed.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="color:#000000;fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 2757.567,1148.4416 246.8588,0 c 21.5936,0 38.9777,13.3615 38.9777,29.9583 l 0,39.9444 c 0,16.5968 -17.3841,29.9583 -38.9777,29.9583 l -246.8588,0 c -21.5937,0 -38.9778,-13.3615 -38.9778,-29.9583 l 0,-39.9444 c 0,-16.5968 17.3841,-29.9583 38.9778,-29.9583 z"
+       id="rect2985-2"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\MenuButton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="color:#000000;fill:#ffffff;fill-opacity:0.74074073;fill-rule:evenodd;stroke:none;stroke-width:0.59385347px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 2761.6813,1150.4857 c -20.4343,0.1281 -24.3629,3.4318 -31.9395,10.0926 -5.7388,5.0452 -9.3597,14.3512 -6.6261,19.4488 4.2207,4.9669 22.5781,4.484 40.8941,3.8026 81.7524,-0.059 163.5467,0.118 245.273,-0.088 19.8216,-0.5315 34.3692,-1.5406 31.803,-6.8195 -0.7947,-5.0208 -4.2489,-13.4434 -10.4973,-17.8815 -8.4411,-5.9958 -14.1592,-9.6466 -32.4489,-8.964 -80.8898,0.01 -155.5701,0.3832 -236.4583,0.4089 z"
+       id="rect2985-7-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="caccccacc"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\MenuButton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:50.3408699px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
+       x="2845.0217"
+       y="1204.4961"
+       id="text2985-1"
+       sodipodi:linespacing="125%"
+       transform="scale(0.99327996,1.0067655)"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\MenuButton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan2987-6"
+         x="2845.0217"
+         y="1204.4961">Menu</tspan></text>
+    <g
+       style="display:inline"
+       id="g4715-8"
+       transform="translate(1056.1013,11.131059)"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\MenuButton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="rect4214-5"
+         transform="translate(1795.4375,681.71875)"
+         d="m -83.59375,474.3125 -18.9375,19.28125 0,22.9375 c -0.008,0.0148 18.71875,19.0625 18.71875,19.0625 l 22.90625,0.0937 19.6875,-19.15625 0,-22.9375 -19.46875,-19.1875 z"
+         style="fill:#a70000;fill-opacity:1;stroke:#820000;stroke-width:0.96721864;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="rect4214-0-7"
+         d="m 1696.232,1176.7749 -0.096,20.2852 16.4487,17.1961 20.8778,0.01 17.6072,-17.4495 0.083,-20.2133 -17.716,-17.334 -20.1236,0.01 z"
+         style="fill:#a70000;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+      <path
+         sodipodi:nodetypes="cccccc"
+         inkscape:connector-curvature="0"
+         id="rect4214-1-6"
+         d="m 1711.9764,1156.6057 -18.584,18.8836 0.044,20.9929 c 25.0709,-41.5867 47.4798,3.1368 60.2077,-21.0811 l -19.1594,-18.7898 z"
+         style="fill:#ffffff;fill-opacity:0.11640212;stroke:none;display:inline" />
+    </g>
+    <path
+       style="color:#000000;fill:#007b09;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 2759.6883,1268.6497 246.8588,0 c 21.5936,0 38.9777,13.3615 38.9777,29.9583 l 0,39.9444 c 0,16.5968 -17.3841,29.9583 -38.9777,29.9583 l -246.8588,0 c -21.5937,0 -38.9778,-13.3615 -38.9778,-29.9583 l 0,-39.9444 c 0,-16.5968 17.3841,-29.9583 38.9778,-29.9583 z"
+       id="rect2985-1-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\MenuButtonPressed.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="color:#000000;fill:#ffffff;fill-opacity:0.74074073;fill-rule:evenodd;stroke:none;stroke-width:0.59385347px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 2763.8026,1270.6938 c -20.4343,0.1281 -24.3629,3.4318 -31.9395,10.0926 -5.7388,5.0452 -9.3597,14.3512 -6.6261,19.4488 4.2207,4.9669 22.5781,4.484 40.8941,3.8026 81.7524,-0.059 163.5467,0.118 245.273,-0.088 19.8216,-0.5315 34.3692,-1.5406 31.803,-6.8195 -0.7947,-5.0208 -4.2489,-13.4434 -10.4973,-17.8815 -8.4411,-5.9958 -14.1592,-9.6466 -32.4489,-8.964 -80.8898,0.01 -155.5701,0.3832 -236.4583,0.4089 z"
+       id="rect2985-7-8-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="caccccacc"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\MenuButtonPressed.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:50.3408699px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
+       x="2847.1575"
+       y="1323.8965"
+       id="text2985-6-9"
+       sodipodi:linespacing="125%"
+       transform="scale(0.99327996,1.0067655)"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\MenuButtonPressed.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan2987-0-2"
+         x="2847.1575"
+         y="1323.8965">Menu</tspan></text>
+    <g
+       style="display:inline"
+       id="g4715-2-7"
+       transform="translate(1058.2226,131.33916)"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\MenuButtonPressed.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="rect4214-4-9"
+         transform="translate(1795.4375,681.71875)"
+         d="m -83.59375,474.3125 -18.9375,19.28125 0,22.9375 c -0.008,0.0148 18.71875,19.0625 18.71875,19.0625 l 22.90625,0.0937 19.6875,-19.15625 0,-22.9375 -19.46875,-19.1875 z"
+         style="fill:#a70000;fill-opacity:1;stroke:#820000;stroke-width:0.96721864;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         sodipodi:nodetypes="ccccccccc"
+         inkscape:connector-curvature="0"
+         id="rect4214-0-9-5"
+         d="m 1696.232,1176.7749 -0.096,20.2852 16.4487,17.1961 20.8778,0.01 17.6072,-17.4495 0.083,-20.2133 -17.716,-17.334 -20.1236,0.01 z"
+         style="fill:#a70000;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+      <path
+         sodipodi:nodetypes="cccccc"
+         inkscape:connector-curvature="0"
+         id="rect4214-1-0-4"
+         d="m 1711.9764,1156.6057 -18.584,18.8836 0.044,20.9929 c 25.0709,-41.5867 47.4798,3.1368 60.2077,-21.0811 l -19.1594,-18.7898 z"
+         style="fill:#ffffff;fill-opacity:0.11640212;stroke:none;display:inline" />
+    </g>
   </g>
 </svg>

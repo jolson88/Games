@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Hiromi;
-using Hiromi.Messaging;
 using Microsoft.Xna.Framework.Graphics;
 
 namespace Acorn.Components
 {
-    public class HudComponent : IComponent
+    public class HudComponent : GameObjectComponent
     {
         public Texture2D Texture { get; set; }
 
