@@ -7,7 +7,6 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Hiromi;
 using Hiromi.Components;
-using Hiromi.Messaging;
 using Hiromi.Systems;
 using Acorn.Components;
 using Acorn.Systems;

@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using Hiromi;
 using Hiromi.Components;
 using Hiromi.Systems;
-using Hiromi.Messaging;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Acorn.Components;

@@ -4,8 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Hiromi;
-using Hiromi.Messaging;
-using Hiromi.Processing;
 using Hiromi.Systems;
 
 namespace Acorn.Systems
