@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Hiromi;
 using Hiromi.Systems;
+using Acorn.Screens;
 
 namespace Acorn.Systems
 {
@@ -32,11 +33,17 @@ namespace Acorn.Systems
             this.MessageManager.AddListener<GameStartedMessage>(msg => OnGameStarted((GameStartedMessage)msg));
             this.MessageManager.AddListener<CardSelectionRequestMessage>(msg => OnCardSelectionRequest((CardSelectionRequestMessage)msg));
             this.MessageManager.AddListener<StopRequestMessage>(msg => OnStopRequest((StopRequestMessage)msg));
+            this.MessageManager.AddListener<GameOverMessage>(msg => OnGameOver((GameOverMessage)msg));
         }
 
         private void OnGameStarted(GameStartedMessage msg)
         {
             this.MessageManager.QueueMessage(new StartTurnMessage(_currentPlayer));
+        }
+
+        private void OnGameOver(GameOverMessage msg)
+        {
+            this.MessageManager.QueueMessage(new RequestLoadScreenMessage(new GameOverScreen(msg.WinningPlayerIndex)));
         }
 
         private void OnCardSelectionRequest(CardSelectionRequestMessage msg)

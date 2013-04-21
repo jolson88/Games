@@ -141,6 +141,7 @@
     <Compile Include="MessagesFromGameLogic.cs" />
     <Compile Include="MessagesFromPlayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Screens\GameOverScreen.cs" />
     <Compile Include="Screens\MenuScreen.cs" />
     <Compile Include="Screens\PlayScreen.cs" />
     <Compile Include="Systems\GameLogicSystem.cs" />

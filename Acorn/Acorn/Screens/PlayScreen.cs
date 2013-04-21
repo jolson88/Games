@@ -15,14 +15,17 @@ namespace Acorn.Screens
 {
     public class PlayScreen : Screen
     {
+        private static int CARD_NUMBER = 4;
+        private static int WINNING_TOTAL = 10;
+
         protected override List<GameSystem> LoadGameSystems()
         {
             var systems = new List<GameSystem>();
-            systems.Add(new GameLogicSystem(4, 20));
+            systems.Add(new GameLogicSystem(CARD_NUMBER, WINNING_TOTAL));
             systems.Add(new ScreenWrappingSystem());
             systems.Add(new PlayerControlSystem(0));
             systems.Add(new PlayerControlSystem(1)); // While it may look weird for two, this could easily be a ComputerControlSystem for 2-player game
-            systems.Add(new HudSystem(20));
+            systems.Add(new HudSystem(WINNING_TOTAL));
             return systems;
         }
 
@@ -43,7 +46,7 @@ namespace Acorn.Screens
             objects.Add(cloud);
 
             var cardBackSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.CardBack);
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < CARD_NUMBER; i++)
             {
                 var card = new GameObject();
                 card.AddComponent(new PositionComponent(new Vector2(0.20f + (i * 0.165f), 0.20f), cardBackSprite.Width, cardBackSprite.Height));
