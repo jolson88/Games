@@ -27,15 +27,18 @@ namespace Acorn.Systems
             _winningPoints = winningPoints;
             _cardValues = new Dictionary<int, int?>();
             for (int i = 0; i < cardCount; i++) { _cardValues.Add(i, null); }
+        }
 
-            MessageService.Instance.AddListener<GameStartedMessage>(msg => OnGameStarted((GameStartedMessage)msg));
-            MessageService.Instance.AddListener<CardSelectionRequestMessage>(msg => OnCardSelectionRequest((CardSelectionRequestMessage)msg));
-            MessageService.Instance.AddListener<StopRequestMessage>(msg => OnStopRequest((StopRequestMessage)msg));
+        protected override void OnInitialize()
+        {
+            this.MessageManager.AddListener<GameStartedMessage>(msg => OnGameStarted((GameStartedMessage)msg));
+            this.MessageManager.AddListener<CardSelectionRequestMessage>(msg => OnCardSelectionRequest((CardSelectionRequestMessage)msg));
+            this.MessageManager.AddListener<StopRequestMessage>(msg => OnStopRequest((StopRequestMessage)msg));
         }
 
         private void OnGameStarted(GameStartedMessage msg)
         {
-            MessageService.Instance.QueueMessage(new StartTurnMessage(_currentPlayer));
+            this.MessageManager.QueueMessage(new StartTurnMessage(_currentPlayer));
         }
 
         private void OnCardSelectionRequest(CardSelectionRequestMessage msg)
@@ -70,16 +73,16 @@ namespace Acorn.Systems
         private void EndPlayerTurn(EndTurnReason reason)
         {
             var nextPlayer = (_currentPlayer == 0) ? 1 : 0;
-            MessageService.Instance.QueueMessage(new EndTurnMessage(_currentPlayer, reason));
+            this.MessageManager.QueueMessage(new EndTurnMessage(_currentPlayer, reason));
 
             if (reason == EndTurnReason.WonPoints)
             {
                 _scores[_currentPlayer] += _runningPoints;
-                MessageService.Instance.QueueMessage(new ScoreChangedMessage(_currentPlayer, _scores[_currentPlayer]));
+                this.MessageManager.QueueMessage(new ScoreChangedMessage(_currentPlayer, _scores[_currentPlayer]));
 
                 if (_scores[_currentPlayer] >= _winningPoints)
                 {
-                    MessageService.Instance.QueueMessage(new GameOverMessage(_currentPlayer));
+                    this.MessageManager.QueueMessage(new GameOverMessage(_currentPlayer));
                     return;
                 }
             }
@@ -92,7 +95,7 @@ namespace Acorn.Systems
             this.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(delay), new ActionProcess(() =>
             {
                 ShuffleCards();
-                MessageService.Instance.QueueMessage(new StartTurnMessage(_currentPlayer));
+                this.MessageManager.QueueMessage(new StartTurnMessage(_currentPlayer));
             })));
         }
 
@@ -100,7 +103,7 @@ namespace Acorn.Systems
         {
             _cardValues[cardIndex] = cardValue;
             _runningPoints += cardValue;
-            MessageService.Instance.QueueMessage(new CardSelectedMessage(cardIndex, cardValue));
+            this.MessageManager.QueueMessage(new CardSelectedMessage(cardIndex, cardValue));
         }
 
         private void ShuffleCards()
@@ -109,7 +112,7 @@ namespace Acorn.Systems
             {
                 _cardValues[k] = null;
             }
-            MessageService.Instance.QueueMessage(new CardsShuffledMessage());
+            this.MessageManager.QueueMessage(new CardsShuffledMessage());
         }
 
         private int GetNextRandomCardValue()

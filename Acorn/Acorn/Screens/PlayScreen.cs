@@ -16,20 +16,10 @@ namespace Acorn.Screens
 {
     public class PlayScreen : Screen
     {
-        public PlayScreen()
-        {
-            MessageService.Instance.AddListener<ScreenLoadedMessage>(msg => OnScreenLoaded((ScreenLoadedMessage)msg));
-        }
-
         protected override List<GameSystem> LoadGameSystems()
         {
             var systems = new List<GameSystem>();
-            systems.Add(new GeneralInputSystem());
-            systems.Add(new UISystem());
             systems.Add(new GameLogicSystem(4, 20));
-            systems.Add(new BackgroundRenderingSystem());
-            systems.Add(new SimplePhysicsSystem());
-            systems.Add(new SpriteRendererSystem());
             systems.Add(new ScreenWrappingSystem());
             systems.Add(new PlayerControlSystem(0));
             systems.Add(new PlayerControlSystem(1)); // While it may look weird for two, this could easily be a ComputerControlSystem for 2-player game
@@ -88,11 +78,16 @@ namespace Acorn.Screens
             return objects;
         }
 
+        protected override void RegisterMessageListeners()
+        {
+            this.MessageManager.AddListener<ScreenLoadedMessage>(msg => OnScreenLoaded((ScreenLoadedMessage)msg));
+        }
+
         private void OnScreenLoaded(ScreenLoadedMessage msg)
         {
-            if (msg.LoadedScreen == this)
+            if (msg.Screen == this)
             {
-                MessageService.Instance.QueueMessage(new GameStartedMessage());
+                this.MessageManager.QueueMessage(new GameStartedMessage());
             }
         }
     }

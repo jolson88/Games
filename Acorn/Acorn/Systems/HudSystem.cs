@@ -26,9 +26,12 @@ namespace Acorn.Systems
             _batch = new SpriteBatch(GraphicsService.Instance.GraphicsDevice);
             _scores = new Dictionary<int, int>();
             _scoreMeters = new Dictionary<int, GameObject>();
+        }
 
-            MessageService.Instance.AddListener<GameObjectLoadedMessage>(msg => OnGameObjectLoaded((GameObjectLoadedMessage)msg));
-            MessageService.Instance.AddListener<ScoreChangedMessage>(msg => OnScoreChanged((ScoreChangedMessage)msg));
+        protected override void OnInitialize()
+        {
+            this.MessageManager.AddListener<GameObjectLoadedMessage>(msg => OnGameObjectLoaded((GameObjectLoadedMessage)msg));
+            this.MessageManager.AddListener<ScoreChangedMessage>(msg => OnScoreChanged((ScoreChangedMessage)msg));
         }
 
         private void OnGameObjectLoaded(GameObjectLoadedMessage msg)

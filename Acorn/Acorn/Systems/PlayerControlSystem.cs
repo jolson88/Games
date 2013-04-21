@@ -29,12 +29,15 @@ namespace Acorn.Systems
             _cardSprites.Add(0, ContentService.Instance.GetAsset<Texture2D>(AcornAssets.CardZero));
             _cardSprites.Add(1, ContentService.Instance.GetAsset<Texture2D>(AcornAssets.CardOne));
             _cardSprites.Add(2, ContentService.Instance.GetAsset<Texture2D>(AcornAssets.CardTwo));
+        }
 
-            MessageService.Instance.AddListener<GameObjectLoadedMessage>(msg => OnGameObjectLoaded((GameObjectLoadedMessage)msg));
-            MessageService.Instance.AddListener<StartTurnMessage>(msg => OnStartTurn((StartTurnMessage)msg));
-            MessageService.Instance.AddListener<ButtonPressMessage>(msg => OnButtonPress((ButtonPressMessage)msg));
-            MessageService.Instance.AddListener<CardSelectedMessage>(msg => OnCardSelected((CardSelectedMessage)msg));
-            MessageService.Instance.AddListener<CardsShuffledMessage>(msg => OnCardsShuffled((CardsShuffledMessage)msg));
+        protected override void OnInitialize()
+        {
+            this.MessageManager.AddListener<GameObjectLoadedMessage>(msg => OnGameObjectLoaded((GameObjectLoadedMessage)msg));
+            this.MessageManager.AddListener<StartTurnMessage>(msg => OnStartTurn((StartTurnMessage)msg));
+            this.MessageManager.AddListener<ButtonPressMessage>(msg => OnButtonPress((ButtonPressMessage)msg));
+            this.MessageManager.AddListener<CardSelectedMessage>(msg => OnCardSelected((CardSelectedMessage)msg));
+            this.MessageManager.AddListener<CardsShuffledMessage>(msg => OnCardsShuffled((CardsShuffledMessage)msg));
         }
 
         private void OnGameObjectLoaded(GameObjectLoadedMessage msg)
@@ -60,12 +63,12 @@ namespace Acorn.Systems
             {
                 if (msg.GameObjectId == _stopButton.Id)
                 {
-                    MessageService.Instance.QueueMessage(new StopRequestMessage(_playerIndex));
+                    this.MessageManager.QueueMessage(new StopRequestMessage(_playerIndex));
                 }
                 else if (_cards.Where(go => go.Id == msg.GameObjectId).Count() > 0)
                 {
                     var card = _cards.Where(go => go.Id == msg.GameObjectId).First().GetComponent<CardComponent>();
-                    MessageService.Instance.QueueMessage(new CardSelectionRequestMessage(_playerIndex, card.CardIndex));
+                    this.MessageManager.QueueMessage(new CardSelectionRequestMessage(_playerIndex, card.CardIndex));
                 }
             }
         }
