@@ -1,7 +1,6 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Hiromi;
-using Hiromi.Messaging;
 using Acorn.Screens;
 
 namespace Acorn
@@ -18,8 +17,6 @@ namespace Acorn
         {
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-
-            _screenManager = new ScreenManager();
         }
 
         /// <summary>
@@ -41,7 +38,7 @@ namespace Acorn
         {
             GraphicsService.Instance.GraphicsDevice = this.GraphicsDevice;
             ContentService.Instance.Content = this.Content;
-            MessageService.Instance.QueueMessage(new RequestScreenLoadMessage(new PlayScreen()));
+            _screenManager = new ScreenManager(new MenuScreen());
         }
 
         /// <summary>
