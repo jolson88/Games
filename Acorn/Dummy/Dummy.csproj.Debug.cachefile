@@ -11,3 +11,7 @@ AcornContent\Sprites\RedSquirrel.xnb
 AcornContent\Sprites\BlueSquirrel.xnb
 AcornContent\Sprites\ScoreMeter.xnb
 AcornContent\Fonts\Title.xnb
+AcornContent\Sprites\MenuButton.xnb
+AcornContent\Sprites\MenuButtonPressed.xnb
+AcornContent\Sprites\PlayButton.xnb
+AcornContent\Sprites\PlayButtonPressed.xnb

@@ -8,7 +8,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Acorn.Components
 {
-    public class HudComponent : IComponent
+    public class HudComponent : GameObjectComponent
     {
         public Texture2D Texture { get; set; }
 

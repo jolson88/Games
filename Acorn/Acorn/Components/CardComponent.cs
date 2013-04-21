@@ -8,7 +8,7 @@ using Hiromi.Components;
 
 namespace Acorn.Components
 {
-    public class CardComponent : IComponent
+    public class CardComponent : GameObjectComponent
     {
         public int CardIndex { get; set; }
 

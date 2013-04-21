@@ -34,7 +34,7 @@ namespace Acorn.Screens
             bg.AddComponent(new BackgroundComponent(ContentService.Instance.GetAsset<Texture2D>(AcornAssets.Background)));
             objects.Add(bg);
 
-            var cloudSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.CloudSprite);
+            var cloudSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.Cloud);
             var cloud = new GameObject();
             cloud.AddComponent(new PositionComponent(new Vector2(0.2f, 0.02f), cloudSprite.Width, cloudSprite.Height));
             cloud.AddComponent(new SpriteComponent(cloudSprite));
@@ -48,17 +48,15 @@ namespace Acorn.Screens
                 var card = new GameObject();
                 card.AddComponent(new PositionComponent(new Vector2(0.20f + (i * 0.165f), 0.20f), cardBackSprite.Width, cardBackSprite.Height));
                 card.AddComponent(new SpriteComponent(cardBackSprite));
-                card.AddComponent(new ButtonComponent());
                 card.AddComponent(new CardComponent(i));
                 objects.Add(card);
             }
 
-            var stopButtonSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.StopButtonSprite);
-            var stopButtonPressedSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.StopButtonPressedSprite);
+            var stopButtonSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.StopButton);
+            var stopButtonPressedSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.StopButtonPressed);
             var stopButton = new GameObject() { Tag = "StopButton" };
             stopButton.AddComponent(new PositionComponent(new Vector2(0.5f, 0.7f), stopButtonSprite.Width, stopButtonSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
-            stopButton.AddComponent(new SpriteComponent(stopButtonSprite));
-            stopButton.AddComponent(new ButtonComponent(stopButtonPressedSprite, stopButtonSprite));
+            stopButton.AddComponent(new ButtonComponent(stopButtonSprite, stopButtonPressedSprite));
             objects.Add(stopButton);
 
             var scoreSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.ScoreMeter);

@@ -34,9 +34,9 @@ namespace Acorn.Systems
         {
             this.MessageManager.AddListener<GameObjectLoadedMessage>(msg => OnGameObjectLoaded((GameObjectLoadedMessage)msg));
             this.MessageManager.AddListener<StartTurnMessage>(msg => OnStartTurn((StartTurnMessage)msg));
-            this.MessageManager.AddListener<ButtonPressMessage>(msg => OnButtonPress((ButtonPressMessage)msg));
             this.MessageManager.AddListener<CardSelectedMessage>(msg => OnCardSelected((CardSelectedMessage)msg));
             this.MessageManager.AddListener<CardsShuffledMessage>(msg => OnCardsShuffled((CardsShuffledMessage)msg));
+            this.MessageManager.AddListener<PointerPressMessage>(msg => OnPointerPress((PointerPressMessage)msg));
         }
 
         private void OnGameObjectLoaded(GameObjectLoadedMessage msg)
@@ -56,7 +56,7 @@ namespace Acorn.Systems
             _currentPlayer = msg.PlayerIndex;
         }
 
-        private void OnButtonPress(ButtonPressMessage msg)
+        private void OnPointerPress(PointerPressMessage msg)
         {
             if (_currentPlayer == _playerIndex)
             {

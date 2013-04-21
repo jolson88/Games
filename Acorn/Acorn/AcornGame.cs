@@ -38,7 +38,7 @@ namespace Acorn
         {
             GraphicsService.Instance.GraphicsDevice = this.GraphicsDevice;
             ContentService.Instance.Content = this.Content;
-            _screenManager = new ScreenManager(new PlayScreen());
+            _screenManager = new ScreenManager(new MenuScreen());
         }
 
         /// <summary>

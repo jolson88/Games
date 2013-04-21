@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Acorn.Components
 {
-    public class ScoreComponent : IComponent
+    public class ScoreComponent : GameObjectComponent
     {
         public int PlayerIndex { get; set; }
         public Texture2D Fill { get; set; }
