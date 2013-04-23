@@ -10,15 +10,38 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="52.71875"
-   height="663.65625"
-   id="svg2"
-   version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="_assets.svg"
-   inkscape:export-filename="C:\Home\Dev\Github\Games\Project Acorn\Assets\Images\Background.png"
+   inkscape:export-ydpi="90"
    inkscape:export-xdpi="90"
-   inkscape:export-ydpi="90">
+   inkscape:export-filename="C:\Home\Dev\Github\Games\Project Acorn\Assets\Images\Background.png"
+   sodipodi:docname="_assets.svg"
+   inkscape:version="0.48.4 r9939"
+   version="1.1"
+   id="svg2"
+   height="663.65625"
+   width="52.71875">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="733.41611"
+     inkscape:cy="542.19707"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     showborder="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <defs
      id="defs4">
     <linearGradient
@@ -764,30 +787,206 @@
        y2="685.13947"
        gradientUnits="userSpaceOnUse"
        gradientTransform="translate(290,-6)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4310-7"
+       id="linearGradient4316-1"
+       x1="1727.5552"
+       y1="1054.7795"
+       x2="1724.0198"
+       y2="1034.8037"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient4310-7">
+      <stop
+         style="stop-color:#e49a3c;stop-opacity:1;"
+         offset="0"
+         id="stop4312-40" />
+      <stop
+         style="stop-color:#ecba7b;stop-opacity:1;"
+         offset="1"
+         id="stop4314-9" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4327-8"
+       id="linearGradient4333-4"
+       x1="1729.323"
+       y1="1032.1522"
+       x2="1721.1913"
+       y2="1011.6461"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient4327-8">
+      <stop
+         style="stop-color:#3c1400;stop-opacity:1;"
+         offset="0"
+         id="stop4329-8" />
+      <stop
+         style="stop-color:#6b2300;stop-opacity:1;"
+         offset="1"
+         id="stop4331-2" />
+    </linearGradient>
+    <linearGradient
+       y2="1011.6461"
+       x2="1721.1913"
+       y1="1032.1522"
+       x1="1729.323"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3323"
+       xlink:href="#linearGradient4327-8"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient4310-970">
+      <stop
+         style="stop-color:#909090;stop-opacity:1;"
+         offset="0"
+         id="stop4195" />
+      <stop
+         style="stop-color:#b3b3b3;stop-opacity:1;"
+         offset="1"
+         id="stop4197" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4327-261">
+      <stop
+         style="stop-color:#1e1e1e;stop-opacity:1;"
+         offset="0"
+         id="stop4201" />
+      <stop
+         style="stop-color:#353535;stop-opacity:1;"
+         offset="1"
+         id="stop4203" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4310-970-807">
+      <stop
+         style="stop-color:#9c9c9c;stop-opacity:1;"
+         offset="0"
+         id="stop9176" />
+      <stop
+         style="stop-color:#bfbfbf;stop-opacity:1;"
+         offset="1"
+         id="stop9178" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4327-261-772">
+      <stop
+         style="stop-color:#2a2a2a;stop-opacity:1;"
+         offset="0"
+         id="stop9182" />
+      <stop
+         style="stop-color:#414141;stop-opacity:1;"
+         offset="1"
+         id="stop9184" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4310-970-807-573">
+      <stop
+         style="stop-color:#a8a8a8;stop-opacity:1;"
+         offset="0"
+         id="stop9892" />
+      <stop
+         style="stop-color:#cbcbcb;stop-opacity:1;"
+         offset="1"
+         id="stop9894" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4327-261-772-800">
+      <stop
+         style="stop-color:#363636;stop-opacity:1;"
+         offset="0"
+         id="stop9898" />
+      <stop
+         style="stop-color:#4d4d4d;stop-opacity:1;"
+         offset="1"
+         id="stop9900" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4310-970-807-573-729">
+      <stop
+         style="stop-color:#b4b4b4;stop-opacity:1;"
+         offset="0"
+         id="stop10624" />
+      <stop
+         style="stop-color:#d7d7d7;stop-opacity:1;"
+         offset="1"
+         id="stop10626" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4327-261-772-800-527">
+      <stop
+         style="stop-color:#424242;stop-opacity:1;"
+         offset="0"
+         id="stop10630" />
+      <stop
+         style="stop-color:#595959;stop-opacity:1;"
+         offset="1"
+         id="stop10632" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4310-970-807-573-729-48">
+      <stop
+         style="stop-color:#c0c0c0;stop-opacity:1;"
+         offset="0"
+         id="stop11372" />
+      <stop
+         style="stop-color:#e3e3e3;stop-opacity:1;"
+         offset="1"
+         id="stop11374" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4327-261-772-800-527-117">
+      <stop
+         style="stop-color:#4e4e4e;stop-opacity:1;"
+         offset="0"
+         id="stop11378" />
+      <stop
+         style="stop-color:#656565;stop-opacity:1;"
+         offset="1"
+         id="stop11380" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4310-970-807-573-729-48-581"
+       id="linearGradient4316-414-446-242-161-512-706"
+       x1="1727.5552"
+       y1="1054.7795"
+       x2="1724.0198"
+       y2="1034.8037"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient4310-970-807-573-729-48-581">
+      <stop
+         style="stop-color:#cccccc;stop-opacity:1;"
+         offset="0"
+         id="stop12136" />
+      <stop
+         style="stop-color:#efefef;stop-opacity:1;"
+         offset="1"
+         id="stop12138" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4327-261-772-800-527-117-553"
+       id="linearGradient4333-976-188-241-335-7-884"
+       x1="1729.323"
+       y1="1032.1522"
+       x2="1721.1913"
+       y2="1011.6461"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient4327-261-772-800-527-117-553">
+      <stop
+         style="stop-color:#5a5a5a;stop-opacity:1;"
+         offset="0"
+         id="stop12142" />
+      <stop
+         style="stop-color:#717171;stop-opacity:1;"
+         offset="1"
+         id="stop12144" />
+    </linearGradient>
   </defs>
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="0.7071068"
-     inkscape:cx="739.86873"
-     inkscape:cy="205.25648"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer2"
-     showgrid="false"
-     showborder="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1027"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -1002,7 +1201,7 @@
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <rect
-       style="opacity:0.98999999;fill:#ffffff;fill-opacity:1;stroke:#d2d2d2;stroke-width:2.01153207;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="opacity:0.98999999000000005;fill:#ffffff;fill-opacity:1;stroke:#4f4f4f;stroke-width:2.01153206999999990;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect3107"
        width="177.9904"
        height="267.98651"
@@ -1010,9 +1209,9 @@
        y="661.5249"
        rx="15.195565"
        ry="15.786369"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\CardBacking.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100" />
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\CardBack.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <rect
        style="opacity:0.98999999;fill:url(#linearGradient4616);fill-opacity:1;stroke:#272727;stroke-width:1.54881513;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect3909"
@@ -1022,9 +1221,9 @@
        y="674.03088"
        rx="7.5977821"
        ry="7.8931847"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\CardBacking.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100" />
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\CardBack.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <text
        xml:space="preserve"
        style="font-size:68.44517517px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
@@ -1033,9 +1232,9 @@
        id="text3913"
        sodipodi:linespacing="125%"
        transform="scale(1.0354443,0.965769)"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\CardBacking.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100"><tspan
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\CardBack.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan3915"
          x="1916.9265"
@@ -1047,15 +1246,15 @@
        y="842.95087"
        id="text3924"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\CardBacking.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100"><tspan
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\CardBack.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan3926"
          x="2017.2346"
          y="842.95087">A</tspan></text>
     <rect
-       style="opacity:0.98999999;fill:#ffffff;fill-opacity:1;stroke:#d2d2d2;stroke-width:2.01153207;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       style="opacity:0.98999999000000005;fill:#ffffff;fill-opacity:1;stroke:#4c4c4c;stroke-width:2.01153206999999990;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
        id="rect3107-3"
        width="177.9904"
        height="267.98651"
@@ -1063,9 +1262,9 @@
        y="661.27893"
        rx="15.195565"
        ry="15.786369"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\card1.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100" />
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Card1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#2a2a2a;fill-opacity:1;stroke:none;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
@@ -1073,9 +1272,9 @@
        y="714.4472"
        id="text3946"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\card1.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100"><tspan
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Card1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan3948"
          x="2163.8618"
@@ -1087,15 +1286,15 @@
        y="900.30133"
        id="text3946-8"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\card1.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100"><tspan
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Card1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan3948-9"
          x="2277.3213"
          y="900.30133">1</tspan></text>
     <rect
-       style="opacity:0.98999999;fill:#ffffff;fill-opacity:1;stroke:#d2d2d2;stroke-width:2.01153207;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       style="opacity:0.98999999000000005;fill:#ffffff;fill-opacity:1;stroke:#4f4f4f;stroke-width:2.01153206999999990;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
        id="rect3107-3-3"
        width="177.9904"
        height="267.98651"
@@ -1103,9 +1302,9 @@
        y="661.27899"
        rx="15.195565"
        ry="15.786369"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\card2.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100" />
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Card2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#2a2a2a;fill-opacity:1;stroke:none;display:inline;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
@@ -1113,9 +1312,9 @@
        y="714.44733"
        id="text3946-4"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\card2.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100"><tspan
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Card2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan3948-4"
          x="2370.3257"
@@ -1127,15 +1326,15 @@
        y="900.30145"
        id="text3946-8-6"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\card2.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100"><tspan
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Card2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan3948-9-0"
          x="2480.9568"
          y="900.30145">2</tspan></text>
     <rect
-       style="opacity:0.98999999;fill:#ffffff;fill-opacity:1;stroke:#d2d2d2;stroke-width:2.01153207;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       style="opacity:0.98999999000000005;fill:#ffffff;fill-opacity:1;stroke:#3e3e3e;stroke-width:2.01153206999999990;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
        id="rect3107-3-3-6"
        width="177.9904"
        height="267.98651"
@@ -1143,12 +1342,12 @@
        y="661.11176"
        rx="15.195565"
        ry="15.786369"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\card0.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100" />
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Card0.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        sodipodi:type="arc"
-       style="opacity:0.98999999;fill:#860b0b;fill-opacity:1;stroke:#710000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="opacity:0.98999999000000005;fill:#860b0b;fill-opacity:1;stroke:#410000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="path4019"
        sodipodi:cx="553.31104"
        sodipodi:cy="110.19387"
@@ -1156,12 +1355,12 @@
        sodipodi:ry="96.873627"
        d="m 605.99049,110.19387 c 0,53.50183 -23.5854,96.87363 -52.67945,96.87363 -29.09406,0 -52.67946,-43.3718 -52.67946,-96.87363 0,-53.501826 23.5854,-96.873626 52.67946,-96.873626 29.09405,0 52.67945,43.3718 52.67945,96.873626 z"
        transform="translate(2083.3162,687.03246)"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\card0.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100" />
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Card0.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        sodipodi:type="arc"
-       style="opacity:0.98999999;fill:#ffffff;fill-opacity:1;stroke:#710000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="opacity:0.98999999000000005;fill:#ffffff;fill-opacity:1;stroke:#360000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="path4023"
        sodipodi:cx="560.38214"
        sodipodi:cy="126.45732"
@@ -1169,41 +1368,41 @@
        sodipodi:ry="70.003571"
        d="m 591.84839,126.45732 c 0,38.66191 -14.08792,70.00357 -31.46625,70.00357 -17.37833,0 -31.46625,-31.34166 -31.46625,-70.00357 0,-38.661903 14.08792,-70.003569 31.46625,-70.003569 17.37833,0 31.46625,31.341666 31.46625,70.003569 z"
        transform="translate(2076.9522,684.91114)"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\card0.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100" />
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Card0.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <g
        id="g4115"
-       transform="translate(280.80762,-4.5857871)"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\acorn.png"
-       inkscape:export-xdpi="60"
-       inkscape:export-ydpi="60">
+       transform="translate(188.02588,-8.4142106)"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\AcornEmpty.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          sodipodi:nodetypes="ccscc"
          inkscape:connector-curvature="0"
          id="path4030"
          d="m 1727.2459,1072.1921 c -13.2401,-1.5468 -20.6365,-16.8912 -20.313,-36.7229 9.5497,-2.7886 15.2881,-3.5822 21.7272,-3.5822 6.8956,0 11.7501,-1.9345 22.0445,2.6885 0.012,17.5283 -6.8006,36.2831 -23.4587,37.6166 z"
-         style="fill:url(#linearGradient4316);fill-opacity:1;stroke:#995600;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1" />
+         style="fill:url(#linearGradient4316-414-446-242-161-512-706);fill-opacity:1;stroke:#222222;stroke-width:1.5;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
       <path
          sodipodi:nodetypes="ccccc"
          inkscape:connector-curvature="0"
          d="m 1732.79,1013.927 c 1.8809,-0.1621 4.1896,3.8113 4.1896,3.8113 0,0 -7.8717,-5.2129 -9.498,12.1237 -1.9299,0.6717 -5.9598,-1.4349 -5.9598,-1.4349 0,0 5.1696,-13.9743 11.2682,-14.5001 z"
-         style="fill:#5d2c14;fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686"
+         style="fill:#747474;fill-opacity:1;stroke:#2a2a2a;stroke-width:1.5;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686000000003;stroke-dasharray:none"
          id="path4118" />
       <path
          sodipodi:nodetypes="ccsccscc"
          inkscape:connector-curvature="0"
          id="path4027"
          d="m 1750.5362,1041.7865 c -0.261,0.083 0.01,-1.0034 0.011,-2.274 -5.1136,-0.8419 -12.2303,-2.057 -20.6935,-2.057 -9.7368,0 -17.4263,1.9329 -22.9089,2.8154 0.093,1.6117 0.2467,2.3692 0.2816,3.3717 -8.8389,-7.082 -0.5292,-22.7158 22.4505,-22.7158 22.2727,0 27.4005,16.9596 20.8597,20.8597 z"
-         style="fill:url(#linearGradient4333);fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686" />
+         style="fill:url(#linearGradient4333-976-188-241-335-7-884);fill-opacity:1;stroke:#222222;stroke-width:1.5;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686000000003;stroke-dasharray:none" />
     </g>
     <g
        transform="matrix(1.4652809,0,0,1.4652809,-298.35197,-738.56998)"
        style="display:inline"
        id="g4115-0"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\card1.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100">
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Card1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          sodipodi:nodetypes="ccscc"
          inkscape:connector-curvature="0"
@@ -1227,9 +1426,9 @@
        transform="matrix(1.4652809,0,0,1.4652809,-117.03937,-695.79003)"
        style="display:inline"
        id="g4115-0-0"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\card2.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100">
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Card2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          sodipodi:nodetypes="ccscc"
          inkscape:connector-curvature="0"
@@ -1253,9 +1452,9 @@
        transform="matrix(1.4652809,0,0,1.4652809,-68.9561,-777.10731)"
        style="display:inline"
        id="g4115-0-0-1"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\card2.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100">
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Card2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          sodipodi:nodetypes="ccscc"
          inkscape:connector-curvature="0"
@@ -2251,6 +2450,32 @@
          id="rect4214-1-0-4"
          d="m 1711.9764,1156.6057 -18.584,18.8836 0.044,20.9929 c 25.0709,-41.5867 47.4798,3.1368 60.2077,-21.0811 l -19.1594,-18.7898 z"
          style="fill:#ffffff;fill-opacity:0.11640212;stroke:none;display:inline" />
+    </g>
+    <g
+       style="display:inline"
+       id="g4115-4"
+       transform="translate(299.4009,-7.6732103)"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Acorn.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="ccscc"
+         inkscape:connector-curvature="0"
+         id="path4030-5"
+         d="m 1727.2459,1072.1921 c -13.2401,-1.5468 -20.6365,-16.8912 -20.313,-36.7229 9.5497,-2.7886 15.2881,-3.5822 21.7272,-3.5822 6.8956,0 11.7501,-1.9345 22.0445,2.6885 0.012,17.5283 -6.8006,36.2831 -23.4587,37.6166 z"
+         style="fill:url(#linearGradient4316-1);fill-opacity:1;stroke:#995600;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         d="m 1732.79,1013.927 c 1.8809,-0.1621 4.1896,3.8113 4.1896,3.8113 0,0 -7.8717,-5.2129 -9.498,12.1237 -1.9299,0.6717 -5.9598,-1.4349 -5.9598,-1.4349 0,0 5.1696,-13.9743 11.2682,-14.5001 z"
+         style="fill:#5d2c14;fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686"
+         id="path4118-5" />
+      <path
+         sodipodi:nodetypes="ccsccscc"
+         inkscape:connector-curvature="0"
+         id="path4027-1"
+         d="m 1750.5362,1041.7865 c -0.261,0.083 0.01,-1.0034 0.011,-2.274 -5.1136,-0.8419 -12.2303,-2.057 -20.6935,-2.057 -9.7368,0 -17.4263,1.9329 -22.9089,2.8154 0.093,1.6117 0.2467,2.3692 0.2816,3.3717 -8.8389,-7.082 -0.5292,-22.7158 22.4505,-22.7158 22.2727,0 27.4005,16.9596 20.8597,20.8597 z"
+         style="fill:url(#linearGradient3323);fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686" />
     </g>
   </g>
 </svg>

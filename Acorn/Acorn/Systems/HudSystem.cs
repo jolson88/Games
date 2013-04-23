@@ -15,72 +15,63 @@ namespace Acorn.Systems
     public class HudSystem : GameSystem
     {
         private int _winningPoints;
-        private SpriteBatch _batch;
         private Dictionary<int, int> _scores;
-        private Dictionary<int, GameObject> _scoreMeters;
+        private Texture2D _emptyAcorn;
+        private Texture2D _scoredAcorn;
 
         public HudSystem(int winningPoints)
         {
             _winningPoints = winningPoints;
-            _batch = new SpriteBatch(GraphicsService.Instance.GraphicsDevice);
             _scores = new Dictionary<int, int>();
-            _scoreMeters = new Dictionary<int, GameObject>();
         }
 
         protected override void OnInitialize()
         {
-            this.MessageManager.AddListener<GameObjectLoadedMessage>(msg => OnGameObjectLoaded((GameObjectLoadedMessage)msg));
             this.MessageManager.AddListener<ScoreChangedMessage>(msg => OnScoreChanged((ScoreChangedMessage)msg));
-        }
 
-        private void OnGameObjectLoaded(GameObjectLoadedMessage msg)
-        {
-            if (msg.GameObject.HasComponent<ScoreComponent>())
+            _emptyAcorn = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.EmptyAcorn);
+            _scoredAcorn = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.Acorn);
+
+            // Generate player one's score acorns
+            for (int pointNumber = 0; pointNumber < _winningPoints; pointNumber++)
             {
-                var scoreComponent = msg.GameObject.GetComponent<ScoreComponent>();
-                _scoreMeters.Add(scoreComponent.PlayerIndex, msg.GameObject);
-                _scores.Add(scoreComponent.PlayerIndex, 0);
+                var obj = new GameObject();
+                obj.AddComponent(new PositionComponent(new Vector2(0.05f, (0.07f * pointNumber) + 0.07f), _emptyAcorn.Width, _emptyAcorn.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
+                obj.AddComponent(new SpriteComponent(_emptyAcorn));
+                obj.AddComponent(new ScoreComponent(0, pointNumber));
+                this.GameObjectManager.AddGameObject(obj);
+            }
+
+            // Generate player two's score acorns
+            for (int pointNumber = 0; pointNumber < _winningPoints; pointNumber++)
+            {
+                var obj = new GameObject();
+                obj.AddComponent(new PositionComponent(new Vector2(0.95f, (0.07f * pointNumber) + 0.07f), _emptyAcorn.Width, _emptyAcorn.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
+                obj.AddComponent(new SpriteComponent(_emptyAcorn));
+                obj.AddComponent(new ScoreComponent(1, pointNumber));
+                this.GameObjectManager.AddGameObject(obj);
             }
         }
 
         private void OnScoreChanged(ScoreChangedMessage msg)
         {
             _scores[msg.PlayerIndex] = msg.Score;
-        }
 
-        protected override void OnDraw(GameTime gameTime)
-        {
-            _batch.Begin();
-
-            // Draw score bars
-            foreach (var obj in _scoreMeters.Values)
+            foreach (var obj in this.GameObjects.Values)
             {
-                var posComponent = obj.GetComponent<PositionComponent>();
-                var hudComponent = obj.GetComponent<HudComponent>();
+                var spriteComponent = obj.GetComponent<SpriteComponent>();
                 var scoreComponent = obj.GetComponent<ScoreComponent>();
 
-                // Determine how filled the meter should be and draw the filler first
-                var scorePercentage = (float)_scores[scoreComponent.PlayerIndex] / _winningPoints;
-                scorePercentage = scorePercentage > 1.0f ? 1.0f : scorePercentage;
-                var meterBounds = posComponent.Bounds.Deflate(10);
-                meterBounds.Y = (meterBounds.Y + meterBounds.Height) - (meterBounds.Height * scorePercentage);
-                meterBounds.Height = meterBounds.Height * scorePercentage;
-
-                _batch.Draw(scoreComponent.Fill,
-                    new Rectangle((int)(meterBounds.X * GraphicsService.Instance.GraphicsDevice.Viewport.Width),
-                        (int)(meterBounds.Y * GraphicsService.Instance.GraphicsDevice.Viewport.Height),
-                        (int)(meterBounds.Width * GraphicsService.Instance.GraphicsDevice.Viewport.Width),
-                        (int)(meterBounds.Height * GraphicsService.Instance.GraphicsDevice.Viewport.Height)),
-                    Color.White);
-
-                // We use Bounds instead of Position as Bounds takes the achor point into account
-                _batch.Draw(hudComponent.Texture,
-                    new Vector2(posComponent.Bounds.X * GraphicsService.Instance.GraphicsDevice.Viewport.Width,
-                        posComponent.Bounds.Y * GraphicsService.Instance.GraphicsDevice.Viewport.Height),
-                    Color.White);
+                if (scoreComponent.PlayerIndex == msg.PlayerIndex && scoreComponent.PointNumber < msg.Score)
+                {
+                    spriteComponent.Texture = _scoredAcorn;
+                }
             }
+        }
 
-            _batch.End();
+        protected override bool IsGameObjectForSystem(GameObject obj)
+        {
+            return obj.HasComponent<SpriteComponent>() && obj.HasComponent<ScoreComponent>();
         }
     }
 }

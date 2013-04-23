@@ -12,6 +12,8 @@ namespace Acorn
 {
     public static class AcornAssets
     {
+        public static string Acorn = "Sprites\\Acorn";
+        public static string EmptyAcorn = "Sprites\\AcornEmpty";
         public static string Background = "Sprites\\Background";
         public static string Cloud = "Sprites\\Cloud";
         public static string StopButton = "Sprites\\StopButton";

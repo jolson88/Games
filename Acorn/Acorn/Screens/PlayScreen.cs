@@ -62,19 +62,6 @@ namespace Acorn.Screens
             stopButton.AddComponent(new ButtonComponent(stopButtonSprite, stopButtonPressedSprite));
             objects.Add(stopButton);
 
-            var scoreSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.ScoreMeter);
-            var playerOneScoreMeter = new GameObject();
-            playerOneScoreMeter.AddComponent(new PositionComponent(new Vector2(0.02f, 0.03f), scoreSprite.Width, scoreSprite.Height, HorizontalAnchor.Left, VerticalAnchor.Top));
-            playerOneScoreMeter.AddComponent(new HudComponent(scoreSprite));
-            playerOneScoreMeter.AddComponent(new ScoreComponent(0, new Color(225, 10, 10, 255)));
-            objects.Add(playerOneScoreMeter);
-
-            var playerTwoScoreMeter = new GameObject();
-            playerTwoScoreMeter.AddComponent(new PositionComponent(new Vector2(0.98f, 0.03f), scoreSprite.Width, scoreSprite.Height, HorizontalAnchor.Right, VerticalAnchor.Top));
-            playerTwoScoreMeter.AddComponent(new HudComponent(scoreSprite));
-            playerTwoScoreMeter.AddComponent(new ScoreComponent(1, new Color(70, 140, 255, 255)));
-            objects.Add(playerTwoScoreMeter);
-
             return objects;
         }
 
