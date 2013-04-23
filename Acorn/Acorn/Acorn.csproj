@@ -147,6 +147,7 @@
     <Compile Include="Systems\GameLogicSystem.cs" />
     <Compile Include="Systems\HudSystem.cs" />
     <Compile Include="Systems\PlayerControlSystem.cs" />
+    <Compile Include="Systems\VisualizationSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -222,6 +223,14 @@
     </Content>
     <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sprites\AcornEmpty.xnb">
       <Link>Content\Sprites\AcornEmpty.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sprites\GameTitle.xnb">
+      <Link>Content\Sprites\GameTitle.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Fonts\Details.xnb">
+      <Link>Content\Fonts\Details.xnb</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Acorn_TemporaryKey.pfx" />

@@ -25,6 +25,7 @@ namespace Acorn.Screens
             systems.Add(new ScreenWrappingSystem());
             systems.Add(new PlayerControlSystem(0));
             systems.Add(new PlayerControlSystem(1)); // While it may look weird for two, this could easily be a ComputerControlSystem for 2-player game
+            systems.Add(new VisualizationSystem());
             systems.Add(new HudSystem(WINNING_TOTAL));
             return systems;
         }

@@ -47,8 +47,8 @@ namespace Acorn.Screens
 
             var title = new GameObject();
             string text = (_winningPlayer == 0) ? "Red Player Wins!!!" : "Blue Player Wins!!!";
-            title.AddComponent(new PositionComponent(new Microsoft.Xna.Framework.Vector2(0.5f, 0.15f), 0, 0, HorizontalAnchor.Center));
-            title.AddComponent(new LabelComponent(text, ContentService.Instance.GetAsset<SpriteFont>(AcornAssets.TitleText), Color.Black));
+            title.AddComponent(new PositionComponent(new Vector2(0.5f, 0.15f), 0, 0, HorizontalAnchor.Center));
+            title.AddComponent(new LabelComponent(text, ContentService.Instance.GetAsset<SpriteFont>(AcornAssets.TitleText), new Color(30, 30, 30)));
             objects.Add(title);
 
             var playButtonSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.PlayButton);
