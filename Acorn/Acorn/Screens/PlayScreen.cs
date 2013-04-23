@@ -50,7 +50,7 @@ namespace Acorn.Screens
             for (int i = 0; i < CARD_NUMBER; i++)
             {
                 var card = new GameObject();
-                card.AddComponent(new PositionComponent(new Vector2(0.20f + (i * 0.165f), 0.20f), cardBackSprite.Width, cardBackSprite.Height));
+                card.AddComponent(new PositionComponent(new Vector2(0.20f + (i * 0.165f), 0.30f), cardBackSprite.Width, cardBackSprite.Height));
                 card.AddComponent(new SpriteComponent(cardBackSprite));
                 card.AddComponent(new CardComponent(i));
                 objects.Add(card);
