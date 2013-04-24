@@ -35,7 +35,7 @@ namespace Acorn.Systems
             // Generate player one's score acorns
             for (int pointNumber = 0; pointNumber < _winningPoints; pointNumber++)
             {
-                var obj = new GameObject();
+                var obj = new GameObject(depth:-100);
                 obj.AddComponent(new PositionComponent(new Vector2(0.05f, (0.07f * pointNumber) + 0.07f), _emptyAcorn.Width, _emptyAcorn.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
                 obj.AddComponent(new SpriteComponent(_emptyAcorn));
                 obj.AddComponent(new ScoreComponent(0, pointNumber));
@@ -45,7 +45,7 @@ namespace Acorn.Systems
             // Generate player two's score acorns
             for (int pointNumber = 0; pointNumber < _winningPoints; pointNumber++)
             {
-                var obj = new GameObject();
+                var obj = new GameObject(depth: -100);
                 obj.AddComponent(new PositionComponent(new Vector2(0.95f, (0.07f * pointNumber) + 0.07f), _emptyAcorn.Width, _emptyAcorn.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
                 obj.AddComponent(new SpriteComponent(_emptyAcorn));
                 obj.AddComponent(new ScoreComponent(1, pointNumber));

@@ -18,13 +18,11 @@ namespace Acorn.Screens
         protected override IEnumerable<GameSystem> LoadGameSystems()
         {
             yield return new GeneralInputSystem();
-            yield return new BackgroundRenderingSystem();
-            yield return new UISystem();
         }
 
         protected override IEnumerable<GameObject> LoadGameObjects()
         {
-            var bg = new GameObject();
+            var bg = new GameObject(depth: 1000);
             bg.AddComponent(new BackgroundComponent(ContentService.Instance.GetAsset<Texture2D>(AcornAssets.Background)));
             yield return bg;
 

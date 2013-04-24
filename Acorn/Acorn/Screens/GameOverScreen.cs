@@ -25,8 +25,6 @@ namespace Acorn.Screens
         protected override IEnumerable<GameSystem> LoadGameSystems()
         {
             yield return new GeneralInputSystem();
-            yield return new BackgroundRenderingSystem();
-            yield return new UISystem();
         }
 
         protected override IEnumerable<GameObject> LoadGameObjects()
