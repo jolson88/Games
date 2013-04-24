@@ -24,7 +24,6 @@ namespace Acorn.Screens
             yield return new BackgroundRenderingSystem();
             yield return new UISystem();
             yield return new GameLogicSystem(CARD_NUMBER, WINNING_TOTAL);
-            yield return new ScreenWrappingSystem();
             yield return new PlayerControlSystem(0);
             yield return new PlayerControlSystem(1); // While it may look weird for two, this could easily be a ComputerControlSystem for 2-player game
             yield return new VisualizationSystem();

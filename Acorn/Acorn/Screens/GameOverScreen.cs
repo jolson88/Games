@@ -27,7 +27,6 @@ namespace Acorn.Screens
             yield return new GeneralInputSystem();
             yield return new BackgroundRenderingSystem();
             yield return new UISystem();
-            yield return new ScreenWrappingSystem();
         }
 
         protected override IEnumerable<GameObject> LoadGameObjects()
