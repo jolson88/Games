@@ -22,20 +22,16 @@ namespace Acorn.Screens
             _winningPlayer = winningPlayer;
         }
 
-        protected override List<GameSystem> LoadGameSystems()
+        protected override IEnumerable<GameSystem> LoadGameSystems()
         {
-            var systems = new List<GameSystem>();
-            systems.Add(new ScreenWrappingSystem());
-            return systems;
+            yield return new ScreenWrappingSystem();
         }
 
-        protected override List<GameObject> LoadGameObjects()
+        protected override IEnumerable<GameObject> LoadGameObjects()
         {
-            var objects = new List<GameObject>();
-
             var bg = new GameObject();
             bg.AddComponent(new BackgroundComponent(ContentService.Instance.GetAsset<Texture2D>(AcornAssets.Background)));
-            objects.Add(bg);
+            yield return bg;
 
             var cloudSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.Cloud);
             var cloud = new GameObject();
@@ -43,27 +39,27 @@ namespace Acorn.Screens
             cloud.AddComponent(new SpriteComponent(cloudSprite));
             cloud.AddComponent(new SimplePhysicsComponent(new Vector2(-0.03f, 0f)));
             cloud.AddComponent(new ScreenWrappingComponent());
-            objects.Add(cloud);
+            yield return cloud;
 
             var title = new GameObject();
             string text = (_winningPlayer == 0) ? "Red Player Wins!!!" : "Blue Player Wins!!!";
             title.AddComponent(new PositionComponent(new Vector2(0.5f, 0.15f), 0, 0, HorizontalAnchor.Center));
             title.AddComponent(new LabelComponent(text, ContentService.Instance.GetAsset<SpriteFont>(AcornAssets.TitleText), new Color(30, 30, 30)));
-            objects.Add(title);
+            yield return title;
 
             var playButtonSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.PlayButton);
             var playButtonPressedSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.PlayButtonPressed);
             _playButton = new GameObject();
             _playButton.AddComponent(new PositionComponent(new Vector2(0.5f, 0.4f), playButtonSprite.Width, playButtonSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
             _playButton.AddComponent(new ButtonComponent(playButtonSprite, playButtonPressedSprite));
-            objects.Add(_playButton);
+            yield return _playButton;
 
             var menuButtonSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.MenuButton);
             var menuButtonPressedSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.MenuButtonPressed);
             _menuButton = new GameObject();
             _menuButton.AddComponent(new PositionComponent(new Vector2(0.5f, 0.55f), menuButtonSprite.Width, menuButtonPressedSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
             _menuButton.AddComponent(new ButtonComponent(menuButtonSprite, menuButtonPressedSprite));
-            objects.Add(_menuButton);
+            yield return _menuButton;
 
             var squirrelAsset = (_winningPlayer == 0) ? AcornAssets.RedSquirrel : AcornAssets.BlueSquirrel;
             var squirrelPosition = (_winningPlayer == 0) ? new Vector2(0.25f, 0.96f) : new Vector2(0.75f, 0.96f);
@@ -71,9 +67,7 @@ namespace Acorn.Screens
             var squirrel = new GameObject();
             squirrel.AddComponent(new PositionComponent(squirrelPosition, squirrelSprite.Width, squirrelSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Bottom));
             squirrel.AddComponent(new SpriteComponent(squirrelSprite));
-            objects.Add(squirrel);
-
-            return objects;
+            yield return squirrel;
         }
 
         protected override void RegisterMessageListeners()

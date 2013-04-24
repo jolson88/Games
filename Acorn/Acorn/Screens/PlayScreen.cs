@@ -18,25 +18,21 @@ namespace Acorn.Screens
         private static int CARD_NUMBER = 4;
         private static int WINNING_TOTAL = 10;
 
-        protected override List<GameSystem> LoadGameSystems()
+        protected override IEnumerable<GameSystem> LoadGameSystems()
         {
-            var systems = new List<GameSystem>();
-            systems.Add(new GameLogicSystem(CARD_NUMBER, WINNING_TOTAL));
-            systems.Add(new ScreenWrappingSystem());
-            systems.Add(new PlayerControlSystem(0));
-            systems.Add(new PlayerControlSystem(1)); // While it may look weird for two, this could easily be a ComputerControlSystem for 2-player game
-            systems.Add(new VisualizationSystem());
-            systems.Add(new HudSystem(WINNING_TOTAL));
-            return systems;
+            yield return new GameLogicSystem(CARD_NUMBER, WINNING_TOTAL);
+            yield return new ScreenWrappingSystem();
+            yield return new PlayerControlSystem(0);
+            yield return new PlayerControlSystem(1); // While it may look weird for two, this could easily be a ComputerControlSystem for 2-player game
+            yield return new VisualizationSystem();
+            yield return new HudSystem(WINNING_TOTAL);
         }
 
-        protected override List<GameObject> LoadGameObjects()
+        protected override IEnumerable<GameObject> LoadGameObjects()
         {
-            var objects = new List<GameObject>();
-
             var bg = new GameObject();
             bg.AddComponent(new BackgroundComponent(ContentService.Instance.GetAsset<Texture2D>(AcornAssets.Background)));
-            objects.Add(bg);
+            yield return bg;
 
             var cloudSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.Cloud);
             var cloud = new GameObject();
@@ -44,7 +40,7 @@ namespace Acorn.Screens
             cloud.AddComponent(new SpriteComponent(cloudSprite));
             cloud.AddComponent(new SimplePhysicsComponent(new Vector2(-0.03f, 0f)));
             cloud.AddComponent(new ScreenWrappingComponent());
-            objects.Add(cloud);
+            yield return cloud;
 
             var cardBackSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.CardBack);
             for (int i = 0; i < CARD_NUMBER; i++)
@@ -53,7 +49,7 @@ namespace Acorn.Screens
                 card.AddComponent(new PositionComponent(new Vector2(0.20f + (i * 0.165f), 0.30f), cardBackSprite.Width, cardBackSprite.Height));
                 card.AddComponent(new SpriteComponent(cardBackSprite));
                 card.AddComponent(new CardComponent(i));
-                objects.Add(card);
+                yield return card;
             }
 
             var stopButtonSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.StopButton);
@@ -61,9 +57,7 @@ namespace Acorn.Screens
             var stopButton = new GameObject() { Tag = "StopButton" };
             stopButton.AddComponent(new PositionComponent(new Vector2(0.5f, 0.7f), stopButtonSprite.Width, stopButtonSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
             stopButton.AddComponent(new ButtonComponent(stopButtonSprite, stopButtonPressedSprite));
-            objects.Add(stopButton);
-
-            return objects;
+            yield return stopButton;
         }
 
         protected override void RegisterMessageListeners()
