@@ -26,7 +26,6 @@ namespace Acorn.Screens
         {
             yield return new GeneralInputSystem();
             yield return new BackgroundRenderingSystem();
-            yield return new SpriteRendererSystem();
             yield return new UISystem();
             yield return new ScreenWrappingSystem();
         }
