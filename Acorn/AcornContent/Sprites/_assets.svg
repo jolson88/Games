@@ -10,15 +10,38 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="52.71875"
-   height="663.65625"
-   id="svg2"
-   version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="_assets.svg"
-   inkscape:export-filename="C:\Home\Dev\Github\Games\Project Acorn\Assets\Images\Background.png"
+   inkscape:export-ydpi="90"
    inkscape:export-xdpi="90"
-   inkscape:export-ydpi="90">
+   inkscape:export-filename="C:\Home\Dev\Github\Games\Project Acorn\Assets\Images\Background.png"
+   sodipodi:docname="_assets.svg"
+   inkscape:version="0.48.4 r9939"
+   version="1.1"
+   id="svg2"
+   height="663.65625"
+   width="52.71875">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="752.50779"
+     inkscape:cy="700.8553"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     showborder="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <defs
      id="defs4">
     <linearGradient
@@ -763,31 +786,488 @@
        x2="1704.2207"
        y2="685.13947"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(290,-6)" />
+       gradientTransform="translate(96.252747,98.651801)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4310-7"
+       id="linearGradient4316-1"
+       x1="1727.5552"
+       y1="1054.7795"
+       x2="1724.0198"
+       y2="1034.8037"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient4310-7">
+      <stop
+         style="stop-color:#e49a3c;stop-opacity:1;"
+         offset="0"
+         id="stop4312-40" />
+      <stop
+         style="stop-color:#ecba7b;stop-opacity:1;"
+         offset="1"
+         id="stop4314-9" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4327-8"
+       id="linearGradient4333-4"
+       x1="1729.323"
+       y1="1032.1522"
+       x2="1721.1913"
+       y2="1011.6461"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient4327-8">
+      <stop
+         style="stop-color:#3c1400;stop-opacity:1;"
+         offset="0"
+         id="stop4329-8" />
+      <stop
+         style="stop-color:#6b2300;stop-opacity:1;"
+         offset="1"
+         id="stop4331-2" />
+    </linearGradient>
+    <linearGradient
+       y2="1011.6461"
+       x2="1721.1913"
+       y1="1032.1522"
+       x1="1729.323"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3323"
+       xlink:href="#linearGradient4327-8"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient4310-970">
+      <stop
+         style="stop-color:#909090;stop-opacity:1;"
+         offset="0"
+         id="stop4195" />
+      <stop
+         style="stop-color:#b3b3b3;stop-opacity:1;"
+         offset="1"
+         id="stop4197" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4327-261">
+      <stop
+         style="stop-color:#1e1e1e;stop-opacity:1;"
+         offset="0"
+         id="stop4201" />
+      <stop
+         style="stop-color:#353535;stop-opacity:1;"
+         offset="1"
+         id="stop4203" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4310-970-807">
+      <stop
+         style="stop-color:#9c9c9c;stop-opacity:1;"
+         offset="0"
+         id="stop9176" />
+      <stop
+         style="stop-color:#bfbfbf;stop-opacity:1;"
+         offset="1"
+         id="stop9178" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4327-261-772">
+      <stop
+         style="stop-color:#2a2a2a;stop-opacity:1;"
+         offset="0"
+         id="stop9182" />
+      <stop
+         style="stop-color:#414141;stop-opacity:1;"
+         offset="1"
+         id="stop9184" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4310-970-807-573">
+      <stop
+         style="stop-color:#a8a8a8;stop-opacity:1;"
+         offset="0"
+         id="stop9892" />
+      <stop
+         style="stop-color:#cbcbcb;stop-opacity:1;"
+         offset="1"
+         id="stop9894" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4327-261-772-800">
+      <stop
+         style="stop-color:#363636;stop-opacity:1;"
+         offset="0"
+         id="stop9898" />
+      <stop
+         style="stop-color:#4d4d4d;stop-opacity:1;"
+         offset="1"
+         id="stop9900" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4310-970-807-573-729">
+      <stop
+         style="stop-color:#b4b4b4;stop-opacity:1;"
+         offset="0"
+         id="stop10624" />
+      <stop
+         style="stop-color:#d7d7d7;stop-opacity:1;"
+         offset="1"
+         id="stop10626" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4327-261-772-800-527">
+      <stop
+         style="stop-color:#424242;stop-opacity:1;"
+         offset="0"
+         id="stop10630" />
+      <stop
+         style="stop-color:#595959;stop-opacity:1;"
+         offset="1"
+         id="stop10632" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4310-970-807-573-729-48">
+      <stop
+         style="stop-color:#c0c0c0;stop-opacity:1;"
+         offset="0"
+         id="stop11372" />
+      <stop
+         style="stop-color:#e3e3e3;stop-opacity:1;"
+         offset="1"
+         id="stop11374" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4327-261-772-800-527-117">
+      <stop
+         style="stop-color:#4e4e4e;stop-opacity:1;"
+         offset="0"
+         id="stop11378" />
+      <stop
+         style="stop-color:#656565;stop-opacity:1;"
+         offset="1"
+         id="stop11380" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4310-970-807-573-729-48-581"
+       id="linearGradient4316-414-446-242-161-512-706"
+       x1="1727.5552"
+       y1="1054.7795"
+       x2="1724.0198"
+       y2="1034.8037"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient4310-970-807-573-729-48-581">
+      <stop
+         style="stop-color:#cccccc;stop-opacity:1;"
+         offset="0"
+         id="stop12136" />
+      <stop
+         style="stop-color:#efefef;stop-opacity:1;"
+         offset="1"
+         id="stop12138" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4327-261-772-800-527-117-553"
+       id="linearGradient4333-976-188-241-335-7-884"
+       x1="1729.323"
+       y1="1032.1522"
+       x2="1721.1913"
+       y2="1011.6461"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient4327-261-772-800-527-117-553">
+      <stop
+         style="stop-color:#5a5a5a;stop-opacity:1;"
+         offset="0"
+         id="stop12142" />
+      <stop
+         style="stop-color:#717171;stop-opacity:1;"
+         offset="1"
+         id="stop12144" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4310-7-8">
+      <stop
+         style="stop-color:#e49a3c;stop-opacity:1;"
+         offset="0"
+         id="stop4312-40-8" />
+      <stop
+         style="stop-color:#ecba7b;stop-opacity:1;"
+         offset="1"
+         id="stop4314-9-7" />
+    </linearGradient>
+    <linearGradient
+       y2="1011.6461"
+       x2="1721.1913"
+       y1="1032.1522"
+       x1="1729.323"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3323-5"
+       xlink:href="#linearGradient4327-8-8"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient4327-8-8">
+      <stop
+         style="stop-color:#3c1400;stop-opacity:1;"
+         offset="0"
+         id="stop4329-8-1" />
+      <stop
+         style="stop-color:#6b2300;stop-opacity:1;"
+         offset="1"
+         id="stop4331-2-2" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4310-7-6"
+       id="linearGradient4316-1-27"
+       x1="1727.5552"
+       y1="1054.7795"
+       x2="1724.0198"
+       y2="1034.8037"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient4310-7-6">
+      <stop
+         style="stop-color:#e49a3c;stop-opacity:1;"
+         offset="0"
+         id="stop4312-40-5" />
+      <stop
+         style="stop-color:#ecba7b;stop-opacity:1;"
+         offset="1"
+         id="stop4314-9-1" />
+    </linearGradient>
+    <linearGradient
+       y2="1011.6461"
+       x2="1721.1913"
+       y1="1032.1522"
+       x1="1729.323"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3323-3"
+       xlink:href="#linearGradient4327-8-9"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient4327-8-9">
+      <stop
+         style="stop-color:#3c1400;stop-opacity:1;"
+         offset="0"
+         id="stop4329-8-9" />
+      <stop
+         style="stop-color:#6b2300;stop-opacity:1;"
+         offset="1"
+         id="stop4331-2-5" />
+    </linearGradient>
+    <linearGradient
+       y2="1011.6461"
+       x2="1721.1913"
+       y1="1032.1522"
+       x1="1729.323"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4251"
+       xlink:href="#linearGradient4327-8-9"
+       inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4310-7-6-2"
+       id="linearGradient4316-1-27-3"
+       x1="1727.5552"
+       y1="1054.7795"
+       x2="1724.0198"
+       y2="1034.8037"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient4310-7-6-2">
+      <stop
+         style="stop-color:#e49a3c;stop-opacity:1;"
+         offset="0"
+         id="stop4312-40-5-4" />
+      <stop
+         style="stop-color:#ecba7b;stop-opacity:1;"
+         offset="1"
+         id="stop4314-9-1-4" />
+    </linearGradient>
+    <linearGradient
+       y2="1011.6461"
+       x2="1721.1913"
+       y1="1032.1522"
+       x1="1729.323"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4251-4"
+       xlink:href="#linearGradient4327-8-9-2"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient4327-8-9-2">
+      <stop
+         style="stop-color:#3c1400;stop-opacity:1;"
+         offset="0"
+         id="stop4329-8-9-7" />
+      <stop
+         style="stop-color:#6b2300;stop-opacity:1;"
+         offset="1"
+         id="stop4331-2-5-9" />
+    </linearGradient>
+    <linearGradient
+       y2="1011.6461"
+       x2="1721.1913"
+       y1="1032.1522"
+       x1="1729.323"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4306"
+       xlink:href="#linearGradient4327-8-9-2"
+       inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4310-7-6"
+       id="linearGradient4353"
+       gradientUnits="userSpaceOnUse"
+       x1="1727.5552"
+       y1="1054.7795"
+       x2="1724.0198"
+       y2="1034.8037" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4327-8-9"
+       id="linearGradient4355"
+       gradientUnits="userSpaceOnUse"
+       x1="1729.323"
+       y1="1032.1522"
+       x2="1721.1913"
+       y2="1011.6461" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4310-7-6-2"
+       id="linearGradient4357"
+       gradientUnits="userSpaceOnUse"
+       x1="1727.5552"
+       y1="1054.7795"
+       x2="1724.0198"
+       y2="1034.8037" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4327-8-9-2"
+       id="linearGradient4359"
+       gradientUnits="userSpaceOnUse"
+       x1="1729.323"
+       y1="1032.1522"
+       x2="1721.1913"
+       y2="1011.6461" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4310-7-6"
+       id="linearGradient4373"
+       gradientUnits="userSpaceOnUse"
+       x1="1727.5552"
+       y1="1054.7795"
+       x2="1724.0198"
+       y2="1034.8037" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4327-8-9"
+       id="linearGradient4375"
+       gradientUnits="userSpaceOnUse"
+       x1="1729.323"
+       y1="1032.1522"
+       x2="1721.1913"
+       y2="1011.6461" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4310-7-6-8"
+       id="linearGradient4373-0"
+       gradientUnits="userSpaceOnUse"
+       x1="1727.5552"
+       y1="1054.7795"
+       x2="1724.0198"
+       y2="1034.8037" />
+    <linearGradient
+       id="linearGradient4310-7-6-8">
+      <stop
+         style="stop-color:#e49a3c;stop-opacity:1;"
+         offset="0"
+         id="stop4312-40-5-5" />
+      <stop
+         style="stop-color:#ecba7b;stop-opacity:1;"
+         offset="1"
+         id="stop4314-9-1-0" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4327-8-9-9"
+       id="linearGradient4375-7"
+       gradientUnits="userSpaceOnUse"
+       x1="1729.323"
+       y1="1032.1522"
+       x2="1721.1913"
+       y2="1011.6461" />
+    <linearGradient
+       id="linearGradient4327-8-9-9">
+      <stop
+         style="stop-color:#3c1400;stop-opacity:1;"
+         offset="0"
+         id="stop4329-8-9-0" />
+      <stop
+         style="stop-color:#6b2300;stop-opacity:1;"
+         offset="1"
+         id="stop4331-2-5-5" />
+    </linearGradient>
+    <linearGradient
+       y2="1011.6461"
+       x2="1721.1913"
+       y1="1032.1522"
+       x1="1729.323"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4399"
+       xlink:href="#linearGradient4327-8-9-9"
+       inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4310-7-6-85"
+       id="linearGradient4373-4"
+       gradientUnits="userSpaceOnUse"
+       x1="1727.5552"
+       y1="1054.7795"
+       x2="1724.0198"
+       y2="1034.8037" />
+    <linearGradient
+       id="linearGradient4310-7-6-85">
+      <stop
+         style="stop-color:#e49a3c;stop-opacity:1;"
+         offset="0"
+         id="stop4312-40-5-9" />
+      <stop
+         style="stop-color:#ecba7b;stop-opacity:1;"
+         offset="1"
+         id="stop4314-9-1-2" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4327-8-9-4"
+       id="linearGradient4375-5"
+       gradientUnits="userSpaceOnUse"
+       x1="1729.323"
+       y1="1032.1522"
+       x2="1721.1913"
+       y2="1011.6461" />
+    <linearGradient
+       id="linearGradient4327-8-9-4">
+      <stop
+         style="stop-color:#3c1400;stop-opacity:1;"
+         offset="0"
+         id="stop4329-8-9-1" />
+      <stop
+         style="stop-color:#6b2300;stop-opacity:1;"
+         offset="1"
+         id="stop4331-2-5-3" />
+    </linearGradient>
+    <linearGradient
+       y2="1011.6461"
+       x2="1721.1913"
+       y1="1032.1522"
+       x1="1729.323"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4454"
+       xlink:href="#linearGradient4327-8-9-4"
+       inkscape:collect="always" />
   </defs>
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="0.7071068"
-     inkscape:cx="739.86873"
-     inkscape:cy="205.25648"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer2"
-     showgrid="false"
-     showborder="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1027"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -1002,208 +1482,208 @@
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <rect
-       style="opacity:0.98999999;fill:#ffffff;fill-opacity:1;stroke:#d2d2d2;stroke-width:2.01153207;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="opacity:0.98999999;fill:#ffffff;fill-opacity:1;stroke:#4f4f4f;stroke-width:2.01153207;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect3107"
        width="177.9904"
        height="267.98651"
-       x="1936.8016"
-       y="661.5249"
+       x="1743.0544"
+       y="766.1767"
        rx="15.195565"
        ry="15.786369"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\CardBacking.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100" />
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\CardBack.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <rect
        style="opacity:0.98999999;fill:url(#linearGradient4616);fill-opacity:1;stroke:#272727;stroke-width:1.54881513;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect3909"
        width="157.1236"
        height="243.42107"
-       x="1947.1198"
-       y="674.03088"
+       x="1753.3726"
+       y="778.68268"
        rx="7.5977821"
        ry="7.8931847"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\CardBacking.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100" />
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\CardBack.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <text
        xml:space="preserve"
        style="font-size:68.44517517px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
-       x="1916.9265"
-       y="812.77795"
+       x="1729.8114"
+       y="921.13904"
        id="text3913"
        sodipodi:linespacing="125%"
        transform="scale(1.0354443,0.965769)"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\CardBacking.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100"><tspan
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\CardBack.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan3915"
-         x="1916.9265"
-         y="812.77795">P</tspan></text>
+         x="1729.8114"
+         y="921.13904">P</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
-       x="2017.2346"
-       y="842.95087"
+       x="1823.4874"
+       y="947.60266"
        id="text3924"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\CardBacking.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100"><tspan
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\CardBack.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan3926"
-         x="2017.2346"
-         y="842.95087">A</tspan></text>
+         x="1823.4874"
+         y="947.60266">A</tspan></text>
     <rect
-       style="opacity:0.98999999;fill:#ffffff;fill-opacity:1;stroke:#d2d2d2;stroke-width:2.01153207;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       style="opacity:0.98999999;fill:#ffffff;fill-opacity:1;stroke:#4c4c4c;stroke-width:2.01153207;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
        id="rect3107-3"
        width="177.9904"
        height="267.98651"
-       x="2143.6877"
-       y="661.27893"
+       x="1949.9406"
+       y="765.93073"
        rx="15.195565"
        ry="15.786369"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\card1.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100" />
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Card1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#2a2a2a;fill-opacity:1;stroke:none;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
-       x="2163.8618"
-       y="714.4472"
+       x="1970.1146"
+       y="819.099"
        id="text3946"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\card1.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100"><tspan
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Card1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan3948"
-         x="2163.8618"
-         y="714.4472">1</tspan></text>
+         x="1970.1146"
+         y="819.099">1</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#2a2a2a;fill-opacity:1;stroke:none;display:inline;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
-       x="2277.3213"
-       y="900.30133"
+       x="2083.574"
+       y="1004.9531"
        id="text3946-8"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\card1.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100"><tspan
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Card1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan3948-9"
-         x="2277.3213"
-         y="900.30133">1</tspan></text>
+         x="2083.574"
+         y="1004.9531">1</tspan></text>
     <rect
-       style="opacity:0.98999999;fill:#ffffff;fill-opacity:1;stroke:#d2d2d2;stroke-width:2.01153207;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       style="opacity:0.98999999;fill:#ffffff;fill-opacity:1;stroke:#4f4f4f;stroke-width:2.01153207;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
        id="rect3107-3-3"
        width="177.9904"
        height="267.98651"
-       x="2350.1516"
-       y="661.27899"
+       x="2156.4043"
+       y="765.93079"
        rx="15.195565"
        ry="15.786369"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\card2.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100" />
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Card2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#2a2a2a;fill-opacity:1;stroke:none;display:inline;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
-       x="2370.3257"
-       y="714.44733"
+       x="2176.5784"
+       y="819.09912"
        id="text3946-4"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\card2.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100"><tspan
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Card2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan3948-4"
-         x="2370.3257"
-         y="714.44733">2</tspan></text>
+         x="2176.5784"
+         y="819.09912">2</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#2a2a2a;fill-opacity:1;stroke:none;display:inline;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
-       x="2480.9568"
-       y="900.30145"
+       x="2287.2095"
+       y="1004.9532"
        id="text3946-8-6"
        sodipodi:linespacing="125%"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\card2.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100"><tspan
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Card2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan3948-9-0"
-         x="2480.9568"
-         y="900.30145">2</tspan></text>
+         x="2287.2095"
+         y="1004.9532">2</tspan></text>
     <rect
-       style="opacity:0.98999999;fill:#ffffff;fill-opacity:1;stroke:#d2d2d2;stroke-width:2.01153207;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       style="opacity:0.98999999;fill:#ffffff;fill-opacity:1;stroke:#3e3e3e;stroke-width:2.01153207;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
        id="rect3107-3-3-6"
        width="177.9904"
        height="267.98651"
-       x="2548.6926"
-       y="661.11176"
+       x="2354.9453"
+       y="765.76355"
        rx="15.195565"
        ry="15.786369"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\card0.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100" />
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Card0.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        sodipodi:type="arc"
-       style="opacity:0.98999999;fill:#860b0b;fill-opacity:1;stroke:#710000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="opacity:0.98999999;fill:#860b0b;fill-opacity:1;stroke:#410000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="path4019"
        sodipodi:cx="553.31104"
        sodipodi:cy="110.19387"
        sodipodi:rx="52.679455"
        sodipodi:ry="96.873627"
-       d="m 605.99049,110.19387 c 0,53.50183 -23.5854,96.87363 -52.67945,96.87363 -29.09406,0 -52.67946,-43.3718 -52.67946,-96.87363 0,-53.501826 23.5854,-96.873626 52.67946,-96.873626 29.09405,0 52.67945,43.3718 52.67945,96.873626 z"
-       transform="translate(2083.3162,687.03246)"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\card0.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100" />
+       d="m 605.99049,110.19387 a 52.679455,96.873627 0 1 1 -105.35891,0 52.679455,96.873627 0 1 1 105.35891,0 z"
+       transform="translate(1889.5689,791.68426)"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Card0.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        sodipodi:type="arc"
-       style="opacity:0.98999999;fill:#ffffff;fill-opacity:1;stroke:#710000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="opacity:0.98999999;fill:#ffffff;fill-opacity:1;stroke:#360000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="path4023"
        sodipodi:cx="560.38214"
        sodipodi:cy="126.45732"
        sodipodi:rx="31.466251"
        sodipodi:ry="70.003571"
-       d="m 591.84839,126.45732 c 0,38.66191 -14.08792,70.00357 -31.46625,70.00357 -17.37833,0 -31.46625,-31.34166 -31.46625,-70.00357 0,-38.661903 14.08792,-70.003569 31.46625,-70.003569 17.37833,0 31.46625,31.341666 31.46625,70.003569 z"
-       transform="translate(2076.9522,684.91114)"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\card0.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100" />
+       d="m 591.84839,126.45732 a 31.466251,70.003571 0 1 1 -62.9325,0 31.466251,70.003571 0 1 1 62.9325,0 z"
+       transform="translate(1883.2049,789.56294)"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Card0.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <g
        id="g4115"
-       transform="translate(280.80762,-4.5857871)"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\acorn.png"
-       inkscape:export-xdpi="60"
-       inkscape:export-ydpi="60">
+       transform="translate(-5.7213729,96.23759)"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\AcornEmpty.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          sodipodi:nodetypes="ccscc"
          inkscape:connector-curvature="0"
          id="path4030"
          d="m 1727.2459,1072.1921 c -13.2401,-1.5468 -20.6365,-16.8912 -20.313,-36.7229 9.5497,-2.7886 15.2881,-3.5822 21.7272,-3.5822 6.8956,0 11.7501,-1.9345 22.0445,2.6885 0.012,17.5283 -6.8006,36.2831 -23.4587,37.6166 z"
-         style="fill:url(#linearGradient4316);fill-opacity:1;stroke:#995600;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1" />
+         style="fill:url(#linearGradient4316-414-446-242-161-512-706);fill-opacity:1;stroke:#222222;stroke-width:1.5;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
       <path
          sodipodi:nodetypes="ccccc"
          inkscape:connector-curvature="0"
          d="m 1732.79,1013.927 c 1.8809,-0.1621 4.1896,3.8113 4.1896,3.8113 0,0 -7.8717,-5.2129 -9.498,12.1237 -1.9299,0.6717 -5.9598,-1.4349 -5.9598,-1.4349 0,0 5.1696,-13.9743 11.2682,-14.5001 z"
-         style="fill:#5d2c14;fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686"
+         style="fill:#747474;fill-opacity:1;stroke:#2a2a2a;stroke-width:1.5;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686;stroke-dasharray:none"
          id="path4118" />
       <path
          sodipodi:nodetypes="ccsccscc"
          inkscape:connector-curvature="0"
          id="path4027"
          d="m 1750.5362,1041.7865 c -0.261,0.083 0.01,-1.0034 0.011,-2.274 -5.1136,-0.8419 -12.2303,-2.057 -20.6935,-2.057 -9.7368,0 -17.4263,1.9329 -22.9089,2.8154 0.093,1.6117 0.2467,2.3692 0.2816,3.3717 -8.8389,-7.082 -0.5292,-22.7158 22.4505,-22.7158 22.2727,0 27.4005,16.9596 20.8597,20.8597 z"
-         style="fill:url(#linearGradient4333);fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686" />
+         style="fill:url(#linearGradient4333-976-188-241-335-7-884);fill-opacity:1;stroke:#222222;stroke-width:1.5;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686;stroke-dasharray:none" />
     </g>
     <g
-       transform="matrix(1.4652809,0,0,1.4652809,-298.35197,-738.56998)"
+       transform="matrix(1.4652809,0,0,1.4652809,-492.09922,-633.91818)"
        style="display:inline"
        id="g4115-0"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\card1.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100">
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Card1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          sodipodi:nodetypes="ccscc"
          inkscape:connector-curvature="0"
@@ -1224,12 +1704,12 @@
          style="fill:url(#linearGradient4467);fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686" />
     </g>
     <g
-       transform="matrix(1.4652809,0,0,1.4652809,-117.03937,-695.79003)"
+       transform="matrix(1.4652809,0,0,1.4652809,-310.78662,-591.13823)"
        style="display:inline"
        id="g4115-0-0"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\card2.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100">
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Card2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          sodipodi:nodetypes="ccscc"
          inkscape:connector-curvature="0"
@@ -1250,12 +1730,12 @@
          style="fill:url(#linearGradient4522);fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686" />
     </g>
     <g
-       transform="matrix(1.4652809,0,0,1.4652809,-68.9561,-777.10731)"
+       transform="matrix(1.4652809,0,0,1.4652809,-262.70335,-672.45551)"
        style="display:inline"
        id="g4115-0-0-1"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\card2.png"
-       inkscape:export-xdpi="100"
-       inkscape:export-ydpi="100">
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Card2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          sodipodi:nodetypes="ccscc"
          inkscape:connector-curvature="0"
@@ -1277,7 +1757,7 @@
     </g>
     <g
        id="g4038"
-       transform="matrix(-0.24728804,0,0,0.24728804,2286.5165,930.6913)"
+       transform="matrix(-0.24728804,0,0,0.24728804,2092.7692,1035.3431)"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
@@ -1302,7 +1782,7 @@
     </g>
     <path
        style="fill:#72472b;fill-opacity:1;stroke:#000000;stroke-width:0.92689914;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 2238.1419,1083.5631 c 7.5746,10e-5 13.7479,7.6104 12.9464,14.9753 -0.3562,6.5129 -5.7805,12.8534 -12.5638,13.0077 -6.4472,0.2868 -12.5038,-4.9189 -13.3747,-11.2766 -1.2517,-6.4692 2.2959,-13.8818 8.7599,-16.0059 1.3565,-0.489 2.7804,-0.7425 4.2322,-0.7005 z"
+       d="m 2044.3946,1188.2149 c 7.5746,10e-5 13.7479,7.6104 12.9464,14.9753 -0.3562,6.5129 -5.7805,12.8534 -12.5638,13.0077 -6.4472,0.2868 -12.5038,-4.9189 -13.3747,-11.2766 -1.2517,-6.4692 2.2959,-13.8818 8.7599,-16.0059 1.3565,-0.489 2.7804,-0.7425 4.2322,-0.7005 z"
        id="path3016-0"
        inkscape:connector-curvature="0"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
@@ -1310,7 +1790,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:#552200;fill-opacity:1;stroke:none"
-       d="m 2250.764,1088.8836 c 1.2264,1.3318 1.8752,3.2996 2.5501,5.0074 0.7988,1.9385 0.4619,4.2427 -1.0511,5.7341 -2.4983,2.7446 -6.331,4.4016 -10.0614,4.142 -1.3847,-0.033 -3.0644,-1.2651 -2.3725,-2.7896 0.7581,-2.1523 2.9,-3.5235 5.1545,-3.5858 1.8501,-0.3666 4.6276,-0.2767 5.3553,-2.4342 -0.1685,-1.91 -1.1,-3.6192 -1.7156,-5.4249 0.488,-0.5914 1.4429,-0.5955 2.1407,-0.649 z"
+       d="m 2057.0167,1193.5354 c 1.2264,1.3318 1.8752,3.2996 2.5501,5.0074 0.7988,1.9385 0.4619,4.2427 -1.0511,5.7341 -2.4983,2.7446 -6.331,4.4016 -10.0614,4.142 -1.3847,-0.033 -3.0644,-1.2651 -2.3725,-2.7896 0.7581,-2.1523 2.9,-3.5235 5.1545,-3.5858 1.8501,-0.3666 4.6276,-0.2767 5.3553,-2.4342 -0.1685,-1.91 -1.1,-3.6192 -1.7156,-5.4249 0.488,-0.5914 1.4429,-0.5955 2.1407,-0.649 z"
        id="path3832"
        inkscape:connector-curvature="0"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
@@ -1318,7 +1798,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.8655082;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 2250.9141,1088.6611 c 0,0 0.079,0.1214 0.2112,0.3394 0.7837,1.2884 3.4353,5.927 2.5865,8.4035 -1.2371,3.6093 -5.6704,5.8955 -9.4423,6.4699 -1.5675,0.2385 -3.8681,0.034 -4.5464,-1.3991 -0.5925,-1.2522 0.587,-2.8743 1.5737,-3.8468 2.2742,-2.2412 7.5518,-0.6111 8.9178,-3.4972 0.2729,-1.2026 -1.9234,-5.9451 -1.9234,-5.9451 z"
+       d="m 2057.1668,1193.3129 c 0,0 0.079,0.1214 0.2112,0.3394 0.7837,1.2884 3.4353,5.927 2.5865,8.4035 -1.2371,3.6093 -5.6704,5.8955 -9.4423,6.4699 -1.5675,0.2385 -3.8681,0.034 -4.5464,-1.3991 -0.5925,-1.2522 0.587,-2.8743 1.5737,-3.8468 2.2742,-2.2412 7.5518,-0.6111 8.9178,-3.4972 0.2729,-1.2026 -1.9234,-5.9451 -1.9234,-5.9451 z"
        id="path3826"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cssssscc"
@@ -1327,7 +1807,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:#552200;fill-opacity:1;stroke:none"
-       d="m 2224.6288,1088.6362 c 0.7636,0.1528 2.3509,0.2032 1.6305,1.2905 -0.5426,1.6627 -1.6177,3.3372 -1.4065,5.1004 1.3306,2.2199 4.373,1.7512 6.5376,2.3415 2.0689,0.3702 4.0311,2.297 4.0031,4.4512 -0.6218,1.8984 -3.1077,1.8969 -4.7449,1.6692 -3.7284,-0.6885 -7.7969,-2.6796 -9.1573,-6.4605 -0.5266,-3.0388 1.3326,-5.8652 2.7046,-8.4001 0.1409,0.023 0.2912,-0.018 0.4329,0.015 z"
+       d="m 2030.8815,1193.288 c 0.7636,0.1528 2.3509,0.2032 1.6305,1.2905 -0.5426,1.6627 -1.6177,3.3372 -1.4065,5.1004 1.3306,2.2199 4.373,1.7512 6.5376,2.3415 2.0689,0.3702 4.0311,2.297 4.0031,4.4512 -0.6218,1.8984 -3.1077,1.8969 -4.7449,1.6692 -3.7284,-0.6885 -7.7969,-2.6796 -9.1573,-6.4605 -0.5266,-3.0388 1.3326,-5.8652 2.7046,-8.4001 0.1409,0.023 0.2912,-0.018 0.4329,0.015 z"
        id="path3832-7"
        inkscape:connector-curvature="0"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
@@ -1335,7 +1815,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.79132181;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 2224.1918,1088.4254 c 0,0 -0.079,0.1214 -0.2114,0.3396 -0.7835,1.2882 -3.4352,5.9268 -2.5863,8.4034 1.2369,3.6094 5.6705,5.8954 9.4423,6.4698 1.5676,0.2387 3.8681,0.034 4.5464,-1.3989 0.5926,-1.2524 -0.587,-2.8744 -1.5738,-3.8468 -2.2742,-2.2414 -7.5517,-0.6112 -8.9177,-3.4974 -0.2729,-1.2024 1.9235,-5.9451 1.9235,-5.9451 z"
+       d="m 2030.4445,1193.0772 c 0,0 -0.079,0.1214 -0.2114,0.3396 -0.7835,1.2882 -3.4352,5.9268 -2.5863,8.4034 1.2369,3.6094 5.6705,5.8954 9.4423,6.4698 1.5676,0.2387 3.8681,0.034 4.5464,-1.3989 0.5926,-1.2524 -0.587,-2.8744 -1.5738,-3.8468 -2.2742,-2.2414 -7.5517,-0.6112 -8.9177,-3.4974 -0.2729,-1.2024 1.9235,-5.9451 1.9235,-5.9451 z"
        id="path3826-4"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cssssscc"
@@ -1344,7 +1824,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:#552200;fill-opacity:1;stroke:#000000;stroke-width:0.81961477;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 2264.7151,979.06833 c 2.2072,-2.12769 5.0061,-3.99571 8.1962,-6.2393 5.1273,-3.60634 23.9328,-6.2696 27.1497,-1.96202 2.6594,4.48884 -3.3669,-0.70724 -13.8719,14.91182 -2.0802,3.0929 -2.4724,7.6686 -2.7355,12.1201 5.7295,9.38967 9.0772,20.71427 9.0772,32.90737 0,11.5024 -2.9823,22.2319 -8.1295,31.294 0.015,0.015 0.016,0.021 0.025,0.032 3.8062,0.426 5.9421,3.4951 5.9421,5.2405 0,1.1597 -0.8847,0.4327 -2.5868,-0.2921 1.5242,1.1527 2.3409,2.7369 2.3409,3.8164 0,1.1176 -0.8249,0.4859 -2.4076,-0.2101 0,0.135 0.015,0.2692 0.015,0.4047 0.9924,1.5944 1.4959,3.3408 1.4959,4.2313 0,1.0015 -0.593,-0.055 -1.8031,-1.2602 -1.4638,6.4331 -7.8719,10.3569 -15.2552,11.8844 -12.8922,2.6673 -24.7937,5.413 -35.438,4.6359 -16.7549,-1.223 -22.6477,-1.7444 -36.5907,-6.2906 -7.7878,-2.5391 -15.1966,-8.0984 -15.3985,-16.0591 -1.8976,0.6062 -1.7673,2.9832 -1.7673,1.6085 0,-0.8804 0.054,-3.0366 1.3268,-4.7693 -1.567,0.6023 -1.9672,1.8855 -1.9672,0.6506 0,-0.9669 1.6124,-2.9429 3.7088,-4.4668 -2.6198,0.1586 -3.2171,2.4363 -3.2171,0.9221 0,-1.5685 4.2332,-5.7966 7.9094,-6.4341 0.3042,-0.053 0.5469,-0.091 0.7684,-0.1274 -3.1681,-7.538 -4.9433,-15.9431 -4.9433,-24.8088 0,-9.375 1.9826,-18.2357 5.5016,-26.0996 -1.1317,-5.94927 -0.078,-14.86067 -3.4475,-19.87047 -10.5051,-15.61914 -16.5313,-10.42291 -13.872,-14.91175 3.217,-4.30757 22.0223,-1.64447 27.1499,1.96187 4.3023,3.02594 7.8953,5.37209 10.2809,8.59055 9.9374,-9.62431 34.9348,-11.88997 52.5429,-1.40997 z"
+       d="m 2070.9678,1083.7201 c 2.2072,-2.1277 5.0061,-3.9957 8.1962,-6.2393 5.1273,-3.6063 23.9328,-6.2696 27.1497,-1.962 2.6594,4.4889 -3.3669,-0.7072 -13.8719,14.9118 -2.0802,3.0929 -2.4724,7.6686 -2.7355,12.1201 5.7295,9.3897 9.0772,20.7143 9.0772,32.9074 0,11.5024 -2.9823,22.2319 -8.1295,31.294 0.015,0.015 0.016,0.021 0.025,0.032 3.8062,0.426 5.9421,3.4951 5.9421,5.2405 0,1.1597 -0.8847,0.4327 -2.5868,-0.2921 1.5242,1.1527 2.3409,2.7369 2.3409,3.8164 0,1.1176 -0.8249,0.4859 -2.4076,-0.2101 0,0.135 0.015,0.2692 0.015,0.4047 0.9924,1.5944 1.4959,3.3408 1.4959,4.2313 0,1.0015 -0.593,-0.055 -1.8031,-1.2602 -1.4638,6.4331 -7.8719,10.3569 -15.2552,11.8844 -12.8922,2.6673 -24.7937,5.413 -35.438,4.6359 -16.7549,-1.223 -22.6477,-1.7444 -36.5907,-6.2906 -7.7878,-2.5391 -15.1966,-8.0984 -15.3985,-16.0591 -1.8976,0.6062 -1.7673,2.9832 -1.7673,1.6085 0,-0.8804 0.054,-3.0366 1.3268,-4.7693 -1.567,0.6023 -1.9672,1.8855 -1.9672,0.6506 0,-0.9669 1.6124,-2.9429 3.7088,-4.4668 -2.6198,0.1586 -3.2171,2.4363 -3.2171,0.9221 0,-1.5685 4.2332,-5.7966 7.9094,-6.4341 0.3042,-0.053 0.5469,-0.091 0.7684,-0.1274 -3.1681,-7.538 -4.9433,-15.9431 -4.9433,-24.8088 0,-9.375 1.9826,-18.2357 5.5016,-26.0996 -1.1317,-5.9493 -0.078,-14.8607 -3.4475,-19.8705 -10.5051,-15.6191 -16.5313,-10.4229 -13.872,-14.9117 3.217,-4.3076 22.0223,-1.6445 27.1499,1.9619 4.3023,3.0259 7.8953,5.372 10.2809,8.5905 9.9374,-9.6243 34.9348,-11.89 52.5429,-1.41 z"
        id="path3901"
        inkscape:connector-curvature="0"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
@@ -1353,7 +1833,7 @@
        sodipodi:nodetypes="cccscsccscsccscscccscscsccscscscc" />
     <path
        style="fill:#d38d5f;fill-opacity:1;stroke:#000000;stroke-width:0.49176884;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
-       d="m 2207.0085,985.08003 c -1.756,1.4448 -6.0844,5.8576 -7.5739,7.5548 -1.7779,2.026 -3.0223,3.7645 -5.0714,6.9756 0.015,-2.5408 0.298,-11.5323 -4.3803,-17.80642 -5.8645,-7.86473 -11.9635,-9.53228 -8.4726,-11.15021 4.4214,-2.04898 25.4982,5.19188 25.4982,14.42623 z"
+       d="m 2013.2612,1089.7318 c -1.756,1.4448 -6.0844,5.8576 -7.5739,7.5548 -1.7779,2.026 -3.0223,3.7645 -5.0714,6.9756 0.015,-2.5408 0.298,-11.5323 -4.3803,-17.8064 -5.8645,-7.8647 -11.9635,-9.5323 -8.4726,-11.1502 4.4214,-2.049 25.4982,5.1919 25.4982,14.4262 z"
        id="path4307-5"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cscssc"
@@ -1362,7 +1842,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:#ffffff;fill-opacity:0.16931218;stroke:none"
-       d="m 2224.7536,1005.9002 c 5.671,-0.046 11.2745,3.5011 12.9141,9.0569 6.7465,-10.4346 24.6146,-12.2218 31.8625,-1.4394 1.2606,1.8742 2.4084,3.8536 3.4168,5.9062 2.2498,1.0774 3.6627,3.2796 3.6627,3.8062 0,0.4958 -0.2794,-0.2224 -1.7263,-0.6917 0.8949,0.9191 1.4088,1.8402 1.4088,2.1567 0,0.446 -0.2254,-0.089 -1.3217,-0.5431 0.7156,1.959 1.2962,3.9653 1.7313,5.9987 1.1537,1.2095 1.6392,2.7144 1.6392,3.1094 0,0.4869 -0.015,-0.3562 -1.2293,-0.922 0.6009,3.7814 0.6717,7.6315 0.087,11.4284 -0.7605,4.3497 -3.283,8.6018 -7.4022,10.5013 5.3725,0.7951 10.3567,3.6245 14.2869,7.2998 1.652,1.7299 0.6998,0.7309 1.5521,1.5521 2.6422,0.2123 6.3233,5.9131 1.6494,3.2785 -2.2269,-0.4334 5.3933,6.0742 0.5226,3.6576 -2.3729,-0.1365 2.689,6.1015 -0.7325,3.0325 -1.2063,7.7754 -9.4301,11.4457 -16.3719,12.6476 -12.8213,2.6067 -25.8929,5.6661 -39.0545,3.9188 -12.5837,-0.9122 -25.4616,-2.7681 -36.8929,-8.3754 -5.0445,-2.6912 -9.5491,-7.7506 -9.2669,-13.7848 -4.718,2.1382 3.6318,-5.8251 -1.3317,-2.9456 -2.0114,-0.2 7.4726,-5.1073 1.9618,-3.8624 -4.6141,1.4015 3.2407,-4.9319 5.8858,-4.3388 -0.2103,-4.8329 7.8568,-4.8673 9.8253,-5.8297 -4.6315,-5.7144 -4.2123,-14.233 -2.9558,-20.9975 0.2205,-0.9405 0.466,-1.8887 0.7377,-2.8379 -0.3458,0.1669 -0.665,0.3094 -0.9683,0.3792 0,-0.5222 0.4721,-1.3676 1.2039,-2.2181 -0.709,0.2985 -1.1475,0.4544 -1.1475,-0.102 0,-0.5904 0.4609,-1.457 1.1936,-2.259 -0.8026,0.3394 -1.3113,0.5661 -1.3113,-0.032 0,-1.2401 2.0178,-3.6987 4.3695,-4.2209 2.0342,-3.7911 4.7768,-7.1293 8.5137,-9.3641 3.9635,-1.8643 8.3501,-2.9429 12.7398,-2.9507 0.1831,-0.015 0.3653,-0.015 0.5482,-0.015 z"
+       d="m 2031.0063,1110.552 c 5.671,-0.046 11.2745,3.5011 12.9141,9.0569 6.7465,-10.4346 24.6146,-12.2218 31.8625,-1.4394 1.2606,1.8742 2.4084,3.8536 3.4168,5.9062 2.2498,1.0774 3.6627,3.2796 3.6627,3.8062 0,0.4958 -0.2794,-0.2224 -1.7263,-0.6917 0.8949,0.9191 1.4088,1.8402 1.4088,2.1567 0,0.446 -0.2254,-0.089 -1.3217,-0.5431 0.7156,1.959 1.2962,3.9653 1.7313,5.9987 1.1537,1.2095 1.6392,2.7144 1.6392,3.1094 0,0.4869 -0.015,-0.3562 -1.2293,-0.922 0.6009,3.7814 0.6717,7.6315 0.087,11.4284 -0.7605,4.3497 -3.283,8.6018 -7.4022,10.5013 5.3725,0.7951 10.3567,3.6245 14.2869,7.2998 1.652,1.7299 0.6998,0.7309 1.5521,1.5521 2.6422,0.2123 6.3233,5.9131 1.6494,3.2785 -2.2269,-0.4334 5.3933,6.0742 0.5226,3.6576 -2.3729,-0.1365 2.689,6.1015 -0.7325,3.0325 -1.2063,7.7754 -9.4301,11.4457 -16.3719,12.6476 -12.8213,2.6067 -25.8929,5.6661 -39.0545,3.9188 -12.5837,-0.9122 -25.4616,-2.7681 -36.8929,-8.3754 -5.0445,-2.6912 -9.5491,-7.7506 -9.2669,-13.7848 -4.718,2.1382 3.6318,-5.8251 -1.3317,-2.9456 -2.0114,-0.2 7.4726,-5.1073 1.9618,-3.8624 -4.6141,1.4015 3.2407,-4.9319 5.8858,-4.3388 -0.2103,-4.8329 7.8568,-4.8673 9.8253,-5.8297 -4.6315,-5.7144 -4.2123,-14.233 -2.9558,-20.9975 0.2205,-0.9405 0.466,-1.8887 0.7377,-2.8379 -0.3458,0.1669 -0.665,0.3094 -0.9683,0.3792 0,-0.5222 0.4721,-1.3676 1.2039,-2.2181 -0.709,0.2985 -1.1475,0.4544 -1.1475,-0.102 0,-0.5904 0.4609,-1.457 1.1936,-2.259 -0.8026,0.3394 -1.3113,0.5661 -1.3113,-0.032 0,-1.2401 2.0178,-3.6987 4.3695,-4.2209 2.0342,-3.7911 4.7768,-7.1293 8.5137,-9.3641 3.9635,-1.8643 8.3501,-2.9429 12.7398,-2.9507 0.1831,-0.015 0.3653,-0.015 0.5482,-0.015 z"
        id="path4009"
        inkscape:connector-curvature="0"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
@@ -1370,7 +1850,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:#ffccaa;fill-opacity:1;stroke:#000000;stroke-width:0.49176884;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
-       d="m 2192.561,980.33796 c 3.5424,3.21427 3.7691,9.30337 5.5007,13.74727 1.587,-1.9317 3.3015,-3.7578 5.1175,-5.4759 -1.781,-4.7689 -3.0486,-5.8882 -5.9934,-7.89503 -1.2828,-0.87426 -5.1737,-2.48529 -6.7017,-2.75982 0.1124,0.099 1.9641,2.28453 2.0769,2.38348 z"
+       d="m 1998.8137,1084.9898 c 3.5424,3.2142 3.7691,9.3033 5.5007,13.7472 1.587,-1.9317 3.3015,-3.7578 5.1175,-5.4759 -1.781,-4.7689 -3.0486,-5.8882 -5.9934,-7.895 -1.2828,-0.8743 -5.1737,-2.4853 -6.7017,-2.7598 0.1124,0.099 1.9641,2.2845 2.0769,2.3835 z"
        id="path4307-4-8"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccscc"
@@ -1379,7 +1859,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:#d38d5f;fill-opacity:1;stroke:#000000;stroke-width:0.49176884;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
-       d="m 2271.5997,982.49833 c 1.756,1.4446 3.7665,3.5393 5.2558,5.2366 1.7777,2.026 3.0223,3.7644 5.0714,6.9756 0,-2.5408 0.977,-7.8232 5.6554,-14.09729 5.8644,-7.86488 13.8181,-7.56186 10.3272,-9.17979 -4.4214,-2.04898 -26.3098,1.83068 -26.3098,11.06488 z"
+       d="m 2077.8524,1087.1501 c 1.756,1.4446 3.7665,3.5393 5.2558,5.2366 1.7777,2.026 3.0223,3.7644 5.0714,6.9756 0,-2.5408 0.977,-7.8232 5.6554,-14.0973 5.8644,-7.8648 13.8181,-7.5618 10.3272,-9.1797 -4.4214,-2.049 -26.3098,1.8306 -26.3098,11.0648 z"
        id="path4307"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cscssc"
@@ -1388,7 +1868,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:#ffccaa;fill-opacity:1;stroke:#000000;stroke-width:0.49176884;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
-       d="m 2286.1633,977.40843 c -3.544,3.21606 -6.2006,7.3289 -7.9349,11.7769 -1.5876,-1.9323 -3.3024,-3.7586 -5.1175,-5.476 1.6266,-3.03986 5.1917,-4.02507 8.15,-5.23533 1.7091,-0.59418 3.4624,-1.04308 5.2405,-1.36259 -0.1125,0.099 -0.2254,0.19806 -0.3381,0.29702 z"
+       d="m 2092.416,1082.0602 c -3.544,3.2161 -6.2006,7.3289 -7.9349,11.7769 -1.5876,-1.9323 -3.3024,-3.7586 -5.1175,-5.476 1.6266,-3.0398 5.1917,-4.025 8.15,-5.2353 1.7091,-0.5942 3.4624,-1.0431 5.2405,-1.3626 -0.1125,0.099 -0.2254,0.1981 -0.3381,0.297 z"
        id="path4307-4"
        inkscape:connector-curvature="0"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
@@ -1396,7 +1876,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:#b41111;fill-opacity:1;stroke:#000000;stroke-width:1.04953003;stroke-miterlimit:4;stroke-opacity:1"
-       d="m 2185.6423,1029.5072 c 0.108,9.9108 1.6709,19.3469 4.9327,25.6718 3.6402,-3.8344 17.506,-11.8344 25.8971,4.835 6.6914,1.4115 13.643,-0.048 19.2106,-0.048 5.0689,0 12.1602,3.2597 19.0412,2.6547 11.7337,-16.3419 25.2815,-5.8114 30.3771,-1.1858 6.1014,-8.5225 8.4096,-19.602 8.0891,-30.7382 -2.4952,-7.0014 -100.9494,-7.0867 -107.5478,-1.1894 z"
+       d="m 1991.895,1134.159 c 0.108,9.9108 1.6709,19.3469 4.9327,25.6718 3.6402,-3.8344 17.506,-11.8344 25.8971,4.835 6.6914,1.4115 13.643,-0.048 19.2106,-0.048 5.0689,0 12.1602,3.2597 19.0412,2.6547 11.7337,-16.3419 25.2815,-5.8114 30.3771,-1.1858 6.1014,-8.5225 8.4096,-19.602 8.0891,-30.7382 -2.4952,-7.0014 -100.9494,-7.0867 -107.5478,-1.1894 z"
        id="path3232"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccscccc"
@@ -1405,7 +1885,7 @@
        inkscape:export-ydpi="90" />
     <g
        id="g3933"
-       transform="matrix(-0.16392295,0,0,0.16392295,2200.3317,991.99553)"
+       transform="matrix(-0.16392295,0,0,0.16392295,2006.5844,1096.6473)"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
@@ -1442,7 +1922,7 @@
          sodipodi:type="arc" />
     </g>
     <g
-       transform="matrix(-0.16392295,0,0,0.16392295,2179.6657,991.64423)"
+       transform="matrix(-0.16392295,0,0,0.16392295,1985.9184,1096.296)"
        id="g3933-4"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
        inkscape:export-xdpi="90"
@@ -1481,7 +1961,7 @@
     </g>
     <path
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.64552534;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
-       d="m 2229.8529,1065.1672 c 1.2294,1.8896 2.941,3.2015 6.5385,4.1089 2.8365,-0.4976 4.8702,-1.9852 6.6557,-3.8455 1.4707,-1.5323 -3.6143,-2.7917 -6.7728,-2.7917 -3.1584,0 -7.5797,0.748 -6.4214,2.5283 z"
+       d="m 2036.1056,1169.819 c 1.2294,1.8896 2.941,3.2015 6.5385,4.1089 2.8365,-0.4976 4.8702,-1.9852 6.6557,-3.8455 1.4707,-1.5323 -3.6143,-2.7917 -6.7728,-2.7917 -3.1584,0 -7.5797,0.748 -6.4214,2.5283 z"
        id="path3969"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="scsss"
@@ -1490,7 +1970,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.49176884;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
-       d="m 2220.526,1077.1052 c 4.8007,3.7295 6.1874,5.0347 16.2752,5.0347 10.0879,0 18.0315,-9.9696 18.0315,-12.8795 0,-2.9101 -7.9436,2.3416 -18.0315,2.3416 -5.4309,0 -15.1087,-2.0092 -19.04,-6.5441 -2.4005,7.6046 1.704,11.2231 2.7648,12.0473 z"
+       d="m 2026.7787,1181.757 c 4.8007,3.7295 6.1874,5.0347 16.2752,5.0347 10.0879,0 18.0315,-9.9696 18.0315,-12.8795 0,-2.9101 -7.9436,2.3416 -18.0315,2.3416 -5.4309,0 -15.1087,-2.0092 -19.04,-6.5441 -2.4005,7.6046 1.704,11.2231 2.7648,12.0473 z"
        id="path3971"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="sssscs"
@@ -1499,7 +1979,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.49176884;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
-       d="m 2244.8803,1070.5483 c 0,0 -5.38,1.1591 -8.07,1.1591 -2.696,0 -8.0881,-1.1591 -8.0881,-1.1591 0,0 0.9935,5.1055 0.9935,7.6169 0,2.9136 -0.828,7.2507 -0.828,7.2507 0,0 5.8621,1.3998 8.3378,1.4371 2.9933,0.045 8.0688,-1.1886 8.0688,-1.1886 0,0 -1.4074,-3.9232 -1.4074,-6.7542 0,-2.5941 0.9934,-8.3619 0.9934,-8.3619 z"
+       d="m 2051.133,1175.2001 c 0,0 -5.38,1.1591 -8.07,1.1591 -2.696,0 -8.0881,-1.1591 -8.0881,-1.1591 0,0 0.9935,5.1055 0.9935,7.6169 0,2.9136 -0.828,7.2507 -0.828,7.2507 0,0 5.8621,1.3998 8.3378,1.4371 2.9933,0.045 8.0688,-1.1886 8.0688,-1.1886 0,0 -1.4074,-3.9232 -1.4074,-6.7542 0,-2.5941 0.9934,-8.3619 0.9934,-8.3619 z"
        id="rect3974"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cscscscsc"
@@ -1508,7 +1988,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.40980738;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 2236.7274,1086.7757 c 0,0 0.3867,-4.2502 0.4144,-6.7891 0.027,-2.5114 -0.2488,-8.3622 -0.2488,-8.3622"
+       d="m 2042.9801,1191.4275 c 0,0 0.3867,-4.2502 0.4144,-6.7891 0.027,-2.5114 -0.2488,-8.3622 -0.2488,-8.3622"
        id="path3977"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="csc"
@@ -1517,7 +1997,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.3278459;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 2236.3036,1071.7191 -0.059,-3.2492"
+       d="m 2042.5563,1176.3709 -0.059,-3.2492"
        id="path3980"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc"
@@ -1526,7 +2006,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:#ffffff;fill-opacity:0.31764706;stroke:none"
-       d="m 2255.2076,1063.2304 c 0,1.5842 6.3433,-6.475 13.3596,-6.475 7.0162,0 14.999,6.5838 14.999,4.9995 0,-1.5842 -7.655,-7.4584 -14.6711,-7.4584 -7.0163,0 -13.6875,7.3495 -13.6875,8.9339 z"
+       d="m 2061.4603,1167.8822 c 0,1.5842 6.3433,-6.475 13.3596,-6.475 7.0162,0 14.999,6.5838 14.999,4.9995 0,-1.5842 -7.655,-7.4584 -14.6711,-7.4584 -7.0163,0 -13.6875,7.3495 -13.6875,8.9339 z"
        id="path4405"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cscsc"
@@ -1535,7 +2015,7 @@
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png" />
     <path
        style="fill:#ffffff;fill-opacity:0.3174603;stroke:none"
-       d="m 2192.292,1055.9541 c 0,1.3443 3.2603,-3.9588 11.3264,-3.9588 8.0659,0 12.2279,9.5651 12.2279,8.2208 0,-1.3443 -4.2206,-9.4465 -11.4903,-9.6468 -9.9087,-0.2729 -12.064,4.0405 -12.064,5.3848 z"
+       d="m 1998.5447,1160.6059 c 0,1.3443 3.2603,-3.9588 11.3264,-3.9588 8.0659,0 12.2279,9.5651 12.2279,8.2208 0,-1.3443 -4.2206,-9.4465 -11.4903,-9.6468 -9.9087,-0.2729 -12.064,4.0405 -12.064,5.3848 z"
        id="path4408"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cscsc"
@@ -1544,7 +2024,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.74151921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 2240.6027,1111.3432 c 0,0 -0.7757,3.2356 0.371,3.5195 4.6299,1.1466 15.0272,0.1852 15.0272,0.1852 0,0 0.7204,-1.4419 0.3709,-2.0376 -1.0576,-1.8028 -5.725,0.202 -4.267,-1.2966 0.9673,-0.9939 2.4321,-2.0662 2.1363,-4.1455 -0.7227,-5.0782 -4.6632,-4.5879 -4.6632,-4.5879"
+       d="m 2046.8554,1215.995 c 0,0 -0.7757,3.2356 0.371,3.5195 4.6299,1.1466 15.0272,0.1852 15.0272,0.1852 0,0 0.7204,-1.4419 0.3709,-2.0376 -1.0576,-1.8028 -5.725,0.202 -4.267,-1.2966 0.9673,-0.9939 2.4321,-2.0662 2.1363,-4.1455 -0.7227,-5.0782 -4.6632,-4.5879 -4.6632,-4.5879"
        id="path3020"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cscsssc"
@@ -1553,7 +2033,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:#552200;fill-opacity:1;stroke:#000000;stroke-width:0.37075961;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 2252.9394,1114.9743 c 2.7721,-0.1879 3.1483,-0.3288 3.1483,-1.1798 0,-0.9743 -0.5025,-1.2158 -2.5294,-1.2158 -1.0449,0 -1.9619,-0.1005 -2.0376,-0.2225 -0.077,-0.123 0.3898,-0.8397 1.0345,-1.5938 1.4015,-1.6395 1.5913,-2.2589 1.1854,-3.8684 -0.3763,-1.4923 -1.1209,-2.579 -2.1208,-3.0952 -1.2077,-0.6238 -1.4866,-0.4812 -2.3977,1.2258 -1.4924,2.796 -4.8926,5.6439 -7.8778,6.5984 -0.5372,0.1718 -0.9215,1.9134 -0.5514,2.4992 0.1424,0.2255 0.661,0.4996 1.1522,0.6092 1.2977,0.2892 8.0922,0.4393 10.9943,0.2429 z"
+       d="m 2059.1921,1219.6261 c 2.7721,-0.1879 3.1483,-0.3288 3.1483,-1.1798 0,-0.9743 -0.5025,-1.2158 -2.5294,-1.2158 -1.0449,0 -1.9619,-0.1005 -2.0376,-0.2225 -0.077,-0.123 0.3898,-0.8397 1.0345,-1.5938 1.4015,-1.6395 1.5913,-2.2589 1.1854,-3.8684 -0.3763,-1.4923 -1.1209,-2.579 -2.1208,-3.0952 -1.2077,-0.6238 -1.4866,-0.4812 -2.3977,1.2258 -1.4924,2.796 -4.8926,5.6439 -7.8778,6.5984 -0.5372,0.1718 -0.9215,1.9134 -0.5514,2.4992 0.1424,0.2255 0.661,0.4996 1.1522,0.6092 1.2977,0.2892 8.0922,0.4393 10.9943,0.2429 z"
        id="path3806"
        inkscape:connector-curvature="0"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
@@ -1561,7 +2041,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:#552200;fill-opacity:1;stroke:#000000;stroke-width:0.92689914;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 2222.6402,1114.763 c -2.7721,-0.1875 -3.1484,-0.3286 -3.1484,-1.1796 0,-0.9743 0.5025,-1.2158 2.5295,-1.2158 1.0449,0 1.9617,-0.1005 2.0374,-0.2225 0.076,-0.123 -0.3897,-0.8397 -1.0344,-1.594 -1.4014,-1.6392 -1.5912,-2.2587 -1.1853,-3.8681 0.3761,-1.4923 1.1208,-2.5791 2.1206,-3.0954 1.2079,-0.6235 1.4866,-0.4809 2.3977,1.2259 1.4925,2.7959 4.8928,5.6441 7.878,6.5985 0.5372,0.1717 0.9213,1.9133 0.5513,2.4991 -0.1425,0.2255 -0.661,0.4996 -1.1523,0.6092 -1.2976,0.2892 -8.092,0.4393 -10.9941,0.2427 z"
+       d="m 2028.8929,1219.4148 c -2.7721,-0.1875 -3.1484,-0.3286 -3.1484,-1.1796 0,-0.9743 0.5025,-1.2158 2.5295,-1.2158 1.0449,0 1.9617,-0.1005 2.0374,-0.2225 0.076,-0.123 -0.3897,-0.8397 -1.0344,-1.594 -1.4014,-1.6392 -1.5912,-2.2587 -1.1853,-3.8681 0.3761,-1.4923 1.1208,-2.5791 2.1206,-3.0954 1.2079,-0.6235 1.4866,-0.4809 2.3977,1.2259 1.4925,2.7959 4.8928,5.6441 7.878,6.5985 0.5372,0.1717 0.9213,1.9133 0.5513,2.4991 -0.1425,0.2255 -0.661,0.4996 -1.1523,0.6092 -1.2976,0.2892 -8.092,0.4393 -10.9941,0.2427 z"
        id="path3806-1"
        inkscape:connector-curvature="0"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
@@ -1569,7 +2049,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:#000000;fill-opacity:0.25396824;stroke:none"
-       d="m 2228.1777,1106.7437 c 0,1.5844 2.2632,4.6532 9.2795,4.6532 7.0164,0 11.7842,-5.2859 11.7842,-6.8702 0,-1.5844 -2.1903,2.7393 -9.107,3.9167 -7.2637,1.2365 -11.9567,-3.2839 -11.9567,-1.6997 z"
+       d="m 2034.4304,1211.3955 c 0,1.5844 2.2632,4.6532 9.2795,4.6532 7.0164,0 11.7842,-5.2859 11.7842,-6.8702 0,-1.5844 -2.1903,2.7393 -9.107,3.9167 -7.2637,1.2365 -11.9567,-3.2839 -11.9567,-1.6997 z"
        id="path4405-7"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cscsc"
@@ -1578,7 +2058,7 @@
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png" />
     <path
        style="fill:#ffffff;fill-opacity:0.78680205;stroke:#666666;stroke-width:0.5784148;stroke-opacity:1;display:inline"
-       d="m 2139.0529,426.74199 c -28.5526,0 -52.1586,18.06619 -55.9435,41.51934 -5.2728,-0.51692 -10.7167,-0.77725 -16.268,-0.77725 -49.5939,0 -89.7808,21.54854 -89.7808,48.13497 0,5.05153 1.4478,9.92173 4.1393,14.49652 -9.4972,5.52977 -15.2557,12.76695 -15.2557,20.67833 0,17.38345 27.7613,31.46935 62.0169,31.46935 18.862,0 35.7468,-4.26592 47.1227,-11.00792 10.3927,17.08654 42.1425,29.5353 79.7128,29.5353 36.2053,0 67.0101,-11.56158 78.5018,-27.69161 7.4223,2.31742 15.6234,3.6151 24.2573,3.6151 33.233,0 60.1732,-19.06704 60.1732,-42.58579 0,-13.39823 -8.7446,-25.34417 -22.4136,-33.1504 2.524,-4.10287 3.9043,-8.53133 3.9043,-13.14089 0,-21.47365 -29.8503,-38.88031 -66.6623,-38.88031 -15.4479,0 -29.6562,3.07926 -40.959,8.22434 -8.2741,-17.82675 -28.69,-30.43908 -52.5454,-30.43908 z"
+       d="m 1945.3056,531.39379 c -28.5526,0 -52.1586,18.06619 -55.9435,41.51934 -5.2728,-0.51692 -10.7167,-0.77725 -16.268,-0.77725 -49.5939,0 -89.7808,21.54854 -89.7808,48.13497 0,5.05153 1.4478,9.92173 4.1393,14.49652 -9.4972,5.52977 -15.2557,12.76695 -15.2557,20.67833 0,17.38345 27.7613,31.46935 62.0169,31.46935 18.862,0 35.7468,-4.26592 47.1227,-11.00792 10.3927,17.08654 42.1425,29.5353 79.7128,29.5353 36.2053,0 67.0101,-11.56158 78.5018,-27.69161 7.4223,2.31742 15.6234,3.6151 24.2573,3.6151 33.233,0 60.1732,-19.06704 60.1732,-42.58579 0,-13.39823 -8.7446,-25.34417 -22.4136,-33.1504 2.524,-4.10287 3.9043,-8.53133 3.9043,-13.14089 0,-21.47365 -29.8503,-38.88031 -66.6623,-38.88031 -15.4479,0 -29.6562,3.07926 -40.959,8.22434 -8.2741,-17.82675 -28.69,-30.43908 -52.5454,-30.43908 z"
        id="path4223"
        inkscape:connector-curvature="0"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Project Acorn\Assets\Images\cloud.png"
@@ -1586,7 +2066,7 @@
        inkscape:export-ydpi="60" />
     <path
        style="color:#000000;fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 1990.0515,1149.6953 246.8588,0 c 21.5936,0 38.9777,13.3615 38.9777,29.9583 l 0,39.9444 c 0,16.5968 -17.3841,29.9583 -38.9777,29.9583 l -246.8588,0 c -21.5937,0 -38.9778,-13.3615 -38.9778,-29.9583 l 0,-39.9444 c 0,-16.5968 17.3841,-29.9583 38.9778,-29.9583 z"
+       d="m 1796.3042,1254.3471 246.8588,0 c 21.5936,0 38.9777,13.3615 38.9777,29.9583 l 0,39.9444 c 0,16.5968 -17.3841,29.9583 -38.9777,29.9583 l -246.8588,0 c -21.5937,0 -38.9778,-13.3615 -38.9778,-29.9583 l 0,-39.9444 c 0,-16.5968 17.3841,-29.9583 38.9778,-29.9583 z"
        id="rect2985"
        inkscape:connector-curvature="0"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\stop_button.png"
@@ -1594,7 +2074,7 @@
        inkscape:export-ydpi="60" />
     <path
        style="color:#000000;fill:#ffffff;fill-opacity:0.74074073;fill-rule:evenodd;stroke:none;stroke-width:0.59385347px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 1994.1658,1151.7394 c -20.4343,0.1281 -24.3629,3.4318 -31.9395,10.0926 -5.7388,5.0452 -9.3597,14.3512 -6.6261,19.4488 4.2207,4.9669 22.5781,4.484 40.8941,3.8026 81.7524,-0.059 163.5467,0.118 245.273,-0.088 19.8216,-0.5315 34.3692,-1.5406 31.803,-6.8195 -0.7947,-5.0208 -4.2489,-13.4434 -10.4973,-17.8815 -8.4411,-5.9958 -14.1592,-9.6466 -32.4489,-8.964 -80.8898,0.01 -155.5701,0.3832 -236.4583,0.4089 z"
+       d="m 1800.4185,1256.3912 c -20.4343,0.1281 -24.3629,3.4318 -31.9395,10.0926 -5.7388,5.0452 -9.3597,14.3512 -6.6261,19.4488 4.2207,4.9669 22.5781,4.484 40.8941,3.8026 81.7524,-0.059 163.5467,0.118 245.273,-0.088 19.8216,-0.5315 34.3692,-1.5406 31.803,-6.8195 -0.7947,-5.0208 -4.2489,-13.4434 -10.4973,-17.8815 -8.4411,-5.9958 -14.1592,-9.6466 -32.4489,-8.964 -80.8898,0.01 -155.5701,0.3832 -236.4583,0.4089 z"
        id="rect2985-7"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="caccccacc"
@@ -1604,8 +2084,8 @@
     <text
        xml:space="preserve"
        style="font-size:50.3408699px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
-       x="2072.3135"
-       y="1205.7415"
+       x="1877.2554"
+       y="1309.6899"
        id="text2985"
        sodipodi:linespacing="125%"
        transform="scale(0.99327996,1.0067655)"
@@ -1614,11 +2094,11 @@
        inkscape:export-ydpi="60"><tspan
          sodipodi:role="line"
          id="tspan2987"
-         x="2072.3135"
-         y="1205.7415">Stop</tspan></text>
+         x="1877.2554"
+         y="1309.6899">Stop</tspan></text>
     <g
        id="g4715"
-       transform="translate(288.58578,12.384781)"
+       transform="translate(94.838527,117.03658)"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\stop_button.png"
        inkscape:export-xdpi="60"
        inkscape:export-ydpi="60">
@@ -1644,7 +2124,7 @@
     </g>
     <path
        style="color:#000000;fill:#007b09;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 1992.1728,1269.9034 246.8588,0 c 21.5936,0 38.9777,13.3615 38.9777,29.9583 l 0,39.9444 c 0,16.5968 -17.3841,29.9583 -38.9777,29.9583 l -246.8588,0 c -21.5937,0 -38.9778,-13.3615 -38.9778,-29.9583 l 0,-39.9444 c 0,-16.5968 17.3841,-29.9583 38.9778,-29.9583 z"
+       d="m 1798.4255,1374.5552 246.8588,0 c 21.5936,0 38.9777,13.3615 38.9777,29.9583 l 0,39.9444 c 0,16.5968 -17.3841,29.9583 -38.9777,29.9583 l -246.8588,0 c -21.5937,0 -38.9778,-13.3615 -38.9778,-29.9583 l 0,-39.9444 c 0,-16.5968 17.3841,-29.9583 38.9778,-29.9583 z"
        id="rect2985-1"
        inkscape:connector-curvature="0"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\stop_button_pressed.png"
@@ -1652,7 +2132,7 @@
        inkscape:export-ydpi="60" />
     <path
        style="color:#000000;fill:#ffffff;fill-opacity:0.74074073;fill-rule:evenodd;stroke:none;stroke-width:0.59385347px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 1996.2871,1271.9475 c -20.4343,0.1281 -24.3629,3.4318 -31.9395,10.0926 -5.7388,5.0452 -9.3597,14.3512 -6.6261,19.4488 4.2207,4.9669 22.5781,4.484 40.8941,3.8026 81.7524,-0.059 163.5467,0.118 245.273,-0.088 19.8216,-0.5315 34.3692,-1.5406 31.803,-6.8195 -0.7947,-5.0208 -4.2489,-13.4434 -10.4973,-17.8815 -8.4411,-5.9958 -14.1592,-9.6466 -32.4489,-8.964 -80.8898,0.01 -155.5701,0.3832 -236.4583,0.4089 z"
+       d="m 1802.5398,1376.5993 c -20.4343,0.1281 -24.3629,3.4318 -31.9395,10.0926 -5.7388,5.0452 -9.3597,14.3512 -6.6261,19.4488 4.2207,4.9669 22.5781,4.484 40.8941,3.8026 81.7524,-0.059 163.5467,0.118 245.273,-0.088 19.8216,-0.5315 34.3692,-1.5406 31.803,-6.8195 -0.7947,-5.0208 -4.2489,-13.4434 -10.4973,-17.8815 -8.4411,-5.9958 -14.1592,-9.6466 -32.4489,-8.964 -80.8898,0.01 -155.5701,0.3832 -236.4583,0.4089 z"
        id="rect2985-7-8"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="caccccacc"
@@ -1662,8 +2142,8 @@
     <text
        xml:space="preserve"
        style="font-size:50.3408699px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
-       x="2074.4492"
-       y="1325.1418"
+       x="1879.3911"
+       y="1429.0903"
        id="text2985-6"
        sodipodi:linespacing="125%"
        transform="scale(0.99327996,1.0067655)"
@@ -1672,12 +2152,12 @@
        inkscape:export-ydpi="60"><tspan
          sodipodi:role="line"
          id="tspan2987-0"
-         x="2074.4492"
-         y="1325.1418">Stop</tspan></text>
+         x="1879.3911"
+         y="1429.0903">Stop</tspan></text>
     <g
        style="display:inline"
        id="g4715-2"
-       transform="translate(290.70711,132.59295)"
+       transform="translate(96.959857,237.24475)"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\stop_button_pressed.png"
        inkscape:export-xdpi="60"
        inkscape:export-ydpi="60">
@@ -1704,7 +2184,7 @@
     <g
        style="display:inline"
        id="g4038-1"
-       transform="matrix(0.24728804,0,0,0.24728804,2382.3467,931.48362)"
+       transform="matrix(0.24728804,0,0,0.24728804,2188.5994,1036.1354)"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
@@ -1729,7 +2209,7 @@
     </g>
     <path
        style="fill:#72472b;fill-opacity:1;stroke:#000000;stroke-width:0.92689914;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
-       d="m 2430.7213,1084.3554 c -7.5746,10e-5 -13.7479,7.6104 -12.9464,14.9753 0.3562,6.5129 5.7805,12.8534 12.5638,13.0077 6.4472,0.2868 12.5038,-4.9188 13.3747,-11.2766 1.2517,-6.4691 -2.2959,-13.8818 -8.7599,-16.0059 -1.3565,-0.489 -2.7804,-0.7425 -4.2322,-0.7005 z"
+       d="m 2236.974,1189.0072 c -7.5746,10e-5 -13.7479,7.6104 -12.9464,14.9753 0.3562,6.5129 5.7805,12.8534 12.5638,13.0077 6.4472,0.2868 12.5038,-4.9188 13.3747,-11.2766 1.2517,-6.4691 -2.2959,-13.8818 -8.7599,-16.0059 -1.3565,-0.489 -2.7804,-0.7425 -4.2322,-0.7005 z"
        id="path3016-0-9"
        inkscape:connector-curvature="0"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
@@ -1737,7 +2217,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:#552200;fill-opacity:1;stroke:none;display:inline"
-       d="m 2418.0992,1089.6759 c -1.2264,1.3319 -1.8752,3.2996 -2.5501,5.0075 -0.7988,1.9385 -0.4619,4.2426 1.0511,5.734 2.4983,2.7447 6.331,4.4016 10.0614,4.142 1.3847,-0.033 3.0644,-1.2651 2.3725,-2.7896 -0.7581,-2.1523 -2.9,-3.5234 -5.1545,-3.5858 -1.8501,-0.3666 -4.6276,-0.2766 -5.3553,-2.4342 0.1685,-1.91 1.1,-3.6192 1.7156,-5.4248 -0.488,-0.5915 -1.4429,-0.5956 -2.1407,-0.6491 z"
+       d="m 2224.3519,1194.3277 c -1.2264,1.3319 -1.8752,3.2996 -2.5501,5.0075 -0.7988,1.9385 -0.4619,4.2426 1.0511,5.734 2.4983,2.7447 6.331,4.4016 10.0614,4.142 1.3847,-0.033 3.0644,-1.2651 2.3725,-2.7896 -0.7581,-2.1523 -2.9,-3.5234 -5.1545,-3.5858 -1.8501,-0.3666 -4.6276,-0.2766 -5.3553,-2.4342 0.1685,-1.91 1.1,-3.6192 1.7156,-5.4248 -0.488,-0.5915 -1.4429,-0.5956 -2.1407,-0.6491 z"
        id="path3832-4"
        inkscape:connector-curvature="0"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
@@ -1745,7 +2225,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.8655082;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
-       d="m 2417.9491,1089.4534 c 0,0 -0.079,0.1215 -0.2112,0.3395 -0.7837,1.2883 -3.4353,5.927 -2.5865,8.4034 1.2371,3.6093 5.6704,5.8955 9.4423,6.4699 1.5675,0.2385 3.8681,0.035 4.5464,-1.399 0.5925,-1.2523 -0.587,-2.8744 -1.5737,-3.8469 -2.2742,-2.2411 -7.5518,-0.6111 -8.9178,-3.4971 -0.2729,-1.2026 1.9234,-5.9452 1.9234,-5.9452 z"
+       d="m 2224.2018,1194.1052 c 0,0 -0.079,0.1215 -0.2112,0.3395 -0.7837,1.2883 -3.4353,5.927 -2.5865,8.4034 1.2371,3.6093 5.6704,5.8955 9.4423,6.4699 1.5675,0.2385 3.8681,0.035 4.5464,-1.399 0.5925,-1.2523 -0.587,-2.8744 -1.5737,-3.8469 -2.2742,-2.2411 -7.5518,-0.6111 -8.9178,-3.4971 -0.2729,-1.2026 1.9234,-5.9452 1.9234,-5.9452 z"
        id="path3826-8"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cssssscc"
@@ -1754,7 +2234,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:#552200;fill-opacity:1;stroke:none;display:inline"
-       d="m 2444.2344,1089.4285 c -0.7636,0.1528 -2.3509,0.2032 -1.6305,1.2905 0.5426,1.6627 1.6177,3.3372 1.4065,5.1004 -1.3306,2.2199 -4.373,1.7512 -6.5376,2.3415 -2.0689,0.3702 -4.0311,2.297 -4.0031,4.4512 0.6218,1.8985 3.1077,1.897 4.7449,1.6692 3.7284,-0.6885 7.7969,-2.6796 9.1573,-6.4604 0.5266,-3.0389 -1.3326,-5.8653 -2.7046,-8.4002 -0.1409,0.023 -0.2912,-0.018 -0.4329,0.015 z"
+       d="m 2250.4871,1194.0803 c -0.7636,0.1528 -2.3509,0.2032 -1.6305,1.2905 0.5426,1.6627 1.6177,3.3372 1.4065,5.1004 -1.3306,2.2199 -4.373,1.7512 -6.5376,2.3415 -2.0689,0.3702 -4.0311,2.297 -4.0031,4.4512 0.6218,1.8985 3.1077,1.897 4.7449,1.6692 3.7284,-0.6885 7.7969,-2.6796 9.1573,-6.4604 0.5266,-3.0389 -1.3326,-5.8653 -2.7046,-8.4002 -0.1409,0.023 -0.2912,-0.018 -0.4329,0.015 z"
        id="path3832-7-8"
        inkscape:connector-curvature="0"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
@@ -1762,7 +2242,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.79132181;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
-       d="m 2444.6714,1089.2177 c 0,0 0.079,0.1215 0.2114,0.3396 0.7835,1.2882 3.4352,5.9269 2.5863,8.4035 -1.2369,3.6093 -5.6705,5.8953 -9.4423,6.4697 -1.5676,0.2387 -3.8681,0.034 -4.5464,-1.3989 -0.5926,-1.2524 0.587,-2.8743 1.5738,-3.8468 2.2742,-2.2413 7.5517,-0.6111 8.9177,-3.4973 0.2729,-1.2025 -1.9235,-5.9452 -1.9235,-5.9452 z"
+       d="m 2250.9241,1193.8695 c 0,0 0.079,0.1215 0.2114,0.3396 0.7835,1.2882 3.4352,5.9269 2.5863,8.4035 -1.2369,3.6093 -5.6705,5.8953 -9.4423,6.4697 -1.5676,0.2387 -3.8681,0.034 -4.5464,-1.3989 -0.5926,-1.2524 0.587,-2.8743 1.5738,-3.8468 2.2742,-2.2413 7.5517,-0.6111 8.9177,-3.4973 0.2729,-1.2025 -1.9235,-5.9452 -1.9235,-5.9452 z"
        id="path3826-4-2"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cssssscc"
@@ -1771,7 +2251,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:#552200;fill-opacity:1;stroke:#000000;stroke-width:0.81961477;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
-       d="m 2404.1481,979.86066 c -2.2072,-2.1277 -5.0061,-3.99571 -8.1962,-6.2393 -5.1273,-3.60634 -23.9328,-6.2696 -27.1497,-1.96203 -2.6594,4.48884 3.3669,-0.70723 13.8719,14.91183 2.0802,3.0929 2.4724,7.6687 2.7355,12.1202 -5.7295,9.38954 -9.0772,20.71414 -9.0772,32.90734 0,11.5024 2.9823,22.2319 8.1295,31.294 -0.015,0.015 -0.017,0.021 -0.026,0.031 -3.8062,0.426 -5.9421,3.4951 -5.9421,5.2405 0,1.1597 0.8847,0.4327 2.5868,-0.2921 -1.5242,1.1527 -2.3409,2.7369 -2.3409,3.8164 0,1.1176 0.8249,0.4859 2.4076,-0.21 0,0.1349 -0.015,0.2691 -0.015,0.4046 -0.9924,1.5944 -1.4959,3.3408 -1.4959,4.2313 0,1.0015 0.593,-0.056 1.8031,-1.2602 1.4638,6.4332 7.8719,10.3569 15.2552,11.8844 12.8922,2.6673 24.7937,5.4131 35.438,4.636 16.7549,-1.2231 22.6477,-1.7445 36.5907,-6.2906 7.7878,-2.5391 15.1966,-8.0985 15.3985,-16.0592 1.8976,0.6062 1.7673,2.9832 1.7673,1.6085 0,-0.8804 -0.054,-3.0366 -1.3268,-4.7692 1.567,0.6023 1.9672,1.8854 1.9672,0.6505 0,-0.9669 -1.6124,-2.9428 -3.7088,-4.4668 2.6198,0.1587 3.2171,2.4363 3.2171,0.9221 0,-1.5684 -4.2332,-5.7965 -7.9094,-6.434 -0.3042,-0.053 -0.5469,-0.091 -0.7684,-0.1275 3.1681,-7.538 4.9433,-15.9431 4.9433,-24.8088 0,-9.375 -1.9826,-18.2357 -5.5016,-26.0995 1.1317,-5.94934 0.078,-14.86074 3.4475,-19.87057 10.5051,-15.61911 16.5313,-10.42288 13.872,-14.91172 -3.217,-4.30758 -22.0223,-1.64447 -27.1499,1.96187 -4.3023,3.02594 -7.8953,5.37209 -10.2809,8.59055 -9.9374,-9.62434 -34.9348,-11.88998 -52.5429,-1.40997 z"
+       d="m 2210.4008,1084.5125 c -2.2072,-2.1277 -5.0061,-3.9957 -8.1962,-6.2393 -5.1273,-3.6064 -23.9328,-6.2696 -27.1497,-1.9621 -2.6594,4.4889 3.3669,-0.7072 13.8719,14.9119 2.0802,3.0929 2.4724,7.6687 2.7355,12.1202 -5.7295,9.3895 -9.0772,20.7141 -9.0772,32.9073 0,11.5024 2.9823,22.2319 8.1295,31.294 -0.015,0.015 -0.017,0.021 -0.026,0.031 -3.8062,0.426 -5.9421,3.4951 -5.9421,5.2405 0,1.1597 0.8847,0.4327 2.5868,-0.2921 -1.5242,1.1527 -2.3409,2.7369 -2.3409,3.8164 0,1.1176 0.8249,0.4859 2.4076,-0.21 0,0.1349 -0.015,0.2691 -0.015,0.4046 -0.9924,1.5944 -1.4959,3.3408 -1.4959,4.2313 0,1.0015 0.593,-0.056 1.8031,-1.2602 1.4638,6.4332 7.8719,10.3569 15.2552,11.8844 12.8922,2.6673 24.7937,5.4131 35.438,4.636 16.7549,-1.2231 22.6477,-1.7445 36.5907,-6.2906 7.7878,-2.5391 15.1966,-8.0985 15.3985,-16.0592 1.8976,0.6062 1.7673,2.9832 1.7673,1.6085 0,-0.8804 -0.054,-3.0366 -1.3268,-4.7692 1.567,0.6023 1.9672,1.8854 1.9672,0.6505 0,-0.9669 -1.6124,-2.9428 -3.7088,-4.4668 2.6198,0.1587 3.2171,2.4363 3.2171,0.9221 0,-1.5684 -4.2332,-5.7965 -7.9094,-6.434 -0.3042,-0.053 -0.5469,-0.091 -0.7684,-0.1275 3.1681,-7.538 4.9433,-15.9431 4.9433,-24.8088 0,-9.375 -1.9826,-18.2357 -5.5016,-26.0995 1.1317,-5.9493 0.078,-14.8607 3.4475,-19.8706 10.5051,-15.6191 16.5313,-10.4228 13.872,-14.9117 -3.217,-4.3076 -22.0223,-1.6445 -27.1499,1.9619 -4.3023,3.0259 -7.8953,5.3721 -10.2809,8.5905 -9.9374,-9.6243 -34.9348,-11.8899 -52.5429,-1.4099 z"
        id="path3901-4"
        inkscape:connector-curvature="0"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
@@ -1780,7 +2260,7 @@
        sodipodi:nodetypes="cccscsccscsccscscccscscsccscscscc" />
     <path
        style="fill:#d38d5f;fill-opacity:1;stroke:#000000;stroke-width:0.49176884;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;display:inline"
-       d="m 2461.8547,985.87236 c 1.756,1.4448 6.0844,5.8576 7.5739,7.5548 1.7779,2.0261 3.0223,3.7645 5.0714,6.97564 -0.015,-2.54074 -0.298,-11.53234 4.3803,-17.80646 5.8645,-7.86473 11.9635,-9.53228 8.4726,-11.15021 -4.4214,-2.04898 -25.4982,5.19187 -25.4982,14.42623 z"
+       d="m 2268.1074,1090.5242 c 1.756,1.4448 6.0844,5.8576 7.5739,7.5548 1.7779,2.0261 3.0223,3.7645 5.0714,6.9756 -0.015,-2.5407 -0.298,-11.5323 4.3803,-17.8065 5.8645,-7.8647 11.9635,-9.5322 8.4726,-11.1502 -4.4214,-2.0489 -25.4982,5.1919 -25.4982,14.4263 z"
        id="path4307-5-5"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cscssc"
@@ -1789,7 +2269,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:#ffffff;fill-opacity:0.16931218;stroke:none;display:inline"
-       d="m 2444.1096,1006.6926 c -5.671,-0.046 -11.2745,3.5011 -12.9141,9.0568 -6.7465,-10.4346 -24.6146,-12.2217 -31.8625,-1.4393 -1.2606,1.8741 -2.4084,3.8535 -3.4168,5.9061 -2.2498,1.0774 -3.6627,3.2796 -3.6627,3.8062 0,0.4958 0.2794,-0.2223 1.7263,-0.6916 -0.8949,0.9191 -1.4088,1.8401 -1.4088,2.1566 0,0.4461 0.2254,-0.089 1.3217,-0.5431 -0.7156,1.9591 -1.2962,3.9653 -1.7313,5.9987 -1.1537,1.2095 -1.6392,2.7144 -1.6392,3.1095 0,0.4868 0.015,-0.3563 1.2293,-0.9221 -0.6009,3.7814 -0.6717,7.6316 -0.087,11.4285 0.7605,4.3497 3.283,8.6018 7.4022,10.5013 -5.3725,0.7951 -10.3567,3.6244 -14.2869,7.2997 -1.652,1.73 -0.6998,0.731 -1.5521,1.5521 -2.6422,0.2124 -6.3233,5.9131 -1.6494,3.2785 2.2269,-0.4333 -5.3933,6.0742 -0.5226,3.6576 2.3729,-0.1364 -2.689,6.1015 0.7325,3.0325 1.2063,7.7754 9.4301,11.4458 16.3719,12.6476 12.8213,2.6068 25.8929,5.6661 39.0545,3.9188 12.5837,-0.9122 25.4616,-2.768 36.8929,-8.3754 5.0445,-2.6911 9.5491,-7.7506 9.2669,-13.7848 4.718,2.1382 -3.6318,-5.8251 1.3317,-2.9456 2.0114,-0.2 -7.4726,-5.1073 -1.9618,-3.8624 4.6141,1.4016 -3.2407,-4.9319 -5.8858,-4.3388 0.2103,-4.8329 -7.8568,-4.8672 -9.8253,-5.8297 4.6315,-5.7143 4.2123,-14.2329 2.9558,-20.9975 -0.2205,-0.9405 -0.466,-1.8887 -0.7377,-2.8379 0.3458,0.1669 0.665,0.3095 0.9683,0.3792 0,-0.5222 -0.4721,-1.3675 -1.2039,-2.2181 0.709,0.2985 1.1475,0.4544 1.1475,-0.102 0,-0.5904 -0.4609,-1.457 -1.1936,-2.259 0.8026,0.3394 1.3113,0.5661 1.3113,-0.032 0,-1.2401 -2.0178,-3.6987 -4.3695,-4.2209 -2.0342,-3.7911 -4.7768,-7.1293 -8.5137,-9.3641 -3.9635,-1.8642 -8.3501,-2.9428 -12.7398,-2.9506 -0.1831,-0.015 -0.3653,-0.015 -0.5482,-0.015 z"
+       d="m 2250.3623,1111.3444 c -5.671,-0.046 -11.2745,3.5011 -12.9141,9.0568 -6.7465,-10.4346 -24.6146,-12.2217 -31.8625,-1.4393 -1.2606,1.8741 -2.4084,3.8535 -3.4168,5.9061 -2.2498,1.0774 -3.6627,3.2796 -3.6627,3.8062 0,0.4958 0.2794,-0.2223 1.7263,-0.6916 -0.8949,0.9191 -1.4088,1.8401 -1.4088,2.1566 0,0.4461 0.2254,-0.089 1.3217,-0.5431 -0.7156,1.9591 -1.2962,3.9653 -1.7313,5.9987 -1.1537,1.2095 -1.6392,2.7144 -1.6392,3.1095 0,0.4868 0.015,-0.3563 1.2293,-0.9221 -0.6009,3.7814 -0.6717,7.6316 -0.087,11.4285 0.7605,4.3497 3.283,8.6018 7.4022,10.5013 -5.3725,0.7951 -10.3567,3.6244 -14.2869,7.2997 -1.652,1.73 -0.6998,0.731 -1.5521,1.5521 -2.6422,0.2124 -6.3233,5.9131 -1.6494,3.2785 2.2269,-0.4333 -5.3933,6.0742 -0.5226,3.6576 2.3729,-0.1364 -2.689,6.1015 0.7325,3.0325 1.2063,7.7754 9.4301,11.4458 16.3719,12.6476 12.8213,2.6068 25.8929,5.6661 39.0545,3.9188 12.5837,-0.9122 25.4616,-2.768 36.8929,-8.3754 5.0445,-2.6911 9.5491,-7.7506 9.2669,-13.7848 4.718,2.1382 -3.6318,-5.8251 1.3317,-2.9456 2.0114,-0.2 -7.4726,-5.1073 -1.9618,-3.8624 4.6141,1.4016 -3.2407,-4.9319 -5.8858,-4.3388 0.2103,-4.8329 -7.8568,-4.8672 -9.8253,-5.8297 4.6315,-5.7143 4.2123,-14.2329 2.9558,-20.9975 -0.2205,-0.9405 -0.466,-1.8887 -0.7377,-2.8379 0.3458,0.1669 0.665,0.3095 0.9683,0.3792 0,-0.5222 -0.4721,-1.3675 -1.2039,-2.2181 0.709,0.2985 1.1475,0.4544 1.1475,-0.102 0,-0.5904 -0.4609,-1.457 -1.1936,-2.259 0.8026,0.3394 1.3113,0.5661 1.3113,-0.032 0,-1.2401 -2.0178,-3.6987 -4.3695,-4.2209 -2.0342,-3.7911 -4.7768,-7.1293 -8.5137,-9.3641 -3.9635,-1.8642 -8.3501,-2.9428 -12.7398,-2.9506 -0.1831,-0.015 -0.3653,-0.015 -0.5482,-0.015 z"
        id="path4009-5"
        inkscape:connector-curvature="0"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
@@ -1797,7 +2277,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:#ffccaa;fill-opacity:1;stroke:#000000;stroke-width:0.49176884;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;display:inline"
-       d="m 2476.3022,981.13029 c -3.5424,3.21426 -3.7691,9.30337 -5.5007,13.74737 -1.587,-1.9318 -3.3015,-3.7579 -5.1175,-5.476 1.781,-4.76894 3.0486,-5.88818 5.9934,-7.89504 1.2828,-0.87425 5.1737,-2.48528 6.7017,-2.75981 -0.1124,0.099 -1.9641,2.28453 -2.0769,2.38348 z"
+       d="m 2282.5549,1085.7821 c -3.5424,3.2143 -3.7691,9.3034 -5.5007,13.7474 -1.587,-1.9318 -3.3015,-3.7579 -5.1175,-5.476 1.781,-4.769 3.0486,-5.8882 5.9934,-7.8951 1.2828,-0.8742 5.1737,-2.4853 6.7017,-2.7598 -0.1124,0.099 -1.9641,2.2845 -2.0769,2.3835 z"
        id="path4307-4-8-1"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccscc"
@@ -1806,7 +2286,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:#d38d5f;fill-opacity:1;stroke:#000000;stroke-width:0.49176884;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;display:inline"
-       d="m 2397.2635,983.29068 c -1.756,1.4446 -3.7665,3.53928 -5.2558,5.23658 -1.7777,2.026 -3.0223,3.7645 -5.0714,6.9756 0,-2.5408 -0.977,-7.8232 -5.6554,-14.09729 -5.8644,-7.86488 -13.8181,-7.56186 -10.3272,-9.17979 4.4214,-2.04898 26.3098,1.83068 26.3098,11.0649 z"
+       d="m 2203.5162,1087.9425 c -1.756,1.4446 -3.7665,3.5393 -5.2558,5.2366 -1.7777,2.026 -3.0223,3.7645 -5.0714,6.9756 0,-2.5408 -0.977,-7.8232 -5.6554,-14.0973 -5.8644,-7.8649 -13.8181,-7.5619 -10.3272,-9.1798 4.4214,-2.049 26.3098,1.8307 26.3098,11.0649 z"
        id="path4307-7"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cscssc"
@@ -1815,7 +2295,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:#ffccaa;fill-opacity:1;stroke:#000000;stroke-width:0.49176884;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;display:inline"
-       d="m 2382.6999,978.20075 c 3.544,3.21606 6.2006,7.32887 7.9349,11.77691 1.5876,-1.9323 3.3024,-3.7586 5.1175,-5.47598 -1.6266,-3.03989 -5.1917,-4.02509 -8.15,-5.23535 -1.7091,-0.59419 -3.4624,-1.04309 -5.2405,-1.36259 0.1125,0.0989 0.2254,0.19806 0.3381,0.29701 z"
+       d="m 2188.9526,1082.8526 c 3.544,3.216 6.2006,7.3288 7.9349,11.7769 1.5876,-1.9323 3.3024,-3.7586 5.1175,-5.476 -1.6266,-3.0399 -5.1917,-4.0251 -8.15,-5.2354 -1.7091,-0.5942 -3.4624,-1.0431 -5.2405,-1.3626 0.1125,0.099 0.2254,0.1981 0.3381,0.2971 z"
        id="path4307-4-1"
        inkscape:connector-curvature="0"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
@@ -1823,7 +2303,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:#4c98d7;fill-opacity:1;stroke:#000000;stroke-width:1.04953003;stroke-miterlimit:4;stroke-opacity:1;display:inline"
-       d="m 2483.2209,1030.2995 c -0.108,9.9109 -1.6709,19.3469 -4.9327,25.6718 -3.6402,-3.8344 -17.506,-11.8342 -25.8971,4.835 -6.6914,1.4115 -13.6431,-0.048 -19.2106,-0.048 -5.0689,0 -12.1602,3.2597 -19.0412,2.6547 -11.7337,-16.342 -25.2815,-5.8114 -30.3771,-1.1858 -6.1014,-8.5225 -8.4096,-19.6021 -8.0891,-30.7382 2.4952,-7.0014 100.9494,-7.0868 107.5478,-1.1895 z"
+       d="m 2289.4736,1134.9513 c -0.108,9.9109 -1.6709,19.3469 -4.9327,25.6718 -3.6402,-3.8344 -17.506,-11.8342 -25.8971,4.835 -6.6914,1.4115 -13.6431,-0.048 -19.2106,-0.048 -5.0689,0 -12.1602,3.2597 -19.0412,2.6547 -11.7337,-16.342 -25.2815,-5.8114 -30.3771,-1.1858 -6.1014,-8.5225 -8.4096,-19.6021 -8.0891,-30.7382 2.4952,-7.0014 100.9494,-7.0868 107.5478,-1.1895 z"
        id="path3232-1"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccscccc"
@@ -1833,7 +2313,7 @@
     <g
        style="display:inline"
        id="g3933-5"
-       transform="matrix(0.16392295,0,0,0.16392295,2468.5315,992.78786)"
+       transform="matrix(0.16392295,0,0,0.16392295,2274.7842,1097.4397)"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
@@ -1871,7 +2351,7 @@
     </g>
     <g
        style="display:inline"
-       transform="matrix(0.16392295,0,0,0.16392295,2489.1975,992.43656)"
+       transform="matrix(0.16392295,0,0,0.16392295,2295.4502,1097.0884)"
        id="g3933-4-4"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
        inkscape:export-xdpi="90"
@@ -1910,7 +2390,7 @@
     </g>
     <path
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.64552534;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;display:inline"
-       d="m 2439.0103,1065.9595 c -1.2294,1.8896 -2.941,3.2015 -6.5385,4.1089 -2.8365,-0.4976 -4.8702,-1.9852 -6.6557,-3.8454 -1.4707,-1.5324 3.6143,-2.7918 6.7728,-2.7918 3.1584,0 7.5797,0.748 6.4214,2.5283 z"
+       d="m 2245.263,1170.6113 c -1.2294,1.8896 -2.941,3.2015 -6.5385,4.1089 -2.8365,-0.4976 -4.8702,-1.9852 -6.6557,-3.8454 -1.4707,-1.5324 3.6143,-2.7918 6.7728,-2.7918 3.1584,0 7.5797,0.748 6.4214,2.5283 z"
        id="path3969-1"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="scsss"
@@ -1919,7 +2399,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.49176884;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;display:inline"
-       d="m 2448.3372,1077.8975 c -4.8007,3.7296 -6.1874,5.0347 -16.2752,5.0347 -10.0879,0 -18.0315,-9.9696 -18.0315,-12.8795 0,-2.91 7.9436,2.3416 18.0315,2.3416 5.4309,0 15.1087,-2.0092 19.04,-6.5441 2.4005,7.6046 -1.704,11.2231 -2.7648,12.0473 z"
+       d="m 2254.5899,1182.5493 c -4.8007,3.7296 -6.1874,5.0347 -16.2752,5.0347 -10.0879,0 -18.0315,-9.9696 -18.0315,-12.8795 0,-2.91 7.9436,2.3416 18.0315,2.3416 5.4309,0 15.1087,-2.0092 19.04,-6.5441 2.4005,7.6046 -1.704,11.2231 -2.7648,12.0473 z"
        id="path3971-6"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="sssscs"
@@ -1928,7 +2408,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.49176884;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;display:inline"
-       d="m 2423.9829,1071.3406 c 0,0 5.38,1.1592 8.07,1.1592 2.696,0 8.0881,-1.1592 8.0881,-1.1592 0,0 -0.9935,5.1055 -0.9935,7.6169 0,2.9137 0.828,7.2508 0.828,7.2508 0,0 -5.8621,1.3997 -8.3378,1.4371 -2.9933,0.045 -8.0688,-1.1887 -8.0688,-1.1887 0,0 1.4074,-3.9231 1.4074,-6.7542 0,-2.5941 -0.9934,-8.3619 -0.9934,-8.3619 z"
+       d="m 2230.2356,1175.9924 c 0,0 5.38,1.1592 8.07,1.1592 2.696,0 8.0881,-1.1592 8.0881,-1.1592 0,0 -0.9935,5.1055 -0.9935,7.6169 0,2.9137 0.828,7.2508 0.828,7.2508 0,0 -5.8621,1.3997 -8.3378,1.4371 -2.9933,0.045 -8.0688,-1.1887 -8.0688,-1.1887 0,0 1.4074,-3.9231 1.4074,-6.7542 0,-2.5941 -0.9934,-8.3619 -0.9934,-8.3619 z"
        id="rect3974-8"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cscscscsc"
@@ -1937,7 +2417,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.40980738;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
-       d="m 2432.1358,1087.568 c 0,0 -0.3867,-4.2501 -0.4144,-6.7891 -0.027,-2.5114 0.2488,-8.3622 0.2488,-8.3622"
+       d="m 2238.3885,1192.2198 c 0,0 -0.3867,-4.2501 -0.4144,-6.7891 -0.027,-2.5114 0.2488,-8.3622 0.2488,-8.3622"
        id="path3977-5"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="csc"
@@ -1946,7 +2426,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.3278459;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
-       d="m 2432.5596,1072.5114 0.059,-3.2491"
+       d="m 2238.8123,1177.1632 0.059,-3.2491"
        id="path3980-7"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc"
@@ -1955,7 +2435,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:#ffffff;fill-opacity:0.3174603;stroke:none;display:inline"
-       d="m 2413.6556,1064.0227 c 0,1.5842 -6.3433,-6.475 -13.3596,-6.475 -7.0162,0 -14.999,6.5838 -14.999,4.9995 0,-1.5842 7.655,-7.4584 14.6711,-7.4584 7.0163,0 13.6875,7.3496 13.6875,8.9339 z"
+       d="m 2219.9083,1168.6745 c 0,1.5842 -6.3433,-6.475 -13.3596,-6.475 -7.0162,0 -14.999,6.5838 -14.999,4.9995 0,-1.5842 7.655,-7.4584 14.6711,-7.4584 7.0163,0 13.6875,7.3496 13.6875,8.9339 z"
        id="path4405-6"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cscsc"
@@ -1964,7 +2444,7 @@
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png" />
     <path
        style="fill:#ffffff;fill-opacity:0.3174603;stroke:none;display:inline"
-       d="m 2476.5712,1056.7465 c 0,1.3443 -3.2603,-3.9589 -11.3264,-3.9589 -8.0659,0 -12.2279,9.5651 -12.2279,8.2208 0,-1.3442 4.2206,-9.4465 11.4903,-9.6468 9.9087,-0.2729 12.064,4.0406 12.064,5.3849 z"
+       d="m 2282.8239,1161.3983 c 0,1.3443 -3.2603,-3.9589 -11.3264,-3.9589 -8.0659,0 -12.2279,9.5651 -12.2279,8.2208 0,-1.3442 4.2206,-9.4465 11.4903,-9.6468 9.9087,-0.2729 12.064,4.0406 12.064,5.3849 z"
        id="path4408-18"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cscsc"
@@ -1973,7 +2453,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.74151921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
-       d="m 2428.2605,1112.1356 c 0,0 0.7757,3.2355 -0.371,3.5195 -4.6299,1.1465 -15.0272,0.1851 -15.0272,0.1851 0,0 -0.7204,-1.4419 -0.3709,-2.0375 1.0576,-1.8028 5.725,0.2019 4.267,-1.2967 -0.9673,-0.9939 -2.4321,-2.0662 -2.1363,-4.1455 0.7227,-5.0782 4.6632,-4.5879 4.6632,-4.5879"
+       d="m 2234.5132,1216.7874 c 0,0 0.7757,3.2355 -0.371,3.5195 -4.6299,1.1465 -15.0272,0.1851 -15.0272,0.1851 0,0 -0.7204,-1.4419 -0.3709,-2.0375 1.0576,-1.8028 5.725,0.2019 4.267,-1.2967 -0.9673,-0.9939 -2.4321,-2.0662 -2.1363,-4.1455 0.7227,-5.0782 4.6632,-4.5879 4.6632,-4.5879"
        id="path3020-9"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cscsssc"
@@ -1982,7 +2462,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:#552200;fill-opacity:1;stroke:#000000;stroke-width:0.37075961;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
-       d="m 2415.9238,1115.7666 c -2.7721,-0.1878 -3.1483,-0.3288 -3.1483,-1.1798 0,-0.9743 0.5025,-1.2158 2.5294,-1.2158 1.0449,0 1.9619,-0.1005 2.0376,-0.2225 0.077,-0.1229 -0.3898,-0.8396 -1.0345,-1.5938 -1.4015,-1.6395 -1.5913,-2.2589 -1.1854,-3.8684 0.3763,-1.4923 1.1209,-2.579 2.1208,-3.0952 1.2077,-0.6237 1.4866,-0.4812 2.3977,1.2258 1.4924,2.796 4.8926,5.644 7.8778,6.5984 0.5372,0.1719 0.9215,1.9135 0.5514,2.4993 -0.1424,0.2255 -0.661,0.4995 -1.1522,0.6091 -1.2977,0.2893 -8.0922,0.4393 -10.9943,0.2429 z"
+       d="m 2222.1765,1220.4184 c -2.7721,-0.1878 -3.1483,-0.3288 -3.1483,-1.1798 0,-0.9743 0.5025,-1.2158 2.5294,-1.2158 1.0449,0 1.9619,-0.1005 2.0376,-0.2225 0.077,-0.1229 -0.3898,-0.8396 -1.0345,-1.5938 -1.4015,-1.6395 -1.5913,-2.2589 -1.1854,-3.8684 0.3763,-1.4923 1.1209,-2.579 2.1208,-3.0952 1.2077,-0.6237 1.4866,-0.4812 2.3977,1.2258 1.4924,2.796 4.8926,5.644 7.8778,6.5984 0.5372,0.1719 0.9215,1.9135 0.5514,2.4993 -0.1424,0.2255 -0.661,0.4995 -1.1522,0.6091 -1.2977,0.2893 -8.0922,0.4393 -10.9943,0.2429 z"
        id="path3806-2"
        inkscape:connector-curvature="0"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
@@ -1990,7 +2470,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:#552200;fill-opacity:1;stroke:#000000;stroke-width:0.92689914;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
-       d="m 2446.223,1115.5554 c 2.7721,-0.1876 3.1484,-0.3287 3.1484,-1.1797 0,-0.9743 -0.5025,-1.2158 -2.5295,-1.2158 -1.0449,0 -1.9617,-0.1005 -2.0374,-0.2225 -0.077,-0.123 0.3897,-0.8396 1.0344,-1.5939 1.4014,-1.6393 1.5912,-2.2588 1.1853,-3.8682 -0.3761,-1.4922 -1.1208,-2.5791 -2.1206,-3.0953 -1.2079,-0.6236 -1.4866,-0.481 -2.3977,1.2258 -1.4925,2.796 -4.8928,5.6441 -7.878,6.5986 -0.5372,0.1716 -0.9213,1.9133 -0.5513,2.4991 0.1425,0.2255 0.661,0.4995 1.1523,0.6091 1.2976,0.2893 8.092,0.4393 10.9941,0.2428 z"
+       d="m 2252.4757,1220.2072 c 2.7721,-0.1876 3.1484,-0.3287 3.1484,-1.1797 0,-0.9743 -0.5025,-1.2158 -2.5295,-1.2158 -1.0449,0 -1.9617,-0.1005 -2.0374,-0.2225 -0.077,-0.123 0.3897,-0.8396 1.0344,-1.5939 1.4014,-1.6393 1.5912,-2.2588 1.1853,-3.8682 -0.3761,-1.4922 -1.1208,-2.5791 -2.1206,-3.0953 -1.2079,-0.6236 -1.4866,-0.481 -2.3977,1.2258 -1.4925,2.796 -4.8928,5.6441 -7.878,6.5986 -0.5372,0.1716 -0.9213,1.9133 -0.5513,2.4991 0.1425,0.2255 0.661,0.4995 1.1523,0.6091 1.2976,0.2893 8.092,0.4393 10.9941,0.2428 z"
        id="path3806-1-7"
        inkscape:connector-curvature="0"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
@@ -1998,45 +2478,16 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:#000000;fill-opacity:0.25396824;stroke:none;display:inline"
-       d="m 2440.6855,1107.5361 c 0,1.5843 -2.2632,4.6531 -9.2795,4.6531 -7.0164,0 -11.7842,-5.2859 -11.7842,-6.8702 0,-1.5843 2.1903,2.7393 9.107,3.9167 7.2637,1.2365 11.9567,-3.2838 11.9567,-1.6996 z"
+       d="m 2246.9382,1212.1879 c 0,1.5843 -2.2632,4.6531 -9.2795,4.6531 -7.0164,0 -11.7842,-5.2859 -11.7842,-6.8702 0,-1.5843 2.1903,2.7393 9.107,3.9167 7.2637,1.2365 11.9567,-3.2838 11.9567,-1.6996 z"
        id="path4405-7-9"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cscsc"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png" />
-    <rect
-       style="fill:#ffffff;fill-opacity:0.21164021;stroke:none"
-       id="rect4040"
-       width="35.355339"
-       height="563.16406"
-       x="1749.272"
-       y="698.57184"
-       rx="15.195565"
-       ry="13.969783"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\ScoreMeter.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <path
-       style="fill:#b5bcc2;fill-opacity:1;stroke:#000000;stroke-width:1.69326997;stroke-miterlimit:4;stroke-opacity:1"
-       d="m 1751.6929,684.01089 c -5.54,0 -10,3.94678 -10,8.84927 l 0,567.98494 c 0,4.9025 4.46,8.8492 10,8.8492 l 30.9063,0 c 5.54,0 10,-3.9467 10,-8.8492 l 0,-567.98494 c 0,-4.90249 -4.46,-8.84927 -10,-8.84927 l -30.9063,0 z m 3.7188,21.79133 22.625,0 0,549.40138 -22.625,0 0,-549.40138 z"
-       id="rect3573"
-       inkscape:connector-curvature="0"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\ScoreMeter.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <path
-       style="fill:#ffffff;fill-opacity:0.5625;stroke:none;display:inline"
-       d="m 1780.5054,685.50421 c -0.5726,-0.014 -1.1444,-0.004 -1.6875,0.0276 -10.3955,1.25209 -21.4004,-1.30783 -31.4687,1.35504 -7.1152,5.27579 -2.3019,14.09137 -3.6563,21.01701 -1.8851,73.49343 0.6627,293.21304 1.3125,347.88694 4.372,-2.4356 5.9938,-8.9215 8.6385,-18.866 l 0.3536,-332.89041 25.807,0 0,76.58364 c 6.4686,-30.63171 10.2538,-41.42034 10.4197,-90.02555 -1.2487,-3.67314 -5.7103,-4.99023 -9.7188,-5.08833 z"
-       id="rect3573-1"
-       inkscape:connector-curvature="0"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\ScoreMeter.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90"
-       sodipodi:nodetypes="cccccccccccc" />
     <path
        style="color:#000000;fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 2373.4456,1149.7883 246.8588,0 c 21.5936,0 38.9777,13.3615 38.9777,29.9583 l 0,39.9444 c 0,16.5968 -17.3841,29.9583 -38.9777,29.9583 l -246.8588,0 c -21.5937,0 -38.9778,-13.3615 -38.9778,-29.9583 l 0,-39.9444 c 0,-16.5968 17.3841,-29.9583 38.9778,-29.9583 z"
+       d="m 2179.6983,1254.4401 246.8588,0 c 21.5936,0 38.9777,13.3615 38.9777,29.9583 l 0,39.9444 c 0,16.5968 -17.3841,29.9583 -38.9777,29.9583 l -246.8588,0 c -21.5937,0 -38.9778,-13.3615 -38.9778,-29.9583 l 0,-39.9444 c 0,-16.5968 17.3841,-29.9583 38.9778,-29.9583 z"
        id="rect2985-17"
        inkscape:connector-curvature="0"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\PlayButton.png"
@@ -2044,7 +2495,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="color:#000000;fill:#ffffff;fill-opacity:0.74074073;fill-rule:evenodd;stroke:none;stroke-width:0.59385347px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 2377.5599,1151.8324 c -20.4343,0.1281 -24.3629,3.4318 -31.9395,10.0926 -5.7388,5.0452 -9.3597,14.3512 -6.6261,19.4488 4.2207,4.9669 22.5781,4.484 40.8941,3.8026 81.7524,-0.059 163.5467,0.118 245.273,-0.088 19.8216,-0.5315 34.3692,-1.5406 31.803,-6.8195 -0.7947,-5.0208 -4.2489,-13.4434 -10.4973,-17.8815 -8.4411,-5.9958 -14.1592,-9.6466 -32.4489,-8.964 -80.8898,0.01 -155.5701,0.3832 -236.4583,0.4089 z"
+       d="m 2183.8126,1256.4842 c -20.4343,0.1281 -24.3629,3.4318 -31.9395,10.0926 -5.7388,5.0452 -9.3597,14.3512 -6.6261,19.4488 4.2207,4.9669 22.5781,4.484 40.8941,3.8026 81.7524,-0.059 163.5467,0.118 245.273,-0.088 19.8216,-0.5315 34.3692,-1.5406 31.803,-6.8195 -0.7947,-5.0208 -4.2489,-13.4434 -10.4973,-17.8815 -8.4411,-5.9958 -14.1592,-9.6466 -32.4489,-8.964 -80.8898,0.01 -155.5701,0.3832 -236.4583,0.4089 z"
        id="rect2985-7-4"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="caccccacc"
@@ -2054,8 +2505,8 @@
     <text
        xml:space="preserve"
        style="font-size:50.3408699px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
-       x="2458.3015"
-       y="1205.8337"
+       x="2263.2434"
+       y="1309.7822"
        id="text2985-0"
        sodipodi:linespacing="125%"
        transform="scale(0.99327996,1.0067655)"
@@ -2064,11 +2515,11 @@
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan2987-9"
-         x="2458.3015"
-         y="1205.8337">PLAY</tspan></text>
+         x="2263.2434"
+         y="1309.7822">PLAY</tspan></text>
     <path
        style="fill:#007b09;fill-opacity:1;stroke:#141414;stroke-opacity:1"
-       d="m 2373.4999,1170.0877 c 4.5207,1.8349 47.4739,24.9061 47.4739,31.8905 0.055,6.6674 -43.2255,26.5471 -47.4739,29.2742 -3.0523,0 -5.5095,-2.4572 -5.5095,-5.5095 l 0,-50.1456 c 0,-3.0523 2.4572,-5.5096 5.5095,-5.5096 z"
+       d="m 2179.7526,1274.7395 c 4.5207,1.8349 47.4739,24.9061 47.4739,31.8905 0.055,6.6674 -43.2255,26.5471 -47.4739,29.2742 -3.0523,0 -5.5095,-2.4572 -5.5095,-5.5095 l 0,-50.1456 c 0,-3.0523 2.4572,-5.5096 5.5095,-5.5096 z"
        id="rect3312"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccssc"
@@ -2076,8 +2527,8 @@
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
-       style="fill:#ffffff;fill-opacity:0.22340426;stroke:none;display:inline"
-       d="m 2372.25,1171.6875 c -5.4953,1.7983 -1.8091,9.4978 -2.875,13.5937 -1.2725,47.6308 9.8447,-3.7913 46.7812,12.25 -11.7159,-7.8471 -31.1159,-19.8957 -43.9062,-25.8437 z"
+       style="fill:#ffffff;fill-opacity:0.22340423;stroke:none;display:inline"
+       d="m 2178.5027,1276.3393 c -5.4953,1.7983 -1.8091,9.4978 -2.875,13.5937 -1.2725,47.6308 9.8447,-3.7913 46.7812,12.25 -11.7159,-7.8471 -31.1159,-19.8957 -43.9062,-25.8437 z"
        id="rect3312-4"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc"
@@ -2086,7 +2537,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="color:#000000;fill:#007b09;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 2371.4456,1270.7883 246.8588,0 c 21.5936,0 38.9777,13.3615 38.9777,29.9583 l 0,39.9444 c 0,16.5968 -17.3841,29.9583 -38.9777,29.9583 l -246.8588,0 c -21.5937,0 -38.9778,-13.3615 -38.9778,-29.9583 l 0,-39.9444 c 0,-16.5968 17.3841,-29.9583 38.9778,-29.9583 z"
+       d="m 2177.6983,1375.4401 246.8588,0 c 21.5936,0 38.9777,13.3615 38.9777,29.9583 l 0,39.9444 c 0,16.5968 -17.3841,29.9583 -38.9777,29.9583 l -246.8588,0 c -21.5937,0 -38.9778,-13.3615 -38.9778,-29.9583 l 0,-39.9444 c 0,-16.5968 17.3841,-29.9583 38.9778,-29.9583 z"
        id="rect2985-17-7"
        inkscape:connector-curvature="0"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\PlayButtonPressed.png"
@@ -2094,7 +2545,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="color:#000000;fill:#ffffff;fill-opacity:0.74074073;fill-rule:evenodd;stroke:none;stroke-width:0.59385347px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 2375.5599,1272.8324 c -20.4343,0.1281 -24.3629,3.4318 -31.9395,10.0926 -5.7388,5.0452 -9.3597,14.3512 -6.6261,19.4488 4.2207,4.9669 22.5781,4.484 40.8941,3.8026 81.7524,-0.059 163.5467,0.118 245.273,-0.088 19.8216,-0.5315 34.3692,-1.5406 31.803,-6.8195 -0.7947,-5.0208 -4.2489,-13.4434 -10.4973,-17.8815 -8.4411,-5.9958 -14.1592,-9.6466 -32.4489,-8.964 -80.8898,0.01 -155.5701,0.3832 -236.4583,0.4089 z"
+       d="m 2181.8126,1377.4842 c -20.4343,0.1281 -24.3629,3.4318 -31.9395,10.0926 -5.7388,5.0452 -9.3597,14.3512 -6.6261,19.4488 4.2207,4.9669 22.5781,4.484 40.8941,3.8026 81.7524,-0.059 163.5467,0.118 245.273,-0.088 19.8216,-0.5315 34.3692,-1.5406 31.803,-6.8195 -0.7947,-5.0208 -4.2489,-13.4434 -10.4973,-17.8815 -8.4411,-5.9958 -14.1592,-9.6466 -32.4489,-8.964 -80.8898,0.01 -155.5701,0.3832 -236.4583,0.4089 z"
        id="rect2985-7-4-6"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="caccccacc"
@@ -2103,7 +2554,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:#109b18;fill-opacity:1;stroke:#141414;stroke-opacity:1;display:inline"
-       d="m 2371.4999,1291.0877 c 4.5207,1.8349 47.4739,24.9061 47.4739,31.8905 0.055,6.6674 -43.2255,26.5471 -47.4739,29.2742 -3.0523,0 -5.5095,-2.4572 -5.5095,-5.5095 l 0,-50.1456 c 0,-3.0523 2.4572,-5.5096 5.5095,-5.5096 z"
+       d="m 2177.7526,1395.7395 c 4.5207,1.8349 47.4739,24.9061 47.4739,31.8905 0.055,6.6674 -43.2255,26.5471 -47.4739,29.2742 -3.0523,0 -5.5095,-2.4572 -5.5095,-5.5095 l 0,-50.1456 c 0,-3.0523 2.4572,-5.5096 5.5095,-5.5096 z"
        id="rect3312-2"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccssc"
@@ -2112,9 +2563,9 @@
        inkscape:export-ydpi="90" />
     <text
        xml:space="preserve"
-       style="font-size:50.34086990000000100px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
-       x="2456.2881"
-       y="1326.0205"
+       style="font-size:50.3408699px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
+       x="2261.23"
+       y="1429.969"
        id="text2985-0-1"
        sodipodi:linespacing="125%"
        transform="scale(0.99327996,1.0067655)"
@@ -2123,11 +2574,11 @@
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan2987-9-4"
-         x="2456.2881"
-         y="1326.0205">PLAY</tspan></text>
+         x="2261.23"
+         y="1429.969">PLAY</tspan></text>
     <path
        style="fill:#ffffff;fill-opacity:0.22340423;stroke:none;display:inline"
-       d="m 2370.25,1292.6875 c -5.4953,1.7983 -1.8091,9.4978 -2.875,13.5937 -1.2725,47.6308 9.8447,-3.7913 46.7812,12.25 -11.7159,-7.8471 -31.1159,-19.8957 -43.9062,-25.8437 z"
+       d="m 2176.5027,1397.3393 c -5.4953,1.7983 -1.8091,9.4978 -2.875,13.5937 -1.2725,47.6308 9.8447,-3.7913 46.7812,12.25 -11.7159,-7.8471 -31.1159,-19.8957 -43.9062,-25.8437 z"
        id="rect3312-4-3"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc"
@@ -2136,7 +2587,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="color:#000000;fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 2757.567,1148.4416 246.8588,0 c 21.5936,0 38.9777,13.3615 38.9777,29.9583 l 0,39.9444 c 0,16.5968 -17.3841,29.9583 -38.9777,29.9583 l -246.8588,0 c -21.5937,0 -38.9778,-13.3615 -38.9778,-29.9583 l 0,-39.9444 c 0,-16.5968 17.3841,-29.9583 38.9778,-29.9583 z"
+       d="m 2563.8197,1253.0934 246.8588,0 c 21.5936,0 38.9777,13.3615 38.9777,29.9583 l 0,39.9444 c 0,16.5968 -17.3841,29.9583 -38.9777,29.9583 l -246.8588,0 c -21.5937,0 -38.9778,-13.3615 -38.9778,-29.9583 l 0,-39.9444 c 0,-16.5968 17.3841,-29.9583 38.9778,-29.9583 z"
        id="rect2985-2"
        inkscape:connector-curvature="0"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\MenuButton.png"
@@ -2144,7 +2595,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="color:#000000;fill:#ffffff;fill-opacity:0.74074073;fill-rule:evenodd;stroke:none;stroke-width:0.59385347px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 2761.6813,1150.4857 c -20.4343,0.1281 -24.3629,3.4318 -31.9395,10.0926 -5.7388,5.0452 -9.3597,14.3512 -6.6261,19.4488 4.2207,4.9669 22.5781,4.484 40.8941,3.8026 81.7524,-0.059 163.5467,0.118 245.273,-0.088 19.8216,-0.5315 34.3692,-1.5406 31.803,-6.8195 -0.7947,-5.0208 -4.2489,-13.4434 -10.4973,-17.8815 -8.4411,-5.9958 -14.1592,-9.6466 -32.4489,-8.964 -80.8898,0.01 -155.5701,0.3832 -236.4583,0.4089 z"
+       d="m 2567.934,1255.1375 c -20.4343,0.1281 -24.3629,3.4318 -31.9395,10.0926 -5.7388,5.0452 -9.3597,14.3512 -6.6261,19.4488 4.2207,4.9669 22.5781,4.484 40.8941,3.8026 81.7524,-0.059 163.5467,0.118 245.273,-0.088 19.8216,-0.5315 34.3692,-1.5406 31.803,-6.8195 -0.7947,-5.0208 -4.2489,-13.4434 -10.4973,-17.8815 -8.4411,-5.9958 -14.1592,-9.6466 -32.4489,-8.964 -80.8898,0.01 -155.5701,0.3832 -236.4583,0.4089 z"
        id="rect2985-7-2"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="caccccacc"
@@ -2154,8 +2605,8 @@
     <text
        xml:space="preserve"
        style="font-size:50.3408699px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
-       x="2845.0217"
-       y="1204.4961"
+       x="2649.9636"
+       y="1308.4446"
        id="text2985-1"
        sodipodi:linespacing="125%"
        transform="scale(0.99327996,1.0067655)"
@@ -2164,12 +2615,12 @@
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan2987-6"
-         x="2845.0217"
-         y="1204.4961">Menu</tspan></text>
+         x="2649.9636"
+         y="1308.4446">Menu</tspan></text>
     <g
        style="display:inline"
        id="g4715-8"
-       transform="translate(1056.1013,11.131059)"
+       transform="translate(862.35405,115.78286)"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\MenuButton.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
@@ -2195,7 +2646,7 @@
     </g>
     <path
        style="color:#000000;fill:#007b09;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 2759.6883,1268.6497 246.8588,0 c 21.5936,0 38.9777,13.3615 38.9777,29.9583 l 0,39.9444 c 0,16.5968 -17.3841,29.9583 -38.9777,29.9583 l -246.8588,0 c -21.5937,0 -38.9778,-13.3615 -38.9778,-29.9583 l 0,-39.9444 c 0,-16.5968 17.3841,-29.9583 38.9778,-29.9583 z"
+       d="m 2565.941,1373.3015 246.8588,0 c 21.5936,0 38.9777,13.3615 38.9777,29.9583 l 0,39.9444 c 0,16.5968 -17.3841,29.9583 -38.9777,29.9583 l -246.8588,0 c -21.5937,0 -38.9778,-13.3615 -38.9778,-29.9583 l 0,-39.9444 c 0,-16.5968 17.3841,-29.9583 38.9778,-29.9583 z"
        id="rect2985-1-1"
        inkscape:connector-curvature="0"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\MenuButtonPressed.png"
@@ -2203,7 +2654,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="color:#000000;fill:#ffffff;fill-opacity:0.74074073;fill-rule:evenodd;stroke:none;stroke-width:0.59385347px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m 2763.8026,1270.6938 c -20.4343,0.1281 -24.3629,3.4318 -31.9395,10.0926 -5.7388,5.0452 -9.3597,14.3512 -6.6261,19.4488 4.2207,4.9669 22.5781,4.484 40.8941,3.8026 81.7524,-0.059 163.5467,0.118 245.273,-0.088 19.8216,-0.5315 34.3692,-1.5406 31.803,-6.8195 -0.7947,-5.0208 -4.2489,-13.4434 -10.4973,-17.8815 -8.4411,-5.9958 -14.1592,-9.6466 -32.4489,-8.964 -80.8898,0.01 -155.5701,0.3832 -236.4583,0.4089 z"
+       d="m 2570.0553,1375.3456 c -20.4343,0.1281 -24.3629,3.4318 -31.9395,10.0926 -5.7388,5.0452 -9.3597,14.3512 -6.6261,19.4488 4.2207,4.9669 22.5781,4.484 40.8941,3.8026 81.7524,-0.059 163.5467,0.118 245.273,-0.088 19.8216,-0.5315 34.3692,-1.5406 31.803,-6.8195 -0.7947,-5.0208 -4.2489,-13.4434 -10.4973,-17.8815 -8.4411,-5.9958 -14.1592,-9.6466 -32.4489,-8.964 -80.8898,0.01 -155.5701,0.3832 -236.4583,0.4089 z"
        id="rect2985-7-8-8"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="caccccacc"
@@ -2213,8 +2664,8 @@
     <text
        xml:space="preserve"
        style="font-size:50.3408699px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
-       x="2847.1575"
-       y="1323.8965"
+       x="2652.0994"
+       y="1427.845"
        id="text2985-6-9"
        sodipodi:linespacing="125%"
        transform="scale(0.99327996,1.0067655)"
@@ -2223,12 +2674,12 @@
        inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan2987-0-2"
-         x="2847.1575"
-         y="1323.8965">Menu</tspan></text>
+         x="2652.0994"
+         y="1427.845">Menu</tspan></text>
     <g
        style="display:inline"
        id="g4715-2-7"
-       transform="translate(1058.2226,131.33916)"
+       transform="translate(864.47535,235.99096)"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\MenuButtonPressed.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
@@ -2251,6 +2702,121 @@
          id="rect4214-1-0-4"
          d="m 1711.9764,1156.6057 -18.584,18.8836 0.044,20.9929 c 25.0709,-41.5867 47.4798,3.1368 60.2077,-21.0811 l -19.1594,-18.7898 z"
          style="fill:#ffffff;fill-opacity:0.11640212;stroke:none;display:inline" />
+    </g>
+    <g
+       style="display:inline"
+       id="g4115-4"
+       transform="translate(105.65365,96.978591)"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Acorn.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="ccscc"
+         inkscape:connector-curvature="0"
+         id="path4030-5"
+         d="m 1727.2459,1072.1921 c -13.2401,-1.5468 -20.6365,-16.8912 -20.313,-36.7229 9.5497,-2.7886 15.2881,-3.5822 21.7272,-3.5822 6.8956,0 11.7501,-1.9345 22.0445,2.6885 0.012,17.5283 -6.8006,36.2831 -23.4587,37.6166 z"
+         style="fill:url(#linearGradient4316-1);fill-opacity:1;stroke:#995600;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         d="m 1732.79,1013.927 c 1.8809,-0.1621 4.1896,3.8113 4.1896,3.8113 0,0 -7.8717,-5.2129 -9.498,12.1237 -1.9299,0.6717 -5.9598,-1.4349 -5.9598,-1.4349 0,0 5.1696,-13.9743 11.2682,-14.5001 z"
+         style="fill:#5d2c14;fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686"
+         id="path4118-5" />
+      <path
+         sodipodi:nodetypes="ccsccscc"
+         inkscape:connector-curvature="0"
+         id="path4027-1"
+         d="m 1750.5362,1041.7865 c -0.261,0.083 0.01,-1.0034 0.011,-2.274 -5.1136,-0.8419 -12.2303,-2.057 -20.6935,-2.057 -9.7368,0 -17.4263,1.9329 -22.9089,2.8154 0.093,1.6117 0.2467,2.3692 0.2816,3.3717 -8.8389,-7.082 -0.5292,-22.7158 22.4505,-22.7158 22.2727,0 27.4005,16.9596 20.8597,20.8597 z"
+         style="fill:url(#linearGradient3323);fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686" />
+    </g>
+    <text
+       xml:space="preserve"
+       x="-1213.3951"
+       y="119.18404"
+       id="text4120"
+       transform="translate(1689.875,599.0625)"
+       style="font-size:64px"><tspan
+         sodipodi:role="line"
+         id="tspan4122"
+         x="-1213.3951"
+         y="119.18404"
+         style="font-size:64px;font-weight:normal;baseline-shift:baseline;-inkscape-font-specification:Agent Orange" /></text>
+    <g
+       id="g4487">
+      <text
+         sodipodi:linespacing="125%"
+         id="text4124"
+         y="532.07495"
+         x="2253.5344"
+         style="font-size:90px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1e1e1e;fill-opacity:1;stroke:none;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
+         xml:space="preserve"><tspan
+           y="532.07495"
+           x="2253.5344"
+           id="tspan4126"
+           sodipodi:role="line">Pr  ject</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4225"
+         y="656.94"
+         x="2422.7639"
+         style="font-size:90px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1e1e1e;fill-opacity:1;stroke:none;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
+         xml:space="preserve"><tspan
+           y="656.94"
+           x="2422.7639"
+           id="tspan4227"
+           sodipodi:role="line">Ac  rn</tspan></text>
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Acorn.png"
+         transform="matrix(1.7635378,0,0,1.7635378,-593.54604,-1335.3247)"
+         id="g4115-4-9"
+         style="display:inline">
+        <path
+           style="fill:url(#linearGradient4373);fill-opacity:1;stroke:#995600;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+           d="m 1727.2459,1072.1921 c -13.2401,-1.5468 -20.6365,-16.8912 -20.313,-36.7229 9.5497,-2.7886 15.2881,-3.5822 21.7272,-3.5822 6.8956,0 11.7501,-1.9345 22.0445,2.6885 0.012,17.5283 -6.8006,36.2831 -23.4587,37.6166 z"
+           id="path4030-5-2"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccscc" />
+        <path
+           id="path4118-5-6"
+           style="fill:#5d2c14;fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686"
+           d="m 1732.79,1013.927 c 1.8809,-0.1621 4.1896,3.8113 4.1896,3.8113 0,0 -7.8717,-5.2129 -9.498,12.1237 -1.9299,0.6717 -5.9598,-1.4349 -5.9598,-1.4349 0,0 5.1696,-13.9743 11.2682,-14.5001 z"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:url(#linearGradient4375);fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686"
+           d="m 1750.5362,1041.7865 c -0.261,0.083 0.01,-1.0034 0.011,-2.274 -5.1136,-0.8419 -12.2303,-2.057 -20.6935,-2.057 -9.7368,0 -17.4263,1.9329 -22.9089,2.8154 0.093,1.6117 0.2467,2.3692 0.2816,3.3717 -8.8389,-7.082 -0.5292,-22.7158 22.4505,-22.7158 22.2727,0 27.4005,16.9596 20.8597,20.8597 z"
+           id="path4027-1-5"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccsccscc" />
+      </g>
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Acorn.png"
+         transform="matrix(1.7635378,0,0,1.7635378,-427.79667,-1209.6125)"
+         id="g4115-4-9-9"
+         style="display:inline">
+        <path
+           style="fill:url(#linearGradient4373-4);fill-opacity:1;stroke:#995600;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+           d="m 1727.2459,1072.1921 c -13.2401,-1.5468 -20.6365,-16.8912 -20.313,-36.7229 9.5497,-2.7886 15.2881,-3.5822 21.7272,-3.5822 6.8956,0 11.7501,-1.9345 22.0445,2.6885 0.012,17.5283 -6.8006,36.2831 -23.4587,37.6166 z"
+           id="path4030-5-2-5"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccscc" />
+        <path
+           id="path4118-5-6-8"
+           style="fill:#5d2c14;fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686"
+           d="m 1732.79,1013.927 c 1.8809,-0.1621 4.1896,3.8113 4.1896,3.8113 0,0 -7.8717,-5.2129 -9.498,12.1237 -1.9299,0.6717 -5.9598,-1.4349 -5.9598,-1.4349 0,0 5.1696,-13.9743 11.2682,-14.5001 z"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:url(#linearGradient4454);fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686"
+           d="m 1750.5362,1041.7865 c -0.261,0.083 0.01,-1.0034 0.011,-2.274 -5.1136,-0.8419 -12.2303,-2.057 -20.6935,-2.057 -9.7368,0 -17.4263,1.9329 -22.9089,2.8154 0.093,1.6117 0.2467,2.3692 0.2816,3.3717 -8.8389,-7.082 -0.5292,-22.7158 22.4505,-22.7158 22.2727,0 27.4005,16.9596 20.8597,20.8597 z"
+           id="path4027-1-5-2"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccsccscc" />
+      </g>
     </g>
   </g>
 </svg>

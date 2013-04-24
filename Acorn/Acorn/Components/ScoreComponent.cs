@@ -12,13 +12,12 @@ namespace Acorn.Components
     public class ScoreComponent : GameObjectComponent
     {
         public int PlayerIndex { get; set; }
-        public Texture2D Fill { get; set; }
+        public int PointNumber { get; set; }       
 
-        public ScoreComponent(int playerIndex, Color fillColor)
+        public ScoreComponent(int playerIndex, int pointNumber)
         {
             this.PlayerIndex = playerIndex;
-            this.Fill = new Texture2D(GraphicsService.Instance.GraphicsDevice, 1, 1);
-            this.Fill.SetData(new Color[] { fillColor });
+            this.PointNumber = pointNumber;
         }
     }
 }

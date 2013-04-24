@@ -15,3 +15,6 @@ AcornContent\Sprites\MenuButton.xnb
 AcornContent\Sprites\MenuButtonPressed.xnb
 AcornContent\Sprites\PlayButton.xnb
 AcornContent\Sprites\PlayButtonPressed.xnb
+AcornContent\Sprites\AcornEmpty.xnb
+AcornContent\Sprites\GameTitle.xnb
+AcornContent\Fonts\Details.xnb

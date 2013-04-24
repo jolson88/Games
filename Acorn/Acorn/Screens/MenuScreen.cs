@@ -38,9 +38,10 @@ namespace Acorn.Screens
             cloud.AddComponent(new ScreenWrappingComponent());
             objects.Add(cloud);
 
+            var titleSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.GameTitle);
             var title = new GameObject();
-            title.AddComponent(new PositionComponent(new Microsoft.Xna.Framework.Vector2(0.5f, 0.15f), 0, 0, HorizontalAnchor.Center));
-            title.AddComponent(new LabelComponent("Project Acorn", ContentService.Instance.GetAsset<SpriteFont>(AcornAssets.TitleText), Color.Black));
+            title.AddComponent(new PositionComponent(new Vector2(0.5f, 0.1f), titleSprite.Width, titleSprite.Height, HorizontalAnchor.Center));
+            title.AddComponent(new SpriteComponent(titleSprite));
             objects.Add(title);
 
             var playButtonSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.PlayButton);
@@ -49,6 +50,12 @@ namespace Acorn.Screens
             _playButton.AddComponent(new PositionComponent(new Vector2(0.5f, 0.5f), playButtonSprite.Width, playButtonSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
             _playButton.AddComponent(new ButtonComponent(playButtonSprite, playButtonPressedSprite));
             objects.Add(_playButton);
+
+            var detailsFont = ContentService.Instance.GetAsset<SpriteFont>(AcornAssets.DetailsText);
+            var company = new GameObject();
+            company.AddComponent(new PositionComponent(new Vector2(0.98f, 0.98f), 0, 0, HorizontalAnchor.Right, VerticalAnchor.Bottom));
+            company.AddComponent(new LabelComponent("Coding Coda Games", detailsFont));
+            objects.Add(company);
 
             return objects;
         }

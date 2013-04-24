@@ -25,6 +25,7 @@ namespace Acorn.Screens
             systems.Add(new ScreenWrappingSystem());
             systems.Add(new PlayerControlSystem(0));
             systems.Add(new PlayerControlSystem(1)); // While it may look weird for two, this could easily be a ComputerControlSystem for 2-player game
+            systems.Add(new VisualizationSystem());
             systems.Add(new HudSystem(WINNING_TOTAL));
             return systems;
         }
@@ -49,7 +50,7 @@ namespace Acorn.Screens
             for (int i = 0; i < CARD_NUMBER; i++)
             {
                 var card = new GameObject();
-                card.AddComponent(new PositionComponent(new Vector2(0.20f + (i * 0.165f), 0.20f), cardBackSprite.Width, cardBackSprite.Height));
+                card.AddComponent(new PositionComponent(new Vector2(0.20f + (i * 0.165f), 0.30f), cardBackSprite.Width, cardBackSprite.Height));
                 card.AddComponent(new SpriteComponent(cardBackSprite));
                 card.AddComponent(new CardComponent(i));
                 objects.Add(card);
@@ -61,19 +62,6 @@ namespace Acorn.Screens
             stopButton.AddComponent(new PositionComponent(new Vector2(0.5f, 0.7f), stopButtonSprite.Width, stopButtonSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
             stopButton.AddComponent(new ButtonComponent(stopButtonSprite, stopButtonPressedSprite));
             objects.Add(stopButton);
-
-            var scoreSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.ScoreMeter);
-            var playerOneScoreMeter = new GameObject();
-            playerOneScoreMeter.AddComponent(new PositionComponent(new Vector2(0.02f, 0.03f), scoreSprite.Width, scoreSprite.Height, HorizontalAnchor.Left, VerticalAnchor.Top));
-            playerOneScoreMeter.AddComponent(new HudComponent(scoreSprite));
-            playerOneScoreMeter.AddComponent(new ScoreComponent(0, new Color(225, 10, 10, 255)));
-            objects.Add(playerOneScoreMeter);
-
-            var playerTwoScoreMeter = new GameObject();
-            playerTwoScoreMeter.AddComponent(new PositionComponent(new Vector2(0.98f, 0.03f), scoreSprite.Width, scoreSprite.Height, HorizontalAnchor.Right, VerticalAnchor.Top));
-            playerTwoScoreMeter.AddComponent(new HudComponent(scoreSprite));
-            playerTwoScoreMeter.AddComponent(new ScoreComponent(1, new Color(70, 140, 255, 255)));
-            objects.Add(playerTwoScoreMeter);
 
             return objects;
         }

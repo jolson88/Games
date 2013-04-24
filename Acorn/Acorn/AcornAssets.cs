@@ -12,8 +12,11 @@ namespace Acorn
 {
     public static class AcornAssets
     {
+        public static string Acorn = "Sprites\\Acorn";
+        public static string EmptyAcorn = "Sprites\\AcornEmpty";
         public static string Background = "Sprites\\Background";
         public static string Cloud = "Sprites\\Cloud";
+        public static string GameTitle = "Sprites\\GameTitle";
         public static string StopButton = "Sprites\\StopButton";
         public static string StopButtonPressed = "Sprites\\StopButtonPressed";
         public static string PlayButton = "Sprites\\PlayButton";
@@ -27,6 +30,9 @@ namespace Acorn
         public static string RedSquirrel = "Sprites\\RedSquirrel";
         public static string BlueSquirrel = "Sprites\\BlueSquirrel";
         public static string ScoreMeter = "Sprites\\ScoreMeter";
+
+        // Fonts
         public static string TitleText = "Fonts\\Title";
+        public static string DetailsText = "Fonts\\Details";
     }
 }
