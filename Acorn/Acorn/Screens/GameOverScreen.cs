@@ -26,7 +26,6 @@ namespace Acorn.Screens
         {
             yield return new GeneralInputSystem();
             yield return new BackgroundRenderingSystem();
-            yield return new SimplePhysicsSystem();
             yield return new SpriteRendererSystem();
             yield return new UISystem();
             yield return new ScreenWrappingSystem();
@@ -42,7 +41,7 @@ namespace Acorn.Screens
             var cloud = new GameObject();
             cloud.AddComponent(new PositionComponent(new Vector2(0.2f, 0.02f), cloudSprite.Width, cloudSprite.Height));
             cloud.AddComponent(new SpriteComponent(cloudSprite));
-            cloud.AddComponent(new SimplePhysicsComponent(new Vector2(-0.03f, 0f)));
+            cloud.AddComponent(new SimpleMovementComponent(new Vector2(-0.03f, 0f)));
             cloud.AddComponent(new ScreenWrappingComponent());
             yield return cloud;
 
