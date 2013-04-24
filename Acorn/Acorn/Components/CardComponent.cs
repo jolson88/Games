@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Hiromi;
 using Hiromi.Components;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace Acorn.Components
 {
@@ -12,9 +14,37 @@ namespace Acorn.Components
     {
         public int CardIndex { get; set; }
 
+        private SpriteComponent _spriteComponent;
+        private Dictionary<int, Texture2D> _cardSprites;
+
         public CardComponent(int cardIndex)
         {
             this.CardIndex = cardIndex;
+        }
+
+        public override void Loaded()
+        {
+            this.GameObject.MessageManager.AddListener<CardSelectedMessage>(msg => OnCardSelected((CardSelectedMessage)msg));
+            this.GameObject.MessageManager.AddListener<CardsShuffledMessage>(msg => OnCardsShuffled((CardsShuffledMessage)msg));
+
+            _spriteComponent = this.GameObject.GetComponent<SpriteComponent>();
+            _cardSprites = new Dictionary<int, Texture2D>();
+            _cardSprites.Add(0, ContentService.Instance.GetAsset<Texture2D>(AcornAssets.CardZero));
+            _cardSprites.Add(1, ContentService.Instance.GetAsset<Texture2D>(AcornAssets.CardOne));
+            _cardSprites.Add(2, ContentService.Instance.GetAsset<Texture2D>(AcornAssets.CardTwo));
+        }
+
+        private void OnCardSelected(CardSelectedMessage msg)
+        {
+            if (msg.CardIndex == this.CardIndex)
+            {
+                _spriteComponent.Texture = _cardSprites[msg.CardValue];
+            }
+        }
+
+        private void OnCardsShuffled(CardsShuffledMessage msg)
+        {
+            _spriteComponent.Texture = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.CardBack);
         }
     }
 }

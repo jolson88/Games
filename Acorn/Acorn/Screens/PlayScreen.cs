@@ -22,10 +22,6 @@ namespace Acorn.Screens
         {
             yield return new GeneralInputSystem();
             yield return new GameLogicSystem(CARD_NUMBER, WINNING_TOTAL);
-            yield return new PlayerControlSystem(0);
-            yield return new PlayerControlSystem(1); // While it may look weird for two, this could easily be a ComputerControlSystem for 2-player game
-            yield return new VisualizationSystem();
-            yield return new HudSystem(WINNING_TOTAL);
         }
 
         protected override IEnumerable<GameObject> LoadGameObjects()
@@ -58,6 +54,44 @@ namespace Acorn.Screens
             stopButton.AddComponent(new PositionComponent(new Vector2(0.5f, 0.7f), stopButtonSprite.Width, stopButtonSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
             stopButton.AddComponent(new ButtonComponent(stopButtonSprite, stopButtonPressedSprite));
             yield return stopButton;
+
+            // HUD - Scoring Acorns
+            // Generate player one's score acorns
+            var emptyAcornSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.EmptyAcorn);
+            for (int pointNumber = 0; pointNumber < WINNING_TOTAL; pointNumber++)
+            {
+                var obj = new GameObject(depth: -100);
+                obj.AddComponent(new PositionComponent(new Vector2(0.05f, (0.07f * pointNumber) + 0.07f), emptyAcornSprite.Width, emptyAcornSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
+                obj.AddComponent(new SpriteComponent(emptyAcornSprite));
+                obj.AddComponent(new ScoreComponent(0, pointNumber));
+                yield return obj;
+            }
+
+            // Generate player two's score acorns
+            for (int pointNumber = 0; pointNumber < WINNING_TOTAL; pointNumber++)
+            {
+                var obj = new GameObject(depth: -100);
+                obj.AddComponent(new PositionComponent(new Vector2(0.95f, (0.07f * pointNumber) + 0.07f), emptyAcornSprite.Width, emptyAcornSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
+                obj.AddComponent(new SpriteComponent(emptyAcornSprite));
+                obj.AddComponent(new ScoreComponent(1, pointNumber));
+                yield return obj;
+            }
+            
+            // HUD - Game Status
+            var status = new GameObject(depth: -100);
+            status.AddComponent(new PositionComponent(new Vector2(0.5f, 0.1f), 0, 0, HorizontalAnchor.Center, VerticalAnchor.Center));
+            status.AddComponent(new LabelComponent(string.Empty, ContentService.Instance.GetAsset<SpriteFont>(AcornAssets.TitleText), new Color(30, 30, 30)));
+            status.AddComponent(new GameStatusComponent());
+            yield return status;
+
+            // CONTROLLERS
+            var playerOneController = new GameObject();
+            playerOneController.AddComponent(new PlayerControllerComponent(0));
+            yield return playerOneController;
+
+            var playerTwoController = new GameObject();
+            playerTwoController.AddComponent(new PlayerControllerComponent(1));
+            yield return playerTwoController;
         }
 
         protected override void RegisterMessageListeners()
