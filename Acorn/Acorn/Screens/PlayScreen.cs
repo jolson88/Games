@@ -20,6 +20,11 @@ namespace Acorn.Screens
 
         protected override IEnumerable<GameSystem> LoadGameSystems()
         {
+            yield return new GeneralInputSystem();
+            yield return new BackgroundRenderingSystem();
+            yield return new SimplePhysicsSystem();
+            yield return new SpriteRendererSystem();
+            yield return new UISystem();
             yield return new GameLogicSystem(CARD_NUMBER, WINNING_TOTAL);
             yield return new ScreenWrappingSystem();
             yield return new PlayerControlSystem(0);
