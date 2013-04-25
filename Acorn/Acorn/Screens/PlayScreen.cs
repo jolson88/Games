@@ -7,9 +7,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Hiromi;
 using Hiromi.Components;
-using Hiromi.Systems;
 using Acorn.Components;
-using Acorn.Systems;
 
 namespace Acorn.Screens
 {
@@ -18,10 +16,16 @@ namespace Acorn.Screens
         private static int CARD_NUMBER = 4;
         private static int WINNING_TOTAL = 10;
 
-        protected override IEnumerable<GameSystem> LoadGameSystems()
+        private GameLogicSystem _logic;
+
+        protected override void OnInitialize()
         {
-            yield return new GeneralInputSystem();
-            yield return new GameLogicSystem(CARD_NUMBER, WINNING_TOTAL);
+            _logic = new GameLogicSystem(this.MessageManager, this.ProcessManager, CARD_NUMBER, WINNING_TOTAL);
+        }
+
+        protected override IEnumerable<IGameView> LoadGameViews()
+        {
+            yield return new AcornHumanView(this.MessageManager, this.GameObjectManager);
         }
 
         protected override IEnumerable<GameObject> LoadGameObjects()

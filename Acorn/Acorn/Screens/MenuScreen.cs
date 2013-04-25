@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Hiromi;
 using Hiromi.Components;
-using Hiromi.Systems;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
@@ -13,11 +12,17 @@ namespace Acorn.Screens
 {
     public class MenuScreen : Screen
     {
+        private GeneralInputSystem _inputSystem;
         private GameObject _playButton;
 
-        protected override IEnumerable<GameSystem> LoadGameSystems()
+        protected override void OnInitialize()
         {
-            yield return new GeneralInputSystem();
+            _inputSystem = new GeneralInputSystem(this.MessageManager);
+        }
+
+        protected override void OnUpdate(GameTime gameTime)
+        {
+            _inputSystem.Update(gameTime);
         }
 
         protected override IEnumerable<GameObject> LoadGameObjects()
