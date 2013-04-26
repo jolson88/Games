@@ -8,9 +8,9 @@ using Hiromi.Components;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace Acorn.Screens
+namespace Acorn.States
 {
-    public class MenuScreen : Screen
+    public class MenuState : GameState
     {
         private GeneralInputSystem _inputSystem;
         private GameObject _playButton;
@@ -68,7 +68,7 @@ namespace Acorn.Screens
         {
             if (msg.GameObjectId == _playButton.Id)
             {
-                this.MessageManager.QueueMessage(new RequestLoadScreenMessage(new PlayScreen()));
+                this.MessageManager.QueueMessage(new RequestChangeStateMessage(new PlayState()));
             }
         }
     }

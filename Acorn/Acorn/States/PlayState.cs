@@ -9,9 +9,9 @@ using Hiromi;
 using Hiromi.Components;
 using Acorn.Components;
 
-namespace Acorn.Screens
+namespace Acorn.States
 {
-    public class PlayScreen : Screen
+    public class PlayState : GameState
     {
         private static int CARD_NUMBER = 4;
         private static int WINNING_TOTAL = 10;
@@ -100,12 +100,12 @@ namespace Acorn.Screens
 
         protected override void RegisterMessageListeners()
         {
-            this.MessageManager.AddListener<ScreenLoadedMessage>(msg => OnScreenLoaded((ScreenLoadedMessage)msg));
+            this.MessageManager.AddListener<StateChangedMessage>(msg => OnStateChanged((StateChangedMessage)msg));
         }
 
-        private void OnScreenLoaded(ScreenLoadedMessage msg)
+        private void OnStateChanged(StateChangedMessage msg)
         {
-            if (msg.Screen == this)
+            if (msg.State == this)
             {
                 this.MessageManager.QueueMessage(new GameStartedMessage());
             }

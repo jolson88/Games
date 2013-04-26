@@ -8,16 +8,16 @@ using Hiromi.Components;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace Acorn.Screens
+namespace Acorn.States
 {
-    public class GameOverScreen : Screen
+    public class GameOverState : GameState
     {
         private GeneralInputSystem _inputSystem;
         private int _winningPlayer;
         private GameObject _playButton;
         private GameObject _menuButton;
 
-        public GameOverScreen(int winningPlayer)
+        public GameOverState(int winningPlayer)
         {
             _winningPlayer = winningPlayer;
         }
@@ -84,11 +84,11 @@ namespace Acorn.Screens
         {
             if (msg.GameObjectId == _playButton.Id)
             {
-                this.MessageManager.QueueMessage(new RequestLoadScreenMessage(new PlayScreen()));
+                this.MessageManager.QueueMessage(new RequestChangeStateMessage(new PlayState()));
             }
             else if (msg.GameObjectId == _menuButton.Id)
             {
-                this.MessageManager.QueueMessage(new RequestLoadScreenMessage(new MenuScreen()));
+                this.MessageManager.QueueMessage(new RequestChangeStateMessage(new MenuState()));
             }
         }
     }

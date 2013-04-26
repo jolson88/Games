@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Hiromi;
-using Acorn.Screens;
+using Acorn.States;
 
 namespace Acorn
 {
@@ -43,7 +43,7 @@ namespace Acorn
 
         private void OnGameOver(GameOverMessage msg)
         {
-            _messageManager.QueueMessage(new RequestLoadScreenMessage(new GameOverScreen(msg.WinningPlayerIndex)));
+            _messageManager.QueueMessage(new RequestChangeStateMessage(new GameOverState(msg.WinningPlayerIndex)));
         }
 
         private void OnCardSelectionRequest(CardSelectionRequestMessage msg)
