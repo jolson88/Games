@@ -128,7 +128,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AcornAssets.cs" />
-    <Compile Include="AcornHumanView.cs" />
+    <Compile Include="Views\GameOverHumanView.cs" />
+    <Compile Include="Views\MenuHumanView.cs" />
+    <Compile Include="Views\PlayingHumanView.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>

@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Hiromi;
 
-namespace Acorn
+namespace Acorn.Views
 {
-    public class AcornHumanView : HumanGameView
+    public class PlayingHumanView : HumanGameView
     {
-        private GeneralInputSystem _inputSystem; // TODO: Turn into controller
+        private GeneralInputSystem _inputSystem; // TODO: Push into controller once extracted from game component
 
-        public AcornHumanView(MessageManager messageManager, GameObjectManager gameObjectManager) : base(messageManager, gameObjectManager)
+        public PlayingHumanView(MessageManager messageManager, GameObjectManager gameObjectManager) : base(messageManager, gameObjectManager)
         {
             _inputSystem = new GeneralInputSystem(messageManager);
 

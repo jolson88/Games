@@ -8,6 +8,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Hiromi;
 using Hiromi.Components;
 using Acorn.Components;
+using Acorn.Views;
 
 namespace Acorn.States
 {
@@ -25,7 +26,7 @@ namespace Acorn.States
 
         protected override IEnumerable<IGameView> LoadGameViews()
         {
-            yield return new AcornHumanView(this.MessageManager, this.GameObjectManager);
+            yield return new PlayingHumanView(this.MessageManager, this.GameObjectManager);
         }
 
         protected override IEnumerable<GameObject> LoadGameObjects()
@@ -88,7 +89,7 @@ namespace Acorn.States
             status.AddComponent(new GameStatusComponent());
             yield return status;
 
-            // CONTROLLERS
+            // TODO: Turn into controllers on the PlayingHumanView
             var playerOneController = new GameObject();
             playerOneController.AddComponent(new PlayerControllerComponent(0));
             yield return playerOneController;
