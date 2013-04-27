@@ -16,7 +16,7 @@ namespace Acorn.Views
 
         protected override void OnInitialize()
         {
-            _inputSystem = new GeneralInputSystem(this.MessageManager);
+            _inputSystem = new GeneralInputSystem(this.MessageManager, this.SceneGraph);
 
             this.MessageManager.AddListener<NewGameObjectMessage>(OnNewGameObject);
             this.MessageManager.AddListener<ButtonPressMessage>(OnButtonPress);

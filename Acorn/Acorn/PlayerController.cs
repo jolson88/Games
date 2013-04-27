@@ -7,28 +7,30 @@ using Hiromi;
 using Hiromi.Components;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Acorn.Components;
 
-namespace Acorn.Components
+namespace Acorn
 {
-    public class PlayerControllerComponent : GameObjectComponent
+    public class PlayerController
     {
+        private MessageManager _messageManager;
         private int _playerIndex;
         private int? _currentPlayer;
         private GameObject _stopButton;
         private List<GameObject> _cards;
 
-        public PlayerControllerComponent(int playerIndex)
+        public PlayerController(int playerIndex, MessageManager messageManager)
         {
             _cards = new List<GameObject>();
             _playerIndex = playerIndex;
+
+            _messageManager = messageManager;
+            _messageManager.AddListener<NewGameObjectMessage>(OnNewGameObject);
+            _messageManager.AddListener<StartTurnMessage>(OnStartTurn);
+            _messageManager.AddListener<PointerPressMessage>(OnPointerPress);
         }
 
-        public override void Loaded()
-        {
-            this.GameObject.MessageManager.AddListener<NewGameObjectMessage>(OnNewGameObject);
-            this.GameObject.MessageManager.AddListener<StartTurnMessage>(OnStartTurn);
-            this.GameObject.MessageManager.AddListener<PointerPressMessage>(OnPointerPress);
-        }
+        public void Update(GameTime gameTime) { }
 
         private void OnNewGameObject(NewGameObjectMessage msg)
         {
@@ -53,12 +55,12 @@ namespace Acorn.Components
             {
                 if (msg.GameObjectId == _stopButton.Id)
                 {
-                    this.GameObject.MessageManager.QueueMessage(new StopRequestMessage(_playerIndex));
+                    _messageManager.QueueMessage(new StopRequestMessage(_playerIndex));
                 }
                 else if (_cards.Where(go => go.Id == msg.GameObjectId).Count() > 0)
                 {
                     var card = _cards.Where(go => go.Id == msg.GameObjectId).First().GetComponent<CardComponent>();
-                    this.GameObject.MessageManager.QueueMessage(new CardSelectionRequestMessage(_playerIndex, card.CardIndex));
+                    _messageManager.QueueMessage(new CardSelectionRequestMessage(_playerIndex, card.CardIndex));
                 }
             }
         }

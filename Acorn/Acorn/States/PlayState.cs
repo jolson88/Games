@@ -26,7 +26,8 @@ namespace Acorn.States
 
         protected override IEnumerable<IGameView> LoadGameViews()
         {
-            yield return new PlayingHumanView();
+            // Two human players
+            yield return new PlayingHumanView(0, 1);
         }
 
         protected override IEnumerable<GameObject> LoadGameObjects()
@@ -88,15 +89,6 @@ namespace Acorn.States
             status.AddComponent(new LabelComponent(string.Empty, ContentService.Instance.GetAsset<SpriteFont>(AcornAssets.TitleText), new Color(30, 30, 30)));
             status.AddComponent(new GameStatusComponent());
             yield return status;
-
-            // TODO: Turn into controllers on the PlayingHumanView
-            var playerOneController = new GameObject();
-            playerOneController.AddComponent(new PlayerControllerComponent(0));
-            yield return playerOneController;
-
-            var playerTwoController = new GameObject();
-            playerTwoController.AddComponent(new PlayerControllerComponent(1));
-            yield return playerTwoController;
         }
 
         protected override void RegisterMessageListeners()
