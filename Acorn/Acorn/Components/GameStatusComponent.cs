@@ -16,8 +16,8 @@ namespace Acorn.Components
 
         public override void Loaded()
         {
-            this.GameObject.MessageManager.AddListener<StartTurnMessage>(msg => OnStartTurn((StartTurnMessage)msg));
-            this.GameObject.MessageManager.AddListener<EndTurnMessage>(msg => OnEndTurn((EndTurnMessage)msg));
+            this.GameObject.MessageManager.AddListener<StartTurnMessage>(OnStartTurn);
+            this.GameObject.MessageManager.AddListener<EndTurnMessage>(OnEndTurn);
 
             _statusLabel = this.GameObject.GetComponent<LabelComponent>();
         }

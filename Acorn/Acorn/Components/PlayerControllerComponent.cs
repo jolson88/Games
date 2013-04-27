@@ -25,9 +25,9 @@ namespace Acorn.Components
 
         public override void Loaded()
         {
-            this.GameObject.MessageManager.AddListener<NewGameObjectMessage>(msg => OnNewGameObject((NewGameObjectMessage)msg));
-            this.GameObject.MessageManager.AddListener<StartTurnMessage>(msg => OnStartTurn((StartTurnMessage)msg));
-            this.GameObject.MessageManager.AddListener<PointerPressMessage>(msg => OnPointerPress((PointerPressMessage)msg));
+            this.GameObject.MessageManager.AddListener<NewGameObjectMessage>(OnNewGameObject);
+            this.GameObject.MessageManager.AddListener<StartTurnMessage>(OnStartTurn);
+            this.GameObject.MessageManager.AddListener<PointerPressMessage>(OnPointerPress);
         }
 
         private void OnNewGameObject(NewGameObjectMessage msg)

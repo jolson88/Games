@@ -101,7 +101,7 @@ namespace Acorn.States
 
         protected override void RegisterMessageListeners()
         {
-            this.MessageManager.AddListener<StateChangedMessage>(msg => OnStateChanged((StateChangedMessage)msg));
+            this.MessageManager.AddListener<StateChangedMessage>(OnStateChanged);
         }
 
         private void OnStateChanged(StateChangedMessage msg)

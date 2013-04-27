@@ -20,8 +20,8 @@ namespace Acorn.Views
         {
             _inputSystem = new GeneralInputSystem(messageManager);
 
-            messageManager.AddListener<NewGameObjectMessage>(msg => OnNewGameObject((NewGameObjectMessage)msg));
-            messageManager.AddListener<ButtonPressMessage>(msg => OnButtonPress((ButtonPressMessage)msg));
+            messageManager.AddListener<NewGameObjectMessage>(OnNewGameObject);
+            messageManager.AddListener<ButtonPressMessage>(OnButtonPress);
         }
 
         private void OnNewGameObject(NewGameObjectMessage msg)
