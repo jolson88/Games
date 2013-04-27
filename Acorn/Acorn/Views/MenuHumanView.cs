@@ -14,13 +14,12 @@ namespace Acorn.Views
         private GeneralInputSystem _inputSystem;
         private GameObject _playButton;
 
-        public MenuHumanView(MessageManager messageManager, GameObjectManager gameObjectManager)
-            : base(messageManager, gameObjectManager)
+        protected override void OnInitialize()
         {
-            _inputSystem = new GeneralInputSystem(messageManager);
+            _inputSystem = new GeneralInputSystem(this.MessageManager);
 
-            messageManager.AddListener<NewGameObjectMessage>(OnNewGameObject);
-            messageManager.AddListener<ButtonPressMessage>(OnButtonPress);
+            this.MessageManager.AddListener<NewGameObjectMessage>(OnNewGameObject);
+            this.MessageManager.AddListener<ButtonPressMessage>(OnButtonPress);
         }
 
         private void OnNewGameObject(NewGameObjectMessage msg)

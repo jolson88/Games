@@ -15,7 +15,7 @@ namespace Acorn.States
     {
         protected override IEnumerable<IGameView> LoadGameViews()
         {
-            yield return new MenuHumanView(this.MessageManager, this.GameObjectManager);
+            yield return new MenuHumanView();
         }
         
         protected override IEnumerable<GameObject> LoadGameObjects()

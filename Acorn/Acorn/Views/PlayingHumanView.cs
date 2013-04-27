@@ -12,11 +12,9 @@ namespace Acorn.Views
     {
         private GeneralInputSystem _inputSystem; // TODO: Push into controller once extracted from game component
 
-        public PlayingHumanView(MessageManager messageManager, GameObjectManager gameObjectManager) : base(messageManager, gameObjectManager)
+        protected override void OnInitialize()
         {
-            _inputSystem = new GeneralInputSystem(messageManager);
-
-            // TODO: Listen for game events to play sounds
+            _inputSystem = new GeneralInputSystem(this.MessageManager);
         }
 
         protected override void OnUpdate(GameTime gameTime)
