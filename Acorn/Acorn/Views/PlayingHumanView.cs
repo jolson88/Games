@@ -13,6 +13,7 @@ namespace Acorn.Views
     {
         private int[] _playerIndices;
         private List<PlayerController> _playerControllers;
+        private DebugCameraController _cameraController;
 
         // Multiple indices allow this one view to have multiple players play with it (local multiplayer)
         public PlayingHumanView(params int[] playerIndices)
@@ -27,6 +28,8 @@ namespace Acorn.Views
             {
                 _playerControllers.Add(new PlayerController(_playerIndices[i], this.MessageManager));
             }
+
+            _cameraController = new DebugCameraController(this.MessageManager);
         }
 
         protected override void OnUpdate(GameTime gameTime)
@@ -35,6 +38,7 @@ namespace Acorn.Views
             {
                 controller.Update(gameTime);
             }
+            _cameraController.Update(gameTime);
         }
     }
 }
