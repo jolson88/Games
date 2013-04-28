@@ -148,7 +148,7 @@
     <Compile Include="States\GameOverState.cs" />
     <Compile Include="States\MenuState.cs" />
     <Compile Include="States\PlayState.cs" />
-    <Compile Include="GameLogicSystem.cs" />
+    <Compile Include="AcornGameLogic.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">

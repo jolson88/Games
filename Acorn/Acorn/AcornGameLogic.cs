@@ -8,7 +8,7 @@ using Acorn.States;
 
 namespace Acorn
 {
-    public class GameLogicSystem
+    public class AcornGameLogic
     {
         private MessageManager _messageManager;
         private ProcessManager _processManager;
@@ -19,7 +19,7 @@ namespace Acorn
         private int _runningPoints;
         private Dictionary<int, int?> _cardValues;
 
-        public GameLogicSystem(MessageManager messageManager, ProcessManager processManager, int cardCount, int winningPoints)
+        public AcornGameLogic(MessageManager messageManager, ProcessManager processManager, int cardCount, int winningPoints)
         {
             _messageManager = messageManager;
             _processManager = processManager;

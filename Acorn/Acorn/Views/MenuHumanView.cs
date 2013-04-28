@@ -11,13 +11,10 @@ namespace Acorn.Views
 {
     public class MenuHumanView : HumanGameView
     {
-        private GeneralInputSystem _inputSystem;
         private GameObject _playButton;
 
         protected override void OnInitialize()
         {
-            _inputSystem = new GeneralInputSystem(this.MessageManager, this.SceneGraph);
-
             this.MessageManager.AddListener<NewGameObjectMessage>(OnNewGameObject);
             this.MessageManager.AddListener<ButtonPressMessage>(OnButtonPress);
         }
@@ -36,11 +33,6 @@ namespace Acorn.Views
             {
                 this.MessageManager.QueueMessage(new RequestChangeStateMessage(new PlayState()));
             }
-        }
-
-        protected override void OnUpdate(GameTime gameTime)
-        {
-            _inputSystem.Update(gameTime);
         }
     }
 }

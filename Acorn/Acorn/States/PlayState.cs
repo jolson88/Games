@@ -17,11 +17,11 @@ namespace Acorn.States
         private static int CARD_NUMBER = 4;
         private static int WINNING_TOTAL = 10;
 
-        private GameLogicSystem _logic;
+        private AcornGameLogic _logic;
 
         protected override void OnInitialize()
         {
-            _logic = new GameLogicSystem(this.MessageManager, this.ProcessManager, CARD_NUMBER, WINNING_TOTAL);
+            _logic = new AcornGameLogic(this.MessageManager, this.ProcessManager, CARD_NUMBER, WINNING_TOTAL);
         }
 
         protected override IEnumerable<IGameView> LoadGameViews()
