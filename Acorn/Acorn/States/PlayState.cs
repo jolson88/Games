@@ -50,7 +50,7 @@ namespace Acorn.States
             for (int i = 0; i < CARD_NUMBER; i++)
             {
                 var card = new GameObject();
-                card.AddComponent(new TransformationComponent(new Vector2(0.20f + (i * 0.165f), 0.30f), cardBackSprite.Width, cardBackSprite.Height));
+                card.AddComponent(new TransformationComponent(new Vector2(0.25f + (i * 0.165f), 0.40f), cardBackSprite.Width, cardBackSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
                 card.AddComponent(new SpriteComponent(cardBackSprite));
                 card.AddComponent(new CardComponent(i));
                 yield return card;
