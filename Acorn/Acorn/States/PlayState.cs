@@ -34,13 +34,13 @@ namespace Acorn.States
         {
             var bgSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.Background);
             var bg = new GameObject();
-            bg.AddComponent(new PositionComponent(new Vector2(0f, 0f), GraphicsService.Instance.GraphicsDevice.Viewport.Width, GraphicsService.Instance.GraphicsDevice.Viewport.Height));
+            bg.AddComponent(new TransformationComponent(new Vector2(0f, 0f), GraphicsService.Instance.GraphicsDevice.Viewport.Width, GraphicsService.Instance.GraphicsDevice.Viewport.Height));
             bg.AddComponent(new SpriteComponent(bgSprite, SpriteKind.Background, transformedByCamera: false));
             yield return bg;
 
             var cloudSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.Cloud);
             var cloud = new GameObject();
-            cloud.AddComponent(new PositionComponent(new Vector2(0.2f, 0.02f), cloudSprite.Width, cloudSprite.Height));
+            cloud.AddComponent(new TransformationComponent(new Vector2(0.2f, 0.02f), cloudSprite.Width, cloudSprite.Height));
             cloud.AddComponent(new SpriteComponent(cloudSprite, SpriteKind.Background, transformedByCamera: false));
             cloud.AddComponent(new SimpleMovementComponent(new Vector2(-0.03f, 0f)));
             cloud.AddComponent(new ScreenWrappingComponent());
@@ -50,7 +50,7 @@ namespace Acorn.States
             for (int i = 0; i < CARD_NUMBER; i++)
             {
                 var card = new GameObject();
-                card.AddComponent(new PositionComponent(new Vector2(0.20f + (i * 0.165f), 0.30f), cardBackSprite.Width, cardBackSprite.Height));
+                card.AddComponent(new TransformationComponent(new Vector2(0.20f + (i * 0.165f), 0.30f), cardBackSprite.Width, cardBackSprite.Height));
                 card.AddComponent(new SpriteComponent(cardBackSprite));
                 card.AddComponent(new CardComponent(i));
                 yield return card;
@@ -59,7 +59,7 @@ namespace Acorn.States
             var stopButtonSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.StopButton);
             var stopButtonPressedSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.StopButtonPressed);
             var stopButton = new GameObject() { Tag = "StopButton" };
-            stopButton.AddComponent(new PositionComponent(new Vector2(0.5f, 0.7f), stopButtonSprite.Width, stopButtonSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
+            stopButton.AddComponent(new TransformationComponent(new Vector2(0.5f, 0.7f), stopButtonSprite.Width, stopButtonSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
             stopButton.AddComponent(new ButtonComponent(stopButtonSprite, stopButtonPressedSprite));
             yield return stopButton;
 
@@ -69,7 +69,7 @@ namespace Acorn.States
             for (int pointNumber = 0; pointNumber < WINNING_TOTAL; pointNumber++)
             {
                 var obj = new GameObject(depth: -100);
-                obj.AddComponent(new PositionComponent(new Vector2(0.05f, (0.07f * pointNumber) + 0.07f), emptyAcornSprite.Width, emptyAcornSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
+                obj.AddComponent(new TransformationComponent(new Vector2(0.05f, (0.07f * pointNumber) + 0.07f), emptyAcornSprite.Width, emptyAcornSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
                 obj.AddComponent(new SpriteComponent(emptyAcornSprite));
                 obj.AddComponent(new ScoreComponent(0, pointNumber));
                 yield return obj;
@@ -79,7 +79,7 @@ namespace Acorn.States
             for (int pointNumber = 0; pointNumber < WINNING_TOTAL; pointNumber++)
             {
                 var obj = new GameObject(depth: -100);
-                obj.AddComponent(new PositionComponent(new Vector2(0.95f, (0.07f * pointNumber) + 0.07f), emptyAcornSprite.Width, emptyAcornSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
+                obj.AddComponent(new TransformationComponent(new Vector2(0.95f, (0.07f * pointNumber) + 0.07f), emptyAcornSprite.Width, emptyAcornSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
                 obj.AddComponent(new SpriteComponent(emptyAcornSprite));
                 obj.AddComponent(new ScoreComponent(1, pointNumber));
                 yield return obj;
@@ -87,7 +87,7 @@ namespace Acorn.States
             
             // HUD - Game Status
             var status = new GameObject(depth: -100);
-            status.AddComponent(new PositionComponent(new Vector2(0.5f, 0.1f), 0, 0, HorizontalAnchor.Center, VerticalAnchor.Center));
+            status.AddComponent(new TransformationComponent(new Vector2(0.5f, 0.1f), 0, 0, HorizontalAnchor.Center, VerticalAnchor.Center));
             status.AddComponent(new LabelComponent(string.Empty, ContentService.Instance.GetAsset<SpriteFont>(AcornAssets.TitleText), new Color(30, 30, 30)));
             status.AddComponent(new GameStatusComponent());
             yield return status;
