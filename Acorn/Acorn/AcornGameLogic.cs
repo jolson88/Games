@@ -8,7 +8,7 @@ using Acorn.States;
 
 namespace Acorn
 {
-    public class GameLogicSystem
+    public class AcornGameLogic
     {
         private MessageManager _messageManager;
         private ProcessManager _processManager;
@@ -19,7 +19,7 @@ namespace Acorn
         private int _runningPoints;
         private Dictionary<int, int?> _cardValues;
 
-        public GameLogicSystem(MessageManager messageManager, ProcessManager processManager, int cardCount, int winningPoints)
+        public AcornGameLogic(MessageManager messageManager, ProcessManager processManager, int cardCount, int winningPoints)
         {
             _messageManager = messageManager;
             _processManager = processManager;
@@ -30,10 +30,10 @@ namespace Acorn
             _cardValues = new Dictionary<int, int?>();
             for (int i = 0; i < cardCount; i++) { _cardValues.Add(i, null); }
 
-            _messageManager.AddListener<GameStartedMessage>(msg => OnGameStarted((GameStartedMessage)msg));
-            _messageManager.AddListener<CardSelectionRequestMessage>(msg => OnCardSelectionRequest((CardSelectionRequestMessage)msg));
-            _messageManager.AddListener<StopRequestMessage>(msg => OnStopRequest((StopRequestMessage)msg));
-            _messageManager.AddListener<GameOverMessage>(msg => OnGameOver((GameOverMessage)msg));
+            _messageManager.AddListener<GameStartedMessage>(OnGameStarted);
+            _messageManager.AddListener<CardSelectionRequestMessage>(OnCardSelectionRequest);
+            _messageManager.AddListener<StopRequestMessage>(OnStopRequest);
+            _messageManager.AddListener<GameOverMessage>(OnGameOver);
         }
 
         private void OnGameStarted(GameStartedMessage msg)

@@ -8,6 +8,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Hiromi;
 using Hiromi.Components;
 using Acorn.Components;
+using Acorn.Views;
 
 namespace Acorn.States
 {
@@ -16,16 +17,17 @@ namespace Acorn.States
         private static int CARD_NUMBER = 4;
         private static int WINNING_TOTAL = 10;
 
-        private GameLogicSystem _logic;
+        private AcornGameLogic _logic;
 
         protected override void OnInitialize()
         {
-            _logic = new GameLogicSystem(this.MessageManager, this.ProcessManager, CARD_NUMBER, WINNING_TOTAL);
+            _logic = new AcornGameLogic(this.MessageManager, this.ProcessManager, CARD_NUMBER, WINNING_TOTAL);
         }
 
         protected override IEnumerable<IGameView> LoadGameViews()
         {
-            yield return new AcornHumanView(this.MessageManager, this.GameObjectManager);
+            // Two human players
+            yield return new PlayingHumanView(0, 1);
         }
 
         protected override IEnumerable<GameObject> LoadGameObjects()
@@ -87,20 +89,11 @@ namespace Acorn.States
             status.AddComponent(new LabelComponent(string.Empty, ContentService.Instance.GetAsset<SpriteFont>(AcornAssets.TitleText), new Color(30, 30, 30)));
             status.AddComponent(new GameStatusComponent());
             yield return status;
-
-            // CONTROLLERS
-            var playerOneController = new GameObject();
-            playerOneController.AddComponent(new PlayerControllerComponent(0));
-            yield return playerOneController;
-
-            var playerTwoController = new GameObject();
-            playerTwoController.AddComponent(new PlayerControllerComponent(1));
-            yield return playerTwoController;
         }
 
         protected override void RegisterMessageListeners()
         {
-            this.MessageManager.AddListener<StateChangedMessage>(msg => OnStateChanged((StateChangedMessage)msg));
+            this.MessageManager.AddListener<StateChangedMessage>(OnStateChanged);
         }
 
         private void OnStateChanged(StateChangedMessage msg)

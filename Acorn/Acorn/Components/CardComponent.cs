@@ -24,8 +24,8 @@ namespace Acorn.Components
 
         public override void Loaded()
         {
-            this.GameObject.MessageManager.AddListener<CardSelectedMessage>(msg => OnCardSelected((CardSelectedMessage)msg));
-            this.GameObject.MessageManager.AddListener<CardsShuffledMessage>(msg => OnCardsShuffled((CardsShuffledMessage)msg));
+            this.GameObject.MessageManager.AddListener<CardsShuffledMessage>(OnCardsShuffled);
+            this.GameObject.MessageManager.AddListener<CardSelectedMessage>(OnCardSelected);
 
             _spriteComponent = this.GameObject.GetComponent<SpriteComponent>();
             _cardSprites = new Dictionary<int, Texture2D>();

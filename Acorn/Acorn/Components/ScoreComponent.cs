@@ -26,7 +26,7 @@ namespace Acorn.Components
 
         public override void Loaded()
         {
-            this.GameObject.MessageManager.AddListener<ScoreChangedMessage>(msg => OnScoreChanged((ScoreChangedMessage)msg));
+            this.GameObject.MessageManager.AddListener<ScoreChangedMessage>(OnScoreChanged);
 
             _emptyAcorn = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.EmptyAcorn);
             _scoredAcorn = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.Acorn);

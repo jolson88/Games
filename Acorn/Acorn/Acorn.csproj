@@ -128,13 +128,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AcornAssets.cs" />
-    <Compile Include="AcornHumanView.cs" />
+    <Compile Include="Views\GameOverHumanView.cs" />
+    <Compile Include="Views\MenuHumanView.cs" />
+    <Compile Include="Views\PlayingHumanView.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Components\CardComponent.cs" />
     <Compile Include="Components\GameStatusComponent.cs" />
-    <Compile Include="Components\PlayerControllerComponent.cs" />
+    <Compile Include="PlayerController.cs" />
     <Compile Include="Components\ScoreComponent.cs" />
     <Compile Include="GamePage.xaml.cs">
       <DependentUpon>GamePage.xaml</DependentUpon>
@@ -146,7 +148,7 @@
     <Compile Include="States\GameOverState.cs" />
     <Compile Include="States\MenuState.cs" />
     <Compile Include="States\PlayState.cs" />
-    <Compile Include="GameLogicSystem.cs" />
+    <Compile Include="AcornGameLogic.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
