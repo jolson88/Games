@@ -66,7 +66,7 @@ namespace Acorn.Views
             else
             {
                 var card = _cards.Where(go => go.GetComponent<CardComponent>().CardIndex == msg.CardIndex).First();
-                card.AddComponent(new SwellComponent(14, TimeSpan.FromSeconds(0.25)));
+                card.AddComponent(new SwellComponent(15, TimeSpan.FromSeconds(0.25)));
             }
         }
     }
