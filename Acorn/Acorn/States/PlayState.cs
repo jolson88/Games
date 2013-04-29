@@ -40,7 +40,7 @@ namespace Acorn.States
 
             var cloudSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.Cloud);
             var cloud = new GameObject();
-            cloud.AddComponent(new TransformationComponent(new Vector2(0.2f, 0.02f), cloudSprite.Width, cloudSprite.Height));
+            cloud.AddComponent(new TransformationComponent(new Vector2(1.0f, 0.02f), cloudSprite.Width, cloudSprite.Height));
             cloud.AddComponent(new SpriteComponent(cloudSprite, SpriteKind.Background, transformedByCamera: false));
             cloud.AddComponent(new SimpleMovementComponent(new Vector2(-0.03f, 0f)));
             cloud.AddComponent(new ScreenWrappingComponent());

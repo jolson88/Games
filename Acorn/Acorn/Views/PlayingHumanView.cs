@@ -37,6 +37,14 @@ namespace Acorn.Views
 
             this.MessageManager.AddListener<NewGameObjectMessage>(OnNewGameObject);
             this.MessageManager.AddListener<CardSelectedMessage>(OnCardSelected);
+
+            var screenHeight = GraphicsService.Instance.GraphicsDevice.Viewport.Height;
+            this.MessageManager.TriggerMessage(new MoveCameraMessage(new Vector2(0, -screenHeight)));
+            var fadeInProcess = new TweenProcess(TimeSpan.FromSeconds(1), percentage =>
+            {
+                this.MessageManager.QueueMessage(new MoveCameraMessage(new Vector2(0, -screenHeight + (screenHeight * percentage))));
+            });
+            this.ProcessManager.AttachProcess(fadeInProcess);
         }
 
         protected override void OnUpdate(GameTime gameTime)

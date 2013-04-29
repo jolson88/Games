@@ -27,7 +27,7 @@ namespace Acorn.States
             yield return bg;
 
             var cloudSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.Cloud);
-            var cloud = new GameObject();
+            var cloud = new GameObject("Cloud");
             cloud.AddComponent(new TransformationComponent(new Vector2(0.2f, 0.02f), cloudSprite.Width, cloudSprite.Height));
             cloud.AddComponent(new SpriteComponent(cloudSprite, SpriteKind.Background, transformedByCamera: false));
             cloud.AddComponent(new SimpleMovementComponent(new Vector2(-0.03f, 0f)));

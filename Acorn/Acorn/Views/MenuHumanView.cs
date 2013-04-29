@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Hiromi;
+using Hiromi.Components;
+using Acorn.Components;
 using Acorn.States;
 
 namespace Acorn.Views
@@ -12,6 +14,7 @@ namespace Acorn.Views
     public class MenuHumanView : HumanGameView
     {
         private GameObject _playButton;
+        private GameObject _cloud;
 
         protected override void OnInitialize()
         {
@@ -25,13 +28,29 @@ namespace Acorn.Views
             {
                 _playButton = msg.GameObject;
             }
+            else if (msg.GameObject.Tag.Equals("Cloud"))
+            {
+                _cloud = msg.GameObject;
+            }
         }
 
         private void OnButtonPress(ButtonPressMessage msg)
         {
             if (msg.GameObjectId == _playButton.Id)
             {
-                this.MessageManager.QueueMessage(new RequestChangeStateMessage(new PlayState()));
+                _cloud.RemoveComponent<ScreenWrappingComponent>();
+                _cloud.GetComponent<SimpleMovementComponent>().Velocity = new Vector2(-2.0f, 0);
+
+                // Fade other stuff off the screen
+                var offscreenProcess = new TweenProcess(TimeSpan.FromSeconds(1), percentage =>
+                {
+                    this.MessageManager.QueueMessage(new MoveCameraMessage(new Vector2(percentage * -GraphicsService.Instance.GraphicsDevice.Viewport.Width, 0)));
+                });
+                offscreenProcess.AttachChild(new ActionProcess(() =>
+                {
+                    this.MessageManager.QueueMessage(new RequestChangeStateMessage(new PlayState()));
+                }));
+                this.ProcessManager.AttachProcess(offscreenProcess);
             }
         }
     }
