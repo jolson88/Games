@@ -1634,7 +1634,7 @@
        sodipodi:cy="110.19387"
        sodipodi:rx="52.679455"
        sodipodi:ry="96.873627"
-       d="m 605.99049,110.19387 a 52.679455,96.873627 0 1 1 -105.35891,0 52.679455,96.873627 0 1 1 105.35891,0 z"
+       d="m 605.99049,110.19387 c 0,53.50183 -23.5854,96.87363 -52.67945,96.87363 -29.09406,0 -52.67946,-43.3718 -52.67946,-96.87363 0,-53.501826 23.5854,-96.873626 52.67946,-96.873626 29.09405,0 52.67945,43.3718 52.67945,96.873626 z"
        transform="translate(1889.5689,791.68426)"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Card0.png"
        inkscape:export-xdpi="90"
@@ -1647,7 +1647,7 @@
        sodipodi:cy="126.45732"
        sodipodi:rx="31.466251"
        sodipodi:ry="70.003571"
-       d="m 591.84839,126.45732 a 31.466251,70.003571 0 1 1 -62.9325,0 31.466251,70.003571 0 1 1 62.9325,0 z"
+       d="m 591.84839,126.45732 c 0,38.66191 -14.08792,70.00357 -31.46625,70.00357 -17.37833,0 -31.46625,-31.34166 -31.46625,-70.00357 0,-38.661903 14.08792,-70.003569 31.46625,-70.003569 17.37833,0 31.46625,31.341666 31.46625,70.003569 z"
        transform="translate(1883.2049,789.56294)"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Card0.png"
        inkscape:export-xdpi="90"
@@ -2069,18 +2069,18 @@
        d="m 1796.3042,1254.3471 246.8588,0 c 21.5936,0 38.9777,13.3615 38.9777,29.9583 l 0,39.9444 c 0,16.5968 -17.3841,29.9583 -38.9777,29.9583 l -246.8588,0 c -21.5937,0 -38.9778,-13.3615 -38.9778,-29.9583 l 0,-39.9444 c 0,-16.5968 17.3841,-29.9583 38.9778,-29.9583 z"
        id="rect2985"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\stop_button.png"
-       inkscape:export-xdpi="60"
-       inkscape:export-ydpi="60" />
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\StopButton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        style="color:#000000;fill:#ffffff;fill-opacity:0.74074073;fill-rule:evenodd;stroke:none;stroke-width:0.59385347px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        d="m 1800.4185,1256.3912 c -20.4343,0.1281 -24.3629,3.4318 -31.9395,10.0926 -5.7388,5.0452 -9.3597,14.3512 -6.6261,19.4488 4.2207,4.9669 22.5781,4.484 40.8941,3.8026 81.7524,-0.059 163.5467,0.118 245.273,-0.088 19.8216,-0.5315 34.3692,-1.5406 31.803,-6.8195 -0.7947,-5.0208 -4.2489,-13.4434 -10.4973,-17.8815 -8.4411,-5.9958 -14.1592,-9.6466 -32.4489,-8.964 -80.8898,0.01 -155.5701,0.3832 -236.4583,0.4089 z"
        id="rect2985-7"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="caccccacc"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\stop_button.png"
-       inkscape:export-xdpi="60"
-       inkscape:export-ydpi="60" />
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\StopButton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <text
        xml:space="preserve"
        style="font-size:50.3408699px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
@@ -2089,9 +2089,9 @@
        id="text2985"
        sodipodi:linespacing="125%"
        transform="scale(0.99327996,1.0067655)"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\stop_button.png"
-       inkscape:export-xdpi="60"
-       inkscape:export-ydpi="60"><tspan
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\StopButton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan2987"
          x="1877.2554"
@@ -2099,9 +2099,9 @@
     <g
        id="g4715"
        transform="translate(94.838527,117.03658)"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\stop_button.png"
-       inkscape:export-xdpi="60"
-       inkscape:export-ydpi="60">
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\StopButton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          sodipodi:nodetypes="ccccccccc"
          inkscape:connector-curvature="0"
@@ -2127,18 +2127,18 @@
        d="m 1798.4255,1374.5552 246.8588,0 c 21.5936,0 38.9777,13.3615 38.9777,29.9583 l 0,39.9444 c 0,16.5968 -17.3841,29.9583 -38.9777,29.9583 l -246.8588,0 c -21.5937,0 -38.9778,-13.3615 -38.9778,-29.9583 l 0,-39.9444 c 0,-16.5968 17.3841,-29.9583 38.9778,-29.9583 z"
        id="rect2985-1"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\stop_button_pressed.png"
-       inkscape:export-xdpi="60"
-       inkscape:export-ydpi="60" />
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\StopButtonPressed.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        style="color:#000000;fill:#ffffff;fill-opacity:0.74074073;fill-rule:evenodd;stroke:none;stroke-width:0.59385347px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        d="m 1802.5398,1376.5993 c -20.4343,0.1281 -24.3629,3.4318 -31.9395,10.0926 -5.7388,5.0452 -9.3597,14.3512 -6.6261,19.4488 4.2207,4.9669 22.5781,4.484 40.8941,3.8026 81.7524,-0.059 163.5467,0.118 245.273,-0.088 19.8216,-0.5315 34.3692,-1.5406 31.803,-6.8195 -0.7947,-5.0208 -4.2489,-13.4434 -10.4973,-17.8815 -8.4411,-5.9958 -14.1592,-9.6466 -32.4489,-8.964 -80.8898,0.01 -155.5701,0.3832 -236.4583,0.4089 z"
        id="rect2985-7-8"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="caccccacc"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\stop_button_pressed.png"
-       inkscape:export-xdpi="60"
-       inkscape:export-ydpi="60" />
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\StopButtonPressed.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <text
        xml:space="preserve"
        style="font-size:50.3408699px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
@@ -2147,9 +2147,9 @@
        id="text2985-6"
        sodipodi:linespacing="125%"
        transform="scale(0.99327996,1.0067655)"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\stop_button_pressed.png"
-       inkscape:export-xdpi="60"
-       inkscape:export-ydpi="60"><tspan
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\StopButtonPressed.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan2987-0"
          x="1879.3911"
@@ -2158,9 +2158,9 @@
        style="display:inline"
        id="g4715-2"
        transform="translate(96.959857,237.24475)"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\Acorn.gmx\assets\Sprites\stop_button_pressed.png"
-       inkscape:export-xdpi="60"
-       inkscape:export-ydpi="60">
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\StopButtonPressed.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          sodipodi:nodetypes="ccccccccc"
          inkscape:connector-curvature="0"
