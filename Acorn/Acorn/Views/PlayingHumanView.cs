@@ -37,10 +37,12 @@ namespace Acorn.Views
 
             this.MessageManager.AddListener<NewGameObjectMessage>(OnNewGameObject);
             this.MessageManager.AddListener<CardSelectedMessage>(OnCardSelected);
+            this.MessageManager.AddListener<KeyDownMessage>(OnKeyDown);
 
+            // Animate the screen in
             var screenHeight = GraphicsService.Instance.GraphicsDevice.Viewport.Height;
             this.MessageManager.TriggerMessage(new MoveCameraMessage(new Vector2(0, -screenHeight)));
-            var fadeInProcess = new TweenProcess(Easing.GetElasticFunction(oscillations: 10, springiness: 18), EasingKind.EaseOut, TimeSpan.FromSeconds(2.5), percentage =>
+            var fadeInProcess = new TweenProcess(Easing.GetElasticFunction(oscillations: 12, springiness: 20), EasingKind.EaseOut, TimeSpan.FromSeconds(3.3), percentage =>
             {
                 this.MessageManager.QueueMessage(new MoveCameraMessage(new Vector2(0, -screenHeight + (screenHeight * percentage))));
             });
@@ -75,6 +77,14 @@ namespace Acorn.Views
             {
                 var card = _cards.Where(go => go.GetComponent<CardComponent>().CardIndex == msg.CardIndex).First();
                 card.AddComponent(new SwellComponent(15, TimeSpan.FromSeconds(0.25)));
+            }
+        }
+
+        private void OnKeyDown(KeyDownMessage msg)
+        {
+            if (msg.Key == Microsoft.Xna.Framework.Input.Keys.Escape)
+            {
+                this.MessageManager.QueueMessage(new RequestChangeStateMessage(new States.MenuState()));
             }
         }
     }
