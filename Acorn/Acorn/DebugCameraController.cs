@@ -56,9 +56,9 @@ namespace Acorn
         {
             if (msg.Key == Keys.Space)
             {
-                var process = new TweenProcess(TimeSpan.FromSeconds(1), percentage =>
+                var process = new TweenProcess(TimeSpan.FromSeconds(1), value =>
                 {
-                    var translation = new Vector2(_maxShakeDistance - (_maxShakeDistance * percentage), 0);
+                    var translation = new Vector2(_maxShakeDistance - (_maxShakeDistance * value), 0);
                     translation = Vector2.Transform(translation, Matrix.CreateRotationZ((float)(_random.NextDouble() * (2f * Math.PI))));
                     _messageManager.QueueMessage(new MoveCameraMessage(translation));
                 });

@@ -42,9 +42,9 @@ namespace Acorn.Views
                 _cloud.GetComponent<SimpleMovementComponent>().Velocity = new Vector2(-2.0f, 0);
 
                 // Fade other stuff off the screen
-                var offscreenProcess = new TweenProcess(TimeSpan.FromSeconds(1), percentage =>
+                var offscreenProcess = new TweenProcess(TimeSpan.FromSeconds(1), value =>
                 {
-                    this.MessageManager.QueueMessage(new MoveCameraMessage(new Vector2(percentage * -GraphicsService.Instance.GraphicsDevice.Viewport.Width, 0)));
+                    this.MessageManager.QueueMessage(new MoveCameraMessage(new Vector2((float)value * -GraphicsService.Instance.GraphicsDevice.Viewport.Width, 0)));
                 });
                 offscreenProcess.AttachChild(new ActionProcess(() =>
                 {
