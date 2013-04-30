@@ -38,20 +38,28 @@ namespace Acorn.Views
         {
             if (msg.GameObjectId == _playButton.Id)
             {
-                _cloud.RemoveComponent<ScreenWrappingComponent>();
-                _cloud.GetComponent<SimpleMovementComponent>().Velocity = new Vector2(-2.0f, 0);
+                BuildTransitionAnimation();
+            }
+        }
 
-                // Fade other stuff off the screen
-                var offscreenProcess = new TweenProcess(TimeSpan.FromSeconds(1), value =>
+        private void BuildTransitionAnimation()
+        {
+            _cloud.RemoveComponent<ScreenWrappingComponent>();
+            _cloud.RemoveComponent<SimpleMovementComponent>();
+
+            var _cloudTransformation = _cloud.GetComponent<TransformationComponent>();
+
+            // Fade other stuff off the screen
+            this.ProcessManager.AttachProcess(Process.BuildProcessChain(
+                new TweenProcess(Easing.GetBackFunction(0.3), EasingKind.EaseIn, TimeSpan.FromSeconds(1), value =>
                 {
-                    this.MessageManager.QueueMessage(new MoveCameraMessage(new Vector2((float)value * -GraphicsService.Instance.GraphicsDevice.Viewport.Width, 0)));
-                });
-                offscreenProcess.AttachChild(new ActionProcess(() =>
+                    _cloudTransformation.PositionOffset = new Vector2(-value, 0);
+                    this.MessageManager.QueueMessage(new MoveCameraMessage(new Vector2(value * -GraphicsService.Instance.GraphicsDevice.Viewport.Width, 0)));
+                }),
+                new ActionProcess(() =>
                 {
                     this.MessageManager.QueueMessage(new RequestChangeStateMessage(new PlayState()));
-                }));
-                this.ProcessManager.AttachProcess(offscreenProcess);
-            }
+                })));
         }
     }
 }

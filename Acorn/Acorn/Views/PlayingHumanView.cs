@@ -40,7 +40,7 @@ namespace Acorn.Views
 
             var screenHeight = GraphicsService.Instance.GraphicsDevice.Viewport.Height;
             this.MessageManager.TriggerMessage(new MoveCameraMessage(new Vector2(0, -screenHeight)));
-            var fadeInProcess = new TweenProcess(TimeSpan.FromSeconds(1), percentage =>
+            var fadeInProcess = new TweenProcess(Easing.GetElasticFunction(oscillations: 10, springiness: 18), EasingKind.EaseOut, TimeSpan.FromSeconds(2.5), percentage =>
             {
                 this.MessageManager.QueueMessage(new MoveCameraMessage(new Vector2(0, -screenHeight + (screenHeight * percentage))));
             });
