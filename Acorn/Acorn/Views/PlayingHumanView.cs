@@ -97,7 +97,7 @@ namespace Acorn.Views
             var avatar = player.GetComponent<PlayerAvatarComponent>();
 
             var bounceFunction = Easing.GetBounceFunction(4, 1.4);
-            this.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(0.5), new TweenProcess(Easing.GetSineFunction(), EasingKind.EaseOut, TimeSpan.FromSeconds(1.25), interp =>
+            this.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(0.35), new TweenProcess(Easing.GetSineFunction(), EasingKind.EaseOut, TimeSpan.FromSeconds(1.25), interp =>
             {
                 transformation.PositionOffset = (avatar.DestinationOffset * (interp.Value));
                 transformation.PositionOffset = new Vector2(transformation.PositionOffset.X, -0.1f * (float)bounceFunction(1.0 - interp.Percentage));
@@ -110,9 +110,11 @@ namespace Acorn.Views
             var transformation = player.GetComponent<TransformationComponent>();
             var avatar = player.GetComponent<PlayerAvatarComponent>();
 
-            this.ProcessManager.AttachProcess(new TweenProcess(Easing.GetBackFunction(0.5), EasingKind.EaseIn, TimeSpan.FromSeconds(0.75), interp =>
+            var bounceFunction = Easing.GetBounceFunction(4, 1.2);
+            this.ProcessManager.AttachProcess(new TweenProcess(Easing.GetLinearFunction(), EasingKind.EaseIn, TimeSpan.FromSeconds(1.25), interp =>
             {
                 transformation.PositionOffset = avatar.DestinationOffset * (1f - interp.Value);
+                transformation.PositionOffset = new Vector2(transformation.PositionOffset.X, -0.1f * (float)bounceFunction(interp.Percentage));
             }));            
         }
 

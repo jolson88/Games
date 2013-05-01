@@ -66,16 +66,16 @@ namespace Acorn.States
             // Generate Player Avatars
             var redSquirrelSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.RedSquirrel);
             var redSquirrel = new GameObject();
-            redSquirrel.AddComponent(new TransformationComponent(new Vector2(-0.05f, 0.97f), redSquirrelSprite.Width, redSquirrelSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Bottom));
+            redSquirrel.AddComponent(new TransformationComponent(new Vector2(-0.08f, 0.97f), redSquirrelSprite.Width, redSquirrelSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Bottom));
             redSquirrel.AddComponent(new SpriteComponent(redSquirrelSprite));
-            redSquirrel.AddComponent(new PlayerAvatarComponent(0, new Vector2(0.17f, 0f)));
+            redSquirrel.AddComponent(new PlayerAvatarComponent(0, new Vector2(0.18f, 0f)));
             yield return redSquirrel;
 
             var blueSquirrelSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.BlueSquirrel);
             var blueSquirrel = new GameObject();
-            blueSquirrel.AddComponent(new TransformationComponent(new Vector2(1.05f, 0.97f), blueSquirrelSprite.Width, blueSquirrelSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Bottom));
+            blueSquirrel.AddComponent(new TransformationComponent(new Vector2(1.08f, 0.97f), blueSquirrelSprite.Width, blueSquirrelSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Bottom));
             blueSquirrel.AddComponent(new SpriteComponent(blueSquirrelSprite));
-            blueSquirrel.AddComponent(new PlayerAvatarComponent(1, new Vector2(-0.17f, 0f)));
+            blueSquirrel.AddComponent(new PlayerAvatarComponent(1, new Vector2(-0.18f, 0f)));
             yield return blueSquirrel;
 
             // HUD - Scoring Acorns
@@ -99,13 +99,6 @@ namespace Acorn.States
                 obj.AddComponent(new ScoreComponent(1, pointNumber));
                 yield return obj;
             }
-            
-            // HUD - Game Status
-            var status = new GameObject(depth: -100);
-            status.AddComponent(new TransformationComponent(new Vector2(0.5f, 0.1f), 0, 0, HorizontalAnchor.Center, VerticalAnchor.Center));
-            status.AddComponent(new LabelComponent(string.Empty, ContentService.Instance.GetAsset<SpriteFont>(AcornAssets.TitleText), new Color(30, 30, 30)));
-            status.AddComponent(new GameStatusComponent());
-            yield return status;
         }
 
         protected override void RegisterMessageListeners()
