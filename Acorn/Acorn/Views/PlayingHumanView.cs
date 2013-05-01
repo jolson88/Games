@@ -17,10 +17,12 @@ namespace Acorn.Views
         private List<PlayerController> _playerControllers;
         private DebugCameraController _cameraController;
         private List<GameObject> _cards;
+        private Dictionary<int, GameObject> _playerAvatars;
 
         // Multiple indices allow this one view to have multiple players play with it (local multiplayer)
         public PlayingHumanView(params int[] playerIndices)
         {
+            _playerAvatars = new Dictionary<int, GameObject>();
             _playerControllers = new List<PlayerController>();
             _playerIndices = playerIndices;
             _cards = new List<GameObject>();
@@ -38,6 +40,8 @@ namespace Acorn.Views
             this.MessageManager.AddListener<NewGameObjectMessage>(OnNewGameObject);
             this.MessageManager.AddListener<CardSelectedMessage>(OnCardSelected);
             this.MessageManager.AddListener<KeyDownMessage>(OnKeyDown);
+            this.MessageManager.AddListener<StartTurnMessage>(OnStartTurn);
+            this.MessageManager.AddListener<EndTurnMessage>(OnEndTurn);
 
             this.AnimateScreenIn();
         }
@@ -56,6 +60,11 @@ namespace Acorn.Views
             if (msg.GameObject.HasComponent<CardComponent>())
             {
                 _cards.Add(msg.GameObject);
+            }
+            else if (msg.GameObject.HasComponent<PlayerAvatarComponent>())
+            {
+                var avatar = msg.GameObject.GetComponent<PlayerAvatarComponent>();
+                _playerAvatars.Add(avatar.PlayerIndex, msg.GameObject);
             }
         }
 
@@ -81,13 +90,39 @@ namespace Acorn.Views
             }
         }
 
+        private void OnStartTurn(StartTurnMessage msg)
+        {
+            var player = _playerAvatars[msg.PlayerIndex];
+            var transformation = player.GetComponent<TransformationComponent>();
+            var avatar = player.GetComponent<PlayerAvatarComponent>();
+
+            var bounceFunction = Easing.GetBounceFunction(4, 1.4);
+            this.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(0.5), new TweenProcess(Easing.GetSineFunction(), EasingKind.EaseOut, TimeSpan.FromSeconds(1.25), interp =>
+            {
+                transformation.PositionOffset = (avatar.DestinationOffset * (interp.Value));
+                transformation.PositionOffset = new Vector2(transformation.PositionOffset.X, -0.1f * (float)bounceFunction(1.0 - interp.Percentage));
+            })));
+        }
+
+        private void OnEndTurn(EndTurnMessage msg)
+        {
+            var player = _playerAvatars[msg.PlayerIndex];
+            var transformation = player.GetComponent<TransformationComponent>();
+            var avatar = player.GetComponent<PlayerAvatarComponent>();
+
+            this.ProcessManager.AttachProcess(new TweenProcess(Easing.GetBackFunction(0.5), EasingKind.EaseIn, TimeSpan.FromSeconds(0.75), interp =>
+            {
+                transformation.PositionOffset = avatar.DestinationOffset * (1f - interp.Value);
+            }));            
+        }
+
         private void AnimateScreenIn()
         {
             var screenHeight = GraphicsService.Instance.GraphicsDevice.Viewport.Height;
             this.MessageManager.TriggerMessage(new MoveCameraMessage(new Vector2(0, -screenHeight)));
-            var fadeInProcess = new TweenProcess(Easing.GetElasticFunction(oscillations: 12, springiness: 20), EasingKind.EaseOut, TimeSpan.FromSeconds(3.3), percentage =>
+            var fadeInProcess = new TweenProcess(Easing.GetElasticFunction(oscillations: 12, springiness: 20), EasingKind.EaseOut, TimeSpan.FromSeconds(3.3), interp =>
             {
-                this.MessageManager.QueueMessage(new MoveCameraMessage(new Vector2(0, -screenHeight + (screenHeight * percentage))));
+                this.MessageManager.QueueMessage(new MoveCameraMessage(new Vector2(0, -screenHeight + (screenHeight * interp.Value))));
             });
             this.ProcessManager.AttachProcess(fadeInProcess);
         }

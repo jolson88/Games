@@ -63,6 +63,21 @@ namespace Acorn.States
             stopButton.AddComponent(new ButtonComponent(stopButtonSprite, stopButtonPressedSprite));
             yield return stopButton;
 
+            // Generate Player Avatars
+            var redSquirrelSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.RedSquirrel);
+            var redSquirrel = new GameObject();
+            redSquirrel.AddComponent(new TransformationComponent(new Vector2(-0.05f, 0.97f), redSquirrelSprite.Width, redSquirrelSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Bottom));
+            redSquirrel.AddComponent(new SpriteComponent(redSquirrelSprite));
+            redSquirrel.AddComponent(new PlayerAvatarComponent(0, new Vector2(0.17f, 0f)));
+            yield return redSquirrel;
+
+            var blueSquirrelSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.BlueSquirrel);
+            var blueSquirrel = new GameObject();
+            blueSquirrel.AddComponent(new TransformationComponent(new Vector2(1.05f, 0.97f), blueSquirrelSprite.Width, blueSquirrelSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Bottom));
+            blueSquirrel.AddComponent(new SpriteComponent(blueSquirrelSprite));
+            blueSquirrel.AddComponent(new PlayerAvatarComponent(1, new Vector2(-0.17f, 0f)));
+            yield return blueSquirrel;
+
             // HUD - Scoring Acorns
             // Generate player one's score acorns
             var emptyAcornSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.EmptyAcorn);
