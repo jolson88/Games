@@ -39,14 +39,7 @@ namespace Acorn.Views
             this.MessageManager.AddListener<CardSelectedMessage>(OnCardSelected);
             this.MessageManager.AddListener<KeyDownMessage>(OnKeyDown);
 
-            // Animate the screen in
-            var screenHeight = GraphicsService.Instance.GraphicsDevice.Viewport.Height;
-            this.MessageManager.TriggerMessage(new MoveCameraMessage(new Vector2(0, -screenHeight)));
-            var fadeInProcess = new TweenProcess(Easing.GetElasticFunction(oscillations: 12, springiness: 20), EasingKind.EaseOut, TimeSpan.FromSeconds(3.3), percentage =>
-            {
-                this.MessageManager.QueueMessage(new MoveCameraMessage(new Vector2(0, -screenHeight + (screenHeight * percentage))));
-            });
-            this.ProcessManager.AttachProcess(fadeInProcess);
+            this.AnimateScreenIn();
         }
 
         protected override void OnUpdate(GameTime gameTime)
@@ -86,6 +79,17 @@ namespace Acorn.Views
             {
                 this.MessageManager.QueueMessage(new RequestChangeStateMessage(new States.MenuState()));
             }
+        }
+
+        private void AnimateScreenIn()
+        {
+            var screenHeight = GraphicsService.Instance.GraphicsDevice.Viewport.Height;
+            this.MessageManager.TriggerMessage(new MoveCameraMessage(new Vector2(0, -screenHeight)));
+            var fadeInProcess = new TweenProcess(Easing.GetElasticFunction(oscillations: 12, springiness: 20), EasingKind.EaseOut, TimeSpan.FromSeconds(3.3), percentage =>
+            {
+                this.MessageManager.QueueMessage(new MoveCameraMessage(new Vector2(0, -screenHeight + (screenHeight * percentage))));
+            });
+            this.ProcessManager.AttachProcess(fadeInProcess);
         }
     }
 }

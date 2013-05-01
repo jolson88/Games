@@ -29,14 +29,14 @@ namespace Acorn.States
         {
             var bgSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.Background);
             var bg = new GameObject();
-            bg.AddComponent(new TransformationComponent(new Vector2(0f, 0f), GraphicsService.Instance.GraphicsDevice.Viewport.Width, GraphicsService.Instance.GraphicsDevice.Viewport.Height));
-            bg.AddComponent(new SpriteComponent(bgSprite, SpriteKind.Background, transformedByCamera: false));
+            bg.AddComponent(new TransformationComponent(new Vector2(0f, 0f), GraphicsService.Instance.GraphicsDevice.Viewport.Width, GraphicsService.Instance.GraphicsDevice.Viewport.Height, transformedByCamera: false));
+            bg.AddComponent(new SpriteComponent(bgSprite, SpriteKind.Background));
             yield return bg;
 
             var cloudSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.Cloud);
             var cloud = new GameObject();
-            cloud.AddComponent(new TransformationComponent(new Vector2(0.2f, 0.02f), cloudSprite.Width, cloudSprite.Height));
-            cloud.AddComponent(new SpriteComponent(cloudSprite, SpriteKind.Background, transformedByCamera: false));
+            cloud.AddComponent(new TransformationComponent(new Vector2(0.2f, 0.02f), cloudSprite.Width, cloudSprite.Height, transformedByCamera: false));
+            cloud.AddComponent(new SpriteComponent(cloudSprite, SpriteKind.Background));
             cloud.AddComponent(new SimpleMovementComponent(new Vector2(-0.03f, 0f)));
             cloud.AddComponent(new ScreenWrappingComponent());
             yield return cloud;

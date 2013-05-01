@@ -27,6 +27,7 @@ namespace Acorn.Views
             if (msg.GameObject.Tag.Equals("PlayButton"))
             {
                 _playButton = msg.GameObject;
+                _playButton.AddComponent(new SwellComponent(16, TimeSpan.FromSeconds(1), isRepeating: true));
             }
             else if (msg.GameObject.Tag.Equals("Cloud"))
             {
