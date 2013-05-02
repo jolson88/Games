@@ -12,6 +12,7 @@ using Acorn.Components;
 
 namespace Acorn.Views
 {
+    // TODO: Cleanup/Refactor class
     public class PlayingHumanView : HumanGameView
     {
         private int _currentPlayer;
