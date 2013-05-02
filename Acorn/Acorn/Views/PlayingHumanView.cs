@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using Hiromi;
 using Hiromi.Components;
 using Acorn;
@@ -20,6 +21,7 @@ namespace Acorn.Views
         private List<GameObject> _cards;
         private int _selectedCardCount = 0;
         private Dictionary<int, GameObject> _playerAvatars;
+        private Random _random;
 
         // Multiple indices allow this one view to have multiple players play with it (local multiplayer)
         public PlayingHumanView(params int[] playerIndices)
@@ -28,6 +30,7 @@ namespace Acorn.Views
             _playerControllers = new List<PlayerController>();
             _playerIndices = playerIndices;
             _cards = new List<GameObject>();
+            _random = new Random();
         }
 
         protected override void OnInitialize()
@@ -84,6 +87,7 @@ namespace Acorn.Views
                 var card = _cards.Where(go => go.GetComponent<CardComponent>().CardIndex == msg.CardIndex).First();
                 card.AddComponent(new SwellComponent(15, TimeSpan.FromSeconds(0.25)));
 
+                CreateFallingAcorns(msg.CardValue);
                 if (_selectedCardCount == _cards.Count())
                 {
                     // All cards selected, delay and send shuffle request
@@ -134,18 +138,57 @@ namespace Acorn.Views
                 }),
                 new ActionProcess(() => {
                     this.MessageManager.QueueMessage(new EndTurnConfirmationMessage(_currentPlayer));   
-                })));            
+                })));
+
+            if (msg.Reason == EndTurnReason.LostPoints)
+            {
+                AnimateFallenAcornsDisappearing();
+            }
+            else
+            {
+                AnimateFallenAcornsScoring();
+            }
         }
 
         private void AnimateScreenIn()
         {
             var screenHeight = GraphicsService.Instance.GraphicsDevice.Viewport.Height;
             this.MessageManager.TriggerMessage(new MoveCameraMessage(new Vector2(0, -screenHeight)));
-            var fadeInProcess = new TweenProcess(Easing.GetElasticFunction(oscillations: 12, springiness: 20), EasingKind.EaseOut, TimeSpan.FromSeconds(3.8), interp =>
+            this.ProcessManager.AttachProcess(new TweenProcess(Easing.GetElasticFunction(oscillations: 12, springiness: 20), EasingKind.EaseOut, TimeSpan.FromSeconds(3.8), interp =>
             {
                 this.MessageManager.QueueMessage(new MoveCameraMessage(new Vector2(0, -screenHeight + (screenHeight * interp.Value))));
-            });
-            this.ProcessManager.AttachProcess(fadeInProcess);
+            }));
+        }
+
+        private void CreateFallingAcorns(int acornCount)
+        {
+            var acornSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.Acorn);
+            for (int i = 0; i < acornCount; i++)
+            {
+                // Random value between 0.2 and 0.8
+                var randX = ((float)_random.NextDouble() * 0.6f) + 0.2f;
+
+                var obj = new GameObject("FallenAcorn");
+                obj.AddComponent(new TransformationComponent(new Vector2(randX, 0.98f), acornSprite.Width, acornSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Bottom));
+                obj.AddComponent(new SpriteComponent(acornSprite));
+                this.GameObjectManager.AddGameObject(obj);
+                
+            }
+        }
+
+        private void AnimateFallenAcornsDisappearing()
+        {
+            var acorns = this.GameObjectManager.GetAllGameObjectsWithTag("FallenAcorn");
+            foreach (var acorn in acorns)
+            {
+                this.GameObjectManager.RemoveGameObject(acorn);
+            }
+        }
+
+        private void AnimateFallenAcornsScoring()
+        {
+            // Temporary until we create special animation
+            AnimateFallenAcornsDisappearing();
         }
     }
 }
