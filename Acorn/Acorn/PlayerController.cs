@@ -25,14 +25,14 @@ namespace Acorn
             _playerIndex = playerIndex;
 
             _messageManager = messageManager;
-            _messageManager.AddListener<NewGameObjectMessage>(OnNewGameObject);
+            _messageManager.AddListener<GameObjectLoadedMessage>(OnNewGameObject);
             _messageManager.AddListener<StartTurnMessage>(OnStartTurn);
             _messageManager.AddListener<PointerPressMessage>(OnPointerPress);
         }
 
         public void Update(GameTime gameTime) { }
 
-        private void OnNewGameObject(NewGameObjectMessage msg)
+        private void OnNewGameObject(GameObjectLoadedMessage msg)
         {
             if (msg.GameObject.Tag.Equals("StopButton"))
             {

@@ -18,11 +18,11 @@ namespace Acorn.Views
 
         protected override void OnInitialize()
         {
-            this.MessageManager.AddListener<NewGameObjectMessage>(OnNewGameObject);
+            this.MessageManager.AddListener<GameObjectLoadedMessage>(OnNewGameObject);
             this.MessageManager.AddListener<ButtonPressMessage>(OnButtonPress);
         }
 
-        private void OnNewGameObject(NewGameObjectMessage msg)
+        private void OnNewGameObject(GameObjectLoadedMessage msg)
         {
             if (msg.GameObject.Tag.Equals("PlayButton"))
             {

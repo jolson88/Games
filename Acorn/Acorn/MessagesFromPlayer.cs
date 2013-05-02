@@ -27,6 +27,16 @@ namespace Acorn
         }
     }
 
+    public class CardShuffleRequestMessage : Message
+    {
+        public int PlayerIndex { get; set; }
+
+        public CardShuffleRequestMessage(int playerIndex)
+        {
+            this.PlayerIndex = playerIndex;
+        }
+    }
+
     /// <summary>
     /// Message sent to logic to request an ending of the turn. This will keep any points accumulated so far.
     /// </summary>
@@ -42,6 +52,16 @@ namespace Acorn
         public override string ToString()
         {
             return string.Format("[Player] Player {0} requested to cash in points", this.PlayerIndex);
+        }
+    }
+
+    public class EndTurnConfirmationMessage : Message
+    {
+        public int PlayerIndex { get; set; }
+
+        public EndTurnConfirmationMessage(int playerIndex)
+        {
+            this.PlayerIndex = playerIndex;
         }
     }
 }

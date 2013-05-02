@@ -86,7 +86,7 @@ namespace Acorn.States
                 var obj = new GameObject(depth: -100);
                 obj.AddComponent(new TransformationComponent(new Vector2(0.05f, (0.07f * pointNumber) + 0.07f), emptyAcornSprite.Width, emptyAcornSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
                 obj.AddComponent(new SpriteComponent(emptyAcornSprite));
-                obj.AddComponent(new ScoreComponent(0, pointNumber));
+                obj.AddComponent(new ScoreComponent(0, pointNumber + 1));
                 yield return obj;
             }
 
@@ -96,7 +96,7 @@ namespace Acorn.States
                 var obj = new GameObject(depth: -100);
                 obj.AddComponent(new TransformationComponent(new Vector2(0.95f, (0.07f * pointNumber) + 0.07f), emptyAcornSprite.Width, emptyAcornSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
                 obj.AddComponent(new SpriteComponent(emptyAcornSprite));
-                obj.AddComponent(new ScoreComponent(1, pointNumber));
+                obj.AddComponent(new ScoreComponent(1, pointNumber + 1));
                 yield return obj;
             }
         }

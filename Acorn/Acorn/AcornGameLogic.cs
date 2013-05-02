@@ -34,6 +34,8 @@ namespace Acorn
             _messageManager.AddListener<CardSelectionRequestMessage>(OnCardSelectionRequest);
             _messageManager.AddListener<StopRequestMessage>(OnStopRequest);
             _messageManager.AddListener<GameOverMessage>(OnGameOver);
+            _messageManager.AddListener<EndTurnConfirmationMessage>(OnEndTurnConfirmation);
+            _messageManager.AddListener<CardShuffleRequestMessage>(OnCardShuffleRequested);
         }
 
         private void OnGameStarted(GameStartedMessage msg)
@@ -56,14 +58,6 @@ namespace Acorn
                 {
                     EndPlayerTurn(EndTurnReason.LostPoints);
                 }
-                else if (AllCardsAreSelected())
-                {
-                    // Delay so player has time to see what card turned over
-                    _processManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(2), new ActionProcess(() =>
-                    {
-                        ShuffleCards();
-                    })));
-                }
             }
         }
 
@@ -75,9 +69,30 @@ namespace Acorn
             }
         }
 
+        private void OnCardShuffleRequested(CardShuffleRequestMessage msg)
+        {
+            if (AllCardsAreSelected() && msg.PlayerIndex == _currentPlayer)
+            {
+                ShuffleCards();
+            }
+        }
+
+        private void OnEndTurnConfirmation(EndTurnConfirmationMessage msg)
+        {
+            if (msg.PlayerIndex == _currentPlayer)
+            {
+                var nextPlayer = (_currentPlayer == 0) ? 1 : 0;
+
+                _currentPlayer = nextPlayer;
+                _runningPoints = 0;
+
+                ShuffleCards();
+                _messageManager.QueueMessage(new StartTurnMessage(_currentPlayer));
+            }
+        }
+
         private void EndPlayerTurn(EndTurnReason reason)
         {
-            var nextPlayer = (_currentPlayer == 0) ? 1 : 0;
             _messageManager.QueueMessage(new EndTurnMessage(_currentPlayer, reason));
 
             if (reason == EndTurnReason.WonPoints)
@@ -91,24 +106,13 @@ namespace Acorn
                     return;
                 }
             }
-
-            _currentPlayer = nextPlayer;
-            _runningPoints = 0;
-
-            // Delay for two seconds it wasn't a voluntary stop (so player has time to see zero card
-            var delay = (reason == EndTurnReason.LostPoints) ? 2 : 0;
-            _processManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(delay), new ActionProcess(() =>
-            {
-                ShuffleCards();
-                _messageManager.QueueMessage(new StartTurnMessage(_currentPlayer));
-            })));
         }
 
         private void SelectCard(int cardIndex, int cardValue)
         {
             _cardValues[cardIndex] = cardValue;
             _runningPoints += cardValue;
-            _messageManager.QueueMessage(new CardSelectedMessage(cardIndex, cardValue));
+            _messageManager.QueueMessage(new CardSelectedMessage(cardIndex, cardValue, _currentPlayer));
         }
 
         private void ShuffleCards()

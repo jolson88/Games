@@ -20,11 +20,13 @@ namespace Acorn
     {
         public int CardIndex { get; set; }
         public int CardValue { get; set; }
+        public int PlayerIndex { get; set; }
 
-        public CardSelectedMessage(int cardIndex, int cardValue)
+        public CardSelectedMessage(int cardIndex, int cardValue, int playerIndex)
         {
             this.CardIndex = cardIndex;
             this.CardValue = cardValue;
+            this.PlayerIndex = playerIndex;
         }
 
         public override string ToString()

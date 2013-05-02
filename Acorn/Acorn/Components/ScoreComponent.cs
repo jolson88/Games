@@ -17,16 +17,22 @@ namespace Acorn.Components
 
         private Texture2D _emptyAcorn;
         private Texture2D _scoredAcorn;
+        private int _playerScore;
+        private int _tempScore;
 
         public ScoreComponent(int playerIndex, int pointNumber)
         {
             this.PlayerIndex = playerIndex;
             this.PointNumber = pointNumber;
+            _playerScore = 0;
+            _tempScore = 0;
         }
 
         public override void Loaded()
         {
             this.GameObject.MessageManager.AddListener<ScoreChangedMessage>(OnScoreChanged);
+            this.GameObject.MessageManager.AddListener<CardSelectedMessage>(OnCardSelected);
+            this.GameObject.MessageManager.AddListener<EndTurnMessage>(OnEndTurn);
 
             _emptyAcorn = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.EmptyAcorn);
             _scoredAcorn = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.Acorn);
@@ -35,9 +41,44 @@ namespace Acorn.Components
         private void OnScoreChanged(ScoreChangedMessage msg)
         {
             var spriteComponent = this.GameObject.GetComponent<SpriteComponent>();
-            if (this.PlayerIndex == msg.PlayerIndex && this.PointNumber < msg.Score)
+            if (this.PlayerIndex == msg.PlayerIndex)
             {
-                spriteComponent.Texture = _scoredAcorn;
+                _playerScore = msg.Score;
+                _tempScore = _playerScore;
+
+                if (this.GameObject.HasComponent<SwellComponent>())
+                {
+                    this.GameObject.RemoveComponent<SwellComponent>();
+                }
+
+                if (this.PointNumber <= msg.Score)
+                {
+                    spriteComponent.Texture = _scoredAcorn;
+                }
+            }
+        }
+
+        private void OnCardSelected(CardSelectedMessage msg)
+        {
+            if (msg.PlayerIndex == this.PlayerIndex)
+            {
+                _tempScore += msg.CardValue;
+                if (this.PointNumber > _tempScore - msg.CardValue && this.PointNumber <= _tempScore)
+                {
+                    this.GameObject.AddComponent(new SwellComponent(10, TimeSpan.FromSeconds(2), true));
+                }
+            }
+        }
+
+        private void OnEndTurn(EndTurnMessage msg)
+        {
+            if (msg.PlayerIndex == this.PlayerIndex)
+            {
+                _tempScore = _playerScore;
+                if (this.GameObject.HasComponent<SwellComponent>())
+                {
+                    this.GameObject.RemoveComponent<SwellComponent>();
+                }
             }
         }
     }

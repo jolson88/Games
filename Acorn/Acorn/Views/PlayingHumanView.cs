@@ -13,10 +13,12 @@ namespace Acorn.Views
 {
     public class PlayingHumanView : HumanGameView
     {
+        private int _currentPlayer;
         private int[] _playerIndices;
         private List<PlayerController> _playerControllers;
         private DebugCameraController _cameraController;
         private List<GameObject> _cards;
+        private int _selectedCardCount = 0;
         private Dictionary<int, GameObject> _playerAvatars;
 
         // Multiple indices allow this one view to have multiple players play with it (local multiplayer)
@@ -37,7 +39,7 @@ namespace Acorn.Views
 
             _cameraController = new DebugCameraController(this.MessageManager);
 
-            this.MessageManager.AddListener<NewGameObjectMessage>(OnNewGameObject);
+            this.MessageManager.AddListener<GameObjectLoadedMessage>(OnNewGameObject);
             this.MessageManager.AddListener<CardSelectedMessage>(OnCardSelected);
             this.MessageManager.AddListener<KeyDownMessage>(OnKeyDown);
             this.MessageManager.AddListener<StartTurnMessage>(OnStartTurn);
@@ -55,7 +57,7 @@ namespace Acorn.Views
             _cameraController.Update(gameTime);
         }
 
-        private void OnNewGameObject(NewGameObjectMessage msg)
+        private void OnNewGameObject(GameObjectLoadedMessage msg)
         {
             if (msg.GameObject.HasComponent<CardComponent>())
             {
@@ -73,12 +75,24 @@ namespace Acorn.Views
             if (msg.CardValue == 0)
             {
                 var card = _cards.Where(go => go.GetComponent<CardComponent>().CardIndex == msg.CardIndex).First();
-                card.AddComponent(new ShakeComponent(15, TimeSpan.FromSeconds(0.75)));
+                card.AddComponent(new ShakeComponent(15, TimeSpan.FromSeconds(1.25)));
+                _selectedCardCount = 0;
             }
             else
             {
+                _selectedCardCount++;
                 var card = _cards.Where(go => go.GetComponent<CardComponent>().CardIndex == msg.CardIndex).First();
                 card.AddComponent(new SwellComponent(15, TimeSpan.FromSeconds(0.25)));
+
+                if (_selectedCardCount == _cards.Count())
+                {
+                    // All cards selected, delay and send shuffle request
+                    this.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(1.2), new ActionProcess(() =>
+                    {
+                        _selectedCardCount = 0;
+                        this.MessageManager.QueueMessage(new CardShuffleRequestMessage(_currentPlayer));
+                    })));
+                }
             }
         }
 
@@ -92,16 +106,17 @@ namespace Acorn.Views
 
         private void OnStartTurn(StartTurnMessage msg)
         {
+            _currentPlayer = msg.PlayerIndex;
             var player = _playerAvatars[msg.PlayerIndex];
             var transformation = player.GetComponent<TransformationComponent>();
             var avatar = player.GetComponent<PlayerAvatarComponent>();
 
             var bounceFunction = Easing.GetBounceFunction(4, 1.4);
-            this.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(0.35), new TweenProcess(Easing.GetSineFunction(), EasingKind.EaseOut, TimeSpan.FromSeconds(1.25), interp =>
+            this.ProcessManager.AttachProcess(new TweenProcess(Easing.GetSineFunction(), EasingKind.EaseOut, TimeSpan.FromSeconds(1.25), interp =>
             {
                 transformation.PositionOffset = (avatar.DestinationOffset * (interp.Value));
                 transformation.PositionOffset = new Vector2(transformation.PositionOffset.X, -0.1f * (float)bounceFunction(1.0 - interp.Percentage));
-            })));
+            }));
         }
 
         private void OnEndTurn(EndTurnMessage msg)
@@ -111,18 +126,22 @@ namespace Acorn.Views
             var avatar = player.GetComponent<PlayerAvatarComponent>();
 
             var bounceFunction = Easing.GetBounceFunction(4, 1.2);
-            this.ProcessManager.AttachProcess(new TweenProcess(Easing.GetLinearFunction(), EasingKind.EaseIn, TimeSpan.FromSeconds(1.25), interp =>
-            {
-                transformation.PositionOffset = avatar.DestinationOffset * (1f - interp.Value);
-                transformation.PositionOffset = new Vector2(transformation.PositionOffset.X, -0.1f * (float)bounceFunction(interp.Percentage));
-            }));            
+            this.ProcessManager.AttachProcess(Process.BuildProcessChain(
+                new TweenProcess(Easing.GetLinearFunction(), EasingKind.EaseIn, TimeSpan.FromSeconds(1.25), interp =>
+                {
+                    transformation.PositionOffset = avatar.DestinationOffset * (1f - interp.Value);
+                    transformation.PositionOffset = new Vector2(transformation.PositionOffset.X, -0.1f * (float)bounceFunction(interp.Percentage));
+                }),
+                new ActionProcess(() => {
+                    this.MessageManager.QueueMessage(new EndTurnConfirmationMessage(_currentPlayer));   
+                })));            
         }
 
         private void AnimateScreenIn()
         {
             var screenHeight = GraphicsService.Instance.GraphicsDevice.Viewport.Height;
             this.MessageManager.TriggerMessage(new MoveCameraMessage(new Vector2(0, -screenHeight)));
-            var fadeInProcess = new TweenProcess(Easing.GetElasticFunction(oscillations: 12, springiness: 20), EasingKind.EaseOut, TimeSpan.FromSeconds(3.3), interp =>
+            var fadeInProcess = new TweenProcess(Easing.GetElasticFunction(oscillations: 12, springiness: 20), EasingKind.EaseOut, TimeSpan.FromSeconds(3.8), interp =>
             {
                 this.MessageManager.QueueMessage(new MoveCameraMessage(new Vector2(0, -screenHeight + (screenHeight * interp.Value))));
             });
