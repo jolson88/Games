@@ -40,12 +40,12 @@ namespace Acorn.States
             //title.AddComponent(new SpriteComponent(titleSprite));
             //yield return title;
 
-            //var playButtonSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.PlayButton);
-            //var playButtonPressedSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.PlayButtonPressed);
-            //var playButton = new GameObject("PlayButton");
-            //playButton.AddComponent(new TransformationComponent(new Vector2(0.5f, 0.5f), playButtonSprite.Width, playButtonSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
-            //playButton.AddComponent(new ButtonComponent(playButtonSprite, playButtonPressedSprite));
-            //yield return playButton;
+            var playButtonSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.PlayButton);
+            var playButtonPressedSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.PlayButtonPressed);
+            var playButton = new GameObject("PlayButton");
+            playButton.AddComponent(new TransformationComponent(new Vector2(800, 450), playButtonSprite.Width, playButtonSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
+            playButton.AddComponent(new ButtonComponent(playButtonSprite, playButtonPressedSprite));
+            yield return playButton;
 
             //var detailsFont = ContentService.Instance.GetAsset<SpriteFont>(AcornAssets.DetailsText);
             //var company = new GameObject();
