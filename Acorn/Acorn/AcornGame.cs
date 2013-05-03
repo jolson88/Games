@@ -14,5 +14,10 @@ namespace Acorn
         {
             return new MenuState();
         }
+
+        protected override Vector2 GetDesignedScreenSize()
+        {
+            return new Vector2(1600, 900);
+        }
     }
 }

@@ -55,7 +55,7 @@ namespace Acorn.Views
                 new TweenProcess(Easing.GetBackFunction(0.3), EasingKind.EaseIn, TimeSpan.FromSeconds(1), interp =>
                 {
                     _cloudTransformation.PositionOffset = new Vector2(-interp.Value, 0);
-                    this.MessageManager.QueueMessage(new MoveCameraMessage(new Vector2(interp.Value * -GraphicsService.Instance.GraphicsDevice.Viewport.Width, 0)));
+                    this.MessageManager.QueueMessage(new NudgeCameraMessage(new Vector2(interp.Value * -GraphicsService.Instance.GraphicsDevice.Viewport.Width, 0)));
                 }),
                 new ActionProcess(() =>
                 {

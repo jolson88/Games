@@ -28,30 +28,30 @@ namespace Acorn.States
 
             var cloudSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.Cloud);
             var cloud = new GameObject("Cloud");
-            cloud.AddComponent(new TransformationComponent(new Vector2(0.2f, 0.02f), cloudSprite.Width, cloudSprite.Height, transformedByCamera:false));
+            cloud.AddComponent(new TransformationComponent(new Vector2(0, 900), cloudSprite.Width, cloudSprite.Height));
             cloud.AddComponent(new SpriteComponent(cloudSprite, SpriteKind.Background));
-            cloud.AddComponent(new SimpleMovementComponent(new Vector2(-0.03f, 0f)));
+            cloud.AddComponent(new SimpleMovementComponent(new Vector2(-65f, 0f)));
             cloud.AddComponent(new ScreenWrappingComponent());
             yield return cloud;
 
-            var titleSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.GameTitle);
-            var title = new GameObject();
-            title.AddComponent(new TransformationComponent(new Vector2(0.5f, 0.1f), titleSprite.Width, titleSprite.Height, HorizontalAnchor.Center));
-            title.AddComponent(new SpriteComponent(titleSprite));
-            yield return title;
+            //var titleSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.GameTitle);
+            //var title = new GameObject();
+            //title.AddComponent(new TransformationComponent(new Vector2(800, 810), titleSprite.Width, titleSprite.Height, HorizontalAnchor.Center));
+            //title.AddComponent(new SpriteComponent(titleSprite));
+            //yield return title;
 
-            var playButtonSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.PlayButton);
-            var playButtonPressedSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.PlayButtonPressed);
-            var playButton = new GameObject("PlayButton");
-            playButton.AddComponent(new TransformationComponent(new Vector2(0.5f, 0.5f), playButtonSprite.Width, playButtonSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
-            playButton.AddComponent(new ButtonComponent(playButtonSprite, playButtonPressedSprite));
-            yield return playButton;
+            //var playButtonSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.PlayButton);
+            //var playButtonPressedSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.PlayButtonPressed);
+            //var playButton = new GameObject("PlayButton");
+            //playButton.AddComponent(new TransformationComponent(new Vector2(0.5f, 0.5f), playButtonSprite.Width, playButtonSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
+            //playButton.AddComponent(new ButtonComponent(playButtonSprite, playButtonPressedSprite));
+            //yield return playButton;
 
-            var detailsFont = ContentService.Instance.GetAsset<SpriteFont>(AcornAssets.DetailsText);
-            var company = new GameObject();
-            company.AddComponent(new TransformationComponent(new Vector2(0.98f, 0.98f), 0, 0, HorizontalAnchor.Right, VerticalAnchor.Bottom));
-            company.AddComponent(new LabelComponent("Owl X Games", detailsFont, Color.White, transformedByCamera: false));
-            yield return company;
+            //var detailsFont = ContentService.Instance.GetAsset<SpriteFont>(AcornAssets.DetailsText);
+            //var company = new GameObject();
+            //company.AddComponent(new TransformationComponent(new Vector2(0.98f, 0.98f), 0, 0, HorizontalAnchor.Right, VerticalAnchor.Bottom));
+            //company.AddComponent(new LabelComponent("Owl X Games", detailsFont, Color.White, transformedByCamera: false));
+            //yield return company;
         }
     }
 }

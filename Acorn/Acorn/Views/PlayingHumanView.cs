@@ -154,10 +154,10 @@ namespace Acorn.Views
         private void AnimateScreenIn()
         {
             var screenHeight = GraphicsService.Instance.GraphicsDevice.Viewport.Height;
-            this.MessageManager.TriggerMessage(new MoveCameraMessage(new Vector2(0, -screenHeight)));
+            this.MessageManager.TriggerMessage(new NudgeCameraMessage(new Vector2(0, -screenHeight)));
             this.ProcessManager.AttachProcess(new TweenProcess(Easing.GetElasticFunction(oscillations: 12, springiness: 20), EasingKind.EaseOut, TimeSpan.FromSeconds(3.8), interp =>
             {
-                this.MessageManager.QueueMessage(new MoveCameraMessage(new Vector2(0, -screenHeight + (screenHeight * interp.Value))));
+                this.MessageManager.QueueMessage(new NudgeCameraMessage(new Vector2(0, -screenHeight + (screenHeight * interp.Value))));
             }));
         }
 

@@ -60,11 +60,11 @@ namespace Acorn
                 {
                     var translation = new Vector2(_maxShakeDistance - (_maxShakeDistance * interp.Value), 0);
                     translation = Vector2.Transform(translation, Matrix.CreateRotationZ((float)(_random.NextDouble() * (2f * Math.PI))));
-                    _messageManager.QueueMessage(new MoveCameraMessage(translation));
+                    _messageManager.QueueMessage(new NudgeCameraMessage(translation));
                 });
                 process.AttachChild(new ActionProcess(() =>
                 {
-                    _messageManager.QueueMessage(new MoveCameraMessage(Vector2.Zero));
+                    _messageManager.QueueMessage(new NudgeCameraMessage(Vector2.Zero));
                 }));
 
                 _processManager.AttachProcess(process);
@@ -73,22 +73,22 @@ namespace Acorn
             if (msg.Key == Keys.F1)
             {
                 _currentTranslation += new Vector2(-_maxShakeDistance, 0);
-                _messageManager.QueueMessage(new MoveCameraMessage(_currentTranslation));
+                _messageManager.QueueMessage(new NudgeCameraMessage(_currentTranslation));
             }
             else if (msg.Key == Keys.F2)
             {
                 _currentTranslation += new Vector2(0, -_maxShakeDistance);
-                _messageManager.QueueMessage(new MoveCameraMessage(_currentTranslation));
+                _messageManager.QueueMessage(new NudgeCameraMessage(_currentTranslation));
             }
             else if (msg.Key == Keys.F3)
             {
                 _currentTranslation += new Vector2(0, _maxShakeDistance);
-                _messageManager.QueueMessage(new MoveCameraMessage(_currentTranslation));
+                _messageManager.QueueMessage(new NudgeCameraMessage(_currentTranslation));
             }
             else if (msg.Key == Keys.F4)
             {
                 _currentTranslation += new Vector2(_maxShakeDistance, 0);
-                _messageManager.QueueMessage(new MoveCameraMessage(_currentTranslation));
+                _messageManager.QueueMessage(new NudgeCameraMessage(_currentTranslation));
             }
             if (msg.Key == Keys.F5)
             {
