@@ -30,13 +30,13 @@ namespace Acorn.States
             var bgSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.Background);
             var bg = new GameObject();
             bg.AddComponent(new TransformationComponent(new Vector2(0, 0), GraphicsService.Instance.GraphicsDevice.Viewport.Width, GraphicsService.Instance.GraphicsDevice.Viewport.Height, transformedByCamera: false));
-            bg.AddComponent(new SpriteComponent(bgSprite, SpriteKind.Background));
+            bg.AddComponent(new SpriteComponent(bgSprite));
             yield return bg;
 
             var cloudSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.Cloud);
             var cloud = new GameObject("Cloud");
             cloud.AddComponent(new TransformationComponent(new Vector2(100, 890), cloudSprite.Width, cloudSprite.Height));
-            cloud.AddComponent(new SpriteComponent(cloudSprite, SpriteKind.Background));
+            cloud.AddComponent(new SpriteComponent(cloudSprite));
             cloud.AddComponent(new SimpleMovementComponent(new Vector2(-65, 0)));
             // Don't enable screen wrapping until after screen is animated in or else wrapping gets in way of "off camera->on camera" transition
             cloud.AddComponent(new ScreenWrappingComponent(isEnabled: true)); // TODO: Add in disabling once screen transition is added
