@@ -18,15 +18,18 @@ namespace Acorn
         private int? _currentPlayer;
         private GameObject _stopButton;
         private List<GameObject> _cards;
+        private bool _isTurnOver;
 
         public PlayerController(int playerIndex, MessageManager messageManager)
         {
             _cards = new List<GameObject>();
             _playerIndex = playerIndex;
+            _isTurnOver = true;
 
             _messageManager = messageManager;
             _messageManager.AddListener<GameObjectLoadedMessage>(OnNewGameObject);
             _messageManager.AddListener<StartTurnMessage>(OnStartTurn);
+            _messageManager.AddListener<EndTurnMessage>(OnEndTurn);
             _messageManager.AddListener<PointerPressMessage>(OnPointerPress);
         }
 
@@ -47,11 +50,17 @@ namespace Acorn
         private void OnStartTurn(StartTurnMessage msg)
         {
             _currentPlayer = msg.PlayerIndex;
+            _isTurnOver = false;
+        }
+
+        private void OnEndTurn(EndTurnMessage msg)
+        {
+            _isTurnOver = true;
         }
 
         private void OnPointerPress(PointerPressMessage msg)
         {
-            if (_currentPlayer == _playerIndex)
+            if (_currentPlayer == _playerIndex && !_isTurnOver)
             {
                 if (msg.GameObjectId == _stopButton.Id)
                 {
