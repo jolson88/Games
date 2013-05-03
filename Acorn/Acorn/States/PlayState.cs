@@ -15,7 +15,7 @@ namespace Acorn.States
     public class PlayState : GameState
     {
         private static int CARD_NUMBER = 4;
-        private static int WINNING_TOTAL = 10;
+        private static int WINNING_TOTAL = 5;
 
         private AcornGameLogic _logic;
 
