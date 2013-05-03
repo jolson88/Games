@@ -34,11 +34,11 @@ namespace Acorn.States
             cloud.AddComponent(new ScreenWrappingComponent());
             yield return cloud;
 
-            //var titleSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.GameTitle);
-            //var title = new GameObject();
-            //title.AddComponent(new TransformationComponent(new Vector2(800, 810), titleSprite.Width, titleSprite.Height, HorizontalAnchor.Center));
-            //title.AddComponent(new SpriteComponent(titleSprite));
-            //yield return title;
+            var titleSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.GameTitle);
+            var title = new GameObject();
+            title.AddComponent(new TransformationComponent(new Vector2(800, 810), titleSprite.Width, titleSprite.Height, HorizontalAnchor.Center));
+            title.AddComponent(new SpriteComponent(titleSprite));
+            yield return title;
 
             var playButtonSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.PlayButton);
             var playButtonPressedSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.PlayButtonPressed);
@@ -47,11 +47,11 @@ namespace Acorn.States
             playButton.AddComponent(new ButtonComponent(playButtonSprite, playButtonPressedSprite));
             yield return playButton;
 
-            //var detailsFont = ContentService.Instance.GetAsset<SpriteFont>(AcornAssets.DetailsText);
-            //var company = new GameObject();
-            //company.AddComponent(new TransformationComponent(new Vector2(0.98f, 0.98f), 0, 0, HorizontalAnchor.Right, VerticalAnchor.Bottom));
-            //company.AddComponent(new LabelComponent("Owl X Games", detailsFont, Color.White, transformedByCamera: false));
-            //yield return company;
+            var detailsFont = ContentService.Instance.GetAsset<SpriteFont>(AcornAssets.DetailsText);
+            var company = new GameObject();
+            company.AddComponent(new TransformationComponent(new Vector2(1590, 10), 0, 0, HorizontalAnchor.Right, VerticalAnchor.Bottom));
+            company.AddComponent(new LabelComponent("Owl X Games", detailsFont, Color.White));
+            yield return company;
         }
     }
 }
