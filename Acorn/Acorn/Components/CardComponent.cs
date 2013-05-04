@@ -22,7 +22,7 @@ namespace Acorn.Components
             this.CardIndex = cardIndex;
         }
 
-        public override void Loaded()
+        protected override void OnLoaded()
         {
             this.GameObject.MessageManager.AddListener<CardsShuffledMessage>(OnCardsShuffled);
             this.GameObject.MessageManager.AddListener<CardSelectedMessage>(OnCardSelected);

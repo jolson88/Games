@@ -48,7 +48,7 @@ namespace Acorn.Components
             _tempScore = 0;
         }
 
-        public override void Loaded()
+        protected override void OnLoaded()
         {
             _spriteComponent = this.GameObject.GetComponent<SpriteComponent>();
 

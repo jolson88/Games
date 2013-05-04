@@ -12,7 +12,6 @@ using Acorn.Components;
 
 namespace Acorn.Views
 {
-    // TODO: Cleanup/Refactor class
     public class PlayingHumanView : HumanGameView
     {
         private static int AVATAR_BOUNCE_HEIGHT = 60;
@@ -124,35 +123,12 @@ namespace Acorn.Views
         private void OnStartTurn(StartTurnMessage msg)
         {
             _currentPlayer = msg.PlayerIndex;
-            var player = _playerAvatars[msg.PlayerIndex];
-            var transformation = player.GetComponent<TransformationComponent>();
-            var avatar = player.GetComponent<PlayerAvatarComponent>();
-
-            var bounceFunction = Easing.GetBounceFunction(4, 1.4);
-            this.ProcessManager.AttachProcess(new TweenProcess(Easing.ConvertTo(EasingKind.EaseOut, Easing.GetSineFunction()), TimeSpan.FromSeconds(1.25), interp =>
-            {
-                transformation.PositionOffset = (avatar.DestinationOffset * (interp.Value));
-                transformation.PositionOffset = new Vector2(transformation.PositionOffset.X, AVATAR_BOUNCE_HEIGHT * (float)bounceFunction(1.0 - interp.Percentage));
-            }));
+            AnimatePlayerOnscreen();
         }
 
         private void OnEndTurn(EndTurnMessage msg)
         {
-            var player = _playerAvatars[msg.PlayerIndex];
-            var transformation = player.GetComponent<TransformationComponent>();
-            var avatar = player.GetComponent<PlayerAvatarComponent>();
-
-            var bounceFunction = Easing.GetBounceFunction(4, 1.2);
-            this.ProcessManager.AttachProcess(Process.BuildProcessChain(
-                new TweenProcess(Easing.GetLinearFunction(), TimeSpan.FromSeconds(1.25), interp =>
-                {
-                    transformation.PositionOffset = avatar.DestinationOffset * (1f - interp.Value);
-                    transformation.PositionOffset = new Vector2(transformation.PositionOffset.X, AVATAR_BOUNCE_HEIGHT * (float)bounceFunction(interp.Percentage));
-                }),
-                new ActionProcess(() => {
-                    this.MessageManager.QueueMessage(new EndTurnConfirmationMessage(_currentPlayer));   
-                })));
-
+            AnimatePlayerOffscreen();
             if (msg.Reason == EndTurnReason.LostPoints)
             {
                 AnimateFallenAcornsDisappearing();
@@ -178,6 +154,37 @@ namespace Acorn.Views
                     var wrapping = cloud.GetComponent<ScreenWrappingComponent>();
                     wrapping.IsEnabled = true;
                 })));
+        }
+
+        private void AnimatePlayerOnscreen()
+        {
+            var player = _playerAvatars[_currentPlayer];
+            var transformation = player.GetComponent<TransformationComponent>();
+            var avatar = player.GetComponent<PlayerAvatarComponent>();
+
+            var bounceFunction = Easing.GetBounceFunction(4, 1.4);
+            player.AddComponent(new MoveToComponent(avatar.OnscreenDestination,
+                TimeSpan.FromSeconds(1.25),
+                Easing.ConvertTo(EasingKind.EaseOut, Easing.GetSineFunction()),
+                Easing.Reverse(bounceFunction),
+                0,
+                AVATAR_BOUNCE_HEIGHT));
+        }
+
+        private void AnimatePlayerOffscreen()
+        {
+            var player = _playerAvatars[_currentPlayer];
+            var transformation = player.GetComponent<TransformationComponent>();
+            var avatar = player.GetComponent<PlayerAvatarComponent>();
+
+            var bounceFunction = Easing.GetBounceFunction(4, 1.2);
+            var moveComponent = new MoveToComponent(avatar.OffscreenDestination, TimeSpan.FromSeconds(1.25), Easing.GetLinearFunction(), bounceFunction, 0, AVATAR_BOUNCE_HEIGHT);
+            moveComponent.Removed += (sender, args) =>
+            {
+                transformation.Position = avatar.OffscreenDestination; // Set so bouncing offset doesn't leave us higher (top of bounce)
+                this.MessageManager.QueueMessage(new EndTurnConfirmationMessage(_currentPlayer));
+            };
+            player.AddComponent(moveComponent);
         }
 
         private void CreateFallingAcorns(int acornCount)
@@ -217,12 +224,12 @@ namespace Acorn.Views
                 var fallenAcorn = fallenAcorns[i];
                 var acornToScore = acornsToScore[i];
 
-                fallenAcorn.AddComponent(new MoveToComponent(acornToScore.GameObject.Transform.Position, animationDuration, Easing.GetLinearFunction(), Easing.GetSineFunction()));
-                this.ProcessManager.AttachProcess(new DelayProcess(animationDuration, new ActionProcess(() =>
-                {
+                var moveComponent = new MoveToComponent(acornToScore.GameObject.Transform.Position, animationDuration, Easing.GetLinearFunction(), Easing.GetSineFunction());
+                moveComponent.Removed += (sender, args) => {
                     acornToScore.IsOn = true;
                     this.GameObjectManager.RemoveGameObject(fallenAcorn);
-                })));
+                };
+                fallenAcorn.AddComponent(moveComponent);
             }
         }
     }

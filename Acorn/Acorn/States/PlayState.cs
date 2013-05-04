@@ -67,16 +67,16 @@ namespace Acorn.States
             // Generate Player Avatars
             var redSquirrelSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.RedSquirrel);
             var redSquirrel = new GameObject();
-            redSquirrel.AddComponent(new TransformationComponent(new Vector2(-100, 10), redSquirrelSprite.Width, redSquirrelSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Bottom));
+            redSquirrel.AddComponent(new TransformationComponent(Vector2.Zero, redSquirrelSprite.Width, redSquirrelSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Bottom));
             redSquirrel.AddComponent(new SpriteComponent(redSquirrelSprite));
-            redSquirrel.AddComponent(new PlayerAvatarComponent(0, new Vector2(225, 0f)));
+            redSquirrel.AddComponent(new PlayerAvatarComponent(0, new Vector2(125, 10f), new Vector2(-100, 10)));
             yield return redSquirrel;
 
             var blueSquirrelSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.BlueSquirrel);
             var blueSquirrel = new GameObject();
-            blueSquirrel.AddComponent(new TransformationComponent(new Vector2(1700, 10), blueSquirrelSprite.Width, blueSquirrelSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Bottom));
+            blueSquirrel.AddComponent(new TransformationComponent(Vector2.Zero, blueSquirrelSprite.Width, blueSquirrelSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Bottom));
             blueSquirrel.AddComponent(new SpriteComponent(blueSquirrelSprite));
-            blueSquirrel.AddComponent(new PlayerAvatarComponent(1, new Vector2(-225, 0f)));
+            blueSquirrel.AddComponent(new PlayerAvatarComponent(1, new Vector2(1475, 10f), new Vector2(1700, 10)));
             yield return blueSquirrel;
 
             // HUD - Scoring Acorns

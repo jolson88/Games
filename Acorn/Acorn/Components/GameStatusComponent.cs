@@ -14,7 +14,7 @@ namespace Acorn.Components
         private DelayProcess _textDelay;
         private LabelComponent _statusLabel;
 
-        public override void Loaded()
+        protected override void OnLoaded()
         {
             this.GameObject.MessageManager.AddListener<StartTurnMessage>(OnStartTurn);
             this.GameObject.MessageManager.AddListener<EndTurnMessage>(OnEndTurn);
