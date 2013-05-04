@@ -15,6 +15,26 @@ namespace Acorn.Components
         public int PlayerIndex { get; set; }
         public int PointNumber { get; set; }
 
+        public bool IsOn
+        {
+            get
+            {
+                return _spriteComponent.Texture == _scoredAcorn;
+            }
+            set
+            {
+                if (value == true)
+                {
+                    _spriteComponent.Texture = _scoredAcorn;
+                }
+                else
+                {
+                    _spriteComponent.Texture = _emptyAcorn;
+                }
+            }
+        }
+
+        private SpriteComponent _spriteComponent;
         private Texture2D _emptyAcorn;
         private Texture2D _scoredAcorn;
         private int _playerScore;
@@ -30,6 +50,8 @@ namespace Acorn.Components
 
         public override void Loaded()
         {
+            _spriteComponent = this.GameObject.GetComponent<SpriteComponent>();
+
             this.GameObject.MessageManager.AddListener<ScoreChangedMessage>(OnScoreChanged);
             this.GameObject.MessageManager.AddListener<CardSelectedMessage>(OnCardSelected);
             this.GameObject.MessageManager.AddListener<EndTurnMessage>(OnEndTurn);
@@ -40,7 +62,6 @@ namespace Acorn.Components
 
         private void OnScoreChanged(ScoreChangedMessage msg)
         {
-            var spriteComponent = this.GameObject.GetComponent<SpriteComponent>();
             if (this.PlayerIndex == msg.PlayerIndex)
             {
                 _playerScore = msg.Score;
@@ -49,11 +70,6 @@ namespace Acorn.Components
                 if (this.GameObject.HasComponent<SwellComponent>())
                 {
                     this.GameObject.RemoveComponent<SwellComponent>();
-                }
-
-                if (this.PointNumber <= msg.Score)
-                {
-                    spriteComponent.Texture = _scoredAcorn;
                 }
             }
         }

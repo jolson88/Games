@@ -102,6 +102,7 @@ namespace Acorn
 
                 if (_scores[_currentPlayer] >= _winningPoints)
                 {
+                    // TODO: Don't fire until end-turn confirmation has been received (for animations to finish)
                     _messageManager.QueueMessage(new GameOverMessage(_currentPlayer));
                     return;
                 }

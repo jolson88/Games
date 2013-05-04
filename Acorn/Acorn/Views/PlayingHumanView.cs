@@ -24,16 +24,21 @@ namespace Acorn.Views
         private List<GameObject> _cards;
         private int _selectedCardCount = 0;
         private Dictionary<int, GameObject> _playerAvatars;
+        private Dictionary<int, List<ScoreComponent>> _scoreAcorns;
         private Random _random;
 
         // Multiple indices allow this one view to have multiple players play with it (local multiplayer)
         public PlayingHumanView(params int[] playerIndices)
         {
             _playerAvatars = new Dictionary<int, GameObject>();
+            _scoreAcorns = new Dictionary<int, List<ScoreComponent>>();
             _playerControllers = new List<PlayerController>();
             _playerIndices = playerIndices;
             _cards = new List<GameObject>();
             _random = new Random();
+
+            _scoreAcorns.Add(0, new List<ScoreComponent>());
+            _scoreAcorns.Add(1, new List<ScoreComponent>());
         }
 
         protected override void OnInitialize()
@@ -73,6 +78,11 @@ namespace Acorn.Views
             {
                 var avatar = msg.GameObject.GetComponent<PlayerAvatarComponent>();
                 _playerAvatars.Add(avatar.PlayerIndex, msg.GameObject);
+            }
+            else if (msg.GameObject.HasComponent<ScoreComponent>())
+            {
+                var acorn = msg.GameObject.GetComponent<ScoreComponent>();
+                _scoreAcorns[acorn.PlayerIndex].Add(acorn);
             }
         }
 
@@ -119,7 +129,7 @@ namespace Acorn.Views
             var avatar = player.GetComponent<PlayerAvatarComponent>();
 
             var bounceFunction = Easing.GetBounceFunction(4, 1.4);
-            this.ProcessManager.AttachProcess(new TweenProcess(Easing.GetSineFunction(), EasingKind.EaseOut, TimeSpan.FromSeconds(1.25), interp =>
+            this.ProcessManager.AttachProcess(new TweenProcess(Easing.ConvertTo(EasingKind.EaseOut, Easing.GetSineFunction()), TimeSpan.FromSeconds(1.25), interp =>
             {
                 transformation.PositionOffset = (avatar.DestinationOffset * (interp.Value));
                 transformation.PositionOffset = new Vector2(transformation.PositionOffset.X, AVATAR_BOUNCE_HEIGHT * (float)bounceFunction(1.0 - interp.Percentage));
@@ -134,7 +144,7 @@ namespace Acorn.Views
 
             var bounceFunction = Easing.GetBounceFunction(4, 1.2);
             this.ProcessManager.AttachProcess(Process.BuildProcessChain(
-                new TweenProcess(Easing.GetLinearFunction(), EasingKind.EaseIn, TimeSpan.FromSeconds(1.25), interp =>
+                new TweenProcess(Easing.GetLinearFunction(), TimeSpan.FromSeconds(1.25), interp =>
                 {
                     transformation.PositionOffset = avatar.DestinationOffset * (1f - interp.Value);
                     transformation.PositionOffset = new Vector2(transformation.PositionOffset.X, AVATAR_BOUNCE_HEIGHT * (float)bounceFunction(interp.Percentage));
@@ -155,10 +165,10 @@ namespace Acorn.Views
 
         private void AnimateScreenIn()
         {
-            var screenHeight = GraphicsService.Instance.GraphicsDevice.Viewport.Height;
+            var screenHeight = GraphicsService.Instance.DesignedScreenSize.Y;
             this.MessageManager.TriggerMessage(new NudgeCameraMessage(new Vector2(0, screenHeight)));
             this.ProcessManager.AttachProcess(Process.BuildProcessChain(
-                new TweenProcess(Easing.GetElasticFunction(oscillations: 12, springiness: 20), EasingKind.EaseOut, TimeSpan.FromSeconds(4.2), interp =>
+                new TweenProcess(Easing.ConvertTo(EasingKind.EaseOut, Easing.GetElasticFunction(oscillations: 12, springiness: 20)), TimeSpan.FromSeconds(4.2), interp =>
                 {
                     this.MessageManager.QueueMessage(new NudgeCameraMessage(new Vector2(0, screenHeight - (screenHeight * interp.Value))));
                 }),
@@ -179,8 +189,9 @@ namespace Acorn.Views
                 var randX = ((float)_random.NextDouble() * 960) + 320;
 
                 var obj = new GameObject("FallenAcorn");
-                obj.AddComponent(new TransformationComponent(new Vector2(randX, 10), acornSprite.Width, acornSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Bottom));
+                obj.AddComponent(new TransformationComponent(new Vector2(randX, GraphicsService.Instance.DesignedScreenSize.Y + acornSprite.Height), acornSprite.Width, acornSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
                 obj.AddComponent(new SpriteComponent(acornSprite));
+                obj.AddComponent(new MoveToComponent(new Vector2(randX, 40), TimeSpan.FromSeconds(1.0), Easing.GetLinearFunction(), Easing.ConvertTo(EasingKind.EaseOut, Easing.GetSineFunction())));
                 this.GameObjectManager.AddGameObject(obj);
                 
             }
@@ -197,8 +208,22 @@ namespace Acorn.Views
 
         private void AnimateFallenAcornsScoring()
         {
-            // Temporary until we create special animation
-            AnimateFallenAcornsDisappearing();
+            var animationDuration = TimeSpan.FromSeconds(0.7);
+
+            var fallenAcorns = this.GameObjectManager.GetAllGameObjectsWithTag("FallenAcorn").ToList();
+            var acornsToScore = _scoreAcorns[_currentPlayer].Where(sc => !sc.IsOn).OrderBy(sc => sc.PointNumber).ToList();
+            for (int i = 0; i < Math.Min(fallenAcorns.Count(), acornsToScore.Count()); i++)
+            {
+                var fallenAcorn = fallenAcorns[i];
+                var acornToScore = acornsToScore[i];
+
+                fallenAcorn.AddComponent(new MoveToComponent(acornToScore.GameObject.Transform.Position, animationDuration, Easing.GetLinearFunction(), Easing.GetSineFunction()));
+                this.ProcessManager.AttachProcess(new DelayProcess(animationDuration, new ActionProcess(() =>
+                {
+                    acornToScore.IsOn = true;
+                    this.GameObjectManager.RemoveGameObject(fallenAcorn);
+                })));
+            }
         }
     }
 }
