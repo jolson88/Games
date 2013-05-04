@@ -15,6 +15,8 @@ namespace Acorn.Views
     // TODO: Cleanup/Refactor class
     public class PlayingHumanView : HumanGameView
     {
+        private static int AVATAR_BOUNCE_HEIGHT = 60;
+
         private int _currentPlayer;
         private int[] _playerIndices;
         private List<PlayerController> _playerControllers;
@@ -120,7 +122,7 @@ namespace Acorn.Views
             this.ProcessManager.AttachProcess(new TweenProcess(Easing.GetSineFunction(), EasingKind.EaseOut, TimeSpan.FromSeconds(1.25), interp =>
             {
                 transformation.PositionOffset = (avatar.DestinationOffset * (interp.Value));
-                transformation.PositionOffset = new Vector2(transformation.PositionOffset.X, -0.1f * (float)bounceFunction(1.0 - interp.Percentage));
+                transformation.PositionOffset = new Vector2(transformation.PositionOffset.X, AVATAR_BOUNCE_HEIGHT * (float)bounceFunction(1.0 - interp.Percentage));
             }));
         }
 
@@ -135,7 +137,7 @@ namespace Acorn.Views
                 new TweenProcess(Easing.GetLinearFunction(), EasingKind.EaseIn, TimeSpan.FromSeconds(1.25), interp =>
                 {
                     transformation.PositionOffset = avatar.DestinationOffset * (1f - interp.Value);
-                    transformation.PositionOffset = new Vector2(transformation.PositionOffset.X, -0.1f * (float)bounceFunction(interp.Percentage));
+                    transformation.PositionOffset = new Vector2(transformation.PositionOffset.X, AVATAR_BOUNCE_HEIGHT * (float)bounceFunction(interp.Percentage));
                 }),
                 new ActionProcess(() => {
                     this.MessageManager.QueueMessage(new EndTurnConfirmationMessage(_currentPlayer));   
@@ -154,11 +156,18 @@ namespace Acorn.Views
         private void AnimateScreenIn()
         {
             var screenHeight = GraphicsService.Instance.GraphicsDevice.Viewport.Height;
-            this.MessageManager.TriggerMessage(new MoveCameraMessage(new Vector2(0, -screenHeight)));
-            this.ProcessManager.AttachProcess(new TweenProcess(Easing.GetElasticFunction(oscillations: 12, springiness: 20), EasingKind.EaseOut, TimeSpan.FromSeconds(3.8), interp =>
-            {
-                this.MessageManager.QueueMessage(new MoveCameraMessage(new Vector2(0, -screenHeight + (screenHeight * interp.Value))));
-            }));
+            this.MessageManager.TriggerMessage(new NudgeCameraMessage(new Vector2(0, screenHeight)));
+            this.ProcessManager.AttachProcess(Process.BuildProcessChain(
+                new TweenProcess(Easing.GetElasticFunction(oscillations: 12, springiness: 20), EasingKind.EaseOut, TimeSpan.FromSeconds(4.2), interp =>
+                {
+                    this.MessageManager.QueueMessage(new NudgeCameraMessage(new Vector2(0, screenHeight - (screenHeight * interp.Value))));
+                }),
+                new ActionProcess(() => {
+                    // Now that we are animated in (crazy camera movements are done), we can enable screen wrapping again
+                    var cloud = this.GameObjectManager.GetAllGameObjectsWithTag("Cloud").First();
+                    var wrapping = cloud.GetComponent<ScreenWrappingComponent>();
+                    wrapping.IsEnabled = true;
+                })));
         }
 
         private void CreateFallingAcorns(int acornCount)
@@ -167,10 +176,10 @@ namespace Acorn.Views
             for (int i = 0; i < acornCount; i++)
             {
                 // Random value between 0.2 and 0.8
-                var randX = ((float)_random.NextDouble() * 0.6f) + 0.2f;
+                var randX = ((float)_random.NextDouble() * 960) + 320;
 
                 var obj = new GameObject("FallenAcorn");
-                obj.AddComponent(new TransformationComponent(new Vector2(randX, 0.98f), acornSprite.Width, acornSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Bottom));
+                obj.AddComponent(new TransformationComponent(new Vector2(randX, 10), acornSprite.Width, acornSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Bottom));
                 obj.AddComponent(new SpriteComponent(acornSprite));
                 this.GameObjectManager.AddGameObject(obj);
                 
