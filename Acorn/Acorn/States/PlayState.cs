@@ -34,7 +34,7 @@ namespace Acorn.States
         {
             var bgSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.Background);
             var bg = new GameObject();
-            bg.AddComponent(new TransformationComponent(new Vector2(0, 0), GraphicsService.Instance.GraphicsDevice.Viewport.Width, GraphicsService.Instance.GraphicsDevice.Viewport.Height, transformedByCamera: false));
+            bg.AddComponent(new TransformationComponent(new Vector2(0, 0), GraphicsService.Instance.GraphicsDevice.Viewport.Width, GraphicsService.Instance.GraphicsDevice.Viewport.Height));
             bg.AddComponent(new BackgroundComponent(bgSprite));
             yield return bg;
 
