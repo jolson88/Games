@@ -30,7 +30,7 @@ namespace Acorn.States
             var bgSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.Background);
             var bg = new GameObject();
             bg.AddComponent(new TransformationComponent(new Vector2(0, 0), GraphicsService.Instance.GraphicsDevice.Viewport.Width, GraphicsService.Instance.GraphicsDevice.Viewport.Height, transformedByCamera: false));
-            bg.AddComponent(new SpriteComponent(bgSprite));
+            bg.AddComponent(new BackgroundComponent(bgSprite));
             yield return bg;
 
             var cloudSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.Cloud);
@@ -44,7 +44,7 @@ namespace Acorn.States
 
             var title = new GameObject();
             string text = (_winningPlayer == 0) ? "Red Player Wins!!!" : "Blue Player Wins!!!";
-            title.AddComponent(new TransformationComponent(new Vector2(800, 765), 0, 0, HorizontalAnchor.Center));
+            title.AddComponent(new TransformationComponent(new Vector2(800, 765), 0, 0, HorizontalAnchor.Center, VerticalAnchor.Top));
             title.AddComponent(new LabelComponent(text, ContentService.Instance.GetAsset<SpriteFont>(AcornAssets.TitleText), new Color(30, 30, 30)));
             yield return title;
 

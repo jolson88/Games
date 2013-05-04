@@ -23,7 +23,7 @@ namespace Acorn.States
             var bgSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.Background);
             var bg = new GameObject();
             bg.AddComponent(new TransformationComponent(new Vector2(0f, 0f), GraphicsService.Instance.GraphicsDevice.Viewport.Width, GraphicsService.Instance.GraphicsDevice.Viewport.Height, transformedByCamera: false));
-            bg.AddComponent(new SpriteComponent(bgSprite));
+            bg.AddComponent(new BackgroundComponent(bgSprite));
             yield return bg;
 
             var cloudSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.Cloud);
@@ -36,7 +36,7 @@ namespace Acorn.States
 
             var titleSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.GameTitle);
             var title = new GameObject();
-            title.AddComponent(new TransformationComponent(new Vector2(800, 810), titleSprite.Width, titleSprite.Height, HorizontalAnchor.Center));
+            title.AddComponent(new TransformationComponent(new Vector2(800, 810), titleSprite.Width, titleSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Top));
             title.AddComponent(new SpriteComponent(titleSprite));
             yield return title;
 
