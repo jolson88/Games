@@ -15,6 +15,7 @@ namespace Acorn
         private Random _random;
         private int[] _scores;
         private int _currentPlayer;
+        private int? _winningPlayer;
         private int _winningPoints;
         private int _runningPoints;
         private Dictionary<int, int?> _cardValues;
@@ -81,31 +82,40 @@ namespace Acorn
         {
             if (msg.PlayerIndex == _currentPlayer)
             {
-                var nextPlayer = (_currentPlayer == 0) ? 1 : 0;
+                if (_winningPlayer.HasValue)
+                {
+                    _messageManager.QueueMessage(new GameOverMessage(_currentPlayer));
+                }
+                else
+                {
+                    var nextPlayer = (_currentPlayer == 0) ? 1 : 0;
 
-                _currentPlayer = nextPlayer;
-                _runningPoints = 0;
+                    _currentPlayer = nextPlayer;
+                    _runningPoints = 0;
 
-                ShuffleCards();
-                _messageManager.QueueMessage(new StartTurnMessage(_currentPlayer));
+                    ShuffleCards();
+                    _messageManager.QueueMessage(new StartTurnMessage(_currentPlayer));
+                }
             }
         }
 
         private void EndPlayerTurn(EndTurnReason reason)
         {
-            _messageManager.QueueMessage(new EndTurnMessage(_currentPlayer, reason));
-
+            if (reason == EndTurnReason.LostPoints)
+            {
+                _messageManager.QueueMessage(new EndTurnMessage(_currentPlayer, reason));
+            }
             if (reason == EndTurnReason.WonPoints)
             {
                 _scores[_currentPlayer] += _runningPoints;
-                _messageManager.QueueMessage(new ScoreChangedMessage(_currentPlayer, _scores[_currentPlayer]));
-
                 if (_scores[_currentPlayer] >= _winningPoints)
                 {
-                    // TODO: Don't fire until end-turn confirmation has been received (for animations to finish)
-                    _messageManager.QueueMessage(new GameOverMessage(_currentPlayer));
-                    return;
+                    _winningPlayer = _currentPlayer;
+                    reason = EndTurnReason.WonGame;
                 }
+
+                _messageManager.QueueMessage(new EndTurnMessage(_currentPlayer, reason));
+                _messageManager.QueueMessage(new ScoreChangedMessage(_currentPlayer, _scores[_currentPlayer]));
             }
         }
 

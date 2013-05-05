@@ -44,6 +44,7 @@ namespace Acorn
         public static string DingAcorn6 = "Sounds\\Acorn6";
         public static string DingAcorn7 = "Sounds\\Acorn7";
         public static string DingAcorn8 = "Sounds\\Acorn8";
+        public static string DingSelectCard = "Sounds\\SelectCard";
         public static string BuzzZeroCard = "Sounds\\ZeroCard";
     }
 }

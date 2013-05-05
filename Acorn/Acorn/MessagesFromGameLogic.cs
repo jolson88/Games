@@ -10,7 +10,8 @@ namespace Acorn
     public enum EndTurnReason
     {
         LostPoints,
-        WonPoints
+        WonPoints,
+        WonGame
     }
 
     /// <summary>

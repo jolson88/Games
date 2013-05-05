@@ -110,6 +110,7 @@ namespace Acorn.Views
                 var card = _cards.Where(go => go.GetComponent<CardComponent>().CardIndex == msg.CardIndex).First();
                 card.AddComponent(new ShakeComponent(15, TimeSpan.FromSeconds(1.25)));
                 _selectedCardCount = 0;
+                this.MessageManager.QueueMessage(new PlaySoundEffectMessage(ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.BuzzZeroCard)));
             }
             else
             {
@@ -127,6 +128,7 @@ namespace Acorn.Views
                         this.MessageManager.QueueMessage(new CardShuffleRequestMessage(_currentPlayer));
                     })));
                 }
+                this.MessageManager.QueueMessage(new PlaySoundEffectMessage(ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.DingSelectCard)));
             }
         }
 
@@ -146,7 +148,11 @@ namespace Acorn.Views
 
         private void OnEndTurn(EndTurnMessage msg)
         {
-            AnimatePlayerOffscreen();
+            if (msg.Reason != EndTurnReason.WonGame)
+            {
+                AnimatePlayerOffscreen();
+            }
+
             if (msg.Reason == EndTurnReason.LostPoints)
             {
                 AnimateFallenAcornsDisappearing();
@@ -205,7 +211,6 @@ namespace Acorn.Views
             moveComponent.Removed += (sender, args) =>
             {
                 transformation.Position = avatar.OffscreenDestination; // Set so bouncing offset doesn't leave us higher (top of bounce)
-                this.MessageManager.QueueMessage(new EndTurnConfirmationMessage(_currentPlayer));
             };
             player.AddComponent(moveComponent);
         }
@@ -248,6 +253,7 @@ namespace Acorn.Views
             {
                 this.GameObjectManager.RemoveGameObject(acorn);
             }
+            this.MessageManager.QueueMessage(new EndTurnConfirmationMessage(_currentPlayer));
         }
 
         private void AnimateFallenAcornsScoring()
@@ -256,14 +262,15 @@ namespace Acorn.Views
 
             var fallenAcorns = this.GameObjectManager.GetAllGameObjectsWithTag("FallenAcorn").ToList();
             var acornsToScore = _scoreAcorns[_currentPlayer].Where(sc => !sc.IsOn).OrderBy(sc => sc.PointNumber).ToList();
-            for (int i = 0; i < Math.Min(fallenAcorns.Count(), acornsToScore.Count()); i++)
+            var loopCount = Math.Min(fallenAcorns.Count(), acornsToScore.Count());
+            for (int i = 0; i < loopCount; i++)
             {
                 var fallenAcorn = fallenAcorns[i];
                 var acornToScore = acornsToScore[i];
 
-                // Provide some randomness that gets "longer" the more acorns we animate (so there is a sense of rhythm of acorns scoring)
                 var currentScore = _playerScores[_currentPlayer];
                 var scoreIndexOffset = i;
+                var lastAcorn = (i == loopCount - 1);
                 this.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(0.24 * i), new ActionProcess(() =>
                 {
                     var moveComponent = new MoveToComponent(acornToScore.GameObject.Transform.Position, animationDuration, Easing.GetLinearFunction(), Easing.GetSineFunction());
@@ -271,7 +278,12 @@ namespace Acorn.Views
                     {
                         acornToScore.IsOn = true;
                         this.GameObjectManager.RemoveGameObject(fallenAcorn);
-                        this.MessageManager.QueueMessage(new PlaySoundEffectMessage(_scoringSounds[currentScore + 1 + scoreIndexOffset]));
+                        this.MessageManager.QueueMessage(new PlaySoundEffectMessage(_scoringSounds[currentScore + scoreIndexOffset]));
+
+                        if (lastAcorn)
+                        {
+                            this.MessageManager.QueueMessage(new EndTurnConfirmationMessage(_currentPlayer));
+                        }
                     };
                     fallenAcorn.AddComponent(moveComponent);
 

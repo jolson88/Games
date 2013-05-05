@@ -10,13 +10,13 @@ AcornContent\Sprites\StopButtonPressed.xnb
 AcornContent\Sprites\RedSquirrel.xnb
 AcornContent\Sprites\BlueSquirrel.xnb
 AcornContent\Sprites\ScoreMeter.xnb
-AcornContent\Fonts\Title.xnb
 AcornContent\Sprites\MenuButton.xnb
 AcornContent\Sprites\MenuButtonPressed.xnb
 AcornContent\Sprites\PlayButton.xnb
 AcornContent\Sprites\PlayButtonPressed.xnb
 AcornContent\Sprites\AcornEmpty.xnb
 AcornContent\Sprites\GameTitle.xnb
+AcornContent\Fonts\Title.xnb
 AcornContent\Fonts\Details.xnb
 AcornContent\Sounds\Acorn1.xnb
 AcornContent\Sounds\Acorn2.xnb
@@ -27,3 +27,4 @@ AcornContent\Sounds\Acorn6.xnb
 AcornContent\Sounds\Acorn7.xnb
 AcornContent\Sounds\Acorn8.xnb
 AcornContent\Sounds\ZeroCard.xnb
+AcornContent\Sounds\SelectCard.xnb
