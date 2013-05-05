@@ -84,7 +84,7 @@ namespace Acorn.States
             var emptyAcornSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.EmptyAcorn);
             for (int pointNumber = 0; pointNumber < WINNING_TOTAL; pointNumber++)
             {
-                var obj = new GameObject(depth: -100);
+                var obj = new GameObject();
                 obj.AddComponent(new TransformationComponent(new Vector2(80, 900 - (70 * pointNumber) - 70), emptyAcornSprite.Width, emptyAcornSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
                 obj.AddComponent(new SpriteComponent(emptyAcornSprite));
                 obj.AddComponent(new ScoreComponent(0, pointNumber + 1));
@@ -94,7 +94,7 @@ namespace Acorn.States
             // Generate player two's score acorns
             for (int pointNumber = 0; pointNumber < WINNING_TOTAL; pointNumber++)
             {
-                var obj = new GameObject(depth: -100);
+                var obj = new GameObject();
                 obj.AddComponent(new TransformationComponent(new Vector2(1520, 900 - (70 * pointNumber) - 70), emptyAcornSprite.Width, emptyAcornSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
                 obj.AddComponent(new SpriteComponent(emptyAcornSprite));
                 obj.AddComponent(new ScoreComponent(1, pointNumber + 1));
