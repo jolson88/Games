@@ -190,16 +190,30 @@ namespace Acorn.Views
         private void CreateFallingAcorns(int acornCount)
         {
             var acornSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.Acorn);
+            var randX = 0.0;
+            var randDelay = TimeSpan.Zero;
             for (int i = 0; i < acornCount; i++)
             {
                 // Random value between 0.2 and 0.8
-                var randX = ((float)_random.NextDouble() * 960) + 320;
+                randX = (GetNextDouble(randX, 0.05) * 960.0) + 320.0;
+                randDelay = TimeSpan.FromSeconds(_random.NextDouble() * 0.25);
 
-                var obj = new GameObject("FallenAcorn");
-                obj.AddComponent(new TransformationComponent(new Vector2(randX, GraphicsService.Instance.DesignedScreenSize.Y + acornSprite.Height), acornSprite.Width, acornSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
-                obj.AddComponent(new SpriteComponent(acornSprite));
-                obj.AddComponent(new MoveToComponent(new Vector2(randX, 40), TimeSpan.FromSeconds(1.0), Easing.GetLinearFunction(), Easing.ConvertTo(EasingKind.EaseOut, Easing.GetSineFunction())));
-                this.GameObjectManager.AddGameObject(obj);
+                var newX = randX;
+                this.ProcessManager.AttachProcess(new DelayProcess(randDelay, new ActionProcess(() =>
+                {
+                    var obj = new GameObject("FallenAcorn");
+                    obj.AddComponent(new TransformationComponent(new Vector2((float)newX, GraphicsService.Instance.DesignedScreenSize.Y + acornSprite.Height), 
+                                            acornSprite.Width, 
+                                            acornSprite.Height, 
+                                            HorizontalAnchor.Center, 
+                                            VerticalAnchor.Center) 
+                                            {
+                                                Rotation = 1.5f 
+                                            });
+                    obj.AddComponent(new SpriteComponent(acornSprite));
+                    obj.AddComponent(new MoveToComponent(new Vector2((float)newX, 40), TimeSpan.FromSeconds(0.8), Easing.GetLinearFunction(), Easing.ConvertTo(EasingKind.EaseOut, Easing.GetSineFunction())));
+                    this.GameObjectManager.AddGameObject(obj);
+                })));
                 
             }
         }
@@ -231,6 +245,16 @@ namespace Acorn.Views
                 };
                 fallenAcorn.AddComponent(moveComponent);
             }
+        }
+
+        private double GetNextDouble(double previousValue, double minimumSpread)
+        {
+            double newValue = 0;
+            do
+            {
+                newValue = _random.NextDouble();
+            } while (Math.Abs(previousValue - newValue) <= minimumSpread);
+            return newValue;
         }
     }
 }
