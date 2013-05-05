@@ -13,6 +13,7 @@ namespace Acorn.Components
     public class CardComponent : GameObjectComponent
     {
         public int CardIndex { get; set; }
+        public int CardValue { get; set; }
 
         private SpriteComponent _spriteComponent;
         private Dictionary<int, Texture2D> _cardSprites;
@@ -20,6 +21,7 @@ namespace Acorn.Components
         public CardComponent(int cardIndex)
         {
             this.CardIndex = cardIndex;
+            this.CardValue = -1;
         }
 
         protected override void OnLoaded()
@@ -38,12 +40,14 @@ namespace Acorn.Components
         {
             if (msg.CardIndex == this.CardIndex)
             {
+                this.CardValue = msg.CardValue;
                 _spriteComponent.Texture = _cardSprites[msg.CardValue];
             }
         }
 
         private void OnCardsShuffled(CardsShuffledMessage msg)
         {
+            this.CardValue = -1;
             _spriteComponent.Texture = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.CardBack);
         }
     }

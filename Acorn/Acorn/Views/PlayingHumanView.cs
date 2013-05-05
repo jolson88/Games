@@ -108,7 +108,7 @@ namespace Acorn.Views
             if (msg.CardValue == 0)
             {
                 var card = _cards.Where(go => go.GetComponent<CardComponent>().CardIndex == msg.CardIndex).First();
-                card.AddComponent(new ShakeComponent(15, TimeSpan.FromSeconds(1.25)));
+                card.AddComponent(new ShakeComponent(20, TimeSpan.FromSeconds(2.00)));
                 _selectedCardCount = 0;
                 this.MessageManager.QueueMessage(new PlaySoundEffectMessage(ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.BuzzZeroCard)));
             }
@@ -248,12 +248,40 @@ namespace Acorn.Views
 
         private void AnimateFallenAcornsDisappearing()
         {
+            var spinRotationCount = 8;
+            var zeroCard = _cards.Where(go => go.GetComponent<CardComponent>().CardValue == 0).First();
+            this.ProcessManager.AttachProcess(Process.BuildProcessChain(
+                new TweenProcess(Easing.ConvertTo(EasingKind.EaseOut, Easing.GetSineFunction()), TimeSpan.FromSeconds(1.8), interp =>
+                {
+                    zeroCard.Transform.Rotation = (float)(2 * Math.PI * spinRotationCount) * interp.Value;
+                }),
+                new ActionProcess(() => {
+                    this.MessageManager.QueueMessage(new EndTurnConfirmationMessage(_currentPlayer));
+                })));
+
             var acorns = this.GameObjectManager.GetAllGameObjectsWithTag("FallenAcorn");
             foreach (var acorn in acorns)
             {
-                this.GameObjectManager.RemoveGameObject(acorn);
+                acorn.AddComponent(new ShakeComponent(15, TimeSpan.FromSeconds(1.4), shakeHarderAtEnd: true));
+                this.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(0.7), new ActionProcess(() =>
+                {
+                    this.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(0.5 * _random.NextDouble()), new ActionProcess(() => 
+                    {
+                        var moveComponent = new MoveToComponent(zeroCard.Transform.Position, TimeSpan.FromSeconds(0.65), Easing.GetLinearFunction(), Easing.GetSineFunction());
+                        moveComponent.Removed += (moveRemoveSender, moveRemoveArgs) =>
+                        {
+                            this.GameObjectManager.RemoveGameObject(acorn);
+                        };
+                        acorn.AddComponent(moveComponent);
+
+                        var originalRotation = acorn.Transform.Rotation;
+                        this.ProcessManager.AttachProcess(new TweenProcess(TimeSpan.FromSeconds(0.5), interp =>
+                        {
+                            acorn.Transform.Rotation = originalRotation - (originalRotation * interp.Value);
+                        }));
+                    })));
+                })));
             }
-            this.MessageManager.QueueMessage(new EndTurnConfirmationMessage(_currentPlayer));
         }
 
         private void AnimateFallenAcornsScoring()
