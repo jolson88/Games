@@ -9,11 +9,12 @@ using Microsoft.Xna.Framework.Input;
 
 namespace Acorn
 {
-    public class DebugCameraController
+    public class DebugController
     {
         private Random _random;
-        private MessageManager _messageManager;
+        private HumanGameView _view;
         private ProcessManager _processManager;
+        private MessageManager _messageManager;
         private bool _rotateCamera = false;
         private float _rotationSpeedPerSecond;
         private float _currentRotation = 0f;
@@ -23,16 +24,17 @@ namespace Acorn
         private Vector2 _currentTranslation = Vector2.Zero;
         private int _maxShakeDistance;
 
-        public DebugCameraController(MessageManager messageManager)
+        public DebugController(HumanGameView view)
         {
-            _processManager = new ProcessManager();
+            _view = view;
             _rotationSpeedPerSecond = 0.7f * (2f * (float)Math.PI);
             _zoomSpeedPerSecond = 0.4f;
             _maxShakeDistance = 30;
 
             _random = new Random();
 
-            _messageManager = messageManager;
+            _processManager = new ProcessManager();
+            _messageManager = view.MessageManager;
             _messageManager.AddListener<KeyDownMessage>(OnKeyDown);
             _messageManager.AddListener<KeyUpMessage>(OnKeyUp);
         }
@@ -67,7 +69,17 @@ namespace Acorn
                     _messageManager.QueueMessage(new NudgeCameraMessage(Vector2.Zero));
                 }));
 
-                _processManager.AttachProcess(process);
+                _processManager.AttachProcess(Process.BuildProcessChain(
+                    new TweenProcess(TimeSpan.FromSeconds(1), interp =>
+                    {
+                        var translation = new Vector2(_maxShakeDistance - (_maxShakeDistance * interp.Value), 0);
+                        translation = Vector2.Transform(translation, Matrix.CreateRotationZ((float)(_random.NextDouble() * (2f * Math.PI))));
+                        _messageManager.QueueMessage(new NudgeCameraMessage(translation));
+                    }),
+                    new ActionProcess(() =>
+                    {
+                        _messageManager.QueueMessage(new NudgeCameraMessage(Vector2.Zero));
+                    })));
             }
 
             if (msg.Key == Keys.F1)
@@ -103,6 +115,10 @@ namespace Acorn
             if (msg.Key == Keys.F9)
             {
                 _rotateCamera = true;
+            }
+            if (msg.Key == Keys.F12)
+            {
+                _view.SceneGraph.DebugVisuals = !_view.SceneGraph.DebugVisuals;
             }
         }
 

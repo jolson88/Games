@@ -20,7 +20,7 @@ namespace Acorn.Views
         private int _currentPlayer;
         private int[] _playerIndices;
         private List<PlayerController> _playerControllers;
-        private DebugCameraController _cameraController;
+        private DebugController _cameraController;
         private List<GameObject> _cards;
         private int _selectedCardCount = 0;
         private Dictionary<int, GameObject> _playerAvatars;
@@ -53,7 +53,7 @@ namespace Acorn.Views
                 _playerControllers.Add(new PlayerController(_playerIndices[i], this.MessageManager));
             }
 
-            _cameraController = new DebugCameraController(this.MessageManager);
+            _cameraController = new DebugController(this);
 
             this.MessageManager.AddListener<GameObjectLoadedMessage>(OnNewGameObject);
             this.MessageManager.AddListener<CardSelectedMessage>(OnCardSelected);

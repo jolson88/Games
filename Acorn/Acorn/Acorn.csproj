@@ -129,7 +129,7 @@
   <ItemGroup>
     <Compile Include="AcornAssets.cs" />
     <Compile Include="Components\PlayerAvatarComponent.cs" />
-    <Compile Include="DebugCameraController.cs" />
+    <Compile Include="DebugController.cs" />
     <Compile Include="Views\GameOverHumanView.cs" />
     <Compile Include="Views\MenuHumanView.cs" />
     <Compile Include="Views\PlayingHumanView.cs" />
