@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Hiromi;
 using Hiromi.Components;
@@ -23,8 +24,11 @@ namespace Acorn.Views
         private List<GameObject> _cards;
         private int _selectedCardCount = 0;
         private Dictionary<int, GameObject> _playerAvatars;
+        private int[] _playerScores;
         private Dictionary<int, List<ScoreComponent>> _scoreAcorns;
         private Random _random;
+        private float[] _acornRotations = new float[] { -1.5f, -1.2f, -0.9f, 0.9f, 1.2f, 1.5f };
+        private SoundEffect[] _scoringSounds;
 
         // Multiple indices allow this one view to have multiple players play with it (local multiplayer)
         public PlayingHumanView(params int[] playerIndices)
@@ -38,6 +42,8 @@ namespace Acorn.Views
 
             _scoreAcorns.Add(0, new List<ScoreComponent>());
             _scoreAcorns.Add(1, new List<ScoreComponent>());
+
+            _playerScores = new int[] { 0, 0 };
         }
 
         protected override void OnInitialize()
@@ -54,6 +60,18 @@ namespace Acorn.Views
             this.MessageManager.AddListener<KeyDownMessage>(OnKeyDown);
             this.MessageManager.AddListener<StartTurnMessage>(OnStartTurn);
             this.MessageManager.AddListener<EndTurnMessage>(OnEndTurn);
+            this.MessageManager.AddListener<ScoreChangedMessage>(OnScoreChanged);
+
+            _scoringSounds = new SoundEffect[] {
+                ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.DingAcorn1),
+                ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.DingAcorn2),
+                ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.DingAcorn3),
+                ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.DingAcorn4),
+                ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.DingAcorn5),
+                ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.DingAcorn6),
+                ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.DingAcorn7),
+                ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.DingAcorn8)
+            };
 
             this.AnimateScreenIn();
         }
@@ -139,6 +157,11 @@ namespace Acorn.Views
             }
         }
 
+        private void OnScoreChanged(ScoreChangedMessage msg)
+        {
+            _playerScores[msg.PlayerIndex] = msg.Score;
+        }
+
         private void AnimateScreenIn()
         {
             var screenHeight = GraphicsService.Instance.DesignedScreenSize.Y;
@@ -208,7 +231,7 @@ namespace Acorn.Views
                                             HorizontalAnchor.Center, 
                                             VerticalAnchor.Center) 
                                             {
-                                                Rotation = 1.5f 
+                                                Rotation = _acornRotations[_random.Next(_acornRotations.Length)]
                                             });
                     obj.AddComponent(new SpriteComponent(acornSprite));
                     obj.AddComponent(new MoveToComponent(new Vector2((float)newX, 40), TimeSpan.FromSeconds(0.8), Easing.GetLinearFunction(), Easing.ConvertTo(EasingKind.EaseOut, Easing.GetSineFunction())));
@@ -229,7 +252,7 @@ namespace Acorn.Views
 
         private void AnimateFallenAcornsScoring()
         {
-            var animationDuration = TimeSpan.FromSeconds(0.7);
+            var animationDuration = TimeSpan.FromSeconds(0.6);
 
             var fallenAcorns = this.GameObjectManager.GetAllGameObjectsWithTag("FallenAcorn").ToList();
             var acornsToScore = _scoreAcorns[_currentPlayer].Where(sc => !sc.IsOn).OrderBy(sc => sc.PointNumber).ToList();
@@ -238,12 +261,26 @@ namespace Acorn.Views
                 var fallenAcorn = fallenAcorns[i];
                 var acornToScore = acornsToScore[i];
 
-                var moveComponent = new MoveToComponent(acornToScore.GameObject.Transform.Position, animationDuration, Easing.GetLinearFunction(), Easing.GetSineFunction());
-                moveComponent.Removed += (sender, args) => {
-                    acornToScore.IsOn = true;
-                    this.GameObjectManager.RemoveGameObject(fallenAcorn);
-                };
-                fallenAcorn.AddComponent(moveComponent);
+                // Provide some randomness that gets "longer" the more acorns we animate (so there is a sense of rhythm of acorns scoring)
+                var currentScore = _playerScores[_currentPlayer];
+                var scoreIndexOffset = i;
+                this.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(0.24 * i), new ActionProcess(() =>
+                {
+                    var moveComponent = new MoveToComponent(acornToScore.GameObject.Transform.Position, animationDuration, Easing.GetLinearFunction(), Easing.GetSineFunction());
+                    moveComponent.Removed += (sender, args) =>
+                    {
+                        acornToScore.IsOn = true;
+                        this.GameObjectManager.RemoveGameObject(fallenAcorn);
+                        this.MessageManager.QueueMessage(new PlaySoundEffectMessage(_scoringSounds[currentScore + 1 + scoreIndexOffset]));
+                    };
+                    fallenAcorn.AddComponent(moveComponent);
+
+                    var originalRotation = fallenAcorn.Transform.Rotation;
+                    this.ProcessManager.AttachProcess(new TweenProcess(animationDuration, interp =>
+                    {
+                        fallenAcorn.Transform.Rotation = originalRotation - (originalRotation * interp.Value);
+                    }));
+                })));
             }
         }
 

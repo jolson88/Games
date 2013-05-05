@@ -236,6 +236,42 @@
       <Link>Content\Fonts\Details.xnb</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sounds\Acorn1.xnb">
+      <Link>Content\Sounds\Acorn1.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sounds\Acorn2.xnb">
+      <Link>Content\Sounds\Acorn2.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sounds\Acorn3.xnb">
+      <Link>Content\Sounds\Acorn3.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sounds\Acorn4.xnb">
+      <Link>Content\Sounds\Acorn4.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sounds\Acorn5.xnb">
+      <Link>Content\Sounds\Acorn5.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sounds\Acorn6.xnb">
+      <Link>Content\Sounds\Acorn6.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sounds\Acorn7.xnb">
+      <Link>Content\Sounds\Acorn7.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sounds\Acorn8.xnb">
+      <Link>Content\Sounds\Acorn8.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sounds\ZeroCard.xnb">
+      <Link>Content\Sounds\ZeroCard.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Acorn_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
