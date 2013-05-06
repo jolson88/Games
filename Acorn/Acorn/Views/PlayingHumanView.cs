@@ -108,7 +108,7 @@ namespace Acorn.Views
             if (msg.CardValue == 0)
             {
                 var card = _cards.Where(go => go.GetComponent<CardComponent>().CardIndex == msg.CardIndex).First();
-                card.AddComponent(new ShakeComponent(20, TimeSpan.FromSeconds(2.00)));
+                card.AddComponent(new ShakeComponent(20, TimeSpan.FromSeconds(1.5)));
                 _selectedCardCount = 0;
                 this.MessageManager.QueueMessage(new PlaySoundEffectMessage(ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.BuzzZeroCard)));
             }
@@ -236,7 +236,8 @@ namespace Acorn.Views
                                             HorizontalAnchor.Center, 
                                             VerticalAnchor.Center) 
                                             {
-                                                Rotation = _acornRotations[_random.Next(_acornRotations.Length)]
+                                                Rotation = _acornRotations[_random.Next(_acornRotations.Length)],
+                                                Z = 10
                                             });
                     obj.AddComponent(new SpriteComponent(acornSprite));
                     obj.AddComponent(new MoveToComponent(new Vector2((float)newX, 40), TimeSpan.FromSeconds(0.8), Easing.GetLinearFunction(), Easing.ConvertTo(EasingKind.EaseOut, Easing.GetSineFunction())));
@@ -248,38 +249,57 @@ namespace Acorn.Views
 
         private void AnimateFallenAcornsDisappearing()
         {
-            var spinRotationCount = 8;
-            var zeroCard = _cards.Where(go => go.GetComponent<CardComponent>().CardValue == 0).First();
-            this.ProcessManager.AttachProcess(Process.BuildProcessChain(
-                new TweenProcess(Easing.ConvertTo(EasingKind.EaseOut, Easing.GetSineFunction()), TimeSpan.FromSeconds(1.8), interp =>
-                {
-                    zeroCard.Transform.Rotation = (float)(2 * Math.PI * spinRotationCount) * interp.Value;
-                }),
-                new ActionProcess(() => {
-                    this.MessageManager.QueueMessage(new EndTurnConfirmationMessage(_currentPlayer));
-                })));
-
             var acorns = this.GameObjectManager.GetAllGameObjectsWithTag("FallenAcorn");
-            foreach (var acorn in acorns)
+            if (acorns.Count() > 0)
             {
-                acorn.AddComponent(new ShakeComponent(15, TimeSpan.FromSeconds(1.4), shakeHarderAtEnd: true));
-                this.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(0.7), new ActionProcess(() =>
-                {
-                    this.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(0.5 * _random.NextDouble()), new ActionProcess(() => 
+                var spinRotationCount = 8;
+                var zeroCard = _cards.Where(go => go.GetComponent<CardComponent>().CardValue == 0).First();
+                this.ProcessManager.AttachProcess(Process.BuildProcessChain(
+                    new TweenProcess(Easing.ConvertTo(EasingKind.EaseOut, Easing.GetSineFunction()), TimeSpan.FromSeconds(2.0), interp =>
                     {
-                        var moveComponent = new MoveToComponent(zeroCard.Transform.Position, TimeSpan.FromSeconds(0.65), Easing.GetLinearFunction(), Easing.GetSineFunction());
-                        moveComponent.Removed += (moveRemoveSender, moveRemoveArgs) =>
-                        {
-                            this.GameObjectManager.RemoveGameObject(acorn);
-                        };
-                        acorn.AddComponent(moveComponent);
-
-                        var originalRotation = acorn.Transform.Rotation;
-                        this.ProcessManager.AttachProcess(new TweenProcess(TimeSpan.FromSeconds(0.5), interp =>
-                        {
-                            acorn.Transform.Rotation = originalRotation - (originalRotation * interp.Value);
-                        }));
+                        zeroCard.Transform.Rotation = (float)(2 * Math.PI * spinRotationCount) * interp.Value;
+                    }),
+                    new ActionProcess(() =>
+                    {
+                        this.MessageManager.QueueMessage(new EndTurnConfirmationMessage(_currentPlayer));
                     })));
+
+                foreach (var acorn in acorns)
+                {
+                    // Fade out as we get closer to zero card
+                    // TODO: Change to Power easing function for a great ramp-up just at the end
+                    this.ProcessManager.AttachProcess(new TweenProcess(Easing.GetPowerFunction(3), TimeSpan.FromSeconds(2.2), interp =>
+                    {
+                        acorn.GetComponent<SpriteComponent>().Alpha = (1.0f) - interp.Value;
+                    }));
+
+                    // Shake and fly acorn towards zero card
+                    acorn.AddComponent(new ShakeComponent(15, TimeSpan.FromSeconds(1.4), shakeHarderAtEnd: true));
+                    this.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(0.7), new ActionProcess(() =>
+                    {
+                        this.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(0.5 * _random.NextDouble()), new ActionProcess(() =>
+                        {
+                            var moveComponent = new MoveToComponent(zeroCard.Transform.Position, TimeSpan.FromSeconds(0.65), Easing.GetLinearFunction(), Easing.GetSineFunction());
+                            moveComponent.Removed += (moveRemoveSender, moveRemoveArgs) =>
+                            {
+                                this.GameObjectManager.RemoveGameObject(acorn);
+                            };
+                            acorn.AddComponent(moveComponent);
+
+                            var originalRotation = acorn.Transform.Rotation;
+                            this.ProcessManager.AttachProcess(new TweenProcess(TimeSpan.FromSeconds(0.5), interp =>
+                            {
+                                acorn.Transform.Rotation = originalRotation - (originalRotation * interp.Value);
+                            }));
+                        })));
+                    })));
+                }
+            }
+            else
+            {
+                this.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(2.0), new ActionProcess(() =>
+                {
+                    this.MessageManager.QueueMessage(new EndTurnConfirmationMessage(_currentPlayer));
                 })));
             }
         }
