@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Media;
 using Hiromi;
 using Hiromi.Components;
 using Acorn.Components;
@@ -20,6 +22,9 @@ namespace Acorn.Views
         {
             this.MessageManager.AddListener<GameObjectLoadedMessage>(OnNewGameObject);
             this.MessageManager.AddListener<ButtonPressMessage>(OnButtonPress);
+
+            var bgMusic = ContentService.Instance.GetAsset<Song>(AcornAssets.BackgroundMusic);
+            this.MessageManager.TriggerMessage(new PlaySongMessage(bgMusic));
         }
 
         private void OnNewGameObject(GameObjectLoadedMessage msg)
@@ -39,6 +44,8 @@ namespace Acorn.Views
         {
             if (msg.GameObjectId == _playButton.Id)
             {
+                var buttonSound = ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.ButtonSelect);
+                this.MessageManager.TriggerMessage(new PlaySoundEffectMessage(buttonSound, 0.6f));
                 BuildTransitionAnimation();
             }
         }

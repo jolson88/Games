@@ -46,5 +46,8 @@ namespace Acorn
         public static string DingAcorn8 = "Sounds\\Acorn8";
         public static string DingSelectCard = "Sounds\\SelectCard";
         public static string BuzzZeroCard = "Sounds\\ZeroCard";
+        public static string SoundOfAcornOnGround = "Sounds\\AcornGroundHit";
+        public static string ButtonSelect = "Sounds\\ButtonSelect";
+        public static string BackgroundMusic = "Sounds\\TEMP-Caketown";
     }
 }

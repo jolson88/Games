@@ -61,6 +61,7 @@ namespace Acorn.Views
             this.MessageManager.AddListener<StartTurnMessage>(OnStartTurn);
             this.MessageManager.AddListener<EndTurnMessage>(OnEndTurn);
             this.MessageManager.AddListener<ScoreChangedMessage>(OnScoreChanged);
+            this.MessageManager.AddListener<StopRequestMessage>(OnStopRequest);
 
             _scoringSounds = new SoundEffect[] {
                 ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.DingAcorn1),
@@ -103,6 +104,12 @@ namespace Acorn.Views
             }
         }
 
+        private void OnStopRequest(StopRequestMessage msg)
+        {
+            var sound = ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.ButtonSelect);
+            this.MessageManager.TriggerMessage(new PlaySoundEffectMessage(sound, 0.6f));
+        }
+
         private void OnCardSelected(CardSelectedMessage msg)
         {
             if (msg.CardValue == 0)
@@ -110,7 +117,7 @@ namespace Acorn.Views
                 var card = _cards.Where(go => go.GetComponent<CardComponent>().CardIndex == msg.CardIndex).First();
                 card.AddComponent(new ShakeComponent(20, TimeSpan.FromSeconds(1.5)));
                 _selectedCardCount = 0;
-                this.MessageManager.QueueMessage(new PlaySoundEffectMessage(ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.BuzzZeroCard)));
+                this.MessageManager.QueueMessage(new PlaySoundEffectMessage(ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.BuzzZeroCard), 0.1f));
             }
             else
             {
@@ -128,7 +135,7 @@ namespace Acorn.Views
                         this.MessageManager.QueueMessage(new CardShuffleRequestMessage(_currentPlayer));
                     })));
                 }
-                this.MessageManager.QueueMessage(new PlaySoundEffectMessage(ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.DingSelectCard)));
+                this.MessageManager.QueueMessage(new PlaySoundEffectMessage(ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.DingSelectCard), 0.2f));
             }
         }
 
@@ -240,7 +247,14 @@ namespace Acorn.Views
                                                 Z = 10
                                             });
                     obj.AddComponent(new SpriteComponent(acornSprite));
-                    obj.AddComponent(new MoveToComponent(new Vector2((float)newX, 40), TimeSpan.FromSeconds(0.8), Easing.GetLinearFunction(), Easing.ConvertTo(EasingKind.EaseOut, Easing.GetSineFunction())));
+                    
+                    var moveTo = new MoveToComponent(new Vector2((float)newX, 40), TimeSpan.FromSeconds(0.8), Easing.GetLinearFunction(), Easing.ConvertTo(EasingKind.EaseOut, Easing.GetSineFunction()));
+                    moveTo.Removed += (sender, args) =>
+                    {
+                        var sound = ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.SoundOfAcornOnGround);
+                        this.MessageManager.TriggerMessage(new PlaySoundEffectMessage(sound, 0.5f));
+                    };
+                    obj.AddComponent(moveTo);
                     this.GameObjectManager.AddGameObject(obj);
                 })));
                 

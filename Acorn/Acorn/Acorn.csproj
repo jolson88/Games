@@ -156,6 +156,10 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sounds\TEMP-Caketown.wma">
+      <Link>Content\Sounds\TEMP-Caketown.wma</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sprites\Acorn.xnb">
       <Link>Content\Sprites\Acorn.xnb</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -270,6 +274,18 @@
     </Content>
     <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sounds\ZeroCard.xnb">
       <Link>Content\Sounds\ZeroCard.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sounds\TEMP-Caketown.xnb">
+      <Link>Content\Sounds\TEMP-Caketown.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sounds\AcornGroundHit.xnb">
+      <Link>Content\Sounds\AcornGroundHit.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sounds\ButtonSelect.xnb">
+      <Link>Content\Sounds\ButtonSelect.xnb</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Acorn_TemporaryKey.pfx" />
