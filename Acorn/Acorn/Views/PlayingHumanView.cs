@@ -13,6 +13,9 @@ using Acorn.Components;
 
 namespace Acorn.Views
 {
+    // TODO: When zero card selected, don't drop any more acorns for player
+    // (System can get in state where acorns are missed. This surfaced when touch was introduced
+    // since the underlying system suports multi-touch
     public class PlayingHumanView : HumanGameView
     {
         private static int AVATAR_BOUNCE_HEIGHT = 60;
@@ -281,8 +284,7 @@ namespace Acorn.Views
                 foreach (var acorn in acorns)
                 {
                     // Fade out as we get closer to zero card
-                    // TODO: Change to Power easing function for a great ramp-up just at the end
-                    this.ProcessManager.AttachProcess(new TweenProcess(Easing.GetPowerFunction(3), TimeSpan.FromSeconds(2.2), interp =>
+                    this.ProcessManager.AttachProcess(new TweenProcess(Easing.GetPowerFunction(2), TimeSpan.FromSeconds(2.2), interp =>
                     {
                         acorn.GetComponent<SpriteComponent>().Alpha = (1.0f) - interp.Value;
                     }));
@@ -325,6 +327,14 @@ namespace Acorn.Views
             var fallenAcorns = this.GameObjectManager.GetAllGameObjectsWithTag("FallenAcorn").ToList();
             var acornsToScore = _scoreAcorns[_currentPlayer].Where(sc => !sc.IsOn).OrderBy(sc => sc.PointNumber).ToList();
             var loopCount = Math.Min(fallenAcorns.Count(), acornsToScore.Count());
+
+            // Did the player just say "stop" without flipping over cards?
+            if (loopCount == 0)
+            {
+                this.MessageManager.QueueMessage(new EndTurnConfirmationMessage(_currentPlayer));
+                return;
+            }
+
             for (int i = 0; i < loopCount; i++)
             {
                 var fallenAcorn = fallenAcorns[i];
