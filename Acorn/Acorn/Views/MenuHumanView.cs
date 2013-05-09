@@ -17,6 +17,7 @@ namespace Acorn.Views
     {
         private GameObject _playButton;
         private GameObject _cloud;
+        private GameObject _title;
 
         protected override void OnInitialize()
         {
@@ -38,6 +39,10 @@ namespace Acorn.Views
             {
                 _cloud = msg.GameObject;
             }
+            else if (msg.GameObject.Tag.Equals("Title"))
+            {
+                _title = msg.GameObject;
+            }
         }
 
         private void OnButtonPress(ButtonPressMessage msg)
@@ -46,23 +51,29 @@ namespace Acorn.Views
             {
                 var buttonSound = ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.ButtonSelect);
                 this.MessageManager.TriggerMessage(new PlaySoundEffectMessage(buttonSound, 0.6f));
-                BuildTransitionAnimation();
+                AnimateScreenOff();
             }
         }
 
-        private void BuildTransitionAnimation()
+        private void AnimateScreenOff()
         {
             _cloud.RemoveComponent<ScreenWrappingComponent>();
             _cloud.RemoveComponent<SimpleMovementComponent>();
 
-            var _cloudTransformation = _cloud.GetComponent<TransformationComponent>();
+            var labels = this.GameObjectManager.GetAllGameObjectsWithComponent<LabelComponent>();
 
             // Fade other stuff off the screen
             this.ProcessManager.AttachProcess(Process.BuildProcessChain(
                 new TweenProcess(Easing.GetBackFunction(0.3), TimeSpan.FromSeconds(1), interp =>
                 {
-                    _cloudTransformation.PositionOffset = new Vector2(interp.Value, 0);
-                    this.MessageManager.QueueMessage(new NudgeCameraMessage(new Vector2(interp.Value * GraphicsService.Instance.GraphicsDevice.Viewport.Width, 0)));
+                    _cloud.Transform.PositionOffset = new Vector2(-interp.Value * this.SceneGraph.Camera.Bounds.Width, 0);
+                    _title.Transform.PositionOffset = new Vector2(-interp.Value * this.SceneGraph.Camera.Bounds.Width, 0);
+                    _playButton.Transform.PositionOffset = new Vector2(interp.Value * this.SceneGraph.Camera.Bounds.Width, 0);
+
+                    foreach (var label in labels)
+                    {
+                        label.Transform.PositionOffset = new Vector2(interp.Value * this.SceneGraph.Camera.Bounds.Width, 0);
+                    }
                 }),
                 new ActionProcess(() =>
                 {

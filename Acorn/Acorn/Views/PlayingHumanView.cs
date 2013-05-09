@@ -76,7 +76,10 @@ namespace Acorn.Views
                 ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.DingAcorn7),
                 ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.DingAcorn8)
             };
+        }
 
+        public override void OnLoaded()
+        {
             this.AnimateScreenIn();
         }
 
@@ -169,30 +172,13 @@ namespace Acorn.Views
             }
             else
             {
-                AnimateFallenAcornsScoring();
+                AnimateFallenAcornsScoring(msg.Reason);
             }
         }
 
         private void OnScoreChanged(ScoreChangedMessage msg)
         {
             _playerScores[msg.PlayerIndex] = msg.Score;
-        }
-
-        private void AnimateScreenIn()
-        {
-            var screenHeight = GraphicsService.Instance.DesignedScreenSize.Y;
-            this.MessageManager.TriggerMessage(new NudgeCameraMessage(new Vector2(0, screenHeight)));
-            this.ProcessManager.AttachProcess(Process.BuildProcessChain(
-                new TweenProcess(Easing.ConvertTo(EasingKind.EaseOut, Easing.GetElasticFunction(oscillations: 12, springiness: 20)), TimeSpan.FromSeconds(4.2), interp =>
-                {
-                    this.MessageManager.QueueMessage(new NudgeCameraMessage(new Vector2(0, screenHeight - (screenHeight * interp.Value))));
-                }),
-                new ActionProcess(() => {
-                    // Now that we are animated in (crazy camera movements are done), we can enable screen wrapping again
-                    var cloud = this.GameObjectManager.GetAllGameObjectsWithTag("Cloud").First();
-                    var wrapping = cloud.GetComponent<ScreenWrappingComponent>();
-                    wrapping.IsEnabled = true;
-                })));
         }
 
         private void AnimatePlayerOnscreen()
@@ -320,7 +306,7 @@ namespace Acorn.Views
             }
         }
 
-        private void AnimateFallenAcornsScoring()
+        private void AnimateFallenAcornsScoring(EndTurnReason endTurnReason)
         {
             var animationDuration = TimeSpan.FromSeconds(0.6);
 
@@ -354,7 +340,14 @@ namespace Acorn.Views
 
                         if (lastAcorn)
                         {
-                            this.MessageManager.QueueMessage(new EndTurnConfirmationMessage(_currentPlayer));
+                            if (endTurnReason == EndTurnReason.WonGame)
+                            {
+                                AnimateScreenOff();
+                            }
+                            else
+                            {
+                                this.MessageManager.QueueMessage(new EndTurnConfirmationMessage(_currentPlayer));
+                            }
                         }
                     };
                     fallenAcorn.AddComponent(moveComponent);
@@ -376,6 +369,124 @@ namespace Acorn.Views
                 newValue = _random.NextDouble();
             } while (Math.Abs(previousValue - newValue) <= minimumSpread);
             return newValue;
+        }
+
+        private void AnimateScreenIn()
+        {
+            var stopButton = this.GameObjectManager.GetAllGameObjectsWithTag("StopButton").First();
+            var cloud = this.GameObjectManager.GetAllGameObjectsWithTag("Cloud").First();
+
+            var screenWidth = GraphicsService.Instance.DesignedScreenSize.X;
+            var screenHeight = GraphicsService.Instance.DesignedScreenSize.Y;
+
+            stopButton.Transform.PositionOffset = new Vector2(0, screenHeight);
+            foreach (var card in _cards)
+            {
+                card.Transform.PositionOffset = new Vector2(0, screenHeight);
+            }
+            foreach (var key in _scoreAcorns.Keys)
+            {
+                foreach (var acorn in _scoreAcorns[key])
+                {
+                    if (acorn.PlayerIndex == 0)
+                    {
+                        acorn.GameObject.Transform.PositionOffset = new Vector2(-screenWidth / 2, 0);
+                    }
+                    else
+                    {
+                        acorn.GameObject.Transform.PositionOffset = new Vector2(screenWidth / 2, 0);
+                    }
+                }
+            }
+
+            cloud.GetComponent<ScreenWrappingComponent>().IsEnabled = false;
+            cloud.Transform.Position = new Vector2(GraphicsService.Instance.DesignedScreenSize.X, cloud.Transform.Position.Y);
+
+            this.ProcessManager.AttachProcess(Process.BuildProcessChain(
+                new TweenProcess(Easing.ConvertTo(EasingKind.EaseOut, Easing.GetPowerFunction(4)), TimeSpan.FromSeconds(1.25), interp =>
+                {
+                    stopButton.Transform.PositionOffset = new Vector2(0, screenHeight * (1f - interp.Value));
+                    foreach (var card in _cards)
+                    {
+                        card.Transform.PositionOffset = new Vector2(0, screenHeight * (1f - interp.Value));
+                    }
+
+                    foreach (var key in _scoreAcorns.Keys)
+                    {
+                        foreach (var acorn in _scoreAcorns[key])
+                        {
+                            if (acorn.PlayerIndex == 0)
+                            {
+                                acorn.GameObject.Transform.PositionOffset = new Vector2((-screenWidth / 2) * (1f - interp.Value), 0);
+                            }
+                            else
+                            {
+                                acorn.GameObject.Transform.PositionOffset = new Vector2((screenWidth / 2) * (1f - interp.Value), 0);
+                            }
+                        }
+                    }
+                }),
+                new ActionProcess(() =>
+                {
+                    cloud.GetComponent<ScreenWrappingComponent>().IsEnabled = true;
+                    stopButton.Transform.PositionOffset = Vector2.Zero;
+                    foreach (var card in _cards)
+                    {
+                        card.Transform.PositionOffset = Vector2.Zero;
+                    }
+                })));
+        }
+
+        private void AnimateScreenOff()
+        {
+            var screenWidth = GraphicsService.Instance.DesignedScreenSize.X;
+            var screenHeight = GraphicsService.Instance.DesignedScreenSize.Y;
+
+            var cloud = this.GameObjectManager.GetAllGameObjectsWithTag("Cloud").First();
+            var stopButton = this.GameObjectManager.GetAllGameObjectsWithTag("StopButton").First();
+
+            cloud.GetComponent<ScreenWrappingComponent>().IsEnabled = false;
+            this.ProcessManager.AttachProcess(Process.BuildProcessChain(
+                new TweenProcess(Easing.GetPowerFunction(2), TimeSpan.FromSeconds(1.4), interp =>
+                {
+                    foreach (var key in _scoreAcorns.Keys)
+                    {
+                        foreach (var acorn in _scoreAcorns[key])
+                        {
+                            acorn.GameObject.Transform.PositionOffset = new Vector2(0, screenHeight * interp.Value);
+                        }
+                    }
+
+                    // Make acorns disappear twice as fast
+                    var leftoverAcorns = this.GameObjectManager.GetAllGameObjectsWithTag("FallenAcorn");
+                    foreach (var acorn in leftoverAcorns)
+                    {
+                        var interpVal = interp.Value * 2f;
+                        if (interpVal < 1f)
+                        {
+                            acorn.GetComponent<SpriteComponent>().Alpha = (1.0f - interpVal);
+                        }
+                        else
+                        {
+                            this.GameObjectManager.RemoveGameObject(acorn);
+                        }
+                    }
+                }),
+                new ActionProcess(() =>
+                {
+                    this.MessageManager.QueueMessage(new EndTurnConfirmationMessage(_currentPlayer));
+                })));
+
+            this.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(0.25), new TweenProcess(Easing.GetBackFunction(0.3), TimeSpan.FromSeconds(1), interp =>
+                {
+                    stopButton.Transform.PositionOffset = new Vector2(interp.Value * screenWidth, 0);
+
+                    cloud.Transform.PositionOffset = new Vector2(-interp.Value * screenWidth, 0);
+                    foreach (var card in _cards)
+                    {
+                        card.Transform.PositionOffset = new Vector2(-interp.Value * screenWidth, 0);
+                    }
+                })));
         }
     }
 }

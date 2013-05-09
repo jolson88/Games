@@ -43,8 +43,7 @@ namespace Acorn.States
             cloud.AddComponent(new TransformationComponent(new Vector2(100, 890), cloudSprite.Width, cloudSprite.Height));
             cloud.AddComponent(new SpriteComponent(cloudSprite));
             cloud.AddComponent(new SimpleMovementComponent(new Vector2(-65, 0)));
-            // Don't enable screen wrapping until after screen is animated in or else wrapping gets in way of "off camera->on camera" transition
-            cloud.AddComponent(new ScreenWrappingComponent(isEnabled: false)); 
+            cloud.AddComponent(new ScreenWrappingComponent()); 
             yield return cloud;
 
             var cardBackSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.CardBack);

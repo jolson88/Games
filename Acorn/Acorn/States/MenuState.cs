@@ -38,7 +38,7 @@ namespace Acorn.States
             yield return cloud;
 
             var titleSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.GameTitle);
-            var title = new GameObject();
+            var title = new GameObject("Title");
             title.AddComponent(new TransformationComponent(new Vector2(800, 810), titleSprite.Width, titleSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Top));
             title.AddComponent(new SpriteComponent(titleSprite));
             yield return title;
