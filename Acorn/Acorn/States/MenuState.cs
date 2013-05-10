@@ -51,7 +51,7 @@ namespace Acorn.States
             yield return playButton;
 
             var detailsFont = ContentService.Instance.GetAsset<SpriteFont>(AcornAssets.DetailsText);
-            var company = new GameObject();
+            var company = new GameObject("Company");
             company.AddComponent(new TransformationComponent(new Vector2(1590, 10), 0, 0, HorizontalAnchor.Right, VerticalAnchor.Bottom));
             company.AddComponent(new LabelComponent("Owl X Games", detailsFont, Color.White));
             yield return company;

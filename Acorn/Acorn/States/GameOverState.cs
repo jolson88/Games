@@ -64,7 +64,7 @@ namespace Acorn.States
             var squirrelAsset = (_winningPlayer == 0) ? AcornAssets.RedSquirrel : AcornAssets.BlueSquirrel;
             var squirrelPosition = (_winningPlayer == 0) ? new Vector2(125, 10) : new Vector2(1475, 10);
             var squirrelSprite = ContentService.Instance.GetAsset<Texture2D>(squirrelAsset);
-            var squirrel = new GameObject();
+            var squirrel = new GameObject("PlayerAvatar");
             squirrel.AddComponent(new TransformationComponent(squirrelPosition, squirrelSprite.Width, squirrelSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Bottom));
             squirrel.AddComponent(new SpriteComponent(squirrelSprite));
             yield return squirrel;

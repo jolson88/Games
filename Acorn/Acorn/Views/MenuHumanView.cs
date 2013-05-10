@@ -28,6 +28,11 @@ namespace Acorn.Views
             this.MessageManager.TriggerMessage(new PlaySongMessage(bgMusic));
         }
 
+        public override void OnLoaded()
+        {
+            this.AnimateScreenOn();
+        }
+
         private void OnNewGameObject(GameObjectLoadedMessage msg)
         {
             if (msg.GameObject.Tag.Equals("PlayButton"))
@@ -53,6 +58,26 @@ namespace Acorn.Views
                 this.MessageManager.TriggerMessage(new PlaySoundEffectMessage(buttonSound, 0.6f));
                 AnimateScreenOff();
             }
+        }
+
+        private void AnimateScreenOn()
+        {
+            var labels = this.GameObjectManager.GetAllGameObjectsWithComponent<LabelComponent>();
+
+            _cloud.Transform.Position = new Vector2(this.SceneGraph.Camera.Bounds.Width, _cloud.Transform.Position.Y);
+            _title.Transform.PositionOffset = new Vector2(-this.SceneGraph.Camera.Bounds.Width, 0);
+            _playButton.Transform.PositionOffset = new Vector2(this.SceneGraph.Camera.Bounds.Width, 0);
+
+            var companyLabel = this.GameObjectManager.GetAllGameObjectsWithTag("Company").First();
+            companyLabel.Transform.PositionOffset = new Vector2(this.SceneGraph.Camera.Bounds.Width, 0);
+
+            this.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(0.4), 
+                new TweenProcess(Easing.ConvertTo(EasingKind.EaseOut, Easing.GetPowerFunction(4)), TimeSpan.FromSeconds(1.75), interp =>
+                {
+                    _title.Transform.PositionOffset = new Vector2(-(1f - interp.Value) * this.SceneGraph.Camera.Bounds.Width, 0);
+                    _playButton.Transform.PositionOffset = new Vector2((1f - interp.Value) * this.SceneGraph.Camera.Bounds.Width, 0);
+                    companyLabel.Transform.PositionOffset = new Vector2((1f - interp.Value) * this.SceneGraph.Camera.Bounds.Width, 0);
+                })));
         }
 
         private void AnimateScreenOff()
