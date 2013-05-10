@@ -36,6 +36,8 @@ namespace Acorn
         public static string DetailsText = "Fonts\\Details";
 
         // Sounds
+        // TODO: Record final Acorn Scoring sounds
+        public static string Applause = "Sounds\\Applause";
         public static string DingAcorn1 = "Sounds\\Acorn1";
         public static string DingAcorn2 = "Sounds\\Acorn2";
         public static string DingAcorn3 = "Sounds\\Acorn3";

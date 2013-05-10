@@ -11,6 +11,7 @@ using Acorn.Views;
 
 namespace Acorn.States
 {
+    // TODO: Add Credits Screen and button to get there
     public class MenuState : GameState
     {
         protected override IEnumerable<IGameView> LoadGameViews()

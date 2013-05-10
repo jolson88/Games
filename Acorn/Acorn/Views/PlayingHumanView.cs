@@ -13,7 +13,8 @@ using Acorn.Components;
 
 namespace Acorn.Views
 {
-    // TODO: When zero card selected, don't drop any more acorns for player
+    // TODO: Make TouchManager single-touch (not multi-touch) to avoid issues with selecting many cards at the same time
+
     // (System can get in state where acorns are missed. This surfaced when touch was introduced
     // since the underlying system suports multi-touch
     public class PlayingHumanView : HumanGameView
@@ -123,7 +124,7 @@ namespace Acorn.Views
                 var card = _cards.Where(go => go.GetComponent<CardComponent>().CardIndex == msg.CardIndex).First();
                 card.AddComponent(new ShakeComponent(20, TimeSpan.FromSeconds(1.5)));
                 _selectedCardCount = 0;
-                this.MessageManager.QueueMessage(new PlaySoundEffectMessage(ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.BuzzZeroCard), 0.1f));
+                this.MessageManager.QueueMessage(new PlaySoundEffectMessage(ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.BuzzZeroCard), 0.08f));
             }
             else
             {

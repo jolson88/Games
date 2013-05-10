@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Hiromi;
 using Hiromi.Components;
 using Acorn.States;
@@ -17,6 +18,7 @@ namespace Acorn.Views
         private GameObject _menuButton;
         private GameObject _label;
         private GameObject _playerAvatar;
+        private bool _jumping = true;
 
         protected override void OnInitialize()
         {
@@ -26,7 +28,30 @@ namespace Acorn.Views
 
         public override void OnLoaded()
         {
+            this.CreateJumpingCycle();
             this.AnimateScreenOn();
+
+            this.MessageManager.QueueMessage(new PlaySoundEffectMessage(ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.Applause)));
+        }
+
+        private void CreateJumpingCycle()
+        {
+            this.ProcessManager.AttachProcess(Process.BuildProcessChain(
+                new TweenProcess(Easing.GetSineFunction(), TimeSpan.FromSeconds(0.5), interp =>
+                {
+                    _playerAvatar.Transform.PositionOffset = new Vector2(0, 40f * interp.Value);
+                }),
+                new TweenProcess(Easing.ConvertTo(EasingKind.EaseOut, Easing.GetSineFunction()), TimeSpan.FromSeconds(0.5), interp =>
+                {
+                    _playerAvatar.Transform.PositionOffset = new Vector2(0, 40f * (1f - interp.Value));
+                }),
+                new ActionProcess(() =>
+                {
+                    if (_jumping)
+                    {
+                        CreateJumpingCycle();
+                    }
+                })));
         }
 
         private void OnNewGameObject(GameObjectLoadedMessage msg)
@@ -53,10 +78,14 @@ namespace Acorn.Views
         {
             if (msg.GameObjectId == _playButton.Id)
             {
+                var sound = ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.ButtonSelect);
+                this.MessageManager.TriggerMessage(new PlaySoundEffectMessage(sound, 0.6f));
                 this.AnimateScreenOff(new PlayState());
             }
             else if (msg.GameObjectId == _menuButton.Id)
             {
+                var sound = ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.ButtonSelect);
+                this.MessageManager.TriggerMessage(new PlaySoundEffectMessage(sound, 0.6f));
                 this.AnimateScreenOff(new MenuState());
             }
         }
@@ -64,7 +93,7 @@ namespace Acorn.Views
         private void AnimateScreenOn()
         {
             var cloud = this.GameObjectManager.GetAllGameObjectsWithTag("Cloud").First();
-            cloud.Transform.Position = new Vector2(this.SceneGraph.Camera.Bounds.Width * 1.5f, 0);
+            cloud.Transform.Position = new Vector2(this.SceneGraph.Camera.Bounds.Width, cloud.Transform.Position.Y);
 
             _label.Transform.PositionOffset = new Vector2(0, this.SceneGraph.Camera.Bounds.Height);
             _playButton.Transform.PositionOffset = new Vector2(0, this.SceneGraph.Camera.Bounds.Height);
@@ -81,11 +110,19 @@ namespace Acorn.Views
 
         private void AnimateScreenOff(GameState newState)
         {
+            var cloud = this.GameObjectManager.GetAllGameObjectsWithTag("Cloud").First();
+            cloud.RemoveComponent<ScreenWrappingComponent>();
+            cloud.RemoveComponent<SimpleMovementComponent>();
+
+            _jumping = false;
+            this.ProcessManager.RemoveAllProcesses();
+
             var avatarDirection = (_playerAvatar.Transform.Position.X - (this.SceneGraph.Camera.Bounds.Width / 2) < 0) ? -1f : 1f;
 
             this.ProcessManager.AttachProcess(Process.BuildProcessChain(
                 new TweenProcess(Easing.GetBackFunction(0.3), TimeSpan.FromSeconds(1), interp =>
                 {
+                    cloud.Transform.PositionOffset = new Vector2(-interp.Value * this.SceneGraph.Camera.Bounds.Width, 0);
                     _label.Transform.PositionOffset = new Vector2(-interp.Value * this.SceneGraph.Camera.Bounds.Width, 0);
                     _playButton.Transform.PositionOffset = new Vector2(interp.Value * this.SceneGraph.Camera.Bounds.Width, 0);
                     _menuButton.Transform.PositionOffset = new Vector2(interp.Value * this.SceneGraph.Camera.Bounds.Width, 0);
