@@ -26,15 +26,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.50000001"
-     inkscape:cx="-320.20042"
-     inkscape:cy="250.7943"
+     inkscape:zoom="0.3535534"
+     inkscape:cx="-188.58564"
+     inkscape:cy="70.320574"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="false"
      showborder="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1027"
+     inkscape:window-width="1536"
+     inkscape:window-height="814"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -2057,7 +2057,7 @@
        inkscape:export-ydpi="90"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png" />
     <path
-       style="fill:#ffffff;fill-opacity:0.78680205;stroke:#666666;stroke-width:0.5784148;stroke-opacity:1;display:inline"
+       style="fill:#ffffff;fill-opacity:1;stroke:#666666;stroke-width:0.57841480000000001;stroke-opacity:1;display:inline"
        d="m 1945.3056,531.39379 c -28.5526,0 -52.1586,18.06619 -55.9435,41.51934 -5.2728,-0.51692 -10.7167,-0.77725 -16.268,-0.77725 -49.5939,0 -89.7808,21.54854 -89.7808,48.13497 0,5.05153 1.4478,9.92173 4.1393,14.49652 -9.4972,5.52977 -15.2557,12.76695 -15.2557,20.67833 0,17.38345 27.7613,31.46935 62.0169,31.46935 18.862,0 35.7468,-4.26592 47.1227,-11.00792 10.3927,17.08654 42.1425,29.5353 79.7128,29.5353 36.2053,0 67.0101,-11.56158 78.5018,-27.69161 7.4223,2.31742 15.6234,3.6151 24.2573,3.6151 33.233,0 60.1732,-19.06704 60.1732,-42.58579 0,-13.39823 -8.7446,-25.34417 -22.4136,-33.1504 2.524,-4.10287 3.9043,-8.53133 3.9043,-13.14089 0,-21.47365 -29.8503,-38.88031 -66.6623,-38.88031 -15.4479,0 -29.6562,3.07926 -40.959,8.22434 -8.2741,-17.82675 -28.69,-30.43908 -52.5454,-30.43908 z"
        id="path4223"
        inkscape:connector-curvature="0"
@@ -2821,5 +2821,175 @@
            sodipodi:nodetypes="ccsccscc" />
       </g>
     </g>
+    <path
+       style="color:#000000;fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.0870688;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 1829.7362,1539.7841 171.7371,0 c 15.0224,0 27.1164,9.2954 27.1164,20.8417 l 0,27.7889 c 0,11.5462 -12.094,20.8416 -27.1164,20.8416 l -171.7371,0 c -15.0225,0 -27.1165,-9.2954 -27.1165,-20.8416 l 0,-27.7889 c 0,-11.5463 12.094,-20.8417 27.1165,-20.8417 z"
+       id="rect2985-174"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\AboutButton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="color:#000000;fill:#ffffff;fill-opacity:0.74074073;fill-rule:evenodd;stroke:none;stroke-width:0.59385347px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 1832.5985,1541.2061 c -14.216,0.089 -16.9491,2.3875 -22.22,7.0214 -3.9924,3.5099 -6.5115,9.9839 -4.6097,13.5303 2.9363,3.4554 15.7073,3.1195 28.4496,2.6454 56.8743,-0.041 113.7777,0.082 170.6338,-0.061 13.7897,-0.3698 23.9103,-1.0718 22.1251,-4.7443 -0.5529,-3.4929 -2.956,-9.3524 -7.3029,-12.4399 -5.8724,-4.1712 -9.8504,-6.7111 -22.5744,-6.2362 -56.2742,0.01 -108.2285,0.2666 -164.5015,0.2845 z"
+       id="rect2985-7-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="caccccacc"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\AboutButton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:29.21896172px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
+       x="1888.5767"
+       y="1571.0382"
+       id="text2985-9"
+       sodipodi:linespacing="125%"
+       transform="scale(0.99327996,1.0067655)"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\AboutButton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan2987-4"
+         x="1888.5767"
+         y="1571.0382">About</tspan></text>
+    <path
+       style="color:#000000;fill:#007b09;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.0870688;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 1831.212,1623.4116 171.737,0 c 15.0225,0 27.1164,9.2955 27.1164,20.8417 l 0,27.7889 c 0,11.5462 -12.0939,20.8417 -27.1164,20.8417 l -171.737,0 c -15.0226,0 -27.1165,-9.2955 -27.1165,-20.8417 l 0,-27.7889 c 0,-11.5462 12.0939,-20.8417 27.1165,-20.8417 z"
+       id="rect2985-1-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\AboutButtonPressed.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="color:#000000;fill:#ffffff;fill-opacity:0.74074073;fill-rule:evenodd;stroke:none;stroke-width:0.59385347px;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 1834.0742,1624.8337 c -14.2159,0.089 -16.949,2.3874 -22.22,7.0213 -3.9924,3.5099 -6.5114,9.984 -4.6097,13.5303 2.9363,3.4554 15.7074,3.1195 28.4496,2.6454 56.8743,-0.041 113.7778,0.082 170.6339,-0.061 13.7897,-0.3697 23.9103,-1.0718 22.125,-4.7442 -0.5528,-3.493 -2.9559,-9.3525 -7.3028,-12.44 -5.8724,-4.1712 -9.8504,-6.711 -22.5744,-6.2362 -56.2742,0.01 -108.2285,0.2666 -164.5016,0.2845 z"
+       id="rect2985-7-8-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="caccccacc"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\AboutButtonPressed.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:29.21896172px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;display:inline;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
+       x="1890.3948"
+       y="1653.6444"
+       id="text2985-9-6"
+       sodipodi:linespacing="125%"
+       transform="scale(0.99327996,1.0067655)"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\AboutButtonPressed.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan2987-4-1"
+         x="1890.3948"
+         y="1653.6444">About</tspan></text>
+    <path
+       style="opacity:0.12141586;fill:#ffffff;fill-opacity:1;stroke:none;display:inline"
+       d="m 1828.3648,1573.5975 c 17.4276,3.0746 19.3595,-7.6249 32.3596,-10.2075 0,-10.5939 0.246,4.2693 0.246,-6.3246 -10.7865,0 -21.5731,0 -32.3596,0 0,10.5939 -0.246,5.9382 -0.246,16.5321 z"
+       id="rect3497-4-3-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\AboutButton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#5555c7;fill-opacity:1;stroke:#1a257d;stroke-opacity:1"
+       id="path4366"
+       sodipodi:cx="132"
+       sodipodi:cy="977.90625"
+       sodipodi:rx="27"
+       sodipodi:ry="27"
+       d="m 159,977.90625 a 27,27 0 1 1 -54,0 27,27 0 1 1 54,0 z"
+       transform="matrix(0.77790744,0,0,0.77790744,1742.3506,811.9589)"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\AboutButton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:none;display:inline"
+       d="m 1847.0573,1567.0481 c 1.1908,0.8251 -0.3105,8.6765 0.685,13.0604 0.6367,3.738 1.4553,6.6664 -2.1539,7.383 -4.593,-0.3831 -3.7262,-3.6087 -3.1027,-7.4058 0.6029,-4.5423 -0.8856,-11.0567 0.6087,-13.0378"
+       id="rect4327-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\AboutButton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="opacity:0.14911499;fill:#ffffff;fill-opacity:1;stroke:none;display:inline"
+       d="m 1843.5889,1552.3864 c -13.1463,2.1044 -18.9607,11.3853 -18.2623,22.1646 -0.163,2.8697 5.2647,-0.639 11.0199,-3.5899 4.6713,-2.3951 11.5425,-4.3861 11.5425,-4.3861 8.5617,-3.9503 16.6671,4.3302 15.5338,-3.006 -4.9684,-8.2071 -13.761,-11.5322 -19.8339,-11.1826 z"
+       id="path4366-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccsscc"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\AboutButton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;display:inline"
+       id="path4330-8"
+       sodipodi:cx="128.09682"
+       sodipodi:cy="1083.302"
+       sodipodi:rx="3.557631"
+       sodipodi:ry="3.4250484"
+       d="m 131.65445,1083.302 a 3.557631,3.4250484 0 1 1 -7.11526,0 3.557631,3.4250484 0 1 1 7.11526,0 z"
+       transform="matrix(0.8453862,0,0,0.8453862,1736.7004,645.98806)"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\AboutButton.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="opacity:0.12141586;fill:#ffffff;fill-opacity:1;stroke:none;display:inline"
+       d="m 1829.4083,1658.2977 c 17.4276,3.0746 19.3595,-7.6249 32.3597,-10.2075 0,-10.5939 0.246,4.2693 0.246,-6.3246 -10.7866,0 -21.5732,0 -32.3597,0 0,10.5939 -0.246,5.9382 -0.246,16.5321 z"
+       id="rect3497-4-3-1-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\AboutButtonPressed.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#5555c7;fill-opacity:1;stroke:#1a257d;stroke-opacity:1;display:inline"
+       id="path4366-6"
+       sodipodi:cx="132"
+       sodipodi:cy="977.90625"
+       sodipodi:rx="27"
+       sodipodi:ry="27"
+       d="m 159,977.90625 a 27,27 0 1 1 -54,0 27,27 0 1 1 54,0 z"
+       transform="matrix(0.77790744,0,0,0.77790744,1743.3941,896.65911)"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\AboutButtonPressed.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:none;display:inline"
+       d="m 1848.1009,1651.7483 c 1.1908,0.8251 -0.3106,8.6765 0.6849,13.0605 0.6367,3.7379 1.4553,6.6663 -2.1539,7.3829 -4.593,-0.3831 -3.7262,-3.6087 -3.1026,-7.4058 0.6028,-4.5423 -0.8856,-11.0567 0.6086,-13.0378"
+       id="rect4327-6-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\AboutButtonPressed.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="opacity:0.14911499;fill:#ffffff;fill-opacity:1;stroke:none;display:inline"
+       d="m 1844.6324,1637.0866 c -13.1463,2.1044 -18.9606,11.3853 -18.2622,22.1646 -0.163,2.8697 5.2647,-0.639 11.0198,-3.5899 4.6714,-2.3951 11.5426,-4.3861 11.5426,-4.3861 8.5616,-3.9503 16.6671,4.3302 15.5337,-3.006 -4.9684,-8.2071 -13.761,-11.5321 -19.8339,-11.1826 z"
+       id="path4366-5-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccsscc"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\AboutButtonPressed.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;display:inline"
+       id="path4330-8-9"
+       sodipodi:cx="128.09682"
+       sodipodi:cy="1083.302"
+       sodipodi:rx="3.557631"
+       sodipodi:ry="3.4250484"
+       d="m 131.65445,1083.302 a 3.557631,3.4250484 0 1 1 -7.11526,0 3.557631,3.4250484 0 1 1 7.11526,0 z"
+       transform="matrix(0.8453862,0,0,0.8453862,1737.7439,730.68831)"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\AboutButtonPressed.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
   </g>
 </svg>

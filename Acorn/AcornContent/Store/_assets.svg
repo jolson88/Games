@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="_assets.svg">
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4310-7-6"
+       id="linearGradient4373"
+       gradientUnits="userSpaceOnUse"
+       x1="1727.5552"
+       y1="1054.7795"
+       x2="1724.0198"
+       y2="1034.8037" />
+    <linearGradient
+       id="linearGradient4310-7-6">
+      <stop
+         style="stop-color:#e49a3c;stop-opacity:1;"
+         offset="0"
+         id="stop4312-40-5" />
+      <stop
+         style="stop-color:#ecba7b;stop-opacity:1;"
+         offset="1"
+         id="stop4314-9-1" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4327-8-9"
+       id="linearGradient4375"
+       gradientUnits="userSpaceOnUse"
+       x1="1729.323"
+       y1="1032.1522"
+       x2="1721.1913"
+       y2="1011.6461" />
+    <linearGradient
+       id="linearGradient4327-8-9">
+      <stop
+         style="stop-color:#3c1400;stop-opacity:1;"
+         offset="0"
+         id="stop4329-8-9" />
+      <stop
+         style="stop-color:#6b2300;stop-opacity:1;"
+         offset="1"
+         id="stop4331-2-5" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4310-7-6-85"
+       id="linearGradient4373-4"
+       gradientUnits="userSpaceOnUse"
+       x1="1727.5552"
+       y1="1054.7795"
+       x2="1724.0198"
+       y2="1034.8037" />
+    <linearGradient
+       id="linearGradient4310-7-6-85">
+      <stop
+         style="stop-color:#e49a3c;stop-opacity:1;"
+         offset="0"
+         id="stop4312-40-5-9" />
+      <stop
+         style="stop-color:#ecba7b;stop-opacity:1;"
+         offset="1"
+         id="stop4314-9-1-2" />
+    </linearGradient>
+    <linearGradient
+       y2="1011.6461"
+       x2="1721.1913"
+       y1="1032.1522"
+       x1="1729.323"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4454"
+       xlink:href="#linearGradient4327-8-9-4"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient4327-8-9-4">
+      <stop
+         style="stop-color:#3c1400;stop-opacity:1;"
+         offset="0"
+         id="stop4329-8-9-1" />
+      <stop
+         style="stop-color:#6b2300;stop-opacity:1;"
+         offset="1"
+         id="stop4331-2-5-3" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4310-2-1-3">
+      <stop
+         style="stop-color:#e49a3c;stop-opacity:1;"
+         offset="0"
+         id="stop4312-4-9-4" />
+      <stop
+         style="stop-color:#ecba7b;stop-opacity:1;"
+         offset="1"
+         id="stop4314-6-9-9" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4327-6-5-5">
+      <stop
+         style="stop-color:#3c1400;stop-opacity:1;"
+         offset="0"
+         id="stop4329-2-5-3" />
+      <stop
+         style="stop-color:#6b2300;stop-opacity:1;"
+         offset="1"
+         id="stop4331-9-6-9" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4310-2-1">
+      <stop
+         style="stop-color:#e49a3c;stop-opacity:1;"
+         offset="0"
+         id="stop4312-4-9" />
+      <stop
+         style="stop-color:#ecba7b;stop-opacity:1;"
+         offset="1"
+         id="stop4314-6-9" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4327-6-5">
+      <stop
+         style="stop-color:#3c1400;stop-opacity:1;"
+         offset="0"
+         id="stop4329-2-5" />
+      <stop
+         style="stop-color:#6b2300;stop-opacity:1;"
+         offset="1"
+         id="stop4331-9-6" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4310-2"
+       id="linearGradient4316-3"
+       x1="1727.5552"
+       y1="1054.7795"
+       x2="1724.0198"
+       y2="1034.8037"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient4310-2">
+      <stop
+         style="stop-color:#e49a3c;stop-opacity:1;"
+         offset="0"
+         id="stop4312-4" />
+      <stop
+         style="stop-color:#ecba7b;stop-opacity:1;"
+         offset="1"
+         id="stop4314-6" />
+    </linearGradient>
+    <linearGradient
+       y2="1011.6461"
+       x2="1721.1913"
+       y1="1032.1522"
+       x1="1729.323"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4467"
+       xlink:href="#linearGradient4327-6"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient4327-6">
+      <stop
+         style="stop-color:#3c1400;stop-opacity:1;"
+         offset="0"
+         id="stop4329-2" />
+      <stop
+         style="stop-color:#6b2300;stop-opacity:1;"
+         offset="1"
+         id="stop4331-9" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4310-2-3">
+      <stop
+         style="stop-color:#e49a3c;stop-opacity:1;"
+         offset="0"
+         id="stop4312-4-6" />
+      <stop
+         style="stop-color:#ecba7b;stop-opacity:1;"
+         offset="1"
+         id="stop4314-6-7" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4327-6-55">
+      <stop
+         style="stop-color:#3c1400;stop-opacity:1;"
+         offset="0"
+         id="stop4329-2-4" />
+      <stop
+         style="stop-color:#6b2300;stop-opacity:1;"
+         offset="1"
+         id="stop4331-9-0" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4310-2-7"
+       id="linearGradient4316-3-23"
+       x1="1727.5552"
+       y1="1054.7795"
+       x2="1724.0198"
+       y2="1034.8037"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient4310-2-7">
+      <stop
+         style="stop-color:#e49a3c;stop-opacity:1;"
+         offset="0"
+         id="stop4312-4-3" />
+      <stop
+         style="stop-color:#ecba7b;stop-opacity:1;"
+         offset="1"
+         id="stop4314-6-1" />
+    </linearGradient>
+    <linearGradient
+       y2="1011.6461"
+       x2="1721.1913"
+       y1="1032.1522"
+       x1="1729.323"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4467-5"
+       xlink:href="#linearGradient4327-6-7"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient4327-6-7">
+      <stop
+         style="stop-color:#3c1400;stop-opacity:1;"
+         offset="0"
+         id="stop4329-2-8" />
+      <stop
+         style="stop-color:#6b2300;stop-opacity:1;"
+         offset="1"
+         id="stop4331-9-5" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4310-7-6-8"
+       id="linearGradient4373-6"
+       gradientUnits="userSpaceOnUse"
+       x1="1727.5552"
+       y1="1054.7795"
+       x2="1724.0198"
+       y2="1034.8037" />
+    <linearGradient
+       id="linearGradient4310-7-6-8">
+      <stop
+         style="stop-color:#e49a3c;stop-opacity:1;"
+         offset="0"
+         id="stop4312-40-5-92" />
+      <stop
+         style="stop-color:#ecba7b;stop-opacity:1;"
+         offset="1"
+         id="stop4314-9-1-9" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4327-8-9-9"
+       id="linearGradient4375-5"
+       gradientUnits="userSpaceOnUse"
+       x1="1729.323"
+       y1="1032.1522"
+       x2="1721.1913"
+       y2="1011.6461" />
+    <linearGradient
+       id="linearGradient4327-8-9-9">
+      <stop
+         style="stop-color:#3c1400;stop-opacity:1;"
+         offset="0"
+         id="stop4329-8-9-4" />
+      <stop
+         style="stop-color:#6b2300;stop-opacity:1;"
+         offset="1"
+         id="stop4331-2-5-5" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4310-7-6-85-5"
+       id="linearGradient4373-4-0"
+       gradientUnits="userSpaceOnUse"
+       x1="1727.5552"
+       y1="1054.7795"
+       x2="1724.0198"
+       y2="1034.8037" />
+    <linearGradient
+       id="linearGradient4310-7-6-85-5">
+      <stop
+         style="stop-color:#e49a3c;stop-opacity:1;"
+         offset="0"
+         id="stop4312-40-5-9-8" />
+      <stop
+         style="stop-color:#ecba7b;stop-opacity:1;"
+         offset="1"
+         id="stop4314-9-1-2-8" />
+    </linearGradient>
+    <linearGradient
+       y2="1011.6461"
+       x2="1721.1913"
+       y1="1032.1522"
+       x1="1729.323"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4454-0"
+       xlink:href="#linearGradient4327-8-9-4-1"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient4327-8-9-4-1">
+      <stop
+         style="stop-color:#3c1400;stop-opacity:1;"
+         offset="0"
+         id="stop4329-8-9-1-3" />
+      <stop
+         style="stop-color:#6b2300;stop-opacity:1;"
+         offset="1"
+         id="stop4331-2-5-3-2" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4310-7-6-3"
+       id="linearGradient4373-5"
+       gradientUnits="userSpaceOnUse"
+       x1="1727.5552"
+       y1="1054.7795"
+       x2="1724.0198"
+       y2="1034.8037" />
+    <linearGradient
+       id="linearGradient4310-7-6-3">
+      <stop
+         style="stop-color:#e49a3c;stop-opacity:1;"
+         offset="0"
+         id="stop4312-40-5-5" />
+      <stop
+         style="stop-color:#ecba7b;stop-opacity:1;"
+         offset="1"
+         id="stop4314-9-1-6" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4327-8-9-1"
+       id="linearGradient4375-6"
+       gradientUnits="userSpaceOnUse"
+       x1="1729.323"
+       y1="1032.1522"
+       x2="1721.1913"
+       y2="1011.6461" />
+    <linearGradient
+       id="linearGradient4327-8-9-1">
+      <stop
+         style="stop-color:#3c1400;stop-opacity:1;"
+         offset="0"
+         id="stop4329-8-9-44" />
+      <stop
+         style="stop-color:#6b2300;stop-opacity:1;"
+         offset="1"
+         id="stop4331-2-5-6" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4310-7-6-85-6"
+       id="linearGradient4373-4-2"
+       gradientUnits="userSpaceOnUse"
+       x1="1727.5552"
+       y1="1054.7795"
+       x2="1724.0198"
+       y2="1034.8037" />
+    <linearGradient
+       id="linearGradient4310-7-6-85-6">
+      <stop
+         style="stop-color:#e49a3c;stop-opacity:1;"
+         offset="0"
+         id="stop4312-40-5-9-82" />
+      <stop
+         style="stop-color:#ecba7b;stop-opacity:1;"
+         offset="1"
+         id="stop4314-9-1-2-5" />
+    </linearGradient>
+    <linearGradient
+       y2="1011.6461"
+       x2="1721.1913"
+       y1="1032.1522"
+       x1="1729.323"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4454-5"
+       xlink:href="#linearGradient4327-8-9-4-10"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient4327-8-9-4-10">
+      <stop
+         style="stop-color:#3c1400;stop-opacity:1;"
+         offset="0"
+         id="stop4329-8-9-1-1" />
+      <stop
+         style="stop-color:#6b2300;stop-opacity:1;"
+         offset="1"
+         id="stop4331-2-5-3-5" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="125.59784"
+     inkscape:cy="241.15066"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showborder="false"
+     inkscape:showpageshadow="false"
+     inkscape:window-width="1536"
+     inkscape:window-height="814"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g2989"
+       transform="matrix(1.6426305,0,0,1.6426305,20.255341,373.49879)"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Store\SplashBase.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       style="fill:#ffffff;fill-opacity:0.77659577000000002;opacity:1;stroke:#9b9b9b;stroke-opacity:1;stroke-width:1.42637068999999990;stroke-miterlimit:4;stroke-dasharray:none">
+      <path
+         id="path2991"
+         d="m 173.40945,0.31889765 c -28.55905,0 -52.15748,18.07086635 -55.94882,41.52756035 -5.27953,-0.531496 -10.73622,-0.779527 -16.26378,-0.779527 -49.606298,0 -89.787401,21.543307 -89.787401,48.118111 0,5.06693 1.452756,9.921261 4.145669,14.492128 -9.4960628,5.52756 -15.27165343,12.79134 -15.27165343,20.69291 0,17.36221 27.77952843,31.46457 62.00787543,31.46457 18.885827,0 35.751969,-4.25197 47.12599,-11.01968 10.41732,17.11417 42.16535,29.55118 79.72441,29.55118 36.2126,0 67.00393,-11.55118 78.48425,-27.70866 7.44094,2.33858 15.62598,3.61417 24.27165,3.61417 33.23622,0 60.16536,-19.06299 60.16536,-42.59055 0,-13.393705 -8.71654,-25.33465 -22.3937,-33.129926 2.51575,-4.110237 3.89764,-8.539371 3.89764,-13.14567 0,-21.472442 -29.87008,-38.87008 -66.64961,-38.87008 -15.44882,0 -29.65748,3.082677 -40.96063,8.220473 C 217.66536,12.933071 197.25591,0.31889765 173.40945,0.31889765 z"
+         style="fill:#ffffff;fill-opacity:0.77659577000000002;fill-rule:nonzero;stroke:#9b9b9b;stroke-width:1.42637068999999990;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       transform="matrix(0.6285029,0,0,0.6285029,-1275.4542,172.32321)"
+       style="display:inline"
+       id="g4487"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Store\SplashBase.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <text
+         sodipodi:linespacing="125%"
+         id="text4124"
+         y="532.07495"
+         x="2253.5344"
+         style="font-size:90px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1e1e1e;fill-opacity:1;stroke:none;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
+         xml:space="preserve"><tspan
+           y="532.07495"
+           x="2253.5344"
+           id="tspan4126"
+           sodipodi:role="line">Pr  ject</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4225"
+         y="656.94"
+         x="2422.7639"
+         style="font-size:90px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1e1e1e;fill-opacity:1;stroke:none;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
+         xml:space="preserve"><tspan
+           y="656.94"
+           x="2422.7639"
+           id="tspan4227"
+           sodipodi:role="line">Ac  rn</tspan></text>
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Acorn.png"
+         transform="matrix(1.7635378,0,0,1.7635378,-593.54604,-1335.3247)"
+         id="g4115-4-9"
+         style="display:inline">
+        <path
+           style="fill:url(#linearGradient4373);fill-opacity:1;stroke:#995600;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+           d="m 1727.2459,1072.1921 c -13.2401,-1.5468 -20.6365,-16.8912 -20.313,-36.7229 9.5497,-2.7886 15.2881,-3.5822 21.7272,-3.5822 6.8956,0 11.7501,-1.9345 22.0445,2.6885 0.012,17.5283 -6.8006,36.2831 -23.4587,37.6166 z"
+           id="path4030-5-2"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccscc" />
+        <path
+           id="path4118-5-6"
+           style="fill:#5d2c14;fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686"
+           d="m 1732.79,1013.927 c 1.8809,-0.1621 4.1896,3.8113 4.1896,3.8113 0,0 -7.8717,-5.2129 -9.498,12.1237 -1.9299,0.6717 -5.9598,-1.4349 -5.9598,-1.4349 0,0 5.1696,-13.9743 11.2682,-14.5001 z"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:url(#linearGradient4375);fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686"
+           d="m 1750.5362,1041.7865 c -0.261,0.083 0.01,-1.0034 0.011,-2.274 -5.1136,-0.8419 -12.2303,-2.057 -20.6935,-2.057 -9.7368,0 -17.4263,1.9329 -22.9089,2.8154 0.093,1.6117 0.2467,2.3692 0.2816,3.3717 -8.8389,-7.082 -0.5292,-22.7158 22.4505,-22.7158 22.2727,0 27.4005,16.9596 20.8597,20.8597 z"
+           id="path4027-1-5"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccsccscc" />
+      </g>
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Acorn.png"
+         transform="matrix(1.7635378,0,0,1.7635378,-427.79667,-1209.6125)"
+         id="g4115-4-9-9"
+         style="display:inline">
+        <path
+           style="fill:url(#linearGradient4373-4);fill-opacity:1;stroke:#995600;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+           d="m 1727.2459,1072.1921 c -13.2401,-1.5468 -20.6365,-16.8912 -20.313,-36.7229 9.5497,-2.7886 15.2881,-3.5822 21.7272,-3.5822 6.8956,0 11.7501,-1.9345 22.0445,2.6885 0.012,17.5283 -6.8006,36.2831 -23.4587,37.6166 z"
+           id="path4030-5-2-5"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccscc" />
+        <path
+           id="path4118-5-6-8"
+           style="fill:#5d2c14;fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686"
+           d="m 1732.79,1013.927 c 1.8809,-0.1621 4.1896,3.8113 4.1896,3.8113 0,0 -7.8717,-5.2129 -9.498,12.1237 -1.9299,0.6717 -5.9598,-1.4349 -5.9598,-1.4349 0,0 5.1696,-13.9743 11.2682,-14.5001 z"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:url(#linearGradient4454);fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686"
+           d="m 1750.5362,1041.7865 c -0.261,0.083 0.01,-1.0034 0.011,-2.274 -5.1136,-0.8419 -12.2303,-2.057 -20.6935,-2.057 -9.7368,0 -17.4263,1.9329 -22.9089,2.8154 0.093,1.6117 0.2467,2.3692 0.2816,3.3717 -8.8389,-7.082 -0.5292,-22.7158 22.4505,-22.7158 22.2727,0 27.4005,16.9596 20.8597,20.8597 z"
+           id="path4027-1-5-2"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccsccscc" />
+      </g>
+    </g>
+    <rect
+       style="opacity:0.98999999;fill:#ffffff;fill-opacity:1;stroke:#3e3e3e;stroke-width:0.78869838;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       id="rect3107-3-3-6"
+       width="69.787971"
+       height="105.0744"
+       x="506.552"
+       y="606.24982"
+       rx="5.958005"
+       ry="6.1896524"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Store\LogoBase.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="matrix(0.95572351,0.29426617,-0.29426617,0.95572351,0,0)" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.98999999;fill:#860b0b;fill-opacity:1;stroke:#410000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       id="path4019"
+       sodipodi:cx="553.31104"
+       sodipodi:cy="110.19387"
+       sodipodi:rx="52.679455"
+       sodipodi:ry="96.873627"
+       d="m 605.99049,110.19387 a 52.679455,96.873627 0 1 1 -105.35891,0 52.679455,96.873627 0 1 1 105.35891,0 z"
+       transform="matrix(0.37472811,0.11537835,-0.11537835,0.37472811,128.34454,684.48719)"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Store\LogoBase.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.98999999;fill:#ffffff;fill-opacity:1;stroke:#360000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       id="path4023"
+       sodipodi:cx="560.38214"
+       sodipodi:cy="126.45732"
+       sodipodi:rx="31.466251"
+       sodipodi:ry="70.003571"
+       d="m 591.84839,126.45732 a 31.466251,70.003571 0 1 1 -62.9325,0 31.466251,70.003571 0 1 1 62.9325,0 z"
+       transform="matrix(0.37472811,0.11537835,-0.11537835,0.37472811,126.20452,682.958)"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Store\LogoBase.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:0.98999999;fill:#ffffff;fill-opacity:1;stroke:#4c4c4c;stroke-width:0.78869838;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       id="rect3107-3"
+       width="69.787971"
+       height="105.0744"
+       x="-39.044216"
+       y="787.15277"
+       rx="5.958005"
+       ry="6.1896524"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Store\LogoBase.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="matrix(0.94232971,-0.33468599,0.33468599,0.94232971,0,0)" />
+    <text
+       xml:space="preserve"
+       style="font-size:15.68353653px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#2a2a2a;fill-opacity:1;stroke:none;display:inline;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
+       x="-31.134214"
+       y="807.99945"
+       id="text3946"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Store\LogoBase.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="matrix(0.94232971,-0.33468599,0.33468599,0.94232971,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan3948"
+         x="-31.134214"
+         y="807.99945">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:15.68353653px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#2a2a2a;fill-opacity:1;stroke:none;display:inline;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
+       x="13.351892"
+       y="880.87067"
+       id="text3946-8"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Store\LogoBase.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="matrix(0.94232971,-0.33468599,0.33468599,0.94232971,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan3948-9"
+         x="13.351892"
+         y="880.87067">1</tspan></text>
+    <g
+       transform="matrix(0.54138692,-0.19228368,0.19228368,0.54138692,-859.31724,558.07399)"
+       style="display:inline"
+       id="g4115-0"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Store\LogoBase.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="ccscc"
+         inkscape:connector-curvature="0"
+         id="path4030-4"
+         d="m 1727.2459,1072.1921 c -13.2401,-1.5468 -20.6365,-16.8912 -20.313,-36.7229 9.5497,-2.7886 15.2881,-3.5822 21.7272,-3.5822 6.8956,0 11.7501,-1.9345 22.0445,2.6885 0.012,17.5283 -6.8006,36.2831 -23.4587,37.6166 z"
+         style="fill:url(#linearGradient4316-3);fill-opacity:1;stroke:#995600;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         d="m 1732.79,1013.927 c 1.8809,-0.1621 4.1896,3.8113 4.1896,3.8113 0,0 -7.8717,-5.2129 -9.498,12.1237 -1.9299,0.6717 -5.9598,-1.4349 -5.9598,-1.4349 0,0 5.1696,-13.9743 11.2682,-14.5001 z"
+         style="fill:#5d2c14;fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686"
+         id="path4118-9" />
+      <path
+         sodipodi:nodetypes="ccsccscc"
+         inkscape:connector-curvature="0"
+         id="path4027-3"
+         d="m 1750.5362,1041.7865 c -0.261,0.083 0.01,-1.0034 0.011,-2.274 -5.1136,-0.8419 -12.2303,-2.057 -20.6935,-2.057 -9.7368,0 -17.4263,1.9329 -22.9089,2.8154 0.093,1.6117 0.2467,2.3692 0.2816,3.3717 -8.8389,-7.082 -0.5292,-22.7158 22.4505,-22.7158 22.2727,0 27.4005,16.9596 20.8597,20.8597 z"
+         style="fill:url(#linearGradient4467);fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686" />
+    </g>
+    <rect
+       style="opacity:0.98999999;fill:#ffffff;fill-opacity:1;stroke:#4c4c4c;stroke-width:1.01976287;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       id="rect3107-3-8"
+       width="27.774731"
+       height="41.818279"
+       x="196.93576"
+       y="876.35486"
+       rx="2.3712106"
+       ry="2.4634032"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Store\StoreLogoBase.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="matrix(0.951538,-0.30753119,0.30753119,0.951538,0,0)" />
+    <text
+       xml:space="preserve"
+       style="font-size:14.43517494px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#2a2a2a;fill-opacity:1;stroke:none;display:inline;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
+       x="200.15175"
+       y="891.48486"
+       id="text3946-3"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Store\StoreLogoBase.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="matrix(0.951538,-0.30753119,0.30753119,0.951538,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan3948-2"
+         x="200.15175"
+         y="891.48486">1</tspan></text>
+    <g
+       transform="matrix(0.31396306,-0.10147093,0.10147093,0.31396306,-166.96566,643.15057)"
+       style="display:inline"
+       id="g4115-0-1"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Store\StoreLogoBase.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="ccscc"
+         inkscape:connector-curvature="0"
+         id="path4030-4-5"
+         d="m 1727.2459,1072.1921 c -13.2401,-1.5468 -20.6365,-16.8912 -20.313,-36.7229 9.5497,-2.7886 15.2881,-3.5822 21.7272,-3.5822 6.8956,0 11.7501,-1.9345 22.0445,2.6885 0.012,17.5283 -6.8006,36.2831 -23.4587,37.6166 z"
+         style="fill:url(#linearGradient4316-3-23);fill-opacity:1;stroke:#995600;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         d="m 1732.79,1013.927 c 1.8809,-0.1621 4.1896,3.8113 4.1896,3.8113 0,0 -7.8717,-5.2129 -9.498,12.1237 -1.9299,0.6717 -5.9598,-1.4349 -5.9598,-1.4349 0,0 5.1696,-13.9743 11.2682,-14.5001 z"
+         style="fill:#5d2c14;fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686"
+         id="path4118-9-9" />
+      <path
+         sodipodi:nodetypes="ccsccscc"
+         inkscape:connector-curvature="0"
+         id="path4027-3-5"
+         d="m 1750.5362,1041.7865 c -0.261,0.083 0.01,-1.0034 0.011,-2.274 -5.1136,-0.8419 -12.2303,-2.057 -20.6935,-2.057 -9.7368,0 -17.4263,1.9329 -22.9089,2.8154 0.093,1.6117 0.2467,2.3692 0.2816,3.3717 -8.8389,-7.082 -0.5292,-22.7158 22.4505,-22.7158 22.2727,0 27.4005,16.9596 20.8597,20.8597 z"
+         style="fill:url(#linearGradient4467-5);fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:15.20719719px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1e1e1e;fill-opacity:1;stroke:none;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
+       x="137.87225"
+       y="793.26465"
+       id="text4124-2"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Store\SmallLogoBase.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan4126-7"
+         x="137.87225"
+         y="793.26465">P</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:15.20719719px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1e1e1e;fill-opacity:1;stroke:none;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
+       x="144.95929"
+       y="804.76141"
+       id="text4225-0"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Store\SmallLogoBase.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan4227-3"
+         x="144.95929"
+         y="804.76141">A</tspan></text>
+    <g
+       transform="matrix(0.58198921,0,0,0.58198921,-1501.8311,598.41252)"
+       style="display:inline"
+       id="g4487-1"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Store\PromoBase.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <text
+         sodipodi:linespacing="125%"
+         id="text4124-7"
+         y="532.07495"
+         x="2253.5344"
+         style="font-size:90px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1e1e1e;fill-opacity:1;stroke:none;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
+         xml:space="preserve"><tspan
+           y="532.07495"
+           x="2253.5344"
+           id="tspan4126-6"
+           sodipodi:role="line"
+           style="fill:#ffffff;fill-opacity:1">Pr  ject</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4225-00"
+         y="656.94"
+         x="2422.7639"
+         style="font-size:90px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#1e1e1e;fill-opacity:1;stroke:none;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
+         xml:space="preserve"><tspan
+           y="656.94"
+           x="2422.7639"
+           id="tspan4227-2"
+           sodipodi:role="line"
+           style="fill:#ffffff;fill-opacity:1">Ac  rn</tspan></text>
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Acorn.png"
+         transform="matrix(1.7635378,0,0,1.7635378,-593.54604,-1335.3247)"
+         id="g4115-4-9-4"
+         style="display:inline">
+        <path
+           style="fill:url(#linearGradient4373-5);fill-opacity:1;stroke:#995600;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+           d="m 1727.2459,1072.1921 c -13.2401,-1.5468 -20.6365,-16.8912 -20.313,-36.7229 9.5497,-2.7886 15.2881,-3.5822 21.7272,-3.5822 6.8956,0 11.7501,-1.9345 22.0445,2.6885 0.012,17.5283 -6.8006,36.2831 -23.4587,37.6166 z"
+           id="path4030-5-2-3"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccscc" />
+        <path
+           id="path4118-5-6-3"
+           style="fill:#5d2c14;fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686"
+           d="m 1732.79,1013.927 c 1.8809,-0.1621 4.1896,3.8113 4.1896,3.8113 0,0 -7.8717,-5.2129 -9.498,12.1237 -1.9299,0.6717 -5.9598,-1.4349 -5.9598,-1.4349 0,0 5.1696,-13.9743 11.2682,-14.5001 z"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:url(#linearGradient4375-6);fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686"
+           d="m 1750.5362,1041.7865 c -0.261,0.083 0.01,-1.0034 0.011,-2.274 -5.1136,-0.8419 -12.2303,-2.057 -20.6935,-2.057 -9.7368,0 -17.4263,1.9329 -22.9089,2.8154 0.093,1.6117 0.2467,2.3692 0.2816,3.3717 -8.8389,-7.082 -0.5292,-22.7158 22.4505,-22.7158 22.2727,0 27.4005,16.9596 20.8597,20.8597 z"
+           id="path4027-1-5-6"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccsccscc" />
+      </g>
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\Acorn.png"
+         transform="matrix(1.7635378,0,0,1.7635378,-427.79667,-1209.6125)"
+         id="g4115-4-9-9-2"
+         style="display:inline">
+        <path
+           style="fill:url(#linearGradient4373-4-2);fill-opacity:1;stroke:#995600;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+           d="m 1727.2459,1072.1921 c -13.2401,-1.5468 -20.6365,-16.8912 -20.313,-36.7229 9.5497,-2.7886 15.2881,-3.5822 21.7272,-3.5822 6.8956,0 11.7501,-1.9345 22.0445,2.6885 0.012,17.5283 -6.8006,36.2831 -23.4587,37.6166 z"
+           id="path4030-5-2-5-8"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccscc" />
+        <path
+           id="path4118-5-6-8-2"
+           style="fill:#5d2c14;fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686"
+           d="m 1732.79,1013.927 c 1.8809,-0.1621 4.1896,3.8113 4.1896,3.8113 0,0 -7.8717,-5.2129 -9.498,12.1237 -1.9299,0.6717 -5.9598,-1.4349 -5.9598,-1.4349 0,0 5.1696,-13.9743 11.2682,-14.5001 z"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:url(#linearGradient4454-5);fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686"
+           d="m 1750.5362,1041.7865 c -0.261,0.083 0.01,-1.0034 0.011,-2.274 -5.1136,-0.8419 -12.2303,-2.057 -20.6935,-2.057 -9.7368,0 -17.4263,1.9329 -22.9089,2.8154 0.093,1.6117 0.2467,2.3692 0.2816,3.3717 -8.8389,-7.082 -0.5292,-22.7158 22.4505,-22.7158 22.2727,0 27.4005,16.9596 20.8597,20.8597 z"
+           id="path4027-1-5-2-3"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccsccscc" />
+      </g>
+    </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4427"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion4429"><rect
+           id="rect4431"
+           width="427.14285"
+           height="181.42857"
+           x="-214.28572"
+           y="827.36218" /></flowRegion><flowPara
+         id="flowPara4433"></flowPara></flowRoot>  </g>
+</svg>

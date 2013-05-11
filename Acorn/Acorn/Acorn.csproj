@@ -12,7 +12,9 @@
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <PackageCertificateKeyFile>Acorn_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>Acorn_StoreKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <PackageCertificateThumbprint>2FAAB1935AE0B2F133D7E531110863BC8ADFF264</PackageCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -296,6 +298,8 @@
       <Link>Content\Sounds\Applause.xnb</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Acorn_StoreKey.pfx" />
+    <None Include="Package.StoreAssociation.xml" />
     <None Include="Acorn_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
