@@ -11,7 +11,6 @@ using Acorn.Views;
 
 namespace Acorn.States
 {
-    // TODO: Add Credits Screen and button to get there
     public class MenuState : GameState
     {
         protected override IEnumerable<IGameView> LoadGameViews()
@@ -50,6 +49,13 @@ namespace Acorn.States
             playButton.AddComponent(new TransformationComponent(new Vector2(800, 450), playButtonSprite.Width, playButtonSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
             playButton.AddComponent(new ButtonComponent(playButtonSprite, playButtonPressedSprite));
             yield return playButton;
+
+            var aboutButtonSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.AboutButton);
+            var aboutButtonPressedSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.AboutButtonPressed);
+            var aboutButton = new GameObject("AboutButton");
+            aboutButton.AddComponent(new TransformationComponent(new Vector2(800, 325), aboutButtonSprite.Width, aboutButtonSprite.Height, HorizontalAnchor.Center, VerticalAnchor.Center));
+            aboutButton.AddComponent(new ButtonComponent(aboutButtonSprite, aboutButtonPressedSprite));
+            yield return aboutButton;
 
             var detailsFont = ContentService.Instance.GetAsset<SpriteFont>(AcornAssets.DetailsText);
             var company = new GameObject("Company");

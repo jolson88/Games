@@ -16,6 +16,9 @@ AcornContent\Sprites\PlayButton.xnb
 AcornContent\Sprites\PlayButtonPressed.xnb
 AcornContent\Sprites\AcornEmpty.xnb
 AcornContent\Sprites\GameTitle.xnb
+AcornContent\Sprites\AboutButton.xnb
+AcornContent\Sprites\AboutButtonPressed.xnb
+AcornContent\Sprites\BackgroundAbout.xnb
 AcornContent\Fonts\Title.xnb
 AcornContent\Fonts\Details.xnb
 AcornContent\Sounds\Acorn1.xnb

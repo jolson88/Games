@@ -132,6 +132,8 @@
     <Compile Include="AcornAssets.cs" />
     <Compile Include="Components\PlayerAvatarComponent.cs" />
     <Compile Include="DebugController.cs" />
+    <Compile Include="States\AboutState.cs" />
+    <Compile Include="Views\AboutHumanView.cs" />
     <Compile Include="Views\GameOverHumanView.cs" />
     <Compile Include="Views\MenuHumanView.cs" />
     <Compile Include="Views\PlayingHumanView.cs" />
@@ -298,6 +300,19 @@
       <Link>Content\Sounds\Applause.xnb</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sprites\AboutButton.xnb">
+      <Link>Content\Sprites\AboutButton.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sprites\AboutButtonPressed.xnb">
+      <Link>Content\Sprites\AboutButtonPressed.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sprites\BackgroundAbout.xnb">
+      <Link>Content\Sprites\BackgroundAbout.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\WideLogo.png" />
     <None Include="Acorn_StoreKey.pfx" />
     <None Include="Package.StoreAssociation.xml" />
     <None Include="Acorn_TemporaryKey.pfx" />

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="13987CodingCoda.ProjectAcorn" Publisher="CN=CE6458FF-77B3-4905-9088-8700A70D80F2" Version="1.0.0.0" />
+  <Identity Name="13987CodingCoda.ProjectAcorn" Publisher="CN=CE6458FF-77B3-4905-9088-8700A70D80F2" Version="1.0.0.1" />
   <Properties>
     <DisplayName>Project Acorn</DisplayName>
     <PublisherDisplayName>Owl X Games</PublisherDisplayName>
@@ -15,9 +15,9 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Acorn.App">
-      <VisualElements DisplayName="Project Acorn" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="Project Acorn is a local multiplayer, risk-and-reward card game for kids. Can you be the first player to collect all eight acorns? Will you keep the acorns you have so far or try for more? Do you feel lucky? Well, do you?" ForegroundText="dark" BackgroundColor="#b3e8ff" ToastCapable="false">
-        <DefaultTile ShowName="allLogos" />
-        <SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#b3e8ff" />
+      <VisualElements DisplayName="Project Acorn" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="Project Acorn is a local multiplayer, risk-and-reward card game for kids. Can you be the first player to collect all eight acorns? Will you keep the acorns you have so far or try for more? Do you feel lucky? Well, do you?" ForegroundText="dark" BackgroundColor="#55CAFB" ToastCapable="false">
+        <DefaultTile ShowName="allLogos" WideLogo="Assets\WideLogo.png" />
+        <SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#55CAFB" />
         <InitialRotationPreference>
           <Rotation Preference="landscape" />
         </InitialRotationPreference>

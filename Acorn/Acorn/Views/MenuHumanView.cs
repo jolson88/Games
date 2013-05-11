@@ -16,6 +16,7 @@ namespace Acorn.Views
     public class MenuHumanView : HumanGameView
     {
         private GameObject _playButton;
+        private GameObject _aboutButton;
         private GameObject _cloud;
         private GameObject _title;
 
@@ -40,6 +41,10 @@ namespace Acorn.Views
                 _playButton = msg.GameObject;
                 _playButton.AddComponent(new SwellComponent(16, TimeSpan.FromSeconds(1), isRepeating: true));
             }
+            else if (msg.GameObject.Tag.Equals("AboutButton"))
+            {
+                _aboutButton = msg.GameObject;
+            }
             else if (msg.GameObject.Tag.Equals("Cloud"))
             {
                 _cloud = msg.GameObject;
@@ -56,7 +61,13 @@ namespace Acorn.Views
             {
                 var buttonSound = ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.ButtonSelect);
                 this.MessageManager.TriggerMessage(new PlaySoundEffectMessage(buttonSound, 0.6f));
-                AnimateScreenOff();
+                AnimateScreenOff(new PlayState());
+            }
+            else if (msg.GameObjectId == _aboutButton.Id)
+            {
+                var buttonSound = ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.ButtonSelect);
+                this.MessageManager.TriggerMessage(new PlaySoundEffectMessage(buttonSound, 0.6f));
+                AnimateScreenOff(new AboutState());
             }
         }
 
@@ -67,6 +78,7 @@ namespace Acorn.Views
             _cloud.Transform.Position = new Vector2(this.SceneGraph.Camera.Bounds.Width, _cloud.Transform.Position.Y);
             _title.Transform.PositionOffset = new Vector2(-this.SceneGraph.Camera.Bounds.Width, 0);
             _playButton.Transform.PositionOffset = new Vector2(this.SceneGraph.Camera.Bounds.Width, 0);
+            _aboutButton.Transform.PositionOffset = new Vector2(this.SceneGraph.Camera.Bounds.Width, 0);
 
             var companyLabel = this.GameObjectManager.GetAllGameObjectsWithTag("Company").First();
             companyLabel.Transform.PositionOffset = new Vector2(this.SceneGraph.Camera.Bounds.Width, 0);
@@ -76,11 +88,12 @@ namespace Acorn.Views
                 {
                     _title.Transform.PositionOffset = new Vector2(-(1f - interp.Value) * this.SceneGraph.Camera.Bounds.Width, 0);
                     _playButton.Transform.PositionOffset = new Vector2((1f - interp.Value) * this.SceneGraph.Camera.Bounds.Width, 0);
+                    _aboutButton.Transform.PositionOffset = new Vector2((1f - interp.Value) * this.SceneGraph.Camera.Bounds.Width, 0);
                     companyLabel.Transform.PositionOffset = new Vector2((1f - interp.Value) * this.SceneGraph.Camera.Bounds.Width, 0);
                 })));
         }
 
-        private void AnimateScreenOff()
+        private void AnimateScreenOff(GameState newState)
         {
             _cloud.RemoveComponent<ScreenWrappingComponent>();
             _cloud.RemoveComponent<SimpleMovementComponent>();
@@ -94,7 +107,8 @@ namespace Acorn.Views
                     _cloud.Transform.PositionOffset = new Vector2(-interp.Value * this.SceneGraph.Camera.Bounds.Width, 0);
                     _title.Transform.PositionOffset = new Vector2(-interp.Value * this.SceneGraph.Camera.Bounds.Width, 0);
                     _playButton.Transform.PositionOffset = new Vector2(interp.Value * this.SceneGraph.Camera.Bounds.Width, 0);
-
+                    _aboutButton.Transform.PositionOffset = new Vector2(interp.Value * this.SceneGraph.Camera.Bounds.Width, 0);
+                    
                     foreach (var label in labels)
                     {
                         label.Transform.PositionOffset = new Vector2(interp.Value * this.SceneGraph.Camera.Bounds.Width, 0);
@@ -102,7 +116,7 @@ namespace Acorn.Views
                 }),
                 new ActionProcess(() =>
                 {
-                    this.MessageManager.QueueMessage(new RequestChangeStateMessage(new PlayState()));
+                    this.MessageManager.QueueMessage(new RequestChangeStateMessage(newState));
                 })));
         }
     }
