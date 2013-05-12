@@ -10,6 +10,7 @@ using Hiromi;
 using Hiromi.Components;
 using Acorn;
 using Acorn.Components;
+using Acorn.States;
 
 namespace Acorn.Views
 {
@@ -17,10 +18,10 @@ namespace Acorn.Views
     {
         private static int AVATAR_BOUNCE_HEIGHT = 60;
 
+        private PlaySettings _playSettings;
         private int _currentPlayer;
         private int[] _playerIndices;
         private List<PlayerController> _playerControllers;
-        private DebugController _cameraController;
         private List<GameObject> _cards;
         private int _selectedCardCount = 0;
         private Dictionary<int, GameObject> _playerAvatars;
@@ -29,14 +30,17 @@ namespace Acorn.Views
         private Random _random;
         private float[] _acornRotations = new float[] { -1.5f, -1.2f, -0.9f, 0.9f, 1.2f, 1.5f };
         private SoundEffect[] _scoringSounds;
+#if DEBUG
+        private DebugController _cameraController;
+#endif
 
         // Multiple indices allow this one view to have multiple players play with it (local multiplayer)
-        public PlayingHumanView(params int[] playerIndices)
+        public PlayingHumanView(PlaySettings playSettings)
         {
+            _playSettings = playSettings;
             _playerAvatars = new Dictionary<int, GameObject>();
             _scoreAcorns = new Dictionary<int, List<ScoreComponent>>();
             _playerControllers = new List<PlayerController>();
-            _playerIndices = playerIndices;
             _cards = new List<GameObject>();
             _random = new Random();
 
@@ -48,9 +52,22 @@ namespace Acorn.Views
 
         protected override void OnInitialize()
         {
-            for (int i = 0; i < _playerIndices.Length; i++)
+            if (_playSettings.PlayerOneKind == PlayerKind.Human)
             {
-                _playerControllers.Add(new PlayerController(_playerIndices[i], this.MessageManager));
+                _playerControllers.Add(new PlayerController(0, this.MessageManager));
+            }
+            else
+            {
+                // TODO: Create Computer Controller
+            }
+
+            if (_playSettings.PlayerTwoKind == PlayerKind.Human)
+            {
+                _playerControllers.Add(new PlayerController(1, this.MessageManager));
+            }
+            else
+            {
+                // TODO: Create Computer Controller
             }
 
 #if DEBUG

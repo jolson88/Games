@@ -10,6 +10,7 @@ namespace Acorn
 {
     public class AcornGameLogic
     {
+        private PlaySettings _playSettings;
         private MessageManager _messageManager;
         private ProcessManager _processManager;
         private Random _random;
@@ -21,8 +22,9 @@ namespace Acorn
         private bool _turnOver = false;
         private Dictionary<int, int?> _cardValues;
 
-        public AcornGameLogic(MessageManager messageManager, ProcessManager processManager, int cardCount, int winningPoints)
+        public AcornGameLogic(PlaySettings playSettings, MessageManager messageManager, ProcessManager processManager, int cardCount, int winningPoints)
         {
+            _playSettings = playSettings;
             _messageManager = messageManager;
             _processManager = processManager;
             _random = new Random();
@@ -47,7 +49,7 @@ namespace Acorn
 
         private void OnGameOver(GameOverMessage msg)
         {
-            _messageManager.QueueMessage(new RequestChangeStateMessage(new GameOverState(msg.WinningPlayerIndex)));
+            _messageManager.QueueMessage(new RequestChangeStateMessage(new GameOverState(_playSettings, msg.WinningPlayerIndex)));
         }
 
         private void OnCardSelectionRequest(CardSelectionRequestMessage msg)

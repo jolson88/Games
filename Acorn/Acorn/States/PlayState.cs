@@ -12,22 +12,45 @@ using Acorn.Views;
 
 namespace Acorn.States
 {
+    public enum PlayerKind
+    {
+        Human,
+        Computer
+    }
+
+    public class PlaySettings
+    {
+        public PlayerKind PlayerOneKind { get; set; }
+        public PlayerKind PlayerTwoKind { get; set; }
+
+        public PlaySettings(PlayerKind playerOne, PlayerKind playerTwo)
+        {
+            this.PlayerOneKind = playerOne;
+            this.PlayerTwoKind = playerTwo;
+        }
+    }
+
     public class PlayState : GameState
     {
         private static int CARD_NUMBER = 4;
         private static int WINNING_TOTAL = 8;
 
+        private PlaySettings _playSettings;
         private AcornGameLogic _logic;
+
+        public PlayState(PlaySettings playSettings)
+        {
+            _playSettings = playSettings;
+        }
 
         protected override void OnInitialize()
         {
-            _logic = new AcornGameLogic(this.MessageManager, this.ProcessManager, CARD_NUMBER, WINNING_TOTAL);
+            _logic = new AcornGameLogic(_playSettings, this.MessageManager, this.ProcessManager, CARD_NUMBER, WINNING_TOTAL);
         }
 
         protected override IEnumerable<IGameView> LoadGameViews()
         {
-            // Two human players
-            yield return new PlayingHumanView(0, 1);
+            yield return new PlayingHumanView(_playSettings);
         }
 
         protected override IEnumerable<GameObject> LoadGameObjects()

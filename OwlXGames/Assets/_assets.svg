@@ -27,8 +27,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142136"
-     inkscape:cx="-682.94606"
-     inkscape:cy="3.1669008"
+     inkscape:cx="-880.23066"
+     inkscape:cy="-263.88378"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="false"
@@ -2215,7 +2215,10 @@
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <g
-       id="g4249">
+       id="g4249"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\OwlXGames\Assets\Header.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          sodipodi:nodetypes="ssscs"
          inkscape:connector-curvature="0"
@@ -2461,5 +2464,20 @@
          d="m 927.40773,1252.8731 c 7.25931,-4.2028 6.68623,-6.8772 6.68623,-6.8772"
          style="fill:none;stroke:#000000;stroke-width:0.54032683px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     </g>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
+       x="-1145.5129"
+       y="1021.4523"
+       id="text4284"
+       sodipodi:linespacing="125%"
+       transform="translate(1689.875,599.0625)"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\OwlXGames\Assets\Title.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan4286"
+         x="-1145.5129"
+         y="1021.4523">Owl X Games</tspan></text>
   </g>
 </svg>

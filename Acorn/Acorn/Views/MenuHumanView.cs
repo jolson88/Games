@@ -61,7 +61,7 @@ namespace Acorn.Views
             {
                 var buttonSound = ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.ButtonSelect);
                 this.MessageManager.TriggerMessage(new PlaySoundEffectMessage(buttonSound, 0.6f));
-                AnimateScreenOff(new PlayState());
+                AnimateScreenOff(new PlayState(new PlaySettings(PlayerKind.Human, PlayerKind.Human)));
             }
             else if (msg.GameObjectId == _aboutButton.Id)
             {

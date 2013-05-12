@@ -14,11 +14,17 @@ namespace Acorn.Views
 {
     public class GameOverHumanView : HumanGameView
     {
+        private PlaySettings _playSettings;
         private GameObject _playButton;
         private GameObject _menuButton;
         private GameObject _label;
         private GameObject _playerAvatar;
         private bool _jumping = true;
+
+        public GameOverHumanView(PlaySettings playSettings)
+        {
+            _playSettings = playSettings;
+        }
 
         protected override void OnInitialize()
         {
@@ -80,7 +86,7 @@ namespace Acorn.Views
             {
                 var sound = ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.ButtonSelect);
                 this.MessageManager.TriggerMessage(new PlaySoundEffectMessage(sound, 0.6f));
-                this.AnimateScreenOff(new PlayState());
+                this.AnimateScreenOff(new PlayState(_playSettings));
             }
             else if (msg.GameObjectId == _menuButton.Id)
             {

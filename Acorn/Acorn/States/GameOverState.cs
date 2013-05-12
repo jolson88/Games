@@ -13,16 +13,18 @@ namespace Acorn.States
 {
     public class GameOverState : GameState
     {
+        private PlaySettings _playSettings;
         private int _winningPlayer;
 
-        public GameOverState(int winningPlayer)
+        public GameOverState(PlaySettings playSettings, int winningPlayer)
         {
+            _playSettings = playSettings;
             _winningPlayer = winningPlayer;
         }
 
         protected override IEnumerable<IGameView> LoadGameViews()
         {
-            yield return new GameOverHumanView();
+            yield return new GameOverHumanView(_playSettings);
         }
 
         protected override IEnumerable<GameObject> LoadGameObjects()
