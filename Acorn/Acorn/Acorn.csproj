@@ -133,9 +133,11 @@
     <Compile Include="Components\PlayerAvatarComponent.cs" />
     <Compile Include="DebugController.cs" />
     <Compile Include="States\AboutState.cs" />
+    <Compile Include="States\PlayerSelectState.cs" />
     <Compile Include="Views\AboutHumanView.cs" />
     <Compile Include="Views\GameOverHumanView.cs" />
     <Compile Include="Views\MenuHumanView.cs" />
+    <Compile Include="Views\PlayerSelectHumanView.cs" />
     <Compile Include="Views\PlayingHumanView.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -313,6 +315,22 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\WideLogo.png" />
+    <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sprites\BlueComputerButton.xnb">
+      <Link>Content\Sprites\BlueComputerButton.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sprites\BluePlayerButton.xnb">
+      <Link>Content\Sprites\BluePlayerButton.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sprites\RedComputerButton.xnb">
+      <Link>Content\Sprites\RedComputerButton.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sprites\RedPlayerButton.xnb">
+      <Link>Content\Sprites\RedPlayerButton.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Acorn_StoreKey.pfx" />
     <None Include="Package.StoreAssociation.xml" />
     <None Include="Acorn_TemporaryKey.pfx" />

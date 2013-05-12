@@ -2997,7 +2997,7 @@
        inkscape:export-ydpi="90" />
     <g
        id="g4902"
-       transform="translate(-1.9999971,-4.0000023)"
+       transform="matrix(0.77221654,0,0,0.77221654,70.437033,162.50389)"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueComputerButton.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
@@ -3045,7 +3045,8 @@
        id="g4909"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueComputerButton.png"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
+       inkscape:export-ydpi="90"
+       transform="matrix(0.77221654,0,0,0.77221654,71.981463,165.59276)">
       <rect
          ry="6.8143764"
          rx="6.8143764"
@@ -3087,7 +3088,7 @@
          inkscape:connector-curvature="0" />
       <path
          transform="matrix(-1.0449357,0,0,0.78262063,1566.4751,1678.6302)"
-         d="m -244.45693,356.87216 a 18.435284,37.880722 0 1 1 -36.87057,0 18.435284,37.880722 0 1 1 36.87057,0 z"
+         d="m -244.45693,356.87216 c 0,20.92095 -8.25376,37.88072 -18.43528,37.88072 -10.18153,0 -18.43529,-16.95977 -18.43529,-37.88072 0,-20.92094 8.25376,-37.88072 18.43529,-37.88072 10.18152,0 18.43528,16.95978 18.43528,37.88072 z"
          sodipodi:ry="37.880722"
          sodipodi:rx="18.435284"
          sodipodi:cy="356.87216"
@@ -3097,7 +3098,7 @@
          sodipodi:type="arc" />
       <path
          transform="matrix(-1.115666,0,0,1.113921,1553.0238,1584.3579)"
-         d="m -253.54829,341.97241 a 9.8489876,12.879445 0 1 1 -19.69798,0 9.8489876,12.879445 0 1 1 19.69798,0 z"
+         d="m -253.54829,341.97241 c 0,7.11312 -4.40954,12.87945 -9.84899,12.87945 -5.43944,0 -9.84899,-5.76633 -9.84899,-12.87945 0,-7.11312 4.40955,-12.87944 9.84899,-12.87944 5.43945,0 9.84899,5.76632 9.84899,12.87944 z"
          sodipodi:ry="12.879445"
          sodipodi:rx="9.8489876"
          sodipodi:cy="341.97241"
@@ -3107,7 +3108,7 @@
          sodipodi:type="arc" />
       <path
          transform="matrix(-1.0449357,0,0,0.78262063,1521.144,1677.4915)"
-         d="m -244.45693,356.87216 a 18.435284,37.880722 0 1 1 -36.87057,0 18.435284,37.880722 0 1 1 36.87057,0 z"
+         d="m -244.45693,356.87216 c 0,20.92095 -8.25376,37.88072 -18.43528,37.88072 -10.18153,0 -18.43529,-16.95977 -18.43529,-37.88072 0,-20.92094 8.25376,-37.88072 18.43529,-37.88072 10.18152,0 18.43528,16.95978 18.43528,37.88072 z"
          sodipodi:ry="37.880722"
          sodipodi:rx="18.435284"
          sodipodi:cy="356.87216"
@@ -3117,7 +3118,7 @@
          sodipodi:type="arc" />
       <path
          transform="matrix(-1.115666,0,0,1.113921,1506.2023,1583.6867)"
-         d="m -253.54829,341.97241 a 9.8489876,12.879445 0 1 1 -19.69798,0 9.8489876,12.879445 0 1 1 19.69798,0 z"
+         d="m -253.54829,341.97241 c 0,7.11312 -4.40954,12.87945 -9.84899,12.87945 -5.43944,0 -9.84899,-5.76633 -9.84899,-12.87945 0,-7.11312 4.40955,-12.87944 9.84899,-12.87944 5.43945,0 9.84899,5.76632 9.84899,12.87944 z"
          sodipodi:ry="12.879445"
          sodipodi:rx="9.8489876"
          sodipodi:cy="341.97241"
@@ -3127,7 +3128,7 @@
          sodipodi:type="arc" />
       <path
          transform="matrix(-0.54045916,0,0,0.41684771,1695.0535,1806.1054)"
-         d="m -253.54829,341.97241 a 9.8489876,12.879445 0 1 1 -19.69798,0 9.8489876,12.879445 0 1 1 19.69798,0 z"
+         d="m -253.54829,341.97241 c 0,7.11312 -4.40954,12.87945 -9.84899,12.87945 -5.43944,0 -9.84899,-5.76633 -9.84899,-12.87945 0,-7.11312 4.40955,-12.87944 9.84899,-12.87944 5.43945,0 9.84899,5.76632 9.84899,12.87944 z"
          sodipodi:ry="12.879445"
          sodipodi:rx="9.8489876"
          sodipodi:cy="341.97241"
@@ -3137,7 +3138,7 @@
          sodipodi:type="arc" />
       <path
          transform="matrix(-0.54045916,0,0,0.41684771,1648.6755,1805.2018)"
-         d="m -253.54829,341.97241 a 9.8489876,12.879445 0 1 1 -19.69798,0 9.8489876,12.879445 0 1 1 19.69798,0 z"
+         d="m -253.54829,341.97241 c 0,7.11312 -4.40954,12.87945 -9.84899,12.87945 -5.43944,0 -9.84899,-5.76633 -9.84899,-12.87945 0,-7.11312 4.40955,-12.87944 9.84899,-12.87944 5.43945,0 9.84899,5.76632 9.84899,12.87944 z"
          sodipodi:ry="12.879445"
          sodipodi:rx="9.8489876"
          sodipodi:cy="341.97241"
@@ -3173,7 +3174,7 @@
     <g
        style="display:inline"
        id="g4902-5"
-       transform="translate(-556.99994,-5.9999693)"
+       transform="matrix(0.77221654,0,0,0.77221654,-358.1431,160.95948)"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedComputerButton.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
@@ -3219,7 +3220,7 @@
     </g>
     <g
        id="g4927"
-       transform="translate(-12.000003,34.000002)"
+       transform="matrix(0.77221654,0,0,0.77221654,62.714863,191.84812)"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedComputerButton.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
@@ -3350,7 +3351,7 @@
     <g
        style="display:inline"
        id="g4902-5-1"
-       transform="translate(-558.99994,362.00003)"
+       transform="matrix(0.77221654,0,0,0.77221654,-359.68754,445.13517)"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedPlayerButton.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
@@ -3396,7 +3397,7 @@
     </g>
     <g
        id="g5322"
-       transform="matrix(1.0437937,0,0,1.0437937,-454.05654,-162.7251)"
+       transform="matrix(0.80603475,0,0,0.80603475,-278.64851,39.933738)"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedPlayerButton.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
@@ -3684,7 +3685,7 @@
     <g
        style="display:inline"
        id="g4902-5-1-4"
-       transform="translate(-4.9999515,364.00002)"
+       transform="matrix(0.77221654,0,0,0.77221654,68.120423,446.67959)"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BluePlayerButton.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
@@ -3730,7 +3731,7 @@
     </g>
     <g
        id="g5358"
-       transform="translate(168,-329.99999)"
+       transform="matrix(0.77221654,0,0,0.77221654,201.71384,-89.238692)"
        inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BluePlayerButton.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">

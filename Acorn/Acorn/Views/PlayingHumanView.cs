@@ -59,6 +59,7 @@ namespace Acorn.Views
             else
             {
                 // TODO: Create Computer Controller
+                _playerControllers.Add(new PlayerController(0, this.MessageManager));
             }
 
             if (_playSettings.PlayerTwoKind == PlayerKind.Human)
@@ -68,6 +69,7 @@ namespace Acorn.Views
             else
             {
                 // TODO: Create Computer Controller
+                _playerControllers.Add(new PlayerController(1, this.MessageManager));
             }
 
 #if DEBUG

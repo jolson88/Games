@@ -33,6 +33,10 @@ namespace Acorn
         public static string RedSquirrel = "Sprites\\RedSquirrel";
         public static string BlueSquirrel = "Sprites\\BlueSquirrel";
         public static string ScoreMeter = "Sprites\\ScoreMeter";
+        public static string RedPlayerButton = "Sprites\\RedPlayerButton";
+        public static string RedComputerButton = "Sprites\\RedComputerButton";
+        public static string BluePlayerButton = "Sprites\\BluePlayerButton";
+        public static string BlueComputerButton = "Sprites\\BlueComputerButton";
 
         // Fonts
         public static string TitleText = "Fonts\\Title";

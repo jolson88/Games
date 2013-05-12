@@ -19,6 +19,10 @@ AcornContent\Sprites\GameTitle.xnb
 AcornContent\Sprites\AboutButton.xnb
 AcornContent\Sprites\AboutButtonPressed.xnb
 AcornContent\Sprites\BackgroundAbout.xnb
+AcornContent\Sprites\BlueComputerButton.xnb
+AcornContent\Sprites\BluePlayerButton.xnb
+AcornContent\Sprites\RedComputerButton.xnb
+AcornContent\Sprites\RedPlayerButton.xnb
 AcornContent\Fonts\Title.xnb
 AcornContent\Fonts\Details.xnb
 AcornContent\Sounds\Acorn1.xnb

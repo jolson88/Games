@@ -80,6 +80,7 @@ Global
 		{EBF89F18-2B09-402C-AB0E-19623DFE7107}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
 		{EBF89F18-2B09-402C-AB0E-19623DFE7107}.Debug|x64.ActiveCfg = Debug|Windows Phone
 		{EBF89F18-2B09-402C-AB0E-19623DFE7107}.Debug|x86.ActiveCfg = Debug|Windows Phone
+		{EBF89F18-2B09-402C-AB0E-19623DFE7107}.Debug|x86.Build.0 = Debug|Windows Phone
 		{EBF89F18-2B09-402C-AB0E-19623DFE7107}.Release|Any CPU.ActiveCfg = Release|Windows Phone
 		{EBF89F18-2B09-402C-AB0E-19623DFE7107}.Release|ARM.ActiveCfg = Release|Windows Phone
 		{EBF89F18-2B09-402C-AB0E-19623DFE7107}.Release|ARM.Build.0 = Release|Windows Phone
