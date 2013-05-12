@@ -11,7 +11,7 @@ using Acorn.Components;
 
 namespace Acorn
 {
-    public class PlayerController
+    public class HumanPlayerController : IPlayerController
     {
         private MessageManager _messageManager;
         private int _playerIndex;
@@ -20,7 +20,7 @@ namespace Acorn
         private List<GameObject> _cards;
         private bool _isTurnOver;
 
-        public PlayerController(int playerIndex, MessageManager messageManager)
+        public HumanPlayerController(int playerIndex, MessageManager messageManager)
         {
             _cards = new List<GameObject>();
             _playerIndex = playerIndex;

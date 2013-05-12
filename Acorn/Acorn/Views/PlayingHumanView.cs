@@ -20,8 +20,7 @@ namespace Acorn.Views
 
         private PlaySettings _playSettings;
         private int _currentPlayer;
-        private int[] _playerIndices;
-        private List<PlayerController> _playerControllers;
+        private List<IPlayerController> _playerControllers;
         private List<GameObject> _cards;
         private int _selectedCardCount = 0;
         private Dictionary<int, GameObject> _playerAvatars;
@@ -40,7 +39,7 @@ namespace Acorn.Views
             _playSettings = playSettings;
             _playerAvatars = new Dictionary<int, GameObject>();
             _scoreAcorns = new Dictionary<int, List<ScoreComponent>>();
-            _playerControllers = new List<PlayerController>();
+            _playerControllers = new List<IPlayerController>();
             _cards = new List<GameObject>();
             _random = new Random();
 
@@ -54,22 +53,22 @@ namespace Acorn.Views
         {
             if (_playSettings.PlayerOneKind == PlayerKind.Human)
             {
-                _playerControllers.Add(new PlayerController(0, this.MessageManager));
+                _playerControllers.Add(new HumanPlayerController(0, this.MessageManager));
             }
             else
             {
                 // TODO: Create Computer Controller
-                _playerControllers.Add(new PlayerController(0, this.MessageManager));
+                _playerControllers.Add(new ComputerPlayerController(0, this.MessageManager));
             }
 
             if (_playSettings.PlayerTwoKind == PlayerKind.Human)
             {
-                _playerControllers.Add(new PlayerController(1, this.MessageManager));
+                _playerControllers.Add(new HumanPlayerController(1, this.MessageManager));
             }
             else
             {
                 // TODO: Create Computer Controller
-                _playerControllers.Add(new PlayerController(1, this.MessageManager));
+                _playerControllers.Add(new ComputerPlayerController(1, this.MessageManager));
             }
 
 #if DEBUG

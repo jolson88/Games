@@ -143,11 +143,11 @@ namespace Acorn
         private int GetNextRandomCardValue()
         {
             var r = _random.Next(100);
-            if (r > 75)
+            if (r > 78)
             {
                 return 2;
             }
-            else if (r > 50)
+            else if (r > 57)
             {
                 return 0;
             }
