@@ -18,6 +18,7 @@ namespace Acorn
         private int? _winningPlayer;
         private int _winningPoints;
         private int _runningPoints;
+        private bool _turnOver = false;
         private Dictionary<int, int?> _cardValues;
 
         public AcornGameLogic(MessageManager messageManager, ProcessManager processManager, int cardCount, int winningPoints)
@@ -51,7 +52,7 @@ namespace Acorn
 
         private void OnCardSelectionRequest(CardSelectionRequestMessage msg)
         {
-            if (msg.PlayerIndex == _currentPlayer && !CardHasBeenSelected(msg.CardIndex))
+            if (msg.PlayerIndex == _currentPlayer && !CardHasBeenSelected(msg.CardIndex) && !_turnOver)
             {
                 var cardValue = GetNextRandomCardValue();
                 SelectCard(msg.CardIndex, cardValue);
@@ -82,6 +83,7 @@ namespace Acorn
         {
             if (msg.PlayerIndex == _currentPlayer)
             {
+                _turnOver = false;
                 if (_winningPlayer.HasValue)
                 {
                     _messageManager.QueueMessage(new GameOverMessage(_currentPlayer));
@@ -101,6 +103,7 @@ namespace Acorn
 
         private void EndPlayerTurn(EndTurnReason reason)
         {
+            _turnOver = true;
             if (reason == EndTurnReason.LostPoints)
             {
                 _messageManager.QueueMessage(new EndTurnMessage(_currentPlayer, reason));

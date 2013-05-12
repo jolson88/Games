@@ -222,20 +222,22 @@ namespace Acorn.Views
                 randDelay = TimeSpan.FromSeconds(_random.NextDouble() * 0.25);
 
                 var newX = randX;
-                this.ProcessManager.AttachProcess(new DelayProcess(randDelay, new ActionProcess(() =>
+                var obj = new GameObject("FallenAcorn");
+                obj.AddComponent(new TransformationComponent(new Vector2((float)newX, GraphicsService.Instance.DesignedScreenSize.Y + acornSprite.Height),
+                                        acornSprite.Width,
+                                        acornSprite.Height,
+                                        HorizontalAnchor.Center,
+                                        VerticalAnchor.Center)
                 {
-                    var obj = new GameObject("FallenAcorn");
-                    obj.AddComponent(new TransformationComponent(new Vector2((float)newX, GraphicsService.Instance.DesignedScreenSize.Y + acornSprite.Height), 
-                                            acornSprite.Width, 
-                                            acornSprite.Height, 
-                                            HorizontalAnchor.Center, 
-                                            VerticalAnchor.Center) 
-                                            {
-                                                Rotation = _acornRotations[_random.Next(_acornRotations.Length)],
-                                                Z = 10
-                                            });
-                    obj.AddComponent(new SpriteComponent(acornSprite));
-                    
+                    Rotation = _acornRotations[_random.Next(_acornRotations.Length)],
+                    Z = 10
+                });
+                obj.AddComponent(new SpriteComponent(acornSprite));
+                this.GameObjectManager.AddGameObject(obj);
+
+                // Start falling after a random amount of time
+                this.ProcessManager.AttachProcess(new DelayProcess(randDelay, new ActionProcess(() =>
+                {                    
                     var moveTo = new MoveToComponent(new Vector2((float)newX, 40), TimeSpan.FromSeconds(0.8), Easing.GetLinearFunction(), Easing.ConvertTo(EasingKind.EaseOut, Easing.GetSineFunction()));
                     moveTo.Removed += (sender, args) =>
                     {
@@ -243,7 +245,6 @@ namespace Acorn.Views
                         this.MessageManager.TriggerMessage(new PlaySoundEffectMessage(sound, 0.5f));
                     };
                     obj.AddComponent(moveTo);
-                    this.GameObjectManager.AddGameObject(obj);
                 })));
                 
             }
