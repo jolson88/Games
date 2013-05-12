@@ -88,7 +88,9 @@ namespace Acorn.Views
             {
                 controller.Update(gameTime);
             }
+#if DEBUG
             _cameraController.Update(gameTime);
+#endif
         }
 
         private void OnNewGameObject(GameObjectLoadedMessage msg)
@@ -122,7 +124,7 @@ namespace Acorn.Views
                 var card = _cards.Where(go => go.GetComponent<CardComponent>().CardIndex == msg.CardIndex).First();
                 card.AddComponent(new ShakeComponent(20, TimeSpan.FromSeconds(1.5)));
                 _selectedCardCount = 0;
-                this.MessageManager.QueueMessage(new PlaySoundEffectMessage(ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.BuzzZeroCard), 0.08f));
+                this.MessageManager.QueueMessage(new PlaySoundEffectMessage(ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.BuzzZeroCard), 0.06f));
             }
             else
             {
@@ -336,7 +338,7 @@ namespace Acorn.Views
                     {
                         acornToScore.IsOn = true;
                         this.GameObjectManager.RemoveGameObject(fallenAcorn);
-                        this.MessageManager.QueueMessage(new PlaySoundEffectMessage(_scoringSounds[currentScore + scoreIndexOffset], 0.15f));
+                        this.MessageManager.QueueMessage(new PlaySoundEffectMessage(_scoringSounds[currentScore + scoreIndexOffset], 0.32f));
 
                         if (lastAcorn)
                         {
