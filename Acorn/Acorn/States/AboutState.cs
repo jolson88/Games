@@ -20,10 +20,13 @@ namespace Acorn.States
 
         protected override IEnumerable<GameObject> LoadGameObjects()
         {
-            var bgSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.BackgroundAbout);
+            var bgSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.Background);
             var bg = new GameObject();
-            bg.AddComponent(new TransformationComponent(new Vector2(0, 0), GraphicsService.Instance.GraphicsDevice.Viewport.Width, GraphicsService.Instance.GraphicsDevice.Viewport.Height));
-            bg.AddComponent(new BackgroundComponent(bgSprite));
+            bg.AddComponent(new TransformationComponent(new Vector2(0f, 0f), bgSprite.Width, bgSprite.Height, HorizontalAnchor.Left, VerticalAnchor.Bottom)
+            {
+                Z = -10
+            });
+            bg.AddComponent(new SpriteComponent(bgSprite));
             yield return bg;
 
             var cloudSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.Cloud);
