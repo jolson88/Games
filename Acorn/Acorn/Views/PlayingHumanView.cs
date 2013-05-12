@@ -13,10 +13,6 @@ using Acorn.Components;
 
 namespace Acorn.Views
 {
-    // TODO: Make TouchManager single-touch (not multi-touch) to avoid issues with selecting many cards at the same time
-
-    // (System can get in state where acorns are missed. This surfaced when touch was introduced
-    // since the underlying system suports multi-touch
     public class PlayingHumanView : HumanGameView
     {
         private static int AVATAR_BOUNCE_HEIGHT = 60;
@@ -57,7 +53,9 @@ namespace Acorn.Views
                 _playerControllers.Add(new PlayerController(_playerIndices[i], this.MessageManager));
             }
 
+#if DEBUG
             _cameraController = new DebugController(this);
+#endif
 
             this.MessageManager.AddListener<GameObjectLoadedMessage>(OnNewGameObject);
             this.MessageManager.AddListener<CardSelectedMessage>(OnCardSelected);
@@ -337,7 +335,7 @@ namespace Acorn.Views
                     {
                         acornToScore.IsOn = true;
                         this.GameObjectManager.RemoveGameObject(fallenAcorn);
-                        this.MessageManager.QueueMessage(new PlaySoundEffectMessage(_scoringSounds[currentScore + scoreIndexOffset]));
+                        this.MessageManager.QueueMessage(new PlaySoundEffectMessage(_scoringSounds[currentScore + scoreIndexOffset], 0.15f));
 
                         if (lastAcorn)
                         {

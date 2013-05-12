@@ -15,8 +15,11 @@ namespace Acorn
         public static string Acorn = "Sprites\\Acorn";
         public static string EmptyAcorn = "Sprites\\AcornEmpty";
         public static string Background = "Sprites\\Background";
+        public static string BackgroundAbout = "Sprites\\BackgroundAbout";
         public static string Cloud = "Sprites\\Cloud";
         public static string GameTitle = "Sprites\\GameTitle";
+        public static string AboutButton = "Sprites\\AboutButton";
+        public static string AboutButtonPressed = "Sprites\\AboutButtonPressed";
         public static string StopButton = "Sprites\\StopButton";
         public static string StopButtonPressed = "Sprites\\StopButtonPressed";
         public static string PlayButton = "Sprites\\PlayButton";
