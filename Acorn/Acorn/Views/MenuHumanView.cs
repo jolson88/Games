@@ -26,7 +26,10 @@ namespace Acorn.Views
             this.MessageManager.AddListener<ButtonPressMessage>(OnButtonPress);
 
             var bgMusic = ContentService.Instance.GetAsset<Song>(AcornAssets.BackgroundMusic);
-            this.MessageManager.TriggerMessage(new PlaySongMessage(bgMusic));
+            if (MediaPlayer.State != MediaState.Playing)
+            {
+                this.MessageManager.TriggerMessage(new PlaySongMessage(bgMusic));
+            }
         }
 
         public override void OnLoaded()

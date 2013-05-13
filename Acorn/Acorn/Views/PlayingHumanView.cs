@@ -57,7 +57,6 @@ namespace Acorn.Views
             }
             else
             {
-                // TODO: Create Computer Controller
                 _playerControllers.Add(new ComputerPlayerController(0, this.MessageManager));
             }
 
@@ -67,7 +66,6 @@ namespace Acorn.Views
             }
             else
             {
-                // TODO: Create Computer Controller
                 _playerControllers.Add(new ComputerPlayerController(1, this.MessageManager));
             }
 
@@ -82,6 +80,7 @@ namespace Acorn.Views
             this.MessageManager.AddListener<EndTurnMessage>(OnEndTurn);
             this.MessageManager.AddListener<ScoreChangedMessage>(OnScoreChanged);
             this.MessageManager.AddListener<StopRequestMessage>(OnStopRequest);
+            this.MessageManager.AddListener<CardsShuffledMessage>(OnCardsShuffled);
 
             _scoringSounds = new SoundEffect[] {
                 ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.DingAcorn1),
@@ -137,11 +136,12 @@ namespace Acorn.Views
 
         private void OnCardSelected(CardSelectedMessage msg)
         {
+            System.Diagnostics.Debug.WriteLine("VIEW: Existing selected card count = " + _selectedCardCount);
+
             if (msg.CardValue == 0)
             {
                 var card = _cards.Where(go => go.GetComponent<CardComponent>().CardIndex == msg.CardIndex).First();
                 card.AddComponent(new ShakeComponent(20, TimeSpan.FromSeconds(1.5)));
-                _selectedCardCount = 0;
                 this.MessageManager.QueueMessage(new PlaySoundEffectMessage(ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.BuzzZeroCard), 0.06f));
             }
             else
@@ -154,9 +154,8 @@ namespace Acorn.Views
                 if (_selectedCardCount == _cards.Count())
                 {
                     // All cards selected, delay and send shuffle request
-                    this.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(1.2), new ActionProcess(() =>
+                    this.ProcessManager.AttachProcess(new DelayProcess("Shuffle Delay", TimeSpan.FromSeconds(1.2), new ActionProcess(() =>
                     {
-                        _selectedCardCount = 0;
                         this.MessageManager.QueueMessage(new CardShuffleRequestMessage(_currentPlayer));
                     })));
                 }
@@ -178,8 +177,14 @@ namespace Acorn.Views
             AnimatePlayerOnscreen();
         }
 
+        private void OnCardsShuffled(CardsShuffledMessage msg)
+        {
+            _selectedCardCount = 0;
+        }
+
         private void OnEndTurn(EndTurnMessage msg)
         {
+            _selectedCardCount = 0;
             if (msg.Reason != EndTurnReason.WonGame)
             {
                 AnimatePlayerOffscreen();
@@ -256,7 +261,7 @@ namespace Acorn.Views
                 this.GameObjectManager.AddGameObject(obj);
 
                 // Start falling after a random amount of time
-                this.ProcessManager.AttachProcess(new DelayProcess(randDelay, new ActionProcess(() =>
+                this.ProcessManager.AttachProcess(new DelayProcess("Random acorn falling delay", randDelay, new ActionProcess(() =>
                 {                    
                     var moveTo = new MoveToComponent(new Vector2((float)newX, 40), TimeSpan.FromSeconds(0.8), Easing.GetLinearFunction(), Easing.ConvertTo(EasingKind.EaseOut, Easing.GetSineFunction()));
                     moveTo.Removed += (sender, args) =>
@@ -278,11 +283,11 @@ namespace Acorn.Views
                 var spinRotationCount = 8;
                 var zeroCard = _cards.Where(go => go.GetComponent<CardComponent>().CardValue == 0).First();
                 this.ProcessManager.AttachProcess(Process.BuildProcessChain(
-                    new TweenProcess(Easing.ConvertTo(EasingKind.EaseOut, Easing.GetSineFunction()), TimeSpan.FromSeconds(2.0), interp =>
+                    new TweenProcess("Acorn spinning", Easing.ConvertTo(EasingKind.EaseOut, Easing.GetSineFunction()), TimeSpan.FromSeconds(2.0), interp =>
                     {
                         zeroCard.Transform.Rotation = (float)(2 * Math.PI * spinRotationCount) * interp.Value;
                     }),
-                    new ActionProcess(() =>
+                    new ActionProcess("End turn confirmation", () =>
                     {
                         this.MessageManager.QueueMessage(new EndTurnConfirmationMessage(_currentPlayer));
                     })));
@@ -290,16 +295,16 @@ namespace Acorn.Views
                 foreach (var acorn in acorns)
                 {
                     // Fade out as we get closer to zero card
-                    this.ProcessManager.AttachProcess(new TweenProcess(Easing.GetPowerFunction(2), TimeSpan.FromSeconds(2.2), interp =>
+                    this.ProcessManager.AttachProcess(new TweenProcess("Acorn fade out", Easing.GetPowerFunction(2), TimeSpan.FromSeconds(2.2), interp =>
                     {
                         acorn.GetComponent<SpriteComponent>().Alpha = (1.0f) - interp.Value;
                     }));
 
                     // Shake and fly acorn towards zero card
                     acorn.AddComponent(new ShakeComponent(15, TimeSpan.FromSeconds(1.4), shakeHarderAtEnd: true));
-                    this.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(0.7), new ActionProcess(() =>
+                    this.ProcessManager.AttachProcess(new DelayProcess("Delay while acorn shakes", TimeSpan.FromSeconds(0.7), new ActionProcess(() =>
                     {
-                        this.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(0.5 * _random.NextDouble()), new ActionProcess(() =>
+                        this.ProcessManager.AttachProcess(new DelayProcess("Random acorn delay before flying", TimeSpan.FromSeconds(0.5 * _random.NextDouble()), new ActionProcess(() =>
                         {
                             var moveComponent = new MoveToComponent(zeroCard.Transform.Position, TimeSpan.FromSeconds(0.65), Easing.GetLinearFunction(), Easing.GetSineFunction());
                             moveComponent.Removed += (moveRemoveSender, moveRemoveArgs) =>
@@ -309,7 +314,7 @@ namespace Acorn.Views
                             acorn.AddComponent(moveComponent);
 
                             var originalRotation = acorn.Transform.Rotation;
-                            this.ProcessManager.AttachProcess(new TweenProcess(TimeSpan.FromSeconds(0.5), interp =>
+                            this.ProcessManager.AttachProcess(new TweenProcess("Acorn rotation", TimeSpan.FromSeconds(0.5), interp =>
                             {
                                 acorn.Transform.Rotation = originalRotation - (originalRotation * interp.Value);
                             }));
@@ -319,7 +324,7 @@ namespace Acorn.Views
             }
             else
             {
-                this.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(2.0), new ActionProcess(() =>
+                this.ProcessManager.AttachProcess(new DelayProcess("End turn confirmationd delay", TimeSpan.FromSeconds(2.0), new ActionProcess(() =>
                 {
                     this.MessageManager.QueueMessage(new EndTurnConfirmationMessage(_currentPlayer));
                 })));
@@ -349,7 +354,7 @@ namespace Acorn.Views
                 var currentScore = _playerScores[_currentPlayer];
                 var scoreIndexOffset = i;
                 var lastAcorn = (i == loopCount - 1);
-                this.ProcessManager.AttachProcess(new DelayProcess(TimeSpan.FromSeconds(0.24 * i), new ActionProcess(() =>
+                this.ProcessManager.AttachProcess(new DelayProcess("Acorn scoring delay per acorn", TimeSpan.FromSeconds(0.24 * i), new ActionProcess(() =>
                 {
                     var moveComponent = new MoveToComponent(acornToScore.GameObject.Transform.Position, animationDuration, Easing.GetLinearFunction(), Easing.GetSineFunction());
                     moveComponent.Removed += (sender, args) =>
@@ -373,7 +378,7 @@ namespace Acorn.Views
                     fallenAcorn.AddComponent(moveComponent);
 
                     var originalRotation = fallenAcorn.Transform.Rotation;
-                    this.ProcessManager.AttachProcess(new TweenProcess(animationDuration, interp =>
+                    this.ProcessManager.AttachProcess(new TweenProcess("Acorn rotation", animationDuration, interp =>
                     {
                         fallenAcorn.Transform.Rotation = originalRotation - (originalRotation * interp.Value);
                     }));

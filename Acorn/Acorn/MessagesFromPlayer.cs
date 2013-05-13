@@ -35,6 +35,11 @@ namespace Acorn
         {
             this.PlayerIndex = playerIndex;
         }
+
+        public override string ToString()
+        {
+            return string.Format("[Player] Player {0} requested to shuffle cards", this.PlayerIndex);
+        }
     }
 
     /// <summary>
@@ -62,6 +67,11 @@ namespace Acorn
         public EndTurnConfirmationMessage(int playerIndex)
         {
             this.PlayerIndex = playerIndex;
+        }
+
+        public override string ToString()
+        {
+            return string.Format("[Player] Player {0} end turn confirmed", this.PlayerIndex);
         }
     }
 }

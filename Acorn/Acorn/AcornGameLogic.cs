@@ -75,7 +75,7 @@ namespace Acorn
 
         private void OnCardShuffleRequested(CardShuffleRequestMessage msg)
         {
-            if (AllCardsAreSelected() && msg.PlayerIndex == _currentPlayer)
+            if (msg.PlayerIndex == _currentPlayer)
             {
                 ShuffleCards();
             }
