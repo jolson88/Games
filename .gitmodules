@@ -1,3 +1,6 @@
 [submodule "HiromiSubmodule"]
 	path = HiromiSubmodule
 	url = git@github.com:jolson88/Hiromi.git
+[submodule "MonoGame"]
+	path = MonoGame
+	url = https://github.com/Nezz/MonoGame.git

@@ -1,0 +1,2483 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:export-ydpi="90"
+   inkscape:export-xdpi="90"
+   inkscape:export-filename="C:\Home\Dev\Github\Games\Project Acorn\Assets\Images\Background.png"
+   sodipodi:docname="_assets.svg"
+   inkscape:version="0.48.4 r9939"
+   version="1.1"
+   id="svg2"
+   height="663.65625"
+   width="52.71875">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="-880.23066"
+     inkscape:cy="-263.88378"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     showborder="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient4610">
+      <stop
+         style="stop-color:#333333;stop-opacity:1;"
+         offset="0"
+         id="stop4612" />
+      <stop
+         style="stop-color:#757575;stop-opacity:1;"
+         offset="1"
+         id="stop4614" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4327">
+      <stop
+         style="stop-color:#3c1400;stop-opacity:1;"
+         offset="0"
+         id="stop4329" />
+      <stop
+         style="stop-color:#6b2300;stop-opacity:1;"
+         offset="1"
+         id="stop4331" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4310">
+      <stop
+         style="stop-color:#e49a3c;stop-opacity:1;"
+         offset="0"
+         id="stop4312" />
+      <stop
+         style="stop-color:#ecba7b;stop-opacity:1;"
+         offset="1"
+         id="stop4314" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3816">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.3482143;"
+         offset="0"
+         id="stop3818" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop3820" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3800">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop3802" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.84821427;"
+         offset="1"
+         id="stop3804" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3764">
+      <stop
+         style="stop-color:#11b5fa;stop-opacity:1;"
+         offset="0"
+         id="stop3766" />
+      <stop
+         style="stop-color:#75d4fc;stop-opacity:0;"
+         offset="1"
+         id="stop3768" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3816"
+       id="linearGradient3825"
+       gradientUnits="userSpaceOnUse"
+       x1="-1040.3219"
+       y1="-720.98645"
+       x2="1801.4209"
+       y2="-708.20367"
+       gradientTransform="matrix(0.99834337,-0.05753709,0.05753709,0.99834337,-119.57119,-81.389438)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3816-2"
+       id="linearGradient3825-8"
+       gradientUnits="userSpaceOnUse"
+       x1="-1040.3219"
+       y1="-720.98645"
+       x2="1802.1576"
+       y2="-720.98645"
+       gradientTransform="matrix(0.99834337,-0.05753709,0.05753709,0.99834337,-119.57119,-81.389438)" />
+    <linearGradient
+       id="linearGradient3816-2">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.3482143;"
+         offset="0"
+         id="stop3818-7" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop3820-7" />
+    </linearGradient>
+    <linearGradient
+       y2="-720.98645"
+       x2="1802.1576"
+       y1="-720.98645"
+       x1="-1040.3219"
+       gradientTransform="matrix(0.98197589,-0.18900622,0.18900622,0.98197589,61.822708,151.41591)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3842"
+       xlink:href="#linearGradient3816-2"
+       inkscape:collect="always" />
+    <linearGradient
+       y2="-720.98645"
+       x2="1802.1576"
+       y1="-720.98645"
+       x1="-1040.3219"
+       gradientTransform="matrix(0.98197589,-0.18900622,0.18900622,0.98197589,61.822708,151.41591)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3842-2"
+       xlink:href="#linearGradient3816-2-6"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient3816-2-6">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.3482143;"
+         offset="0"
+         id="stop3818-7-0" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop3820-7-4" />
+    </linearGradient>
+    <linearGradient
+       y2="-720.98645"
+       x2="1802.1576"
+       y1="-720.98645"
+       x1="-1040.3219"
+       gradientTransform="matrix(0.95054649,-0.31058231,0.31058231,0.95054649,207.42763,358.32633)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3876"
+       xlink:href="#linearGradient3816-2-6"
+       inkscape:collect="always" />
+    <linearGradient
+       y2="-720.98645"
+       x2="1802.1576"
+       y1="-720.98645"
+       x1="-1040.3219"
+       gradientTransform="matrix(0.95054649,-0.31058231,0.31058231,0.95054649,207.42763,358.32633)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3876-4"
+       xlink:href="#linearGradient3816-2-6-6"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient3816-2-6-6">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.3482143;"
+         offset="0"
+         id="stop3818-7-0-0" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop3820-7-4-3" />
+    </linearGradient>
+    <linearGradient
+       y2="-720.98645"
+       x2="1802.1576"
+       y1="-720.98645"
+       x1="-1040.3219"
+       gradientTransform="matrix(0.90507844,-0.42524467,0.42524467,0.90507844,403.56866,530.31182)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3910"
+       xlink:href="#linearGradient3816-2-6-6"
+       inkscape:collect="always" />
+    <linearGradient
+       y2="-720.98645"
+       x2="1802.1576"
+       y1="-720.98645"
+       x1="-1040.3219"
+       gradientTransform="matrix(0.90507844,-0.42524467,0.42524467,0.90507844,403.56866,530.31182)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3910-2"
+       xlink:href="#linearGradient3816-2-6-6-4"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient3816-2-6-6-4">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.3482143;"
+         offset="0"
+         id="stop3818-7-0-0-5" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop3820-7-4-3-8" />
+    </linearGradient>
+    <linearGradient
+       y2="-720.98645"
+       x2="1802.1576"
+       y1="-720.98645"
+       x1="-1040.3219"
+       gradientTransform="matrix(0.83071471,-0.55669838,0.55669838,0.83071471,777.76601,629.04366)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3944"
+       xlink:href="#linearGradient3816-2-6-6-4"
+       inkscape:collect="always" />
+    <linearGradient
+       y2="-720.98645"
+       x2="1802.1576"
+       y1="-720.98645"
+       x1="-1040.3219"
+       gradientTransform="matrix(0.83071471,-0.55669838,0.55669838,0.83071471,777.76601,629.04366)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3944-1"
+       xlink:href="#linearGradient3816-2-6-6-4-2"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient3816-2-6-6-4-2">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.3482143;"
+         offset="0"
+         id="stop3818-7-0-0-5-1" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop3820-7-4-3-8-4" />
+    </linearGradient>
+    <linearGradient
+       y2="-720.98645"
+       x2="1802.1576"
+       y1="-720.98645"
+       x1="-1040.3219"
+       gradientTransform="matrix(0.71112934,-0.70306122,0.70306122,0.71112934,1028.2964,848.18124)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3978"
+       xlink:href="#linearGradient3816-2-6-6-4-2"
+       inkscape:collect="always" />
+    <linearGradient
+       y2="-720.98645"
+       x2="1802.1576"
+       y1="-720.98645"
+       x1="-1040.3219"
+       gradientTransform="matrix(0.71112934,-0.70306122,0.70306122,0.71112934,1386.8073,505.67528)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3978-8"
+       xlink:href="#linearGradient3816-2-6-6-4-2-2"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient3816-2-6-6-4-2-2">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.3482143;"
+         offset="0"
+         id="stop3818-7-0-0-5-1-4" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop3820-7-4-3-8-4-5" />
+    </linearGradient>
+    <linearGradient
+       y2="-720.98645"
+       x2="1802.1576"
+       y1="-720.98645"
+       x1="-1040.3219"
+       gradientTransform="matrix(0.71112934,-0.70306122,0.70306122,0.71112934,1028.2964,848.18124)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3978-9"
+       xlink:href="#linearGradient3816-2-6-6-4-2-9"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient3816-2-6-6-4-2-9">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.3482143;"
+         offset="0"
+         id="stop3818-7-0-0-5-1-8" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop3820-7-4-3-8-4-3" />
+    </linearGradient>
+    <linearGradient
+       y2="-720.98645"
+       x2="1802.1576"
+       y1="-720.98645"
+       x1="-1040.3219"
+       gradientTransform="matrix(0.5473302,-0.83691676,0.83691676,0.5473302,1508.9334,810.2625)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4046"
+       xlink:href="#linearGradient3816-2-6-6-4-2-9"
+       inkscape:collect="always" />
+    <linearGradient
+       y2="-720.98645"
+       x2="1802.1576"
+       y1="-720.98645"
+       x1="-1040.3219"
+       gradientTransform="matrix(0.5473302,-0.83691676,0.83691676,0.5473302,1508.9334,810.2625)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4046-6"
+       xlink:href="#linearGradient3816-2-6-6-4-2-9-9"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient3816-2-6-6-4-2-9-9">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.3482143;"
+         offset="0"
+         id="stop3818-7-0-0-5-1-8-8" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop3820-7-4-3-8-4-3-6" />
+    </linearGradient>
+    <linearGradient
+       y2="-720.98645"
+       x2="1802.1576"
+       y1="-720.98645"
+       x1="-1040.3219"
+       gradientTransform="matrix(0.3146167,-0.94921881,0.94921881,0.3146167,1917.3106,867.46143)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4080"
+       xlink:href="#linearGradient3816-2-6-6-4-2-9-9"
+       inkscape:collect="always" />
+    <linearGradient
+       y2="-720.98645"
+       x2="1802.1576"
+       y1="-720.98645"
+       x1="-1040.3219"
+       gradientTransform="matrix(0.3146167,-0.94921881,0.94921881,0.3146167,1910.5833,878.02476)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4080-8"
+       xlink:href="#linearGradient3816-2-6-6-4-2-9-9-2"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient3816-2-6-6-4-2-9-9-2">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.3482143;"
+         offset="0"
+         id="stop3818-7-0-0-5-1-8-8-7" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop3820-7-4-3-8-4-3-6-8" />
+    </linearGradient>
+    <linearGradient
+       y2="-720.98645"
+       x2="1802.1576"
+       y1="-720.98645"
+       x1="-1040.3219"
+       gradientTransform="matrix(0.5473302,-0.83691676,0.83691676,0.5473302,1502.2061,820.82586)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4046-0"
+       xlink:href="#linearGradient3816-2-6-6-4-2-9-2"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient3816-2-6-6-4-2-9-2">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.3482143;"
+         offset="0"
+         id="stop3818-7-0-0-5-1-8-0" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop3820-7-4-3-8-4-3-8" />
+    </linearGradient>
+    <linearGradient
+       y2="-720.98645"
+       x2="1802.1576"
+       y1="-720.98645"
+       x1="-1040.3219"
+       gradientTransform="matrix(0.71112934,-0.70306122,0.70306122,0.71112934,1028.2964,848.18124)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3978-92"
+       xlink:href="#linearGradient3816-2-6-6-4-2-8"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient3816-2-6-6-4-2-8">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.3482143;"
+         offset="0"
+         id="stop3818-7-0-0-5-1-2" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop3820-7-4-3-8-4-0" />
+    </linearGradient>
+    <linearGradient
+       y2="-720.98645"
+       x2="1802.1576"
+       y1="-720.98645"
+       x1="-1040.3219"
+       gradientTransform="matrix(0.83071471,-0.55669838,0.55669838,0.83071471,771.0387,639.60706)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3944-5"
+       xlink:href="#linearGradient3816-2-6-6-4-5"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient3816-2-6-6-4-5">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.3482143;"
+         offset="0"
+         id="stop3818-7-0-0-5-2" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop3820-7-4-3-8-7" />
+    </linearGradient>
+    <linearGradient
+       y2="-720.98645"
+       x2="1802.1576"
+       y1="-720.98645"
+       x1="-1040.3219"
+       gradientTransform="matrix(0.90507844,-0.42524467,0.42524467,0.90507844,396.84129,540.87515)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3910-6"
+       xlink:href="#linearGradient3816-2-6-6-7"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient3816-2-6-6-7">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.3482143;"
+         offset="0"
+         id="stop3818-7-0-0-8" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop3820-7-4-3-7" />
+    </linearGradient>
+    <linearGradient
+       y2="-720.98645"
+       x2="1802.1576"
+       y1="-720.98645"
+       x1="-1040.3219"
+       gradientTransform="matrix(0.95054649,-0.31058231,0.31058231,0.95054649,200.7003,368.88966)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3876-8"
+       xlink:href="#linearGradient3816-2-6-1"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient3816-2-6-1">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.3482143;"
+         offset="0"
+         id="stop3818-7-0-6" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop3820-7-4-0" />
+    </linearGradient>
+    <linearGradient
+       y2="-720.98645"
+       x2="1802.1576"
+       y1="-720.98645"
+       x1="-1040.3219"
+       gradientTransform="matrix(0.98197589,-0.18900622,0.18900622,0.98197589,55.095395,161.97926)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3842-9"
+       xlink:href="#linearGradient3816-2-5"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient3816-2-5">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.3482143;"
+         offset="0"
+         id="stop3818-7-8" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop3820-7-9" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3816-0"
+       id="linearGradient3825-0"
+       gradientUnits="userSpaceOnUse"
+       x1="-1040.3219"
+       y1="-720.98645"
+       x2="1801.4209"
+       y2="-708.20367"
+       gradientTransform="matrix(0.99834337,-0.05753709,0.05753709,0.99834337,-126.29852,-70.826045)" />
+    <linearGradient
+       id="linearGradient3816-0">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.3482143;"
+         offset="0"
+         id="stop3818-0" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop3820-72" />
+    </linearGradient>
+    <linearGradient
+       y2="-720.98645"
+       x2="1802.1576"
+       y1="-720.98645"
+       x1="-1040.3219"
+       gradientTransform="matrix(0.71112934,-0.70306122,0.70306122,0.71112934,1021.5691,858.74456)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4324"
+       xlink:href="#linearGradient3816-2-6-6-4-2-8"
+       inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3788-8"
+       id="linearGradient3794-4"
+       x1="374.51584"
+       y1="367.35028"
+       x2="1712.5298"
+       y2="-941.8548"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.88970839,0,0,0.88970839,-89.808394,81.402105)" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3788-8">
+      <stop
+         style="stop-color:#52c9fb;stop-opacity:1"
+         offset="0"
+         id="stop3790-8" />
+      <stop
+         style="stop-color:#c1ecff;stop-opacity:1"
+         offset="1"
+         id="stop3792-2" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3788-5"
+       id="linearGradient3794-1"
+       x1="374.51584"
+       y1="367.35028"
+       x2="1712.5298"
+       y2="-941.8548"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.88970839,0,0,0.88970839,-89.808394,81.402105)" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3788-5">
+      <stop
+         style="stop-color:#52c9fb;stop-opacity:1"
+         offset="0"
+         id="stop3790-2" />
+      <stop
+         style="stop-color:#c1ecff;stop-opacity:1"
+         offset="1"
+         id="stop3792-7" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3788-2"
+       id="linearGradient3794-14"
+       x1="374.51584"
+       y1="367.35028"
+       x2="1712.5298"
+       y2="-941.8548"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.88970839,0,0,0.88970839,-89.808394,81.402105)" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3788-2">
+      <stop
+         style="stop-color:#52c9fb;stop-opacity:1"
+         offset="0"
+         id="stop3790-3" />
+      <stop
+         style="stop-color:#c1ecff;stop-opacity:1"
+         offset="1"
+         id="stop3792-22" />
+    </linearGradient>
+    <linearGradient
+       y2="-941.8548"
+       x2="1712.5298"
+       y1="367.35028"
+       x1="374.51584"
+       gradientTransform="matrix(0.55699658,0,0,0.22060291,670.04724,1311.5128)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3202"
+       xlink:href="#linearGradient3788-2"
+       inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4310"
+       id="linearGradient4316"
+       x1="1727.5552"
+       y1="1054.7795"
+       x2="1724.0198"
+       y2="1034.8037"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4327"
+       id="linearGradient4333"
+       x1="1729.323"
+       y1="1032.1522"
+       x2="1721.1913"
+       y2="1011.6461"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient4310-2">
+      <stop
+         style="stop-color:#e49a3c;stop-opacity:1;"
+         offset="0"
+         id="stop4312-4" />
+      <stop
+         style="stop-color:#ecba7b;stop-opacity:1;"
+         offset="1"
+         id="stop4314-6" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4327-6"
+       id="linearGradient4333-6"
+       x1="1729.323"
+       y1="1032.1522"
+       x2="1721.1913"
+       y2="1011.6461"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient4327-6">
+      <stop
+         style="stop-color:#3c1400;stop-opacity:1;"
+         offset="0"
+         id="stop4329-2" />
+      <stop
+         style="stop-color:#6b2300;stop-opacity:1;"
+         offset="1"
+         id="stop4331-9" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4310-2-1">
+      <stop
+         style="stop-color:#e49a3c;stop-opacity:1;"
+         offset="0"
+         id="stop4312-4-9" />
+      <stop
+         style="stop-color:#ecba7b;stop-opacity:1;"
+         offset="1"
+         id="stop4314-6-9" />
+    </linearGradient>
+    <linearGradient
+       y2="1011.6461"
+       x2="1721.1913"
+       y1="1032.1522"
+       x1="1729.323"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4467-5"
+       xlink:href="#linearGradient4327-6-5"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient4327-6-5">
+      <stop
+         style="stop-color:#3c1400;stop-opacity:1;"
+         offset="0"
+         id="stop4329-2-5" />
+      <stop
+         style="stop-color:#6b2300;stop-opacity:1;"
+         offset="1"
+         id="stop4331-9-6" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4310-2-1-3">
+      <stop
+         style="stop-color:#e49a3c;stop-opacity:1;"
+         offset="0"
+         id="stop4312-4-9-4" />
+      <stop
+         style="stop-color:#ecba7b;stop-opacity:1;"
+         offset="1"
+         id="stop4314-6-9-9" />
+    </linearGradient>
+    <linearGradient
+       y2="1011.6461"
+       x2="1721.1913"
+       y1="1032.1522"
+       x1="1729.323"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4522-0"
+       xlink:href="#linearGradient4327-6-5-5"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient4327-6-5-5">
+      <stop
+         style="stop-color:#3c1400;stop-opacity:1;"
+         offset="0"
+         id="stop4329-2-5-3" />
+      <stop
+         style="stop-color:#6b2300;stop-opacity:1;"
+         offset="1"
+         id="stop4331-9-6-9" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4310-7"
+       id="linearGradient4316-1"
+       x1="1727.5552"
+       y1="1054.7795"
+       x2="1724.0198"
+       y2="1034.8037"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient4310-7">
+      <stop
+         style="stop-color:#e49a3c;stop-opacity:1;"
+         offset="0"
+         id="stop4312-40" />
+      <stop
+         style="stop-color:#ecba7b;stop-opacity:1;"
+         offset="1"
+         id="stop4314-9" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4327-8"
+       id="linearGradient4333-4"
+       x1="1729.323"
+       y1="1032.1522"
+       x2="1721.1913"
+       y2="1011.6461"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient4327-8">
+      <stop
+         style="stop-color:#3c1400;stop-opacity:1;"
+         offset="0"
+         id="stop4329-8" />
+      <stop
+         style="stop-color:#6b2300;stop-opacity:1;"
+         offset="1"
+         id="stop4331-2" />
+    </linearGradient>
+    <linearGradient
+       y2="1011.6461"
+       x2="1721.1913"
+       y1="1032.1522"
+       x1="1729.323"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3323"
+       xlink:href="#linearGradient4327-8"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient4310-970">
+      <stop
+         style="stop-color:#909090;stop-opacity:1;"
+         offset="0"
+         id="stop4195" />
+      <stop
+         style="stop-color:#b3b3b3;stop-opacity:1;"
+         offset="1"
+         id="stop4197" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4327-261">
+      <stop
+         style="stop-color:#1e1e1e;stop-opacity:1;"
+         offset="0"
+         id="stop4201" />
+      <stop
+         style="stop-color:#353535;stop-opacity:1;"
+         offset="1"
+         id="stop4203" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4310-970-807">
+      <stop
+         style="stop-color:#9c9c9c;stop-opacity:1;"
+         offset="0"
+         id="stop9176" />
+      <stop
+         style="stop-color:#bfbfbf;stop-opacity:1;"
+         offset="1"
+         id="stop9178" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4327-261-772">
+      <stop
+         style="stop-color:#2a2a2a;stop-opacity:1;"
+         offset="0"
+         id="stop9182" />
+      <stop
+         style="stop-color:#414141;stop-opacity:1;"
+         offset="1"
+         id="stop9184" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4310-970-807-573">
+      <stop
+         style="stop-color:#a8a8a8;stop-opacity:1;"
+         offset="0"
+         id="stop9892" />
+      <stop
+         style="stop-color:#cbcbcb;stop-opacity:1;"
+         offset="1"
+         id="stop9894" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4327-261-772-800">
+      <stop
+         style="stop-color:#363636;stop-opacity:1;"
+         offset="0"
+         id="stop9898" />
+      <stop
+         style="stop-color:#4d4d4d;stop-opacity:1;"
+         offset="1"
+         id="stop9900" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4310-970-807-573-729">
+      <stop
+         style="stop-color:#b4b4b4;stop-opacity:1;"
+         offset="0"
+         id="stop10624" />
+      <stop
+         style="stop-color:#d7d7d7;stop-opacity:1;"
+         offset="1"
+         id="stop10626" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4327-261-772-800-527">
+      <stop
+         style="stop-color:#424242;stop-opacity:1;"
+         offset="0"
+         id="stop10630" />
+      <stop
+         style="stop-color:#595959;stop-opacity:1;"
+         offset="1"
+         id="stop10632" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4310-970-807-573-729-48">
+      <stop
+         style="stop-color:#c0c0c0;stop-opacity:1;"
+         offset="0"
+         id="stop11372" />
+      <stop
+         style="stop-color:#e3e3e3;stop-opacity:1;"
+         offset="1"
+         id="stop11374" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4327-261-772-800-527-117">
+      <stop
+         style="stop-color:#4e4e4e;stop-opacity:1;"
+         offset="0"
+         id="stop11378" />
+      <stop
+         style="stop-color:#656565;stop-opacity:1;"
+         offset="1"
+         id="stop11380" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4310-970-807-573-729-48-581">
+      <stop
+         style="stop-color:#cccccc;stop-opacity:1;"
+         offset="0"
+         id="stop12136" />
+      <stop
+         style="stop-color:#efefef;stop-opacity:1;"
+         offset="1"
+         id="stop12138" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4327-261-772-800-527-117-553">
+      <stop
+         style="stop-color:#5a5a5a;stop-opacity:1;"
+         offset="0"
+         id="stop12142" />
+      <stop
+         style="stop-color:#717171;stop-opacity:1;"
+         offset="1"
+         id="stop12144" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4310-7-8">
+      <stop
+         style="stop-color:#e49a3c;stop-opacity:1;"
+         offset="0"
+         id="stop4312-40-8" />
+      <stop
+         style="stop-color:#ecba7b;stop-opacity:1;"
+         offset="1"
+         id="stop4314-9-7" />
+    </linearGradient>
+    <linearGradient
+       y2="1011.6461"
+       x2="1721.1913"
+       y1="1032.1522"
+       x1="1729.323"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3323-5"
+       xlink:href="#linearGradient4327-8-8"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient4327-8-8">
+      <stop
+         style="stop-color:#3c1400;stop-opacity:1;"
+         offset="0"
+         id="stop4329-8-1" />
+      <stop
+         style="stop-color:#6b2300;stop-opacity:1;"
+         offset="1"
+         id="stop4331-2-2" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4310-7-6"
+       id="linearGradient4316-1-27"
+       x1="1727.5552"
+       y1="1054.7795"
+       x2="1724.0198"
+       y2="1034.8037"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient4310-7-6">
+      <stop
+         style="stop-color:#e49a3c;stop-opacity:1;"
+         offset="0"
+         id="stop4312-40-5" />
+      <stop
+         style="stop-color:#ecba7b;stop-opacity:1;"
+         offset="1"
+         id="stop4314-9-1" />
+    </linearGradient>
+    <linearGradient
+       y2="1011.6461"
+       x2="1721.1913"
+       y1="1032.1522"
+       x1="1729.323"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3323-3"
+       xlink:href="#linearGradient4327-8-9"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient4327-8-9">
+      <stop
+         style="stop-color:#3c1400;stop-opacity:1;"
+         offset="0"
+         id="stop4329-8-9" />
+      <stop
+         style="stop-color:#6b2300;stop-opacity:1;"
+         offset="1"
+         id="stop4331-2-5" />
+    </linearGradient>
+    <linearGradient
+       y2="1011.6461"
+       x2="1721.1913"
+       y1="1032.1522"
+       x1="1729.323"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4251"
+       xlink:href="#linearGradient4327-8-9"
+       inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4310-7-6-2"
+       id="linearGradient4316-1-27-3"
+       x1="1727.5552"
+       y1="1054.7795"
+       x2="1724.0198"
+       y2="1034.8037"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient4310-7-6-2">
+      <stop
+         style="stop-color:#e49a3c;stop-opacity:1;"
+         offset="0"
+         id="stop4312-40-5-4" />
+      <stop
+         style="stop-color:#ecba7b;stop-opacity:1;"
+         offset="1"
+         id="stop4314-9-1-4" />
+    </linearGradient>
+    <linearGradient
+       y2="1011.6461"
+       x2="1721.1913"
+       y1="1032.1522"
+       x1="1729.323"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4251-4"
+       xlink:href="#linearGradient4327-8-9-2"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient4327-8-9-2">
+      <stop
+         style="stop-color:#3c1400;stop-opacity:1;"
+         offset="0"
+         id="stop4329-8-9-7" />
+      <stop
+         style="stop-color:#6b2300;stop-opacity:1;"
+         offset="1"
+         id="stop4331-2-5-9" />
+    </linearGradient>
+    <linearGradient
+       y2="1011.6461"
+       x2="1721.1913"
+       y1="1032.1522"
+       x1="1729.323"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4306"
+       xlink:href="#linearGradient4327-8-9-2"
+       inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4310-7-6"
+       id="linearGradient4353"
+       gradientUnits="userSpaceOnUse"
+       x1="1727.5552"
+       y1="1054.7795"
+       x2="1724.0198"
+       y2="1034.8037" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4327-8-9"
+       id="linearGradient4355"
+       gradientUnits="userSpaceOnUse"
+       x1="1729.323"
+       y1="1032.1522"
+       x2="1721.1913"
+       y2="1011.6461" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4310-7-6-2"
+       id="linearGradient4357"
+       gradientUnits="userSpaceOnUse"
+       x1="1727.5552"
+       y1="1054.7795"
+       x2="1724.0198"
+       y2="1034.8037" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4327-8-9-2"
+       id="linearGradient4359"
+       gradientUnits="userSpaceOnUse"
+       x1="1729.323"
+       y1="1032.1522"
+       x2="1721.1913"
+       y2="1011.6461" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4310-7-6-8"
+       id="linearGradient4373-0"
+       gradientUnits="userSpaceOnUse"
+       x1="1727.5552"
+       y1="1054.7795"
+       x2="1724.0198"
+       y2="1034.8037" />
+    <linearGradient
+       id="linearGradient4310-7-6-8">
+      <stop
+         style="stop-color:#e49a3c;stop-opacity:1;"
+         offset="0"
+         id="stop4312-40-5-5" />
+      <stop
+         style="stop-color:#ecba7b;stop-opacity:1;"
+         offset="1"
+         id="stop4314-9-1-0" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4327-8-9-9"
+       id="linearGradient4375-7"
+       gradientUnits="userSpaceOnUse"
+       x1="1729.323"
+       y1="1032.1522"
+       x2="1721.1913"
+       y2="1011.6461" />
+    <linearGradient
+       id="linearGradient4327-8-9-9">
+      <stop
+         style="stop-color:#3c1400;stop-opacity:1;"
+         offset="0"
+         id="stop4329-8-9-0" />
+      <stop
+         style="stop-color:#6b2300;stop-opacity:1;"
+         offset="1"
+         id="stop4331-2-5-5" />
+    </linearGradient>
+    <linearGradient
+       y2="1011.6461"
+       x2="1721.1913"
+       y1="1032.1522"
+       x1="1729.323"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4399"
+       xlink:href="#linearGradient4327-8-9-9"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient4310-7-6-85">
+      <stop
+         style="stop-color:#e49a3c;stop-opacity:1;"
+         offset="0"
+         id="stop4312-40-5-9" />
+      <stop
+         style="stop-color:#ecba7b;stop-opacity:1;"
+         offset="1"
+         id="stop4314-9-1-2" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4327-8-9-4"
+       id="linearGradient4375-5"
+       gradientUnits="userSpaceOnUse"
+       x1="1729.323"
+       y1="1032.1522"
+       x2="1721.1913"
+       y2="1011.6461" />
+    <linearGradient
+       id="linearGradient4327-8-9-4">
+      <stop
+         style="stop-color:#3c1400;stop-opacity:1;"
+         offset="0"
+         id="stop4329-8-9-1" />
+      <stop
+         style="stop-color:#6b2300;stop-opacity:1;"
+         offset="1"
+         id="stop4331-2-5-3" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4310-7-4"
+       id="linearGradient4316-1-9"
+       x1="1727.5552"
+       y1="1054.7795"
+       x2="1724.0198"
+       y2="1034.8037"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient4310-7-4">
+      <stop
+         style="stop-color:#e49a3c;stop-opacity:1;"
+         offset="0"
+         id="stop4312-40-88" />
+      <stop
+         style="stop-color:#ecba7b;stop-opacity:1;"
+         offset="1"
+         id="stop4314-9-2" />
+    </linearGradient>
+    <linearGradient
+       y2="1011.6461"
+       x2="1721.1913"
+       y1="1032.1522"
+       x1="1729.323"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3323-4"
+       xlink:href="#linearGradient4327-8-5"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient4327-8-5">
+      <stop
+         style="stop-color:#3c1400;stop-opacity:1;"
+         offset="0"
+         id="stop4329-8-5" />
+      <stop
+         style="stop-color:#6b2300;stop-opacity:1;"
+         offset="1"
+         id="stop4331-2-1" />
+    </linearGradient>
+    <linearGradient
+       y2="1011.6461"
+       x2="1721.1913"
+       y1="1032.1522"
+       x1="1729.323"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3555"
+       xlink:href="#linearGradient4327-8-5"
+       inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4310-7-7"
+       id="linearGradient4316-1-2"
+       x1="1727.5552"
+       y1="1054.7795"
+       x2="1724.0198"
+       y2="1034.8037"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient4310-7-7">
+      <stop
+         style="stop-color:#e49a3c;stop-opacity:1;"
+         offset="0"
+         id="stop4312-40-6" />
+      <stop
+         style="stop-color:#ecba7b;stop-opacity:1;"
+         offset="1"
+         id="stop4314-9-14" />
+    </linearGradient>
+    <linearGradient
+       y2="1011.6461"
+       x2="1721.1913"
+       y1="1032.1522"
+       x1="1729.323"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3323-2"
+       xlink:href="#linearGradient4327-8-3"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient4327-8-3">
+      <stop
+         style="stop-color:#3c1400;stop-opacity:1;"
+         offset="0"
+         id="stop4329-8-2" />
+      <stop
+         style="stop-color:#6b2300;stop-opacity:1;"
+         offset="1"
+         id="stop4331-2-21" />
+    </linearGradient>
+    <linearGradient
+       y2="1011.6461"
+       x2="1721.1913"
+       y1="1032.1522"
+       x1="1729.323"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3555-6"
+       xlink:href="#linearGradient4327-8-3"
+       inkscape:collect="always" />
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Sky"
+     style="display:inline"
+     transform="translate(-1689.875,-599.0625)">
+    <rect
+       style="fill:url(#linearGradient3202);fill-opacity:1;stroke:none;display:inline"
+       id="rect3762-1"
+       width="1382.9204"
+       height="360.02661"
+       x="216.51172"
+       y="1109.3861"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\OwlXGames\Assets\Header.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       transform="matrix(0.36095211,0,0,0.43418493,-88.605344,723.68437)"
+       style="display:inline"
+       id="g4301-7-7"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\OwlXGames\Assets\Header.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         y="1137.3329"
+         x="1747.5299"
+         height="205.54539"
+         width="46.127579"
+         id="rect3222-5-6-95-4"
+         style="opacity:0.98999999;fill:#643719;fill-opacity:1;stroke:#321400;stroke-width:1.66198623;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4218-8-1-4-0"
+         d="m 1759.6358,1048.9729 c -31.0715,0 -57.711,16.1966 -68.9924,39.2466 -27.8808,8.0444 -47.2726,25.8465 -47.2726,46.5141 0,6.5273 1.9474,12.7639 5.4709,18.5023 -2.7726,5.3822 -4.2751,11.1203 -4.2751,17.0791 0,30.7339 39.8335,55.6456 88.9759,55.6456 14.5431,0 28.271,-2.1766 40.393,-6.0457 11.0145,3.8317 23.4948,5.9953 36.7238,5.9953 44.5164,0 80.6058,-24.4886 80.6058,-54.6883 0,-15.2552 -9.2104,-29.0511 -24.0621,-38.9696 0.2597,-1.5847 0.4095,-3.1979 0.4095,-4.8239 0,-17.9944 -16.2888,-33.6919 -40.4422,-42.0176 -12.0106,-21.5481 -37.7393,-36.4379 -67.5345,-36.4379 z"
+         style="opacity:0.98999999;fill:#64b064;fill-opacity:1;stroke:#2e4b2e;stroke-width:1.8385222;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+    </g>
+    <g
+       transform="matrix(0.36095211,0,0,0.43418493,-138.9754,711.34503)"
+       style="display:inline"
+       id="g4301-7"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\OwlXGames\Assets\Header.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         y="1137.3329"
+         x="1747.5299"
+         height="205.54539"
+         width="46.127579"
+         id="rect3222-5-6-95"
+         style="opacity:0.98999999;fill:#643719;fill-opacity:1;stroke:#321400;stroke-width:1.66198623;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4218-8-1-4"
+         d="m 1759.6358,1048.9729 c -31.0715,0 -57.711,16.1966 -68.9924,39.2466 -27.8808,8.0444 -47.2726,25.8465 -47.2726,46.5141 0,6.5273 1.9474,12.7639 5.4709,18.5023 -2.7726,5.3822 -4.2751,11.1203 -4.2751,17.0791 0,30.7339 39.8335,55.6456 88.9759,55.6456 14.5431,0 28.271,-2.1766 40.393,-6.0457 11.0145,3.8317 23.4948,5.9953 36.7238,5.9953 44.5164,0 80.6058,-24.4886 80.6058,-54.6883 0,-15.2552 -9.2104,-29.0511 -24.0621,-38.9696 0.2597,-1.5847 0.4095,-3.1979 0.4095,-4.8239 0,-17.9944 -16.2888,-33.6919 -40.4422,-42.0176 -12.0106,-21.5481 -37.7393,-36.4379 -67.5345,-36.4379 z"
+         style="opacity:0.98999999;fill:#64b064;fill-opacity:1;stroke:#2e4b2e;stroke-width:1.8385222;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+    </g>
+    <g
+       transform="matrix(0.36095211,0,0,0.43418493,-215.04001,701.38285)"
+       style="display:inline"
+       id="g4301-7-1"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\OwlXGames\Assets\Header.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         y="1137.3329"
+         x="1747.5299"
+         height="205.54539"
+         width="46.127579"
+         id="rect3222-5-6-95-8"
+         style="opacity:0.98999999;fill:#643719;fill-opacity:1;stroke:#321400;stroke-width:1.66198623;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4218-8-1-4-9"
+         d="m 1759.6358,1048.9729 c -31.0715,0 -57.711,16.1966 -68.9924,39.2466 -27.8808,8.0444 -47.2726,25.8465 -47.2726,46.5141 0,6.5273 1.9474,12.7639 5.4709,18.5023 -2.7726,5.3822 -4.2751,11.1203 -4.2751,17.0791 0,30.7339 39.8335,55.6456 88.9759,55.6456 14.5431,0 28.271,-2.1766 40.393,-6.0457 11.0145,3.8317 23.4948,5.9953 36.7238,5.9953 44.5164,0 80.6058,-24.4886 80.6058,-54.6883 0,-15.2552 -9.2104,-29.0511 -24.0621,-38.9696 0.2597,-1.5847 0.4095,-3.1979 0.4095,-4.8239 0,-17.9944 -16.2888,-33.6919 -40.4422,-42.0176 -12.0106,-21.5481 -37.7393,-36.4379 -67.5345,-36.4379 z"
+         style="opacity:0.98999999;fill:#64b064;fill-opacity:1;stroke:#2e4b2e;stroke-width:1.8385222;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+    </g>
+    <path
+       style="fill:#38c561;fill-opacity:1;stroke:#025019;stroke-width:0.50823528;stroke-opacity:1;display:inline"
+       d="m 465.932,1264.7742 c -1.29887,0.1153 4.52106,2.0901 4.64714,5.9198 -2.43548,-1.7676 -5.39821,-2.697 -7.87131,-2.4277 -3.56885,0.3885 2.13766,0.5595 5.43967,3.248 -95.55412,-8.9604 -180.13288,9.2707 -222.54056,21.107 0.18266,-2.448 -1.05923,-4.4755 -3.29623,-5.3101 -0.61267,-0.2286 -0.95794,-0.3205 -1.09874,-0.2881 -0.5447,0.1253 1.76998,2.0519 1.71116,4.5672 -3.37455,-2.0547 -7.3867,-2.9251 -10.14086,-2.2393 -3.87583,0.9651 4.2204,0.087 8.17753,3.7248 -3.59992,-0.6799 -6.90737,-0.4824 -8.75393,0.5654 -2.57455,1.4607 1.97361,-0.1139 6.91668,0.8314 -14.32582,4.1909 -22.35312,7.2055 -22.35312,7.2055 l 0,159.1226 563.20504,0 c 0,0 26.42092,-70.4824 -172.917,-155.0763 -44.36632,-18.8279 -89.47498,-29.0014 -132.53365,-33.567 2.58173,-2.0873 3.46217,-4.3569 2.25151,-5.8756 -0.31558,-0.3958 -0.53749,-0.5791 -0.68446,-0.5985 -0.56853,-0.075 -0.30376,2.3135 -2.55773,4.412 -1.04089,-2.8504 -3.65424,-4.9178 -6.57445,-5.2546 -0.51368,-0.059 -0.84113,-0.083 -1.02669,-0.066 z"
+       id="rect3756-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\OwlXGames\Assets\Header.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       transform="matrix(0.36095211,0,0,0.43418493,141.91143,817.72957)"
+       style="display:inline"
+       id="g4301-7-0"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\OwlXGames\Assets\Header.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         y="1137.3329"
+         x="1747.5299"
+         height="205.54539"
+         width="46.127579"
+         id="rect3222-5-6-95-9"
+         style="opacity:0.98999999;fill:#643719;fill-opacity:1;stroke:#321400;stroke-width:1.66198623;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4218-8-1-4-4"
+         d="m 1759.6358,1048.9729 c -31.0715,0 -57.711,16.1966 -68.9924,39.2466 -27.8808,8.0444 -47.2726,25.8465 -47.2726,46.5141 0,6.5273 1.9474,12.7639 5.4709,18.5023 -2.7726,5.3822 -4.2751,11.1203 -4.2751,17.0791 0,30.7339 39.8335,55.6456 88.9759,55.6456 14.5431,0 28.271,-2.1766 40.393,-6.0457 11.0145,3.8317 23.4948,5.9953 36.7238,5.9953 44.5164,0 80.6058,-24.4886 80.6058,-54.6883 0,-15.2552 -9.2104,-29.0511 -24.0621,-38.9696 0.2597,-1.5847 0.4095,-3.1979 0.4095,-4.8239 0,-17.9944 -16.2888,-33.6919 -40.4422,-42.0176 -12.0106,-21.5481 -37.7393,-36.4379 -67.5345,-36.4379 z"
+         style="opacity:0.98999999;fill:#64b064;fill-opacity:1;stroke:#2e4b2e;stroke-width:1.8385222;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+    </g>
+    <g
+       transform="matrix(0.40367797,0,0,0.3529777,1079.0239,1267.7814)"
+       style="display:inline"
+       id="g4271-2"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\OwlXGames\Assets\Header.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         transform="translate(-814.28125,-733.79041)"
+         y="586.84717"
+         x="217.29042"
+         height="606.60242"
+         width="90.537682"
+         id="rect3222-4"
+         style="opacity:0.98999999;fill:#552200;fill-opacity:1;stroke:#321400;stroke-width:4;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4218-5"
+         d="m -574.37029,-366.51182 c -59.27887,0 -110.102,40.1856 -131.62499,97.375 -53.19149,19.95904 -90.1875,64.12777 -90.1875,115.40625 0,16.19497 3.71528,31.66858 10.4375,45.90625 -5.28964,13.353765 -8.15625,27.590435 -8.15625,42.375005 0,76.253938 75.99516,138.062507 169.75,138.062507 27.74565,0 53.93595,-5.40031 77.06249,-14.999999 21.01368,9.506699 44.82375,14.874999 70.0625,14.874999 84.9292,0 153.78126,-60.758829 153.78126,-135.687507 0,-37.849685 -17.57177,-72.078745 -45.90625,-96.687505 0.49541,-3.93196 0.78125,-7.93447 0.78125,-11.96875 0,-44.64586 -31.07593,-83.59311 -77.15626,-104.25 -22.91408,-53.46303 -71.9999,-90.40625 -128.84375,-90.40625 z"
+         style="opacity:0.98999999;fill:#318431;fill-opacity:1;stroke:#2e4b2e;stroke-width:4;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <g
+       transform="matrix(0.39697086,0,0,0.41410366,1004.578,1155.8171)"
+       style="display:inline"
+       id="g4266-1"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\OwlXGames\Assets\Header.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         transform="translate(-814.28125,-733.79041)"
+         y="969.09143"
+         x="1873.8525"
+         height="426.08188"
+         width="95.619385"
+         id="rect3222-5-7"
+         style="opacity:0.98999999;fill:#552200;fill-opacity:1;stroke:#321400;stroke-width:3.44518638;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4218-8-11"
+         d="m 1084.666,52.136515 c -64.4092,0 -119.63095,33.574596 -143.01665,81.355655 -57.795,16.67555 -97.99286,53.578 -97.99286,96.42054 0,13.5307 4.03682,26.45872 11.34082,38.35413 -5.74744,11.15691 -8.86214,23.05148 -8.86214,35.40381 0,63.70926 82.57223,115.34959 184.44123,115.34959 30.1469,0 58.6039,-4.51189 83.7319,-12.53232 22.8324,7.94274 48.7031,12.42789 76.1261,12.42789 92.2795,0 167.0904,-50.76329 167.0904,-113.36531 0,-31.62296 -19.0925,-60.22094 -49.8792,-80.78126 0.5383,-3.2851 0.8488,-6.62915 0.8488,-9.99974 0,-37.30108 -33.7654,-69.84105 -83.8338,-87.09964 -24.8972,-44.667719 -78.2312,-75.533345 -139.9946,-75.533345 z"
+         style="opacity:0.98999999;fill:#318431;fill-opacity:1;stroke:#2e4b2e;stroke-width:3.81113362;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+    </g>
+    <g
+       transform="matrix(0.31615702,0,0,0.27644902,477.01414,1271.0135)"
+       style="display:inline"
+       id="g4271-2-1"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\OwlXGames\Assets\Header.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         transform="translate(-814.28125,-733.79041)"
+         y="586.84717"
+         x="217.29042"
+         height="606.60242"
+         width="90.537682"
+         id="rect3222-4-7"
+         style="opacity:0.98999999;fill:#552200;fill-opacity:1;stroke:#321400;stroke-width:4;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4218-5-4"
+         d="m -574.37029,-366.51182 c -59.27887,0 -110.102,40.1856 -131.62499,97.375 -53.19149,19.95904 -90.1875,64.12777 -90.1875,115.40625 0,16.19497 3.71528,31.66858 10.4375,45.90625 -5.28964,13.353765 -8.15625,27.590435 -8.15625,42.375005 0,76.253938 75.99516,138.062507 169.75,138.062507 27.74565,0 53.93595,-5.40031 77.06249,-14.999999 21.01368,9.506699 44.82375,14.874999 70.0625,14.874999 84.9292,0 153.78126,-60.758829 153.78126,-135.687507 0,-37.849685 -17.57177,-72.078745 -45.90625,-96.687505 0.49541,-3.93196 0.78125,-7.93447 0.78125,-11.96875 0,-44.64586 -31.07593,-83.59311 -77.15626,-104.25 -22.91408,-53.46303 -71.9999,-90.40625 -128.84375,-90.40625 z"
+         style="opacity:0.98999999;fill:#318431;fill-opacity:1;stroke:#2e4b2e;stroke-width:4;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <g
+       transform="matrix(0.36095211,0,0,0.43418493,286.86831,836.11434)"
+       style="display:inline"
+       id="g4301-7-0-8"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\OwlXGames\Assets\Header.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         y="1137.3329"
+         x="1747.5299"
+         height="205.54539"
+         width="46.127579"
+         id="rect3222-5-6-95-9-8"
+         style="opacity:0.98999999;fill:#643719;fill-opacity:1;stroke:#321400;stroke-width:1.66198623;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4218-8-1-4-4-2"
+         d="m 1759.6358,1048.9729 c -31.0715,0 -57.711,16.1966 -68.9924,39.2466 -27.8808,8.0444 -47.2726,25.8465 -47.2726,46.5141 0,6.5273 1.9474,12.7639 5.4709,18.5023 -2.7726,5.3822 -4.2751,11.1203 -4.2751,17.0791 0,30.7339 39.8335,55.6456 88.9759,55.6456 14.5431,0 28.271,-2.1766 40.393,-6.0457 11.0145,3.8317 23.4948,5.9953 36.7238,5.9953 44.5164,0 80.6058,-24.4886 80.6058,-54.6883 0,-15.2552 -9.2104,-29.0511 -24.0621,-38.9696 0.2597,-1.5847 0.4095,-3.1979 0.4095,-4.8239 0,-17.9944 -16.2888,-33.6919 -40.4422,-42.0176 -12.0106,-21.5481 -37.7393,-36.4379 -67.5345,-36.4379 z"
+         style="opacity:0.98999999;fill:#64b064;fill-opacity:1;stroke:#2e4b2e;stroke-width:1.8385222;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+    </g>
+    <path
+       style="fill:#00922e;fill-opacity:1;stroke:#00270c;stroke-width:0.61857289;stroke-opacity:1;display:inline"
+       d="m 362.88208,1349.2608 c -1.25457,0.1766 4.36687,3.2053 4.48866,9.0787 -2.35243,-2.7108 -5.19671,-4.1533 -7.5855,-3.7404 -3.60377,0.6229 2.56416,0.9085 5.65434,5.5935 -85.23746,9.0505 -148.6303,24.8048 -148.6303,24.8048 l 0,87.0463 1382.28092,0 0,-87.0463 c 0,0 -115.4725,9.3791 -272.9384,15.233 4.7859,-3.7935 11.2516,-1.4494 8.0378,-3.4682 -2.0405,-1.2819 -5.232,-1.0356 -8.4728,0.578 2.7795,-6.1397 10.7166,-6.127 6.7678,-6.9534 -2.8061,-0.5874 -6.3929,1.3788 -9.0469,5.0323 -0.7373,-3.79 0.9524,-7.0739 0.4002,-7.1745 -0.1427,-0.026 -0.4533,0.167 -0.9743,0.6121 -2.1277,1.8178 -2.6682,5.6876 -1.3396,9.8777 -0.2448,0.5434 -0.4581,1.1141 -0.6612,1.7 -182.6153,6.6558 -419.98778,8.4222 -599.6883,-14.502 2.30176,-3.1092 3.04377,-6.4198 1.91376,-8.6705 -0.30481,-0.6072 -0.50177,-0.9052 -0.64372,-0.9351 -0.54915,-0.1155 -0.29341,3.548 -2.47049,6.7664 -1.00539,-4.3714 -3.54704,-7.525 -6.36763,-8.0415 -3.96935,-0.7269 3.37518,2.2473 3.51437,8.9596 -2.35243,-2.7108 -5.21412,-4.1362 -7.60289,-3.7231 -3.38293,0.5846 1.85205,0.8697 5.06279,4.7773 -35.46822,-4.6826 -68.61927,-10.3421 -98.52433,-17.1543 -78.98541,-17.9924 -169.34067,-15.9156 -244.10998,-8.3817 1.89603,-2.889 2.45096,-5.8818 1.40923,-7.9566 -0.30481,-0.607 -0.50177,-0.9051 -0.64372,-0.935 -0.54915,-0.1153 -0.31081,3.5481 -2.4879,6.7665 -1.00539,-4.3714 -3.52963,-7.5251 -6.35023,-8.0417 -0.49618,-0.091 -0.81246,-0.1271 -0.99168,-0.1019 z"
+       id="rect2985-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\OwlXGames\Assets\Header.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       id="g3455"
+       transform="matrix(0.71717806,0,0,0.71717806,-1045.9834,557.36178)"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\OwlXGames\Assets\Header.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
+         transform="matrix(-0.24728804,0,0,0.24728804,2092.7692,1035.3431)"
+         id="g4038">
+        <path
+           sodipodi:nodetypes="cccscscc"
+           style="fill:#552200;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1"
+           d="M 595.89202,385.50232 C 506.3532,370.8178 413.47117,439.42589 400.25093,519.08375 c 0.0248,0.079 0.071,0.15372 0.0966,0.23269 -1.32215,4.16477 -2.59716,8.4386 -3.79702,12.84397 -51.24295,188.14137 -267.41129,146.10351 -225.95352,165.31165 72.39442,10.12885 135.50628,50.87712 180.81922,11.91798 113.19319,-97.32119 228.49125,-216.40569 321.45719,-291.98142 -0.13162,-8.42567 -33.1839,-26.33128 -76.98138,-31.9063 z"
+           id="path3883"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:#72472b;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1"
+           d="m 628.77249,392.92694 c -225.35966,94.24106 -167.8084,383.24634 -458.1755,304.54512 34.66661,16.06168 162.69292,64.44561 239.39697,5.75792 83.83414,-61.43106 131.68633,-153.31925 183.8816,-203.58361 33.43625,-32.19929 96.40548,-46.2835 78.99784,-82.23775 -0.44173,-6.96981 -17.59138,-17.15428 -44.10091,-24.48168 z"
+           id="path3883-5"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccscc" />
+        <path
+           style="fill:#ffffff;fill-opacity:0.3174603;stroke:none"
+           d="m 603.88271,394.14085 c 0,5.43631 -43.58993,10.86094 -76.20777,10.86094 -32.61784,0 -51.56934,18.88139 -51.56934,13.44508 0,-5.4363 48.88688,-29.71522 78.28485,-30.52485 40.06964,-1.10355 49.49226,0.78253 49.49226,6.21883 z"
+           id="path4408-1"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cscsc" />
+      </g>
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
+         inkscape:connector-curvature="0"
+         id="path3016-0"
+         d="m 2044.3946,1188.2149 c 7.5746,10e-5 13.7479,7.6104 12.9464,14.9753 -0.3562,6.5129 -5.7805,12.8534 -12.5638,13.0077 -6.4472,0.2868 -12.5038,-4.9189 -13.3747,-11.2766 -1.2517,-6.4692 2.2959,-13.8818 8.7599,-16.0059 1.3565,-0.489 2.7804,-0.7425 4.2322,-0.7005 z"
+         style="fill:#72472b;fill-opacity:1;stroke:#000000;stroke-width:0.92689914;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
+         inkscape:connector-curvature="0"
+         id="path3832"
+         d="m 2057.0167,1193.5354 c 1.2264,1.3318 1.8752,3.2996 2.5501,5.0074 0.7988,1.9385 0.4619,4.2427 -1.0511,5.7341 -2.4983,2.7446 -6.331,4.4016 -10.0614,4.142 -1.3847,-0.033 -3.0644,-1.2651 -2.3725,-2.7896 0.7581,-2.1523 2.9,-3.5235 5.1545,-3.5858 1.8501,-0.3666 4.6276,-0.2767 5.3553,-2.4342 -0.1685,-1.91 -1.1,-3.6192 -1.7156,-5.4249 0.488,-0.5914 1.4429,-0.5955 2.1407,-0.649 z"
+         style="fill:#552200;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
+         sodipodi:nodetypes="cssssscc"
+         inkscape:connector-curvature="0"
+         id="path3826"
+         d="m 2057.1668,1193.3129 c 0,0 0.079,0.1214 0.2112,0.3394 0.7837,1.2884 3.4353,5.927 2.5865,8.4035 -1.2371,3.6093 -5.6704,5.8955 -9.4423,6.4699 -1.5675,0.2385 -3.8681,0.034 -4.5464,-1.3991 -0.5925,-1.2522 0.587,-2.8743 1.5737,-3.8468 2.2742,-2.2412 7.5518,-0.6111 8.9178,-3.4972 0.2729,-1.2026 -1.9234,-5.9451 -1.9234,-5.9451 z"
+         style="fill:none;stroke:#000000;stroke-width:0.8655082;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
+         inkscape:connector-curvature="0"
+         id="path3832-7"
+         d="m 2030.8815,1193.288 c 0.7636,0.1528 2.3509,0.2032 1.6305,1.2905 -0.5426,1.6627 -1.6177,3.3372 -1.4065,5.1004 1.3306,2.2199 4.373,1.7512 6.5376,2.3415 2.0689,0.3702 4.0311,2.297 4.0031,4.4512 -0.6218,1.8984 -3.1077,1.8969 -4.7449,1.6692 -3.7284,-0.6885 -7.7969,-2.6796 -9.1573,-6.4605 -0.5266,-3.0388 1.3326,-5.8652 2.7046,-8.4001 0.1409,0.023 0.2912,-0.018 0.4329,0.015 z"
+         style="fill:#552200;fill-opacity:1;stroke:none" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
+         sodipodi:nodetypes="cssssscc"
+         inkscape:connector-curvature="0"
+         id="path3826-4"
+         d="m 2030.4445,1193.0772 c 0,0 -0.079,0.1214 -0.2114,0.3396 -0.7835,1.2882 -3.4352,5.9268 -2.5863,8.4034 1.2369,3.6094 5.6705,5.8954 9.4423,6.4698 1.5676,0.2387 3.8681,0.034 4.5464,-1.3989 0.5926,-1.2524 -0.587,-2.8744 -1.5738,-3.8468 -2.2742,-2.2414 -7.5517,-0.6112 -8.9177,-3.4974 -0.2729,-1.2024 1.9235,-5.9451 1.9235,-5.9451 z"
+         style="fill:none;stroke:#000000;stroke-width:0.79132181;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         sodipodi:nodetypes="cccscsccscsccscscccscscsccscscscc"
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
+         inkscape:connector-curvature="0"
+         id="path3901"
+         d="m 2070.9678,1083.7201 c 2.2072,-2.1277 5.0061,-3.9957 8.1962,-6.2393 5.1273,-3.6063 23.9328,-6.2696 27.1497,-1.962 2.6594,4.4889 -3.3669,-0.7072 -13.8719,14.9118 -2.0802,3.0929 -2.4724,7.6686 -2.7355,12.1201 5.7295,9.3897 9.0772,20.7143 9.0772,32.9074 0,11.5024 -2.9823,22.2319 -8.1295,31.294 0.015,0.015 0.016,0.021 0.025,0.032 3.8062,0.426 5.9421,3.4951 5.9421,5.2405 0,1.1597 -0.8847,0.4327 -2.5868,-0.2921 1.5242,1.1527 2.3409,2.7369 2.3409,3.8164 0,1.1176 -0.8249,0.4859 -2.4076,-0.2101 0,0.135 0.015,0.2692 0.015,0.4047 0.9924,1.5944 1.4959,3.3408 1.4959,4.2313 0,1.0015 -0.593,-0.055 -1.8031,-1.2602 -1.4638,6.4331 -7.8719,10.3569 -15.2552,11.8844 -12.8922,2.6673 -24.7937,5.413 -35.438,4.6359 -16.7549,-1.223 -22.6477,-1.7444 -36.5907,-6.2906 -7.7878,-2.5391 -15.1966,-8.0984 -15.3985,-16.0591 -1.8976,0.6062 -1.7673,2.9832 -1.7673,1.6085 0,-0.8804 0.054,-3.0366 1.3268,-4.7693 -1.567,0.6023 -1.9672,1.8855 -1.9672,0.6506 0,-0.9669 1.6124,-2.9429 3.7088,-4.4668 -2.6198,0.1586 -3.2171,2.4363 -3.2171,0.9221 0,-1.5685 4.2332,-5.7966 7.9094,-6.4341 0.3042,-0.053 0.5469,-0.091 0.7684,-0.1274 -3.1681,-7.538 -4.9433,-15.9431 -4.9433,-24.8088 0,-9.375 1.9826,-18.2357 5.5016,-26.0996 -1.1317,-5.9493 -0.078,-14.8607 -3.4475,-19.8705 -10.5051,-15.6191 -16.5313,-10.4229 -13.872,-14.9117 3.217,-4.3076 22.0223,-1.6445 27.1499,1.9619 4.3023,3.0259 7.8953,5.372 10.2809,8.5905 9.9374,-9.6243 34.9348,-11.89 52.5429,-1.41 z"
+         style="fill:#552200;fill-opacity:1;stroke:#000000;stroke-width:0.81961477;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
+         sodipodi:nodetypes="cscssc"
+         inkscape:connector-curvature="0"
+         id="path4307-5"
+         d="m 2013.2612,1089.7318 c -1.756,1.4448 -6.0844,5.8576 -7.5739,7.5548 -1.7779,2.026 -3.0223,3.7645 -5.0714,6.9756 0.015,-2.5408 0.298,-11.5323 -4.3803,-17.8064 -5.8645,-7.8647 -11.9635,-9.5323 -8.4726,-11.1502 4.4214,-2.049 25.4982,5.1919 25.4982,14.4262 z"
+         style="fill:#d38d5f;fill-opacity:1;stroke:#000000;stroke-width:0.49176884;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
+         inkscape:connector-curvature="0"
+         id="path4009"
+         d="m 2031.0063,1110.552 c 5.671,-0.046 11.2745,3.5011 12.9141,9.0569 6.7465,-10.4346 24.6146,-12.2218 31.8625,-1.4394 1.2606,1.8742 2.4084,3.8536 3.4168,5.9062 2.2498,1.0774 3.6627,3.2796 3.6627,3.8062 0,0.4958 -0.2794,-0.2224 -1.7263,-0.6917 0.8949,0.9191 1.4088,1.8402 1.4088,2.1567 0,0.446 -0.2254,-0.089 -1.3217,-0.5431 0.7156,1.959 1.2962,3.9653 1.7313,5.9987 1.1537,1.2095 1.6392,2.7144 1.6392,3.1094 0,0.4869 -0.015,-0.3562 -1.2293,-0.922 0.6009,3.7814 0.6717,7.6315 0.087,11.4284 -0.7605,4.3497 -3.283,8.6018 -7.4022,10.5013 5.3725,0.7951 10.3567,3.6245 14.2869,7.2998 1.652,1.7299 0.6998,0.7309 1.5521,1.5521 2.6422,0.2123 6.3233,5.9131 1.6494,3.2785 -2.2269,-0.4334 5.3933,6.0742 0.5226,3.6576 -2.3729,-0.1365 2.689,6.1015 -0.7325,3.0325 -1.2063,7.7754 -9.4301,11.4457 -16.3719,12.6476 -12.8213,2.6067 -25.8929,5.6661 -39.0545,3.9188 -12.5837,-0.9122 -25.4616,-2.7681 -36.8929,-8.3754 -5.0445,-2.6912 -9.5491,-7.7506 -9.2669,-13.7848 -4.718,2.1382 3.6318,-5.8251 -1.3317,-2.9456 -2.0114,-0.2 7.4726,-5.1073 1.9618,-3.8624 -4.6141,1.4015 3.2407,-4.9319 5.8858,-4.3388 -0.2103,-4.8329 7.8568,-4.8673 9.8253,-5.8297 -4.6315,-5.7144 -4.2123,-14.233 -2.9558,-20.9975 0.2205,-0.9405 0.466,-1.8887 0.7377,-2.8379 -0.3458,0.1669 -0.665,0.3094 -0.9683,0.3792 0,-0.5222 0.4721,-1.3676 1.2039,-2.2181 -0.709,0.2985 -1.1475,0.4544 -1.1475,-0.102 0,-0.5904 0.4609,-1.457 1.1936,-2.259 -0.8026,0.3394 -1.3113,0.5661 -1.3113,-0.032 0,-1.2401 2.0178,-3.6987 4.3695,-4.2209 2.0342,-3.7911 4.7768,-7.1293 8.5137,-9.3641 3.9635,-1.8643 8.3501,-2.9429 12.7398,-2.9507 0.1831,-0.015 0.3653,-0.015 0.5482,-0.015 z"
+         style="fill:#ffffff;fill-opacity:0.16931218;stroke:none" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
+         sodipodi:nodetypes="cccscc"
+         inkscape:connector-curvature="0"
+         id="path4307-4-8"
+         d="m 1998.8137,1084.9898 c 3.5424,3.2142 3.7691,9.3033 5.5007,13.7472 1.587,-1.9317 3.3015,-3.7578 5.1175,-5.4759 -1.781,-4.7689 -3.0486,-5.8882 -5.9934,-7.895 -1.2828,-0.8743 -5.1737,-2.4853 -6.7017,-2.7598 0.1124,0.099 1.9641,2.2845 2.0769,2.3835 z"
+         style="fill:#ffccaa;fill-opacity:1;stroke:#000000;stroke-width:0.49176884;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
+         sodipodi:nodetypes="cscssc"
+         inkscape:connector-curvature="0"
+         id="path4307"
+         d="m 2077.8524,1087.1501 c 1.756,1.4446 3.7665,3.5393 5.2558,5.2366 1.7777,2.026 3.0223,3.7644 5.0714,6.9756 0,-2.5408 0.977,-7.8232 5.6554,-14.0973 5.8644,-7.8648 13.8181,-7.5618 10.3272,-9.1797 -4.4214,-2.049 -26.3098,1.8306 -26.3098,11.0648 z"
+         style="fill:#d38d5f;fill-opacity:1;stroke:#000000;stroke-width:0.49176884;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
+         inkscape:connector-curvature="0"
+         id="path4307-4"
+         d="m 2092.416,1082.0602 c -3.544,3.2161 -6.2006,7.3289 -7.9349,11.7769 -1.5876,-1.9323 -3.3024,-3.7586 -5.1175,-5.476 1.6266,-3.0398 5.1917,-4.025 8.15,-5.2353 1.7091,-0.5942 3.4624,-1.0431 5.2405,-1.3626 -0.1125,0.099 -0.2254,0.1981 -0.3381,0.297 z"
+         style="fill:#ffccaa;fill-opacity:1;stroke:#000000;stroke-width:0.49176884;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
+         sodipodi:nodetypes="cccscccc"
+         inkscape:connector-curvature="0"
+         id="path3232"
+         d="m 1991.895,1134.159 c 0.108,9.9108 1.6709,19.3469 4.9327,25.6718 3.6402,-3.8344 17.506,-11.8344 25.8971,4.835 6.6914,1.4115 13.643,-0.048 19.2106,-0.048 5.0689,0 12.1602,3.2597 19.0412,2.6547 11.7337,-16.3419 25.2815,-5.8114 30.3771,-1.1858 6.1014,-8.5225 8.4096,-19.602 8.0891,-30.7382 -2.4952,-7.0014 -100.9494,-7.0867 -107.5478,-1.1894 z"
+         style="fill:#b41111;fill-opacity:1;stroke:#000000;stroke-width:1.04953003;stroke-miterlimit:4;stroke-opacity:1" />
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
+         transform="matrix(-0.16392295,0,0,0.16392295,2006.5844,1096.6473)"
+         id="g3933">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.95917964;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+           d="m -236.90816,329.50503 c 0,39.97302 -21.37154,72.37755 -47.73469,72.37755 -26.36314,0 -47.73469,-32.40453 -47.73469,-72.37755 0,-39.97302 21.37155,-72.37756 47.73469,-72.37756 26.36315,0 47.73469,32.40454 47.73469,72.37756 z"
+           id="path3914"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:#225500;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+           d="m -249.96412,340.82157 c 0,28.20597 -16.11818,52.5 -30.71428,52.5 -14.5961,0 -27.14286,-25.7226 -27.14286,-53.92857 0,-28.20598 12.54676,-48.21429 27.14286,-48.21429 14.5961,0 30.71428,21.43688 30.71428,49.64286 z"
+           id="path3917"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss" />
+        <path
+           sodipodi:type="arc"
+           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="path3929"
+           sodipodi:cx="-262.89221"
+           sodipodi:cy="356.87216"
+           sodipodi:rx="18.435284"
+           sodipodi:ry="37.880722"
+           d="m -244.45693,356.87216 c 0,20.92095 -8.25376,37.88072 -18.43528,37.88072 -10.18153,0 -18.43529,-16.95977 -18.43529,-37.88072 0,-20.92094 8.25376,-37.88072 18.43529,-37.88072 10.18152,0 18.43528,16.95978 18.43528,37.88072 z"
+           transform="translate(-14.127268,-11.219362)" />
+        <path
+           sodipodi:type="arc"
+           style="fill:#ffffff;fill-opacity:0.79894182;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="path3931"
+           sodipodi:cx="-263.39728"
+           sodipodi:cy="341.97241"
+           sodipodi:rx="9.8489876"
+           sodipodi:ry="12.879445"
+           d="m -253.54829,341.97241 c 0,7.11312 -4.40954,12.87945 -9.84899,12.87945 -5.43944,0 -9.84899,-5.76633 -9.84899,-12.87945 0,-7.11312 4.40955,-12.87944 9.84899,-12.87944 5.43945,0 9.84899,5.76632 9.84899,12.87944 z"
+           transform="translate(-12.612039,-17.280277)" />
+      </g>
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
+         id="g3933-4"
+         transform="matrix(-0.16392295,0,0,0.16392295,1985.9184,1096.296)">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.95917964;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+           d="m -236.90816,329.50503 c 0,39.97302 -21.37154,72.37755 -47.73469,72.37755 -26.36314,0 -47.73469,-32.40453 -47.73469,-72.37755 0,-39.97302 21.37155,-72.37756 47.73469,-72.37756 26.36315,0 47.73469,32.40454 47.73469,72.37756 z"
+           id="path3914-8"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:#225500;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+           d="m -249.96412,340.82157 c 0,28.20597 -16.11818,52.5 -30.71428,52.5 -14.5961,0 -27.14286,-25.7226 -27.14286,-53.92857 0,-28.20598 12.54676,-48.21429 27.14286,-48.21429 14.5961,0 30.71428,21.43688 30.71428,49.64286 z"
+           id="path3917-8"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss" />
+        <path
+           sodipodi:type="arc"
+           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="path3929-2"
+           sodipodi:cx="-262.89221"
+           sodipodi:cy="356.87216"
+           sodipodi:rx="18.435284"
+           sodipodi:ry="37.880722"
+           d="m -244.45693,356.87216 c 0,20.92095 -8.25376,37.88072 -18.43528,37.88072 -10.18153,0 -18.43529,-16.95977 -18.43529,-37.88072 0,-20.92094 8.25376,-37.88072 18.43529,-37.88072 10.18152,0 18.43528,16.95978 18.43528,37.88072 z"
+           transform="translate(-14.127268,-11.219362)" />
+        <path
+           sodipodi:type="arc"
+           style="fill:#ffffff;fill-opacity:0.79894182;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="path3931-4"
+           sodipodi:cx="-263.39728"
+           sodipodi:cy="341.97241"
+           sodipodi:rx="9.8489876"
+           sodipodi:ry="12.879445"
+           d="m -253.54829,341.97241 c 0,7.11312 -4.40954,12.87945 -9.84899,12.87945 -5.43944,0 -9.84899,-5.76633 -9.84899,-12.87945 0,-7.11312 4.40955,-12.87944 9.84899,-12.87944 5.43945,0 9.84899,5.76632 9.84899,12.87944 z"
+           transform="translate(-12.612039,-17.280277)" />
+      </g>
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
+         sodipodi:nodetypes="scsss"
+         inkscape:connector-curvature="0"
+         id="path3969"
+         d="m 2036.1056,1169.819 c 1.2294,1.8896 2.941,3.2015 6.5385,4.1089 2.8365,-0.4976 4.8702,-1.9852 6.6557,-3.8455 1.4707,-1.5323 -3.6143,-2.7917 -6.7728,-2.7917 -3.1584,0 -7.5797,0.748 -6.4214,2.5283 z"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.64552534;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
+         sodipodi:nodetypes="sssscs"
+         inkscape:connector-curvature="0"
+         id="path3971"
+         d="m 2026.7787,1181.757 c 4.8007,3.7295 6.1874,5.0347 16.2752,5.0347 10.0879,0 18.0315,-9.9696 18.0315,-12.8795 0,-2.9101 -7.9436,2.3416 -18.0315,2.3416 -5.4309,0 -15.1087,-2.0092 -19.04,-6.5441 -2.4005,7.6046 1.704,11.2231 2.7648,12.0473 z"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.49176884;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
+         sodipodi:nodetypes="cscscscsc"
+         inkscape:connector-curvature="0"
+         id="rect3974"
+         d="m 2051.133,1175.2001 c 0,0 -5.38,1.1591 -8.07,1.1591 -2.696,0 -8.0881,-1.1591 -8.0881,-1.1591 0,0 0.9935,5.1055 0.9935,7.6169 0,2.9136 -0.828,7.2507 -0.828,7.2507 0,0 5.8621,1.3998 8.3378,1.4371 2.9933,0.045 8.0688,-1.1886 8.0688,-1.1886 0,0 -1.4074,-3.9232 -1.4074,-6.7542 0,-2.5941 0.9934,-8.3619 0.9934,-8.3619 z"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.49176884;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
+         sodipodi:nodetypes="csc"
+         inkscape:connector-curvature="0"
+         id="path3977"
+         d="m 2042.9801,1191.4275 c 0,0 0.3867,-4.2502 0.4144,-6.7891 0.027,-2.5114 -0.2488,-8.3622 -0.2488,-8.3622"
+         style="fill:none;stroke:#000000;stroke-width:0.40980738;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path3980"
+         d="m 2042.5563,1176.3709 -0.059,-3.2492"
+         style="fill:none;stroke:#000000;stroke-width:0.3278459;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         sodipodi:nodetypes="cscsc"
+         inkscape:connector-curvature="0"
+         id="path4405"
+         d="m 2061.4603,1167.8822 c 0,1.5842 6.3433,-6.475 13.3596,-6.475 7.0162,0 14.999,6.5838 14.999,4.9995 0,-1.5842 -7.655,-7.4584 -14.6711,-7.4584 -7.0163,0 -13.6875,7.3495 -13.6875,8.9339 z"
+         style="fill:#ffffff;fill-opacity:0.31764706;stroke:none" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
+         sodipodi:nodetypes="cscsc"
+         inkscape:connector-curvature="0"
+         id="path4408"
+         d="m 1998.5447,1160.6059 c 0,1.3443 3.2603,-3.9588 11.3264,-3.9588 8.0659,0 12.2279,9.5651 12.2279,8.2208 0,-1.3443 -4.2206,-9.4465 -11.4903,-9.6468 -9.9087,-0.2729 -12.064,4.0405 -12.064,5.3848 z"
+         style="fill:#ffffff;fill-opacity:0.3174603;stroke:none" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
+         sodipodi:nodetypes="cscsssc"
+         inkscape:connector-curvature="0"
+         id="path3020"
+         d="m 2046.8554,1215.995 c 0,0 -0.7757,3.2356 0.371,3.5195 4.6299,1.1466 15.0272,0.1852 15.0272,0.1852 0,0 0.7204,-1.4419 0.3709,-2.0376 -1.0576,-1.8028 -5.725,0.202 -4.267,-1.2966 0.9673,-0.9939 2.4321,-2.0662 2.1363,-4.1455 -0.7227,-5.0782 -4.6632,-4.5879 -4.6632,-4.5879"
+         style="fill:none;stroke:#000000;stroke-width:0.74151921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
+         inkscape:connector-curvature="0"
+         id="path3806"
+         d="m 2059.1921,1219.6261 c 2.7721,-0.1879 3.1483,-0.3288 3.1483,-1.1798 0,-0.9743 -0.5025,-1.2158 -2.5294,-1.2158 -1.0449,0 -1.9619,-0.1005 -2.0376,-0.2225 -0.077,-0.123 0.3898,-0.8397 1.0345,-1.5938 1.4015,-1.6395 1.5913,-2.2589 1.1854,-3.8684 -0.3763,-1.4923 -1.1209,-2.579 -2.1208,-3.0952 -1.2077,-0.6238 -1.4866,-0.4812 -2.3977,1.2258 -1.4924,2.796 -4.8926,5.6439 -7.8778,6.5984 -0.5372,0.1718 -0.9215,1.9134 -0.5514,2.4992 0.1424,0.2255 0.661,0.4996 1.1522,0.6092 1.2977,0.2892 8.0922,0.4393 10.9943,0.2429 z"
+         style="fill:#552200;fill-opacity:1;stroke:#000000;stroke-width:0.37075961;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
+         inkscape:connector-curvature="0"
+         id="path3806-1"
+         d="m 2028.8929,1219.4148 c -2.7721,-0.1875 -3.1484,-0.3286 -3.1484,-1.1796 0,-0.9743 0.5025,-1.2158 2.5295,-1.2158 1.0449,0 1.9617,-0.1005 2.0374,-0.2225 0.076,-0.123 -0.3897,-0.8397 -1.0344,-1.594 -1.4014,-1.6392 -1.5912,-2.2587 -1.1853,-3.8681 0.3761,-1.4923 1.1208,-2.5791 2.1206,-3.0954 1.2079,-0.6235 1.4866,-0.4809 2.3977,1.2259 1.4925,2.7959 4.8928,5.6441 7.878,6.5985 0.5372,0.1717 0.9213,1.9133 0.5513,2.4991 -0.1425,0.2255 -0.661,0.4996 -1.1523,0.6092 -1.2976,0.2892 -8.092,0.4393 -10.9941,0.2427 z"
+         style="fill:#552200;fill-opacity:1;stroke:#000000;stroke-width:0.92689914;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\RedSquirrel.png"
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         sodipodi:nodetypes="cscsc"
+         inkscape:connector-curvature="0"
+         id="path4405-7"
+         d="m 2034.4304,1211.3955 c 0,1.5844 2.2632,4.6532 9.2795,4.6532 7.0164,0 11.7842,-5.2859 11.7842,-6.8702 0,-1.5844 -2.1903,2.7393 -9.107,3.9167 -7.2637,1.2365 -11.9567,-3.2839 -11.9567,-1.6997 z"
+         style="fill:#000000;fill-opacity:0.25396824;stroke:none" />
+    </g>
+    <path
+       style="fill:#ffffff;fill-opacity:0.78680205;stroke:#666666;stroke-width:0.25381085;stroke-opacity:1;display:inline"
+       d="m 1274.8886,1114.4783 c -12.529,0 -22.8874,7.9275 -24.5482,18.2189 -2.3137,-0.2269 -4.7025,-0.3411 -7.1385,-0.3411 -21.762,0 -39.3962,9.4556 -39.3962,21.1218 0,2.2167 0.6353,4.3537 1.8164,6.3612 -4.1674,2.4265 -6.6943,5.6021 -6.6943,9.0737 0,7.6279 12.1818,13.8089 27.2133,13.8089 8.2767,0 15.6858,-1.8719 20.6776,-4.8303 4.5604,7.4976 18.4923,12.9602 34.9783,12.9602 15.8871,0 29.4043,-5.0733 34.447,-12.1512 3.2569,1.0169 6.8556,1.5863 10.6442,1.5863 14.5827,0 26.4042,-8.3667 26.4042,-18.6868 0,-5.8792 -3.8372,-11.1211 -9.8352,-14.5465 1.1076,-1.8004 1.7133,-3.7436 1.7133,-5.7663 0,-9.4228 -13.0985,-17.0609 -29.2517,-17.0609 -6.7786,0 -13.0133,1.3512 -17.973,3.6089 -3.6307,-7.8225 -12.5893,-13.3568 -23.0572,-13.3568 z"
+       id="path4223"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\OwlXGames\Assets\Header.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       id="g3494"
+       transform="matrix(0.74411508,0,0,0.74411508,-355.70145,544.49691)"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\OwlXGames\Assets\Header.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
+         transform="matrix(0.24728804,0,0,0.24728804,2188.5994,1036.1354)"
+         id="g4038-1"
+         style="display:inline">
+        <path
+           sodipodi:nodetypes="cccscscc"
+           style="fill:#552200;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1"
+           d="M 595.89202,385.50232 C 506.3532,370.8178 413.47117,439.42589 400.25093,519.08375 c 0.0248,0.079 0.071,0.15372 0.0966,0.23269 -1.32215,4.16477 -2.59716,8.4386 -3.79702,12.84397 -51.24295,188.14137 -267.41129,146.10351 -225.95352,165.31165 72.39442,10.12885 135.50628,50.87712 180.81922,11.91798 113.19319,-97.32119 228.49125,-216.40569 321.45719,-291.98142 -0.13162,-8.42567 -33.1839,-26.33128 -76.98138,-31.9063 z"
+           id="path3883-7"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:#72472b;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1"
+           d="m 628.77249,392.92694 c -225.35966,94.24106 -167.8084,383.24634 -458.1755,304.54512 34.66661,16.06168 162.69292,64.44561 239.39697,5.75792 83.83414,-61.43106 131.68633,-153.31925 183.8816,-203.58361 33.43625,-32.19929 96.40548,-46.2835 78.99784,-82.23775 -0.44173,-6.96981 -17.59138,-17.15428 -44.10091,-24.48168 z"
+           id="path3883-5-4"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccscc" />
+        <path
+           style="fill:#ffffff;fill-opacity:0.3174603;stroke:none"
+           d="m 603.88271,394.14085 c 0,5.43631 -43.58993,10.86094 -76.20777,10.86094 -32.61784,0 -51.56934,18.88139 -51.56934,13.44508 0,-5.4363 48.88688,-29.71522 78.28485,-30.52485 40.06964,-1.10355 49.49226,0.78253 49.49226,6.21883 z"
+           id="path4408-1-0"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cscsc" />
+      </g>
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
+         inkscape:connector-curvature="0"
+         id="path3016-0-9"
+         d="m 2236.974,1189.0072 c -7.5746,10e-5 -13.7479,7.6104 -12.9464,14.9753 0.3562,6.5129 5.7805,12.8534 12.5638,13.0077 6.4472,0.2868 12.5038,-4.9188 13.3747,-11.2766 1.2517,-6.4691 -2.2959,-13.8818 -8.7599,-16.0059 -1.3565,-0.489 -2.7804,-0.7425 -4.2322,-0.7005 z"
+         style="fill:#72472b;fill-opacity:1;stroke:#000000;stroke-width:0.92689914;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
+         inkscape:connector-curvature="0"
+         id="path3832-4"
+         d="m 2224.3519,1194.3277 c -1.2264,1.3319 -1.8752,3.2996 -2.5501,5.0075 -0.7988,1.9385 -0.4619,4.2426 1.0511,5.734 2.4983,2.7447 6.331,4.4016 10.0614,4.142 1.3847,-0.033 3.0644,-1.2651 2.3725,-2.7896 -0.7581,-2.1523 -2.9,-3.5234 -5.1545,-3.5858 -1.8501,-0.3666 -4.6276,-0.2766 -5.3553,-2.4342 0.1685,-1.91 1.1,-3.6192 1.7156,-5.4248 -0.488,-0.5915 -1.4429,-0.5956 -2.1407,-0.6491 z"
+         style="fill:#552200;fill-opacity:1;stroke:none;display:inline" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
+         sodipodi:nodetypes="cssssscc"
+         inkscape:connector-curvature="0"
+         id="path3826-8"
+         d="m 2224.2018,1194.1052 c 0,0 -0.079,0.1215 -0.2112,0.3395 -0.7837,1.2883 -3.4353,5.927 -2.5865,8.4034 1.2371,3.6093 5.6704,5.8955 9.4423,6.4699 1.5675,0.2385 3.8681,0.035 4.5464,-1.399 0.5925,-1.2523 -0.587,-2.8744 -1.5737,-3.8469 -2.2742,-2.2411 -7.5518,-0.6111 -8.9178,-3.4971 -0.2729,-1.2026 1.9234,-5.9452 1.9234,-5.9452 z"
+         style="fill:none;stroke:#000000;stroke-width:0.8655082;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
+         inkscape:connector-curvature="0"
+         id="path3832-7-8"
+         d="m 2250.4871,1194.0803 c -0.7636,0.1528 -2.3509,0.2032 -1.6305,1.2905 0.5426,1.6627 1.6177,3.3372 1.4065,5.1004 -1.3306,2.2199 -4.373,1.7512 -6.5376,2.3415 -2.0689,0.3702 -4.0311,2.297 -4.0031,4.4512 0.6218,1.8985 3.1077,1.897 4.7449,1.6692 3.7284,-0.6885 7.7969,-2.6796 9.1573,-6.4604 0.5266,-3.0389 -1.3326,-5.8653 -2.7046,-8.4002 -0.1409,0.023 -0.2912,-0.018 -0.4329,0.015 z"
+         style="fill:#552200;fill-opacity:1;stroke:none;display:inline" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
+         sodipodi:nodetypes="cssssscc"
+         inkscape:connector-curvature="0"
+         id="path3826-4-2"
+         d="m 2250.9241,1193.8695 c 0,0 0.079,0.1215 0.2114,0.3396 0.7835,1.2882 3.4352,5.9269 2.5863,8.4035 -1.2369,3.6093 -5.6705,5.8953 -9.4423,6.4697 -1.5676,0.2387 -3.8681,0.034 -4.5464,-1.3989 -0.5926,-1.2524 0.587,-2.8743 1.5738,-3.8468 2.2742,-2.2413 7.5517,-0.6111 8.9177,-3.4973 0.2729,-1.2025 -1.9235,-5.9452 -1.9235,-5.9452 z"
+         style="fill:none;stroke:#000000;stroke-width:0.79132181;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+      <path
+         sodipodi:nodetypes="cccscsccscsccscscccscscsccscscscc"
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
+         inkscape:connector-curvature="0"
+         id="path3901-4"
+         d="m 2210.4008,1084.5125 c -2.2072,-2.1277 -5.0061,-3.9957 -8.1962,-6.2393 -5.1273,-3.6064 -23.9328,-6.2696 -27.1497,-1.9621 -2.6594,4.4889 3.3669,-0.7072 13.8719,14.9119 2.0802,3.0929 2.4724,7.6687 2.7355,12.1202 -5.7295,9.3895 -9.0772,20.7141 -9.0772,32.9073 0,11.5024 2.9823,22.2319 8.1295,31.294 -0.015,0.015 -0.017,0.021 -0.026,0.031 -3.8062,0.426 -5.9421,3.4951 -5.9421,5.2405 0,1.1597 0.8847,0.4327 2.5868,-0.2921 -1.5242,1.1527 -2.3409,2.7369 -2.3409,3.8164 0,1.1176 0.8249,0.4859 2.4076,-0.21 0,0.1349 -0.015,0.2691 -0.015,0.4046 -0.9924,1.5944 -1.4959,3.3408 -1.4959,4.2313 0,1.0015 0.593,-0.056 1.8031,-1.2602 1.4638,6.4332 7.8719,10.3569 15.2552,11.8844 12.8922,2.6673 24.7937,5.4131 35.438,4.636 16.7549,-1.2231 22.6477,-1.7445 36.5907,-6.2906 7.7878,-2.5391 15.1966,-8.0985 15.3985,-16.0592 1.8976,0.6062 1.7673,2.9832 1.7673,1.6085 0,-0.8804 -0.054,-3.0366 -1.3268,-4.7692 1.567,0.6023 1.9672,1.8854 1.9672,0.6505 0,-0.9669 -1.6124,-2.9428 -3.7088,-4.4668 2.6198,0.1587 3.2171,2.4363 3.2171,0.9221 0,-1.5684 -4.2332,-5.7965 -7.9094,-6.434 -0.3042,-0.053 -0.5469,-0.091 -0.7684,-0.1275 3.1681,-7.538 4.9433,-15.9431 4.9433,-24.8088 0,-9.375 -1.9826,-18.2357 -5.5016,-26.0995 1.1317,-5.9493 0.078,-14.8607 3.4475,-19.8706 10.5051,-15.6191 16.5313,-10.4228 13.872,-14.9117 -3.217,-4.3076 -22.0223,-1.6445 -27.1499,1.9619 -4.3023,3.0259 -7.8953,5.3721 -10.2809,8.5905 -9.9374,-9.6243 -34.9348,-11.8899 -52.5429,-1.4099 z"
+         style="fill:#552200;fill-opacity:1;stroke:#000000;stroke-width:0.81961477;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
+         sodipodi:nodetypes="cscssc"
+         inkscape:connector-curvature="0"
+         id="path4307-5-5"
+         d="m 2268.1074,1090.5242 c 1.756,1.4448 6.0844,5.8576 7.5739,7.5548 1.7779,2.0261 3.0223,3.7645 5.0714,6.9756 -0.015,-2.5407 -0.298,-11.5323 4.3803,-17.8065 5.8645,-7.8647 11.9635,-9.5322 8.4726,-11.1502 -4.4214,-2.0489 -25.4982,5.1919 -25.4982,14.4263 z"
+         style="fill:#d38d5f;fill-opacity:1;stroke:#000000;stroke-width:0.49176884;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;display:inline" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
+         inkscape:connector-curvature="0"
+         id="path4009-5"
+         d="m 2250.3623,1111.3444 c -5.671,-0.046 -11.2745,3.5011 -12.9141,9.0568 -6.7465,-10.4346 -24.6146,-12.2217 -31.8625,-1.4393 -1.2606,1.8741 -2.4084,3.8535 -3.4168,5.9061 -2.2498,1.0774 -3.6627,3.2796 -3.6627,3.8062 0,0.4958 0.2794,-0.2223 1.7263,-0.6916 -0.8949,0.9191 -1.4088,1.8401 -1.4088,2.1566 0,0.4461 0.2254,-0.089 1.3217,-0.5431 -0.7156,1.9591 -1.2962,3.9653 -1.7313,5.9987 -1.1537,1.2095 -1.6392,2.7144 -1.6392,3.1095 0,0.4868 0.015,-0.3563 1.2293,-0.9221 -0.6009,3.7814 -0.6717,7.6316 -0.087,11.4285 0.7605,4.3497 3.283,8.6018 7.4022,10.5013 -5.3725,0.7951 -10.3567,3.6244 -14.2869,7.2997 -1.652,1.73 -0.6998,0.731 -1.5521,1.5521 -2.6422,0.2124 -6.3233,5.9131 -1.6494,3.2785 2.2269,-0.4333 -5.3933,6.0742 -0.5226,3.6576 2.3729,-0.1364 -2.689,6.1015 0.7325,3.0325 1.2063,7.7754 9.4301,11.4458 16.3719,12.6476 12.8213,2.6068 25.8929,5.6661 39.0545,3.9188 12.5837,-0.9122 25.4616,-2.768 36.8929,-8.3754 5.0445,-2.6911 9.5491,-7.7506 9.2669,-13.7848 4.718,2.1382 -3.6318,-5.8251 1.3317,-2.9456 2.0114,-0.2 -7.4726,-5.1073 -1.9618,-3.8624 4.6141,1.4016 -3.2407,-4.9319 -5.8858,-4.3388 0.2103,-4.8329 -7.8568,-4.8672 -9.8253,-5.8297 4.6315,-5.7143 4.2123,-14.2329 2.9558,-20.9975 -0.2205,-0.9405 -0.466,-1.8887 -0.7377,-2.8379 0.3458,0.1669 0.665,0.3095 0.9683,0.3792 0,-0.5222 -0.4721,-1.3675 -1.2039,-2.2181 0.709,0.2985 1.1475,0.4544 1.1475,-0.102 0,-0.5904 -0.4609,-1.457 -1.1936,-2.259 0.8026,0.3394 1.3113,0.5661 1.3113,-0.032 0,-1.2401 -2.0178,-3.6987 -4.3695,-4.2209 -2.0342,-3.7911 -4.7768,-7.1293 -8.5137,-9.3641 -3.9635,-1.8642 -8.3501,-2.9428 -12.7398,-2.9506 -0.1831,-0.015 -0.3653,-0.015 -0.5482,-0.015 z"
+         style="fill:#ffffff;fill-opacity:0.16931218;stroke:none;display:inline" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
+         sodipodi:nodetypes="cccscc"
+         inkscape:connector-curvature="0"
+         id="path4307-4-8-1"
+         d="m 2282.5549,1085.7821 c -3.5424,3.2143 -3.7691,9.3034 -5.5007,13.7474 -1.587,-1.9318 -3.3015,-3.7579 -5.1175,-5.476 1.781,-4.769 3.0486,-5.8882 5.9934,-7.8951 1.2828,-0.8742 5.1737,-2.4853 6.7017,-2.7598 -0.1124,0.099 -1.9641,2.2845 -2.0769,2.3835 z"
+         style="fill:#ffccaa;fill-opacity:1;stroke:#000000;stroke-width:0.49176884;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;display:inline" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
+         sodipodi:nodetypes="cscssc"
+         inkscape:connector-curvature="0"
+         id="path4307-7"
+         d="m 2203.5162,1087.9425 c -1.756,1.4446 -3.7665,3.5393 -5.2558,5.2366 -1.7777,2.026 -3.0223,3.7645 -5.0714,6.9756 0,-2.5408 -0.977,-7.8232 -5.6554,-14.0973 -5.8644,-7.8649 -13.8181,-7.5619 -10.3272,-9.1798 4.4214,-2.049 26.3098,1.8307 26.3098,11.0649 z"
+         style="fill:#d38d5f;fill-opacity:1;stroke:#000000;stroke-width:0.49176884;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;display:inline" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
+         inkscape:connector-curvature="0"
+         id="path4307-4-1"
+         d="m 2188.9526,1082.8526 c 3.544,3.216 6.2006,7.3288 7.9349,11.7769 1.5876,-1.9323 3.3024,-3.7586 5.1175,-5.476 -1.6266,-3.0399 -5.1917,-4.0251 -8.15,-5.2354 -1.7091,-0.5942 -3.4624,-1.0431 -5.2405,-1.3626 0.1125,0.099 0.2254,0.1981 0.3381,0.2971 z"
+         style="fill:#ffccaa;fill-opacity:1;stroke:#000000;stroke-width:0.49176884;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;display:inline" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
+         sodipodi:nodetypes="cccscccc"
+         inkscape:connector-curvature="0"
+         id="path3232-1"
+         d="m 2289.4736,1134.9513 c -0.108,9.9109 -1.6709,19.3469 -4.9327,25.6718 -3.6402,-3.8344 -17.506,-11.8342 -25.8971,4.835 -6.6914,1.4115 -13.6431,-0.048 -19.2106,-0.048 -5.0689,0 -12.1602,3.2597 -19.0412,2.6547 -11.7337,-16.342 -25.2815,-5.8114 -30.3771,-1.1858 -6.1014,-8.5225 -8.4096,-19.6021 -8.0891,-30.7382 2.4952,-7.0014 100.9494,-7.0868 107.5478,-1.1895 z"
+         style="fill:#4c98d7;fill-opacity:1;stroke:#000000;stroke-width:1.04953003;stroke-miterlimit:4;stroke-opacity:1;display:inline" />
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
+         transform="matrix(0.16392295,0,0,0.16392295,2274.7842,1097.4397)"
+         id="g3933-5"
+         style="display:inline">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.95917964;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+           d="m -236.90816,329.50503 c 0,39.97302 -21.37154,72.37755 -47.73469,72.37755 -26.36314,0 -47.73469,-32.40453 -47.73469,-72.37755 0,-39.97302 21.37155,-72.37756 47.73469,-72.37756 26.36315,0 47.73469,32.40454 47.73469,72.37756 z"
+           id="path3914-2"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:#225500;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+           d="m -249.96412,340.82157 c 0,28.20597 -16.11818,52.5 -30.71428,52.5 -14.5961,0 -27.14286,-25.7226 -27.14286,-53.92857 0,-28.20598 12.54676,-48.21429 27.14286,-48.21429 14.5961,0 30.71428,21.43688 30.71428,49.64286 z"
+           id="path3917-7"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss" />
+        <path
+           sodipodi:type="arc"
+           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="path3929-6"
+           sodipodi:cx="-262.89221"
+           sodipodi:cy="356.87216"
+           sodipodi:rx="18.435284"
+           sodipodi:ry="37.880722"
+           d="m -244.45693,356.87216 c 0,20.92095 -8.25376,37.88072 -18.43528,37.88072 -10.18153,0 -18.43529,-16.95977 -18.43529,-37.88072 0,-20.92094 8.25376,-37.88072 18.43529,-37.88072 10.18152,0 18.43528,16.95978 18.43528,37.88072 z"
+           transform="translate(-14.127268,-11.219362)" />
+        <path
+           sodipodi:type="arc"
+           style="fill:#ffffff;fill-opacity:0.79894182;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="path3931-1"
+           sodipodi:cx="-263.39728"
+           sodipodi:cy="341.97241"
+           sodipodi:rx="9.8489876"
+           sodipodi:ry="12.879445"
+           d="m -253.54829,341.97241 c 0,7.11312 -4.40954,12.87945 -9.84899,12.87945 -5.43944,0 -9.84899,-5.76633 -9.84899,-12.87945 0,-7.11312 4.40955,-12.87944 9.84899,-12.87944 5.43945,0 9.84899,5.76632 9.84899,12.87944 z"
+           transform="translate(-12.612039,-17.280277)" />
+      </g>
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
+         id="g3933-4-4"
+         transform="matrix(0.16392295,0,0,0.16392295,2295.4502,1097.0884)"
+         style="display:inline">
+        <path
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.95917964;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+           d="m -236.90816,329.50503 c 0,39.97302 -21.37154,72.37755 -47.73469,72.37755 -26.36314,0 -47.73469,-32.40453 -47.73469,-72.37755 0,-39.97302 21.37155,-72.37756 47.73469,-72.37756 26.36315,0 47.73469,32.40454 47.73469,72.37756 z"
+           id="path3914-8-2"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:#225500;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+           d="m -249.96412,340.82157 c 0,28.20597 -16.11818,52.5 -30.71428,52.5 -14.5961,0 -27.14286,-25.7226 -27.14286,-53.92857 0,-28.20598 12.54676,-48.21429 27.14286,-48.21429 14.5961,0 30.71428,21.43688 30.71428,49.64286 z"
+           id="path3917-8-3"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="sssss" />
+        <path
+           sodipodi:type="arc"
+           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="path3929-2-2"
+           sodipodi:cx="-262.89221"
+           sodipodi:cy="356.87216"
+           sodipodi:rx="18.435284"
+           sodipodi:ry="37.880722"
+           d="m -244.45693,356.87216 c 0,20.92095 -8.25376,37.88072 -18.43528,37.88072 -10.18153,0 -18.43529,-16.95977 -18.43529,-37.88072 0,-20.92094 8.25376,-37.88072 18.43529,-37.88072 10.18152,0 18.43528,16.95978 18.43528,37.88072 z"
+           transform="translate(-14.127268,-11.219362)" />
+        <path
+           sodipodi:type="arc"
+           style="fill:#ffffff;fill-opacity:0.79894182;stroke:#000000;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="path3931-4-2"
+           sodipodi:cx="-263.39728"
+           sodipodi:cy="341.97241"
+           sodipodi:rx="9.8489876"
+           sodipodi:ry="12.879445"
+           d="m -253.54829,341.97241 c 0,7.11312 -4.40954,12.87945 -9.84899,12.87945 -5.43944,0 -9.84899,-5.76633 -9.84899,-12.87945 0,-7.11312 4.40955,-12.87944 9.84899,-12.87944 5.43945,0 9.84899,5.76632 9.84899,12.87944 z"
+           transform="translate(-12.612039,-17.280277)" />
+      </g>
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
+         sodipodi:nodetypes="scsss"
+         inkscape:connector-curvature="0"
+         id="path3969-1"
+         d="m 2245.263,1170.6113 c -1.2294,1.8896 -2.941,3.2015 -6.5385,4.1089 -2.8365,-0.4976 -4.8702,-1.9852 -6.6557,-3.8454 -1.4707,-1.5324 3.6143,-2.7918 6.7728,-2.7918 3.1584,0 7.5797,0.748 6.4214,2.5283 z"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.64552534;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;display:inline" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
+         sodipodi:nodetypes="sssscs"
+         inkscape:connector-curvature="0"
+         id="path3971-6"
+         d="m 2254.5899,1182.5493 c -4.8007,3.7296 -6.1874,5.0347 -16.2752,5.0347 -10.0879,0 -18.0315,-9.9696 -18.0315,-12.8795 0,-2.91 7.9436,2.3416 18.0315,2.3416 5.4309,0 15.1087,-2.0092 19.04,-6.5441 2.4005,7.6046 -1.704,11.2231 -2.7648,12.0473 z"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.49176884;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;display:inline" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
+         sodipodi:nodetypes="cscscscsc"
+         inkscape:connector-curvature="0"
+         id="rect3974-8"
+         d="m 2230.2356,1175.9924 c 0,0 5.38,1.1592 8.07,1.1592 2.696,0 8.0881,-1.1592 8.0881,-1.1592 0,0 -0.9935,5.1055 -0.9935,7.6169 0,2.9137 0.828,7.2508 0.828,7.2508 0,0 -5.8621,1.3997 -8.3378,1.4371 -2.9933,0.045 -8.0688,-1.1887 -8.0688,-1.1887 0,0 1.4074,-3.9231 1.4074,-6.7542 0,-2.5941 -0.9934,-8.3619 -0.9934,-8.3619 z"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.49176884;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;display:inline" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
+         sodipodi:nodetypes="csc"
+         inkscape:connector-curvature="0"
+         id="path3977-5"
+         d="m 2238.3885,1192.2198 c 0,0 -0.3867,-4.2501 -0.4144,-6.7891 -0.027,-2.5114 0.2488,-8.3622 0.2488,-8.3622"
+         style="fill:none;stroke:#000000;stroke-width:0.40980738;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path3980-7"
+         d="m 2238.8123,1177.1632 0.059,-3.2491"
+         style="fill:none;stroke:#000000;stroke-width:0.3278459;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+      <path
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         sodipodi:nodetypes="cscsc"
+         inkscape:connector-curvature="0"
+         id="path4405-6"
+         d="m 2219.9083,1168.6745 c 0,1.5842 -6.3433,-6.475 -13.3596,-6.475 -7.0162,0 -14.999,6.5838 -14.999,4.9995 0,-1.5842 7.655,-7.4584 14.6711,-7.4584 7.0163,0 13.6875,7.3496 13.6875,8.9339 z"
+         style="fill:#ffffff;fill-opacity:0.3174603;stroke:none;display:inline" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
+         sodipodi:nodetypes="cscsc"
+         inkscape:connector-curvature="0"
+         id="path4408-18"
+         d="m 2282.8239,1161.3983 c 0,1.3443 -3.2603,-3.9589 -11.3264,-3.9589 -8.0659,0 -12.2279,9.5651 -12.2279,8.2208 0,-1.3442 4.2206,-9.4465 11.4903,-9.6468 9.9087,-0.2729 12.064,4.0406 12.064,5.3849 z"
+         style="fill:#ffffff;fill-opacity:0.3174603;stroke:none;display:inline" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
+         sodipodi:nodetypes="cscsssc"
+         inkscape:connector-curvature="0"
+         id="path3020-9"
+         d="m 2234.5132,1216.7874 c 0,0 0.7757,3.2355 -0.371,3.5195 -4.6299,1.1465 -15.0272,0.1851 -15.0272,0.1851 0,0 -0.7204,-1.4419 -0.3709,-2.0375 1.0576,-1.8028 5.725,0.2019 4.267,-1.2967 -0.9673,-0.9939 -2.4321,-2.0662 -2.1363,-4.1455 0.7227,-5.0782 4.6632,-4.5879 4.6632,-4.5879"
+         style="fill:none;stroke:#000000;stroke-width:0.74151921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
+         inkscape:connector-curvature="0"
+         id="path3806-2"
+         d="m 2222.1765,1220.4184 c -2.7721,-0.1878 -3.1483,-0.3288 -3.1483,-1.1798 0,-0.9743 0.5025,-1.2158 2.5294,-1.2158 1.0449,0 1.9619,-0.1005 2.0376,-0.2225 0.077,-0.1229 -0.3898,-0.8396 -1.0345,-1.5938 -1.4015,-1.6395 -1.5913,-2.2589 -1.1854,-3.8684 0.3763,-1.4923 1.1209,-2.579 2.1208,-3.0952 1.2077,-0.6237 1.4866,-0.4812 2.3977,1.2258 1.4924,2.796 4.8926,5.644 7.8778,6.5984 0.5372,0.1719 0.9215,1.9135 0.5514,2.4993 -0.1424,0.2255 -0.661,0.4995 -1.1522,0.6091 -1.2977,0.2893 -8.0922,0.4393 -10.9943,0.2429 z"
+         style="fill:#552200;fill-opacity:1;stroke:#000000;stroke-width:0.37075961;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
+         inkscape:connector-curvature="0"
+         id="path3806-1-7"
+         d="m 2252.4757,1220.2072 c 2.7721,-0.1876 3.1484,-0.3287 3.1484,-1.1797 0,-0.9743 -0.5025,-1.2158 -2.5295,-1.2158 -1.0449,0 -1.9617,-0.1005 -2.0374,-0.2225 -0.077,-0.123 0.3897,-0.8396 1.0344,-1.5939 1.4014,-1.6393 1.5912,-2.2588 1.1853,-3.8682 -0.3761,-1.4922 -1.1208,-2.5791 -2.1206,-3.0953 -1.2079,-0.6236 -1.4866,-0.481 -2.3977,1.2258 -1.4925,2.796 -4.8928,5.6441 -7.878,6.5986 -0.5372,0.1716 -0.9213,1.9133 -0.5513,2.4991 0.1425,0.2255 0.661,0.4995 1.1523,0.6091 1.2976,0.2893 8.092,0.4393 10.9941,0.2428 z"
+         style="fill:#552200;fill-opacity:1;stroke:#000000;stroke-width:0.92689914;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+      <path
+         inkscape:export-filename="C:\Home\Dev\Github\Games\Acorn\AcornContent\Sprites\BlueSquirrel.png"
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         sodipodi:nodetypes="cscsc"
+         inkscape:connector-curvature="0"
+         id="path4405-7-9"
+         d="m 2246.9382,1212.1879 c 0,1.5843 -2.2632,4.6531 -9.2795,4.6531 -7.0164,0 -11.7842,-5.2859 -11.7842,-6.8702 0,-1.5843 2.1903,2.7393 9.107,3.9167 7.2637,1.2365 11.9567,-3.2838 11.9567,-1.6996 z"
+         style="fill:#000000;fill-opacity:0.25396824;stroke:none;display:inline" />
+    </g>
+    <g
+       style="display:inline"
+       id="g4115-4"
+       transform="matrix(0.36642714,0.93044675,-0.93044675,0.36642714,1741.2443,-558.15562)"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\OwlXGames\Assets\Header.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="ccscc"
+         inkscape:connector-curvature="0"
+         id="path4030-5"
+         d="m 1727.2459,1072.1921 c -13.2401,-1.5468 -20.6365,-16.8912 -20.313,-36.7229 9.5497,-2.7886 15.2881,-3.5822 21.7272,-3.5822 6.8956,0 11.7501,-1.9345 22.0445,2.6885 0.012,17.5283 -6.8006,36.2831 -23.4587,37.6166 z"
+         style="fill:url(#linearGradient4316-1);fill-opacity:1;stroke:#995600;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         d="m 1732.79,1013.927 c 1.8809,-0.1621 4.1896,3.8113 4.1896,3.8113 0,0 -7.8717,-5.2129 -9.498,12.1237 -1.9299,0.6717 -5.9598,-1.4349 -5.9598,-1.4349 0,0 5.1696,-13.9743 11.2682,-14.5001 z"
+         style="fill:#5d2c14;fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686"
+         id="path4118-5" />
+      <path
+         sodipodi:nodetypes="ccsccscc"
+         inkscape:connector-curvature="0"
+         id="path4027-1"
+         d="m 1750.5362,1041.7865 c -0.261,0.083 0.01,-1.0034 0.011,-2.274 -5.1136,-0.8419 -12.2303,-2.057 -20.6935,-2.057 -9.7368,0 -17.4263,1.9329 -22.9089,2.8154 0.093,1.6117 0.2467,2.3692 0.2816,3.3717 -8.8389,-7.082 -0.5292,-22.7158 22.4505,-22.7158 22.2727,0 27.4005,16.9596 20.8597,20.8597 z"
+         style="fill:url(#linearGradient3323);fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686" />
+    </g>
+    <text
+       xml:space="preserve"
+       x="-1213.3951"
+       y="119.18404"
+       id="text4120"
+       transform="translate(1689.875,599.0625)"
+       style="font-size:64px"><tspan
+         sodipodi:role="line"
+         id="tspan4122"
+         x="-1213.3951"
+         y="119.18404"
+         style="font-size:64px;font-weight:normal;baseline-shift:baseline;-inkscape-font-specification:Agent Orange" /></text>
+    <g
+       id="g3368"
+       transform="translate(-580.7544,2.7071068)"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\OwlXGames\Assets\Header.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\OwlXGames\Assets\Header.png"
+         transform="matrix(0.36642714,0.93044675,-0.93044675,0.36642714,1478.6733,-559.50589)"
+         id="g4115-4-7"
+         style="display:inline">
+        <path
+           style="fill:url(#linearGradient4316-1-9);fill-opacity:1;stroke:#995600;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+           d="m 1727.2459,1072.1921 c -13.2401,-1.5468 -20.6365,-16.8912 -20.313,-36.7229 9.5497,-2.7886 15.2881,-3.5822 21.7272,-3.5822 6.8956,0 11.7501,-1.9345 22.0445,2.6885 0.012,17.5283 -6.8006,36.2831 -23.4587,37.6166 z"
+           id="path4030-5-1"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccscc" />
+        <path
+           id="path4118-5-1"
+           style="fill:#5d2c14;fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686"
+           d="m 1732.79,1013.927 c 1.8809,-0.1621 4.1896,3.8113 4.1896,3.8113 0,0 -7.8717,-5.2129 -9.498,12.1237 -1.9299,0.6717 -5.9598,-1.4349 -5.9598,-1.4349 0,0 5.1696,-13.9743 11.2682,-14.5001 z"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:url(#linearGradient3555);fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686"
+           d="m 1750.5362,1041.7865 c -0.261,0.083 0.01,-1.0034 0.011,-2.274 -5.1136,-0.8419 -12.2303,-2.057 -20.6935,-2.057 -9.7368,0 -17.4263,1.9329 -22.9089,2.8154 0.093,1.6117 0.2467,2.3692 0.2816,3.3717 -8.8389,-7.082 -0.5292,-22.7158 22.4505,-22.7158 22.2727,0 27.4005,16.9596 20.8597,20.8597 z"
+           id="path4027-1-5"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccsccscc" />
+      </g>
+    </g>
+    <g
+       id="g3362"
+       transform="translate(-499.6518,4.9791847)"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\OwlXGames\Assets\Header.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <g
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="C:\Home\Dev\Github\Games\OwlXGames\Assets\Header.png"
+         transform="matrix(0.35849094,-0.93353321,0.93353321,0.35849094,-594.8136,2646.7553)"
+         id="g4115-4-8"
+         style="display:inline">
+        <path
+           style="fill:url(#linearGradient4316-1-2);fill-opacity:1;stroke:#995600;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+           d="m 1727.2459,1072.1921 c -13.2401,-1.5468 -20.6365,-16.8912 -20.313,-36.7229 9.5497,-2.7886 15.2881,-3.5822 21.7272,-3.5822 6.8956,0 11.7501,-1.9345 22.0445,2.6885 0.012,17.5283 -6.8006,36.2831 -23.4587,37.6166 z"
+           id="path4030-5-5"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccscc" />
+        <path
+           id="path4118-5-7"
+           style="fill:#5d2c14;fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686"
+           d="m 1732.79,1013.927 c 1.8809,-0.1621 4.1896,3.8113 4.1896,3.8113 0,0 -7.8717,-5.2129 -9.498,12.1237 -1.9299,0.6717 -5.9598,-1.4349 -5.9598,-1.4349 0,0 5.1696,-13.9743 11.2682,-14.5001 z"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:url(#linearGradient3555-6);fill-opacity:1;stroke:#3c1c0b;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99215686"
+           d="m 1750.5362,1041.7865 c -0.261,0.083 0.01,-1.0034 0.011,-2.274 -5.1136,-0.8419 -12.2303,-2.057 -20.6935,-2.057 -9.7368,0 -17.4263,1.9329 -22.9089,2.8154 0.093,1.6117 0.2467,2.3692 0.2816,3.3717 -8.8389,-7.082 -0.5292,-22.7158 22.4505,-22.7158 22.2727,0 27.4005,16.9596 20.8597,20.8597 z"
+           id="path4027-1-6"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccsccscc" />
+      </g>
+    </g>
+    <path
+       style="fill:#ffffff;fill-opacity:0.78680205;stroke:#666666;stroke-width:0.25381085;stroke-opacity:1;display:inline"
+       d="m 1121.6535,1143.5321 c -12.529,0 -22.8874,7.9275 -24.5482,18.2189 -2.3137,-0.2269 -4.7025,-0.3411 -7.1385,-0.3411 -21.762,0 -39.3962,9.4556 -39.3962,21.1218 0,2.2167 0.6353,4.3537 1.8164,6.3612 -4.1674,2.4265 -6.6943,5.6021 -6.6943,9.0737 0,7.6279 12.1818,13.8089 27.2133,13.8089 8.2767,0 15.6858,-1.8719 20.6776,-4.8303 4.5604,7.4976 18.4923,12.9602 34.9783,12.9602 15.8871,0 29.4043,-5.0733 34.447,-12.1512 3.2569,1.0169 6.8556,1.5863 10.6442,1.5863 14.5827,0 26.4042,-8.3667 26.4042,-18.6868 0,-5.8792 -3.8372,-11.1211 -9.8352,-14.5465 1.1076,-1.8004 1.7133,-3.7436 1.7133,-5.7663 0,-9.4228 -13.0985,-17.0609 -29.2517,-17.0609 -6.7786,0 -13.0133,1.3512 -17.973,3.6089 -3.6307,-7.8225 -12.5893,-13.3568 -23.0572,-13.3568 z"
+       id="path4223-2"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\OwlXGames\Assets\Header.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ffffff;fill-opacity:0.78680205;stroke:#666666;stroke-width:0.25381085;stroke-opacity:1;display:inline"
+       d="m 669.65351,1119.5321 c -12.529,0 -22.8874,7.9275 -24.5482,18.2189 -2.3137,-0.2269 -4.7025,-0.3411 -7.1385,-0.3411 -21.762,0 -39.3962,9.4556 -39.3962,21.1218 0,2.2167 0.6353,4.3537 1.8164,6.3612 -4.1674,2.4265 -6.6943,5.6021 -6.6943,9.0737 0,7.6279 12.1818,13.8089 27.2133,13.8089 8.2767,0 15.6858,-1.8719 20.6776,-4.8303 4.5604,7.4976 18.4923,12.9602 34.9783,12.9602 15.8871,0 29.4043,-5.0733 34.447,-12.1512 3.2569,1.0169 6.8556,1.5863 10.6442,1.5863 14.5827,0 26.4042,-8.3667 26.4042,-18.6868 0,-5.8792 -3.8372,-11.1211 -9.8352,-14.5465 1.1076,-1.8004 1.7133,-3.7436 1.7133,-5.7663 0,-9.4228 -13.0985,-17.0609 -29.2517,-17.0609 -6.7786,0 -13.0133,1.3512 -17.973,3.6089 -3.6307,-7.8225 -12.5893,-13.3568 -23.0572,-13.3568 z"
+       id="path4223-7"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\OwlXGames\Assets\Header.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="fill:#552200;fill-opacity:1;stroke:#261300;stroke-width:1.62083304;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3374"
+       width="153.95399"
+       height="9.0875616"
+       x="863.54163"
+       y="1312.8442"
+       rx="4.3810573"
+       ry="4.2928944"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\OwlXGames\Assets\Header.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       id="g4249"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\OwlXGames\Assets\Header.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="ssscs"
+         inkscape:connector-curvature="0"
+         id="path4800"
+         d="m 918.53929,1194.3313 c 6.86298,-0.079 -5.38264,12.4276 -12.02232,12.4276 -6.63968,0 -13.3731,-10.9673 -13.3731,-17.8309 0,-6.8635 2.2757,-8.1048 3.51213,-7.1593 5.28884,2.7017 7.8347,12.7233 21.88329,12.5626 z"
+         style="fill:#a05a2c;fill-opacity:1;stroke:#622f08;stroke-width:1.72904575;stroke-miterlimit:4;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ssscs"
+         inkscape:connector-curvature="0"
+         id="path4800-7"
+         d="m 942.11023,1194.9434 c -6.86298,-0.079 5.38264,12.4275 12.02232,12.4275 6.63974,0 13.37303,-10.9672 13.37303,-17.8307 0,-6.8635 -2.27569,-8.105 -3.512,-7.1594 -5.2889,2.7016 -7.83477,12.7234 -21.88335,12.5626 z"
+         style="fill:#a05a2c;fill-opacity:1;stroke:#622f08;stroke-width:1.72904575;stroke-miterlimit:4;stroke-opacity:1;display:inline" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3687"
+         d="m 994.78326,1253.0274 c 0,34.4923 -28.77709,62.4539 -64.27559,62.4539 -35.49836,0 -64.27551,-27.9616 -64.27551,-62.4539 0,-34.4924 28.77715,-62.454 64.27551,-62.454 35.4985,0 64.27559,27.9616 64.27559,62.454 z"
+         style="fill:#a05a2c;fill-opacity:1;stroke:#612f08;stroke-width:2.10209441;stroke-miterlimit:4;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="sssssssssssssssss"
+         inkscape:connector-curvature="0"
+         id="path4821"
+         d="m 1000.2506,1288.0291 c -11.55468,14.7955 17.7044,13.0989 6.8357,21.309 -13.8578,10.4682 -13.18488,-3.925 -28.90013,5.6268 -8.94227,5.4351 -27.73005,-10.8372 -40.49129,-10.4401 -24.20495,0.7528 -55.80482,17.1145 -73.97614,10.4071 -20.35058,-7.512 -2.16067,-12.7108 -5.08034,-21.8059 -10.26621,-31.9801 -0.0306,-46.4184 8.1389,-52.4545 2.31115,-1.7077 7.6851,-3.1467 10.32885,-2.6209 3.29708,0.6558 12.97135,1.4457 12.57618,9.9588 -0.14259,3.0743 -14.84398,42.5818 -9.64865,48.0471 14.66873,15.4306 63.12442,1.2086 79.09539,1.2086 7.69409,0 36.49294,-15.8337 36.39041,-30.6657 -0.17476,-25.2711 -1.85728,-21.4961 -5.61852,-23.1906 -1.61569,-0.7279 -6.72417,0.5736 -11.35454,1.3586 -8.86498,1.5027 -1.74923,-4.6943 6.09838,-4.8627 3.99314,-0.086 6.15642,-0.39 9.9027,1.4637 14.5009,7.1751 13.9724,36.072 5.7031,46.6607 z"
+         style="fill:#aa0000;fill-opacity:1;stroke:#5d1808;stroke-width:1.72904575;stroke-miterlimit:4;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cccccc"
+         inkscape:connector-curvature="0"
+         id="path3687-9"
+         d="m 928.12951,1248.0593 c -49.77044,0.1792 -47.86883,-10.2165 -60.38413,-3.494 -2.45525,26.3938 5.55991,44.3192 29.05816,60.5604 28.17755,16.9704 57.19489,10.4683 77.87667,-7.558 11.86149,-11.9619 21.08023,-28.2175 18.84183,-52.1659 -9.94289,-6.4294 -17.99068,7.275 -65.39253,2.6575 z"
+         style="fill:#526fda;fill-opacity:1;stroke:#0a1a7e;stroke-width:0.97258824;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+      <g
+         transform="matrix(0.43549437,0,0,0.43549437,567.74052,577.9664)"
+         id="g4556">
+        <path
+           style="fill:#aa0000;fill-opacity:1;stroke:#80190a;stroke-width:2.85599995;stroke-miterlimit:4;stroke-opacity:1"
+           d="m -904.28125,950 -27.0625,30.46875 71.96875,90.25005 L -786.15625,979.25 -812,950.09375 z m 89.78125,5.65625 c -18.96348,5.95169 -32.85547,12.0036 -43.78125,18.1875 -14.90456,-8.77478 -30.03037,-14.30499 -42.375,-18.09375 z M -881.3125,990.25 c -7.13812,6.27009 -13.19877,12.6841 -20.03125,19.2812 l -21.74204,-27.91784 c 23.66131,-1.36318 35.7548,6.21509 41.77329,8.63664 z m 87,-9.375 -22.78125,28.5312 c -5.78458,-7.1693 -12.74815,-14.75605 -19.5,-20.37495 11.5783,-5.3419 24.78092,-7.75282 42.28125,-8.15625 z m -63.9375,22.9062 c 9.00326,7.4224 16.30627,17.7335 22.65625,28.7813 L -859,1061.875 l -24.34375,-30.0938 c 9.18584,-11.5815 17.17609,-20.788 25.09375,-28 z"
+           transform="translate(1689.875,599.0625)"
+           id="rect4457"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccccccccccccccccccccc" />
+        <path
+           style="fill:#ffdd55;fill-opacity:1;stroke:#80190a;stroke-width:0.71399999;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m -902.28273,1005.8534 c -0.61527,-0.7325 -4.7009,-5.7755 -9.07918,-11.20679 -4.37829,-5.43125 -8.41627,-10.42703 -8.9733,-11.10173 l -1.01277,-1.22674 4.99363,0.15264 c 10.81466,0.33056 19.10223,2.36574 30.71115,7.54176 l 1.46752,0.65432 -3.09252,2.91302 c -1.70088,1.60217 -5.52327,5.3188 -8.4942,8.25922 l -5.40168,5.3461 -1.11865,-1.3318 z"
+           id="path4474"
+           inkscape:connector-curvature="0"
+           transform="translate(1689.875,599.0625)" />
+        <path
+           style="fill:#ffdd55;fill-opacity:1;stroke:#80190a;stroke-width:0.71399999;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m -861.48572,970.24287 c -6.55317,-3.71253 -17.39731,-8.71125 -24.94097,-11.49681 l -6.76313,-1.75478 12.63813,0.37744 c 5.05348,0.15092 19.82222,-0.16273 32.81597,-0.17477 l 25.03921,-0.46384 -4.78921,1.64385 c -10.69867,3.67222 -17.01905,6.63603 -25.00496,10.67513 -3.09648,1.56613 -5.74023,2.84189 -5.875,2.83502 -0.13477,-0.007 -1.53879,-0.74544 -3.12004,-1.64124 z"
+           id="path4476"
+           inkscape:connector-curvature="0"
+           transform="translate(1689.875,599.0625)"
+           sodipodi:nodetypes="sscsscsscs" />
+        <path
+           style="fill:#ffdd55;fill-opacity:1;stroke:#80190a;stroke-width:0.71399999;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m -818.96902,1004.7176 c -2.91323,-3.5222 -10.25726,-11.28304 -12.60564,-13.32099 l -2.16061,-1.875 1.05724,-0.45165 c 7.61727,-3.25411 20.10445,-5.75211 31.66438,-6.33431 l 3.34707,-0.16857 -9.56919,11.97727 c -5.26305,6.58745 -9.64743,12.06545 -9.74307,12.17325 -0.0956,0.1078 -0.99121,-0.7922 -1.99018,-2 z"
+           id="path4478"
+           inkscape:connector-curvature="0"
+           transform="translate(1689.875,599.0625)" />
+        <path
+           style="fill:#ffdd55;fill-opacity:1;stroke:#80190a;stroke-width:0.71399999;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m -870.1429,1045.6012 c -6.0323,-7.45 -11.00078,-13.6239 -11.04108,-13.7198 -0.0878,-0.2089 4.34759,-5.7097 8.65572,-10.7348 3.99558,-4.6605 9.98808,-11.1597 12.41755,-13.4675 l 1.90013,-1.8049 1.82448,1.6329 c 4.99551,4.4709 11.69534,13.0666 17.10728,21.948 l 1.78752,2.9334 -10.66625,13.3791 c -5.86644,7.3584 -10.74529,13.379 -10.8419,13.379 -0.0966,0 -5.11116,-6.0954 -11.14345,-13.5454 z"
+           id="path4480"
+           inkscape:connector-curvature="0"
+           transform="translate(1689.875,599.0625)" />
+        <path
+           style="opacity:0.29203539;fill:#784421;fill-opacity:1;stroke:none;display:inline"
+           d="m 808.89455,1630.4924 c 14.86879,5.143 10.43817,21.5525 43.6927,0.5071 -7.40597,8.7018 -13.88506,18.2512 -21.5082,26.7581 -7.83559,-9.5459 -14.15055,-16.9026 -22.1845,-27.2652 z"
+           id="path4480-1"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccc" />
+        <path
+           style="opacity:0.33628319;fill:#784421;fill-opacity:1;stroke:none;display:inline"
+           d="m 787.45161,1604.7551 c -0.6153,-0.7325 -4.7009,-5.7755 -9.0792,-11.2068 -4.3783,-5.4313 -8.4163,-10.427 -8.9733,-11.1017 l -1.0128,-1.2268 c 27.43914,28.2555 16.57327,15.4149 36.90713,8.7023 -1.07588,2.0637 -13.34886,13.0693 -16.72323,16.1648 z"
+           id="path4474-7"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="csscccc" />
+        <path
+           style="opacity:0.31415932;fill:#784421;fill-opacity:1;stroke:none;display:inline"
+           d="m 870.69411,1603.5388 c -2.9133,-3.5222 -10.2573,-11.283 -12.6057,-13.321 l -2.1606,-1.875 c 16.48492,11.4885 13.37912,14.9507 36.0687,-6.9545 -3.38012,4.9688 -11.96637,16.3448 -19.3123,24.1505 -0.096,0.1078 -0.9912,-0.7922 -1.9901,-2 z"
+           id="path4478-4"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cscccc" />
+        <path
+           style="opacity:0.26106196;fill:#ffc3c3;fill-opacity:1;stroke:none;display:inline"
+           d="m 786.0929,1550.6094 -22.28953,24.8119 c 32.0904,-8.704 35.4767,11.6996 62.59914,4.4921 23.41399,-6.222 44.95779,-33.5512 74.45663,-2.1753 l -23.36893,-27.3885 z m 89.7812,5.4795 c -18.9634,5.9517 -33.20896,12.1804 -44.13476,18.3643 -14.9046,-8.7748 -30.91428,-14.4818 -43.25888,-18.2706 l 0.52792,-3.0138 86.45594,-0.1335 z"
+           id="rect4457-0"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccsccccccccc" />
+      </g>
+      <path
+         sodipodi:nodetypes="cccscc"
+         inkscape:connector-curvature="0"
+         id="path3687-4"
+         d="m 881.77783,1276.5346 c 10.00325,17.3363 19.73248,24.1661 12.0918,29.987 -4.36861,3.1391 -27.31643,-12.6071 -32.8822,-29.0735 -1.30729,-2.7299 -3.20324,-14.2779 0.007,-22.5267 2.99117,-7.6849 12.67887,-11.7563 17.71203,-8.6229 5.0115,2.934 -2.26264,10.6146 3.07098,30.2361 z"
+         style="fill:#a05a2c;fill-opacity:1;stroke:#612f08;stroke-width:2.10209441;stroke-miterlimit:4;stroke-opacity:1;display:inline" />
+      <path
+         sodipodi:nodetypes="sssss"
+         inkscape:connector-curvature="0"
+         id="path4795"
+         d="m 974.93856,1295.0974 c -6.68616,7.0457 -16.60074,17.002 -39.54416,19.4854 -25.27908,2.7363 -43.39644,-12.0903 -39.7351,-11.08 28.46416,7.855 38.37867,7.2594 50.62416,2.2924 23.56228,-9.5571 31.26967,-13.4531 28.6551,-10.6978 z"
+         style="opacity:0.28761064;fill:#544100;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="cccscc"
+         inkscape:connector-curvature="0"
+         id="path3687-4-4"
+         d="m 979.60873,1277.8611 c -10.00318,17.3364 -19.73253,24.1662 -12.09172,29.9871 4.36854,3.1389 27.31645,-12.6072 32.88219,-29.0736 1.3073,-2.7298 3.2032,-14.2779 -0.01,-22.5267 -2.99128,-7.6849 -12.67896,-11.7563 -17.71208,-8.6229 -5.0116,2.9341 2.2626,10.6147 -3.07105,30.2361 z"
+         style="fill:#a05a2c;fill-opacity:1;stroke:#612f08;stroke-width:2.10209441;stroke-miterlimit:4;stroke-opacity:1;display:inline" />
+      <path
+         sodipodi:nodetypes="scssscsss"
+         inkscape:connector-curvature="0"
+         id="path4634"
+         d="m 945.7168,1202.9134 c -6.1613,0 -11.90842,3.6193 -14.62693,11.2193 -2.06844,-7.2511 -10.08163,-10.992 -16.13379,-10.992 -11.42824,0 -20.6968,9.5032 -20.6968,21.2274 0,11.7242 9.26856,21.2275 20.6968,21.2275 6.1613,0 11.93167,-1.0384 15.72238,-5.4222 3.78384,4.2493 8.98625,5.1947 15.03834,5.1947 11.42812,0 20.69674,-9.5032 20.69674,-21.2274 0,-11.7242 -9.26862,-21.2273 -20.69674,-21.2273 z"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.09169519;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         sodipodi:nodetypes="cccsc"
+         inkscape:connector-curvature="0"
+         id="path4631"
+         d="m 939.18524,1242.0215 c 0,0 -3.53242,11.3666 -8.5966,13.9456 -4.87319,-2.1969 -8.30994,-13.5635 -8.30994,-13.5635 0,0 1.23977,-5.54 8.30994,-5.54 5.06418,0 7.73685,2.6527 8.5966,5.1579 z"
+         style="fill:#ffcc1b;fill-opacity:1;stroke:#4c3706;stroke-width:0.91855562;stroke-miterlimit:4;stroke-opacity:1" />
+      <path
+         transform="matrix(0.58019933,0,0,0.69457508,1277.6821,554.34939)"
+         d="m -599.98008,962.58563 c 0,13.37546 -10.84295,24.21841 -24.21841,24.21841 -13.37545,0 -24.2184,-10.84295 -24.2184,-24.21841 0,-13.37545 10.84295,-24.2184 24.2184,-24.2184 13.37546,0 24.21841,10.84295 24.21841,24.2184 z"
+         sodipodi:ry="24.218407"
+         sodipodi:rx="24.218407"
+         sodipodi:cy="962.58563"
+         sodipodi:cx="-624.19849"
+         id="path4655"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.79999995;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(0.58019933,0,0,0.69457508,1310.1116,554.36577)"
+         d="m -599.98008,962.58563 c 0,13.37546 -10.84295,24.21841 -24.21841,24.21841 -13.37545,0 -24.2184,-10.84295 -24.2184,-24.21841 0,-13.37545 10.84295,-24.2184 24.2184,-24.2184 13.37546,0 24.21841,10.84295 24.21841,24.2184 z"
+         sodipodi:ry="24.218407"
+         sodipodi:rx="24.218407"
+         sodipodi:cy="962.58563"
+         sodipodi:cx="-624.19849"
+         id="path4655-9"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.79999995;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1.2889754,0,0,1.2359147,1730.4811,29.515786)"
+         d="m -624.72885,968.94958 c 0,3.22183 -2.45351,5.83364 -5.48007,5.83364 -3.02657,0 -5.48008,-2.61181 -5.48008,-5.83364 0,-3.22182 2.45351,-5.83363 5.48008,-5.83363 3.02656,0 5.48007,2.61181 5.48007,5.83363 z"
+         sodipodi:ry="5.833631"
+         sodipodi:rx="5.4800777"
+         sodipodi:cy="968.94958"
+         sodipodi:cx="-630.20892"
+         id="path4677"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.79999995;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(1.2153108,0,0,1.1652824,1717.7859,97.953137)"
+         d="m -624.72885,968.94958 c 0,3.22183 -2.45351,5.83364 -5.48007,5.83364 -3.02657,0 -5.48008,-2.61181 -5.48008,-5.83364 0,-3.22182 2.45351,-5.83363 5.48008,-5.83363 3.02656,0 5.48007,2.61181 5.48007,5.83363 z"
+         sodipodi:ry="5.833631"
+         sodipodi:rx="5.4800777"
+         sodipodi:cy="968.94958"
+         sodipodi:cx="-630.20892"
+         id="path4677-2"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.79999995;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(0.51635103,0,0,0.42665629,1240.4242,804.6012)"
+         d="m -624.72885,968.94958 c 0,3.22183 -2.45351,5.83364 -5.48007,5.83364 -3.02657,0 -5.48008,-2.61181 -5.48008,-5.83364 0,-3.22182 2.45351,-5.83363 5.48008,-5.83363 3.02656,0 5.48007,2.61181 5.48007,5.83363 z"
+         sodipodi:ry="5.833631"
+         sodipodi:rx="5.4800777"
+         sodipodi:cy="968.94958"
+         sodipodi:cx="-630.20892"
+         id="path4677-2-6"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.79999995;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(0.56027489,0,0,0.46295018,1300.115,770.60759)"
+         d="m -624.72885,968.94958 c 0,3.22183 -2.45351,5.83364 -5.48007,5.83364 -3.02657,0 -5.48008,-2.61181 -5.48008,-5.83364 0,-3.22182 2.45351,-5.83363 5.48008,-5.83363 3.02656,0 5.48007,2.61181 5.48007,5.83363 z"
+         sodipodi:ry="5.833631"
+         sodipodi:rx="5.4800777"
+         sodipodi:cy="968.94958"
+         sodipodi:cx="-630.20892"
+         id="path4677-2-6-1"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.79999995;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(0.54032682,0,0,0.54032682,1267.7254,681.07151)"
+         d="m -642.5,1172.1563 c 0,5.2467 -2.91015,9.5 -6.5,9.5 -3.58985,0 -6.5,-4.2533 -6.5,-9.5 0,-5.2468 2.91015,-9.5 6.5,-9.5 3.58985,0 6.5,4.2532 6.5,9.5 z"
+         sodipodi:ry="9.5"
+         sodipodi:rx="6.5"
+         sodipodi:cy="1172.1562"
+         sodipodi:cx="-649"
+         id="path4733-6-9"
+         style="fill:#ffcc1b;fill-opacity:1;stroke:#000000;stroke-width:1.10000002;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(0.54032682,0,0,0.54032682,1263.4028,681.07151)"
+         d="m -642.5,1172.1563 c 0,5.2467 -2.91015,9.5 -6.5,9.5 -3.58985,0 -6.5,-4.2533 -6.5,-9.5 0,-5.2468 2.91015,-9.5 6.5,-9.5 3.58985,0 6.5,4.2532 6.5,9.5 z"
+         sodipodi:ry="9.5"
+         sodipodi:rx="6.5"
+         sodipodi:cy="1172.1562"
+         sodipodi:cx="-649"
+         id="path4733-6"
+         style="fill:#ffcc1b;fill-opacity:1;stroke:#000000;stroke-width:1.10000002;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(0.54032682,0,0,0.54032682,1258.5399,680.80135)"
+         d="m -642.5,1172.1563 c 0,5.2467 -2.91015,9.5 -6.5,9.5 -3.58985,0 -6.5,-4.2533 -6.5,-9.5 0,-5.2468 2.91015,-9.5 6.5,-9.5 3.58985,0 6.5,4.2532 6.5,9.5 z"
+         sodipodi:ry="9.5"
+         sodipodi:rx="6.5"
+         sodipodi:cy="1172.1562"
+         sodipodi:cx="-649"
+         id="path4733"
+         style="fill:#ffcc1b;fill-opacity:1;stroke:#000000;stroke-width:1.10000002;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(0.54032682,0,0,0.54032682,1303.9274,681.74692)"
+         d="m -642.5,1172.1563 c 0,5.2467 -2.91015,9.5 -6.5,9.5 -3.58985,0 -6.5,-4.2533 -6.5,-9.5 0,-5.2468 2.91015,-9.5 6.5,-9.5 3.58985,0 6.5,4.2532 6.5,9.5 z"
+         sodipodi:ry="9.5"
+         sodipodi:rx="6.5"
+         sodipodi:cy="1172.1562"
+         sodipodi:cx="-649"
+         id="path4733-6-9-1"
+         style="fill:#ffcc1b;fill-opacity:1;stroke:#000000;stroke-width:1.10000002;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(0.54032682,0,0,0.54032682,1299.6047,681.74692)"
+         d="m -642.5,1172.1563 c 0,5.2467 -2.91015,9.5 -6.5,9.5 -3.58985,0 -6.5,-4.2533 -6.5,-9.5 0,-5.2468 2.91015,-9.5 6.5,-9.5 3.58985,0 6.5,4.2532 6.5,9.5 z"
+         sodipodi:ry="9.5"
+         sodipodi:rx="6.5"
+         sodipodi:cy="1172.1562"
+         sodipodi:cx="-649"
+         id="path4733-6-2"
+         style="fill:#ffcc1b;fill-opacity:1;stroke:#000000;stroke-width:1.10000002;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(0.54032682,0,0,0.54032682,1294.7418,681.47676)"
+         d="m -642.5,1172.1563 c 0,5.2467 -2.91015,9.5 -6.5,9.5 -3.58985,0 -6.5,-4.2533 -6.5,-9.5 0,-5.2468 2.91015,-9.5 6.5,-9.5 3.58985,0 6.5,4.2532 6.5,9.5 z"
+         sodipodi:ry="9.5"
+         sodipodi:rx="6.5"
+         sodipodi:cy="1172.1562"
+         sodipodi:cx="-649"
+         id="path4733-9"
+         style="fill:#ffcc1b;fill-opacity:1;stroke:#000000;stroke-width:1.10000002;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+         sodipodi:type="arc" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4798"
+         d="m 927.40773,1252.8731 c 7.25931,-4.2028 6.68623,-6.8772 6.68623,-6.8772"
+         style="fill:none;stroke:#000000;stroke-width:0.54032683px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Agent Orange;-inkscape-font-specification:Agent Orange"
+       x="-1145.5129"
+       y="1021.4523"
+       id="text4284"
+       sodipodi:linespacing="125%"
+       transform="translate(1689.875,599.0625)"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\OwlXGames\Assets\Title.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan4286"
+         x="-1145.5129"
+         y="1021.4523">Owl X Games</tspan></text>
+  </g>
+</svg>
