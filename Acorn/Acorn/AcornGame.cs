@@ -10,6 +10,11 @@ namespace Acorn
     /// </summary>
     public class AcornGame : HiromiGame
     {
+        protected override void Initialize()
+        {
+            base.Initialize();
+        }
+
         protected override GameState GetInitialState()
         {
             return new MenuState();
