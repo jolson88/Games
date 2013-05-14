@@ -60,6 +60,7 @@
      <None Include="Assets\Lib\Orthello\Standard Assets\OT\_Base\TintedAlpha.shader" />
      <None Include="Assets\Lib\Orthello\Examples\0 - Simple Examples\RotateTowards\-read-me.txt" />
      <None Include="Assets\Lib\Orthello\Examples\0 - Simple Examples\Persistance\-read-me.txt" />
+     <None Include="Assets\Fonts\PneumaticFont.fnt" />
      <None Include="Assets\Lib\Orthello\Examples\0 - Simple Examples\TextSprites\lorem-rus-utf8.txt" />
  <Reference Include="Assembly-UnityScript">
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript.dll</HintPath>

@@ -150,6 +150,9 @@
     <Compile Include="Assets\Lib\iTween\Sample\MoveSample.cs" />
     <Compile Include="Assets\Lib\iTween\Sample\RotateSample.cs" />
     <Compile Include="Assets\Lib\iTween\Sample\SampleInfo.cs" />
+    <Compile Include="Assets\Scripts\CannonControllerBehavior.cs" />
+    <Compile Include="Assets\Scripts\GameLogic.cs" />
+    <Compile Include="Assets\Scripts\PlayerBallBehavior.cs" />
     <None Include="Assets\Lib\Orthello\Examples\0 - Simple Examples\TextSprites\lorem.txt" />
     <None Include="Assets\Lib\Orthello\Examples\0 - Simple Examples\TextSprites\Atlases\russian.txt" />
     <None Include="Assets\Lib\iTween\ReadMe!\ReadMe!.txt" />
@@ -164,6 +167,7 @@
     <None Include="Assets\Lib\Orthello\Standard Assets\OT\_Base\TintedAlpha.shader" />
     <None Include="Assets\Lib\Orthello\Examples\0 - Simple Examples\RotateTowards\-read-me.txt" />
     <None Include="Assets\Lib\Orthello\Examples\0 - Simple Examples\Persistance\-read-me.txt" />
+    <None Include="Assets\Fonts\PneumaticFont.fnt" />
     <None Include="Assets\Lib\Orthello\Examples\0 - Simple Examples\TextSprites\lorem-rus-utf8.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
