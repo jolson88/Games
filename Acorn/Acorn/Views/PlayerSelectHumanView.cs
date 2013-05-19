@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
@@ -39,17 +38,17 @@ namespace Acorn.Views
             if (msg.GameObject.Tag.Equals("PlayButton"))
             {
                 _playButton = msg.GameObject;
-                _playButton.AddComponent(new SwellComponent(16, TimeSpan.FromSeconds(1), isRepeating: true));
+                _playButton.AddComponent(new SwellComponent(16, TimeSpan.FromSeconds(1), true));
             }
             else if (msg.GameObject.Tag.Equals("RedPlayer"))
             {
                 _redPlayerButton = msg.GameObject;
-                _redPlayerButton.AddComponent(new SwellComponent(10, TimeSpan.FromSeconds(1), isRepeating: true));
+                _redPlayerButton.AddComponent(new SwellComponent(10, TimeSpan.FromSeconds(1), true));
             }
             else if (msg.GameObject.Tag.Equals("BluePlayer"))
             {
                 _bluePlayerButton = msg.GameObject;
-                _bluePlayerButton.AddComponent(new SwellComponent(10, TimeSpan.FromSeconds(1), isRepeating: true));
+                _bluePlayerButton.AddComponent(new SwellComponent(10, TimeSpan.FromSeconds(1), true));
             }
         }
 
@@ -58,15 +57,15 @@ namespace Acorn.Views
             if (msg.GameObjectId == _playButton.Id)
             {
                 var buttonSound = ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.ButtonSelect);
-                this.MessageManager.TriggerMessage(new PlaySoundEffectMessage(buttonSound, 0.6f));
+                this.MessageManager.TriggerMessage(new PlaySoundEffectMessage(buttonSound, PlatformConfiguration.SoundLevels.ButtonSelect));
 
                 var playerOneKind = PlayerKind.Human;
                 var playerTwoKind = PlayerKind.Human;
-                if (_redPlayerButton.GetComponent<SpriteComponent>().Texture.Name.Equals(AcornAssets.RedComputerButton))
+                if (_redPlayerButton.GetComponent<SpriteComponent>().Texture == ContentService.Instance.GetAsset<Texture2D>(AcornAssets.RedComputerButton))
                 {
                     playerOneKind = PlayerKind.Computer;
                 }
-                if (_bluePlayerButton.GetComponent<SpriteComponent>().Texture.Name.Equals(AcornAssets.BlueComputerButton))
+                if (_bluePlayerButton.GetComponent<SpriteComponent>().Texture == ContentService.Instance.GetAsset<Texture2D>(AcornAssets.BlueComputerButton))
                 {
                     playerTwoKind = PlayerKind.Computer;
                 }
@@ -78,9 +77,9 @@ namespace Acorn.Views
         {
             if (msg.GameObjectId == _redPlayerButton.Id)
             {
-                this.MessageManager.TriggerMessage(new PlaySoundEffectMessage(ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.ButtonSelect), 0.6f));
+                this.MessageManager.TriggerMessage(new PlaySoundEffectMessage(ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.ButtonSelect), PlatformConfiguration.SoundLevels.ButtonSelect));
                 var sprite = _redPlayerButton.GetComponent<SpriteComponent>();
-                if (sprite.Texture.Name == AcornAssets.RedPlayerButton)
+                if (sprite.Texture == ContentService.Instance.GetAsset<Texture2D>(AcornAssets.RedPlayerButton))
                 {
                     sprite.Texture = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.RedComputerButton);
                 }
@@ -91,9 +90,9 @@ namespace Acorn.Views
             }
             else if (msg.GameObjectId == _bluePlayerButton.Id)
             {
-                this.MessageManager.TriggerMessage(new PlaySoundEffectMessage(ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.ButtonSelect), 0.6f));
+                this.MessageManager.TriggerMessage(new PlaySoundEffectMessage(ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.ButtonSelect), PlatformConfiguration.SoundLevels.ButtonSelect));
                 var sprite = _bluePlayerButton.GetComponent<SpriteComponent>();
-                if (sprite.Texture.Name == AcornAssets.BluePlayerButton)
+                if (sprite.Texture == ContentService.Instance.GetAsset<Texture2D>(AcornAssets.BluePlayerButton))
                 {
                     sprite.Texture = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.BlueComputerButton);
                 }

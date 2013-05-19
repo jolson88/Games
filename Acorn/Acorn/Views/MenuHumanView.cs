@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Media;
@@ -28,8 +27,10 @@ namespace Acorn.Views
             var bgMusic = ContentService.Instance.GetAsset<Song>(AcornAssets.BackgroundMusic);
             if (MediaPlayer.State != MediaState.Playing)
             {
-                this.MessageManager.TriggerMessage(new PlaySongMessage(bgMusic));
+                this.MessageManager.TriggerMessage(new PlaySongMessage(bgMusic, PlatformConfiguration.SoundLevels.Background, true));
             }
+
+            this.MessageManager.QueueMessage(new DisableAdsMessage());
         }
 
         public override void OnLoaded()
@@ -42,7 +43,7 @@ namespace Acorn.Views
             if (msg.GameObject.Tag.Equals("PlayButton"))
             {
                 _playButton = msg.GameObject;
-                _playButton.AddComponent(new SwellComponent(16, TimeSpan.FromSeconds(1), isRepeating: true));
+                _playButton.AddComponent(new SwellComponent(16, TimeSpan.FromSeconds(1), true));
             }
             else if (msg.GameObject.Tag.Equals("AboutButton"))
             {
@@ -63,13 +64,13 @@ namespace Acorn.Views
             if (msg.GameObjectId == _playButton.Id)
             {
                 var buttonSound = ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.ButtonSelect);
-                this.MessageManager.TriggerMessage(new PlaySoundEffectMessage(buttonSound, 0.6f));
+                this.MessageManager.TriggerMessage(new PlaySoundEffectMessage(buttonSound, PlatformConfiguration.SoundLevels.ButtonSelect));
                 AnimateScreenOff(new PlayerSelectState());
             }
             else if (msg.GameObjectId == _aboutButton.Id)
             {
                 var buttonSound = ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.ButtonSelect);
-                this.MessageManager.TriggerMessage(new PlaySoundEffectMessage(buttonSound, 0.6f));
+                this.MessageManager.TriggerMessage(new PlaySoundEffectMessage(buttonSound, PlatformConfiguration.SoundLevels.ButtonSelect));
                 AnimateScreenOff(new AboutState());
             }
         }

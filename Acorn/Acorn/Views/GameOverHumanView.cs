@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Hiromi;
@@ -37,7 +36,8 @@ namespace Acorn.Views
             this.CreateJumpingCycle();
             this.AnimateScreenOn();
 
-            this.MessageManager.QueueMessage(new PlaySoundEffectMessage(ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.Applause)));
+            this.MessageManager.QueueMessage(new PlaySoundEffectMessage(ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.Applause),
+                PlatformConfiguration.SoundLevels.Applause));
         }
 
         private void CreateJumpingCycle()
@@ -85,13 +85,13 @@ namespace Acorn.Views
             if (msg.GameObjectId == _playButton.Id)
             {
                 var sound = ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.ButtonSelect);
-                this.MessageManager.TriggerMessage(new PlaySoundEffectMessage(sound, 0.6f));
+                this.MessageManager.TriggerMessage(new PlaySoundEffectMessage(sound, PlatformConfiguration.SoundLevels.ButtonSelect));
                 this.AnimateScreenOff(new PlayState(_playSettings));
             }
             else if (msg.GameObjectId == _menuButton.Id)
             {
                 var sound = ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.ButtonSelect);
-                this.MessageManager.TriggerMessage(new PlaySoundEffectMessage(sound, 0.6f));
+                this.MessageManager.TriggerMessage(new PlaySoundEffectMessage(sound, PlatformConfiguration.SoundLevels.ButtonSelect));
                 this.AnimateScreenOff(new MenuState());
             }
         }
