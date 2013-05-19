@@ -26,8 +26,6 @@ public class CannonControllerBehavior : MonoBehaviour {
 		
 		if (Input.GetButtonDown("Jump") && !_ballReleased && _playerBall != null) 
 		{
-			print ("FIRING THRUSTERS!!!!");
-			
 			var sprite = _playerBall.GetComponent<OTSprite>();
 			var physics = _playerBall.GetComponent<Rigidbody>();
 			_playerBall.transform.parent = null;

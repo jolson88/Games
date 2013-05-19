@@ -1,10 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CannonControllerBehavior.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameLogic.cs">
     <Files>
-      <File FileName="Assets\Scripts\CannonControllerBehavior.cs" Line="62" Column="42" />
-      <File FileName="Assets\Scripts\PlayerBallBehavior.cs" Line="25" Column="22" />
-      <File FileName="Assets\Scripts\GameLogic.cs" Line="15" Column="3" />
+      <File FileName="Assets\Scripts\CannonControllerBehavior.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerBallBehavior.cs" Line="23" Column="1" />
+      <File FileName="Assets\Scripts\GameLogic.cs" Line="64" Column="55" />
+      <File FileName="Assets\Scripts\BallCollisionBehavior.cs" Line="28" Column="35" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
