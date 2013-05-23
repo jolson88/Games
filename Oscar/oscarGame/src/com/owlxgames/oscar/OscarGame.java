@@ -15,10 +15,12 @@ public class OscarGame implements ApplicationListener {
 	
 	@Override
 	public void create() {			
-		camera = new OrthographicCamera(800, 480);
+		camera = new OrthographicCamera();
+		camera.setToOrtho(false, 800, 480);
+		
 		renderer = new Box2DDebugRenderer();
 		
-		world = new World(new Vector2(0, 0), true);
+		world = new World(new Vector2(0, -20), true);
 		
 		// First we create a body definition
 		BodyDef bodyDef = new BodyDef();
@@ -62,6 +64,7 @@ public class OscarGame implements ApplicationListener {
 		camera.update();
 		Gdx.gl.glClearColor(0, 0, 1, 1);
 		Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
+
 		renderer.render(world, camera.combined);
 	}
 
