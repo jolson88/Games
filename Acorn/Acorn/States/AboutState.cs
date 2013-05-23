@@ -17,6 +17,11 @@ namespace Acorn.States
             yield return new AboutHumanView();
         }
 
+        public override GameState GetPreviousGameState()
+        {
+            return new MenuState();
+        }
+
         protected override IEnumerable<GameObject> LoadGameObjects()
         {
             var bgSprite = ContentService.Instance.GetAsset<Texture2D>(AcornAssets.Background);

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="13987CodingCoda.ProjectAcorn" Publisher="CN=CE6458FF-77B3-4905-9088-8700A70D80F2" Version="1.0.0.5" />
+  <Identity Name="13987CodingCoda.ProjectAcorn" Publisher="CN=CE6458FF-77B3-4905-9088-8700A70D80F2" Version="1.0.0.6" />
   <Properties>
     <DisplayName>Project Acorn</DisplayName>
     <PublisherDisplayName>Owl X Games</PublisherDisplayName>

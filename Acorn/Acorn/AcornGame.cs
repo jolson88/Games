@@ -49,7 +49,14 @@ namespace Acorn
         {
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
-                this.Exit();
+            {
+                var navigated = this.NavigateToPreviousGameState();
+                if (!navigated)
+                {
+                    // Nothing to navigate to, so exit
+                    this.Exit();
+                }
+            }
 
             base.Update(gameTime);
         }

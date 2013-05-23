@@ -160,12 +160,6 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="..\..\..\AcornContent\Sprites\BackgroundAbout.png">
-      <Link>Sprites\BackgroundAbout.png</Link>
-      <Name>BackgroundAbout</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
     <Compile Include="..\..\..\AcornContent\Sprites\BlueComputerButton.png">
       <Link>Sprites\BlueComputerButton.png</Link>
       <Name>BlueComputerButton</Name>

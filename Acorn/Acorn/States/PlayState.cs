@@ -42,6 +42,11 @@ namespace Acorn.States
             _playSettings = playSettings;
         }
 
+        public override GameState GetPreviousGameState()
+        {
+            return new PlayerSelectState();
+        }
+
         protected override void OnInitialize()
         {
             _logic = new AcornGameLogic(_playSettings, this.MessageManager, this.ProcessManager, CARD_NUMBER, WINNING_TOTAL);

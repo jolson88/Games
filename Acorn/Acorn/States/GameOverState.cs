@@ -21,6 +21,11 @@ namespace Acorn.States
             _winningPlayer = winningPlayer;
         }
 
+        public override GameState GetPreviousGameState()
+        {
+            return new PlayerSelectState();
+        }
+
         protected override IEnumerable<IGameView> LoadGameViews()
         {
             yield return new GameOverHumanView(_playSettings);
