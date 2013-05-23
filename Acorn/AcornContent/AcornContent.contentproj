@@ -236,13 +236,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sprites\BackgroundAbout.png">
-      <Name>BackgroundAbout</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Sprites\BlueComputerButton.png">
       <Name>BlueComputerButton</Name>
       <Importer>TextureImporter</Importer>
@@ -262,6 +255,13 @@
     </Compile>
     <Compile Include="Sprites\RedPlayerButton.png">
       <Name>RedPlayerButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Sprites\PauseImage.png">
+      <Name>PauseImage</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

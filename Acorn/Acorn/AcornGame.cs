@@ -53,5 +53,10 @@ namespace Acorn
 
             base.Update(gameTime);
         }
+
+        protected override Texture2D GetPauseImage()
+        {
+            return ContentService.Instance.GetAsset<Texture2D>(AcornAssets.PauseImage);
+        }
     }
 }
