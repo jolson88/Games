@@ -9,6 +9,12 @@ import com.badlogic.gdx.physics.box2d.*;
 import com.badlogic.gdx.physics.box2d.BodyDef.BodyType;
 
 public class OscarGame implements ApplicationListener {
+	private static final float PHYSICS_STEP = 1/60f;
+	private static final float WORLD_TO_BOX = 0.01f;
+	private static final float BOX_TO_WORLD = 100f;
+	private static final float GRAVITY = -2.5f;
+	
+	private float accumulator = 0f;
 	private World world;
 	private OrthographicCamera camera;
 	private Box2DDebugRenderer renderer;
@@ -18,39 +24,18 @@ public class OscarGame implements ApplicationListener {
 		camera = new OrthographicCamera();
 		camera.setToOrtho(false, 800, 480);
 		
-		renderer = new Box2DDebugRenderer();
-		
-		world = new World(new Vector2(0, -20), true);
-		
-		// First we create a body definition
-		BodyDef bodyDef = new BodyDef();
-		// We set our body to dynamic, for something like ground which doesnt move we would set it to StaticBody
-		bodyDef.type = BodyType.DynamicBody;
-		// Set our body's starting position in the world
-		bodyDef.position.set(100, 300);
-
-		// Create our body in the world using our body definition
-		Body body = world.createBody(bodyDef);
-
-		// Create a circle shape and set its radius to 6
-		CircleShape circle = new CircleShape();
-		circle.setRadius(16f);
-
-		// Create a fixture definition to apply our shape to
-		FixtureDef fixtureDef = new FixtureDef();
-		fixtureDef.shape = circle;
-		fixtureDef.density = 0.5f; 
-		fixtureDef.friction = 0.4f;
-		fixtureDef.restitution = 0.6f; // Make it bounce a little bit
-
-		// Create our fixture and attach it to the body
-		Fixture fixture = body.createFixture(fixtureDef);
-
-		// Remember to dispose of any shapes after you're done with them!
-		// BodyDef and FixtureDef don't need disposing, but shapes do.
-		circle.dispose();
+		renderer = new Box2DDebugRenderer();		
+		world = new World(new Vector2(0, GRAVITY), true);		
+		createShapes();
 	}
-
+	
+	private void createShapes() {
+		createCircularBody(world, BodyType.DynamicBody, new Vector2(100, 300), 16f, 0.5f, 0.6f);
+		createRectangleBody(world, BodyType.StaticBody, new Vector2(10, 10), 780, 10, 0f);
+		createRectangleBody(world, BodyType.DynamicBody, new Vector2(300, 200), 32f, 32f, 0f);
+		createRectangleBody(world, BodyType.DynamicBody, new Vector2(310, 140), 32f, 32f, 1f);
+	}
+	
 	@Override
 	public void dispose() {
 		renderer.dispose();
@@ -59,13 +44,17 @@ public class OscarGame implements ApplicationListener {
 
 	@Override
 	public void render() {
-		world.step(1/45f, 6, 2);
+		accumulator += Gdx.graphics.getDeltaTime();
+		while (accumulator >= PHYSICS_STEP) {
+			world.step(PHYSICS_STEP, 6, 6);
+			accumulator -= PHYSICS_STEP;
+		}
 		
 		camera.update();
-		Gdx.gl.glClearColor(0, 0, 1, 1);
+		Gdx.gl.glClearColor(0, 0, 0, 1);
 		Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
 
-		renderer.render(world, camera.combined);
+		renderer.render(world, camera.combined.cpy().scl(BOX_TO_WORLD));
 	}
 
 	@Override
@@ -81,5 +70,53 @@ public class OscarGame implements ApplicationListener {
 	@Override
 	public void resume() {
 	
+	}
+	
+	private void createRectangleBody(World world, BodyType type, Vector2 position, float width, float height, float angle) {
+		float scaledWidth = width * WORLD_TO_BOX;
+		float scaledHeight = height * WORLD_TO_BOX;
+		float scaledX = position.x * WORLD_TO_BOX;
+		float scaledY = position.y * WORLD_TO_BOX;
+		
+		BodyDef bodyDef = new BodyDef();
+		bodyDef.type = type;
+		
+		// Box2D expects positions in the center, while our world coordinates are bottom left
+		bodyDef.position.set(scaledX + scaledWidth / 2, scaledY + scaledHeight / 2);
+		bodyDef.angle = angle;
+		Body body = world.createBody(bodyDef);
+		
+		PolygonShape groundShape = new PolygonShape();
+		// Width and Height in Box2D are half-width and half-height
+		groundShape.setAsBox(scaledWidth / 2, scaledHeight / 2);
+		FixtureDef fixtureDef = new FixtureDef();
+		fixtureDef.shape = groundShape;
+		fixtureDef.density = 1f;
+		body.createFixture(fixtureDef);
+		
+		groundShape.dispose();
+	}
+	
+	private void createCircularBody(World world, BodyType type, Vector2 position, float radius, float friction, float restitution) {
+		float scaledRadius = radius * WORLD_TO_BOX;
+		float scaledX = position.x * WORLD_TO_BOX;
+		float scaledY = position.y * WORLD_TO_BOX;
+		
+		BodyDef bodyDef = new BodyDef();
+		bodyDef.type = type;
+		bodyDef.position.set(scaledX + scaledRadius, scaledY + scaledRadius);
+		Body body = world.createBody(bodyDef);
+
+		CircleShape circle = new CircleShape();
+		circle.setRadius(scaledRadius);
+
+		FixtureDef fixtureDef = new FixtureDef();
+		fixtureDef.shape = circle;
+		fixtureDef.density = 1f;
+		fixtureDef.friction = friction;
+		fixtureDef.restitution = restitution;
+		body.createFixture(fixtureDef);
+
+		circle.dispose();
 	}
 }
