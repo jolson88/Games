@@ -1,10 +1,13 @@
 package com.owlxgames.oscar;
 import com.artemis.*;
 import com.artemis.managers.GroupManager;
+import com.artemis.managers.TagManager;
 
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.*;
+import com.owlxgames.oscar.components.BoardComponent;
+import com.owlxgames.oscar.components.TransformComponent;
 import com.owlxgames.oscar.systems.*;
 
 public class OscarGame implements ApplicationListener {
@@ -12,19 +15,29 @@ public class OscarGame implements ApplicationListener {
 	private World _world;
 	
 	@Override
-	public void create() {			
+	public void create() {	
+		GroupManager groupManager = new GroupManager();
+		TagManager tagManager = new TagManager();
+		
 		_camera = new OrthographicCamera();
 		_camera.setToOrtho(false, 480, 800);
 
 		_world = new World();	
-		_world.setManager(new GroupManager());
+		_world.setManager(groupManager);
+		_world.setManager(tagManager);
+		
+		Entity boardEntity = _world.createEntity();
+		boardEntity.addComponent(new TransformComponent(24, 130));
+		boardEntity.addComponent(new BoardComponent(9, 11));
+		boardEntity.addToWorld();
+		tagManager.register(Tags.board, boardEntity);
 		
 		BubbleSelectionSystem bubbleSelectionSystem = new BubbleSelectionSystem(_camera);
 		Gdx.input.setInputProcessor(bubbleSelectionSystem);
 		
 		_world.setSystem(bubbleSelectionSystem);
-		_world.setSystem(new GameLogicSystem());
-		_world.setSystem(new BoardRenderingSystem(_camera));		
+		_world.setSystem(new BoardManagementSystem());
+		_world.setSystem(new BoardRenderingSystem(_camera));	
 		_world.initialize();
 	}
 

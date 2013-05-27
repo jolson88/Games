@@ -14,14 +14,16 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
+import com.badlogic.gdx.math.Vector2;
+import com.owlxgames.oscar.Bubble;
 import com.owlxgames.oscar.BubbleKind;
 import com.owlxgames.oscar.GameConstants;
-import com.owlxgames.oscar.components.BubbleComponent;
+import com.owlxgames.oscar.components.BoardComponent;
 import com.owlxgames.oscar.components.TransformComponent;
 
 public class BoardRenderingSystem extends EntityProcessingSystem {
 	@Mapper ComponentMapper<TransformComponent> transformMapper;
-	@Mapper ComponentMapper<BubbleComponent> bubbleMapper;
+	@Mapper ComponentMapper<BoardComponent> boardMapper;
 
 	private Camera _camera;
 	private SpriteBatch _batch;
@@ -31,7 +33,7 @@ public class BoardRenderingSystem extends EntityProcessingSystem {
 	
 	@SuppressWarnings("unchecked")
 	public BoardRenderingSystem(Camera camera) {
-		super(Aspect.getAspectForAll(TransformComponent.class, BubbleComponent.class));
+		super(Aspect.getAspectForAll(TransformComponent.class, BoardComponent.class));
 		
 		_camera = camera;
 		_kindToColor = new HashMap<BubbleKind, Color>();
@@ -52,44 +54,57 @@ public class BoardRenderingSystem extends EntityProcessingSystem {
 	
 	@Override
 	protected void inserted(Entity e) {
-		TransformComponent transform = transformMapper.get(e);
-		BubbleComponent bubble = bubbleMapper.get(e);
-		setRenderingPositionForBubble(transform, bubble);
+		BoardComponent board = boardMapper.get(e);
+		setOffsetsForBubbles(board);
 	}
-	
+
 	@Override
-	protected void begin() {
+	protected void process(Entity e) {
+		TransformComponent transform = transformMapper.get(e);
+		BoardComponent board = boardMapper.get(e);
+		
 		_batch.setProjectionMatrix(_camera.combined);
 		_shapeRenderer.setProjectionMatrix(_camera.combined);
 		_shapeRenderer.begin(ShapeType.Line);
 		_batch.begin();
 		_batch.draw(_grid, GameConstants.gridLocation.x, GameConstants.gridLocation.y);
-	}
-	
-	@Override
-	protected void process(Entity e) {
-		TransformComponent transform = transformMapper.get(e);
-		BubbleComponent bubble = bubbleMapper.get(e);
-		
-		float radius = GameConstants.bubbleSize / 2;
-		_shapeRenderer.setColor(_kindToColor.get(bubble.kind));
-		_shapeRenderer.circle(transform.position.x + radius, transform.position.y + radius, radius);
-		
-		if (bubble.isSelected) {
-			_shapeRenderer.setColor(1f, 1f, 1f, 1f);
-			_shapeRenderer.rect(transform.position.x - 2, transform.position.y - 2, GameConstants.bubbleSize + 4, GameConstants.bubbleSize + 4);
+
+		Bubble bubble;
+		float radius = GameConstants.bubbleSize / 2;		
+		for(int col = 0; col < board.columnCount; col++) {
+			for(int row = 0; row < board.rowCount; row++) {
+				if (board.bubbles[col][row] != null) {
+					bubble = board.bubbles[col][row];
+					
+					_shapeRenderer.setColor(_kindToColor.get(bubble.kind));
+					_shapeRenderer.circle(transform.position.x + bubble.offset.x + radius, 
+							transform.position.y + bubble.offset.y + radius, radius);
+					
+					if (bubble.isSelected) {
+						_shapeRenderer.setColor(1f, 1f, 1f, 1f);
+						_shapeRenderer.rect(transform.position.x + bubble.offset.x - 2, 
+								transform.position.y + bubble.offset.y - 2, 
+								GameConstants.bubbleSize + 4, 
+								GameConstants.bubbleSize + 4);
+					}
+				}
+			}
 		}
-	}
-	
-	@Override
-	protected void end() {
+		
 		_batch.end();
 		_shapeRenderer.end();
 	}
+
+	private void setOffsetsForBubbles(BoardComponent board) {
+		for(int col = 0; col < board.columnCount; col++) {
+			for(int row = 0; row < board.rowCount; row++) {
+				board.bubbles[col][row].offset = getRenderingOffsetForBubble(col, row);
+			}
+		}
+	}
 	
-	private void setRenderingPositionForBubble(TransformComponent transform, BubbleComponent bubble) {
-		transform.position.set(GameConstants.gridLocation.x + calculateOffset(bubble.column), 
-				GameConstants.gridLocation.y + calculateOffset(bubble.row));
+	private Vector2 getRenderingOffsetForBubble(int column, int row) {
+		return new Vector2(calculateOffset(column), calculateOffset(row));
 	}
 	
 	private int calculateOffset(int square) {
