@@ -13,4 +13,12 @@ public class BoardComponent extends Component {
 		this.rowCount = rows;
 		this.bubbles = new Bubble[columns][rows];
 	}
+	
+	public void clearSelection() {
+		for(int col = 0; col < bubbles.length; col++) {
+			for(int row = 0; row < bubbles[col].length; row++) {
+				bubbles[col][row].isSelected = false;
+			}
+		}
+	}
 }

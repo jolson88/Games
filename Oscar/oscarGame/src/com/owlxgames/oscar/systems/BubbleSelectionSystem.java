@@ -16,6 +16,7 @@ import com.owlxgames.oscar.components.TransformComponent;
 
 import java.util.ArrayList;
 
+// TODO Make into a Controller and put into BoardManagementSystem (so this isn't a system anymore)
 public class BubbleSelectionSystem extends EntityProcessingSystem implements InputProcessor {
 	@Mapper ComponentMapper<BoardComponent> _boardMapper;
 	@Mapper ComponentMapper<TransformComponent> _transformMapper;
@@ -74,19 +75,8 @@ public class BubbleSelectionSystem extends EntityProcessingSystem implements Inp
 	
 	private void selectBubble(int column, int row) {
 		Bubble bubble = _board.bubbles[column][row];
-		if (bubble == null) { return; }
-		
 		if (bubble.isSelected) {
-			_boardManagementSystem.scoreSelectedBubbles();
-			
-			// TODO Move to BoardManagementSystem
-			for (int boardColumn = 0; boardColumn < _board.bubbles.length; boardColumn++) {
-				for (int boardRow = 0; boardRow < _board.bubbles[boardColumn].length; boardRow++) {
-					if (_board.bubbles[boardColumn][boardRow] != null && _board.bubbles[boardColumn][boardRow].isSelected) {
-						_board.bubbles[boardColumn][boardRow] = null;
-					}
-				}
-			}
+			_boardManagementSystem.scoreSelectedBubbles(_selectedBubbles);
 			_selectedBubbles.clear();
 		} else {
 			clearSelectedBubbles();
@@ -103,11 +93,11 @@ public class BubbleSelectionSystem extends EntityProcessingSystem implements Inp
 		}
 		
 		Bubble bubble = _board.bubbles[column][row];
-		if (bubble == null || bubble.isSelected == true || bubble.kind != kind) {
+		if (bubble.isRemoved == true || bubble.isSelected == true || bubble.kind != kind) {
 			return;
 		} else {
 			bubble.isSelected = true;
-			_selectedBubbles.add(bubble);
+			_selectedBubbles.add(bubble.cpy());
 			selectConnectedBubbles(column - 1, row, kind);
 			selectConnectedBubbles(column + 1, row, kind);
 			selectConnectedBubbles(column, row - 1, kind);
@@ -116,9 +106,7 @@ public class BubbleSelectionSystem extends EntityProcessingSystem implements Inp
 	}
 	
 	private void clearSelectedBubbles() {
-		for(Bubble bubble: _selectedBubbles) {
-			bubble.isSelected = false;
-		}
+		_board.clearSelection();
 		_selectedBubbles.clear();
 	}
 	

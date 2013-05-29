@@ -7,17 +7,23 @@ import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.*;
 import com.owlxgames.oscar.components.BoardComponent;
+import com.owlxgames.oscar.components.GameStateComponent;
 import com.owlxgames.oscar.components.TransformComponent;
 import com.owlxgames.oscar.systems.*;
+import com.squareup.otto.Bus;
+import com.squareup.otto.ThreadEnforcer;
 
 public class OscarGame implements ApplicationListener {
 	private OrthographicCamera _camera;
 	private World _world;
+	private Bus _bus;
 	
 	@Override
 	public void create() {	
 		GroupManager groupManager = new GroupManager();
 		TagManager tagManager = new TagManager();
+		
+		_bus = new Bus(ThreadEnforcer.ANY);
 		
 		_camera = new OrthographicCamera();
 		_camera.setToOrtho(false, 480, 800);
@@ -32,12 +38,19 @@ public class OscarGame implements ApplicationListener {
 		boardEntity.addToWorld();
 		tagManager.register(Tags.board, boardEntity);
 		
+		Entity stateEntity = _world.createEntity();
+		stateEntity.addComponent(new GameStateComponent());
+		stateEntity.addToWorld();
+		tagManager.register(Tags.gameState, stateEntity);
+		
 		BubbleSelectionSystem bubbleSelectionSystem = new BubbleSelectionSystem(_camera);
 		Gdx.input.setInputProcessor(bubbleSelectionSystem);
 		
 		_world.setSystem(bubbleSelectionSystem);
-		_world.setSystem(new BoardManagementSystem());
+		_world.setSystem(new BoardManagementSystem(_bus));
+		_world.setSystem(new ScoringSystem(_bus));
 		_world.setSystem(new BoardRenderingSystem(_camera));	
+		_world.setSystem(new HudRenderingSystem());
 		_world.initialize();
 	}
 

@@ -67,13 +67,13 @@ public class BoardRenderingSystem extends EntityProcessingSystem {
 		_shapeRenderer.setProjectionMatrix(_camera.combined);
 		_shapeRenderer.begin(ShapeType.Line);
 		_batch.begin();
-		_batch.draw(_grid, GameConstants.gridLocation.x, GameConstants.gridLocation.y);
+		_batch.draw(_grid, transform.position.x, transform.position.y);
 
 		Bubble bubble;
 		float radius = GameConstants.bubbleSize / 2;		
 		for(int col = 0; col < board.columnCount; col++) {
 			for(int row = 0; row < board.rowCount; row++) {
-				if (board.bubbles[col][row] != null) {
+				if (!board.bubbles[col][row].isRemoved) {
 					bubble = board.bubbles[col][row];
 					
 					_shapeRenderer.setColor(_kindToColor.get(bubble.kind));
