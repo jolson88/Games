@@ -7,42 +7,39 @@ import com.artemis.annotations.Mapper;
 import com.artemis.systems.EntityProcessingSystem;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.Camera;
+import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.Vector3;
-import com.owlxgames.oscar.Bubble;
 import com.owlxgames.oscar.BubbleKind;
-import com.owlxgames.oscar.GameConstants;
-import com.owlxgames.oscar.components.BoardComponent;
+import com.owlxgames.oscar.BubblesPoppedEvent;
+import com.owlxgames.oscar.components.BubbleComponent;
 import com.owlxgames.oscar.components.TransformComponent;
+import com.squareup.otto.Bus;
 
 import java.util.ArrayList;
 
-// TODO Make into a Controller and put into BoardManagementSystem (so this isn't a system anymore)
+
 public class BubbleSelectionSystem extends EntityProcessingSystem implements InputProcessor {
-	@Mapper ComponentMapper<BoardComponent> _boardMapper;
+	@Mapper ComponentMapper<BubbleComponent> _bubbleMapper;
 	@Mapper ComponentMapper<TransformComponent> _transformMapper;
 
-	private BoardManagementSystem _boardManagementSystem;
+	private Bus _bus;
 	private Camera _camera;
-	private BoardComponent _board;
-	private TransformComponent _boardTransform;
-	private ArrayList<Bubble> _selectedBubbles;
+	private ArrayList<Entity> _bubbles;
+	private ArrayList<BubbleComponent> _selectedBubbles;
 	
 	@SuppressWarnings("unchecked")
-	public BubbleSelectionSystem(Camera camera) {
-		super(Aspect.getAspectForAll(BoardComponent.class));
-		_camera = camera;		
-		_selectedBubbles = new ArrayList<Bubble>();
-	}
-
-	@Override
-	public void initialize() {
-		_boardManagementSystem = world.getSystem(BoardManagementSystem.class);
+	public BubbleSelectionSystem(Camera camera, Bus bus) {
+		super(Aspect.getAspectForAll(TransformComponent.class, BubbleComponent.class));
+		_camera = camera;	
+		
+		_bubbles = new ArrayList<Entity>();
+		_selectedBubbles = new ArrayList<BubbleComponent>();
+		_bus = bus;
 	}
 	
 	@Override
 	public void inserted(Entity e) {
-		_board = _boardMapper.get(e);
-		_boardTransform = _transformMapper.get(e);
+		_bubbles.add(e);
 	}
 
 	@Override
@@ -53,13 +50,8 @@ public class BubbleSelectionSystem extends EntityProcessingSystem implements Inp
 		Vector3 touchLocation = new Vector3(screenX, screenY, 0f);
 		_camera.unproject(touchLocation);
 		
-		if (touchIsInGrid(touchLocation)) {
-			int col = (int)((touchLocation.x - _boardTransform.position.x) / GameConstants.squareSize);
-			int row = (int)((touchLocation.y - _boardTransform.position.y) / GameConstants.squareSize);
-			selectBubble(col, row);
-			return true;
-		}
-		return false;
+		boolean bubbleSelected = selectBubble(new Vector2(touchLocation.x, touchLocation.y));
+		return bubbleSelected;
 	}
 	
 	@Override 
@@ -68,45 +60,54 @@ public class BubbleSelectionSystem extends EntityProcessingSystem implements Inp
 		return false;
 	}
 	
-	private boolean touchIsInGrid(Vector3 touchLocation) {
-		return (touchLocation.x > _boardTransform.position.x && touchLocation.x < _boardTransform.position.x + GameConstants.gridWidth) &&
-			(touchLocation.y > _boardTransform.position.y && touchLocation.y < _boardTransform.position.y + GameConstants.gridHeight);
-	}
-	
-	private void selectBubble(int column, int row) {
-		Bubble bubble = _board.bubbles[column][row];
-		if (bubble.isSelected) {
-			_boardManagementSystem.scoreSelectedBubbles(_selectedBubbles);
-			_selectedBubbles.clear();
-		} else {
-			clearSelectedBubbles();
-			selectConnectedBubbles(column, row, bubble.kind);
-			if (_selectedBubbles.size() <= 1) { 
-				clearSelectedBubbles();
+	private boolean selectBubble(Vector2 touchLocation) {
+		BubbleComponent bubble;
+		TransformComponent transform;
+		for(Entity e: _bubbles) {
+			bubble = _bubbleMapper.get(e);
+			transform = _transformMapper.get(e);
+			
+			if (transform.getBoundingBox().contains(touchLocation)) {
+				if (bubble.isSelected) {
+					popBubbles();
+					_bus.post(new BubblesPoppedEvent(_selectedBubbles));
+					clearSelectedBubbles();
+					return true;
+				} else {
+					clearSelectedBubbles();
+					selectConnectedBubbles(bubble, bubble.kind);
+					if (_selectedBubbles.size() < 2) {
+						clearSelectedBubbles();
+					}
+					return true;
+				}
 			}
 		}
+		return false;
 	}
 	
-	private void selectConnectedBubbles(int column, int row, BubbleKind kind) {
-		if (column < 0 || column > _board.bubbles.length - 1 || row < 0 || row > _board.bubbles[column].length - 1) {
-			return;
-		}
-		
-		Bubble bubble = _board.bubbles[column][row];
-		if (bubble.isRemoved == true || bubble.isSelected == true || bubble.kind != kind) {
-			return;
-		} else {
+	private void selectConnectedBubbles(BubbleComponent bubble, BubbleKind selectedKind) {
+		if (!bubble.isRemoved && !bubble.isSelected && bubble.kind == selectedKind) {
 			bubble.isSelected = true;
-			_selectedBubbles.add(bubble.cpy());
-			selectConnectedBubbles(column - 1, row, kind);
-			selectConnectedBubbles(column + 1, row, kind);
-			selectConnectedBubbles(column, row - 1, kind);
-			selectConnectedBubbles(column, row + 1, kind);
-		}		
+			_selectedBubbles.add(bubble);
+			
+			if (bubble.leftBubble != null) selectConnectedBubbles(bubble.leftBubble, selectedKind);
+			if (bubble.rightBubble != null) selectConnectedBubbles(bubble.rightBubble, selectedKind);
+			if (bubble.aboveBubble != null) selectConnectedBubbles(bubble.aboveBubble, selectedKind);
+			if (bubble.belowBubble != null) selectConnectedBubbles(bubble.belowBubble, selectedKind);
+		}
+	}
+	
+	private void popBubbles() {
+		for(BubbleComponent bubble: _selectedBubbles) {
+			bubble.isRemoved = true;
+		}
 	}
 	
 	private void clearSelectedBubbles() {
-		_board.clearSelection();
+		for(BubbleComponent bubble: _selectedBubbles) {
+			bubble.isSelected = false;
+		}
 		_selectedBubbles.clear();
 	}
 	

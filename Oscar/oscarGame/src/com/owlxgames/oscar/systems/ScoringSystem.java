@@ -5,7 +5,7 @@ import com.artemis.ComponentMapper;
 import com.artemis.Entity;
 import com.artemis.annotations.Mapper;
 import com.artemis.systems.EntityProcessingSystem;
-import com.owlxgames.oscar.BubblesScoredEvent;
+import com.owlxgames.oscar.BubblesPoppedEvent;
 import com.owlxgames.oscar.ScoreChangedEvent;
 import com.owlxgames.oscar.components.GameStateComponent;
 import com.squareup.otto.Bus;
@@ -24,7 +24,7 @@ public class ScoringSystem extends EntityProcessingSystem {
 		_bus.register(this);
 	}
 
-	@Subscribe public void bubblesScored(BubblesScoredEvent event) {
+	@Subscribe public void onBubblesPopped(BubblesPoppedEvent event) {
 		int baseValue = event.bubbles.size() * 5;
 		int points = baseValue * event.bubbles.size();
 	

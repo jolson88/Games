@@ -1,4 +1,5 @@
 package com.owlxgames.oscar;
+
 import com.artemis.*;
 import com.artemis.managers.GroupManager;
 import com.artemis.managers.TagManager;
@@ -6,7 +7,8 @@ import com.artemis.managers.TagManager;
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.*;
-import com.owlxgames.oscar.components.BoardComponent;
+import com.badlogic.gdx.math.Vector2;
+import com.owlxgames.oscar.components.BubbleComponent;
 import com.owlxgames.oscar.components.GameStateComponent;
 import com.owlxgames.oscar.components.TransformComponent;
 import com.owlxgames.oscar.systems.*;
@@ -31,27 +33,57 @@ public class OscarGame implements ApplicationListener {
 		_world = new World();	
 		_world.setManager(groupManager);
 		_world.setManager(tagManager);
-		
-		Entity boardEntity = _world.createEntity();
-		boardEntity.addComponent(new TransformComponent(24, 130));
-		boardEntity.addComponent(new BoardComponent(9, 11));
-		boardEntity.addToWorld();
-		tagManager.register(Tags.board, boardEntity);
-		
+
 		Entity stateEntity = _world.createEntity();
 		stateEntity.addComponent(new GameStateComponent());
 		stateEntity.addToWorld();
 		tagManager.register(Tags.gameState, stateEntity);
 		
-		BubbleSelectionSystem bubbleSelectionSystem = new BubbleSelectionSystem(_camera);
+		BubbleSelectionSystem bubbleSelectionSystem = new BubbleSelectionSystem(_camera, _bus);
 		Gdx.input.setInputProcessor(bubbleSelectionSystem);
-		
 		_world.setSystem(bubbleSelectionSystem);
-		_world.setSystem(new BoardManagementSystem(_bus));
+
+		Entity bubbleEntity;
+		BubbleComponent bubble;
+		BubbleComponent[][] bubbles = new BubbleComponent[GameConstants.columnCount][GameConstants.rowCount];
+		for(int col = 0; col < bubbles.length; col++) {
+			for(int row = 0; row < bubbles[col].length; row++) {
+				bubble = new BubbleComponent();
+				bubble.column = col;
+				bubble.isRoot = (row == 0);
+				bubbles[col][row] = bubble;
+				
+				bubbleEntity = _world.createEntity();
+				bubbleEntity.addComponent(new TransformComponent(getRenderingOffsetForBubble(col, row).add(GameConstants.gridLocation), 
+						(float)GameConstants.squareSize,
+						(float)GameConstants.squareSize));
+				bubbleEntity.addComponent(bubble);
+				bubbleEntity.addToWorld();
+			}
+		}
+		
+		// Setup bubble links
+		for(int col = 0; col < bubbles.length; col++) {
+			for(int row = 0; row < bubbles[col].length; row++) {
+				bubble = bubbles[col][row];
+			    bubble.leftBubble = (col == 0) ? null : bubbles[col-1][row];
+			    bubble.rightBubble = (col == bubbles.length - 1) ? null : bubbles[col+1][row];
+			    bubble.belowBubble = (row == 0) ? null : bubbles[col][row-1];
+			    bubble.aboveBubble = (row == bubbles[col].length - 1) ? null : bubbles[col][row+1];
+			}
+		}
+		
+		_world.setSystem(new BubbleCollapsingSystem(_bus));
+		_world.setSystem(new BubbleRenderingSystem(_camera));
+		_world.setSystem(new BubblePopulationSystem(_bus));
+		_world.setSystem(new LevelSystem(_bus));
 		_world.setSystem(new ScoringSystem(_bus));
-		_world.setSystem(new BoardRenderingSystem(_camera));	
-		_world.setSystem(new HudRenderingSystem());
+		_world.setSystem(new HudRenderingSystem(_camera));
 		_world.initialize();
+		_world.setDelta(0);
+		_world.process();
+		
+		_bus.post(new NewGameEvent());
 	}
 
 	@Override
@@ -82,5 +114,13 @@ public class OscarGame implements ApplicationListener {
 	@Override
 	public void resume() {
 	
+	}
+	
+	private Vector2 getRenderingOffsetForBubble(int column, int row) {
+		return new Vector2(calculateOffset(column), calculateOffset(row));
+	}
+	
+	private int calculateOffset(int square) {
+		return (square * GameConstants.squareSize) + ((GameConstants.squareSize - GameConstants.bubbleSize) / 2);
 	}
 }
