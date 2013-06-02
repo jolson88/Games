@@ -7,6 +7,7 @@ import com.artemis.ComponentMapper;
 import com.artemis.Entity;
 import com.artemis.annotations.Mapper;
 import com.artemis.systems.EntityProcessingSystem;
+import com.owlxgames.oscar.BubbleIterator;
 import com.owlxgames.oscar.BubbleKind;
 import com.owlxgames.oscar.NewGameEvent;
 import com.owlxgames.oscar.NewLevelEvent;
@@ -47,18 +48,13 @@ public class BubblePopulationSystem extends EntityProcessingSystem {
 	}
 	
 	private void repopulateBubbles() {
-		BubbleComponent rowBubble;
-		BubbleComponent columnBubble = _rootBubble;
-		while (columnBubble != null) {
-			rowBubble = columnBubble;
-			while (rowBubble != null) {
-				rowBubble.isRemoved = false;
-				rowBubble.isSelected = false;
-				rowBubble.kind = getRandomBubbleKind();
-				
-				rowBubble = rowBubble.aboveBubble;
-			}
-			columnBubble = columnBubble.rightBubble;
+		BubbleComponent bubble;
+		BubbleIterator iter = new BubbleIterator(_rootBubble);
+		while (iter.hasNext()) {
+			bubble = iter.next();
+			bubble.isRemoved = false;
+			bubble.isSelected = false;
+			bubble.kind = getRandomBubbleKind();
 		}
 	}
 	

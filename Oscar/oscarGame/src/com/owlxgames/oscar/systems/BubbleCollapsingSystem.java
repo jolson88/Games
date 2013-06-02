@@ -5,6 +5,7 @@ import com.artemis.ComponentMapper;
 import com.artemis.Entity;
 import com.artemis.annotations.Mapper;
 import com.artemis.systems.EntityProcessingSystem;
+import com.owlxgames.oscar.BubbleIterator;
 import com.owlxgames.oscar.BubbleKind;
 import com.owlxgames.oscar.BubblesPoppedEvent;
 import com.owlxgames.oscar.GameConstants;
@@ -45,39 +46,46 @@ public class BubbleCollapsingSystem extends EntityProcessingSystem {
 	}
 
 	private void collapseBubbles() {
-		collapseRows();
-		collapseColumns();
+		BubbleComponent rootBubble;
+		BubbleIterator rootIter = new BubbleIterator(_rootBubbles[0], BubbleIterator.Mode.Horizontal);
+		while (rootIter.hasNext()) {
+			rootBubble = rootIter.next();
+			collapseVertically(rootBubble);
+		}
+		
+		rootIter = new BubbleIterator(_rootBubbles[0], BubbleIterator.Mode.Horizontal);
+		while (rootIter.hasNext()) {
+			rootBubble = rootIter.next();
+			if (rootBubble.isRemoved && rootBubble.rightBubble != null) {
+				collapseHorizontally(rootBubble);
+			}
+		}
 	}
 
-	private void collapseRows() {
+	private void collapseVertically(BubbleComponent rootBubble) {
 		boolean filled = false;
-		
+
 		BubbleComponent bubble;
-		for (int column = 0; column < _rootBubbles.length; column++) {
-			bubble = _rootBubbles[column];
-			while(bubble != null) {
-				if (bubble.isRemoved) {
-					filled = fillWithReplacementBubble(bubble);
-					if (!filled) {
-						break;
-					}
+		BubbleIterator iter = new BubbleIterator(rootBubble, BubbleIterator.Mode.Vertical);
+		while (iter.hasNext()) {
+			bubble = iter.next();
+			if (bubble.isRemoved) {
+				filled = fillWithReplacementBubble(bubble);
+				if (!filled) {
+					break;
 				}
-				bubble = bubble.aboveBubble;
 			}
 		}
 	}
 	
-	private void collapseColumns() {
-		BubbleComponent bubble;
-		for (int column = 0; column < _rootBubbles.length; column++) {
-			bubble = _rootBubbles[column];
-			if (bubble.isRemoved) {
-				for (int columnToSwap = column + 1; columnToSwap < _rootBubbles.length; columnToSwap++) {
-					if (!_rootBubbles[columnToSwap].isRemoved) {
-						swapColumns(bubble, _rootBubbles[columnToSwap]);
-						break;
-					}
-				}
+	private void collapseHorizontally(BubbleComponent removedRootBubble) {
+		BubbleComponent replacementRootBubble;
+		BubbleIterator iter = new BubbleIterator(removedRootBubble.rightBubble, BubbleIterator.Mode.Horizontal);
+		while (iter.hasNext()) {
+			replacementRootBubble = iter.next();
+			if (!replacementRootBubble.isRemoved) {
+				swapColumns(removedRootBubble, replacementRootBubble);
+				break;
 			}
 		}
 	}

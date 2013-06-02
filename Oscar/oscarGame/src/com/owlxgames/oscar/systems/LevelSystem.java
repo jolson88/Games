@@ -6,6 +6,7 @@ import com.artemis.Entity;
 import com.artemis.annotations.Mapper;
 import com.artemis.managers.TagManager;
 import com.artemis.systems.EntityProcessingSystem;
+import com.owlxgames.oscar.BubbleIterator;
 import com.owlxgames.oscar.BubblesPoppedEvent;
 import com.owlxgames.oscar.NewGameEvent;
 import com.owlxgames.oscar.NewLevelEvent;
@@ -75,43 +76,41 @@ public class LevelSystem extends EntityProcessingSystem {
 	}
 	
 	private int calculateLevelTargetScore(int level) {
-		return 1000 + ((level - 1) * 1500) + (1000 * (level / 5));
+		return 1000 + ((level - 1) * 1800) + (1000 * (level / 5));
 	}
 	
 	private int bubblesRemaining() {
 		int remaining = 0;
-		BubbleComponent rowBubble;
-		BubbleComponent columnBubble = _rootBubble;
-		while (columnBubble != null) {
-			rowBubble = columnBubble;
-			while (rowBubble != null) {
-				if (!rowBubble.isRemoved) {
-					remaining++;
-				}
-				rowBubble = rowBubble.aboveBubble;
-			}
-			columnBubble = columnBubble.rightBubble;
-		}
 		
+		BubbleComponent bubble;
+		BubbleIterator iter = new BubbleIterator(_rootBubble);
+		while (iter.hasNext()) {
+			bubble = iter.next();
+			if (!bubble.isRemoved) {
+				remaining++;
+			}
+		}
 		return remaining;
 	}
 	
 	private boolean hasMovesRemaining() {
-		BubbleComponent rowBubble;
-		BubbleComponent columnBubble = _rootBubble;
-		while (columnBubble.rightBubble != null) {
-			rowBubble = columnBubble;
-			while (rowBubble.aboveBubble != null) {
-				if ((rowBubble.kind == rowBubble.rightBubble.kind && !rowBubble.isRemoved && !rowBubble.rightBubble.isRemoved) 
-						|| (rowBubble.kind == rowBubble.aboveBubble.kind && !rowBubble.isRemoved && !rowBubble.aboveBubble.isRemoved)) {
-					return true;
-				}
-				rowBubble = rowBubble.aboveBubble;
+		BubbleComponent bubble;
+		BubbleIterator iter = new BubbleIterator(_rootBubble);
+		while (iter.hasNext()) {
+			bubble = iter.next();
+			if (matchesAboveBubble(bubble) || matchesRightBubble(bubble)) {
+				return true;
 			}
-			columnBubble = columnBubble.rightBubble;
 		}
-		
 		return false;
+	}
+	
+	private boolean matchesAboveBubble(BubbleComponent bubble) {
+		return bubble.aboveBubble != null && !bubble.isRemoved && !bubble.aboveBubble.isRemoved && bubble.kind == bubble.aboveBubble.kind;
+	}
+	
+	private boolean matchesRightBubble(BubbleComponent bubble) {
+		return bubble.rightBubble != null && !bubble.isRemoved && !bubble.rightBubble.isRemoved && bubble.kind == bubble.rightBubble.kind;
 	}
 	
 	@Override protected void process(Entity e) { }
