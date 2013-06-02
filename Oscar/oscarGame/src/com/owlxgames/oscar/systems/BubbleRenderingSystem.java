@@ -9,7 +9,6 @@ import com.artemis.annotations.Mapper;
 import com.artemis.systems.EntityProcessingSystem;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Camera;
-import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
@@ -27,19 +26,14 @@ public class BubbleRenderingSystem extends EntityProcessingSystem {
 	private SpriteBatch _batch;
 	private Texture _grid;
 	private ShapeRenderer _shapeRenderer;
-	private HashMap<BubbleKind, Color> _kindToColor;
+	private HashMap<BubbleKind, Texture> _kindToColor;
 	
 	@SuppressWarnings("unchecked")
 	public BubbleRenderingSystem(Camera camera) {
 		super(Aspect.getAspectForAll(TransformComponent.class, BubbleComponent.class));
 		
 		_camera = camera;
-		_kindToColor = new HashMap<BubbleKind, Color>();
-		_kindToColor.put(BubbleKind.Red, new Color(1f, 0f, 0f, 1f));
-		_kindToColor.put(BubbleKind.Green, new Color(0f, 1f, 0f, 1f));
-		_kindToColor.put(BubbleKind.Blue, new Color(0f, 0f, 1f, 1f));
-		_kindToColor.put(BubbleKind.Orange, new Color(1f, 0.6f, 0f, 1f));
-		_kindToColor.put(BubbleKind.Purple, new Color(0.6f, 0f, 1f, 1f));
+		_kindToColor = new HashMap<BubbleKind, Texture>();
 	}
 	
 	@Override
@@ -48,6 +42,11 @@ public class BubbleRenderingSystem extends EntityProcessingSystem {
 		_shapeRenderer = new ShapeRenderer();
 		
 		_grid = new Texture(Gdx.files.internal("sprites\\grid.png"));
+		_kindToColor.put(BubbleKind.Red, new Texture(Gdx.files.internal("sprites\\bubble-red.png")));
+		_kindToColor.put(BubbleKind.Green, new Texture(Gdx.files.internal("sprites\\bubble-green.png")));
+		_kindToColor.put(BubbleKind.Blue, new Texture(Gdx.files.internal("sprites\\bubble-blue.png")));
+		_kindToColor.put(BubbleKind.Orange, new Texture(Gdx.files.internal("sprites\\bubble-orange.png")));
+		_kindToColor.put(BubbleKind.Purple, new Texture(Gdx.files.internal("sprites\\bubble-purple.png")));
 	}
 
 	@Override
@@ -64,11 +63,8 @@ public class BubbleRenderingSystem extends EntityProcessingSystem {
 		TransformComponent transform = transformMapper.get(e);
 		BubbleComponent bubble = bubbleMapper.get(e);
 
-		float radius = GameConstants.bubbleSize / 2;		
 		if (!bubble.isRemoved) {
-			_shapeRenderer.setColor(_kindToColor.get(bubble.kind));
-			_shapeRenderer.circle(transform.getPosition().x + radius, 
-					transform.getPosition().y + radius, radius);
+			_batch.draw(_kindToColor.get(bubble.kind), transform.getPosition().x, transform.getPosition().y);
 			
 			if (bubble.isSelected) {
 				_shapeRenderer.setColor(1f, 1f, 1f, 1f);

@@ -7,6 +7,7 @@ import com.artemis.managers.TagManager;
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.*;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector2;
 import com.owlxgames.oscar.components.BubbleComponent;
 import com.owlxgames.oscar.components.GameStateComponent;
@@ -19,6 +20,8 @@ public class OscarGame implements ApplicationListener {
 	private OrthographicCamera _camera;
 	private World _world;
 	private Bus _bus;
+	private SpriteBatch _batch;
+	private Texture _background;
 	
 	@Override
 	public void create() {	
@@ -28,7 +31,7 @@ public class OscarGame implements ApplicationListener {
 		_bus = new Bus(ThreadEnforcer.ANY);
 		
 		_camera = new OrthographicCamera();
-		_camera.setToOrtho(false, 480, 800);
+		_camera.setToOrtho(false, 768, 1184);
 
 		_world = new World();	
 		_world.setManager(groupManager);
@@ -84,6 +87,9 @@ public class OscarGame implements ApplicationListener {
 		_world.process();
 		
 		_bus.post(new NewGameEvent());
+		
+		_batch = new SpriteBatch();
+		_background = new Texture(Gdx.files.internal("sprites\\background.png"));
 	}
 
 	@Override
@@ -97,13 +103,18 @@ public class OscarGame implements ApplicationListener {
 		Gdx.gl.glClearColor(0, 0, 0, 1);
 		Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
 
+		_batch.setProjectionMatrix(_camera.combined);
+		_batch.begin();
+		_batch.draw(_background, 0, 0);
+		_batch.end();
+		
 		_world.setDelta(Gdx.graphics.getDeltaTime());
 		_world.process();
 	}
 
 	@Override
 	public void resize(int width, int height) {
-	
+		
 	}
 
 	@Override

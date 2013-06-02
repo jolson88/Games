@@ -36,8 +36,8 @@ public class HudRenderingSystem extends EntityProcessingSystem {
 		
 		_batch.setProjectionMatrix(_camera.combined);
 		_batch.begin();
-		_headerFont.draw(_batch, String.valueOf(gameState.score), 10, 800);
-		_headerFont.draw(_batch, "Level " + String.valueOf(gameState.level)+ ". Target: " + String.valueOf(gameState.targetScore), 10, 720);
+		_headerFont.draw(_batch, String.valueOf(gameState.score), 12, 1170);
+		_headerFont.draw(_batch, "L" + String.valueOf(gameState.level)+ ": " + String.valueOf(gameState.targetScore), 12, 1100);
 		_batch.end();
 	}
 

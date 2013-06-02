@@ -76,7 +76,7 @@ public class LevelSystem extends EntityProcessingSystem {
 	}
 	
 	private int calculateLevelTargetScore(int level) {
-		return 1000 + ((level - 1) * 1800) + (1000 * (level / 5));
+		return 1000 + ((level - 1) * 1800) + (500 * (level / 5));
 	}
 	
 	private int bubblesRemaining() {

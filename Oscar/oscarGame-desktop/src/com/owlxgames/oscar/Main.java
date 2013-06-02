@@ -9,7 +9,7 @@ public class Main {
 		cfg.title = "oscarGame";
 		cfg.useGL20 = true;
 		cfg.width = 480;
-		cfg.height = 800;
+		cfg.height = 740;
 		
 		new LwjglApplication(new OscarGame(), cfg);
 	}
