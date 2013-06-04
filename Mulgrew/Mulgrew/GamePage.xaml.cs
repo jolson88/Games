@@ -10,14 +10,14 @@ namespace Mulgrew
     /// </summary>
     public sealed partial class GamePage : SwapChainBackgroundPanel
     {
-        readonly Game1 _game;
+        readonly MulgrewGame _game;
 
         public GamePage(string launchArguments)
         {
             this.InitializeComponent();
 
             // Create the game.
-            _game = XamlGame<Game1>.Create(launchArguments, Window.Current.CoreWindow, this);
+            _game = XamlGame<MulgrewGame>.Create(launchArguments, Window.Current.CoreWindow, this);
         }
     }
 }

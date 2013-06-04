@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mulgrew", "Mulgrew\Mulgrew.csproj", "{33D52361-02D3-4B46-A0A9-EB20E49FD91A}"
 EndProject
-Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "Mulgrew.Content", "Mulgrew.Content\Mulgrew.Content.contentproj", "{310E6924-AF77-45A8-9179-205AFC6D9175}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mulgrew.Content", "Mulgrew.Content\Mulgrew.Content.contentproj", "{310E6924-AF77-45A8-9179-205AFC6D9175}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mulgrew.ContentBuilder", "Mulgrew.ContentBuilder\Mulgrew.ContentBuilder\Mulgrew.ContentBuilder.csproj", "{360C802B-8EF5-40D7-8A9B-B15F00416E7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hiromi.WindowsStore", "..\HiromiSubmodule\Hiromi.WindowsStore\Hiromi.WindowsStore.csproj", "{4DCB809E-533C-4268-9090-7E1030E2752E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,28 @@ Global
 		{360C802B-8EF5-40D7-8A9B-B15F00416E7A}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
 		{360C802B-8EF5-40D7-8A9B-B15F00416E7A}.Release|x64.ActiveCfg = Release|Windows Phone
 		{360C802B-8EF5-40D7-8A9B-B15F00416E7A}.Release|x86.ActiveCfg = Release|Windows Phone
+		{4DCB809E-533C-4268-9090-7E1030E2752E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DCB809E-533C-4268-9090-7E1030E2752E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DCB809E-533C-4268-9090-7E1030E2752E}.Debug|ARM.ActiveCfg = Debug|ARM
+		{4DCB809E-533C-4268-9090-7E1030E2752E}.Debug|ARM.Build.0 = Debug|ARM
+		{4DCB809E-533C-4268-9090-7E1030E2752E}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{4DCB809E-533C-4268-9090-7E1030E2752E}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{4DCB809E-533C-4268-9090-7E1030E2752E}.Debug|Windows Phone.ActiveCfg = Debug|Any CPU
+		{4DCB809E-533C-4268-9090-7E1030E2752E}.Debug|x64.ActiveCfg = Debug|x64
+		{4DCB809E-533C-4268-9090-7E1030E2752E}.Debug|x64.Build.0 = Debug|x64
+		{4DCB809E-533C-4268-9090-7E1030E2752E}.Debug|x86.ActiveCfg = Debug|x86
+		{4DCB809E-533C-4268-9090-7E1030E2752E}.Debug|x86.Build.0 = Debug|x86
+		{4DCB809E-533C-4268-9090-7E1030E2752E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DCB809E-533C-4268-9090-7E1030E2752E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DCB809E-533C-4268-9090-7E1030E2752E}.Release|ARM.ActiveCfg = Release|ARM
+		{4DCB809E-533C-4268-9090-7E1030E2752E}.Release|ARM.Build.0 = Release|ARM
+		{4DCB809E-533C-4268-9090-7E1030E2752E}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{4DCB809E-533C-4268-9090-7E1030E2752E}.Release|Mixed Platforms.Build.0 = Release|x86
+		{4DCB809E-533C-4268-9090-7E1030E2752E}.Release|Windows Phone.ActiveCfg = Release|Any CPU
+		{4DCB809E-533C-4268-9090-7E1030E2752E}.Release|x64.ActiveCfg = Release|x64
+		{4DCB809E-533C-4268-9090-7E1030E2752E}.Release|x64.Build.0 = Release|x64
+		{4DCB809E-533C-4268-9090-7E1030E2752E}.Release|x86.ActiveCfg = Release|x86
+		{4DCB809E-533C-4268-9090-7E1030E2752E}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
