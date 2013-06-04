@@ -5,9 +5,19 @@
     xmlns:local="using:Acorn"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:UI="using:Microsoft.Advertising.WinRT.UI"
     mc:Ignorable="d">
 
-    <Grid>
-    </Grid>
-    
+    <!--<UI:AdControl 
+        x:Name="adControl"
+        ApplicationId="d25517cb-12d4-4699-8bdc-52040c712cab" 
+        AdUnitId="10042998" 
+        HorizontalAlignment="Center" 
+        Height="90" 
+        Margin="0,0,0,0" 
+        VerticalAlignment="Top" 
+        Width="728"
+        IsEnabled="False" 
+        ErrorOccurred="adControl_ErrorOccurred"/>-->
+
 </SwapChainBackgroundPanel>

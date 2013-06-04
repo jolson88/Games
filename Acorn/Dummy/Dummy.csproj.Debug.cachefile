@@ -18,7 +18,6 @@ AcornContent\Sprites\AcornEmpty.xnb
 AcornContent\Sprites\GameTitle.xnb
 AcornContent\Sprites\AboutButton.xnb
 AcornContent\Sprites\AboutButtonPressed.xnb
-AcornContent\Sprites\BackgroundAbout.xnb
 AcornContent\Sprites\BlueComputerButton.xnb
 AcornContent\Sprites\BluePlayerButton.xnb
 AcornContent\Sprites\RedComputerButton.xnb
@@ -39,4 +38,5 @@ AcornContent\Sounds\AcornGroundHit.xnb
 AcornContent\Sounds\ButtonSelect.xnb
 AcornContent\Sounds\Applause.xnb
 AcornContent\Sounds\TEMP-Caketown.xnb
+AcornContent\Sprites\PauseImage.xnb
 AcornContent\Sounds\TEMP-Caketown.wma

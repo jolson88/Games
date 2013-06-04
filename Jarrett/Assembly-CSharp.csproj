@@ -19,7 +19,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_1_2;UNITY_4_1;ENABLE_PROFILER;UNITY_EDITOR</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_1_3;UNITY_4_1;ENABLE_PROFILER;UNITY_EDITOR</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -146,10 +146,20 @@
     <Compile Include="Assets\Lib\Orthello\Standard Assets\OT\_Base\OTSounds.cs" />
     <Compile Include="Assets\Lib\Orthello\Standard Assets\OT\_Base\OTTimeCycle.cs" />
     <Compile Include="Assets\Lib\Orthello\Standard Assets\OT\_Base\OTTouch.cs" />
+    <Compile Include="Assets\Lib\SimpleParticlePack\Scripts\ParticleTester.cs" />
     <Compile Include="Assets\Lib\iTween\Plugins\iTween.cs" />
     <Compile Include="Assets\Lib\iTween\Sample\MoveSample.cs" />
     <Compile Include="Assets\Lib\iTween\Sample\RotateSample.cs" />
     <Compile Include="Assets\Lib\iTween\Sample\SampleInfo.cs" />
+    <Compile Include="Assets\Scripts\BallCollisionBehavior.cs" />
+    <Compile Include="Assets\Scripts\BallSaverBehavior.cs" />
+    <Compile Include="Assets\Scripts\CannonControllerBehavior.cs" />
+    <Compile Include="Assets\Scripts\GameLogic.cs" />
+    <Compile Include="Assets\Scripts\LifeBarBehavior.cs" />
+    <Compile Include="Assets\Scripts\MessageManager.cs" />
+    <Compile Include="Assets\Scripts\OrangeScoreBehavior.cs" />
+    <Compile Include="Assets\Scripts\PegBehavior.cs" />
+    <Compile Include="Assets\Scripts\PlayerBallBehavior.cs" />
     <None Include="Assets\Lib\Orthello\Examples\0 - Simple Examples\TextSprites\lorem.txt" />
     <None Include="Assets\Lib\Orthello\Examples\0 - Simple Examples\TextSprites\Atlases\russian.txt" />
     <None Include="Assets\Lib\iTween\ReadMe!\ReadMe!.txt" />
@@ -164,6 +174,7 @@
     <None Include="Assets\Lib\Orthello\Standard Assets\OT\_Base\TintedAlpha.shader" />
     <None Include="Assets\Lib\Orthello\Examples\0 - Simple Examples\RotateTowards\-read-me.txt" />
     <None Include="Assets\Lib\Orthello\Examples\0 - Simple Examples\Persistance\-read-me.txt" />
+    <None Include="Assets\Fonts\PneumaticFont.fnt" />
     <None Include="Assets\Lib\Orthello\Examples\0 - Simple Examples\TextSprites\lorem-rus-utf8.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

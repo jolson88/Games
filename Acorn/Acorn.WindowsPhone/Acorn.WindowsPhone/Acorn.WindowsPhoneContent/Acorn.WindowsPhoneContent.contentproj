@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{2056EB2A-D469-4E4C-B611-8008B550CE0A}</ProjectGuid>
+    <ProjectTypeGuids>{96E2B04D-8817-42c6-938A-82C39BA4D311};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <OutputPath>bin\$(Platform)\$(Configuration)</OutputPath>
+    <ContentRootDirectory>Content</ContentRootDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Windows Phone'">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Windows Phone'">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Acorn.WindowsPhoneContent</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.EffectImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.FBXImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.TextureImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.XImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.AudioImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.VideoImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\AcornContent\Fonts\Details.spritefont">
+      <Link>Fonts\Details.spritefont</Link>
+      <Name>Details</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Fonts\Title.spritefont">
+      <Link>Fonts\Title.spritefont</Link>
+      <Name>Title</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\AcornContent\Sounds\Acorn1.wav">
+      <Link>Sounds\Acorn1.wav</Link>
+      <Name>Acorn1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sounds\Acorn2.wav">
+      <Link>Sounds\Acorn2.wav</Link>
+      <Name>Acorn2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sounds\Acorn3.wav">
+      <Link>Sounds\Acorn3.wav</Link>
+      <Name>Acorn3</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sounds\Acorn4.wav">
+      <Link>Sounds\Acorn4.wav</Link>
+      <Name>Acorn4</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sounds\Acorn5.wav">
+      <Link>Sounds\Acorn5.wav</Link>
+      <Name>Acorn5</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sounds\Acorn6.wav">
+      <Link>Sounds\Acorn6.wav</Link>
+      <Name>Acorn6</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sounds\Acorn7.wav">
+      <Link>Sounds\Acorn7.wav</Link>
+      <Name>Acorn7</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sounds\Acorn8.wav">
+      <Link>Sounds\Acorn8.wav</Link>
+      <Name>Acorn8</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sounds\AcornGroundHit.wav">
+      <Link>Sounds\AcornGroundHit.wav</Link>
+      <Name>AcornGroundHit</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sounds\Applause.wav">
+      <Link>Sounds\Applause.wav</Link>
+      <Name>Applause</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sounds\ButtonSelect.wav">
+      <Link>Sounds\ButtonSelect.wav</Link>
+      <Name>ButtonSelect</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sounds\SelectCard.wav">
+      <Link>Sounds\SelectCard.wav</Link>
+      <Name>SelectCard</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sounds\TEMP-Caketown.wma">
+      <Link>Sounds\TEMP-Caketown.wma</Link>
+      <Name>TEMP-Caketown</Name>
+      <Importer>WmaImporter</Importer>
+      <Processor>SongProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sounds\ZeroCard.wav">
+      <Link>Sounds\ZeroCard.wav</Link>
+      <Name>ZeroCard</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\AcornContent\Sprites\AboutButton.png">
+      <Link>Sprites\AboutButton.png</Link>
+      <Name>AboutButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sprites\AboutButtonPressed.png">
+      <Link>Sprites\AboutButtonPressed.png</Link>
+      <Name>AboutButtonPressed</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sprites\Acorn.png">
+      <Link>Sprites\Acorn.png</Link>
+      <Name>Acorn</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sprites\AcornEmpty.png">
+      <Link>Sprites\AcornEmpty.png</Link>
+      <Name>AcornEmpty</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sprites\Background.png">
+      <Link>Sprites\Background.png</Link>
+      <Name>Background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sprites\BlueComputerButton.png">
+      <Link>Sprites\BlueComputerButton.png</Link>
+      <Name>BlueComputerButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sprites\BluePlayerButton.png">
+      <Link>Sprites\BluePlayerButton.png</Link>
+      <Name>BluePlayerButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sprites\BlueSquirrel.png">
+      <Link>Sprites\BlueSquirrel.png</Link>
+      <Name>BlueSquirrel</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sprites\Card0.png">
+      <Link>Sprites\Card0.png</Link>
+      <Name>Card0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sprites\Card1.png">
+      <Link>Sprites\Card1.png</Link>
+      <Name>Card1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sprites\Card2.png">
+      <Link>Sprites\Card2.png</Link>
+      <Name>Card2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sprites\CardBack.png">
+      <Link>Sprites\CardBack.png</Link>
+      <Name>CardBack</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sprites\Cloud.png">
+      <Link>Sprites\Cloud.png</Link>
+      <Name>Cloud</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sprites\GameTitle.png">
+      <Link>Sprites\GameTitle.png</Link>
+      <Name>GameTitle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sprites\MenuButton.png">
+      <Link>Sprites\MenuButton.png</Link>
+      <Name>MenuButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sprites\MenuButtonPressed.png">
+      <Link>Sprites\MenuButtonPressed.png</Link>
+      <Name>MenuButtonPressed</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sprites\PlayButton.png">
+      <Link>Sprites\PlayButton.png</Link>
+      <Name>PlayButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sprites\PlayButtonPressed.png">
+      <Link>Sprites\PlayButtonPressed.png</Link>
+      <Name>PlayButtonPressed</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sprites\RedComputerButton.png">
+      <Link>Sprites\RedComputerButton.png</Link>
+      <Name>RedComputerButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sprites\RedPlayerButton.png">
+      <Link>Sprites\RedPlayerButton.png</Link>
+      <Name>RedPlayerButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sprites\RedSquirrel.png">
+      <Link>Sprites\RedSquirrel.png</Link>
+      <Name>RedSquirrel</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sprites\ScoreMeter.png">
+      <Link>Sprites\ScoreMeter.png</Link>
+      <Name>ScoreMeter</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sprites\StopButton.png">
+      <Link>Sprites\StopButton.png</Link>
+      <Name>StopButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="..\..\..\AcornContent\Sprites\StopButtonPressed.png">
+      <Link>Sprites\StopButtonPressed.png</Link>
+      <Name>StopButtonPressed</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
+  <!--  To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

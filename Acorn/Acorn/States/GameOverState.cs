@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using Hiromi;
 using Hiromi.Components;
 using Microsoft.Xna.Framework;
@@ -20,6 +19,11 @@ namespace Acorn.States
         {
             _playSettings = playSettings;
             _winningPlayer = winningPlayer;
+        }
+
+        public override GameState GetPreviousGameState()
+        {
+            return new PlayerSelectState();
         }
 
         protected override IEnumerable<IGameView> LoadGameViews()

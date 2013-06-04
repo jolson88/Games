@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
@@ -12,6 +11,7 @@ namespace Acorn
 {
     public static class AcornAssets
     {
+        public static string PauseImage = "Sprites\\PauseImage";
         public static string Acorn = "Sprites\\Acorn";
         public static string EmptyAcorn = "Sprites\\AcornEmpty";
         public static string Background = "Sprites\\Background";

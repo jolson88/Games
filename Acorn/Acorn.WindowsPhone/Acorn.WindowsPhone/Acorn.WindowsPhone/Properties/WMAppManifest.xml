@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.1">
+  <App xmlns="" ProductID="{bb25287a-537d-4f0b-b2f8-2638c8af599d}" 
+       Title="Project Acorn" 
+       RuntimeType="XNA" 
+       Version="1.0.0.0" 
+       Genre="Apps.Games" 
+       Author="Jason Olson" 
+       Description="Project Acorn is a local multiplayer, risk-and-reward card game for kids. Can you be the first player to collect all eight acorns? Will you keep the acorns you have so far or try for more? Do you feel lucky? Well, do you?" 
+       Publisher="Owl X Games">
+    <IconPath IsRelative="true" IsResource="false"></IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_MEDIALIB"/>
+      <Capability Name="ID_CAP_NETWORKING"/>
+      <Capability Name="ID_CAP_PHONEDIALER"/>
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT"/>
+      <Capability Name="ID_CAP_IDENTITY_USER"/>
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default"/>
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="Acorn.WindowsPhoneToken" TaskName="_default">
+        <TemplateType5>
+          <BackgroundImageURI IsRelative="true" IsResource="false"></BackgroundImageURI>
+          <Count>0</Count>
+          <Title></Title>
+        </TemplateType5>
+      </PrimaryToken>
+    </Tokens>
+  </App>
+</Deployment>
+

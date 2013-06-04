@@ -1,6 +1,9 @@
 ﻿using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.UI.Xaml;
+using Windows.UI.ApplicationSettings;
+using Windows.UI.Popups;
+using System;
 
 // The Blank Application template is documented at http://go.microsoft.com/fwlink/?LinkId=234227
 
@@ -45,10 +48,23 @@ namespace Acorn
 
                 // Place the GamePage in the current Window
                 Window.Current.Content = gamePage;
+
+                SettingsPane.GetForCurrentView().CommandsRequested += App_CommandsRequested;
             }
 
             // Ensure the current window is active
             Window.Current.Activate();
+        }
+
+        private void App_CommandsRequested(SettingsPane sender, SettingsPaneCommandsRequestedEventArgs args)
+        {
+            args.Request.ApplicationCommands.Add(new SettingsCommand("privacypolicy", "Privacy Policy", OpenPrivacyPolicy));
+        }
+
+        private async void OpenPrivacyPolicy(IUICommand command)
+        {
+            var uri = new Uri("http://owlxgames.com/about-us/#privacy-policy");
+            await Windows.System.Launcher.LaunchUriAsync(uri);
         }
 
         /// <summary>

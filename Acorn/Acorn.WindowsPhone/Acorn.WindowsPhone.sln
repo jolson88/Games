@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acorn.WindowsPhone", "Acorn.WindowsPhone\Acorn.WindowsPhone\Acorn.WindowsPhone.csproj", "{7FC85B3E-66BC-4CD1-817B-E47B643095E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acorn.WindowsPhoneContent", "Acorn.WindowsPhone\Acorn.WindowsPhoneContent\Acorn.WindowsPhoneContent.contentproj", "{2056EB2A-D469-4E4C-B611-8008B550CE0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hiromi.WindowsPhone", "..\..\HiromiSubmodule\Hiromi.WindowsPhone\Hiromi.WindowsPhone.csproj", "{AB1F9597-0480-4375-8D4A-963E2300ACAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FC85B3E-66BC-4CD1-817B-E47B643095E5}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{7FC85B3E-66BC-4CD1-817B-E47B643095E5}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{7FC85B3E-66BC-4CD1-817B-E47B643095E5}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{7FC85B3E-66BC-4CD1-817B-E47B643095E5}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{7FC85B3E-66BC-4CD1-817B-E47B643095E5}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{7FC85B3E-66BC-4CD1-817B-E47B643095E5}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{2056EB2A-D469-4E4C-B611-8008B550CE0A}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{2056EB2A-D469-4E4C-B611-8008B550CE0A}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{AB1F9597-0480-4375-8D4A-963E2300ACAE}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{AB1F9597-0480-4375-8D4A-963E2300ACAE}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{AB1F9597-0480-4375-8D4A-963E2300ACAE}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{AB1F9597-0480-4375-8D4A-963E2300ACAE}.Release|Windows Phone.Build.0 = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

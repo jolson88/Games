@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
@@ -92,6 +91,8 @@ namespace Acorn.Views
                 ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.DingAcorn7),
                 ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.DingAcorn8)
             };
+
+            this.MessageManager.QueueMessage(new EnableAdsMessage());
         }
 
         public override void OnLoaded()
@@ -131,7 +132,7 @@ namespace Acorn.Views
         private void OnStopRequest(StopRequestMessage msg)
         {
             var sound = ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.ButtonSelect);
-            this.MessageManager.TriggerMessage(new PlaySoundEffectMessage(sound, 0.6f));
+            this.MessageManager.TriggerMessage(new PlaySoundEffectMessage(sound, PlatformConfiguration.SoundLevels.ButtonSelect));
         }
 
         private void OnCardSelected(CardSelectedMessage msg)
@@ -142,7 +143,7 @@ namespace Acorn.Views
             {
                 var card = _cards.Where(go => go.GetComponent<CardComponent>().CardIndex == msg.CardIndex).First();
                 card.AddComponent(new ShakeComponent(20, TimeSpan.FromSeconds(1.5)));
-                this.MessageManager.QueueMessage(new PlaySoundEffectMessage(ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.BuzzZeroCard), 0.06f));
+                this.MessageManager.QueueMessage(new PlaySoundEffectMessage(ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.BuzzZeroCard), PlatformConfiguration.SoundLevels.ZeroCardBuzz));
             }
             else
             {
@@ -159,7 +160,7 @@ namespace Acorn.Views
                         this.MessageManager.QueueMessage(new CardShuffleRequestMessage(_currentPlayer));
                     })));
                 }
-                this.MessageManager.QueueMessage(new PlaySoundEffectMessage(ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.DingSelectCard), 0.2f));
+                this.MessageManager.QueueMessage(new PlaySoundEffectMessage(ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.DingSelectCard), PlatformConfiguration.SoundLevels.CardSelect));
             }
         }
 
@@ -267,7 +268,7 @@ namespace Acorn.Views
                     moveTo.Removed += (sender, args) =>
                     {
                         var sound = ContentService.Instance.GetAsset<SoundEffect>(AcornAssets.SoundOfAcornOnGround);
-                        this.MessageManager.TriggerMessage(new PlaySoundEffectMessage(sound, 0.5f));
+                        this.MessageManager.TriggerMessage(new PlaySoundEffectMessage(sound, PlatformConfiguration.SoundLevels.AcornOnGround));
                     };
                     obj.AddComponent(moveTo);
                 })));
@@ -289,8 +290,9 @@ namespace Acorn.Views
                     }),
                     new ActionProcess("End turn confirmation", () =>
                     {
+                        zeroCard.Transform.Rotation = 0;
                         this.MessageManager.QueueMessage(new EndTurnConfirmationMessage(_currentPlayer));
-                    })));
+                    }, true)));
 
                 foreach (var acorn in acorns)
                 {
@@ -301,7 +303,7 @@ namespace Acorn.Views
                     }));
 
                     // Shake and fly acorn towards zero card
-                    acorn.AddComponent(new ShakeComponent(15, TimeSpan.FromSeconds(1.4), shakeHarderAtEnd: true));
+                    acorn.AddComponent(new ShakeComponent(15, TimeSpan.FromSeconds(1.4), true));
                     this.ProcessManager.AttachProcess(new DelayProcess("Delay while acorn shakes", TimeSpan.FromSeconds(0.7), new ActionProcess(() =>
                     {
                         this.ProcessManager.AttachProcess(new DelayProcess("Random acorn delay before flying", TimeSpan.FromSeconds(0.5 * _random.NextDouble()), new ActionProcess(() =>
@@ -361,7 +363,7 @@ namespace Acorn.Views
                     {
                         acornToScore.IsOn = true;
                         this.GameObjectManager.RemoveGameObject(fallenAcorn);
-                        this.MessageManager.QueueMessage(new PlaySoundEffectMessage(_scoringSounds[currentScore + scoreIndexOffset], 0.32f));
+                        this.MessageManager.QueueMessage(new PlaySoundEffectMessage(_scoringSounds[currentScore + scoreIndexOffset], PlatformConfiguration.SoundLevels.AcornDing));
 
                         if (lastAcorn)
                         {

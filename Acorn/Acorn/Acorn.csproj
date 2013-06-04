@@ -134,6 +134,7 @@
     <Compile Include="ComputerPlayerController.cs" />
     <Compile Include="DebugController.cs" />
     <Compile Include="IController.cs" />
+    <Compile Include="PlatformConfiguration.cs" />
     <Compile Include="States\AboutState.cs" />
     <Compile Include="States\PlayerSelectState.cs" />
     <Compile Include="Views\AboutHumanView.cs" />
@@ -312,10 +313,6 @@
       <Link>Content\Sprites\AboutButtonPressed.xnb</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sprites\BackgroundAbout.xnb">
-      <Link>Content\Sprites\BackgroundAbout.xnb</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Assets\WideLogo.png" />
     <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sprites\BlueComputerButton.xnb">
       <Link>Content\Sprites\BlueComputerButton.xnb</Link>
@@ -331,6 +328,10 @@
     </Content>
     <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sprites\RedPlayerButton.xnb">
       <Link>Content\Sprites\RedPlayerButton.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Dummy\bin\Windows Phone\Debug\AcornContent\Sprites\PauseImage.xnb">
+      <Link>Content\Sprites\PauseImage.xnb</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Acorn_StoreKey.pfx" />
@@ -363,7 +364,11 @@
       <Name>Hiromi.WindowsStore</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <SDKReference Include="MSAdvertisingXaml, Version=6.1">
+      <Name>Microsoft Advertising SDK for Windows 8 %28Xaml%29</Name>
+    </SDKReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
     <VisualStudioVersion>11.0</VisualStudioVersion>
   </PropertyGroup>
