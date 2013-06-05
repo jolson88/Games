@@ -141,6 +141,10 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <Content Include="..\Mulgrew.ContentBuilder\Mulgrew.ContentBuilder\bin\Windows Phone\Debug\Mulgrew.Content\Sprites\Grid.xnb">
+      <Link>Content\Sprites\Grid.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Mulgrew_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>

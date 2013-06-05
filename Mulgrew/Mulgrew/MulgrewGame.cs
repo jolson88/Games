@@ -10,6 +10,8 @@ namespace Mulgrew
     /// </summary>
     public class MulgrewGame : HiromiGame
     {
+        private Camera _camera;
+
         protected override GameScreen GetInitialScreen()
         {
             return new PlayScreen();
