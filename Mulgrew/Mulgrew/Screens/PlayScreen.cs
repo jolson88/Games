@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Hiromi;
+using Hiromi.Entities;
+using Hiromi.Entities.Components;
+using Hiromi.Entities.Systems;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
@@ -10,32 +12,31 @@ namespace Mulgrew.Screens
 {
     class PlayScreen : Screen
     {
+        private EntityWorld _world;
         private Camera _camera;
-        private SpriteBatch _batch;
-        private Texture2D _grid;
-
+        
         protected override void OnInitialize()
         {
-            _batch = new SpriteBatch(GraphicsService.Instance.GraphicsDevice);
             _camera = new Camera(this.MessageManager, new Vector2(1600, 900));
 
-            _grid = ContentService.Instance.GetAsset<Texture2D>("Sprites\\Grid");
-            
-            this.BackgroundColor = Color.CornflowerBlue;
+            _world = new EntityWorld();
+            _world.SetSystem(new SpriteRenderingSystem(_camera));
+            _world.Initialize();
+
+            _world.CreateEntity()
+                    .AddComponent(new TransformComponent(new Vector2(100, 100)))
+                    .AddComponent(new SpriteComponent(ContentService.Instance.GetAsset<Texture2D>("Sprites\\Grid")))
+                    .AddToWorld();
         }
 
         protected override void OnUpdate(GameTime gameTime)
         {
-        
+            _world.Update(gameTime.ElapsedGameTime.TotalSeconds);
         }
 
         protected override void OnDraw(GameTime gameTime)
         {
-            _batch.Begin(_camera);
-
-            _batch.Draw(_grid, new Rectangle(300, 100, _grid.Width, _grid.Height), Color.White);
-
-            _batch.End();
+            _world.Draw(gameTime.ElapsedGameTime.TotalSeconds);
         }
     }
 }
