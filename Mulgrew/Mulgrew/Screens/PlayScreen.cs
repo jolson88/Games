@@ -5,6 +5,7 @@ using Hiromi;
 using Hiromi.Entities;
 using Hiromi.Entities.Components;
 using Hiromi.Entities.Systems;
+using Hiromi.Messaging;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
@@ -12,12 +13,16 @@ namespace Mulgrew.Screens
 {
     class PlayScreen : Screen
     {
+        private MessageBus _bus;
         private EntityWorld _world;
         private Camera _camera;
         
         protected override void OnInitialize()
         {
-            _camera = new Camera(this.MessageManager, new Vector2(1600, 900));
+            _bus = new MessageBus();
+
+            _camera = new Camera(new Vector2(1600, 900));
+            _bus.Register(_camera);
 
             _world = new EntityWorld();
             _world.SetSystem(new SpriteRenderingSystem(_camera));
@@ -31,6 +36,7 @@ namespace Mulgrew.Screens
 
         protected override void OnUpdate(GameTime gameTime)
         {
+            _bus.ProcessMessages();
             _world.Update(gameTime.ElapsedGameTime.TotalSeconds);
         }
 
