@@ -130,12 +130,15 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Screens\Components\JewelComponent.cs" />
+    <Compile Include="Screens\Components\JewelKind.cs" />
     <Compile Include="GamePage.xaml.cs">
       <DependentUpon>GamePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MulgrewGame.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Screens\PlayScreen.cs" />
+    <Compile Include="Screens\Systems\JewelRenderingSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -143,6 +146,10 @@
     </AppxManifest>
     <Content Include="..\Mulgrew.ContentBuilder\Mulgrew.ContentBuilder\bin\Windows Phone\Debug\Mulgrew.Content\Sprites\Grid.xnb">
       <Link>Content\Sprites\Grid.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Mulgrew.ContentBuilder\Mulgrew.ContentBuilder\bin\Windows Phone\Debug\Mulgrew.Content\Sprites\Jewel-Red.xnb">
+      <Link>Content\Sprites\Jewel-Red.xnb</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Mulgrew_TemporaryKey.pfx" />

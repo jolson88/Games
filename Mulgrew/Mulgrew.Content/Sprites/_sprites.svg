@@ -40,16 +40,6 @@
          offset="1"
          id="stop3792-22" />
     </linearGradient>
-    <linearGradient
-       y2="-941.8548"
-       x2="1712.5298"
-       y1="367.35028"
-       x1="374.51584"
-       gradientTransform="matrix(0.916073,0,0,0.77345068,580.78979,-168.01187)"
-       gradientUnits="userSpaceOnUse"
-       id="linearGradient3602"
-       xlink:href="#linearGradient3788-2"
-       inkscape:collect="always" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -58,9 +48,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="-299.77961"
-     inkscape:cy="734.55746"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="-854.55152"
+     inkscape:cy="591.77356"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -218,199 +208,22 @@
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <rect
-       style="fill:url(#linearGradient3602);fill-opacity:1;stroke:none;display:inline"
-       id="rect3762-1"
-       width="2274.4414"
-       height="1262.2809"
-       x="-165.12434"
-       y="-876.68378"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Oscar\oscarGame-android\assets\sprites\background.png"
+       style="fill:#df0004;fill-opacity:1;stroke:#000000;stroke-width:2.84745765;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3025"
+       width="53.152542"
+       height="53.152542"
+       x="-1021.3405"
+       y="269.38724"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Mulgrew\Mulgrew.Content\Sprites\Jewel-Red.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
-    <g
-       transform="matrix(1.0296329,0,0,0.86933056,-1420.8554,-1110.9839)"
-       style="display:inline"
-       id="g4301-34"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Oscar\oscarGame-android\assets\sprites\background.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
-      <rect
-         y="1137.3329"
-         x="1747.5299"
-         height="205.54539"
-         width="46.127579"
-         id="rect3222-5-6-11"
-         style="opacity:0.98999999;fill:#643719;fill-opacity:1;stroke:#321400;stroke-width:1.66198623;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path4218-8-1-3"
-         d="m 1759.6358,1048.9729 c -31.0715,0 -57.711,16.1966 -68.9924,39.2466 -27.8808,8.0444 -47.2726,25.8465 -47.2726,46.5141 0,6.5273 1.9474,12.7639 5.4709,18.5023 -2.7726,5.3822 -4.2751,11.1203 -4.2751,17.0791 0,30.7339 39.8335,55.6456 88.9759,55.6456 14.5431,0 28.271,-2.1766 40.393,-6.0457 11.0145,3.8317 23.4948,5.9953 36.7238,5.9953 44.5164,0 80.6058,-24.4886 80.6058,-54.6883 0,-15.2552 -9.2104,-29.0511 -24.0621,-38.9696 0.2597,-1.5847 0.4095,-3.1979 0.4095,-4.8239 0,-17.9944 -16.2888,-33.6919 -40.4422,-42.0176 -12.0106,-21.5481 -37.7393,-36.4379 -67.5345,-36.4379 z"
-         style="opacity:0.98999999;fill:#64b064;fill-opacity:1;stroke:#2e4b2e;stroke-width:1.8385222;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
-    </g>
-    <g
-       style="display:inline"
-       id="g4301"
-       transform="matrix(1.0296329,0,0,0.86933056,-165.15121,-876.68359)"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Oscar\oscarGame-android\assets\sprites\background.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
-      <rect
-         y="1137.3329"
-         x="1747.5299"
-         height="205.54539"
-         width="46.127579"
-         id="rect3222-5-6"
-         style="opacity:0.98999999;fill:#643719;fill-opacity:1;stroke:#321400;stroke-width:1.66198623;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path4218-8-1"
-         d="m 1759.6358,1048.9729 c -31.0715,0 -57.711,16.1966 -68.9924,39.2466 -27.8808,8.0444 -47.2726,25.8465 -47.2726,46.5141 0,6.5273 1.9474,12.7639 5.4709,18.5023 -2.7726,5.3822 -4.2751,11.1203 -4.2751,17.0791 0,30.7339 39.8335,55.6456 88.9759,55.6456 14.5431,0 28.271,-2.1766 40.393,-6.0457 11.0145,3.8317 23.4948,5.9953 36.7238,5.9953 44.5164,0 80.6058,-24.4886 80.6058,-54.6883 0,-15.2552 -9.2104,-29.0511 -24.0621,-38.9696 0.2597,-1.5847 0.4095,-3.1979 0.4095,-4.8239 0,-17.9944 -16.2888,-33.6919 -40.4422,-42.0176 -12.0106,-21.5481 -37.7393,-36.4379 -67.5345,-36.4379 z"
-         style="opacity:0.98999999;fill:#64b064;fill-opacity:1;stroke:#2e4b2e;stroke-width:1.8385222;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
-    </g>
-    <g
-       transform="matrix(1.0296329,0,0,0.86933056,126.60599,-910.28061)"
-       style="display:inline"
-       id="g4301-8"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Oscar\oscarGame-android\assets\sprites\background.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
-      <rect
-         y="1137.3329"
-         x="1747.5299"
-         height="205.54539"
-         width="46.127579"
-         id="rect3222-5-6-9"
-         style="opacity:0.98999999;fill:#643719;fill-opacity:1;stroke:#321400;stroke-width:1.66198623;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path4218-8-1-2"
-         d="m 1759.6358,1048.9729 c -31.0715,0 -57.711,16.1966 -68.9924,39.2466 -27.8808,8.0444 -47.2726,25.8465 -47.2726,46.5141 0,6.5273 1.9474,12.7639 5.4709,18.5023 -2.7726,5.3822 -4.2751,11.1203 -4.2751,17.0791 0,30.7339 39.8335,55.6456 88.9759,55.6456 14.5431,0 28.271,-2.1766 40.393,-6.0457 11.0145,3.8317 23.4948,5.9953 36.7238,5.9953 44.5164,0 80.6058,-24.4886 80.6058,-54.6883 0,-15.2552 -9.2104,-29.0511 -24.0621,-38.9696 0.2597,-1.5847 0.4095,-3.1979 0.4095,-4.8239 0,-17.9944 -16.2888,-33.6919 -40.4422,-42.0176 -12.0106,-21.5481 -37.7393,-36.4379 -67.5345,-36.4379 z"
-         style="opacity:0.98999999;fill:#64b064;fill-opacity:1;stroke:#2e4b2e;stroke-width:1.8385222;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
-    </g>
-    <g
-       transform="matrix(1.0296329,0,0,1.0760957,-1038.651,-1168.4511)"
-       style="display:inline"
-       id="g4301-3"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Oscar\oscarGame-android\assets\sprites\background.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
-      <rect
-         y="1137.3329"
-         x="1747.5299"
-         height="205.54539"
-         width="46.127579"
-         id="rect3222-5-6-1"
-         style="opacity:0.98999999;fill:#643719;fill-opacity:1;stroke:#321400;stroke-width:1.66198623;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path4218-8-1-23"
-         d="m 1759.6358,1048.9729 c -31.0715,0 -57.711,16.1966 -68.9924,39.2466 -27.8808,8.0444 -47.2726,25.8465 -47.2726,46.5141 0,6.5273 1.9474,12.7639 5.4709,18.5023 -2.7726,5.3822 -4.2751,11.1203 -4.2751,17.0791 0,30.7339 39.8335,55.6456 88.9759,55.6456 14.5431,0 28.271,-2.1766 40.393,-6.0457 11.0145,3.8317 23.4948,5.9953 36.7238,5.9953 44.5164,0 80.6058,-24.4886 80.6058,-54.6883 0,-15.2552 -9.2104,-29.0511 -24.0621,-38.9696 0.2597,-1.5847 0.4095,-3.1979 0.4095,-4.8239 0,-17.9944 -16.2888,-33.6919 -40.4422,-42.0176 -12.0106,-21.5481 -37.7393,-36.4379 -67.5345,-36.4379 z"
-         style="opacity:0.98999999;fill:#64b064;fill-opacity:1;stroke:#2e4b2e;stroke-width:1.8385222;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
-    </g>
     <path
-       style="fill:#9af2b2;fill-opacity:1;stroke:#5fb577;stroke-width:0.94609267;stroke-opacity:1;display:inline"
-       d="m 1884.2188,230.29126 c -0.2388,0.0142 -0.6536,0.37874 -1.3171,1.15997 -2.7093,3.19118 -2.079,8.71295 1.6606,14.09137 -0.063,0.28373 -0.1181,0.58041 -0.1718,0.86997 -282.6867,12.34873 -486.2282,48.3941 -693.6964,16.24249 -290.16701,-44.96753 -533.90981,-3.33426 -659.62991,29.70539 -55.8128,14.66794 -49.7255,70.72225 -49.7255,70.72225 l 1627.97641,0 c 0,-92.85544 -0.1038,-61.34611 0.1431,-120.10223 -77.5236,-1.17376 -149.436,0.27563 -216.8518,3.09376 6.2233,-6.67861 17.3801,-5.48352 11.4796,-7.25106 -3.7619,-1.12683 -8.7978,0.21902 -13.3689,3.48046 2.0918,-9.37984 14.8311,-11.90385 8.1873,-11.79491 -4.7211,0.0782 -9.7205,3.93827 -12.5673,9.83722 -2.6387,-5.01205 -1.1953,-10.09066 -2.1183,-10.05468 z"
-       id="rect3759-6"
+       style="opacity:0.43362834;fill:#ffffff;fill-opacity:1;stroke:none"
+       d="m -1017.3808,295.1388 c 15.1193,0 30.3333,-13.12069 45.45257,-13.12069 0,-2.53031 -0.0949,-6.42881 -0.0949,-9.11661 -15.11926,0 -30.23836,0 -45.35756,0 0,4.26267 0,12.77752 0,22.2373 z"
+       id="rect3025-1"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Oscar\oscarGame-android\assets\sprites\background.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <g
-       transform="matrix(1.0296329,0,0,0.86933056,-1537.3811,-1160.1758)"
-       style="display:inline"
-       id="g4301-7"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Oscar\oscarGame-android\assets\sprites\background.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
-      <rect
-         y="1137.3329"
-         x="1747.5299"
-         height="205.54539"
-         width="46.127579"
-         id="rect3222-5-6-95"
-         style="opacity:0.98999999;fill:#643719;fill-opacity:1;stroke:#321400;stroke-width:1.66198623;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path4218-8-1-4"
-         d="m 1759.6358,1048.9729 c -31.0715,0 -57.711,16.1966 -68.9924,39.2466 -27.8808,8.0444 -47.2726,25.8465 -47.2726,46.5141 0,6.5273 1.9474,12.7639 5.4709,18.5023 -2.7726,5.3822 -4.2751,11.1203 -4.2751,17.0791 0,30.7339 39.8335,55.6456 88.9759,55.6456 14.5431,0 28.271,-2.1766 40.393,-6.0457 11.0145,3.8317 23.4948,5.9953 36.7238,5.9953 44.5164,0 80.6058,-24.4886 80.6058,-54.6883 0,-15.2552 -9.2104,-29.0511 -24.0621,-38.9696 0.2597,-1.5847 0.4095,-3.1979 0.4095,-4.8239 0,-17.9944 -16.2888,-33.6919 -40.4422,-42.0176 -12.0106,-21.5481 -37.7393,-36.4379 -67.5345,-36.4379 z"
-         style="opacity:0.98999999;fill:#64b064;fill-opacity:1;stroke:#2e4b2e;stroke-width:1.8385222;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
-    </g>
-    <g
-       transform="matrix(1.0296329,0,0,0.86933056,-1849.67,-1158.2081)"
-       style="display:inline"
-       id="g4301-87"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Oscar\oscarGame-android\assets\sprites\background.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
-      <rect
-         y="1137.3329"
-         x="1747.5299"
-         height="205.54539"
-         width="46.127579"
-         id="rect3222-5-6-4"
-         style="opacity:0.98999999;fill:#643719;fill-opacity:1;stroke:#321400;stroke-width:1.66198623;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path4218-8-1-27"
-         d="m 1759.6358,1048.9729 c -31.0715,0 -57.711,16.1966 -68.9924,39.2466 -27.8808,8.0444 -47.2726,25.8465 -47.2726,46.5141 0,6.5273 1.9474,12.7639 5.4709,18.5023 -2.7726,5.3822 -4.2751,11.1203 -4.2751,17.0791 0,30.7339 39.8335,55.6456 88.9759,55.6456 14.5431,0 28.271,-2.1766 40.393,-6.0457 11.0145,3.8317 23.4948,5.9953 36.7238,5.9953 44.5164,0 80.6058,-24.4886 80.6058,-54.6883 0,-15.2552 -9.2104,-29.0511 -24.0621,-38.9696 0.2597,-1.5847 0.4095,-3.1979 0.4095,-4.8239 0,-17.9944 -16.2888,-33.6919 -40.4422,-42.0176 -12.0106,-21.5481 -37.7393,-36.4379 -67.5345,-36.4379 z"
-         style="opacity:0.98999999;fill:#64b064;fill-opacity:1;stroke:#2e4b2e;stroke-width:1.8385222;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
-    </g>
-    <g
-       transform="matrix(1.0296329,0,0,0.95072669,673.25959,-276.36873)"
-       style="display:inline"
-       id="g4271-2"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Oscar\oscarGame-android\assets\sprites\background.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
-      <rect
-         transform="translate(-814.28125,-733.79041)"
-         y="586.84717"
-         x="217.29042"
-         height="606.60242"
-         width="90.537682"
-         id="rect3222-4"
-         style="opacity:0.98999999;fill:#552200;fill-opacity:1;stroke:#321400;stroke-width:4;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path4218-5"
-         d="m -574.37029,-366.51182 c -59.27887,0 -110.102,40.1856 -131.62499,97.375 -53.19149,19.95904 -90.1875,64.12777 -90.1875,115.40625 0,16.19497 3.71528,31.66858 10.4375,45.90625 -5.28964,13.353765 -8.15625,27.590435 -8.15625,42.375005 0,76.253938 75.99516,138.062507 169.75,138.062507 27.74565,0 53.93595,-5.40031 77.06249,-14.999999 21.01368,9.506699 44.82375,14.874999 70.0625,14.874999 84.9292,0 153.78126,-60.758829 153.78126,-135.687507 0,-37.849685 -17.57177,-72.078745 -45.90625,-96.687505 0.49541,-3.93196 0.78125,-7.93447 0.78125,-11.96875 0,-44.64586 -31.07593,-83.59311 -77.15626,-104.25 -22.91408,-53.46303 -71.9999,-90.40625 -128.84375,-90.40625 z"
-         style="opacity:0.98999999;fill:#318431;fill-opacity:1;stroke:#2e4b2e;stroke-width:4;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-    </g>
-    <path
-       style="fill:#38c561;fill-opacity:1;stroke:#025019;stroke-width:0.94609267;stroke-opacity:1;display:inline"
-       d="m 230.84989,-42.229546 c -2.0642,0.251306 7.1855,4.557084 7.3859,12.907091 -3.8707,-3.85394 -8.5795,-5.880318 -12.5101,-5.293225 -5.672,0.847075 3.3975,1.21984 8.6454,7.081815 -151.866901,-19.536498 -286.290301,20.2131902 -353.69,46.0204 0.2903,-5.33731 -1.6835,-9.7580098 -5.2388,-11.5777398 -0.9738,-0.49849 -1.5225,-0.69902 -1.7463,-0.62834 -0.8657,0.27335 2.8131,4.4738898 2.7196,9.9579698 -5.3632,-4.47957 -11.7399,-6.3775198 -16.1171,-4.8822 -6.1601,2.10404 6.7076,0.18987 12.9967,8.12132 -5.7215,-1.48253 -10.978,-1.05188 -13.9129,1.23264 -4.0917,3.18478 3.1367,-0.24818 10.9929,1.81276 -22.7683,9.13763 -35.5264,15.71072 -35.5264,15.71072 l 0,346.940975 895.1179,0 c 0,0 41.9915,-153.67563 -274.822,-338.118795 -70.5126,-41.0512998 -142.2051,-63.23284 -210.6394,-73.18769 4.1031,-4.55096 5.5024,-9.499302 3.5783,-12.810519 -0.5015,-0.863005 -0.8542,-1.262649 -1.0879,-1.305031 -0.9035,-0.164125 -0.4827,5.044195 -4.065,9.61963 -1.6543,-6.214688 -5.8078,-10.722421 -10.4489,-11.456714 -0.8165,-0.129423 -1.3369,-0.180765 -1.6319,-0.145067 z"
-       id="rect3756-5"
-       inkscape:connector-curvature="0"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Oscar\oscarGame-android\assets\sprites\background.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <g
-       transform="matrix(1.0296329,0,0,1.0740706,673.25959,-374.57248)"
-       style="display:inline"
-       id="g4266-1"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Oscar\oscarGame-android\assets\sprites\background.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
-      <rect
-         transform="translate(-814.28125,-733.79041)"
-         y="969.09143"
-         x="1873.8525"
-         height="426.08188"
-         width="95.619385"
-         id="rect3222-5-7"
-         style="opacity:0.98999999;fill:#552200;fill-opacity:1;stroke:#321400;stroke-width:3.44518638;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path4218-8-11"
-         d="m 1084.666,52.136515 c -64.4092,0 -119.63095,33.574596 -143.01665,81.355655 -57.795,16.67555 -97.99286,53.578 -97.99286,96.42054 0,13.5307 4.03682,26.45872 11.34082,38.35413 -5.74744,11.15691 -8.86214,23.05148 -8.86214,35.40381 0,63.70926 82.57223,115.34959 184.44123,115.34959 30.1469,0 58.6039,-4.51189 83.7319,-12.53232 22.8324,7.94274 48.7031,12.42789 76.1261,12.42789 92.2795,0 167.0904,-50.76329 167.0904,-113.36531 0,-31.62296 -19.0925,-60.22094 -49.8792,-80.78126 0.5383,-3.2851 0.8488,-6.62915 0.8488,-9.99974 0,-37.30108 -33.7654,-69.84105 -83.8338,-87.09964 -24.8972,-44.667719 -78.2312,-75.533345 -139.9946,-75.533345 z"
-         style="opacity:0.98999999;fill:#318431;fill-opacity:1;stroke:#2e4b2e;stroke-width:3.81113362;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
-    </g>
-    <path
-       style="fill:#00922e;fill-opacity:1;stroke:#00270c;stroke-width:0.94609267;stroke-opacity:1;display:inline"
-       d="m 75.203489,228.28493 c -2.0643,0.25117 7.1854,4.55694 7.3858,12.90709 -3.8708,-3.85393 -8.5509,-5.90464 -12.4815,-5.31768 -5.9298,0.88561 4.2192,1.29152 9.3039,7.95221 -140.2535,12.86684 -244.562899,35.26442 -244.562899,35.26442 l 0,123.75222 2274.46631,0 0,-123.75222 c 0,0 -190.0035,13.33419 -449.1049,21.6566 7.8749,-5.3932 18.5139,-2.06065 13.2258,-4.9307 -3.3576,-1.82243 -8.609,-1.47228 -13.9415,0.82176 4.5734,-8.72874 17.6336,-8.71068 11.136,-9.88558 -4.6173,-0.83513 -10.5192,1.96025 -14.8861,7.15435 -1.2133,-5.38823 1.567,-10.05682 0.6585,-10.1999 -0.2348,-0.037 -0.746,0.23737 -1.6033,0.87026 -3.5009,2.58432 -4.3903,8.0859 -2.2042,14.04288 -0.4027,0.77255 -0.7537,1.58393 -1.088,2.41693 -300.4832,9.46247 -691.06651,11.97368 -986.75371,-20.61725 3.7874,-4.42026 5.0083,-9.12697 3.1489,-12.32668 -0.5015,-0.86329 -0.8256,-1.28697 -1.0591,-1.32949 -0.9037,-0.16413 -0.4829,5.04419 -4.0651,9.61976 -1.6544,-6.21482 -5.8364,-10.69823 -10.4776,-11.43253 -6.5314,-1.03338 5.5537,3.19502 5.7828,12.73771 -3.8709,-3.85394 -8.5796,-5.88032 -12.5101,-5.29309 -5.5665,0.83115 3.0473,1.23648 8.3305,6.79182 -58.3611,-6.65713 -112.9092,-14.70321 -162.1164,-24.38797 -129.9661,-25.57938 -278.6406,-22.62685 -401.669401,-11.91609 3.1198,-4.10724 4.033,-8.36196 2.3188,-11.31179 -0.5015,-0.86286 -0.8256,-1.28668 -1.0591,-1.32921 -0.9036,-0.16398 -0.5115,5.04434 -4.0937,9.61977 -1.6544,-6.21468 -5.8078,-10.69824 -10.449,-11.43267 -0.8165,-0.12943 -1.3369,-0.18077 -1.6317,-0.14493 z"
-       id="rect2985-5"
-       inkscape:connector-curvature="0"
-       inkscape:export-filename="C:\Home\Dev\Github\Games\Oscar\oscarGame-android\assets\sprites\background.png"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Home\Dev\Github\Games\Mulgrew\Mulgrew.Content\Sprites\Jewel-Red.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
   </g>
