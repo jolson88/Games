@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mulgrew.Content", "Mulgrew.Content.contentproj", "{310E6924-AF77-45A8-9179-205AFC6D9175}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mulgrew.ContentBuilder", "..\Mulgrew.ContentBuilder\Mulgrew.ContentBuilder\Mulgrew.ContentBuilder.csproj", "{360C802B-8EF5-40D7-8A9B-B15F00416E7A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Any CPU = Release|Any CPU
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{310E6924-AF77-45A8-9179-205AFC6D9175}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{310E6924-AF77-45A8-9179-205AFC6D9175}.Debug|Windows Phone.ActiveCfg = Debug|Any CPU
+		{310E6924-AF77-45A8-9179-205AFC6D9175}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{310E6924-AF77-45A8-9179-205AFC6D9175}.Release|Windows Phone.ActiveCfg = Debug|Any CPU
+		{360C802B-8EF5-40D7-8A9B-B15F00416E7A}.Debug|Any CPU.ActiveCfg = Debug|Windows Phone
+		{360C802B-8EF5-40D7-8A9B-B15F00416E7A}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{360C802B-8EF5-40D7-8A9B-B15F00416E7A}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{360C802B-8EF5-40D7-8A9B-B15F00416E7A}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{360C802B-8EF5-40D7-8A9B-B15F00416E7A}.Release|Any CPU.ActiveCfg = Release|Windows Phone
+		{360C802B-8EF5-40D7-8A9B-B15F00416E7A}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{360C802B-8EF5-40D7-8A9B-B15F00416E7A}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{360C802B-8EF5-40D7-8A9B-B15F00416E7A}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
