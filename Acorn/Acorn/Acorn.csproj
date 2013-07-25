@@ -132,7 +132,6 @@
     <Compile Include="AcornAssets.cs" />
     <Compile Include="Components\PlayerAvatarComponent.cs" />
     <Compile Include="ComputerPlayerController.cs" />
-    <Compile Include="DebugController.cs" />
     <Compile Include="IController.cs" />
     <Compile Include="PlatformConfiguration.cs" />
     <Compile Include="States\AboutState.cs" />
