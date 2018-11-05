@@ -1,6 +1,7 @@
 extern crate tcod;
 
 use tcod::console::*;
+use tcod::Color;
 use tcod::colors;
 
 const SCREEN_WIDTH: i32 = 80;
@@ -8,9 +9,6 @@ const SCREEN_HEIGHT: i32 = 50;
 const LIMIT_FPS: i32 = 20;
 
 fn main() {
-    let mut player_x = SCREEN_WIDTH / 2;
-    let mut player_y = SCREEN_HEIGHT / 2;
-
     let mut root = Root::initializer()
         .font("arial10x10.png", FontLayout::Tcod)
         .font_type(FontType::Greyscale)
@@ -18,38 +16,77 @@ fn main() {
         .title("Rust libtcod tutorial")
         .renderer(Renderer::GLSL)
         .init();
+    tcod::system::set_fps(LIMIT_FPS);
     let mut con = Offscreen::new(SCREEN_WIDTH, SCREEN_HEIGHT);
 
-    tcod::system::set_fps(LIMIT_FPS);
+    let player = Object::new(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, '@', colors::WHITE);
+    let npc = Object::new(SCREEN_WIDTH / 2 - 5, SCREEN_HEIGHT / 2, '@', colors::YELLOW);
+    let mut objects = [player, npc];
 
     while !root.window_closed() {
-        con.set_default_foreground(colors::WHITE);
-        con.put_char(player_x, player_y, '@', BackgroundFlag::None);
+        for object in &objects {
+            object.draw(&mut con);
+        }
 
-        root.clear();
         blit(&mut con, (0, 0), (SCREEN_WIDTH, SCREEN_HEIGHT), &mut root, (0, 0), 1.0, 1.0);
         root.flush();
 
-        con.put_char(player_x, player_y, ' ', BackgroundFlag::None);
-        let exit = handle_keys(&mut root, &mut player_x, &mut player_y);
+        for object in &objects {
+            object.clear(&mut con);
+        }
+
+        let player = &mut objects[0];
+        let exit = handle_keys(&mut root, player);
         if exit {
             break
         }
     }
 }
 
-fn handle_keys(root: &mut Root, x: &mut i32, y: &mut i32) -> bool {
+fn handle_keys(root: &mut Root, player: &mut Object) -> bool {
     use tcod::input::Key;
     use tcod::input::KeyCode::*;
 
     let key = root.wait_for_keypress(true);
     match key {
         Key { code: Escape, .. } => return true,
-        Key { code: Up, .. } => *y -= 1,
-        Key { code: Down, .. } => *y += 1,
-        Key { code: Left, .. } => *x -= 1,
-        Key { code: Right, .. } => *x += 1,
+        Key { code: Up, .. } => player.move_by(0, -1),
+        Key { code: Down, .. } => player.move_by(0, 1),
+        Key { code: Left, .. } => player.move_by(-1, 0),
+        Key { code: Right, .. } => player.move_by(1, 0),
         _ => {},
     }
     false
+}
+
+struct Object {
+    x: i32,
+    y: i32,
+    char: char,
+    color: Color
+}
+
+impl Object {
+    pub fn new(x: i32, y: i32, char: char, color: Color) -> Self {
+        Object {
+            x: x,
+            y: y,
+            char: char,
+            color: color
+        }
+    }
+
+    pub fn move_by(&mut self, dx: i32, dy: i32) {
+        self.x += dx;
+        self.y += dy;
+    }
+
+    pub fn draw(&self, con: &mut Console) {
+        con.set_default_foreground(self.color);
+        con.put_char(self.x, self.y, self.char, BackgroundFlag::None);
+    }
+
+    pub fn clear(&self, con: &mut Console) {
+        con.put_char(self.x, self.y, ' ', BackgroundFlag::None);
+    }
 }
