@@ -1,59 +1,104 @@
 extern crate env_logger;
-extern crate ggez; 
+extern crate ggez;
 extern crate log;
+extern crate rand;
 
 use ggez::*;
 use log::*;
+use rand::{thread_rng, Rng, ThreadRng};
 
-fn main() {
+const MAP_WIDTH: u32 = 100;
+const MAP_HEIGHT: u32 = 33;
+
+fn main() -> GameResult<()> {
     env_logger::init();
 
     trace!("Creating ggez conf and context");
     let c = conf::Conf::new();
-    let ctx = &mut Context::load_from_conf("rust_rl", "Jason Olson", c).unwrap();
+    let ctx = &mut Context::load_from_conf("rust_rl", "Jason Olson", c)?;
 
     trace!("Starting game");
-    let state = &mut State::new(ctx).unwrap();
-    if let Err(e) = event::run(ctx, state) {
-        println!("Error encountered: {}", e);
-    } else {
-        println!("Game exited cleanly");
-    }
+    let state = &mut State::new(ctx)?;
+    event::run(ctx, state)?;
+
+    Ok(())
 }
 
 struct State {
-    text: graphics::Text,
-    frames: usize
+    cells: Vec<Vec<GridCell>>,
+    rng: ThreadRng,
 }
 
 impl State {
     fn new(ctx: &mut Context) -> GameResult<State> {
-        let font = graphics::Font::new(ctx, "/fonts/Inconsolata-Regular.ttf", 48)?;
-        let text = graphics::Text::new(ctx, "Hello World!", &font)?;
+        graphics::set_background_color(ctx, graphics::Color::new(0.0, 0.0, 0.0, 0.0));
 
-        let s = State { text, frames: 0 };
+        let w = ctx.conf.window_mode.width;
+        let h = ctx.conf.window_mode.height;
+        let cell_width = w as f32 / MAP_WIDTH as f32;
+        let cell_height = h as f32 / MAP_HEIGHT as f32;
+        let mut cells = Vec::new();
+        for row in 0..MAP_HEIGHT {
+            let mut cols = Vec::new();
+            for col in 0..MAP_WIDTH {
+                cols.push(GridCell::new(col, row, cell_width, cell_height));
+            }
+            cells.push(cols);
+        }
+        let s = State {
+            cells: cells,
+            rng: thread_rng(),
+        };
         Ok(s)
     }
 }
 
 impl event::EventHandler for State {
     fn update(&mut self, _ctx: &mut Context) -> GameResult<()> {
+        for col in 0..MAP_WIDTH {
+            for row in 0..MAP_HEIGHT {
+                self.cells[row as usize][col as usize].color =
+                    graphics::Color::new(0.0, 0.0, self.rng.gen(), 1.0);
+            }
+        }
         Ok(())
     }
 
     fn draw(&mut self, ctx: &mut Context) -> GameResult<()> {
         graphics::clear(ctx);
 
-        // Drawables are drawn from their top-left corner
-        let dest_point = graphics::Point2::new(10.0, 10.0);
-        graphics::draw(ctx, &self.text, dest_point, 0.0)?;
-        graphics::present(ctx);
-
-        self.frames += 1;
-        if (self.frames % 100) == 0 {
-            info!("FPS: {}", timer::get_fps(ctx));
+        for col in 0..MAP_WIDTH {
+            for row in 0..MAP_HEIGHT {
+                // @slow graphics::rectangle creates a new mesh everytime. Create our own to optimize this later.
+                let cell = self.cells[row as usize][col as usize];
+                graphics::set_color(ctx, cell.color)?;
+                graphics::rectangle(ctx, graphics::DrawMode::Fill, cell.rect)?;
+            }
         }
 
+        println!("FPS: {}", timer::get_fps(ctx));
+        graphics::present(ctx);
         Ok(())
+    }
+}
+
+#[derive(Clone, Copy, Debug)]
+struct GridCell {
+    color: graphics::Color,
+    rect: graphics::Rect,
+}
+
+impl GridCell {
+    fn new(column: u32, row: u32, pixel_width: f32, pixel_height: f32) -> GridCell {
+        let r = graphics::Rect::new(
+            column as f32 * pixel_width,
+            row as f32 * pixel_height,
+            pixel_width,
+            pixel_height,
+        );
+        GridCell {
+            color: graphics::BLACK,
+            rect: r,
+        }
     }
 }
